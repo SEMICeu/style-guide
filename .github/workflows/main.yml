@@ -39,10 +39,10 @@ jobs:
           name: site
           path: "${{ github.workspace }}/${{ env.SITE_DIR }}"
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.3
+        uses: JamesIves/github-pages-deploy-action@4
         with:
           # ACCESS_TOKEN: # optional
           GITHUB_TOKEN: "${{ github.token}}"
-          FOLDER: "${{ env.SITE_DIR }}"
+          FOLDER: "build/${{ env.SITE_DIR }}"
           BRANCH: 'gh-pages'
           COMMIT_MESSAGE: "[CI] Publish Documentation for ${{ github.sha }}"
