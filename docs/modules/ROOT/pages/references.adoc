@@ -1,6 +1,22 @@
-[Bibliography]
-= References
+[sec:bibliography]
+== References
 
 [[SHACL]] SHACL Specifications
-[[UML]]
-[[XMI]]
+
+[[UML]] UML
+
+[[XMI]] XMI
+
+[[OWL]] OWL
+
+[[RDF]] RDF
+
+[[RDFS]] RDFS
+
+[[DL]] DL
+
+[[OWL2]] OWL 2
+
+[[SPARQL]] SPARQL
+
+[[MDA]] MDA

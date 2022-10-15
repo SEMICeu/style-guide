@@ -1,4 +1,5 @@
-* Contents
-** Introduction
-** Conclusion
-** References
+* xref:index.adoc[Home]
+** xref:introduction.adoc[Introduction]
+** xref:architecture.adoc[Architecture]
+** xref:guidelines-conceptual-uml.adoc[Conceptual guidelines]
+
