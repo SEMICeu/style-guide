@@ -1,6 +1,6 @@
 site:
   title: SEMIC
-  start_page: semic-style-guide::index.adoc
+  start_page: ROOT::index.adoc
 content:
   sources:
 #    - url: .
