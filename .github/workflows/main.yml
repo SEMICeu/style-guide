@@ -1,7 +1,7 @@
 name: Build
 on:
   push:
-    branches: [ master, main, feature/** ]
+    branches: [ master, main ]
 env:
   SITE_DIR: 'site'
 jobs:
