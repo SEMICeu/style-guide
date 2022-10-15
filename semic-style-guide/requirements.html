@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>SEMIC style guide :: GitHub usage methodology</title>
-    <meta name="description" content="The SEMIC style guide for semantic engineers.">
+    <title>Untitled :: GitHub usage methodology</title>
     <meta name="generator" content="Antora 3.0.0">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
@@ -70,180 +69,23 @@
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
-  <ul>
-    <li><a href="index.html">SEMIC Style guide</a></li>
-    <li><a href="index.html">SEMIC style guide</a></li>
-  </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/main/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/main/docs/modules/ROOT/pages/requirements.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">SEMIC style guide</h1>
-<h1 id="sec:introduction" class="sect0"><a class="anchor" href="#sec:introduction"></a>Introduction</h1>
 <div class="sect1">
-<h2 id="sec:background"><a class="anchor" href="#sec:background"></a>1. Background considerations</h2>
+<h2 id="sec:requirements"><a class="anchor" href="#sec:requirements"></a>Requirements</h2>
 <div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec:audience"><a class="anchor" href="#sec:audience"></a>2. Target audience</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This document written for the Semantic Engineers, Data Architects and Knowledge Modellers involved in the definition, design, coordination, and delivery of the SEMIC standards and the application profiles themselves.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec:scope"><a class="anchor" href="#sec:scope"></a>3. Context and scope</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Think what is in scope and provide bulet points here
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>This document provides a general architectural specification and details a set of guidelines and principles that shall be taken into consideration when developing Core Vocabularies.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Think what is NOT in scope and provide bulet points here
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>There is a number of aspects that are excluded from the scope of this document:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>general explanations of what Core Vocabularies are or how to use them;</p>
-</li>
-<li>
-<p>broad context explanations how Core Vocabularies contribute to the Legal or Organisational Interoperability;</p>
-</li>
-<li>
-<p>benefits of using semantic artefacts</p>
-</li>
-<li>
-<p>artefact governance, change management or maintenance methodology</p>
-</li>
-<li>
-<p>guidelines for practical system implementations</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="sec:conformace"><a class="anchor" href="#sec:conformace"></a>4. Conformance</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This document describes normative and non-normative criteria for Core Vocabularies
-components and artefacts. The toolchain scripts, datasets, and the derived formal
-ontology and data shapes, must align to the normative criteria and may follow the
-non-normative descriptions.</p>
-</div>
-<div class="paragraph">
-<p>The source code must be syntactically valid and compilable/interpretable by the
-corresponding state of the art compiler/interpreter. The source code may be
-accompanied by the unit tests to ensure the implementation correctness.</p>
-</div>
-<div class="paragraph">
-<p>The UML conceptual model must comply with UML standard version 2.5 <a id="UML"></a> and
-be serialised as XMI document version 2.5.1 <a id="XMI"></a>. It also must comply with the
-conventions agreed with the Publications Office and other stakeholders
-described in the UML Conventions specifications.</p>
-</div>
-<div class="paragraph">
-<p>The core ontology and the formal restrictions components developed under these
-specifications must be valid OWL 2 documents in conformance with the conditions
-listed in #sec:architecture-layers<a id="sec:architecture-layers"></a>. They should be
-available in at least Turtle and RDF/XML serialisation formats.</p>
-</div>
-<div class="paragraph">
-<p>The data shapes component must be valid SHACL documents respecting the
-normative parts of the specification provided in <a href="#SHACL">[SHACL]</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_benefits"><a class="anchor" href="#_benefits"></a>5. Benefits</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-content in this section may be overlapping with content elsewhere
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>This deliverable establishes guidelines for drafting Core Vocabularies and Application Profiles. It has been considered that defining and aligning common guidelines is beneficial for – at least – the following reasons:</p>
-</div>
-<div class="sect2">
-<h3 id="_branding"><a class="anchor" href="#_branding"></a>5.1. Branding</h3>
-<div class="paragraph">
-<p>SEMIC aims to present these standards as one large group under a single brand. Such branding will only work when all standards use the same modelling approach, follow the same naming conventions, notations, guidelines and rules, and are published with identical documentation output.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ownership_and_governance"><a class="anchor" href="#_ownership_and_governance"></a>5.2. Ownership and governance.</h3>
-<div class="paragraph">
-<p>In the future, SEMIC will make sure it has ownership over the vocabularies and can therefore govern them in a timely manner aligned with stakeholders' needs. This is intended to lead to a policy with less dependence on external vocabularies and external organisations. For this reason, own namespace(s) will be claimed, and the core concepts and relationships needed will be defined using these own namespace(s).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pragmatism_and_ease_of_use"><a class="anchor" href="#_pragmatism_and_ease_of_use"></a>5.3. Pragmatism and ease of use</h3>
-<div class="paragraph">
-<p>Previous versions of these standards were only oriented to the Semantic Web and Linked Open Data. However, these technologies are not yet universally understood nor used and are considered to be too difficult. Hence, having unified guidelines and good practice advice is essential for keeping the Core Vocabularies pragmatic and straightforward. Besides, the majority of users use established data formats such as XML and JSON. As far as these contexts are concerned, the present guidelines also include XML Schema and detailed guidelines on how to use and implement these in alignment with the semantic web-oriented assets (including JSON Schema guidelines for the future as soon as they will come to a stable version).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_broad_applicability"><a class="anchor" href="#_broad_applicability"></a>5.4. Broad applicability</h3>
-<div class="paragraph">
-<p>These standards should have general applicability. Accordingly, the Core Vocabularies aim is to define simplified, reusable, and extensible data models that capture only the fundamental characteristics in a context-neutral manner.
-This will lead to:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>minimal ontological commitment, meaning that semantics which would lead to inferences/deductions that could limit reuse while being too specific, will not be added;</p>
-</li>
-<li>
-<p>limited constraints; constraints are better defined at the application level layer.
-== Requirements</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>This section elaborates on the general design criteria along with
 requirements the Core Vocabularies should fulfil.</p>
 </div>
-</div>
 <div class="sect2">
-<h3 id="sec:functional-requirements"><a class="anchor" href="#sec:functional-requirements"></a>5.5. Functional requirements</h3>
+<h3 id="sec:functional-requirements"><a class="anchor" href="#sec:functional-requirements"></a>Functional requirements</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -277,7 +119,7 @@ systems</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:non-functional-requirements"><a class="anchor" href="#sec:non-functional-requirements"></a>5.6. Non-functional requirements</h3>
+<h3 id="sec:non-functional-requirements"><a class="anchor" href="#sec:non-functional-requirements"></a>Non-functional requirements</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -351,7 +193,7 @@ truth, through a set of predefined transformation rules .
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:design-criteria"><a class="anchor" href="#sec:design-criteria"></a>5.7. General design criteria</h3>
+<h3 id="sec:design-criteria"><a class="anchor" href="#sec:design-criteria"></a>General design criteria</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -412,16 +254,6 @@ ontology .</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<h1 id="_architecture" class="sect0"><a class="anchor" href="#_architecture"></a>Architecture</h1>
-
-<div class="sect1">
-<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a id="SHACL"></a> SHACL Specifications</p>
 </div>
 </div>
 </div>
