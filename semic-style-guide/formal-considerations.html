@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SEMIC</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="..">SEMIC</a>
+        </div>
+    </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="semic-style-guide" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">SEMIC Style guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Home</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="guidelines-conceptual-uml.html">Conceptual guidelines</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">SEMIC Style guide</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">SEMIC Style guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/main/docs/modules/ROOT/pages/formal-considerations.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="sec:formal-considerations"><a class="anchor" href="#sec:formal-considerations"></a>Formal considerations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section addresses the aspects of logics in the eProcurement
+ontology. It specifies the semantics, the relationship between the
+abstract layer of the ontology and the instance data, under what
+assumptions is the inference done and what level of logical formalism
+should the ontology components adapt in order to maintain flexibility
+and reasoning capacity.</p>
+</div>
+<div class="sect2">
+<h3 id="sec:model-data"><a class="anchor" href="#sec:model-data"></a>Model and data relationship</h3>
+<div class="paragraph">
+<p>DL ontologies are structured into two sets: <em>ABox</em> and <em>TBox</em>. The
+<em>ABox</em> consists of all (class or property) instance assertions. The
+<em>TBox</em> consists of all terminological axioms, i.e., of all subclass
+inclusion axioms. The ABox provides information about concrete
+individuals while the TBox describes general rules that hold for all
+individuals. In consequence, ABoxes tend to be much larger than TBoxes .
+In Figure #fig:abox-tbox[3] is depicted the delimitation and relations
+between the TBox and box ABox components of the eProcurement ontology.</p>
+</div>
+<div class="paragraph">
+<p>image::../img/ontology.png[The relationship between the data and each of
+the ontology components,scaledwidth=99.0%]</p>
+</div>
+<div class="paragraph">
+<p>To explain the relevance of each component, in Figure #fig:abox-tbox[3],
+two arbitrary datasets are brought as examples. They instantiate the
+core ontology, which means that they comprise of factual statements of
+concrete entities of eProcurement classes. In order to ensure that the
+instance data follow minimally the intended ontology design they need to
+comply with a set of data shapes. Once this condition is satisfied,
+then, new knowledge can be inferred from the provided facts, given the
+domain inference rules. The new knowledge is mainly oriented to solve
+the classification task and does not cover other types of inference.</p>
+</div>
+<div class="paragraph">
+<p>It is important to note that the data shapes fall out of the TBox as
+they serve the validation function and are based on a different set of
+assumptions. First, they are interpreted under the closed world
+assumption, like in XML or RDBM contexts (see Section
+#sec:world-assumption[2.3]). Secondly, they follow a RDF graph based
+semantics #sec:semantics[2.2].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:semantics"><a class="anchor" href="#sec:semantics"></a>Semantics</h3>
+<div class="paragraph">
+<p>Users of OWL <a href="#OWL">[OWL]</a> can actually select between two slightly different
+semantics: <em>direct semantics</em> that corresponds to the Description Logics
+(DL) , and <em>RDF-based semantics</em> that is based on translation of the OWL
+axioms into directed graphs. In this document we assume by default the
+direct semantics. In particular cases (i.e. SPARQL entailments and SHACL
+data shapes) RDF-based semantics is adopted and is explicitly mentioned
+in the document.</p>
+</div>
+<div class="paragraph">
+<p>Description logics provide a concise language for OWL axioms and
+expressions. DLs are characterised by their expressive features. The
+description logic that supports all class expressions with
+\(&gt;, \bot, \sqcap, \sqcup, \neg, \exists\) and
+\(\forall\) is known as \(\mathcal{ALC}\) (which
+originally used to be an abbreviation for Attribute Language with
+Complement). For a formal introduction into DL please consult .</p>
+</div>
+<div class="paragraph">
+<p>Inverse properties are not supported by \(\mathcal{ALC}\), and
+the DL we have introduced above is actually called
+\(\mathcal{ALCI}\) (for \(\mathcal{ALC}\) with
+inverses) . Many description logics can be defined by simply listing
+their supported features. The letter \(\mathcal{S}\) is often
+used as an abbreviation for the ``basic'' DL consisting of
+\(\mathcal{ALC}\) extended with transitive roles (which in the
+\(\mathcal{AL}\) naming scheme would be called
+\(\mathcal{ALCR+}\) ).</p>
+</div>
+<div class="paragraph">
+<p>The letter \(\mathcal{H}\) represents sub-roles (role
+Hierarchies), \(\mathcal{O}\) represents nominals (nOminals),
+\(\mathcal{I}\) represents inverse roles (Inverse),
+\(\mathcal{N}\) represent number restrictions (Number), and
+\(\mathcal{Q}\) represent qualified number restrictions
+(Qualified).</p>
+</div>
+<div class="paragraph">
+<p>The integration of a concrete domain/datatype is indicated by appending
+its name in parenthesis, but sometimes a ``generic''
+\(\mathcal{D}\) is used to express that some concrete
+domain/datatype has been integrated. The DL corresponding to the OWL DL
+ontology language includes all of these constructors and is therefore
+called \(\mathcal{SHOIN(D)}\). We will use this notation when
+discussing degrees of expressivity for the ontology layers in Section
+#sec:expressivity[2.4].</p>
+</div>
+<div class="paragraph">
+<p>Computing all interesting logical conclusions of an OWL ontology can be
+a challenging problem, and reasoning is typically multi-exponential or
+even undecidable. To address this problem, the recent update OWL 2 of
+the W3C standard introduced three profiles: <em>OWL EL</em>, <em>OWL RL</em>, and <em>OWL
+QL</em>. These lightweight sublanguages of OWL restrict the available
+modelling features in order to simplify reasoning. This has led to large
+improvements in performance and scalability, which has made the OWL 2
+profiles very attractive for practitioners .</p>
+</div>
+<div class="paragraph">
+<p>On the other hand, the validation data shapes are expressed using Shapes
+Constraint Language (SHACL) . Its semantics is based on RDF graphs but
+full RDFS inferencing is not required. SHACL processors may operate on
+RDF graphs that include RDF entailments and SPARQL specific entailments
+. The entailment regime specifies conditions that address the fourth
+condition on extensions of basic graph pattern matching .</p>
+</div>
+<div class="paragraph">
+<p>This architecture delimits different concerns in Section
+#sec:layers-components[1.2] in a stack of layers and assigns levels of
+expressivity to each of the layers in Section #sec:expressivity[2.4].</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:world-assumption"><a class="anchor" href="#sec:world-assumption"></a>Open and closed world assumptions</h3>
+<div class="paragraph">
+<p>In the formal systems of logic used for knowledge representation,
+reasoning is the process through which logical conclusions are derived
+from a set of premises known to be true or assumed to be true by the
+laws of valid inference (inference rules).</p>
+</div>
+<div class="paragraph">
+<p>In the eProcurement ontology checking consistency and deriving new
+knowledge is foreseen as a valuable functionality beyond the knowledge
+representation and interoperability establishment.</p>
+</div>
+<div class="paragraph">
+<p>Inferencing is impacted by what is assumed about the knowledge base. The
+important assumptions to consider are: (a) whether the knowledge base is
+considered complete – the closed-world assumption (CWA); or (b) whether
+the knowledge base (proper knowledge base) is in a state of continuous
+progression – the open-world assumption (OWA) .</p>
+</div>
+<div class="paragraph">
+<p>Under the <em>closed-world assumption</em> it is the presumed that a statement
+that is true is also known to be true. Therefore, conversely, what is
+not currently known to be true, is false . The opposite of the
+closed-world assumption is the <em>open-world assumption</em> stating that lack
+of knowledge does not imply falsity. The truth value of a statement may
+be true irrespective of whether or not it is known to be true.</p>
+</div>
+<div class="paragraph">
+<p>The eProcurement data is fragmented across information systems. It
+represents concerns specific to different steps in the procurement
+process. Performing local reasoning with such incomplete knowledge is
+therefore necessary functionality for the eProcurement project.</p>
+</div>
+<div class="paragraph">
+<p>Semantic Web languages, including OWL, make the open-world assumption.
+The absence of a particular statement within the web means, in
+principle, that the statement has not been made explicitly yet,
+irrespective of whether it would be true or not, and irrespective of
+whether we believe that it would be true or not. This stance is also
+very convenient for decentralised knowledge bases over the internet,
+where information may be accessible, outdated, contradictory,
+inaccessible or missing .</p>
+</div>
+<div class="paragraph">
+<p>For validation purposes, in particular, a closed world assumption needs
+to be made. This concerns the data shapes expressed in SHACL language.
+In this case, the knowledge base must be considered complete in order to
+assess whether it fulfils the imposed constraints or recommended shapes.
+Therefore, everything that is not known to be true must be considered as
+false.</p>
+</div>
+<div class="paragraph">
+<p>The eProcurement data must be validated within its local context. The
+data must be conformant to the information needs and aspects specific to
+the procurement phase and, possibly, to the information system that
+handles it. It is, therefore, foreseeable that multiple validation
+schemes and application profiles have to be developed specific to
+different phases and aspects of the procurement process. These schemes
+must extend and flesh out the core ontology, which is the ontology
+backbone, with levels of specificity and detail as necessary.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+    <p style="text-align:center">This document is created by the Publications Office of the European Union and is
+        licensed under the terms of <a href="https://github.com/OP-TED/eForms-SDK/blob/main/LICENSE">EUPL-1.2
+            license</a>.
+        <br/>This page was built using the Antora default UI. The source code for this UI is licensed under the terms of
+        the MPL-2.0 license.
+    </p>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Architecture :: GitHub usage methodology</title>
+    <title>Untitled :: SEMIC</title>
     <meta name="generator" content="Antora 3.0.0">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
@@ -12,7 +12,7 @@
 <header class="header">
     <nav class="navbar">
         <div class="navbar-brand">
-            <a class="navbar-item" href="..">GitHub usage methodology</a>
+            <a class="navbar-item" href="..">SEMIC</a>
         </div>
     </nav>
 </header>
@@ -28,16 +28,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Contents</span>
+    <a class="nav-link" href="index.html">Home</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <span class="nav-text">Introduction</span>
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="architecture.html">Architecture</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <span class="nav-text">Conclusion</span>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <span class="nav-text">References</span>
+    <a class="nav-link" href="guidelines-conceptual-uml.html">Conceptual guidelines</a>
   </li>
 </ul>
   </li>
@@ -68,9 +68,11 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">SEMIC Style guide</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="architecture.html">Architecture</a></li>
   </ul>
 </nav>
@@ -81,8 +83,319 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Architecture</h1>
-
+<div class="sect1">
+<h2 id="sec:architecture"><a class="anchor" href="#sec:architecture"></a>Architectural considerations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is a range of requirements that the Core Vocabulary needs to cover
+in order to facilitate interoperability. These requirements cannot be
+fulfilled in a single artefact for the reasons provided below.
+This section describes Core Vocabulary artefacts how they are
+structured and how they relate to each other.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This section is adapted from the ePO ontology Architecture
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="sec:separation-conceprns"><a class="anchor" href="#sec:separation-conceprns"></a>Separation of concerns</h3>
+<div class="paragraph">
+<p>The successful application of an ontology or the development of an
+ontology-based system depends not just on building a good ontology but
+also on fitting this into an appropriate development process. All
+computing information models suffer from a semantic schizophrenia. On
+the one hand, the model represents the domain; on the other hand, it
+represents the implemented system, which then represents the domain.
+These different representation requirements place different demands upon
+its structure .</p>
+</div>
+<div class="paragraph">
+<p>One of the common ways to manage this problem is a separation of
+concerns. OMG’s Model Driven Architecture (MDA) <a href="#MDA">[MDA]</a> is a well-documented
+structure where a model is built for each concern and this is
+transformed into specific artefacts each addressing a different concern.</p>
+</div>
+<div class="paragraph">
+<p><em>Transformation</em> deals with producing different models, viewpoints, or
+artefacts from a model based on a transformation pattern. In general,
+transformation can be used to produce one representation from another,
+or to cross levels of abstraction or architectural layers .</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:layers-components"><a class="anchor" href="#sec:layers-components"></a>Layers and components</h3>
+<div class="paragraph">
+<p>This architecture is organised in <em>horizontal layers</em> and vertically
+slicing <em>components</em>. The <em>components</em> reflect the organisation of the
+formal ontology based on a logical content division of the UML
+conceptual model into packages and modules. This division increases the
+maintainability of entire content. The models and their components are
+not disconnected from one another. The relations between them are
+represented in Figure #fig:components[1] where each component is
+represented as an UML package. The conceptual model serves as the single
+source of truth, from which the three components of the formal model are
+derived. Each of these components can be further divided into modules.</p>
+</div>
+<div class="paragraph">
+<p>The main ontology packages are: the <em>core ontology</em>, <em>data shapes</em>, and
+<em>formal ontology restrictions</em>. These formal modules are derived from
+the conceptual model through model transformations as described in
+Section #sec:process-approach<a id="sec:process-approach"></a> following the
+rules laid out in .</p>
+</div>
+<div class="paragraph">
+<p>The <em>core ontology</em> is the foundational, and serves as a backbone for
+the other components. It establishes the identifiers and the basic
+definitions of classes and properties.</p>
+</div>
+<div class="paragraph">
+<p>The <em>data shapes</em> represent constraints on how the core ontology can be
+instantiated and the set of controlled value lists associated to it.</p>
+</div>
+<div class="paragraph">
+<p>The <em>formal ontology restrictions</em> cover intensional class and property
+definitions used for deriving additional knowledge from factual
+information. Both, the data shapes and the ontology restrictions are
+defined as extensions that are flashing out the core ontology which
+plays, in this case the role of a backbone.</p>
+</div>
+<div class="paragraph">
+<p>image::../img/uml.png[The main components of the eProcurement ontology
+and their relation to each other and the UML conceptual
+model,scaledwidth=99.0%]</p>
+</div>
+<div class="paragraph">
+<p>This architecture distinguishes the following layers: the <em>conceptual
+layer</em>, <em>core definition layer</em>, <em>validation layer</em> and <em>reasoning
+layer</em>. These <em>layers</em> can be thought of as formal languages with
+well-defined boundaries and extents. The diagram in Figure
+#fig:layers[2] presents the organisation the ontology layers along two
+axes: <em>expressivity</em> and <em>detail</em>.</p>
+</div>
+<div class="paragraph">
+<p>The <em>expressivity</em> of a language is the breadth of ideas that can be
+represented and communicated in that language. The more expressive the
+language is, the greater the variety and quantity of ideas it can be
+used to represent. The design of a language and its formalism involves
+an inevitable trade-off between the expressive power and its
+``analysability'', which translates directly into computation
+difficulty. The more a formalism can express, the harder it becomes to
+understand, i.e. compute, what do instances of it mean.</p>
+</div>
+<div class="paragraph">
+<p>The <em>detail</em> refers to how much description and aspects of the domain
+concepts are considered. This dimension plays a pragmatic rather than
+formal role. The rationale is that lower level of detail is useful and
+re-usable to a wider public, but for a set of relatively simple tasks.
+As the level of detail increases, the difficulty to operate on it also
+increases thus the user base shrinks and the task complexity rises.</p>
+</div>
+<div class="paragraph">
+<p>The detail axis starts, on one side, from establishing the concepts
+identity, labels, natural language definitions; continues through
+establishing relations and constraints; and ends, on the other side,
+with formulating special logical conditions, implications and inference
+rules.</p>
+</div>
+<div class="paragraph">
+<p>image::../img/eProcurement-layers[Expressivity and extent of the
+eProcurement ontology layers,scaledwidth=80.0%]</p>
+</div>
+<div class="paragraph">
+<p>The <em>conceptual layer</em> accommodates informal representation of the
+business objects, places, things, actors in the ``real world'' not
+representations of these things in the information system. It is
+situated at the base of the diagram with lowest expressivity because it
+has not formal semantics but with a wide coverage of detail. The dotted
+line delimits the border between formal and informal layers.</p>
+</div>
+<div class="paragraph">
+<p>In the conceptual layer is situated the <em>UML conceptual model</em>, which is
+described in Section #sec:uml-model[1.3]. This model is also called
+<em>computation independent model</em> because it is informal and its main
+purpose is to interface the domain experts with an explicit conceptual
+representation of the domain.</p>
+</div>
+<div class="paragraph">
+<p>In the formal section of the diagram, the expert knowledge is expressed
+using descriptive languages with a formal semantics (see Section
+#sec:semantics[2.2]), which in this architecture are primarily OWL 2 and
+SHACL.</p>
+</div>
+<div class="paragraph">
+<p>The <em>core layer</em>, is situated in the core ontology, which has as a
+primary goal to define the main concepts and relations of the ontology.
+It is limited to the declarative axioms of the ontology and therefore
+serves primarily for vocabulary and identity establishment. For this
+reason, it is represented as having the lowest formal expressivity and
+the lightest level of detail in comparison to other layers. It plays the
+role of a backbone which is flashed out by other layers.</p>
+</div>
+<div class="paragraph">
+<p>The <em>validation layer</em> accommodates declarations of data shapes which
+represent constraints on the instance data, i.e. the ABox (see Section
+#sec:model-data[2.1]). The assertions in this layer are interpreted done
+under the closed world assumption, making it possible to support
+validation functionality. The SHACL shapes are situated in this layer
+and are addressed in detail in Section #sec:shapes[1.5].</p>
+</div>
+<div class="paragraph">
+<p>The validation layer is situated immediately above the core definitions,
+being more expressive but also extending it with additional detail.
+Therefore, it is shifted, on the detail axis, to the right towards more
+detail and leaving out the simple axioms as they are already covered in
+the core later.</p>
+</div>
+<div class="paragraph">
+<p>The <em>reasoning layer</em> accommodates formal intensional definitions of the
+classes and properties. In Logics, <em>intensional definition</em> gives the
+meaning of a term by specifying necessary and sufficient conditions for
+when the term should be used. This layer is mostly formed of subclass
+restrictions and complex class definitions, and as well, domain and
+range specifications for properties. This layer provides assertions
+necessary to support consistency checking and classification reasoning
+functionalities for eProcurement ontology. The formal ontology
+restrictions component is situated in this layer and is described in
+Section #sec:restrictions[1.6].</p>
+</div>
+<div class="paragraph">
+<p>Just like in the case of the restrictions layer, the reasoning layer
+extends the core layer with higher level of detail and comprising
+assertions with higher expressive power. Therefore, the simple details
+rest in the core layer permitting this one to focus on other ones. For
+this reason, it is depicted as shifted to the towards the right side of
+detail axis.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:uml-model"><a class="anchor" href="#sec:uml-model"></a>UML conceptual model</h3>
+<div class="paragraph">
+<p>The conceptual model is represented in UML serves as the single source
+of truth. Thus, the scope of this architecture is limited by what can be
+expressed in UML and how that information is utilised to generate formal
+statements. Each of the above functions will lead to different
+interpretations of the same UML model.</p>
+</div>
+<div class="paragraph">
+<p>The primary application of UML for ontology design is in the
+specification of class diagrams for object-oriented software. However,
+UML does not have a clearly specified declarative semantics, so that it
+is not possible to determine whether an ontology is consistent, or to
+determine the correctness of an implementation of the ontology. Semantic
+integration in such cases becomes a subjective exercise, validated only
+by the opinions of the human designers involved in the integration
+effort .</p>
+</div>
+<div class="paragraph">
+<p>On the other hand, UML is closer than more logic-oriented approaches to
+the programming languages in which enterprise applications are
+implemented. For this reason, in the current project we have decided to
+develop agreements on the informal semantics of the UML-based conceptual
+model. It consists of a set of explicit conventions for naming and
+structuring UML elements and for transforming UML to OWL .</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:core-ontology"><a class="anchor" href="#sec:core-ontology"></a>Core ontology component</h3>
+<div class="paragraph">
+<p>This component constitutes the backbone of the eProcurement ontology. It
+is the simplest from the formal point of view and lightest in terms of
+detail.</p>
+</div>
+<div class="paragraph">
+<p>The main purpose of this component is to declare the classes, properties
+datatypes and controlled lists. It established, in a machine readable
+format, the concepts by assigning each an URI and decorating it with a
+human readable labels and descriptions. This represents a mechanism that
+established a common understanding between humans and machine.</p>
+</div>
+<div class="paragraph">
+<p>It is void of any constraints or restrictions and may be used as a
+formal ontology or as a data exchange vocabulary.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:shapes"><a class="anchor" href="#sec:shapes"></a>SHACL data shapes component</h3>
+<div class="paragraph">
+<p>In OWL the constraints are formed at the semantic level in the way the
+logic of the entire knowledge base holds together consistently. It is
+not always easy or obvious how the constraints should be formed so that
+they fulfil a business or application requirement. Moreover, in practice
+often the kind of constraints necessary are those aiming at the surface
+representation of the data. Take, XSD for example, it provides a
+description of how an XML document ought to be structured.</p>
+</div>
+<div class="paragraph">
+<p>In the eProcurement domain, before the RDF data is utilised as a
+semantic resource, it must first respect a more formal conventions on
+how it is instantiated and organised. There is a need for the XSD
+counterpart for the RDF graphs.</p>
+</div>
+<div class="paragraph">
+<p><em>Shapes Constraint Language (SHACL)</em> is a specification for validating
+graph-based data against a set of conditions. It provides a concise,
+uniform syntax for both describing and constraining the contents of an
+RDF graph. Among others, SHACL includes features to express conditions
+that constrain the number of values that a property may have, the type
+of such values, numeric ranges, string matching patterns, and logical
+combinations of such constraints.</p>
+</div>
+<div class="paragraph">
+<p><em>Application profiles (AP)</em> represent a set of constraints on the
+logical model tying it to a particular system implementation. The
+application profiles, in this project, must be expressed using SHACL
+language. The approach taken by the Publications Office to develop APs
+is described in . The same style should be maintained for the
+eProcurement APs.</p>
+</div>
+<div class="paragraph">
+<p>The AP must be conceived as extending the core ontology and fleshing the
+classes and properties with node and property shapes (see ). The
+constraints available in the conceptual model are generic and should be
+automatically generated. However, when it comes to integration with
+specific systems, these constraints may not be sufficient, possibly even
+too rigid at times. Therefore, it is recommended to conceptualise the
+data shapes not a single fit it all AP but rather to create specific APs
+as the needs arise.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sec:restrictions"><a class="anchor" href="#sec:restrictions"></a>Formal ontology restrictions component</h3>
+<div class="paragraph">
+<p>This component accommodates formal intensional definitions of the
+classes and properties. It is mostly formed of subclass restrictions,
+complex class definitions, domain and range specifications for
+properties; which can be derived from the conceptual model.</p>
+</div>
+<div class="paragraph">
+<p>This component provides the rules and logical conditions for reasoning
+with eProcurement ontology. And so, the statements from this component
+play the role of necessary and sufficient conditions to support
+consistency checking and classification reasoning functionalities for
+eProcurement ontology.</p>
+</div>
+<div class="paragraph">
+<p>Mostly expressions in OWL 2 should be acceptable for the reasoning
+purposes of eProcurement ontology. It is possible, however, that OWL 2
+is too expressive, leading to slow reasoning, and thus downgrading to
+OWL dialect (EL, QL, RL) might be necessary. This implies that multiple
+variants of this components should be generated, one for each OWL
+dialect as described in Section #sec:expressivity[2.4]. Each of these
+variants shall be tested and the most appropriate choice selected for
+reasoning in the validation phase (see Section
+#sec:ontology-validation<a id="sec:ontology-validation"></a>).</p>
+</div>
+</div>
+</div>
+</div>
 </article>
   </div>
 </main>
