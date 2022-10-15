@@ -1,0 +1,6 @@
+[Bibliography]
+= References
+
+[[SHACL]] SHACL Specifications
+[[UML]]
+[[XMI]]
