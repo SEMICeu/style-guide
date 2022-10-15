@@ -5,8 +5,7 @@ content:
   sources:
 #    - url: .
     - url: https://github.com/SEMICeu/style-guide
-      branches:
-      - main
+      branches: [main, master, feature/*]
       start_path: docs
 ui:
   bundle:
