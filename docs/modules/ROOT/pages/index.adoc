@@ -1,1 +1,21 @@
 = SEMIC style guide
+:description: The SEMIC style guide for semantic engineers.
+:sectanchors:
+:url-repo: https://github.com/SEMICeu/style-guide
+
+
+:toc:
+:toclevels: 4
+:sectnums:
+:sectnums: 4
+:icons: font
+
+
+include::introduction.adoc[]
+include::requirements.adoc[]
+include::architecture.adoc[]
+include::guidelines-conceptual-uml.adoc[]
+include::guidelined-semantic-rdf.adoc[]
+
+include::references.adoc[]
+
