@@ -1,11 +1,11 @@
 site:
-  title: GitHub usage methodology
-  start_page: ROOT::index.adoc
+  title: SEMIC
+  start_page: semic-style-guide::index.adoc
 content:
   sources:
-#    - url: https://github.com/SEMICeu/style-guide
-    - url: .
-      branches: 
+#    - url: .
+    - url: https://github.com/SEMICeu/style-guide
+      branches:
       - main
       start_path: docs
 ui:

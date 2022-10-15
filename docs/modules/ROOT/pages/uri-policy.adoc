@@ -1,0 +1,293 @@
+[[sec:uri-policy]]
+== URI policy
+
+The report on high value datasets from EU institutions mentions
+eProcurement data as being of special importance and high value. It also
+provides guidelines and recommendations for publishing government data
+approached both from the publisher’s point of view, and the reuser’s
+point of view.
+
+eProcurement ontology must be published in multiple formats, including
+RDF. This entails the assignment of identifiers to each term and, to be
+useful in the kind of linked data applications envisaged, those
+identifiers should be HTTP URIs and commit long term URI persistence.
+
+[[sec:considerations]]
+=== General considerations and recommendations
+
+There is a five-star rating to measure published data reusability. This
+rating system is based on four design principles proposed in , to which
+eProcurement ontology subscribes.
+
+* Use Uniform Resource Identifiers (URIs) to uniquely identify things
+(data entities);
+* Use HTTP URLs, corresponding to these URIs, so that information can be
+retrieved;
+* Provide metadata using open standards such as RDF;
+* Include links to related URIs, so that people can discover more
+things.
+
+Moreover the eProcurement URI scheme must subscribe to the ``Cool URIs''
+recommendations and ensure that they don’t change .
+
+* _Simplicity_. Short, mnemonic URIs will not break as easily when sent
+in emails and are in general easier to remember.
+* _Stability_. Once you set up a URI to identify a certain resource, it
+should remain this way as long as possible.
+* _Manageability_. Issue your URIs in a way that you can manage.
+
+The ISAlatexmath:[$^2$] study on persistent URIs provides a set of
+design and management principles. They are completed by a more recent
+study on URI design patterns , in the context of promoting semantic
+interoperability, identified good design practices for the local part of
+URIs under the http://data.europa.eu domain (see Section
+#sec:persistence[3.2]).
+
+* _Use a template_. Pre-defined approach to URI design, using for
+example URI templates, can help organisations follow a logical structure
+.
+* _Avoid stating ownership_. The URI template above does not include the
+name of the organisation or project that minted the URI .
+* _Avoid version numbers_. URIs should remain stable between versions
+and new ones minted for new terms .
+* _Re-use existing identifiers_. Where resources are already uniquely
+identified, those identifiers should be incorporated into the URI .
+* _Avoid using auto-increment_. Minting new URIs for large datasets will
+need to be automated and the process must be guaranteed to produce
+unique identifiers, but not sequentially allocated .
+* _Avoid query strings_. Query strings (e.g. `?param=value`) are usually
+used in URLs as keys to look up terms in a database. But these
+constructs should not be used in the URIs but left for particular
+implement .
+* _Avoid using file extensions_. For similar reasons as above .
+* _Mix meaningful and opaque strings_. Meaningful URIs should be avoided
+in the URI segments which carry a risk of renaming (see Section
+#sec:persistence[3.2]) for any foreseeable reason .
+* _Employ URI sub-divisions_. When necessary, create subdivisions in the
+URI pattern following a logical pattern and keeping the namespace
+maintainable. However, this practice must be kept to minimum if at all
+employed .
+
+[[sec:persistence]]
+=== Persistence
+
+In 2014, the ISA Programme supported an informal Task Force working on a
+common policy for the management of persistent, HTTP-based URIs of EU
+institutions comparable to the virtues of DOI identification scheme . A
+Persistent URI Service on the http://data.europa.eu sub-domain was
+established that is responsible for the registration and management of
+persistent URI namespaces and the forwarding of HTTP requests (URI
+redirection) towards the Publications Office local register for the
+eProcurement ontology (see Section #sec:uri-scheme[3.3]).
+
+The Publications Office was allocated URI namespaces for usage in the
+context of eProcurement ontology. Section #sec:uri-scheme[3.3] provides
+the specifications on the URI structure and the local part organisation.
+
+Regarding URI design, the main consideration of creators should be that
+when a URI is created, all its parts should be resistant to change. For
+instance, locations and organisation names can change, and therefore
+should not be used in URIs. First and foremost, when introducing
+semantics in URIs, the strings used need to reflect what the resources
+are (i.e. intrinsic characteristics such as the type or nature), not who
+owns them or where they are .
+
+When creating a URI, its owner can never be certain of who will be using
+it and can therefore not notify every concerned individual of future
+changes. It is therefore paramount that URIs are designed carefully with
+the specific goal of making them persistent, in theory forever .
+Persistence is a vital component of URI design. Since the local part of
+a URI is under the control of the institution that owns it (in this case
+Publications Office), it is up to the owners to ensure that the way they
+design local IDs enables the persistence of the URI as a whole.
+
+It is recommended to identify all eProcurement resources with URIs which
+have opaque local identifiers. However, in the case of TBox resources,
+such as the ontology and the data shapes, mnemonic local segments may be
+used.
+
+[[sec:uri-scheme]]
+=== URI scheme
+
+The URIs are best maintained using a predefined set of patterns and
+templates. This section defines the URI templates all together forming a
+URI scheme.
+
+A simple syntax is adopted to express the scheme templates in terms of
+URI path patterns. A path pattern comprises a sequence of delimited
+segments, such as `segment1/segment2/segment3`. Each advancement by a
+segment leads to creation of a new hierarchically positioned namespace.
+
+The segment denomination can be literal or variable. The literal segment
+means that the value provided is constant and must appear as such in the
+indicated position. The variable segments are marked by curly brackets (
+\{ } ) and represent the name of the slot which must be filled with a
+concrete value when a new URI is minted in the implementation process.
+For example, the pattern `segment/{varSegment}` can be instantiated as
+`segment/123`.
+
+It is possible to indicate that a path sub-sequence is optional by
+wrapping it in square brackets ( [ ] ). For example
+`segment/[{varSubSegment}/]``varSubSubSegment` pattern can be
+instantiated either as `segment/abc/123` or `segment/123`.
+
+This section defines templates for two dedicated PURI namespaces
+corresponding roughly to TBox–ABox distinction in the ontology structure
+or the model–data delimitation, which is explained in Section
+#sec:model-data[2.1]. The first namespace, _baseVoc_, is dedicated to
+the ontology, vocabulary and modelling artefacts; while the second,
+_baseData_ is foreseen to accommodate the large volume of instance data.
+
+The instance datasets are generated by a range of institutions.
+Therefore, each agent should be delegated minting URIs in a controlled
+and conflict free manner. One way to do that is allocate dedicated base
+PURI spaces.
+
+[[tab:baseUris]]
+.Base PURIs employed by the eProcurement ontology
+[cols="<,<,<",options="header",]
+|===
+|Scope |Reference |URI pattern
+|Base URI for vocabularies |baseVoc |
+|Base URI for data |baseData |
+|===
+
+For the purpose of eProcurement ontology eight scopes have been
+identified and each is ascribed a path segment in order to form a
+separate namespace. They are as follows: ontology (), controlled list
+(), data shapes (), reasoning restrictions () and XML schemas (),
+instance data (), metadata descriptions (), and data services ().
+
+==== Ontology core
+
+The ontology documents and content should be situated under path
+segment. Three patterns are of relevance here: to refer to the root of
+the ontology content space, provided as `xml:base` / `xmlns`; (b) to
+refer to the document of the ontology or fragment/module, the subject of
+the ontology header; and (c) one to refer to the each resource defined
+within the ontology, such as classes, properties and special
+individuals. Table #tab:ontology-patterns[3] defines the patterns.
+
+[[tab:ontology-patterns]]
+.URI patterns for the ontology namespace
+[cols="<,<",options="header",]
+|===
+|Purpose |Pattern
+|Root reference |
+|Document reference |
+|Resources ref. |
+|===
+
+==== Controlled list
+
+The controlled list should replicate the current approach taken by
+Publications Office for reference data as described in Table
+#tab:reference-patterns[4]. Optionally the controlled lists may be
+managed entirely by the Standardisation and Metadata Unit, including
+publishing them in the established namespace for reference data
+`http://publications.europa.eu/resource/authority`.
+
+[[tab:reference-patterns]]
+.URI patterns for the reference data namespace
+[cols="<,<",options="header",]
+|===
+|Purpose |Pattern
+|Root reference |
+|Document reference |
+|Concept scheme |
+|Concepts |
+|===
+
+In order to keep maintainability of PURIs high and fence off from the
+risk of agencies clashing to maintain a common PURI, new base namespaces
+can be requested from the PURI committee. This risk is particularly high
+for controlled lists and should carefully considered at the conception.
+
+==== Data shapes
+
+The data shape files should be situated in the space. The data shapes
+are extending the core ontology and are intrinsically bound to it.
+Therefore, the ontology name must be used in the content root. Table
+#tab:shape-patterns[5] defines the patterns.
+
+[[tab:shape-patterns]]
+.URI patterns for the data shape namespace
+[cols="<,<",options="header",]
+|===
+|Purpose |Pattern
+|Root reference |
+|Document reference |
+|Shape resources |
+|===
+
+==== Ontology restrictions
+
+The restrictions are in fact part of the ontology definition, simply
+corresponding to the more complex part of it. Therefore, the
+restrictions belong in the same namespace as the ontology. The document
+reference, however, can be distinguished and placed in the namespace,
+where, eventually SWRL and other types of reasoning related artefacts
+may be placed. Table #tab:restriction-patterns[6] reflects these
+patterns.
+
+[[tab:restriction-patterns]]
+.URI patterns for the restrictions namespace
+[cols="<,<",options="header",]
+|===
+|Purpose |Pattern
+|Root reference |
+|Document reference |
+|Resources |
+|===
+
+==== XML schema
+
+In eProcurement domain, usage of XML data is a de facto approach at the
+moment. In order to support current practices and help establishing a
+technological change, a space for managing XML schemas id designed
+within the same PURI space. Schemas namespaces can be minted using
+pattern.
+
+==== Instance data
+
+The concrete eProcurement data instantiating the ePRocurement and
+related ontologies must be minted in the namespace. The data files are
+best conceptualised as datasets, bulks or fragments. Therefore, it is
+foreseen the possibility to organise a dataset as a set of fragments as
+described in the VOID specification . Table
+#tab:data-patterns[[tab:data-patterns]] reflects these patterns.
+
+==== Metadata
+
+Data catalogues and work descriptions should be organised and well
+described using the established standards such as DCAT , VOID , Dublin
+Core or other representations such as FRBR and the CDM . The metadata
+resources must be minted in the must be minted in the namespace
+following the patterns provided in Table #tab:metadata-patterns[7].
+
+[[tab:metadata-patterns]]
+.URI patterns for the metadata resources namespace
+[cols="<,<",options="header",]
+|===
+|Purpose |Pattern
+|Dataset |
+|Resources |
+|===
+
+==== Services
+
+It is very important to provide endpoints where the data are accessible.
+These endpoints can be identified through URIs as well combined with a
+303 HTTP redirection to resolve the URI to the current URL where the
+service is accessible. Service URIs should be minted in the namespace as
+described in Table #tab:service-patterns[8].
+
+[[tab:service-patterns]]
+.URI patterns for the namespace of the services
+[cols="<,<",options="header",]
+|===
+|Purpose |Pattern
+|Sparql |
+|Catalogue |
+|===
+

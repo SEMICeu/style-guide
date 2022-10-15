@@ -1,14 +1,43 @@
-= SEMIC style guide
+= The SEMIC style guide for semantic engineers
 :description: The SEMIC style guide for semantic engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
-
-
 :toc:
 :toclevels: 4
 :sectnums:
 :sectnums: 4
 :icons: font
+
+[IMPORTANT]
+.Editorial notes
+====
+* Rough sections have been copied from
+** https://github.com/OP-TED/model2owl/tree/master/doc/ontology-architecture[ePO Architecture]
+** https://github.com/SEMICeu/Draft_guidelines_2020/tree/master/asciidoc/docs[SEMIC styleguide (by Everis)]
+** https://github.com/OP-TED/model2owl/tree/master/doc/uml-conventions[ePO UML conventions]
+
+* Writing requirements are roughly organsied in https://pwceur.sharepoint.com/:w:/r/sites/be-adv-ovajkrudgsc8gy87cbtq/_layouts/15/Doc.aspx?sourcedoc=%7BB98BD865-4EEC-4056-954D-5F91EF0D95BB%7D&file=Co-creation%20document%20Style%20Guide.docx&action=default&mobileredirect=true&cid=843fd3de-e6bf-4b59-9a56-b790e185e3c7[Co-Creation document style guide]
+====
+
+[IMPORTANT]
+.TO be DONE
+====
+* Guidelines
+** Systematise guidelines (SEMIC, ePO, not OSLO as it is in Dutch not English)
+** Align guidelines
+** Reduce text
+** Unify style
+
+* Architecture
+** Edit and adapt to SEMIC context
+** design and integrate representative diagrams
+** revise into a coherent story
+
+* Introduction
+** Edit target audience
+** Edit scope (IN /  OUT)
+
+====
 
 
 include::introduction.adoc[]
@@ -16,6 +45,7 @@ include::requirements.adoc[]
 include::architecture.adoc[]
 include::guidelines-conceptual-uml.adoc[]
 include::guidelined-semantic-rdf.adoc[]
-
+include::uri-policy.adoc[]
+include::formal-considerations.adoc[]
 include::references.adoc[]
 

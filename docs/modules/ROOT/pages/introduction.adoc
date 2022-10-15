@@ -1,11 +1,11 @@
 [[sec:introduction]]
-= Introduction
+== Introduction
 
 [[sec:background]]
-== Background considerations
+=== Background considerations
 
 [[sec:audience]]
-== Target audience
+=== Target audience
 This document written for the Semantic Engineers, Data Architects and Knowledge Modellers involved in the definition, design, coordination, and delivery of the SEMIC standards and the application profiles themselves.
 // A large number of these recommended guidelines have been collected in order to make naming, styling, and lay-out as consistent as possible.
 
@@ -14,7 +14,7 @@ This document written for the Semantic Engineers, Data Architects and Knowledge 
 // Finally to mention, policymakers as well as public administration officers at various governmental levels that need to build on the standards by further extending or refining the existing SEMIC ones can significantly benefit from this document.
 
 [[sec:scope]]
-== Context and scope
+=== Context and scope
 
 NOTE: Think what is in scope and provide bulet points here
 
@@ -32,7 +32,7 @@ There is a number of aspects that are excluded from the scope of this document:
 * guidelines for practical system implementations
 
 [[sec:conformace]]
-== Conformance
+=== Conformance
 
 This document describes normative and non-normative criteria for Core Vocabularies
 components and artefacts. The toolchain scripts, datasets, and the derived formal
@@ -56,25 +56,25 @@ available in at least Turtle and RDF/XML serialisation formats.
 The data shapes component must be valid SHACL documents respecting the
 normative parts of the specification provided in <<SHACL>>.
 
-== Benefits
+=== Benefits
 
 NOTE: content in this section may be overlapping with content elsewhere
 
 This deliverable establishes guidelines for drafting Core Vocabularies and Application Profiles. It has been considered that defining and aligning common guidelines is beneficial for – at least – the following reasons:
 
-=== Branding
+==== Branding
 
 SEMIC aims to present these standards as one large group under a single brand. Such branding will only work when all standards use the same modelling approach, follow the same naming conventions, notations, guidelines and rules, and are published with identical documentation output.
 
-=== Ownership and governance.
+==== Ownership and governance.
 
 In the future, SEMIC will make sure it has ownership over the vocabularies and can therefore govern them in a timely manner aligned with stakeholders' needs. This is intended to lead to a policy with less dependence on external vocabularies and external organisations. For this reason, own namespace(s) will be claimed, and the core concepts and relationships needed will be defined using these own namespace(s).
 
-=== Pragmatism and ease of use
+==== Pragmatism and ease of use
 
 Previous versions of these standards were only oriented to the Semantic Web and Linked Open Data. However, these technologies are not yet universally understood nor used and are considered to be too difficult. Hence, having unified guidelines and good practice advice is essential for keeping the Core Vocabularies pragmatic and straightforward. Besides, the majority of users use established data formats such as XML and JSON. As far as these contexts are concerned, the present guidelines also include XML Schema and detailed guidelines on how to use and implement these in alignment with the semantic web-oriented assets (including JSON Schema guidelines for the future as soon as they will come to a stable version).
 
-=== Broad applicability
+==== Broad applicability
 
 These standards should have general applicability. Accordingly, the Core Vocabularies aim is to define simplified, reusable, and extensible data models that capture only the fundamental characteristics in a context-neutral manner.
 This will lead to:
