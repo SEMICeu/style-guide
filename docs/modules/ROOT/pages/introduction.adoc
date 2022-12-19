@@ -1,84 +1,52 @@
 [[sec:introduction]]
 == Introduction
 
-[[sec:background]]
-=== Background considerations
+[[sec:context]]
+=== Context
+This document defines the style guide to be applied to the SEMIC’s semantic data specifications, notably to the eGovernment Core Vocabularies and Application Profiles. It provides rules on naming conventions, syntax, artefact management and organisation. It is meant to be complemented with technical artefacts and implementations that enable automatic conformance checking and transformation of conceptual models into formal semantic representations.
+The content of these guides is part of the action to promote semantic interoperability amongst the EU Member States, with the objective of fostering the use of standards by, for example, offering guidelines and expert advice on semantic interoperability for public administrations.
 
-[[sec:audience]]
+[[sec:target-audience]]
 === Target audience
-This document written for the Semantic Engineers, Data Architects and Knowledge Modellers involved in the definition, design, coordination, and delivery of the SEMIC standards and the application profiles themselves.
-// A large number of these recommended guidelines have been collected in order to make naming, styling, and lay-out as consistent as possible.
-
-// Additional to the developers, the second targeted audience is the users of these standards and application profiles. They, being supported by the Style Guides, should be able to read, understand, and implement the proposed data models.
-
-// Finally to mention, policymakers as well as public administration officers at various governmental levels that need to build on the standards by further extending or refining the existing SEMIC ones can significantly benefit from this document.
+This style guide is intended primarily for semantic engineers, data architects and knowledge modelling specialists who are acting as editors or reusers of Core Vocabularies and Application Profiles.
+This style guide may constitute a good source of information and explanations for the European Commission’s officers, collaborating consultants, and stakeholders involved in interinstitutional standardisation.
 
 [[sec:scope]]
-=== Context and scope
+=== Scope
 
-NOTE: Think what is in scope and provide bulet points here
+The main purpose of this style guide is to provide guidance and decision-making support for the creators, maintainers and publishers of the Core Vocabularies and Application Profiles. The main part of this document is organised as a series of self-contained rules and guidelines.  +
+In the scope of this document addresses:
 
-This document provides a general architectural specification and details a set of guidelines and principles that shall be taken into consideration when developing Core Vocabularies.
+* a terminological clarification for the significant SEMIC terms (including “reuse”, “ontology”, “Core Vocabulary”, etc.);
+* an architecture overview, which inter-connects various aspects and data specification types and how they are derived from a single conceptual model;
+* the concept of “reuse” in great detail and pinpoints exactly what is permitted and what is not permitted in the SEMIC context;
+* recommendations on organising the conceptual model, the semantic artefacts, and the data shapes;
+* some recommendations on the specification development methodology and some publication conventions.
+
+It is considered out of the scope of this document to provide:
+
+* a complete and specific modelling methodology,
+* a procedure for maintenance and publication,
+* governance (roles, processes, responsibilities, etc.), lifecycle and release management methodology (including the initiation and change requests),
+* any specific implementation instructions,
+* indications as to what set of tools shall be adopted,
+* specifications related to data serialisation, formats or any syntax mapping methods (including syntax binding instructions to for example XSD/XML; or JSON-LD contexts),
+* usage instructions for the end users.
+
+This style guide is recommended to be used in combination with complementary documents, among which we consider relevant, but not limited to, the following ones:
+
+* the  user manual of a transformation tool from UML into other representations explaining what transformation rules are supported (i.e. implemented by the tool),
+* the documentation (manuals, handbooks, specifications) of the reused data specifications,
+* the governance and methodology documentation of the organisation developing the new semantic data specification,
+the adopted URI policy documentation, which can be inter-institutional policy or organisation specific one <<refRulesPersistentURIs>>.
+
+[[how-to-read]]
+=== How to read this document
+
+This document is organised in two parts. The first part provides a brief context description and scope and offers an architectural overview. It introduces important terminological clarifications, the benefits of adopting the separation of concerns principle, and explanations of how it is played out in the SEMIC context. +
+The second part of the document provides a series of guidelines, conventions and assumption specifications. These guidelines are organised according to the aspects they cover. A guideline is a stand-alone description containing an indicative statement and a detailed description providing the rationale, benefits and limitations, implications and practical requirements, and eventually examples.
+Users who may choose to bypass introductory details may decide to proceed with reading the general guidelines [xref] and the ones on the conceptual model [xref UML guidelines] first.
 
 
-NOTE: Think what is NOT in scope and provide bulet points here
-
-There is a number of aspects that are excluded from the scope of this document:
-
-* general explanations of what Core Vocabularies are or how to use them;
-* broad context explanations how Core Vocabularies contribute to the Legal or Organisational Interoperability;
-* benefits of using semantic artefacts
-* artefact governance, change management or maintenance methodology
-* guidelines for practical system implementations
-
-[[sec:conformace]]
-=== Conformance
-
-This document describes normative and non-normative criteria for Core Vocabularies
-components and artefacts. The toolchain scripts, datasets, and the derived formal
-ontology and data shapes, must align to the normative criteria and may follow the
-non-normative descriptions.
-
-The source code must be syntactically valid and compilable/interpretable by the
-corresponding state of the art compiler/interpreter. The source code may be
-accompanied by the unit tests to ensure the implementation correctness.
-
-The UML conceptual model must comply with UML standard version 2.5 [[UML]] and
-be serialised as XMI document version 2.5.1 [[XMI]]. It also must comply with the
-conventions agreed with the Publications Office and other stakeholders
-described in the UML Conventions specifications.
-
-The core ontology and the formal restrictions components developed under these
-specifications must be valid OWL 2 documents in conformance with the conditions
-listed in #sec:architecture-layers[[sec:architecture-layers]]. They should be
-available in at least Turtle and RDF/XML serialisation formats.
-
-The data shapes component must be valid SHACL documents respecting the
-normative parts of the specification provided in <<SHACL>>.
-
-=== Benefits
-
-NOTE: content in this section may be overlapping with content elsewhere
-
-This deliverable establishes guidelines for drafting Core Vocabularies and Application Profiles. It has been considered that defining and aligning common guidelines is beneficial for – at least – the following reasons:
-
-==== Branding
-
-SEMIC aims to present these standards as one large group under a single brand. Such branding will only work when all standards use the same modelling approach, follow the same naming conventions, notations, guidelines and rules, and are published with identical documentation output.
-
-==== Ownership and governance.
-
-In the future, SEMIC will make sure it has ownership over the vocabularies and can therefore govern them in a timely manner aligned with stakeholders' needs. This is intended to lead to a policy with less dependence on external vocabularies and external organisations. For this reason, own namespace(s) will be claimed, and the core concepts and relationships needed will be defined using these own namespace(s).
-
-==== Pragmatism and ease of use
-
-Previous versions of these standards were only oriented to the Semantic Web and Linked Open Data. However, these technologies are not yet universally understood nor used and are considered to be too difficult. Hence, having unified guidelines and good practice advice is essential for keeping the Core Vocabularies pragmatic and straightforward. Besides, the majority of users use established data formats such as XML and JSON. As far as these contexts are concerned, the present guidelines also include XML Schema and detailed guidelines on how to use and implement these in alignment with the semantic web-oriented assets (including JSON Schema guidelines for the future as soon as they will come to a stable version).
-
-==== Broad applicability
-
-These standards should have general applicability. Accordingly, the Core Vocabularies aim is to define simplified, reusable, and extensible data models that capture only the fundamental characteristics in a context-neutral manner.
-This will lead to:
-
-- minimal ontological commitment, meaning that semantics which would lead to inferences/deductions that could limit reuse while being too specific, will not be added;
-
-- limited constraints; constraints are better defined at the application level layer.
+== References
+1. [[refRulesPersistentURIs]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
