@@ -1,0 +1,78 @@
+[[sec:terminological-clarifications]]
+== Terminological clarifications
+
+[[sec:what-is-a-conceptual-model]]
+=== What is a conceptual model (specification)?
+
+*Definition* +
+
+A conceptual model is an abstract representation of a system <<ref1>> and comprises well-defined concepts, qualities or attributes,
+and relationships to other concepts.  +
+
+*Description* +
+
+We assume that the conceptual model is expressed in UML and depicted with UML class diagrams. +
+A conceptual model is a representation of a system that uses concepts to form said representation. A concept can be viewed
+as an idea or notion, a unit of thought <<ePO17>>. However, what constitutes a unit of thought is subjective, and this definition
+is meant to be suggestive rather than restrictive. That is why each concept needs to be well named by providing preferred and
+alternative labels and should have a clear and precise definition supported by examples and explanatory notes. The conceptual
+model comprises representations of concepts, their qualities or attributes and relationships to other concepts. Most commonly,
+these are association and generalisation relations.  +
+
+The conceptual model is represented in UML <<ePO8>> and serves as the single source of truth [xref rule below on single source of truth].
+The scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements.
+Each of the above concerns will lead to different interpretations of the same UML model [xref rule on UML interpretations]. The motivation
+behind the choice for a graphical language, i.e. UML, for the master representation of the conceptual model, is also driven by the fact that
+interactions and discussions within a Working Group for a data specification are often driven by a graphical representation. Therefore,
+naturally, editors first create the graphical representation of the proposed resolution.
+
+With UML as the starting and ultimate source of truth, the update process is easier to perform as it only has to be done in a single place.
+The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy
+[xref transformation section below].
+
+[[sec:what-is-an-ontology]]
+=== What is an ontology (specification)?
+
+*Definition* +
+
+An ontology is a description (like a formal specification) of the concepts and relationships that can formally exist for an agent
+or a community of agents (e.g. domain experts) for a given domain of discourse. <<Gruber2001>> +
+An ontology encompasses a representation, formal naming, and definition of the categories, properties, and relations between
+the concepts, data, and entities that substantiate one, many, or all domains of discourse <<wikipedia-ontology>>. +
+
+*Description* +
+
+The ontology constitutes the formal (machine-readable) definition of concepts. Although the languages for expressing ontologies
+could be very expressive, we want to keep it very light and simple, from the formal point of view [xref semantics rule/language choice],
+with minimal detail and level of expressivity [xref rule limited expressivity]. In the SEMIC context, we only consider lightweight
+ontologies [xref rule limited expressivity]. Therefore sometimes this aspect will be emphasised as “lightweight ontology”, but often,
+it will be implicitly referred to simply as “ontology”.  +
+We assume that the ontology is expressed in OWL 2 language [xref rule language choice].
+The main purpose of this component is to declare the classes, properties, datatypes and controlled lists. Each construct is established
+by assigning a URI and decorating it with human-readable labels and descriptions. This represents a mechanism that establishes a common
+understanding between humans and machines.
+
+[[sec:what-is-a-data-shape-contraint]]
+=== What is a data shape constraint (specification)?
+
+*Definition* +
+
+A data shape constraint specification provides a set of conditions on top of an ontology, limiting how the ontology can be instantiated.  +
+
+*Description* +
+
+The conditions and constraints that apply to a given ontology are provided as shapes and other constructs expressed in the form of an RDF graph.
+We assume that the data shapes are expressed in SHACL language.
+
+This document will refer to data shape constraint specifications as “data shapes” or “data shape specifications”.
+
+
+
+
+== References
+1. [[ref1]] A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.
+2. [[ePO8]]
+3. [[ePO17]]
+4. [[Gruber2001]] Gruber, T. (2001). "What is an Ontology?". Stanford University. Archived from the original on 2010-07-16. Retrieved 2009-11-09.
+5. [[wikipedia-ontology]] https://en.wikipedia.org/wiki/Ontology
+6. [[]]

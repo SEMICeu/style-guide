@@ -40,7 +40,7 @@ This style guide is recommended to be used in combination with complementary doc
 * the governance and methodology documentation of the organisation developing the new semantic data specification,
 the adopted URI policy documentation, which can be inter-institutional policy or organisation specific one <<refRulesPersistentURIs>>.
 
-[[how-to-read]]
+[[sec:how-to-read]]
 === How to read this document
 
 This document is organised in two parts. The first part provides a brief context description and scope and offers an architectural overview. It introduces important terminological clarifications, the benefits of adopting the separation of concerns principle, and explanations of how it is played out in the SEMIC context. +
