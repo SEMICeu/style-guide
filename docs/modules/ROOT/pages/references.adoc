@@ -1,0 +1,2 @@
+== References
+1. [[refRulesPersistentURIs]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris

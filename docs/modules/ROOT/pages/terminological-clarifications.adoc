@@ -66,6 +66,7 @@ We assume that the data shapes are expressed in SHACL language.
 
 This document will refer to data shape constraint specifications as “data shapes” or “data shape specifications”.
 
+[[sec:what-is-a-specification-document]]
 
 
 
