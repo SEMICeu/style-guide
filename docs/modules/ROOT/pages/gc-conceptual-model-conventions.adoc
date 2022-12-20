@@ -1,0 +1,79 @@
+[[sec:cmc-r1]]
+=== Rule: UML as a single source of truth
+
+*Statement*
+
+_The UML conceptual model should be used as the single source of truth._
+
+*Description*
+
+By applying this principle, we can achieve consistency among all derived artefacts.
+
+This implies:
+
+* Standard representation of the UML such as XMI or EAP database
+* Existence of a well-defined set of rules and conventions to transform UML model into other artefacts, which can be executed, as much as possible automatically, by a dedicated software tool or toolchain [see rule about fixed interpretation]
+
+It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used.
+
+[ePO UML conventions, sec 4.1]
+
+[[sec:cmc-r2]]
+=== Rule: Fixed UML interpretation
+
+
+[[sec:cmc-r3]]
+=== Rule: On element names and URIs
+
+
+[[sec:cmc-r4]]
+=== Rule: Case sensitivity and charset
+
+
+[[sec:cmc-r5]]
+=== Rule: Namespaces and prefixes in element names
+
+
+[[sec:cmc-r6]]
+=== Rule: Rich annotations through tags
+
+
+[[sec:cmc-r7]]
+=== Rule: Explicit depiction of external dependencies
+
+
+[[sec:cmc-r8]]
+=== Rule: Class inheritance
+
+
+[[sec:cmc-r9]]
+=== Rule: Abstract classes
+
+
+[[sec:cmc-r10]]
+=== Rule: Attribute specifications
+
+
+[[sec:cmc-r11]]
+=== Rule: Multiplicity of attributes and connectors
+
+
+[[sec:cmc-r12]]
+=== Rule: Connector specification
+
+
+[[sec:cmc-r13]]
+=== Rule: All elements are "public"
+
+
+[[sec:cmc-r14]]
+=== Rule: Controlled lists as enumerations
+
+
+[[sec:cmc-r15]]
+=== Rule: Partition the model into packages
+
+
+[[sec:cmc-r16]]
+=== Rule: Diagram readability
+

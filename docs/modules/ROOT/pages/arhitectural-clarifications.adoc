@@ -1,0 +1,23 @@
+[[sec:separation-of-concerns-and-transformation]]
+=== Separation of concerns and transformation
+
+
+[[sec:separation-of-concerns-in-SEMIC]]
+=== Separation of concerns in SEMIC
+
+
+[[sec:transformation]]
+=== Transformation
+
+
+[[sec:on-data-specification-and-artefact-types]]
+=== On data specification and artefact type
+
+
+
+[[sec:artefact-types]]
+==== Artefact types
+
+
+[[sec:data-specification-types]]
+==== Data specification types

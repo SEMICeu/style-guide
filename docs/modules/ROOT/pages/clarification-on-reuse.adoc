@@ -1,0 +1,28 @@
+
+
+[[sec:what-is-the-reuse-of-a-specification]]
+=== What is the reuse of an (ontology or data shape) specification?
+
+
+[[sec:reuse-of-a-class-as-is]]
+=== Reuse of a class as-is
+
+
+[[sec:reuse-of-a-class-with-terminological-adaptations]]
+=== Reuse of a class with terminological adaptations
+
+
+[[sec:reuse-of-a-class-with-semantic-adaptations]]
+=== Reuse of a class with semantic adaptations
+
+
+[[sec:reuse-of-a-property-as-is]]
+=== Reuse of a property as-is
+
+
+[[sec:reuse-of-a-property-with-terminological-adaptations]]
+=== Reuse of a property with terminological adaptations
+
+
+[[sec:reuse-of-a-property-with-semantic-adaptations]]
+=== Reuse of a property with semantic adaptations

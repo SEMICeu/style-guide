@@ -1,0 +1,22 @@
+[[sec:pc-r1]]
+=== Rule: 5-star Linked Open Data
+
+
+[[sec:pc-r2]]
+=== Rule: Persistent URI policy
+
+
+[[sec:pc-r3]]
+=== Rule: Version management
+
+
+[[sec:pc-r4]]
+=== Rule: Artefact versioning
+
+
+[[sec:pc-r5]]
+=== Rule: URI dereferencing
+
+
+[[sec:pc-r6]]
+=== Rule: Human-readable form

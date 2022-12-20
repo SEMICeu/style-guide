@@ -1,0 +1,19 @@
+[[sec:gc-r1]]
+=== Rule: Reuse existing concepts as much as possible
+
+
+[[sec:gc-r2]]
+=== Rule: For reuse, prefer maintained vocabularies
+
+
+[[sec:gc-r3]]
+=== Rule: Concept reference and terms
+
+
+[[sec:gc-r4]]
+=== Rule: Terminology style
+
+
+[[sec:gc-r5]]
+=== Rule: Vocabulary definition styling
+

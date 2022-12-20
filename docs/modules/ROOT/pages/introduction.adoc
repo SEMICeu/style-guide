@@ -1,5 +1,5 @@
-[[sec:introduction]]
-== Introduction
+//[[sec:introduction]]
+//== Introduction
 
 [[sec:context]]
 === Context
@@ -25,7 +25,8 @@ consultants, and stakeholders involved in interinstitutional standardisation.
 
 The main purpose of this style guide is to provide guidance and decision-making support for the creators, maintainers and publishers
 of the Core Vocabularies and Application Profiles. The main part of this document is organised as a series of self-contained rules and
-guidelines.  +
+guidelines.
+
 In the scope of this document addresses:
 
 * a terminological clarification for the significant SEMIC terms (including “reuse”, “ontology”, “Core Vocabulary”, etc.);
@@ -54,7 +55,8 @@ limited to, the following ones:
 (i.e. implemented by the tool),
 * the documentation (manuals, handbooks, specifications) of the reused data specifications,
 * the governance and methodology documentation of the organisation developing the new semantic data specification,
-the adopted URI policy documentation, which can be inter-institutional policy or organisation specific one <<refRulesPersistentURIs>>.
+the adopted URI policy documentation, which can be inter-institutional policy or organisation specific one
+[xref:references.adoc#1[1]].
 
 [[sec:how-to-read]]
 === How to read this document
@@ -69,7 +71,3 @@ detailed description providing the rationale, benefits and limitations, implicat
 
 Users who may choose to bypass introductory details may decide to proceed with reading the
 xref:gc-general-conventions.adoc[general guidelines] and the ones on the xref:gc-conceptual-model-conventions.adoc[conceptual model] first.
-
-
-== References
-1. [[refRulesPersistentURIs]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris

@@ -1,2 +1,9 @@
 == References
-1. [[refRulesPersistentURIs]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
+
+. [[1]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
+. [[ref:2]] A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.
+. [[ref:3]] ePO17
+. [[ref:4]] ePO8
+. [[ref:5]] Gruber, T. (2001). "What is an Ontology?". Stanford University. Archived from the original on 2010-07-16. Retrieved 2009-11-09.
+. [[ref:6]] https://en.wikipedia.org/wiki/Ontology
+. [[]]
