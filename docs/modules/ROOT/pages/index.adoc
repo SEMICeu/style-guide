@@ -10,6 +10,7 @@
 
 include::introduction.adoc[]
 include::terminological-clarifications.adoc[]
+include::arhitectural-clarifications.adoc[]
 include::rule-template.adoc[]
 include::references.adoc[]
 
