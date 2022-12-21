@@ -11,7 +11,7 @@
 
 Each rule should be stated in a simple sentence.
 
-a| {set:cellbgcolor: none}
+|{set:cellbgcolor: #f5f8fc}
 *Description:*
 
 Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful,
@@ -35,7 +35,7 @@ Or it can be optionally answering questions such as:
 
 The description should be 1-2 paragraphs at most.
 
-|{set:cellbgcolor: grey}
+|{set:cellbgcolor: #f5f8fc}
 *Examples:*
 
 Optionally, a rule may have some examples of where it applies and how it is manifested.
