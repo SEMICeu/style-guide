@@ -1,9 +1,8 @@
 [[sec:rule-template]]
 == Rule template
 
-:table-stripes: all
 
-[grid=none]
+[.stripes-all, grid=none]
 |===
 
 |*Title:* Short reference to the rule
@@ -35,7 +34,7 @@ Or it can be optionally answering questions such as:
 
 The description should be 1-2 paragraphs at most.
 
-m|*Examples:*
+|*Examples:*
 
 Optionally, a rule may have some examples of where it applies and how it is manifested.
 |===
