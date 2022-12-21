@@ -1,4 +1,4 @@
-
+== Clarifications on "reuse"
 
 [[sec:what-is-the-reuse-of-a-specification]]
 === What is the reuse of an (ontology or data shape) specification?

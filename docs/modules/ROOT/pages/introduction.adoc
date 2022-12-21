@@ -1,5 +1,4 @@
-//[[sec:introduction]]
-//== Introduction
+== Introduction
 
 [[sec:context]]
 === Context

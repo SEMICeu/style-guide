@@ -1,3 +1,5 @@
+== Arhitectural clarifications
+
 [[sec:separation-of-concerns-and-transformation]]
 === Separation of concerns and transformation
 

@@ -1,3 +1,5 @@
+== General conventions
+
 [[sec:gc-r1]]
 === Rule: Reuse existing concepts as much as possible
 

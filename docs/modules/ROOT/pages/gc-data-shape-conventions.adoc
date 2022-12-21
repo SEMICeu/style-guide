@@ -1,3 +1,5 @@
+== Data shape conventions
+
 [[sec:dsc-r1]]
 === Rule: Data shape language choice
 

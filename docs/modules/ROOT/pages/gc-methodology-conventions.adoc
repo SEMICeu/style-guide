@@ -1,3 +1,5 @@
+== Methodology conventions
+
 [[sec:mc-r1]]
 === Rule: Follow a methodology
 

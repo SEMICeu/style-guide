@@ -1,3 +1,5 @@
+== Publication conventions
+
 [[sec:pc-r1]]
 === Rule: 5-star Linked Open Data
 
