@@ -6,13 +6,12 @@
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Short reference to the rule
 
-|{set:cellbgcolor: #e3eeff}
+|{set:cellbgcolor: #f5f8fc}
 *Statement:*
 
 Each rule should be stated in a simple sentence.
 
-|{set:cellbgcolor: #f5f8fc}
-*Description:*
+a|*Description:*
 
 Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful,
 and what is its scope.
@@ -35,7 +34,7 @@ Or it can be optionally answering questions such as:
 
 The description should be 1-2 paragraphs at most.
 
-|{set:cellbgcolor: #f5f8fc}
+|{set:cellbgcolor: #e3eeff}
 *Examples:*
 
 Optionally, a rule may have some examples of where it applies and how it is manifested.
