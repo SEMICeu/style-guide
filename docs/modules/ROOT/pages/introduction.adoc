@@ -22,7 +22,6 @@ consultants, and stakeholders involved in interinstitutional standardisation.
 
 [[sec:scope]]
 === Scope
-
 The main purpose of this style guide is to provide guidance and decision-making support for the creators, maintainers and publishers
 of the Core Vocabularies and Application Profiles. The main part of this document is organised as a series of self-contained rules and
 guidelines.
@@ -56,11 +55,10 @@ limited to, the following ones:
 * the documentation (manuals, handbooks, specifications) of the reused data specifications,
 * the governance and methodology documentation of the organisation developing the new semantic data specification,
 the adopted URI policy documentation, which can be inter-institutional policy or organisation specific one
-[xref:references.adoc#1[1]].
+[xref:references.adoc#ref:1[1]].
 
 [[sec:how-to-read]]
 === How to read this document
-
 This document is organised in two parts. The first part provides a brief context description and scope and offers an architectural
 overview. It introduces important terminological clarifications, the benefits of adopting the separation of concerns principle,
 and explanations of how it is played out in the SEMIC context.
