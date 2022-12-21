@@ -1,7 +1,3 @@
 * xref:index.adoc[Home]
 ** xref:introduction.adoc[Introduction]
 ** xref:terminological-clarifications.adoc[Terminological clarifications]
-
-** xref:architecture.adoc[Architecture]
-** xref:guidelines-conceptual-uml.adoc[Conceptual guidelines]
-
