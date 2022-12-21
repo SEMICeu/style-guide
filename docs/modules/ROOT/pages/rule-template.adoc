@@ -3,13 +3,16 @@
 
 
 |===
-|*Title:* Short reference to the rule
+|{set:cellbgcolor: #5f9afa}
+ *Title:* Short reference to the rule
 
-|*Statement:*
+|{set:cellbgcolor: #bbc1c9}
+*Statement:*
 
 Each rule should be stated in a simple sentence.
 
-a|*Description:*
+a|
+*Description:*
 
 Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful,
 and what is its scope.
