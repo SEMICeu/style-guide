@@ -2,20 +2,20 @@
 == References
 
 . [[ref:1]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
-. [[ref:2]] A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.
-. [[ref:3]] ePO17
-. [[ref:4]] ePO8
-. [[ref:5]] Gruber, T. (2001). "What is an Ontology?". Stanford University. Archived from the original on 2010-07-16. Retrieved 2009-11-09.
-. [[ref:6]] https://en.wikipedia.org/wiki/Ontology
-. [[ref:7]] https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/
-. [[ref:8]] https://semiceu.github.io/CPSV-AP/releases/3.1.0/
-. [[ref:9]] https://www.w3.org/TR/vocab-adms/
-. [[ref:10]] https://www.w3.org/standards/semanticweb/ontology#:~:text=On%20the%20Semantic%20Web%2C%20vocabularies,represent%20an%20area%20of%20concern
-. [[ref:11]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-v11-pdf
-. [[ref:12]] https://www.dublincore.org/specifications/dublin-core/profile-guidelines/
-. [[ref:13]]
-. [[ref:14]]
-. [[ref:15]]
-. [[ref:16]]
-. [[ref:17]]
+. [[ref:2]] ePO17
+. [[ref:3]] ePO8
+. [[ref:4]] Gruber, T. (2001). "What is an Ontology?". Stanford University. Archived from the original on 2010-07-16. Retrieved 2009-11-09.
+. [[ref:5]] https://en.wikipedia.org/wiki/Ontology
+. [[ref:6]] https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/
+. [[ref:7]] https://semiceu.github.io/CPSV-AP/releases/3.1.0/
+. [[ref:8]] https://www.w3.org/TR/vocab-adms/
+. [[ref:9]] https://www.w3.org/standards/semanticweb/ontology#:~:text=On%20the%20Semantic%20Web%2C%20vocabularies,represent%20an%20area%20of%20concern
+. [[ref:10]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-v11-pdf
+. [[ref:11]] https://www.dublincore.org/specifications/dublin-core/profile-guidelines/
+. [[ref:12]] ePO53
+. [[ref:13]] ePO63
+. [[ref:14]] ePO61
+. [[ref:15]] SEMIC toolchain  ????
+. [[ref:16]] model2owl  ????
+. [[ref:17]] OSLO toolchain ????
 . [[ref:18]]
