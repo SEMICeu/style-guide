@@ -1,7 +1,7 @@
 [[sec:rule-template]]
 == Rule template
 
-
+[cols=1,1]
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Short reference to the rule
@@ -11,7 +11,7 @@
 
 Each rule should be stated in a simple sentence.
 
-a|
+a| {set:cellbgcolor: none}
 *Description:*
 
 Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful,
@@ -35,7 +35,8 @@ Or it can be optionally answering questions such as:
 
 The description should be 1-2 paragraphs at most.
 
-|*Examples:*
+|{set:cellbgcolor: grey}
+*Examples:*
 
 Optionally, a rule may have some examples of where it applies and how it is manifested.
 |===
