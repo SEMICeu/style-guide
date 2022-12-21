@@ -2,7 +2,7 @@
 == Rule template
 
 
-[.blue, .stripes-odd, grid]
+[.blue.background, .stripes-odd, grid]
 |===
 
 |*Title:* Short reference to the rule
