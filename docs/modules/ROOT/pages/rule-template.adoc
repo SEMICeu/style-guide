@@ -3,10 +3,10 @@
 
 
 |===
-|{set:cellbgcolor: #5f9afa}
+|{set:cellbgcolor: #a8c6f7}
  *Title:* Short reference to the rule
 
-|{set:cellbgcolor: #bbc1c9}
+|{set:cellbgcolor: #e3eeff}
 *Statement:*
 
 Each rule should be stated in a simple sentence.
