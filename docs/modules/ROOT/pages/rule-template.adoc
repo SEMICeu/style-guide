@@ -1,9 +1,13 @@
 [[sec:rule-template]]
 == Rule template
 
+[background-color="blue"]
 *Title:* +++<u>+++Short reference to the rule+++</u>+++ +
+
+[green.background]
 *Statement:* _Each rule should be stated in a simple sentence._ +
 
+[grey.background]
 *Description:* Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful, and what is its scope.  +
 
 Or it can be optionally answering questions such as
@@ -18,4 +22,5 @@ Or it can be optionally answering questions such as
 
 The description should be 1-2 paragraphs at most.
 
+[pink.background]
 *Examples:* Optionally, a rule may have some examples of where it applies and how it is manifested.
