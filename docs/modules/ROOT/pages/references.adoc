@@ -1,3 +1,4 @@
+[[sec:references]]
 == References
 
 . [[1]] https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris

@@ -1,3 +1,4 @@
+[[sec:rule-template]]
 == Rule template
 
 *Title:* +++<u>+++Short reference to the rule+++</u>+++ +
