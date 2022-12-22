@@ -1,0 +1,64 @@
+[[sec:terminology]]
+== Terminology
+
+* XMI
+* UML
+* OWL
+* RDF
+* RDFS
+* EAP
+* XML
+* ASCII
+* SHACL
+* DL - description logics
+* UML Element
+* UML Element Name
+* UML Element Tag
+* UML Attribute
+* UML Connector
+
+[[sec:terminology-comparison]]
+=== Terminology comparison
+
+==== UML terminology
+
+* (UML) Elements
+** Class
+** Package
+** Attribute
+** Attribute Type
+** Datatype
+** Enumeration
+** (UML) Connector
+*** Association
+*** Dependency
+* Names
+** Element
+** Connector Name
+*** Connector Target Role Name
+*** Connector Source Role Name
+* Multiplicity
+
+==== OWL terminology
+
+* Class
+* Property (RDFS)
+** Object Property (OWL)
+** Datatype property (OWL)
+* Resource annotations
+** Preferred labels
+** Alternative labels
+** Definitions
+** Scope note
+** Editorial note
+* Property domain definition
+* Property Range definition
+
+==== XSD
+
+* Element (Start Tag + End Tag + Attributes + Text)
+* Text
+* Attribute
+* Attribute value
+* Tree
+Root element
