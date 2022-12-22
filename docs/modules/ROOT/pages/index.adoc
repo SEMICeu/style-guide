@@ -11,6 +11,8 @@
 include::introduction.adoc[]
 include::terminological-clarifications.adoc[]
 include::arhitectural-clarifications.adoc[]
+include::clarification-on-reuse.adoc[]
+include::guidelines-and-conventions.adoc[]
 include::rule-template.adoc[]
 include::references.adoc[]
 

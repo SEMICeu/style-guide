@@ -38,6 +38,7 @@ In each case, we describe as appropriate the implications on the following aspec
 This scenario applies when the original class is reused without terminological or semantic changes.
 
 [cols="6,6"]
+[%autowidth]
 |===
 |*Reuse Aspect*|*Description*
 |*How to denote*|Reuse as-is.
@@ -75,6 +76,7 @@ This scenario applies when the original class is reused without semantic changes
 to reflect the meaning in the new context accurately.
 
 [cols="6,6"]
+[%autowidth]
 |===
 |*Reuse Aspect*|*Description*
 |*How to denote reuse*|Reuse as-is.
@@ -126,6 +128,7 @@ For example, the one on circular definitions [xref:[???] definitions guideline].
 This scenario applies when the original class is reused with semantic changes, which also implies terminological adaptations.
 
 [cols="6,6"]
+[%autowidth]
 |===
 |*Reuse Aspect*|*Description*
 |*How to denote reuse*|Must reuse as a specialisation.
@@ -164,6 +167,7 @@ For example, in the Core Public Organisation Vocabulary, the reused class `org:O
 This scenario applies when the original property is reused without terminological or semantic changes.
 
 [cols="6,6"]
+[%autowidth]
 |===
 |*Reuse Aspect*|*Description*
 |*How to denote reuse*|Property as-is.
@@ -219,6 +223,7 @@ This scenario applies when the original property is reused without semantic chan
 modified to reflect the meaning in the new context accurately.
 
 [cols="6,6"]
+[%autowidth]
 |===
 |*Reuse Aspect*|*Description*
 |*How to denote the reuse*|Property as-is.
@@ -268,10 +273,50 @@ be provided in the scope notes (e.g. skos:scopeNote ).
 |*Other constraints and additional information*|Same recommendation as for reusing property, as is
 |===
 
-[[sec:reuse-of-a-property-with-semantic-adaptations]]
-=== Reuse of a property with semantic adaptations
-
 *Example*
 
 For example, in DCAT-AP the reused property `adms:status` is relabeled into “change type” for Catalogue Record class.
 DCAT-AP image [???]
+
+[[sec:reuse-of-a-property-with-semantic-adaptations]]
+=== Reuse of a property with semantic adaptations
+
+This scenario applies when the original property is reused with semantic changes, which also implies terminological adaptations.
+
+[cols="6,6"]
+[%autowidth]
+|===
+|*Reuse Aspect*|*Description*
+|*How to denote the reuse*|Must create a sub-property that captures the adaptations.
+
+In UML, a connector is created denoting a new property, which specialises another connector denoting the original property.
+
+Additionally, notes or hyperlinks shall be provided to the original source.
+|*Label*|Provide a new label that is more specific than the one in the reused property
+|*Definition*|Provide a new definition that is more specific than the one of the reused property
+|*Domain and Range*|If the reused super property does NOT define Domain/Range, then feel free to add Domain/Range specifications
+to the sub-property, as desired, but not necessarily. In UML, feel free to attach it anywhere needed.
+
+If the reused super property DOES define a Domain/Range, DO not override them, i.e. do not specify a new Domain/Range that leads
+to logical inconsistencies. Specifically, if you do that, then make sure that the new Domain is a subclass of the Original Domain.
+
+If the property is used across multiple classes multiple Domain/Range specifications can be deemed appropriate. This shall be
+handled with care. Multiple Domain/Range definitions in OWL mean intersection (i.e. joined by logical AND) and not the union
+(i.e. joined by logical OR), as most use cases may require.
+
+When the UML is transformed into other representations, the inclusion of Domain/Range statements is dependent on the “reuse”
+intention of the data specification.
+
+In case of a broad reuse intention, as for the SEMIC Core Vocabularies, it is not recommended to include them in the lightweight
+ontology but optionally reflect them as permissive constraints in SHACL.
+In case of narrow reuse intention, as for the Application Profiles, it is recommended to provide domain/range specifications
+in the data shape definitions even if those are optional.
+|*Other constraints and additional information*|Feel free to provide any additional information that is deemed necessary.
+
+When the UML is transformed into other representations, the lightweight ontology may be augmented with descriptive information,
+while (logical) constraints are to be expressed as SHACL.
+|===
+
+*Example*
+
+For example, in the DCAT-AP the reused property `dct:hasPart` is specialised as `dcat:dataset`.

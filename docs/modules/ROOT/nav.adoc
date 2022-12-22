@@ -3,7 +3,7 @@
 * xref:terminological-clarifications.adoc[Terminological clarifications]
 * xref:arhitectural-clarifications.adoc[Arhitectural clarifications]
 * xref:clarification-on-reuse.adoc[Clarifications on "reuse"]
-* Guidelines and conventions
+* xref:guidelines-and-conventions.adoc[Guidelines and conventions]
 ** xref:gc-general-conventions.adoc[General conventions]
 ** xref:gc-conceptual-model-conventions.adoc[Conceptual model conventions (UML)]
 ** xref:gc-semantic-conventions.adoc[Semantic conventions]
