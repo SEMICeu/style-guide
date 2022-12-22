@@ -1,7 +1,7 @@
 == Conceptual model conventions (UML)
 
 [[sec:cmc-r1]]
-=== Rule: UML as a single source of truth
+=== UML as a single source of truth
 
 *Statement*
 
@@ -21,61 +21,61 @@ It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specif
 [ePO UML conventions, sec 4.1]
 
 [[sec:cmc-r2]]
-=== Rule: Fixed UML interpretation
+=== Fixed UML interpretation
 
 
 [[sec:cmc-r3]]
-=== Rule: On element names and URIs
+=== On element names and URIs
 
 
 [[sec:cmc-r4]]
-=== Rule: Case sensitivity and charset
+=== Case sensitivity and charset
 
 
 [[sec:cmc-r5]]
-=== Rule: Namespaces and prefixes in element names
+=== Namespaces and prefixes in element names
 
 
 [[sec:cmc-r6]]
-=== Rule: Rich annotations through tags
+=== Rich annotations through tags
 
 
 [[sec:cmc-r7]]
-=== Rule: Explicit depiction of external dependencies
+=== Explicit depiction of external dependencies
 
 
 [[sec:cmc-r8]]
-=== Rule: Class inheritance
+=== Class inheritance
 
 
 [[sec:cmc-r9]]
-=== Rule: Abstract classes
+=== Abstract classes
 
 
 [[sec:cmc-r10]]
-=== Rule: Attribute specifications
+=== Attribute specifications
 
 
 [[sec:cmc-r11]]
-=== Rule: Multiplicity of attributes and connectors
+=== Multiplicity of attributes and connectors
 
 
 [[sec:cmc-r12]]
-=== Rule: Connector specification
+=== Connector specification
 
 
 [[sec:cmc-r13]]
-=== Rule: All elements are "public"
+=== All elements are "public"
 
 
 [[sec:cmc-r14]]
-=== Rule: Controlled lists as enumerations
+=== Controlled lists as enumerations
 
 
 [[sec:cmc-r15]]
-=== Rule: Partition the model into packages
+=== Partition the model into packages
 
 
 [[sec:cmc-r16]]
-=== Rule: Diagram readability
+=== Diagram readability
 

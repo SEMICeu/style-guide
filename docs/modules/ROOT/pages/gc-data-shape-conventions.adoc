@@ -1,20 +1,20 @@
 == Data shape conventions
 
 [[sec:dsc-r1]]
-=== Rule: Data shape language choice
+=== Data shape language choice
 
 
 [[sec:dsc-r2]]
-=== Rule: Lose vs. rigid constraints
+=== Lose vs. rigid constraints
 
 
 [[sec:dsc-r3]]
-=== Rule: Open and Closed world assumptions
+=== Open and Closed world assumptions
 
 
 [[sec:dsc-r4]]
-=== Rule: On data shapes
+=== On data shapes
 
 
 [[sec:dsc-r5]]
-=== Rule: Data Shape severity
+=== Data Shape severity

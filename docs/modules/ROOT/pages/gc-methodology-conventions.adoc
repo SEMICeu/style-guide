@@ -1,12 +1,12 @@
 == Methodology conventions
 
 [[sec:mc-r1]]
-=== Rule: Follow a methodology
+=== Follow a methodology
 
 
 [[sec:mc-r2]]
-=== Rule: On goals and scope
+=== On goals and scope
 
 
 [[sec:mc-r3]]
-=== Rule: On modularisation
+=== On modularisation

@@ -1,6 +1,5 @@
 == Rule template
 
-[cols=1,1]
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Short reference to the rule
