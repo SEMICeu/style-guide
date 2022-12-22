@@ -1,4 +1,3 @@
-[[sec:-guidelines-and-conventions]]
 == Guidelines and conventions
 
 This section provides a series of guidelines and conventions for developing and publishing a Core Vocabulary or an Application Profile.

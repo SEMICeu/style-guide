@@ -1,4 +1,3 @@
-[[sec:terminology]]
 == Terminology
 
 * XMI
@@ -20,6 +19,7 @@
 [[sec:terminology-comparison]]
 === Terminology comparison
 
+[[sec:uml-terminology]]
 ==== UML terminology
 
 * (UML) Elements
@@ -39,6 +39,7 @@
 *** Connector Source Role Name
 * Multiplicity
 
+[[sec:owl-terminology]]
 ==== OWL terminology
 
 * Class
@@ -54,6 +55,7 @@
 * Property domain definition
 * Property Range definition
 
+[[sec:xsd-terminology]]
 ==== XSD
 
 * Element (Start Tag + End Tag + Attributes + Text)
@@ -61,4 +63,4 @@
 * Attribute
 * Attribute value
 * Tree
-Root element
+* Root element

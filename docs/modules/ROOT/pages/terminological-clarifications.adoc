@@ -1,4 +1,3 @@
-[[sec:terminological-clarifications]]
 == Terminological clarifications
 
 

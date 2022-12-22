@@ -1,4 +1,3 @@
-[[sec:introduction]]
 == Introduction
 
 [[sec:context]]

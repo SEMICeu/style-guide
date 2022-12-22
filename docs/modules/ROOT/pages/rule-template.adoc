@@ -1,4 +1,3 @@
-[[sec:rule-template]]
 == Rule template
 
 [cols=1,1]
