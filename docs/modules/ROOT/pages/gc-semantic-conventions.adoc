@@ -1,20 +1,20 @@
-== Semantic conventions
+=== Semantic conventions
 
 [[sec:sc-r1]]
-=== Formal language choice
+==== Formal language choice
 
 
 [[sec:sc-r2]]
-=== Limited (OWL) expressivity
+==== Limited (OWL) expressivity
 
 
 [[sec:sc-r3]]
-=== Lexicalisation
+==== Lexicalisation
 
 
 [[sec:sc-r4]]
-=== Reasoning assumption
+==== Reasoning assumption
 
 
 [[sec:sc-r5]]
-=== Circular definitions
+==== Circular definitions

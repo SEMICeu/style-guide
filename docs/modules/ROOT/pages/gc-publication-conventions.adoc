@@ -1,24 +1,24 @@
-== Publication conventions
+=== Publication conventions
 
 [[sec:pc-r1]]
-=== 5-star Linked Open Data
+==== 5-star Linked Open Data
 
 
 [[sec:pc-r2]]
-=== Persistent URI policy
+==== Persistent URI policy
 
 
 [[sec:pc-r3]]
-=== Version management
+==== Version management
 
 
 [[sec:pc-r4]]
-=== Artefact versioning
+==== Artefact versioning
 
 
 [[sec:pc-r5]]
-=== URI dereferencing
+==== URI dereferencing
 
 
 [[sec:pc-r6]]
-=== Human-readable form
+==== Human-readable form

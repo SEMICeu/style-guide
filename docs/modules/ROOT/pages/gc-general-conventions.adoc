@@ -1,21 +1,21 @@
-== General conventions
+=== General conventions
 
 [[sec:gc-r1]]
-=== Reuse existing concepts as much as possible
+==== Reuse existing concepts as much as possible
 
 
 [[sec:gc-r2]]
-=== For reuse, prefer maintained vocabularies
+==== For reuse, prefer maintained vocabularies
 
 
 [[sec:gc-r3]]
-=== Concept reference and terms
+==== Concept reference and terms
 
 
 [[sec:gc-r4]]
-=== Terminology style
+==== Terminology style
 
 
 [[sec:gc-r5]]
-=== Vocabulary definition styling
+==== Vocabulary definition styling
 

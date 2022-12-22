@@ -276,7 +276,10 @@ be provided in the scope notes (e.g. skos:scopeNote ).
 *Example*
 
 For example, in DCAT-AP the reused property `adms:status` is relabeled into “change type” for Catalogue Record class.
-DCAT-AP image [???]
+
+[???] what change type?
+
+image:dcatcatalogue.png[DCAT-AP Catalogue Record]
 
 [[sec:reuse-of-a-property-with-semantic-adaptations]]
 === Reuse of a property with semantic adaptations
@@ -320,3 +323,7 @@ while (logical) constraints are to be expressed as SHACL.
 *Example*
 
 For example, in the DCAT-AP the reused property `dct:hasPart` is specialised as `dcat:dataset`.
+
+[???] where is hasPart?
+
+image:dcatdataset.png[DCAT-AP Dataset]
