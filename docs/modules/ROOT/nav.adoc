@@ -11,4 +11,5 @@
 ** xref:gc-methodology-conventions.adoc[Methodology conventions]
 ** xref:gc-publication-conventions.adoc[Publication conventions]
 * xref:rule-template.adoc[Rule template]
+* xref:terminology.adoc[Terminology]
 * xref:references.adoc[References]
