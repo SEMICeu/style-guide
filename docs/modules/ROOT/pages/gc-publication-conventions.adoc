@@ -3,22 +3,160 @@
 [[sec:pc-r1]]
 ==== 5-star Linked Open Data
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* 5-star Linked Open Data
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: PC-R1
+
+|*Statement:*
+
+Publishing the Core Vocabularies and Application Profiles shall be compliant with 5-star LOD criteria.
+|===
+
+*Description:*
+
+Publishing a vocabulary as a Linked Open Data (LOD) resource means making it accessible, both human and machine-readable, in a
+standard way, thus supporting the semantic web. The publication as full LOD implies that the data is compliant with the
+highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
+
+* The data is available on the Web under an open licence
+* The data is available following a clear structure
+* The data is available using a non-proprietary open format
+* The data uses URIs to denote concepts
+* The data is linked to other resources to provide context
+
+[Draft styleguide 8.2]
+[https://www.w3.org/TR/dwbp/]
+
 
 [[sec:pc-r2]]
 ==== Persistent URI policy
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*:
+
+|*Statement:*
+
+
+|===
+
+*Description:*
+
+
+
+****
+*Examples:*
+
+
+****
 
 
 [[sec:pc-r3]]
 ==== Version management
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*:
+
+|*Statement:*
+
+
+|===
+
+*Description:*
+
+
+
+****
+*Examples:*
+
+
+****
+
 
 [[sec:pc-r4]]
 ==== Artefact versioning
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*:
+
+|*Statement:*
+
+
+|===
+
+*Description:*
+
 
 
 [[sec:pc-r5]]
 ==== URI dereferencing
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*:
+
+|*Statement:*
+
+
+|===
+
+*Description:*
+
+
+
 
 [[sec:pc-r6]]
 ==== Human-readable form
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Human-readable form
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: PC-R6
+
+|*Statement:*
+
+Each artefact shall have a corresponding human-readable form representing the model documentation.
+|===
+
+*Description:*
+
+The documentation content shall follow a standard template for consistent formatting and content structuring.
+
+It is a good practice to provide the following sections in the document:
+
+* Preamble with metadata indicating
+** Title
+** Abstract
+** Date of publication/release
+** Version information
+** Authors, editors, contributors
+** Licensing information
+* Introduction describing the
+** Background information
+** Context & Scope
+** Intended audience
+** UML diagrams of the model
+* Description of each element in the model grouped by element type (e.g. class, property, constraint, controlled vocabulary). Each element shall be described by its URI and its Lexicalisation:
+** URI (shall be clearly visible)
+** Labels (preferred and alternative)
+** Definitions, scope notes, examples, editorial notes, etc.
+
