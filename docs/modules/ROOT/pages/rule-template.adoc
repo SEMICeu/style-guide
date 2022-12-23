@@ -36,9 +36,8 @@ Or it can be optionally answering questions such as:
 
 The description should be 1-2 paragraphs at most.
 
-[listing]
-....
+****
 Examples:
 
 Optionally, a rule may have some examples of where it applies and how it is manifested.
-....
+****
