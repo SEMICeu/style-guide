@@ -101,7 +101,7 @@ are mentioned below on target and multiplicity)
 |*Property generalisation*|Sub-property axiom for the generalisation between UML associations and dependencies.|
 |===
 
-----
+****
 Examples:
 
 The UML interpretation applied by the SEMIC toolchain is described in [xref:references.adoc#ref:29[29]]. To assist the editor
@@ -112,7 +112,7 @@ The SEMIC toolchain shares the same interpretation as the OSLO toolchain [xref:r
 In the context of eProcurement ontology, a toolchain has been developed to transform and validate UML models. Such tools
 are based on two documents: UML convention specifications [xref:references.adoc#ref:30[30]] and UML transformation specifications
 [xref:references.adoc#ref:31[31]].
-----
+****
 
 [[sec:cmc-r3]]
 ==== On element names and URIs
@@ -156,13 +156,13 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]].
 
 
-----
+****
 *Examples:*
 
 The class Address in Core Location has several properties. All the properties have a displayed name (e.g. “addressArea”) with the UML class diagram and associated UML Tags, such as a label for the HTML specification (“address area”), definition, usage note and the related URI.
 
 image::address-core-location.png[Core Location - Address]
-----
+****
 
 
 [[sec:cmc-r4]]
