@@ -151,3 +151,4 @@ They are based on advice found in the literature and are the following:
 * Do not start a definition with a repetition of the name of the concept.
 Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:26[26]].
+====
