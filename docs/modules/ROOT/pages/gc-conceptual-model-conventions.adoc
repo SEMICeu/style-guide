@@ -143,11 +143,12 @@ reference to a formal construct.
 * serve as the primary source for generating labels to ensure human readers' comprehension
 * follow an organisation of namespaces
 
-Thus, in the UML model, the Element names must conform to RDF [30] and XML[5] format specifications. Both languages effectively
-require that terms begin with an upper or lower case letter from the ASCII character set or an underscore (_). This tight
-restriction means that, for example, terms may not begin with a number, hyphen or accented character [24]. Although underscores
-are permitted, they are discouraged as they may be, in some cases, misread as spaces. A formal definition of these restrictions
-is given in the XML specification document [5].
+Thus, in the UML model, the Element names must conform to RDF [xref:references.adoc#ref:33[33]] and XML [xref:references.adoc#ref:34[34]]
+format specifications. Both languages effectively require that terms begin with an upper or lower case letter from the ASCII
+character set or an underscore (_). This tight restriction means that, for example, terms may not begin with a number, hyphen
+or accented character [xref:references.adoc#ref:35[35]]. Although underscores are permitted, they are discouraged as they may be,
+in some cases, misread as spaces. A formal definition of these restrictions is given in the XML specification document
+[xref:references.adoc#ref:34[34]].
 
 Note that, when the UML element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
 may be used to express explicitly URIs, labels, notes and other types of annotations
