@@ -53,3 +53,13 @@
 . [[ref:51]] OSLO spec, sec 3.2.2
 . [[ref:52]] OSLO spec, sec 3.2.15
 . [[ref:53]] OSLO spec, sec 3.2.16
+. [[ref:54]] OSLO spec, sec 3.2.22
+. [[ref:55]] OSLO spec, sec 3.2.17
+. [[ref:56]] ePO UML conventions, sec 4.3
+. [[ref:57]] OSLO spec, sec 3.3.4
+. [[ref:58]] OSLO spec, sec 3.3.1
+. [[ref:59]] OSLO spec, sec 3.3.5
+. [[ref:60]] OSLO spec, sec 3.3.3
+. [[ref:61]] OSLO spec, sec 3.3.2
+. [[ref:62]] OSLO spec, sec 3.2.5
+. [[ref:63]] OSLO spec, sec 3.1.11
