@@ -184,9 +184,7 @@ All UML element names are case sensitive and shall follow the CamelCase conventi
 *Description:*
 
 The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
-subsequent character positions.
-
-[xref:references.adoc#ref:26[26]] _resolve references from the original doc_ - [???]
+subsequent character positions. [xref:references.adoc#ref:26[26]] _resolve references from the original doc_ - [???]
 
 Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
 therefore, UML element names shall be CamelCased.
@@ -229,6 +227,7 @@ character, forming qualified names.
 |===
 
 *Description:*
+
 To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
 namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
 [xref:references.adoc#ref:38[38]].
