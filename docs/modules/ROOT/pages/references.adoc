@@ -35,4 +35,21 @@
 . [[ref:33]] ePO30 [???]
 . [[ref:34]] ePO5 [???]
 . [[ref:35]] ePO24 [???]
-.
+. [[ref:36]] ePO UML conventions, sec 3.2
+. [[ref:37]] OSLO spec, sec 3.2.20
+. [[ref:38]] https://www.w3.org/TR/REC-xml-names/
+. [[ref:39]] ePO28 [???]
+. [[ref:40]] https://www.w3.org/TR/turtle/#sec-iri
+. [[ref:41]] OSLO spec, sec 3.1.7
+. [[ref:42]] OSLO spec, sec 3.2.3
+. [[ref:43]] ePO21 [???]
+. [[ref:44]] ePO14 [???]
+. [[ref:45]] OSLO spec, sec 3.2.6
+. [[ref:46]] ePO UML conventions, sec 4.4
+. [[ref:47]] ePO - https://github.com/OP-TED/ePO
+. [[ref:48]] OSLO spec, sec 3.2.12
+. [[ref:49]] ePO UML conventions, sec 4.5
+. [[ref:50]] ePO UML conventions, sec 4.7
+. [[ref:51]] OSLO spec, sec 3.2.2
+. [[ref:52]] OSLO spec, sec 3.2.15
+. [[ref:53]] OSLO spec, sec 3.2.16

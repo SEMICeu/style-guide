@@ -2,6 +2,7 @@
 
 [[sec:cmc-r1]]
 ==== UML as a single source of truth
+
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* UML as a single source of truth
@@ -161,40 +162,377 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 
 The class Address in Core Location has several properties. All the properties have a displayed name (e.g. “addressArea”) with the UML class diagram and associated UML Tags, such as a label for the HTML specification (“address area”), definition, usage note and the related URI.
 
-image::address-core-location.png[Core Location - Address]
+image::cmc-r3.png[]
 ****
 
 
 [[sec:cmc-r4]]
 ==== Case sensitivity and charset
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Case sensitivity and charset
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R4
+
+|*Statement:*
+
+All UML element names are case sensitive and shall follow the CamelCase convention.
+|===
+
+*Description:*
+
+The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
+subsequent character positions.
+
+[xref:references.adoc#ref:26[26]] _resolve references from the original doc_ - [???]
+
+Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
+therefore, UML element names shall be CamelCased.
+
+The names of
+
+* UML Classes and Datatypes shall start with an upper-case letter,
+* UML Enumerations and Packages shall start with a lower-case letter,
+* UML Attributes shall start with a lower-case letter,
+* UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter
+
+[xref:references.adoc#ref:36[36],
+xref:references.adoc#ref:37[37]]
+
+****
+*Examples:*
+
+In the image below, there are two classes from Core Location with the related properties and a relation between them.
+The name of the classes are in UpperCamelCase, the name of the properties are in lowerCamelCase and the relation (adminUnit)
+is in lowerCamelCase.
+
+image::cmc-r4.png[]
+****
+
 
 [[sec:cmc-r5]]
 ==== Namespaces and prefixes in element names
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Namespaces and prefixes in element names
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R5
+
+|*Statement:*
+
+Element names shall be organised by namespaces. Namespaces may be indicated through prefixes delimited by colon (:)
+character, forming qualified names.
+|===
+
+*Description:*
+To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
+namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
+[xref:references.adoc#ref:38[38]].
+
+A namespace is a set of symbols that are used to organise objects of various kinds so that these objects may be referred
+to by name and uniquely identifiable [xref:references.adoc#ref:39[39]].
+
+A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
+[xref:references.adoc#ref:40[40]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:38[38]]. Syntactically,
+they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
+namespace URIs and a default namespace applicable to unprefixed element names.
+
+As the element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The element
+name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the element
+name, after the colon, is the local segment. See [xref:references.adoc#ref:38[38]] for more info.
+
+In case the editor decides to omit to specify a prefix in the element name when a URI generation logic is devised, an implicit
+prefix can be assumed by default. The qualified names may be structured as follows:
+
+* prefix:localSegment
+* :localSegment
+* localSegment
+
+****
+*Examples:*
+
+When `dcat` a namespace name is declared as bound to base URI `http://www.w3.org/ns/dcat#`, then then `dcat:Catalog` is the
+qualified name  from which the `http://www.w3.org/ns/dcat#Catalog` URI is interpreted.
+
+When `cv` (short for Core Vocabularies) namespace name is declared bound to base URI `http://data.europa.eu/m8g/`, then
+`cv:adminUnit` is the qualified name from which the `http://data.europa.eu/m8g/adminUnit` URI is generated.
+****
 
 
 [[sec:cmc-r6]]
 ==== Rich annotations through tags
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Rich annotations through tags
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R6
+
+|*Statement:*
+
+Tags can be conveniently used for annotating the elements.
+|===
+
+*Description:*
+
+UML Element tags are key-value pairs that are associated with a UML Element (class, attribute, connector, etc. ). The tags
+can be used as an extension mechanism to the UML language. They can be used to provide information that is not expressible
+anywhere else on a UML Element.
+
+For example, in this style guide, we recommend that the UML Element name shall be used to derive both the concept URI and
+the concept preferred label. However, if the model editor chooses to use the UML Element name for deriving the concept label
+alone, then the URI needs to be specified elsewhere. This is one example of how the UML tags can be used: simply specify a
+new tag, “uri”, and provide the concept URI as a value (see figure below).
+
+Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML
+elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
+examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).
+
+****
+*Examples:*
+
+image::cmc-r6.png[]
+****
+
 
 [[sec:cmc-r7]]
 ==== Explicit depiction of external dependencies
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Explicit depiction of external dependencies
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R7
+
+|*Statement:*
+The UML diagrams should depict how the developed model relates to external (reused) models.
+|===
+
+*Description:*
+
+UML does not support an import mechanism comparable to the one specified in OWL. Yet, the reuse of models is a highly encouraged
+practice. To accommodate such practice, the reused elements shall be created as in the original model and depicted in diagrams.
+
+The external elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
+meaning shall be preserved without changes to the labels, concept definitions or URIs.
+
+Reused classes shall be depicted in the UML diagrams. Reused properties shall be depicted in diagrams as connectors and
+attributes. It is not necessary to depict unused classes or properties [xref:references.adoc#ref:41[41]].
+
+****
+*Examples:*
+
+In the example below, a Core Vocabulary Person includes concepts from another vocabulary (FOAF); thus the two classes Person and
+Agent have the “foaf” namespace prefix specified in front.
+
+image::cmc-r7.png[]
+****
 
 
 [[sec:cmc-r8]]
 ==== Class inheritance
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Class inheritance
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R8
+
+|*Statement:*
+
+Make sure that the attributes and associations of a superclass apply to all its subclasses.
+|===
+
+*Description:*
+
+This is a general modelling principle that should be respected, yet when it comes to reusing, such a requirement is often
+overlooked. This means that the model editor shall carefully analyse the reused model as a whole and how it is integrated
+with their own model.
+
+****
+*Examples:*
+
+In Core Public Organization, the class Public Organisation is a subclass of org:Organization from the Organization Ontology,
+and different properties/relations have been inherited such as hasSubOrganization, hasMember, hasUnit.
+
+image::cmc-r8.png[]
+****
+
++[xref:references.adoc#ref:42[42]] [???] should we change square bracktes?
+
 
 [[sec:cmc-r9]]
 ==== Abstract classes
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Abstract classes
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R9
+
+|*Statement:*
+
+Classes that are not intended for instantiation can be marked as abstract.
+|===
+
+*Description:*
+
+When a (super-)class is created for capturing a level of abstraction in the domain knowledge, it may not always be suitable
+for instantiation. Editors may choose to mark such classes as abstract and to indicate that their subclasses shall be used in
+practice. In UML, this can be done via << abstract >> stereotype.
+
+Doing so has no impact on the OWL [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL).
+However, SHACL data shapes [xref:references.adoc#ref:44[44]] can be generated to express that no instances of this class shall
+not occur in the data. [xref:references.adoc#ref:45[45], xref:references.adoc#ref:46[46]]
+
+****
+*Examples:*
+
+Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47[47]] toolchains support such stereotypes.
+****
 
 
 [[sec:cmc-r10]]
 ==== Attribute specifications
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Attribute specifications
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R10
+
+|*Statement:*
+
+UML Attributes shall be used to define properties taking simple data type values. An attribute declaration should specify
+its datatype and multiplicity whenever possible [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r11[CMC-R11]].
+|===
+
+*Description:*
+
+It is recommended that atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
+those should be expressed as relationships (represented by Association connectors) between the two classes
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
+
+High preference shall be given to using OWL 2 compliant XSD and RDF standard datatypes. Standard UML data types may be used
+with interpretation in the Table below. Custom datatypes shall be avoided when possible. [ref]. [???] - what ref?
+
+|===
+|*UML*|*XSD*
+|Boolean|xsd:boolean
+|Float|xsd:float
+|Integer|xsd:integer
+|Character, String|xsd:string / rdf:langString
+|Short|xsd:short
+|Long|xsd:long
+|Decimal|xsd:decimal
+|Date|xsd:date
+|DateTime|xsd:dateTime
+|===
+
+Properties whose values come from a controlled vocabulary or authority table and constitute a special case because two
+modelling practices are recognised here: as attributes with type “Code”, and as dependency relations pointing to a UML Enumeration
+named after the controlled list.
+
+In the first case, the attribute type “Code” shall be mapped to the skos:Concept class. The advantage of this approach is
+the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely which
+list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
+[xref UML tags rule], but that value will not be visible in the diagrams.
+
+In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the Class
+and the Enumeration representing the controlled list, oriented from the class towards the enumeration. It denotes that the
+OWL class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
+vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target
+role name and multiplicity shall be provided [xref controlled list enumeration rule].
+
+Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
+between a UML class element and a UML Datatype element. [xref:references.adoc#ref:48[48], xref:references.adoc#ref:49[49],
+xref:references.adoc#ref:50[50], xref:references.adoc#ref:51[51]]
+
+****
+*Examples:*
+
+We exemplify the two approaches to specifying attribute data types described above. In CCCEV specification, the “Requirement”
+class attributes use loose UML and other data types: String, Literal, and Code. No precise definition of what they mean is
+provided. The attributes of the Requirement class are left underspecified and with generic data types: the “description”
+attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this data type means).
+It is also not clear what would be the difference between Literal and String, eventually one may gain intuition from the
+attribute name.
+
+image::cmc-r10-1.png[]
+
+The same class is reused in ePO ontology. The `cccev:Requirement` attributes use explicitly standard data types and cardinalities.
+And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
+a non-atomic data type, but a controlled list of `skos:Concept`(s).
+
+image::cmc-r10-2.png[]
+****
+
 
 [[sec:cmc-r11]]
 ==== Multiplicity of attributes and connectors
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Multiplicity of attributes and connectors
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R11
+
+|*Statement:*
+
+The multiplicity of connectors and class attributes should be specified, indicating the minimum and maximum cardinality.
+The cardinality shall be as permissive as possible in Core Vocabularies and as restrictive as possible in Application Profiles.
+|===
+
+*Description:*
+
+If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
+Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.
+
+If a structural feature (attribute or association) is not relevant for the domain or the applications, instead of setting
+a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:52[52]].
+
+However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
+variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
+minimum cardinality shall be set to 1, for example [1..*] [xref:references.adoc#ref:49[49]].
+
+A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
+it is recommended to fall back on the implicit assumption of [0 .. *]. Not to be confused with the default cardinality assumed
+in tools. For example, Enterprise Architect by default assumes [1..1] cardinality for attributes and omits to display it; and a
+similar default assumption exists in XML/XSD.
+
+Notation for multiple cardinality can be either with ‘*’ or ‘n’. In principle using either notation is fine, however, it is
+recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
+It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
+on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented
+so as to handle either of those notations, as their meaning is identical.
+
+Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
+the cardinality shall be the most permissive, where possible [xref:references.adoc#ref:52[52]].
+
+Limit the constraints to business rules, do not add technical constraints to the model [xref:references.adoc#ref:53[53]].
+
+If an attribute or an association from a reused vocabulary is not relevant, do not set the lower limit of multiplicity to 0,
+but simply omit it in the model [xref:references.adoc#ref:52[52]].
+
+****
+*Examples:*
+
+All Core Vocabularies have set a permissive cardinality [0..*], for example, all the properties of Public Organisation, on the left,
+have multiplicity [0..*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:
+
+image::cmc-r11-1.png[]
+image::cmc-r11-2.png[]
+****
 
 
 [[sec:cmc-r12]]
