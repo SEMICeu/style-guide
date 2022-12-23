@@ -28,5 +28,11 @@
 . [[ref:26]] ePO UML conventions, sec 4.2
 . [[ref:27]] ePO UML conventions, sec 4.1
 . [[ref:28]] https://www.omg.org/spec/ODM/1.1/PDF
-. [[ref:29]] EPO conventions
-. [[ref:30]] EPO transformation rules
+. [[ref:29]] UML interpretation for SEMIC toolchain
+. [[ref:30]] EPO conventions
+. [[ref:31]] EPO transformation rules
+. [[ref:32]] ePO2 [???]
+. [[ref:33]] ePO30 [???]
+. [[ref:34]] ePO5 [???]
+. [[ref:35]] ePO24 [???]
+.
