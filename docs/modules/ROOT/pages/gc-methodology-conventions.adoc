@@ -94,7 +94,7 @@ a clearcut separation between concepts belonging to one module or another, and s
 Sometimes, a concept can be used for several domains. Then it shall be placed in a separate module. [xref:references.adoc#ref:81[81]]
 
 The need for modularisation typically emerges when the to-be-modelled space grows. As the terms are to be identified by URIs
-(see rule [xref:]), it is recommended to include in the used URI structure modularisation potential.
+[xref:gc-publication-conventions.adoc#sec:pc-r2[PC-R2]], it is recommended to include in the used URI structure modularisation potential.
 
 
 ****
