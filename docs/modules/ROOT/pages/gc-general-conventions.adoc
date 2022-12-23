@@ -21,8 +21,7 @@ Only use constructs with semantics (human and machine-readable) that support the
 be considered by reusing properties and classes from other vocabularies.
 As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
 Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
-In order to achieve a common approach to reuse, apply the reuse guidelines as specified above
-+[xref:clarification-on-reuse.adoc[Clarification on reuse]]
+In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [xref:clarification-on-reuse.adoc[Clarification on reuse]].
 
 [xref:references.adoc#ref:18[18],
 xref:references.adoc#ref:19[19]]

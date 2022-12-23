@@ -70,7 +70,7 @@ OWL ontology and, respectively, SHACL constraints from the UML conceptual model.
 
 [%autowidth]
 |===
-|*UML model element*|*OWL ontology element*|*SHACL data shape element*
+|{set:cellbgcolor: none} *UML model element*|*OWL ontology element*|*SHACL data shape element*
 |*Class*|OWL Class|SHACL Node Shape
 |*Abstract class*||SHACL Node Shape with a SPARQL constraint that selects all instances of this class
 |*Attribute*|OWL datatype or object property, based on their type.|Property constraint, within the SHACL Node Shape corresponding
