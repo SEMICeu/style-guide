@@ -1,8 +1,44 @@
 === General conventions
 
-[[sec:gc-r1]]
-==== Reuse existing concepts as much as possible
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*:
+|*Statement:*
+|===
+*Description:*
+|===
+|{set:cellbgcolor: #fafafa}
+*Examples:*
+|===
 
+
+[[sec:gc-r1]]
+
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Reuse existing concepts as much as possible
+|{set:cellbgcolor: #f5f8fc}
+*Statement:*
+
+Reuse existing concepts as much as possible, respecting the original semantics and lexicalisation.
+|===
+
+*Description:*
+
+Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must be considered by reusing properties and classes from other vocabularies.
+As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
+Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
+In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [xref reuse section].
+[ePO UML architecture, sec 4.1] [OSLO spec, sec 3.1.2]
+
+
+|===
+|{set:cellbgcolor: #fafafa}
+*Examples:*
+|===
 
 [[sec:gc-r2]]
 ==== For reuse, prefer maintained vocabularies

@@ -1,5 +1,18 @@
 === Conceptual model conventions (UML)
 
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*:
+|*Statement:*
+|===
+*Description:*
+|===
+|{set:cellbgcolor: #fafafa}
+*Examples:*
+|===
+
 [[sec:cmc-r1]]
 ==== UML as a single source of truth
 

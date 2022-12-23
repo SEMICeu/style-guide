@@ -3,11 +3,16 @@
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Short reference to the rule
+
 |{set:cellbgcolor: #f5f8fc}
-*Statement:*
+*Acronym*:
+
+The acronym used to reference the rule in this document.
+|*Statement:*
 
 Each rule should be stated in a simple sentence.
 |===
+
 *Description:*
 
 Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful,
