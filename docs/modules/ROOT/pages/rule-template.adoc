@@ -36,8 +36,6 @@ Or it can be optionally answering questions such as:
 
 The description should be 1-2 paragraphs at most.
 
-[source,ruby]
-[%autowidth]
 ----
 Examples:
 
