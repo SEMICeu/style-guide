@@ -68,3 +68,19 @@
 . [[ref:66]] https://www.w3.org/TR/shacl/
 . [[ref:67]] https://shex.io/
 . [[ref:68]] R. Reiter. On closed world data bases. In Readings in artificial intelligence, pages 119–140. Elsevier, 1981.
+. [[ref:69]] TOGAF
+. [[ref:70]] Methontology
+. [[ref:71]] DOGMA
+. [[ref:72]] OntoClean
+. [[ref:73]] TOVE - Fox, M.S., (1992), “The TOVE Project: A Common-sense Model of the Enterprise”, Industrial and Engineering
+Applications of Artificial Intelligence and Expert Systems, Belli, F. and Radermacher, F.J. (Eds.), Lecture Notes in
+Artificial Intelligence # 604, Berlin: Springer-Verlag, pp. 25-34.
+. [[ref:74]] DILIGENT
+. [[ref:75]] NeOn
+. [[ref:76]] https://www.researchgate.net/publication/226919523_Ontology_Engineering_Methodology
+. [[ref:77]] DAMA-DMBOK
+. [[ref:78]] Zachman Framework
+. [[ref:79]] EAP
+. [[ref:80]] OSLO spec, sec 3.1.4
+. [[ref:81]] OSLO spec, sec 3.1.3
+. [[ref:82]] ePO docs
