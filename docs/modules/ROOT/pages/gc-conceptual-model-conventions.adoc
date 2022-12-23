@@ -669,8 +669,7 @@ image::cmc-r14-1.png[]
 The name of the enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
 type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs
 slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil
-two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list.
-[EPO spec, sec] [???]
+two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list. [EPO spec, sec] [???]
 
 If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it,
 which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:55[55]].
