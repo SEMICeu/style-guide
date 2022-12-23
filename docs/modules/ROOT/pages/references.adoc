@@ -65,3 +65,6 @@
 . [[ref:63]] OSLO spec, sec 3.1.11
 . [[ref:64]] Lemon
 . [[ref:65]] Vann
+. [[ref:66]] https://www.w3.org/TR/shacl/
+. [[ref:67]] https://shex.io/
+. [[ref:68]] R. Reiter. On closed world data bases. In Readings in artificial intelligence, pages 119–140. Elsevier, 1981.
