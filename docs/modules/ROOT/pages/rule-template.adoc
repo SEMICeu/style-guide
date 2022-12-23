@@ -3,13 +3,12 @@
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Short reference to the rule
-
 |{set:cellbgcolor: #f5f8fc}
 *Statement:*
 
 Each rule should be stated in a simple sentence.
-
-a|*Description:*
+|===
+*Description:*
 
 Optionally, a rule may have a more elaborate description of how to apply, when to apply it, why it is useful,
 and what is its scope.
@@ -31,7 +30,7 @@ Or it can be optionally answering questions such as:
 * To what exceptions to pay attention?
 
 The description should be 1-2 paragraphs at most.
-
+|===
 |{set:cellbgcolor: #fafafa}
 *Examples:*
 
