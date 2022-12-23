@@ -2,7 +2,7 @@
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Short reference to the rule
+*Title:* Short reference to the rule
 
 |{set:cellbgcolor: #f5f8fc}
 *Acronym*:
