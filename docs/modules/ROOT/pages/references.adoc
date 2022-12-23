@@ -14,9 +14,9 @@
 . [[ref:12]] ePO53
 . [[ref:13]] ePO63
 . [[ref:14]] ePO61
-. [[ref:15]] SEMIC toolchain  [???]
-. [[ref:16]] model2owl  [???]
-. [[ref:17]] OSLO toolchain [???]
+. [[ref:15]] SEMIC toolchain  - https://github.com/SEMICeu [???]
+. [[ref:16]] model2owl - https://github.com/OP-TED/model2owl [???]
+. [[ref:17]] OSLO toolchain - https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template [???]
 . [[ref:18]] ePO UML architecture, sec 4.1
 . [[ref:19]] OSLO spec, sec 3.1.2
 . [[ref:20]] Semic Draft style guide 3.2
@@ -26,4 +26,7 @@
 . [[ref:24]] ePO UML conventions, sec 3.7
 . [[ref:25]] https://github.com/SEMICeu/OpenGuidelines/blob/main/Principles%20for%20creating%20good%20definitions_v1.00.pdf
 . [[ref:26]] ePO UML conventions, sec 4.2
-. [[ref:27]]
+. [[ref:27]] ePO UML conventions, sec 4.1
+. [[ref:28]] https://www.omg.org/spec/ODM/1.1/PDF
+. [[ref:29]] EPO conventions
+. [[ref:30]] EPO transformation rules
