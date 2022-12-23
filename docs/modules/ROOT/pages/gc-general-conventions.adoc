@@ -1,7 +1,8 @@
 === General conventions
 
 [[sec:gc-r1]]
-====
+==== Reuse existing concepts as much as possible
+
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Reuse existing concepts as much as possible
@@ -28,7 +29,8 @@ xref:references.adoc#ref:19[19]]
 
 
 [[sec:gc-r2]]
-====
+==== For reuse, prefer maintained vocabularies
+
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* For reuse, prefer maintained vocabularies
@@ -52,7 +54,8 @@ stages planned.
 
 
 [[sec:gc-r3]]
-====
+==== Concept reference and terms
+
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Concept reference and terms
@@ -82,7 +85,7 @@ And finally, the meaning of the term must be clear. Its definition is associated
 term reusable, it should be published as part of a data specification.
 
 [[sec:gc-r4]]
-====
+==== Vocabulary terminology style
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:*  Vocabulary terminology style
@@ -116,7 +119,7 @@ or “opens/closes”. It should be done by changing the voice from active to pa
 
 
 [[sec:gc-r5]]
-====
+==== Vocabulary definition styling
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Vocabulary definition styling
@@ -151,4 +154,3 @@ They are based on advice found in the literature and are the following:
 * Do not start a definition with a repetition of the name of the concept.
 Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:26[26]].
-====
