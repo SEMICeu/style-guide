@@ -1,28 +1,46 @@
 == Terminology
 
-* XMI
-* UML
-* OWL
-* RDF
-* RDFS
-* EAP
-* XML
-* ASCII
-* SHACL
-* DL - description logics
+* XMI [http://www.omg.org/spec/XMI/]
+** The XML Metadata Interchange (XMI) is an Object Management Group (OMG) standard for exchanging metadata information
+via Extensible Markup Language (XML). [https://en.wikipedia.org/wiki/XML_Metadata_Interchange]
+* UML [http://www.omg.org/spec/UML/]
+** The Unified Modeling Language (UML) is a general-purpose, developmental modeling language in the field of software
+engineering that is intended to provide a standard way to visualize the design of a system. [https://en.wikipedia.org/wiki/Unified_Modeling_Language]
+* OWL [https://www.w3.org/OWL/]
+** The W3C Web Ontology Language (OWL) is a Semantic Web language designed to represent rich and complex knowledge about
+things, groups of things, and relations between things. [https://www.w3.org/OWL/]
+* RDF [https://www.w3.org/RDF/]
+** RDF is a standard model for data interchange on the Web. [https://www.w3.org/RDF/]
+* RDFS [https://www.w3.org/2001/sw/wiki/RDFS]
+** RDFS is a general-purpose language for representing simple RDF vocabularies on the Web. [https://www.w3.org/2001/sw/wiki/RDFS]
+* EAP [https://en.wikipedia.org/wiki/Enterprise_Architect_(software)] [???]
+** Sparx Systems Enterprise Architect is a visual modeling and design tool based on the OMG UML. [https://en.wikipedia.org/wiki/Enterprise_Architect_(software)]
+* XML [https://www.w3.org/XML/]
+** Extensible Markup Language (XML) is a markup language and file format for storing, transmitting, and reconstructing arbitrary data.
+It defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. [https://en.wikipedia.org/wiki/XML]
+* ASCII [https://en.wikipedia.org/wiki/ASCII]
+** ASCII, abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic
+communication. [https://en.wikipedia.org/wiki/ASCII]
+* SHACL [https://www.w3.org/TR/shacl/]
+** SHACL Shapes Constraint Language is defined as a language for validating RDF graphs against a set of conditions. [https://www.w3.org/TR/shacl/]
+* DL [https://en.wikipedia.org/wiki/Description_logic]
+** Description logics (DL) are a family of formal knowledge representation languages. [https://en.wikipedia.org/wiki/Description_logic]
 * UML Element
 * UML Element Name
 * UML Element Tag
 * UML Attribute
 * UML Connector
 
+
 [[sec:terminology-comparison]]
 === Terminology comparison
 
-[[sec:uml-terminology]]
-==== UML terminology
+[cols=3,1,1]
+[%autowidth]
+|===
+|*UML terminology* | *OWL terminology* | *XSD*
 
-* (UML) Elements
+a|* (UML) Elements
 ** Class
 ** Package
 ** Attribute
@@ -39,10 +57,7 @@
 *** Connector Source Role Name
 * Multiplicity
 
-[[sec:owl-terminology]]
-==== OWL terminology
-
-* Class
+a|* Class
 * Property (RDFS)
 ** Object Property (OWL)
 ** Datatype property (OWL)
@@ -55,12 +70,10 @@
 * Property domain definition
 * Property Range definition
 
-[[sec:xsd-terminology]]
-==== XSD
-
-* Element (Start Tag + End Tag + Attributes + Text)
+a|* Element (Start Tag + End Tag + Attributes + Text)
 * Text
 * Attribute
 * Attribute value
 * Tree
 * Root element
+|===
