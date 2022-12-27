@@ -1,0 +1,778 @@
+=== Conceptual model conventions (UML)
+
+[[sec:cmc-r1]]
+==== UML as a single source of truth
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* UML as a single source of truth
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R1
+
+|*Statement*
+
+The UML conceptual model should be used as the single source of truth.
+|===
+
+*Description*
+
+By applying this principle, we can achieve consistency among all derived artefacts.
+
+This implies:
+
+* Standard representation of the UML such as XMI or EAP database
+* Existence of a well-defined set of rules and conventions to transform UML model into other artefacts, which can be executed,
+as much as possible automatically, by a dedicated software tool or toolchain [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]]
+
+It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [xref:references.adoc#ref:27[27]].
+
+
+[[sec:cmc-r2]]
+==== Fixed UML interpretation
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Fixed UML interpretation
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R2
+
+|*Statement:*
+
+Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set
+of pre-established conventions on the UML notation to reach a fixed interpretation.
+
+|===
+
+*Description:*
+
+The interpretation of UML as a logical structure, including OWL, was and still is an active research topic. But even the
+OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using
+UML is to provide for the SEMIC semantic data specifications a standard graphical notation which many are familiar with.
+Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should
+match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
+
+The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. Using the conventions
+and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such
+a precise set of mapping rules is that it allows for:
+
+* Implementing tools to transform UML into derivative artefacts, thus enabling UML as the single source of truth.
+* Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness,
+conformance and consistency.
+
+These rules will increase the coherency of the UML diagrams across projects and organisations.
+
+Within SEMIC, the interpretation is implemented by the SEMIC toolchain [xref:references.adoc#ref:15[15]]. [??? - should we add a ref?]
+
+The table below provides recommended interpretations of UML elements in OWL and SHACL.
+These interpretations can be considered high-level mapping rules implementable into transformation tools that generate
+OWL ontology and, respectively, SHACL constraints from the UML conceptual model.
+
+[%autowidth]
+|===
+|{set:cellbgcolor: none} *UML model element*|*OWL ontology element*|*SHACL data shape element*
+|*Class*|OWL Class|SHACL Node Shape
+|*Abstract class*||SHACL Node Shape with a SPARQL constraint that selects all instances of this class
+|*Attribute*|OWL datatype or object property, based on their type.|Property constraint, within the SHACL Node Shape corresponding
+to the source UML class (but the constraints are mentioned below on type and multiplicity)
+|*Attribute type*||Property constraint, within the SHACL Node Shape corresponding to the UML class, indicating the range
+class or datatype.
+|*Attribute multiplicity*||Property constraint(s), within the SHACL Node
+|*Association (target/source role names)*|Object property declaration axiom for the target (or source, or both) end of
+the association.|
+|*Association source*|Optional domain declaration (data shape constraints shall be preferred).|Property constraint, within
+the SHACL Node Shape corresponding to the source UML class (but the constraints are mentioned below on target and multiplicity)
+|*Association target*|Optional property range declaration (data shape constraints shall be preferred).|Property constraint,
+within the SHACL Node Shape corresponding to the source UML class, indicating the range class
+|*Association multiplicity*||Property constraints, within the SHACL Node Shape corresponding to the source UML class, indicating
+the minimum and/or maximum or exact cardinality (similar to Attribute multiplicity).
+|*Association symmetry*||SPARQL constraint, within the SHACL Node Shape, corresponding to the UML constraint, within the class,
+which selects instances connected by the object property in a reciprocal manner.
+|*Association inverse (for bidirectional associations only)*|Two object property declaration axioms, one for the target and
+the second for the source end of the association, and a declaration that the two properties stand in an inverse relationship
+to one another.|
+|*Dependency*|Object property declaration axiom for the target end of the association.|
+|*Dependency source*||Property constraint, within the SHACL Node Shape corresponding to the source UML class (but the constraints
+are mentioned below on target and multiplicity)
+|*Dependency target*||Property constraints, within the SHACL Node Shape corresponding to the source UML class, indicating
+(a) the range class is skos:Concept and (b) the value is skos:inScheme the target name (expected an enumeration).
+|*Dependency multiplicity*||Property constraints within the SHACL
+|*Class generalisation*|Subclass axiom between the classes corresponding to the UML classes. |
+|*Property generalisation*|Sub-property axiom for the generalisation between UML associations and dependencies.|
+|===
+
+****
+Examples:
+
+The UML interpretation applied by the SEMIC toolchain is described in [xref:references.adoc#ref:29[29]]. To assist the editor
+while data modelling to choose the best representation, a test suite is available covering all modelling patterns.
+
+The SEMIC toolchain shares the same interpretation as the OSLO toolchain [xref:references.adoc#ref:17[17]].
+
+In the context of eProcurement ontology, a toolchain has been developed to transform and validate UML models. Such tools
+are based on two documents: UML convention specifications [xref:references.adoc#ref:30[30]] and UML transformation specifications
+[xref:references.adoc#ref:31[31]].
+****
+
+[[sec:cmc-r3]]
+==== On element names and URIs
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* On element names and URIs
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R3
+
+|*Statement:*
+
+All UML element names should be fit for URI generation with clear namespace organisation.
+|===
+
+*Description:*
+
+This convention aims at ensuring that URIs can be generated from UML element names and shall be treated as an extension to
+the terminology style conventions [xref general vocabulary naming style].
+
+The element names are intended as human-readable denominations (called labels) and as machine-readable denominations
+(called identifiers).
+
+This means that the element names
+
+* serve as the primary source for generating URIs [xref:references.adoc#ref:32[32]] to ensure unambiguous machine-readable
+reference to a formal construct.
+* serve as the primary source for generating labels to ensure human readers' comprehension
+* follow an organisation of namespaces
+
+Thus, in the UML model, the Element names must conform to RDF [xref:references.adoc#ref:33[33]] and XML [xref:references.adoc#ref:34[34]]
+format specifications. Both languages effectively require that terms begin with an upper or lower case letter from the ASCII
+character set or an underscore (_). This tight restriction means that, for example, terms may not begin with a number, hyphen
+or accented character [xref:references.adoc#ref:35[35]]. Although underscores are permitted, they are discouraged as they may be,
+in some cases, misread as spaces. A formal definition of these restrictions is given in the XML specification document
+[xref:references.adoc#ref:34[34]].
+
+Note that, when the UML element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
+may be used to express explicitly URIs, labels, notes and other types of annotations
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]].
+
+
+****
+*Examples:*
+
+The class Address in Core Location has several properties. All the properties have a displayed name (e.g. “addressArea”) with the UML class diagram and associated UML Tags, such as a label for the HTML specification (“address area”), definition, usage note and the related URI.
+
+image::cmc-r3.png[]
+****
+
+
+[[sec:cmc-r4]]
+==== Case sensitivity and charset
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Case sensitivity and charset
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R4
+
+|*Statement:*
+
+All UML element names are case sensitive and shall follow the CamelCase convention.
+|===
+
+*Description:*
+
+The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
+subsequent character positions. [xref:references.adoc#ref:26[26]] _resolve references from the original doc_ - [???]
+
+Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
+therefore, UML element names shall be CamelCased.
+
+The names of
+
+* UML Classes and Datatypes shall start with an upper-case letter,
+* UML Enumerations and Packages shall start with a lower-case letter,
+* UML Attributes shall start with a lower-case letter,
+* UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter
+
+[xref:references.adoc#ref:36[36],
+xref:references.adoc#ref:37[37]]
+
+****
+*Examples:*
+
+In the image below, there are two classes from Core Location with the related properties and a relation between them.
+The name of the classes are in UpperCamelCase, the name of the properties are in lowerCamelCase and the relation (adminUnit)
+is in lowerCamelCase.
+
+image::cmc-r4.png[]
+****
+
+
+[[sec:cmc-r5]]
+==== Namespaces and prefixes in element names
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Namespaces and prefixes in element names
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R5
+
+|*Statement:*
+
+Element names shall be organised by namespaces. Namespaces may be indicated through prefixes delimited by colon (:)
+character, forming qualified names.
+|===
+
+*Description:*
+
+To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
+namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
+[xref:references.adoc#ref:38[38]].
+
+A namespace is a set of symbols that are used to organise objects of various kinds so that these objects may be referred
+to by name and uniquely identifiable [xref:references.adoc#ref:39[39]].
+
+A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
+[xref:references.adoc#ref:40[40]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:38[38]]. Syntactically,
+they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
+namespace URIs and a default namespace applicable to unprefixed element names.
+
+As the element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The element
+name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the element
+name, after the colon, is the local segment. See [xref:references.adoc#ref:38[38]] for more info.
+
+In case the editor decides to omit to specify a prefix in the element name when a URI generation logic is devised, an implicit
+prefix can be assumed by default. The qualified names may be structured as follows:
+
+* prefix:localSegment
+* :localSegment
+* localSegment
+
+****
+*Examples:*
+
+When `dcat` a namespace name is declared as bound to base URI `http://www.w3.org/ns/dcat#`, then then `dcat:Catalog` is the
+qualified name  from which the `http://www.w3.org/ns/dcat#Catalog` URI is interpreted.
+
+When `cv` (short for Core Vocabularies) namespace name is declared bound to base URI `http://data.europa.eu/m8g/`, then
+`cv:adminUnit` is the qualified name from which the `http://data.europa.eu/m8g/adminUnit` URI is generated.
+****
+
+
+[[sec:cmc-r6]]
+==== Rich annotations through tags
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Rich annotations through tags
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R6
+
+|*Statement:*
+
+Tags can be conveniently used for annotating the elements.
+|===
+
+*Description:*
+
+UML Element tags are key-value pairs that are associated with a UML Element (class, attribute, connector, etc. ). The tags
+can be used as an extension mechanism to the UML language. They can be used to provide information that is not expressible
+anywhere else on a UML Element.
+
+For example, in this style guide, we recommend that the UML Element name shall be used to derive both the concept URI and
+the concept preferred label. However, if the model editor chooses to use the UML Element name for deriving the concept label
+alone, then the URI needs to be specified elsewhere. This is one example of how the UML tags can be used: simply specify a
+new tag, “uri”, and provide the concept URI as a value (see figure below).
+
+Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML
+elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
+examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).
+
+****
+*Examples:*
+
+image::cmc-r6.png[]
+****
+
+
+[[sec:cmc-r7]]
+==== Explicit depiction of external dependencies
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Explicit depiction of external dependencies
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R7
+
+|*Statement:*
+The UML diagrams should depict how the developed model relates to external (reused) models.
+|===
+
+*Description:*
+
+UML does not support an import mechanism comparable to the one specified in OWL. Yet, the reuse of models is a highly encouraged
+practice. To accommodate such practice, the reused elements shall be created as in the original model and depicted in diagrams.
+
+The external elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
+meaning shall be preserved without changes to the labels, concept definitions or URIs.
+
+Reused classes shall be depicted in the UML diagrams. Reused properties shall be depicted in diagrams as connectors and
+attributes. It is not necessary to depict unused classes or properties [xref:references.adoc#ref:41[41]].
+
+****
+*Examples:*
+
+In the example below, a Core Vocabulary Person includes concepts from another vocabulary (FOAF); thus the two classes Person and
+Agent have the “foaf” namespace prefix specified in front.
+
+image::cmc-r7.png[]
+****
+
+
+[[sec:cmc-r8]]
+==== Class inheritance
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Class inheritance
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R8
+
+|*Statement:*
+
+Make sure that the attributes and associations of a superclass apply to all its subclasses.
+|===
+
+*Description:*
+
+This is a general modelling principle that should be respected, yet when it comes to reusing, such a requirement is often
+overlooked. This means that the model editor shall carefully analyse the reused model as a whole and how it is integrated
+with their own model.
+
+****
+*Examples:*
+
+In Core Public Organization, the class Public Organisation is a subclass of org:Organization from the Organization Ontology,
+and different properties/relations have been inherited such as hasSubOrganization, hasMember, hasUnit.
+
+image::cmc-r8.png[]
+****
+
++[xref:references.adoc#ref:42[42]] [???] should we change square bracktes?
+
+
+[[sec:cmc-r9]]
+==== Abstract classes
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Abstract classes
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R9
+
+|*Statement:*
+
+Classes that are not intended for instantiation can be marked as abstract.
+|===
+
+*Description:*
+
+When a (super-)class is created for capturing a level of abstraction in the domain knowledge, it may not always be suitable
+for instantiation. Editors may choose to mark such classes as abstract and to indicate that their subclasses shall be used in
+practice. In UML, this can be done via << abstract >> stereotype.
+
+Doing so has no impact on the OWL [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL).
+However, SHACL data shapes [xref:references.adoc#ref:44[44]] can be generated to express that no instances of this class shall
+not occur in the data. [xref:references.adoc#ref:45[45], xref:references.adoc#ref:46[46]]
+
+****
+*Examples:*
+
+Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47[47]] toolchains support such stereotypes.
+****
+
+
+[[sec:cmc-r10]]
+==== Attribute specifications
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Attribute specifications
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R10
+
+|*Statement:*
+
+UML Attributes shall be used to define properties taking simple data type values. An attribute declaration should specify
+its datatype and multiplicity whenever possible [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r11[CMC-R11]].
+|===
+
+*Description:*
+
+It is recommended that atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
+those should be expressed as relationships (represented by Association connectors) between the two classes
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
+
+High preference shall be given to using OWL 2 compliant XSD and RDF standard datatypes. Standard UML data types may be used
+with interpretation in the Table below. Custom datatypes shall be avoided when possible. [ref]. [???] - what ref?
+
+|===
+|*UML*|*XSD*
+|Boolean|xsd:boolean
+|Float|xsd:float
+|Integer|xsd:integer
+|Character, String|xsd:string / rdf:langString
+|Short|xsd:short
+|Long|xsd:long
+|Decimal|xsd:decimal
+|Date|xsd:date
+|DateTime|xsd:dateTime
+|===
+
+Properties whose values come from a controlled vocabulary or authority table and constitute a special case because two
+modelling practices are recognised here: as attributes with type “Code”, and as dependency relations pointing to a UML Enumeration
+named after the controlled list.
+
+In the first case, the attribute type “Code” shall be mapped to the skos:Concept class. The advantage of this approach is
+the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely which
+list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
+[xref UML tags rule], but that value will not be visible in the diagrams.
+
+In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the Class
+and the Enumeration representing the controlled list, oriented from the class towards the enumeration. It denotes that the
+OWL class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
+vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target
+role name and multiplicity shall be provided [xref controlled list enumeration rule].
+
+Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
+between a UML class element and a UML Datatype element. [xref:references.adoc#ref:48[48], xref:references.adoc#ref:49[49],
+xref:references.adoc#ref:50[50], xref:references.adoc#ref:51[51]]
+
+****
+*Examples:*
+
+We exemplify the two approaches to specifying attribute data types described above. In CCCEV specification, the “Requirement”
+class attributes use loose UML and other data types: String, Literal, and Code. No precise definition of what they mean is
+provided. The attributes of the Requirement class are left underspecified and with generic data types: the “description”
+attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this data type means).
+It is also not clear what would be the difference between Literal and String, eventually one may gain intuition from the
+attribute name.
+
+image::cmc-r10-1.png[]
+
+The same class is reused in ePO ontology. The `cccev:Requirement` attributes use explicitly standard data types and cardinalities.
+And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
+a non-atomic data type, but a controlled list of `skos:Concept`(s).
+
+image::cmc-r10-2.png[]
+****
+
+
+[[sec:cmc-r11]]
+==== Multiplicity of attributes and connectors
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Multiplicity of attributes and connectors
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R11
+
+|*Statement:*
+
+The multiplicity of connectors and class attributes should be specified, indicating the minimum and maximum cardinality.
+The cardinality shall be as permissive as possible in Core Vocabularies and as restrictive as possible in Application Profiles.
+|===
+
+*Description:*
+
+If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
+Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.
+
+If a structural feature (attribute or association) is not relevant for the domain or the applications, instead of setting
+a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:52[52]].
+
+However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
+variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
+minimum cardinality shall be set to 1, for example [1..*] [xref:references.adoc#ref:49[49]].
+
+A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
+it is recommended to fall back on the implicit assumption of [0..*]. Not to be confused with the default cardinality assumed
+in tools. For example, Enterprise Architect by default assumes [1..1] cardinality for attributes and omits to display it; and a
+similar default assumption exists in XML/XSD.
+
+Notation for multiple cardinality can be either with ‘*’ or ‘n’. In principle using either notation is fine, however, it is
+recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
+It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
+on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented
+so as to handle either of those notations, as their meaning is identical.
+
+Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
+the cardinality shall be the most permissive, where possible [xref:references.adoc#ref:52[52]].
+
+Limit the constraints to business rules, do not add technical constraints to the model [xref:references.adoc#ref:53[53]].
+
+If an attribute or an association from a reused vocabulary is not relevant, do not set the lower limit of multiplicity to 0,
+but simply omit it in the model [xref:references.adoc#ref:52[52]].
+
+****
+*Examples:*
+
+All Core Vocabularies have set a permissive cardinality [0..\*], for example, all the properties of Public Organisation, on the left,
+have multiplicity [0..*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:
+
+image::cmc-r11-1.png[]
+image::cmc-r11-2.png[]
+****
+
+
+[[sec:cmc-r12]]
+==== Connector specification
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Connector specification
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R12
+
+|*Statement:*
+
+UML Connectors shall be used to define relations and properties taking non-atomic type values. A connector declaration should
+specify multiplicity whenever possible [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r11[CMC-R11]].
+|===
+
+*Description:*
+
+UML Connectors shall be used to denote object properties (see OWL2 semantics). [???] - what ref to use?
+
+First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
+explain the optional usage of the dependency connector type.
+
+On connector names,
+
+A generic UML connector may have a name applied to it, and it may have source/target roles specified in addition. This provides
+flexibility to how the domain knowledge may be expressed in UML; however, this freedom increases the level of ambiguity as well.
+Therefore, we foresee two distinct ways to express properties: using the connector (generic) name or using the connector
+source/target ends.
+
+We strongly recommend using the source/target role name to indicate the relation name and leave empty the (generic) element name.
+So, if a target role is specified, then no connector name can be specified. Optionally a source role may be provided to indicate
+the inverse relation.  In this case, the relation direction must be changed from “Source -> Target” to “Bidirectional”.
+
+Or conversely, if the connector direction is “Bidirectional”, then source and target roles must be provided. No other directions
+are permitted.
+
+It is recommended that each association has a definition. The definition is then used for each role as they represent the same
+meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.
+
+On connector types
+UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a
+UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.
+
+The UML Association connectors represent relations between source and target classes. The association connector cannot be used
+between other kinds of UML elements.
+
+The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the class towards the
+enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]]. The connector must have the direction “Source -> Target”.
+No other directions are acceptable.
+
+The UML Generalization connector signifies a class-subClass relation and is transformed into `rdfs:subClassOf` relation standing
+between source and target classes. The connector must have no name or source/target roles specified in the UML model. If a model
+class should inherit a class from an external model, then proxies must be created for those classes
+[xref:gc-general-conventions.adoc#sec:gc-r1[GC-R1],
+xref:clarification-on-reuse.adoc#sec:reuse-of-a-class-with-semantic-adaptations[Reuse of a class with semantic adaptation]].
+For example, if `Person` specialises a `foaf:Agent`.
+
+
+[[sec:cmc-r13]]
+==== All elements are "public"
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* All elements are "public"
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R13
+
+|*Statement:*
+
+The visibility of all UML elements should be "public".
+|===
+
+*Description:*
+
+For semantic data specifications, accessibility to the information is not a concern. The sole concern is to precise the
+semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
+and the “+” symbol shall always be used next to each property. This symbol means “public” [xref:references.adoc#ref:54[54]].
+
+****
+*Examples:*
+
+The Person class in Core Vocabulary Person only has public properties indicated with a “+” symbol next to each property.
+
+image::cmc-r13.png[]
+****
+
+
+[[sec:cmc-r14]]
+==== Controlled lists as enumerations
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Controlled lists as enumerations
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R14
+
+|*Statement:*
+
+The controlled lists of values shall be modelled as enumerations and specified whenever possible.
+|===
+
+*Description:*
+
+Controlled lists play an essential role in establishing interoperability standards. Management and publication of controlled
+lists are not part of this style guide. But the expectation, however, is that the controlled lists are published in accordance
+with best practices and represented with the SKOS model using persistent identifiers. In such an approach, the controlled list is
+expressed as a `skos:ConceptScheme` and the specific values as `skos:Concept`(s). Also, such controlled lists are often developed,
+published and maintained stand-alone following their own lifecycle so they can be reused in other models.
+
+If the authors of the model intend to omit which controlled list shall be used, then a class attribute with the range “Code”
+or `skos:Concept` can be created to indicate that. This approach can be useful in situations when multiple (external) controlled
+lists can be used interchangeably. For example the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`
+without specifying from which controlled list.
+
+image::dcatcatalogue.png[]
+
+It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an enumeration
+shall be created representing the controlled list. The enumeration shall be empty, i.e. not specifying any value, because
+the values are maintained externally and only the reference is necessary.
+
+The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between
+classes and that enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example,  in EPO,
+`dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table
+published on the EU Vocabularies website).
+
+image::cmc-r14-1.png[]
+
+The name of the enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
+type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs
+slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil
+two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list. [EPO spec, sec] [???]
+
+If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it,
+which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:55[55]].
+
+****
+*Examples:*
+
+The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation, see in the
+image on top, while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service
+is intended for, see in the image below.
+
+While the COFOG controlled list, owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes,
+the Core Public Organisation and CPSV-AP can still point to it independently.
+
+image::cmc-r14-2.png[]
+image::cmc-r14-3.png[]
+****
+
+
+[[sec:cmc-r15]]
+==== Partition the model into packages
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Partition the model into packages
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R15
+
+|*Statement:*
+Use packages to logically organise the model.
+
+|===
+
+*Description:*
+
+It is best to avoid defining any semantic interpretation into UML Packages. They are best used for organisational purposes,
+defining logical partitions in the model. So, packages can serve as a method for the slicing of the conceptual model into
+sub-domains.
+
+It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
+namespaces of connectors and attributes. And, it does not work in cases when an attribute or a connector is used multiple
+times in several packages. Namespace management is easier attained by using other methods such as using prefixes in element
+names or using element tags [xref:references.adoc#ref:56[56]].
+****
+*Examples:*
+
+In the image below, each class is organised in  a package - mapped to a namespace. However, for convenience, Core Vocabularies
+are in multiple packages but mapped to the same namespace.
+
+image::data:image/png;base64,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[]
+****
+
+
+[[sec:cmc-r16]]
+==== Diagram readability
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Diagram readability
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: CMC-R16
+
+|*Statement:*
+
+UML class diagrams shall be organised for readability.
+|===
+
+*Description:*
+
+UML class diagrams are used for depicting the conceptual model. Their primary purpose is to construe the meaning of concepts,
+relations and their organisation to the human reader. Therefore, the diagrams shall be optimised for readability.
+
+It is recommended that the diagrams
+
+* are well spaced (proper space between lines, boxes and labels)
+* minimise the number of crossing connectors [xref:references.adoc#ref:57[57]]
+* prefer orthogonal to straight connectors [xref:references.adoc#ref:58[58]]
+* align elements horizontally & vertically [xref:references.adoc#ref:57[57]]
+* space elements evenly
+* avoid overlapping labels and depict all labels
+* align labels horizontally and avoid vertical or oblique alignment
+* place subclasses under or to the right of their parent [xref:references.adoc#ref:59[59]] and
+* place the part under or to the right of the whole at aggregates or composites [xref:references.adoc#ref:58[58]].
+* minimise the number of details, and are short and concise; multiple small(-er) diagrams are preferred to one large diagram
+* diagram size:
+** prefer a multiple themed small(er) diagrams to large and crowded ones
+** diagrams shall be no bigger than one A4 page
+** simplify complex diagrams [xref:references.adoc#ref:60[60]]:
+*** breaking it down into several smaller diagrams.
+*** by highlighting certain parts of the diagram.
+*** by hiding attributes, role names, etc. that are not relevant.
+
+* Symbol size equal, and nothing shall draw more attention unless intended. Make elements of equal importance equally
+large [xref:references.adoc#ref:61[61]].
+* Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:62[62]].
+
+`[xref:references.adoc#ref:63[63]], [SEMIC draft specs, sec on UML, Rule 13 - 23] [???]
+****
+*Examples:*
+
+In the example below, taken from Core Person, the classes are aligned vertically and horizontally, subclasses are placed
+just below the related parent class, the relations are horizontal, vertical or orthogonal.
+
+image::core-person.png[]
+****

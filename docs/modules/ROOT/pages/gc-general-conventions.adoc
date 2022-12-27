@@ -1,0 +1,155 @@
+=== General conventions
+
+[[sec:gc-r1]]
+==== Reuse existing concepts as much as possible
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Reuse existing concepts as much as possible
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R1
+
+|*Statement:*
+
+Reuse existing concepts as much as possible, respecting the original semantics and lexicalisation.
+|===
+
+*Description:*
+
+Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must
+be considered by reusing properties and classes from other vocabularies.
+As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
+Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
+In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [xref:clarification-on-reuse.adoc[Clarification on reuse]].
+
+[xref:references.adoc#ref:18[18],
+xref:references.adoc#ref:19[19]]
+
+
+[[sec:gc-r2]]
+==== For reuse, prefer maintained vocabularies
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* For reuse, prefer maintained vocabularies
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R2
+
+|*Statement:*
+Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
+well maintained and governed.
+[xref:references.adoc#ref:20[20]]
+|===
+
+*Description:*
+
+Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
+(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
+to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
+fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+stages planned.
+
+
+[[sec:gc-r3]]
+==== Concept reference and terms
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Concept reference and terms
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R3
+
+|*Statement:*
+
+Each concept shall be (a) referenceable by a URI, (b) formally defined and (c) described by a precise, unambiguous human-readable
+label and definition.
+
+|===
+*Description:*
+
+Terms and concepts are not the same things. A term is a word, compound word, or multi-word expression that, in specific
+contexts, is given specific meanings – these may deviate from the meanings the same words have in other contexts and in
+everyday language.
+A concept can be viewed as an idea or notion, a unit of thought [xref:references.adoc#ref:21[21]]. However, what constitutes a unit of thought is
+subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be
+well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
+by examples and explanatory notes.
+So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
+identity of a concept’s “meaning”. URIs also enable referencing, an essential feature of meaning exchange (communication).
+Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
+And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
+term reusable, it should be published as part of a data specification.
+
+[[sec:gc-r4]]
+==== Vocabulary terminology style
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:*  Vocabulary terminology style
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R4
+
+|*Statement:*
+
+The terminology style shall be consistent across the vocabulary.
+
+|===
+*Description:*
+
+In practice, some variation in terminology style (concept naming conventions) can be noticed across a wide range of semantic
+data specifications. Whatever the adopted style may be, the author shall consistently apply it to the whole model. These
+names will be reflected in all artefacts and in the URIs.
+
+Next, we provide a set of loose recommendations:
+
+* British English is the lingua franca in the model. [xref:references.adoc#ref:22[22]]
+* Avoid acronyms and abbreviations in concept names [xref:references.adoc#ref:22[22]]
+* Classes are names with nouns and singular [xref:references.adoc#ref:23[23]]
+* Names are case-sensitive. [xref:references.adoc#ref:22[22]]
+* Relations and Properties use verbs at a present tense [xref:references.adoc#ref:24[24]]
+** Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
+“is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
+to the name.
+* Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
+or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [xref:references.adoc#ref:24[24]]
+
+
+[[sec:gc-r5]]
+==== Vocabulary definition styling
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Vocabulary definition styling
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R5
+
+|*Statement:*
+
+The concept definitions shall be elaborated consistently across the vocabulary.
+
+|===
+*Description:*
+
+In practice, different styles of defining concepts can be noticed across a range of semantic data specifications.
+
+The SEMIC_ Principles for creating good definitions [xref:references.adoc#ref:25[25]] are a basis for writing definitions.
+They are based on advice found in the literature and are the following:
+
+* Be concise but complete,
+** Avoid over-generalisations. Adapt and contextualise the definition to the surrounding/connected concepts.
+** Make sure that every concept that occurs in the model is directly (or indirectly) defined
+* Describe only one term
+* Structure the definition in a standardised way:
+** Use the singular form to phrase the definition [xref rules on element names]
+** No negative definition by stating what the term is, and not by enumerating what it is NOT,
+** Use only commonly understood abbreviations
+** Use similar terminology for related definitions
+* No circular definitions, i.e. the term it defines should not be part of the definition,
+* Secondary information such as additional explanation, scoping, examples, etc. are to be documented in usage notes.
+* The definition is formed of one or more sentences that starts with a capital letter and end with a period.
+* Do not start a definition with a repetition of the name of the concept.
+Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
+we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:26[26]].
