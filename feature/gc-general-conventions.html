@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SEMIC</title>
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="..">SEMIC</a>
+        </div>
+    </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="feature">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">SEMIC Style guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="terminological-clarifications.html">Terminological clarifications</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="arhitectural-clarifications.html">Arhitectural clarifications</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="clarification-on-reuse.html">Clarifications on "reuse"</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gc-conceptual-model-conventions.html">Conceptual model conventions (UML)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gc-semantic-conventions.html">Semantic conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gc-data-shape-conventions.html">Data shape conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gc-methodology-conventions.html">Methodology conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gc-publication-conventions.html">Publication conventions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="rule-template.html">Rule template</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="terminology.html">Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="references.html">References</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">SEMIC Style guide</span>
+    <span class="version">feature</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">SEMIC Style guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">feature</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">SEMIC Style guide</a></li>
+    <li><a href="guidelines-and-conventions.html">Guidelines and conventions</a></li>
+    <li><a href="gc-general-conventions.html">General conventions</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/main/docs/modules/ROOT/pages/gc-general-conventions.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect2">
+<h3 id="_general_conventions"><a class="anchor" href="#_general_conventions"></a>General conventions</h3>
+<div class="sect3">
+<h4 id="sec:gc-r1"><a class="anchor" href="#sec:gc-r1"></a>Reuse existing concepts as much as possible</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Reuse existing concepts as much as possible</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Reuse existing concepts as much as possible, respecting the original semantics and lexicalisation.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must
+be considered by reusing properties and classes from other vocabularies.
+As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
+Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
+In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on reuse</a>].</p>
+</div>
+<div class="paragraph">
+<p>[<a href="references.html#ref:18" class="xref page">18</a>,
+<a href="references.html#ref:19" class="xref page">19</a>]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r2"><a class="anchor" href="#sec:gc-r2"></a>For reuse, prefer maintained vocabularies</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> For reuse, prefer maintained vocabularies</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
+Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
+well maintained and governed.
+[<a href="references.html#ref:20" class="xref page">20</a>]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
+(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
+to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
+fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+stages planned.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r3"><a class="anchor" href="#sec:gc-r3"></a>Concept reference and terms</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Concept reference and terms</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Each concept shall be (a) referenceable by a URI, (b) formally defined and (c) described by a precise, unambiguous human-readable
+label and definition.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Terms and concepts are not the same things. A term is a word, compound word, or multi-word expression that, in specific
+contexts, is given specific meanings – these may deviate from the meanings the same words have in other contexts and in
+everyday language.
+A concept can be viewed as an idea or notion, a unit of thought [<a href="references.html#ref:21" class="xref page">21</a>]. However, what constitutes a unit of thought is
+subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be
+well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
+by examples and explanatory notes.
+So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
+identity of a concept’s “meaning”. URIs also enable referencing, an essential feature of meaning exchange (communication).
+Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
+And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
+term reusable, it should be published as part of a data specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r4"><a class="anchor" href="#sec:gc-r4"></a>Vocabulary terminology style</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong>  Vocabulary terminology style</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The terminology style shall be consistent across the vocabulary.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>In practice, some variation in terminology style (concept naming conventions) can be noticed across a wide range of semantic
+data specifications. Whatever the adopted style may be, the author shall consistently apply it to the whole model. These
+names will be reflected in all artefacts and in the URIs.</p>
+</div>
+<div class="paragraph">
+<p>Next, we provide a set of loose recommendations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>British English is the lingua franca in the model. [<a href="references.html#ref:22" class="xref page">22</a>]</p>
+</li>
+<li>
+<p>Avoid acronyms and abbreviations in concept names [<a href="references.html#ref:22" class="xref page">22</a>]</p>
+</li>
+<li>
+<p>Classes are names with nouns and singular [<a href="references.html#ref:23" class="xref page">23</a>]</p>
+</li>
+<li>
+<p>Names are case-sensitive. [<a href="references.html#ref:22" class="xref page">22</a>]</p>
+</li>
+<li>
+<p>Relations and Properties use verbs at a present tense [<a href="references.html#ref:24" class="xref page">24</a>]</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
+“is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
+to the name.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
+or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [<a href="references.html#ref:24" class="xref page">24</a>]</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r5"><a class="anchor" href="#sec:gc-r5"></a>Vocabulary definition styling</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Vocabulary definition styling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The concept definitions shall be elaborated consistently across the vocabulary.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>In practice, different styles of defining concepts can be noticed across a range of semantic data specifications.</p>
+</div>
+<div class="paragraph">
+<p>The SEMIC_ Principles for creating good definitions [<a href="references.html#ref:25" class="xref page">25</a>] are a basis for writing definitions.
+They are based on advice found in the literature and are the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Be concise but complete,</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Avoid over-generalisations. Adapt and contextualise the definition to the surrounding/connected concepts.</p>
+</li>
+<li>
+<p>Make sure that every concept that occurs in the model is directly (or indirectly) defined</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Describe only one term</p>
+</li>
+<li>
+<p>Structure the definition in a standardised way:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the singular form to phrase the definition [xref rules on element names]</p>
+</li>
+<li>
+<p>No negative definition by stating what the term is, and not by enumerating what it is NOT,</p>
+</li>
+<li>
+<p>Use only commonly understood abbreviations</p>
+</li>
+<li>
+<p>Use similar terminology for related definitions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>No circular definitions, i.e. the term it defines should not be part of the definition,</p>
+</li>
+<li>
+<p>Secondary information such as additional explanation, scoping, examples, etc. are to be documented in usage notes.</p>
+</li>
+<li>
+<p>The definition is formed of one or more sentences that starts with a capital letter and end with a period.</p>
+</li>
+<li>
+<p>Do not start a definition with a repetition of the name of the concept.
+Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
+we recommend avoiding any character encodings and using plain ASCII [<a href="references.html#ref:26" class="xref page">26</a>].</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+    <p style="text-align:center">This document is created by the Publications Office of the European Union and is
+        licensed under the terms of <a href="https://github.com/OP-TED/eForms-SDK/blob/main/LICENSE">EUPL-1.2
+            license</a>.
+        <br/>This page was built using the Antora default UI. The source code for this UI is licensed under the terms of
+        the MPL-2.0 license.
+    </p>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
