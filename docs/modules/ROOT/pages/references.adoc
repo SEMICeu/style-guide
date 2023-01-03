@@ -79,7 +79,7 @@ recommendation, W3C, July 2017. https://www.w3.org/TR/2017/REC-shacl20170720/.
 . [[ref:62]] Thijs, G. (2019) OSLO MODELLERINGSREGELS, sec 3.2.5. Available at: https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf.
 . [[ref:63]] Thijs, G. (2019) OSLO MODELLERINGSREGELS, sec 3.1.11. Available at: https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf.
 . [[ref:64]] Buitelaar.P et al. (2011). Ontology Lexicalisation: The lemon Perspective.
-. [[ref:65]] Vann
+. [[ref:65]] Davis, I. (2010) VANN: A vocabulary for annotating vocabulary descriptions. Available at: https://vocab.org/vann/.
 . [[ref:66]] Knublauch, H. and Kontokostas, D. (eds) (2017) Shapes constraint language (SHACL), W3C. W3C. Available at: https://www.w3.org/TR/shacl/.
 . [[ref:67]]Shape expressions(ShEx). Available at: https://shex.io/ (Accessed: January 2, 2023).
 . [[ref:68]] R. Reiter. On closed world data bases. In Readings in artificial intelligence, pages 119–140. Elsevier, 1981.
