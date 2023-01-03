@@ -68,7 +68,7 @@
 . [[ref:66]] Knublauch, H. and Kontokostas, D. (eds) (2017) Shapes constraint language (SHACL), W3C recommendation. W3C. Available at: https://www.w3.org/TR/shacl/.
 . [[ref:67]]Shape expressions(ShEx). Available at: https://shex.io/ (Accessed: January 2, 2023).
 . [[ref:68]] R. Reiter. On closed world data bases. (1981) In Readings in artificial intelligence, pages 119–140. Elsevier.
-. [[ref:69]] TOGAF. (2022) The Open Group Website. Available at: https://www.opengroup.org/togaf (Accessed: January 2, 2023).
+. [[ref:69]] The Open Group (2018) The TOGAF standard, version 9.2. Zaltbommel: Van Haren Publishing.
 . [[ref:70]] López, F et al. (1997). METHONTOLOGY: from ontological art towards ontological engineering. Engineering Workshop on Ontological Engineering (AAAI97).
 . [[ref:71]] Jarrar, M et al. (2008). Ontology engineering - The DOGMA approach. 10.1007/978-3-540-89784-2_2.
 . [[ref:72]] Guarino, N et al. (2009). An Overview of OntoClean. 10.1007/978-3-540-92673-3_9.
