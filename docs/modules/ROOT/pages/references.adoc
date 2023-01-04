@@ -72,7 +72,7 @@
 . [[ref:70]] López, F et al. (1997). METHONTOLOGY: from ontological art towards ontological engineering. Engineering Workshop on Ontological Engineering (AAAI97).
 . [[ref:71]] Jarrar, M et al. (2008). Ontology engineering - The DOGMA approach. 10.1007/978-3-540-89784-2_2.
 . [[ref:72]] Guarino, N et al. (2009). An Overview of OntoClean. 10.1007/978-3-540-92673-3_9.
-. [[ref:73]] TOVE - Fox, M.S., (1992), “The TOVE Project: A Common-sense Model of the Enterprise”, Industrial and Engineering Applications of Artificial Intelligence and Expert Systems, Belli, F. and Radermacher, F.J. (eds.), Lecture Notes in Artificial Intelligence # 604, Berlin: Springer-Verlag, pp. 25-34.
+. [[ref:73]] TOVE - Fox, M.S., (1992), The TOVE Project: A Common-sense Model of the Enterprise, Industrial and Engineering Applications of Artificial Intelligence and Expert Systems, Belli, F. and Radermacher, F.J. (eds.), Lecture Notes in Artificial Intelligence # 604, Berlin: Springer-Verlag, pp. 25-34.
 . [[ref:74]] Pinto, H. et al. (2004). DILIGENT: Towards a fine-grained methodology for Distributed, Loosely-controlled and evolving Engineering of oNTologies.. Proceedings of the 16th European Conference on Artificial Intelligence (ECAI 2004). 393-397.
 . [[ref:75]] Baonza, M. (2010). NeOn Methodology for Building Ontology Networks: Specification, Scheduling and Reuse.
 . [[ref:76]] Vetter, S et al., Rudi. (2009). Ontology Engineering Methodology. 10.1007/978-3-540-92673-3_6..
