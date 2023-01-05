@@ -1,7 +1,7 @@
 //* xref:index.adoc[Home]
 * xref:introduction.adoc[Introduction]
 * xref:terminological-clarifications.adoc[Terminological clarifications]
-* xref:arhitectural-clarifications.adoc[Arhitectural clarifications]
+* xref:arhitectural-clarifications.adoc[Architectural clarifications]
 * xref:clarification-on-reuse.adoc[Clarifications on "reuse"]
 * xref:guidelines-and-conventions.adoc[Guidelines and conventions]
 ** xref:gc-general-conventions.adoc[General conventions]
