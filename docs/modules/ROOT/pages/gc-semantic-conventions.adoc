@@ -28,7 +28,7 @@ We recommend using OWL limited to a set of expression types.
 
 Core Vocabularies have an RDF representation as OWL Ontology. In the example below, part of Core Person is depicted:
 
-[source]
+[source, turtle]
 ----
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
