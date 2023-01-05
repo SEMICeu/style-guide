@@ -63,7 +63,7 @@ conformance and consistency.
 
 These rules will increase the coherency of the UML diagrams across projects and organisations.
 
-Within SEMIC, the interpretation is implemented by the SEMIC toolchain [xref:references.adoc#ref:15[15]]. [??? - should we add a ref?]
+Within SEMIC, the interpretation is implemented by the SEMIC toolchain [xref:references.adoc#ref:15[15]].
 
 The table below provides recommended interpretations of UML elements in OWL and SHACL.
 These interpretations can be considered high-level mapping rules implementable into transformation tools that generate
@@ -184,10 +184,10 @@ All UML element names are case sensitive and shall follow the CamelCase conventi
 *Description:*
 
 The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
-subsequent character positions. [xref:references.adoc#ref:22[22, sec 4.2]] _resolve references from the original doc_ - [???]
+subsequent character positions. [xref:references.adoc#ref:22[22, sec 4.2]]
 
 Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
-therefore, UML element names shall be CamelCased.
+therefore, UML element names shall be CamelCased [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]].
 
 The names of
 
@@ -196,7 +196,6 @@ The names of
 * UML Attributes shall start with a lower-case letter,
 * UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter
 
-\ [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]]
 
 ****
 *Examples:*
@@ -421,7 +420,7 @@ those should be expressed as relationships (represented by Association connector
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
 
 High preference shall be given to using OWL 2 compliant XSD and RDF standard datatypes. Standard UML data types may be used
-with interpretation in the Table below. Custom datatypes shall be avoided when possible. [ref]. [???] - what ref?
+with interpretation in the Table below. Custom datatypes shall be avoided when possible [xref:references.adoc#ref:43[43]].
 
 |===
 |*UML*|*XSD*
@@ -551,7 +550,7 @@ specify multiplicity whenever possible [xref:gc-conceptual-model-conventions.ado
 
 *Description:*
 
-UML Connectors shall be used to denote object properties (see OWL2 semantics). [???] - what ref to use?
+UML Connectors shall be used to denote object properties (see OWL2 semantics, [xref:references.adoc#ref:43[43]]).
 
 First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.
@@ -667,7 +666,7 @@ image::cmc-r14-1.png[]
 The name of the enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
 type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs
 slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil
-two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list. [EPO spec, sec] [???]
+two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
 
 If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it,
 which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].

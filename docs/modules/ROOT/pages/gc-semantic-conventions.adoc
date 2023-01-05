@@ -28,7 +28,36 @@ We recommend using OWL limited to a set of expression types.
 
 Core Vocabularies have an RDF representation as OWL Ontology. In the example below, part of Core Person is depicted:
 
-image::[] [???]
+[source]
+----
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemas: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/person#Person> a rdfs:Class;
+  rdfs:label "Person"@en .
+
+<https://data.europa.eu/m8g> a owl:Ontology;
+  rdfs:label "core-person-voc"@en,
+    "core-person-voc"@nl;
+  dc:contributor [
+    a foaf:Person;
+    foaf:firstName "Seth";
+    foaf:lastName "van Hooland";
+    schemas:affiliation [foaf:name "European Commission"]
+  ];
+  dc:license "https://creativecommons.org/licenses/by/4.0/",
+    <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic>;
+  dc:mediator [
+    foaf:homepage <https://semic.eu>;
+    foaf:name "Semantic Interoperability Community (SEMIC)"
+  ].
+----
+
 ****
 
 

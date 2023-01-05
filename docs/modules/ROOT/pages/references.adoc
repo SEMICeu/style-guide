@@ -1,6 +1,6 @@
 == References
 
-. [[ref:1]] Codreanu, D. (2012) 10 rules for persistent URIs, Joinup. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris.
+. [[ref:1]] Codreanu, D. (2012). 10 Rules for Persistent URIs. https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
 . [[ref:2]] A. Miles and S. Bechhofer.(eds) (2009) SKOS simple knowledge organization system reference. W3C recommendation, W3C.Available at: http://www.w3.org/TR/2009/REC-skos-reference-20090818/.
 . [[ref:3]] Costetchi, E. (2020) Transformation of the eProcurement UML model into a formal OWL ontology. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf.
 . [[ref:4]] Gruber, T. (1997) What is an ontology? Stanford University. Available at: http://www-ksl.stanford.edu/kst/what-is-an-ontology.html.
@@ -17,7 +17,7 @@
 . [[ref:15]] Semantic Interoperability Community. Available at: https://github.com/SEMICeu (Accessed: January 3, 2023).
 . [[ref:16]] model2owl (2021). Available at: https://github.com/OP-TED/model2owl (Accessed: January 2, 2023).
 . [[ref:17]] OSLO toolchain. Available at: https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template (Accessed: January 3, 2023).
-. [[ref:18]] Costetchi, E. (2020) ePO UML architecture. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf.
+. [[ref:18]] Costetchi, E. (2020) ePO architecture. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf.
 . [[ref:19]] Thijs, G. (2019) OSLO MODELLERINGSREGELS. Available at: https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf.
 . [[ref:20]] SEMIC Style Guide for Drafting Semantic Specifications. SEMIC. Available at: https://github.com/SEMICeu/Draft_guidelines_2020 (Accessed: January 3, 2023).
 . [[ref:21]] Miles, A. and Bechhofer, S. (eds) (2019) SKOS Simple Knowledge Organization System Reference. Available at: https://www.w3.org/TR/skos-reference/.
@@ -55,8 +55,8 @@
 . [[ref:82]] Procurement Ontology (2022). TED and amp; EU Public Procurement Unit of the Publications Office of the European Union. Available at: https://github.com/OP-TED/ePO.
 . [[ref:83]] Hausenblas, M. (2012) 5 ★ OPEN DATA. Available at: https://5stardata.info/en/ (Accessed: January 2, 2023).
 . [[ref:85]] Lóscio, B.F. and Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp (Accessed: January 2, 2023)
-. [[ref:87]] Lóscio, B.F. and Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp/#DataIdentifiers.
 . [[ref:88]] M. Dekkers et al. (2018) D04.02.02 – local URI design patterns. Deliverable SC353DI07171, ISA programme of the European Commission.
 . [[ref:89]] Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/joinup.
 . [[ref:90]] Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org/ (Accessed: January 2, 2023).
 . [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies, Best practice recipes for publishing RDF vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation (Accessed: January 2, 2023).
+. [[ref:]]

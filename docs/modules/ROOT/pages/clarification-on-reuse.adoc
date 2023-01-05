@@ -53,10 +53,10 @@ In UML, properties are depicted as new connections (object properties) that are 
 
 This works because OWL semantics treats properties as first-class citizens (along with classes, datatypes and individuals).
 So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately
-from one another, just as the OWL specification defines it [ref[???] owl spec].
+from one another, just as the OWL specification defines it [xref:references.adoc#ref:43[43]].
 
 The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate
-existing ones in the superclass(es). Also, make sure there are no logical contradictions [xref:[???] rule].
+existing ones in the superclass(es). Also, make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc[Semantic conventions]].
 |*Original properties on the class as defined in the context of a data specification*|In OWL & SHACL, when reusing a class as-is from
 an established ontology hereafter called the original, all properties and constraints associated
 with the class are considered adopted (even if some may be irrelevant).
@@ -119,7 +119,7 @@ In addition, new scoping or nuancing shall be provided in the scope notes (e.g. 
 For example, the wording of FOAF definitions can benefit from light adaptations and adjustments, yet the meaning is not changing.
 Hence, in Core Person Vocabulary, the definitions are slightly adjusted.
 Such adaptations might be made when the original label or definition does not follow the guidelines laid out in this document.
-For example, the one on circular definitions [xref:[???] definitions guideline].
+For example, the one on circular definitions [xref:gc-general-conventions.adoc#sec:gc-r5[GC-R5]].
 
 
 [[sec:reuse-of-a-class-with-semantic-adaptations]]
@@ -142,7 +142,7 @@ we shall show the whole reuse chain (in the conceptual model and especially in t
 |*New properties on the class*|Add new properties as necessary on the new (owned) sub-class.
 
 The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not
-duplicate existing ones in the superclass(es). Make sure there are no logical contradictions.
+duplicate existing ones in the superclass(es). Make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc[Semantic conventions]].
 |*Original properties on the class as defined in the context of a data specification*|When reusing a class as-is from a data
 specification, hereafter called the original, all properties and constraints associated with the class should be adopted.
 
@@ -275,9 +275,8 @@ be provided in the scope notes (e.g. skos:scopeNote ).
 
 *Example*
 
-For example, in DCAT-AP the reused property `adms:status` is relabeled into “change type” for Catalogue Record class.
-
-[???] what change type?
+For example, in DCAT-AP the reused property `adms:status` is relabeled from "status" to "change type" for Catalogue Record class. Note
+that the diagram does not reflect this, but it is reflected in the associated documentation.
 
 image:dcatcatalogue.png[DCAT-AP Catalogue Record]
 
@@ -322,8 +321,7 @@ while (logical) constraints are to be expressed as SHACL.
 
 *Example*
 
-For example, in the DCAT-AP the reused property `dct:hasPart` is specialised as `dcat:dataset`.
-
-[???] where is hasPart?
+For example, in the DCAT-AP the reused property `dct:hasPart` is specialised as `dcat:dataset`. Note that the subproperty
+relation between the two is not depicted in the diagram, but is stated in the data shape specification.
 
 image:dcatdataset.png[DCAT-AP Dataset]

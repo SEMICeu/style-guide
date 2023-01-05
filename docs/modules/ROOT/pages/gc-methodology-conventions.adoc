@@ -29,7 +29,7 @@ solve the in-field problems.
 We do not outline a concrete methodology here but merely point to the benefits of adopting and using one. In the SEMIC context,
 conceptual model development will benefit greatly from embracing some or a combination of techniques and frameworks in
 data modelling (e.g. Bottom-Up, Top-Down, Case-Based, Entity-Relationship, Object-Oriented, Star/Snowflake Schema data modelling
-techniques, etc.  [cite some] [???]), ontology engineering methodologies (e.g. Methontology [xref:references.adoc#ref:70[70]],
+techniques, etc.), ontology engineering methodologies (e.g. Methontology [xref:references.adoc#ref:70[70]],
 DOGMA [xref:references.adoc#ref:71[71]],  OntoClean [xref:references.adoc#ref:72[72]], TOVE [xref:references.adoc#ref:73[73]],
 DILIGENT [xref:references.adoc#ref:74[74]], NeOn [xref:references.adoc#ref:75[75]], etc. [xref:references.adoc#ref:76[76]]),
 data management body of knowledge (DAMA-DMBOK [xref:references.adoc#ref:77[77]) or architecture frameworks

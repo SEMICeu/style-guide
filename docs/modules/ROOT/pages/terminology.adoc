@@ -13,7 +13,7 @@ things, groups of things, and relations between things. [https://www.w3.org/OWL/
 ** RDF is a standard model for data interchange on the Web. [https://www.w3.org/RDF/]
 * RDFS [https://www.w3.org/2001/sw/wiki/RDFS]
 ** RDFS is a general-purpose language for representing simple RDF vocabularies on the Web. [https://www.w3.org/2001/sw/wiki/RDFS]
-* EAP [https://en.wikipedia.org/wiki/Enterprise_Architect_(software)] [???]
+* EAP [https://en.wikipedia.org/wiki/Enterprise_Architect_(software)]
 ** Sparx Systems Enterprise Architect is a visual modeling and design tool based on the OMG UML. [https://en.wikipedia.org/wiki/Enterprise_Architect_(software)]
 * XML [https://www.w3.org/XML/]
 ** Extensible Markup Language (XML) is a markup language and file format for storing, transmitting, and reconstructing arbitrary data.

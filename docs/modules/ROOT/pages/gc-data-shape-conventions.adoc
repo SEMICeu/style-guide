@@ -56,7 +56,7 @@ is conceived as reusable in other Application Profiles.
 *Examples:*
 
 Consider DCAT-AP, for example. It is an Application Profile on top of the DCAT vocabulary, but other more specific Application Profiles
-are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.) [???] - should we provide refs?
+are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)
 ****
 
 [[sec:dsc-r3]]
