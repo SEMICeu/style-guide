@@ -1,62 +1,60 @@
 == References
 
-. [[ref:1]] Codreanu, D. (2012). 10 Rules for Persistent URIs. https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
-. [[ref:2]] A. Miles and S. Bechhofer.(eds) (2009) SKOS simple knowledge organization system reference. W3C recommendation, W3C.Available at: http://www.w3.org/TR/2009/REC-skos-reference-20090818/.
-. [[ref:3]] Costetchi, E. (2020) Transformation of the eProcurement UML model into a formal OWL ontology. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf.
-. [[ref:4]] Gruber, T. (1997) What is an ontology? Stanford University. Available at: http://www-ksl.stanford.edu/kst/what-is-an-ontology.html.
-. [[ref:5]] Ontology (2023) Wikipedia. Wikimedia Foundation. Available at: https://en.wikipedia.org/wiki/Ontology (Accessed: January 2, 2023).
-. [[ref:6]] Barthelemy, F. et al. (2022) Core Person Vocabulary, Core person vocabulary. van Hooland, Seth - European Commission. Available at: https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/.
-. [[ref:7]] Barthelemy, F. et al. (2022) Core Public Service Vocabulary Application Profile (CPSV-AP). Available at: https://semiceu.github.io/CPSV-AP/releases/3.1.0/.
-. [[ref:8]] Dekkers , M. (2013) Asset Description Metadata Schema (ADMS), Asset description metadata schema (ADMS). W3C. Available at: https://www.w3.org/TR/vocab-adms/.
-. [[ref:9]] VOCABULARIES (2015). W3C. Available at: https://www.w3.org/standards/semanticweb/ontology#:~:text=On%20the%20Semantic%20Web%2C%20vocabularies,represent%20an%20area%20of%20concern (Accessed: January 2, 2023).
-. [[ref:10]] PwC EU Services (2017) DCAT Application Profile for data portals in Europe, Joinup. © 2015 European Union. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe (Accessed: January 2, 2023).
-. [[ref:11]] Coyle, K. and Baker, T. (2009) Guidelines for Dublin Core™ Application Profiles. Available at: https://www.dublincore.org/specifications/dublin-core/profile-guidelines/.
-. [[ref:12]] C. Partridge, A. Mitchell, and S. de Cesare. (2013) Guidelines for developing ontological architectures in modelling and simulation. In Ontology, Epistemology, and Teleology for Modeling and Simulation, pages 27–57. Springer.
-. [[ref:13]] R. Soley et al. (2000) Model driven architecture. OMG white paper, 308(308):5.
-. [[ref:14]] J. Siegel. (2014) Object management group model driven architecture (mda) mda guide rev. 2.0. 2014. Available at: http://www.omg.org/cgi-bin/doc?ormsc/14-06-01
-. [[ref:15]] Semantic Interoperability Community. Available at: https://github.com/SEMICeu (Accessed: January 3, 2023).
-. [[ref:16]] model2owl (2021). Available at: https://github.com/OP-TED/model2owl (Accessed: January 2, 2023).
-. [[ref:17]] OSLO toolchain. Available at: https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template (Accessed: January 3, 2023).
-. [[ref:18]] Costetchi, E. (2020) ePO architecture. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf.
+. [[ref:1]] Codreanu, D. (2012). 10 Rules for Persistent URIs. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
+. [[ref:2]] Bechhofer, S., & Miles, A. (2009). SKOS simple knowledge organization system reference. W3C recommendation, W3C. Available at: http://www.w3.org/TR/2009/REC-skos-reference-20090818/
+. [[ref:3]] Costetchi, E. (2020). Transformation of the eProcurement UML model into a formal OWL ontology. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf
+. [[ref:4]] Gruber, T. R. (1993). A translation approach to portable ontology specifications. Knowledge acquisition, 5(2), 199-220. Available at: http://ksl-web.stanford.edu/KSL_Abstracts/KSL-92-71.html
+. [[ref:5]] Ontology (2023) Wikipedia. Wikimedia Foundation. Available at: https://en.wikipedia.org/wiki/Ontology
+. [[ref:6]] Barthelemy, F. et al. (2022) Core Person Vocabulary, Core person vocabulary. Available at: https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00
+. [[ref:7]] Barthelemy, F. et al. (2022) Core Public Service Vocabulary Application Profile (CPSV-AP). Available at: https://semiceu.github.io/CPSV-AP/releases/3.1.0
+. [[ref:8]] Dekkers , M. (2013) Asset Description Metadata Schema (ADMS). W3C. Available at: https://www.w3.org/TR/vocab-adms
+. [[ref:9]] VOCABULARIES (2015). W3C. Available at: https://www.w3.org/standards/semanticweb/ontology#:~:text=On%20the%20Semantic%20Web%2C%20vocabularies,represent%20an%20area%20of%20concern
+. [[ref:10]] PwC EU Services (2017) DCAT Application Profile for data portals in Europe, Joinup. © 2015 European Union. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe
+. [[ref:11]] Coyle, K. and Baker, T. (2009) Guidelines for Dublin Core™ Application Profiles. Available at: https://www.dublincore.org/specifications/dublin-core/profile-guidelines/
+. [[ref:12]] Partridge, C., Mitchell, A., & de Cesare, S. (2013). Guidelines for developing ontological architectures in modelling and simulation. In Ontology, epistemology, and teleology for modeling and simulation (pp. 27-57). Springer, Berlin, Heidelberg.
+. [[ref:13]] Soley, R. (2000). Model driven architecture. OMG white paper, 308(308), 5.
+. [[ref:14]] Siegel, J. (2014). MDA Guide, revision 2.0.. Available at: http://www.omg.org/cgi-bin/doc?ormsc/14-06-01
+. [[ref:15]] Semantic Interoperability Community. Available at: https://github.com/SEMICeu.
+. [[ref:16]] model2owl (2021). Available at: https://github.com/OP-TED/model2owl.
+. [[ref:17]] OSLO toolchain. Available at: https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template.
+. [[ref:18]] Costetchi, E. (2020). EProcurement ontology architecture and formalisation specifications. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf
 . [[ref:19]] Thijs, G. (2019) OSLO MODELLERINGSREGELS. Available at: https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf.
-. [[ref:20]] SEMIC Style Guide for Drafting Semantic Specifications. SEMIC. Available at: https://github.com/SEMICeu/Draft_guidelines_2020 (Accessed: January 3, 2023).
-. [[ref:21]] Miles, A. and Bechhofer, S. (eds) (2019) SKOS Simple Knowledge Organization System Reference. Available at: https://www.w3.org/TR/skos-reference/.
-. [[ref:22]] Costetchi, E. (2020) eProcurement UML conceptual model conventions. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml-conventions/uml-conventions.pdf.
-. [[ref:25]] Principles for creating good definitions_v1.00. Available at: https://github.com/SEMICeu/OpenGuidelines/blob/main/Principles%20for%20creating%20good%20definitions_v1.00.pdf (Accessed: January 2, 2023).
-. [[ref:28]] object management group (2014) Ontology definition metamodel . OMG. Available at: https://www.omg.org/spec/ODM/1.1/PDF (Accessed: January 2, 2023).
-. [[ref:29]] SEMICEU-toolchain-manual. SEMICEU. Available at: https://github.com/SEMICeu/toolchain-manual (Accessed: January 3, 2023).
-. [[ref:31]] Costetchi, E. (2020) Transformation of the eProcurement UML model into a formal OWL ontology. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf.
-. [[ref:32]] P. Archer et al. (2012) D7.1.3 - study on persistent URIs, with identification of best practices and recommendations on the topic for the mss and the ec. Deliverable, ISA programme of the European Commission.
-. [[ref:33]] D. Wood et al. (2014) RDF 1.1 concepts and abstract syntax. W3C recommendation, W3C. Available at:http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/.
-. [[ref:34]] T. Bray, M. Sperberg-McQueen, E. Maler, F. Yergeau, and J. Paoli. (eds) (2008) Extensible markup language (XML) 1.0 (fifth edition). W3C recommendation, W3C. Available at: http://www.w3.org/TR/2008/REC-xml-20081126/.
-. [[ref:35]] PwC EU Services.(2011) D3.1 - process and methodology for core vocabularies. Deliverable, ISA programme of the European Commission.
-. [[ref:38]] Bray, T. et al. (eds) (2009) Namespaces in XML 1.0 (Third Edition), Namespaces in XML 1.0 (third edition). Available at: https://www.w3.org/TR/REC-xml-names/.
-. [[ref:39]] P. Saint-Andre and J. Klensin. Uniform resource names. (2017) Internet Engineering Task Force (IETF), RFC, 8141.
-. [[ref:40]] Beckett, D. et al. (2014) RDF 1.1 turtle. W3C. Available at: https://www.w3.org/TR/turtle/#sec-iri (Accessed: January 2, 2023).
-. [[ref:43]] B. Parsia, P. Patel-Schneider, and B. Motik. (eds) (2012) OWL 2 web ontology language structural specification and functional-style syntax (second edition). W3C recommendation, Available at:http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/.
-. [[ref:44]] H. Knublauch and D. Kontokostas. (2017) Shapes constraint language (SHACL). W3C recommendation, W3C, Available at:https://www.w3.org/TR/2017/REC-shacl20170720/.
-. [[ref:47]] eProcurement Ontology (2022). TED and amp; EU Public Procurement Unit of the Publications Office of the European Union. Available at: https://github.com/OP-TED/ePO.
+. [[ref:20]] SEMIC Style Guide for Drafting Semantic Specifications. SEMIC. Available at: https://github.com/SEMICeu/Draft_guidelines_2020
+. [[ref:22]] Costetchi, E. (2020). EProcurement UML conceptual model conventions. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml-conventions/uml-conventions.pdf
+. [[ref:25]] Principles for creating good definitions_v1.00. Available at: https://github.com/SEMICeu/OpenGuidelines/blob/main/Principles%20for%20creating%20good%20definitions_v1.00.pdf
+. [[ref:28]] Object Management Group (2014) Ontology definition metamodel. OMG. Available at: https://www.omg.org/spec/ODM/1.1/PDF
+. [[ref:29]] SEMICEU-toolchain-manual. SEMICEU. Available at: https://github.com/SEMICeu/toolchain-manual
+. [[ref:31]] Costetchi, E. (2020). Transformation of the eProcurement UML model into a formal OWL ontology. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf
+. [[ref:32]] Archer, P., Goedertier, S., & Loutas, N. (2012). D7.1.3 - Study on persistent URIs, with identification of best practices and recommendations on the topic for the MSs and the EC. Deliverable, ISA programme of the European Commission.
+. [[ref:33]] Wood, D., Cyganiak, R., & Lanthaler, M. (2014). RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation, W3C. Available at: http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/.
+. [[ref:34]] Bray, T., Sperberg-McQueen, M., Maler, E., Yergeau, F., & Paoli, J. (2008). Extensible Markup Language (XML) 1.0 (Fifth Edition). W3C Recommendation, W3C. Available at: http://www.w3.org/TR/2008/REC-xml-20081126/.
+. [[ref:35]] PwC EU Services. (2011). D3.1 - Process and Methodology for Core Vocabularies. Deliverable, ISA programme of the European Commission.
+. [[ref:38]] Layman, A., Bray, T., Thompson, H., Hollander, D., & Tobin, R. (2009). Namespaces in XML 1.0 (Third Edition). W3C Recommendation, W3C. Available at: https://www.w3.org/TR/REC-xml-names/
+. [[ref:39]] Saint-Andre, P., & Klensin, J. (2017). Uniform Resource Names (URNs). Internet Engineering Task Force (IETF), RFC, 8141.
+. [[ref:40]] Beckett, D., Berners-Lee, T., Prud’hommeaux, E., & Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: https://www.w3.org/TR/turtle/#sec-iri
+. [[ref:43]] Motik, B., Patel-Schneider, P. F., Parsia, B., Bock, C., Fokoue, A., Haase, P., ... & Smith, M. (2009). OWL 2 web ontology language: Structural specification and functional-style syntax. W3C recommendation, 27(65), 159. Available at: http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/
+. [[ref:44]] H. Knublauch and D. Kontokostas. (2017) Shapes constraint language (SHACL). W3C recommendation, W3C, Available at:https://www.w3.org/TR/2017/REC-shacl20170720/
+. [[ref:47]] eProcurement Ontology (2022). TED and amp; EU Public Procurement Unit of the Publications Office of the European Union. Available at: https://github.com/OP-TED/ePO
 . [[ref:64]] Buitelaar.P et al. (2011). Ontology Lexicalisation: The lemon Perspective.
 . [[ref:65]] Davis, I. (2010) VANN: A vocabulary for annotating vocabulary descriptions. Available at: https://vocab.org/vann/.
-. [[ref:66]] Knublauch, H. and Kontokostas, D. (eds) (2017) Shapes constraint language (SHACL), W3C recommendation. W3C. Available at: https://www.w3.org/TR/shacl/.
-. [[ref:67]] Shape expressions(ShEx). Available at: https://shex.io/ (Accessed: January 2, 2023).
-. [[ref:68]] R. Reiter. On closed world data bases. (1981) In Readings in artificial intelligence, pages 119–140. Elsevier.
-. [[ref:69]] The Open Group (2018) The TOGAF standard, version 9.2. Zaltbommel: Van Haren Publishing.
-. [[ref:70]] López, F et al. (1997). METHONTOLOGY: from ontological art towards ontological engineering. Engineering Workshop on Ontological Engineering (AAAI97).
-. [[ref:71]] Jarrar, M et al. (2008). Ontology engineering - The DOGMA approach. 10.1007/978-3-540-89784-2_2.
-. [[ref:72]] Guarino, N et al. (2009). An Overview of OntoClean. 10.1007/978-3-540-92673-3_9.
-. [[ref:73]] TOVE - Fox, M.S., (1992), The TOVE Project: A Common-sense Model of the Enterprise, Industrial and Engineering Applications of Artificial Intelligence and Expert Systems, Belli, F. and Radermacher, F.J. (eds.), Lecture Notes in Artificial Intelligence # 604, Berlin: Springer-Verlag, pp. 25-34.
-. [[ref:74]] Pinto, H. et al. (2004). DILIGENT: Towards a fine-grained methodology for Distributed, Loosely-controlled and evolving Engineering of oNTologies.. Proceedings of the 16th European Conference on Artificial Intelligence (ECAI 2004). 393-397.
-. [[ref:75]] Baonza, M. (2010). NeOn Methodology for Building Ontology Networks: Specification, Scheduling and Reuse.
-. [[ref:76]] Vetter, S et al., Rudi. (2009). Ontology Engineering Methodology. 10.1007/978-3-540-92673-3_6..
-. [[ref:77]] Dama-dmbok: Data Management Body of Knowledge (2017). New Jersey: Technics Publications.
-. [[ref:78]] Zachman, J.A. (1987) A Framework for Information Systems Architecture. IBM Systems Journal, Volume 26.
-. [[ref:79]] Spewak, S et al. (2006). Updating the Enterprise Architecture Planning Model. Journal of Enterprise Architecture. 2.
-. [[ref:82]] Procurement Ontology (2022). TED and amp; EU Public Procurement Unit of the Publications Office of the European Union. Available at: https://github.com/OP-TED/ePO.
-. [[ref:83]] Hausenblas, M. (2012) 5 ★ OPEN DATA. Available at: https://5stardata.info/en/ (Accessed: January 2, 2023).
-. [[ref:85]] Lóscio, B.F. and Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp (Accessed: January 2, 2023)
-. [[ref:88]] M. Dekkers et al. (2018) D04.02.02 – local URI design patterns. Deliverable SC353DI07171, ISA programme of the European Commission.
-. [[ref:89]] Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/joinup.
-. [[ref:90]] Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org/ (Accessed: January 2, 2023).
-. [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies, Best practice recipes for publishing RDF vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation (Accessed: January 2, 2023).
-. [[ref:]]
+. [[ref:66]] Knublauch, H., & Kontokostas, D. (2017). Shapes Constraint Language (SHACL), W3C Recommendation. World Wide Web Consortium. Available at: https://www.w3.org/TR/shacl/
+. [[ref:67]] Shape expressions(ShEx). Available at: https://shex.io/
+. [[ref:68]] Reiter, R. (1981). On closed world data bases. In Readings in artificial intelligence (pp. 119-140). Morgan Kaufmann.
+. [[ref:69]] Kotusev, S. (2018). TOGAF Version 9.2: What’s New. British Computer Society (BCS).
+. [[ref:70]] Fernández-López, M., Gómez-Pérez, A., & Juristo, N. (1997). Methontology: from ontological art towards ontological engineering.
+. [[ref:71]] Jarrar, M., & Meersman, R. (2008). Ontology engineering–the DOGMA approach. In Advances in Web Semantics I (pp. 7-34). Springer, Berlin, Heidelberg.
+. [[ref:72]] Guarino, N., & Welty, C. A. (2004). An overview of OntoClean. Handbook on ontologies, 151-171.
+. [[ref:73]] Fox, M. S. (1992, June). The tove project towards a common-sense model of the enterprise. In International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems (pp. 25-34). Springer, Berlin, Heidelberg.
+. [[ref:74]] Pinto, H. S., Staab, S., & Tempich, C. (2004, August). DILIGENT: Towards a fine-grained methodology for DIstributed, Loosely-controlled and evolvInG Engineering of oNTologies. In ECAI (Vol. 16, p. 393).
+. [[ref:75]] Suárez-Figueroa, M. C. (2010). NeOn Methodology for building ontology networks: specification, scheduling and reuse (Doctoral dissertation, Informatica).
+. [[ref:76]] Vetter, S et al., Rudi. (2009). Ontology Engineering Methodology. 10.1007/978-3-540-92673-3_6.
+. [[ref:77]] International, D. (2017). DAMA-DMBOK: data management body of knowledge. Technics Publications, LLC.
+. [[ref:78]] Zachman, J. A. (1987). A framework for information systems architecture. IBM systems journal, 26(3), 276-292.
+. [[ref:79]] Spewak, S. H., & Tiemann, M. (2006). Updating the enterprise architecture planning model. Journal of Enterprise Architecture, 2(2), 11-19.
+. [[ref:82]] eProcurement Ontology (2022). TED and EU Public Procurement Unit of the Publications Office of the European Union. Available at: https://github.com/OP-TED/ePO
+. [[ref:83]] Hausenblas, M. (2012) 5 ★ OPEN DATA. Available at: https://5stardata.info/en
+. [[ref:85]] Lóscio, B.F. and Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp
+. [[ref:88]] Dekkers, M., & Novacean, I. (2018). D04.02.02 – Local URI design patterns. Deliverable SC353DI07171, ISA programme of the European Commission.
+. [[ref:89]] Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/joinup
+. [[ref:90]] Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org
+. [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
