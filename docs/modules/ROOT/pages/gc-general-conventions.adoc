@@ -23,8 +23,7 @@ As a general rule, it is safe to reuse annotation properties, as they carry no l
 Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
 In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [xref:clarification-on-reuse.adoc[Clarification on reuse]].
 
-[xref:references.adoc#ref:18[18],
-xref:references.adoc#ref:19[19]]
+\ [xref:references.adoc#ref:18[18, section 4]], [xref:references.adoc#ref:19[19, sec 3.1.2]]
 
 
 [[sec:gc-r2]]
@@ -73,7 +72,7 @@ label and definition.
 Terms and concepts are not the same things. A term is a word, compound word, or multi-word expression that, in specific
 contexts, is given specific meanings – these may deviate from the meanings the same words have in other contexts and in
 everyday language.
-A concept can be viewed as an idea or notion, a unit of thought [xref:references.adoc#ref:21[21]]. However, what constitutes a unit of thought is
+A concept can be viewed as an idea or notion, a unit of thought [xref:references.adoc#ref:2[2]]. However, what constitutes a unit of thought is
 subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be
 well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
 by examples and explanatory notes.
@@ -105,16 +104,16 @@ names will be reflected in all artefacts and in the URIs.
 
 Next, we provide a set of loose recommendations:
 
-* British English is the lingua franca in the model. [xref:references.adoc#ref:22[22]]
-* Avoid acronyms and abbreviations in concept names [xref:references.adoc#ref:22[22]]
-* Classes are names with nouns and singular [xref:references.adoc#ref:23[23]]
-* Names are case-sensitive. [xref:references.adoc#ref:22[22]]
-* Relations and Properties use verbs at a present tense [xref:references.adoc#ref:24[24]]
+* British English is the lingua franca in the model. [xref:references.adoc#ref:22[22, sec 3.1]]
+* Avoid acronyms and abbreviations in concept names [xref:references.adoc#ref:22[22, sec 3.1]]
+* Classes are names with nouns and singular [xref:references.adoc#ref:22[22, sec 3.6]]
+* Names are case-sensitive. [xref:references.adoc#ref:22[22, sec 3.1]]
+* Relations and Properties use verbs at a present tense [xref:references.adoc#ref:22[22, sec 3.7]]
 ** Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
 “is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
 to the name.
 * Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
-or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [xref:references.adoc#ref:24[24]]
+or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [xref:references.adoc#ref:22[22, sec 3.7]]
 
 
 [[sec:gc-r5]]
@@ -152,4 +151,4 @@ They are based on advice found in the literature and are the following:
 * The definition is formed of one or more sentences that starts with a capital letter and end with a period.
 * Do not start a definition with a repetition of the name of the concept.
 Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
-we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:26[26]].
+we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:22[22, sec 4.2]].
