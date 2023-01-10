@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Untitled :: SEMIC</title>
     <meta name="generator" content="Antora 3.0.0">
-    <link rel="stylesheet" href="./_/css/site.css">
-    <script>var uiRootPath = './_'</script>
+    <link rel="stylesheet" href="../_/css/site.css">
+    <script>var uiRootPath = '../_'</script>
   </head>
   <body class="article">
 <header class="header">
     <nav class="navbar">
         <div class="navbar-brand">
-            <a class="navbar-item" href=".">SEMIC</a>
+            <a class="navbar-item" href="..">SEMIC</a>
         </div>
     </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="ROOT" data-version="">
+<div class="nav-container" data-component="ROOT" data-version="public-review">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -33,19 +33,19 @@
     <a class="nav-link" href="terminological-clarifications.html">Terminological clarifications</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="arhitectural-clarifications.html">Arhitectural clarifications</a>
+    <a class="nav-link" href="arhitectural-clarifications.html">Architectural clarifications</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="clarification-on-reuse.html">Clarifications on "reuse"</a>
   </li>
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-conceptual-model-conventions.html">Conceptual model conventions (UML)</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -63,13 +63,25 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Back matter</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="references.html">References</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="rule-template.html">Rule template</a>
   </li>
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="terminology.html">Terminology</a>
   </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="references.html">References</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="index-of-rules.html">Index of rules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="style-guide-whole.html">Style guide as a whole</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -79,14 +91,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">SEMIC Style guide</span>
-    <span class="version">default</span>
+    <span class="version">public-review</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="index.html">SEMIC Style guide</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="index.html">default</a>
+          <a href="index.html">public-review</a>
         </li>
       </ul>
     </li>
@@ -103,18 +115,296 @@
   <ul>
     <li><a href="index.html">SEMIC Style guide</a></li>
     <li><a href="guidelines-and-conventions.html">Guidelines and conventions</a></li>
-    <li><a href="gc-conceptual-model-conventions.html">Conceptual model conventions (UML)</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/main/docs/modules/ROOT/pages/gc-conceptual-model-conventions.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/main/docs/modules/ROOT/pages/guidelines-and-conventions.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+<div class="sect1">
+<h2 id="_guidelines_and_conventions"><a class="anchor" href="#_guidelines_and_conventions"></a>Guidelines and conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides a series of guidelines and conventions for developing and publishing a Core Vocabulary or an Application Profile.
+We organise them into the following groups:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>General conventions</p>
+</li>
+<li>
+<p>Methodology conventions</p>
+</li>
+<li>
+<p>Conceptual Model conventions</p>
+</li>
+<li>
+<p>Semantic conventions</p>
+</li>
+<li>
+<p>Data shape conventions</p>
+</li>
+<li>
+<p>Publication conventions</p>
+</li>
+</ul>
+</div>
 <div class="sect2">
-<h3 id="_conceptual_model_conventions_uml"><a class="anchor" href="#_conceptual_model_conventions_uml"></a>Conceptual model conventions (UML)</h3>
+<h3 id="_general_conventions"><a class="anchor" href="#_general_conventions"></a>General conventions</h3>
+<div class="sect3">
+<h4 id="sec:gc-r1"><a class="anchor" href="#sec:gc-r1"></a>Reuse existing concepts as much as possible</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Reuse existing concepts as much as possible</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Reuse existing concepts as much as possible, respecting the original semantics and lexicalisation.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must
+be considered by reusing properties and classes from other vocabularies.
+As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
+Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
+In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on reuse</a>].</p>
+</div>
+<div class="paragraph">
+<p>\ [<a href="references.html#ref:18" class="xref page">18, section 4</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.1.2</a>]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r2"><a class="anchor" href="#sec:gc-r2"></a>For reuse, prefer maintained vocabularies</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> For reuse, prefer maintained vocabularies</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
+Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
+well maintained and governed.
+[<a href="references.html#ref:20" class="xref page">20</a>]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
+(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
+to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
+fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+stages planned.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r3"><a class="anchor" href="#sec:gc-r3"></a>Concept reference and terms</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Concept reference and terms</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Each concept shall be (a) referenceable by a URI, (b) formally defined and (c) described by a precise, unambiguous human-readable
+label and definition.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Terms and concepts are not the same things. A term is a word, compound word, or multi-word expression that, in specific
+contexts, is given specific meanings – these may deviate from the meanings the same words have in other contexts and in
+everyday language.
+A concept can be viewed as an idea or notion, a unit of thought [<a href="references.html#ref:2" class="xref page">2</a>]. However, what constitutes a unit of thought is
+subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be
+well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
+by examples and explanatory notes.
+So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
+identity of a concept’s “meaning”. URIs also enable referencing, an essential feature of meaning exchange (communication).
+Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
+And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
+term reusable, it should be published as part of a data specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r4"><a class="anchor" href="#sec:gc-r4"></a>Vocabulary terminology style</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong>  Vocabulary terminology style</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The terminology style shall be consistent across the vocabulary.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>In practice, some variation in terminology style (concept naming conventions) can be noticed across a wide range of semantic
+data specifications. Whatever the adopted style may be, the author shall consistently apply it to the whole model. These
+names will be reflected in all artefacts and in the URIs.</p>
+</div>
+<div class="paragraph">
+<p>Next, we provide a set of loose recommendations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>British English is the lingua franca in the model. [<a href="references.html#ref:22" class="xref page">22, sec 3.1</a>]</p>
+</li>
+<li>
+<p>Avoid acronyms and abbreviations in concept names [<a href="references.html#ref:22" class="xref page">22, sec 3.1</a>]</p>
+</li>
+<li>
+<p>Classes are names with nouns and singular [<a href="references.html#ref:22" class="xref page">22, sec 3.6</a>]</p>
+</li>
+<li>
+<p>Names are case-sensitive. [<a href="references.html#ref:22" class="xref page">22, sec 3.1</a>]</p>
+</li>
+<li>
+<p>Relations and Properties use verbs at a present tense [<a href="references.html#ref:22" class="xref page">22, sec 3.7</a>]</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
+“is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
+to the name.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
+or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [<a href="references.html#ref:22" class="xref page">22, sec 3.7</a>]</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:gc-r5"><a class="anchor" href="#sec:gc-r5"></a>Vocabulary definition styling</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Vocabulary definition styling</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: GC-R5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The concept definitions shall be elaborated consistently across the vocabulary.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>In practice, different styles of defining concepts can be noticed across a range of semantic data specifications.</p>
+</div>
+<div class="paragraph">
+<p>The SEMIC_ Principles for creating good definitions [<a href="references.html#ref:25" class="xref page">25</a>] are a basis for writing definitions.
+They are based on advice found in the literature and are the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Be concise but complete,</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Avoid over-generalisations. Adapt and contextualise the definition to the surrounding/connected concepts.</p>
+</li>
+<li>
+<p>Make sure that every concept that occurs in the model is directly (or indirectly) defined</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Describe only one term</p>
+</li>
+<li>
+<p>Structure the definition in a standardised way:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the singular form to phrase the definition [xref rules on element names]</p>
+</li>
+<li>
+<p>No negative definition by stating what the term is, and not by enumerating what it is NOT,</p>
+</li>
+<li>
+<p>Use only commonly understood abbreviations</p>
+</li>
+<li>
+<p>Use similar terminology for related definitions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>No circular definitions, i.e. the term it defines should not be part of the definition,</p>
+</li>
+<li>
+<p>Secondary information such as additional explanation, scoping, examples, etc. are to be documented in usage notes.</p>
+</li>
+<li>
+<p>The definition is formed of one or more sentences that starts with a capital letter and end with a period.</p>
+</li>
+<li>
+<p>Do not start a definition with a repetition of the name of the concept.
+Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
+we recommend avoiding any character encodings and using plain ASCII [<a href="references.html#ref:22" class="xref page">22, sec 4.2</a>].
+=== Conceptual model conventions (UML)</p>
+</li>
+</ul>
+</div>
+</div>
 <div class="sect3">
 <h4 id="sec:cmc-r1"><a class="anchor" href="#sec:cmc-r1"></a>UML as a single source of truth</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -150,12 +440,12 @@
 </li>
 <li>
 <p>Existence of a well-defined set of rules and conventions to transform UML model into other artefacts, which can be executed,
-as much as possible automatically, by a dedicated software tool or toolchain [<a href="#sec:cmc-r2">CMC-R2</a>]</p>
+as much as possible automatically, by a dedicated software tool or toolchain [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>]</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [<a href="references.html#ref:27" class="xref page">27</a>].</p>
+<p>It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [<a href="references.html#ref:22" class="xref page">22, sec 4.1</a>].</p>
 </div>
 </div>
 <div class="sect3">
@@ -189,7 +479,7 @@ Therefore, the graphical notation should facilitate the understanding of the dat
 match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).</p>
 </div>
 <div class="paragraph">
-<p>The UML is the single source of truth [<a href="#sec:cmc-r1">CMC-R1</a>]. Using the conventions
+<p>The UML is the single source of truth [<a href="gc-conceptual-model-conventions.html#sec:cmc-r1" class="xref page">CMC-R1</a>]. Using the conventions
 and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such
 a precise set of mapping rules is that it allows for:</p>
 </div>
@@ -208,7 +498,7 @@ conformance and consistency.</p>
 <p>These rules will increase the coherency of the UML diagrams across projects and organisations.</p>
 </div>
 <div class="paragraph">
-<p>Within SEMIC, the interpretation is implemented by the SEMIC toolchain [<a href="references.html#ref:15" class="xref page">15</a>]. [??? - should we add a ref?]</p>
+<p>Within SEMIC, the interpretation is implemented by the SEMIC toolchain [<a href="references.html#ref:15" class="xref page">15</a>].</p>
 </div>
 <div class="paragraph">
 <p>The table below provides recommended interpretations of UML elements in OWL and SHACL.
@@ -339,7 +629,7 @@ while data modelling to choose the best representation, a test suite is availabl
 </div>
 <div class="paragraph">
 <p>In the context of eProcurement ontology, a toolchain has been developed to transform and validate UML models. Such tools
-are based on two documents: UML convention specifications [<a href="references.html#ref:30" class="xref page">30</a>] and UML transformation specifications
+are based on two documents: UML convention specifications [<a href="references.html#ref:22" class="xref page">22</a>] and UML transformation specifications
 [<a href="references.html#ref:31" class="xref page">31</a>].</p>
 </div>
 </div>
@@ -403,7 +693,7 @@ in some cases, misread as spaces. A formal definition of these restrictions is g
 <div class="paragraph">
 <p>Note that, when the UML element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
 may be used to express explicitly URIs, labels, notes and other types of annotations
-[<a href="#sec:cmc-r6">CMC-R6</a>].</p>
+[<a href="gc-conceptual-model-conventions.html#sec:cmc-r6" class="xref page">CMC-R6</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -445,11 +735,11 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 </div>
 <div class="paragraph">
 <p>The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
-subsequent character positions. [<a href="references.html#ref:26" class="xref page">26</a>] <em>resolve references from the original doc</em> - [???]</p>
+subsequent character positions. [<a href="references.html#ref:22" class="xref page">22, sec 4.2</a>]</p>
 </div>
 <div class="paragraph">
 <p>Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
-therefore, UML element names shall be CamelCased.</p>
+therefore, UML element names shall be CamelCased [<a href="references.html#ref:22" class="xref page">22, sec 3.2</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.20</a>].</p>
 </div>
 <div class="paragraph">
 <p>The names of</p>
@@ -469,10 +759,6 @@ therefore, UML element names shall be CamelCased.</p>
 <p>UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>[<a href="references.html#ref:36" class="xref page">36</a>,
-<a href="references.html#ref:37" class="xref page">37</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -651,7 +937,7 @@ meaning shall be preserved without changes to the labels, concept definitions or
 </div>
 <div class="paragraph">
 <p>Reused classes shall be depicted in the UML diagrams. Reused properties shall be depicted in diagrams as connectors and
-attributes. It is not necessary to depict unused classes or properties [<a href="references.html#ref:41" class="xref page">41</a>].</p>
+attributes. It is not necessary to depict unused classes or properties [<a href="references.html#ref:19" class="xref page">19, sec 3.1.7</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -714,7 +1000,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 </div>
 </div>
 <div class="paragraph">
-<p>+[<a href="references.html#ref:42" class="xref page">42</a>] [???] should we change square bracktes?</p>
+<p>\ [<a href="references.html#ref:19" class="xref page">19, sec 3.2.3</a>]</p>
 </div>
 </div>
 <div class="sect3">
@@ -747,7 +1033,7 @@ practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype.</p
 <div class="paragraph">
 <p>Doing so has no impact on the OWL [<a href="references.html#ref:43" class="xref page">43</a>] representation of the model (as this cannot be expressed in OWL).
 However, SHACL data shapes [<a href="references.html#ref:44" class="xref page">44</a>] can be generated to express that no instances of this class shall
-not occur in the data. [<a href="references.html#ref:45" class="xref page">45</a>, <a href="references.html#ref:46" class="xref page">46</a>]</p>
+not occur in the data. [<a href="references.html#ref:19" class="xref page">19, sec 3.2.6</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.4</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -776,7 +1062,7 @@ not occur in the data. [<a href="references.html#ref:45" class="xref page">45</a
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
 <p class="tableblock">UML Attributes shall be used to define properties taking simple data type values. An attribute declaration should specify
-its datatype and multiplicity whenever possible [<a href="#sec:cmc-r11">CMC-R11</a>].</p></td>
+its datatype and multiplicity whenever possible [<a href="gc-conceptual-model-conventions.html#sec:cmc-r11" class="xref page">CMC-R11</a>].</p></td>
 </tr>
 </tbody>
 </table>
@@ -786,11 +1072,11 @@ its datatype and multiplicity whenever possible [<a href="#sec:cmc-r11">CMC-R11<
 <div class="paragraph">
 <p>It is recommended that atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
 those should be expressed as relationships (represented by Association connectors) between the two classes
-[<a href="#sec:cmc-r12">CMC-R12</a>].</p>
+[<a href="gc-conceptual-model-conventions.html#sec:cmc-r12" class="xref page">CMC-R12</a>].</p>
 </div>
 <div class="paragraph">
 <p>High preference shall be given to using OWL 2 compliant XSD and RDF standard datatypes. Standard UML data types may be used
-with interpretation in the Table below. Custom datatypes shall be avoided when possible. [ref]. [???] - what ref?</p>
+with interpretation in the Table below. Custom datatypes shall be avoided when possible [<a href="references.html#ref:43" class="xref page">43</a>].</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -860,8 +1146,8 @@ role name and multiplicity shall be provided [xref controlled list enumeration r
 </div>
 <div class="paragraph">
 <p>Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML class element and a UML Datatype element. [<a href="references.html#ref:48" class="xref page">48</a>, <a href="references.html#ref:49" class="xref page">49</a>,
-<a href="references.html#ref:50" class="xref page">50</a>, <a href="references.html#ref:51" class="xref page">51</a>]</p>
+between a UML class element and a UML Datatype element. [<a href="references.html#ref:19" class="xref page">19, sec 3.2.12</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.5</a>],
+\ [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.2</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -923,12 +1209,12 @@ Association) shall be as permissive as possible, for example, [0..*], meaning an
 </div>
 <div class="paragraph">
 <p>If a structural feature (attribute or association) is not relevant for the domain or the applications, instead of setting
-a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:52" class="xref page">52</a>].</p>
+a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
 </div>
 <div class="paragraph">
 <p>However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
-minimum cardinality shall be set to 1, for example [1..*] [<a href="references.html#ref:49" class="xref page">49</a>].</p>
+minimum cardinality shall be set to 1, for example [1..*] [<a href="references.html#ref:22" class="xref page">22, sec 4.5</a>].</p>
 </div>
 <div class="paragraph">
 <p>A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
@@ -945,14 +1231,14 @@ so as to handle either of those notations, as their meaning is identical.</p>
 </div>
 <div class="paragraph">
 <p>Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
-the cardinality shall be the most permissive, where possible [<a href="references.html#ref:52" class="xref page">52</a>].</p>
+the cardinality shall be the most permissive, where possible [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
 </div>
 <div class="paragraph">
-<p>Limit the constraints to business rules, do not add technical constraints to the model [<a href="references.html#ref:53" class="xref page">53</a>].</p>
+<p>Limit the constraints to business rules, do not add technical constraints to the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.16</a>].</p>
 </div>
 <div class="paragraph">
 <p>If an attribute or an association from a reused vocabulary is not relevant, do not set the lower limit of multiplicity to 0,
-but simply omit it in the model [<a href="references.html#ref:52" class="xref page">52</a>].</p>
+but simply omit it in the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -992,7 +1278,7 @@ have multiplicity [0..*] while the same Public Organisation, in blue on right, r
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
 <p class="tableblock">UML Connectors shall be used to define relations and properties taking non-atomic type values. A connector declaration should
-specify multiplicity whenever possible [<a href="#sec:cmc-r11">CMC-R11</a>].</p></td>
+specify multiplicity whenever possible [<a href="gc-conceptual-model-conventions.html#sec:cmc-r11" class="xref page">CMC-R11</a>].</p></td>
 </tr>
 </tbody>
 </table>
@@ -1000,7 +1286,7 @@ specify multiplicity whenever possible [<a href="#sec:cmc-r11">CMC-R11</a>].</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>UML Connectors shall be used to denote object properties (see OWL2 semantics). [???] - what ref to use?</p>
+<p>UML Connectors shall be used to denote object properties (see OWL2 semantics, [<a href="references.html#ref:43" class="xref page">43</a>]).</p>
 </div>
 <div class="paragraph">
 <p>First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
@@ -1040,7 +1326,7 @@ between other kinds of UML elements.</p>
 <div class="paragraph">
 <p>The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the class towards the
 enumeration. It indicates the class has an <code>owl:ObjectProperty</code>, whose range is a controlled vocabulary
-[<a href="#sec:cmc-r14">CMC-R14</a>]. The connector must have the direction “Source &#8594; Target”.
+[<a href="gc-conceptual-model-conventions.html#sec:cmc-r14" class="xref page">CMC-R14</a>]. The connector must have the direction “Source &#8594; Target”.
 No other directions are acceptable.</p>
 </div>
 <div class="paragraph">
@@ -1077,7 +1363,7 @@ For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
 <div class="paragraph">
 <p>For semantic data specifications, accessibility to the information is not a concern. The sole concern is to precise the
 semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
-and the “+” symbol shall always be used next to each property. This symbol means “public” [<a href="references.html#ref:54" class="xref page">54</a>].</p>
+and the “+” symbol shall always be used next to each property. This symbol means “public” [<a href="references.html#ref:19" class="xref page">19, sec 3.2.22</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1142,7 +1428,7 @@ the values are maintained externally and only the reference is necessary.</p>
 </div>
 <div class="paragraph">
 <p>The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between
-classes and that enumeration [<a href="#sec:cmc-r12">CMC-R2</a>]. For example,  in EPO,
+classes and that enumeration [<a href="gc-conceptual-model-conventions.html#sec:cmc-r12" class="xref page">CMC-R2</a>]. For example,  in EPO,
 <code>dct:Location</code> can have a country code represented as a dependency relation to <code>at-voc:country</code> (the country authority table
 published on the EU Vocabularies website).</p>
 </div>
@@ -1155,11 +1441,11 @@ published on the EU Vocabularies website).</p>
 <p>The name of the enumeration shall be resolved to a URI identical to that of the <code>skos:ConceptScheme</code>. As for the connector
 type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs
 slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil
-two constraints: (a) instantiating the skos:Concept class and (b) being <code>skos:inScheme</code> the intended controlled list. [EPO spec, sec] [???]</p>
+two constraints: (a) instantiating the skos:Concept class and (b) being <code>skos:inScheme</code> the intended controlled list [<a href="references.html#ref:18" class="xref page">18</a>].</p>
 </div>
 <div class="paragraph">
 <p>If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it,
-which are interpreted as concepts belonging to the containing concept scheme [<a href="references.html#ref:55" class="xref page">55</a>].</p>
+which are interpreted as concepts belonging to the containing concept scheme [<a href="references.html#ref:19" class="xref page">19, sec 3.2.17</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1219,7 +1505,7 @@ sub-domains.</p>
 <p>It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
 namespaces of connectors and attributes. And, it does not work in cases when an attribute or a connector is used multiple
 times in several packages. Namespace management is easier attained by using other methods such as using prefixes in element
-names or using element tags [<a href="references.html#ref:56" class="xref page">56</a>].</p>
+names or using element tags [<a href="references.html#ref:22" class="xref page">22, sec 4.3</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1273,13 +1559,13 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>are well spaced (proper space between lines, boxes and labels)</p>
 </li>
 <li>
-<p>minimise the number of crossing connectors [<a href="references.html#ref:57" class="xref page">57</a>]</p>
+<p>minimise the number of crossing connectors [<a href="references.html#ref:19" class="xref page">19, sec 3.3.4</a>]</p>
 </li>
 <li>
-<p>prefer orthogonal to straight connectors [<a href="references.html#ref:58" class="xref page">58</a>]</p>
+<p>prefer orthogonal to straight connectors [<a href="references.html#ref:19" class="xref page">19, sec 3.3.1</a>]</p>
 </li>
 <li>
-<p>align elements horizontally &amp; vertically [<a href="references.html#ref:57" class="xref page">57</a>]</p>
+<p>align elements horizontally &amp; vertically [<a href="references.html#ref:19" class="xref page">19, sec 3.3.4</a>]</p>
 </li>
 <li>
 <p>space elements evenly</p>
@@ -1291,10 +1577,10 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>align labels horizontally and avoid vertical or oblique alignment</p>
 </li>
 <li>
-<p>place subclasses under or to the right of their parent [<a href="references.html#ref:59" class="xref page">59</a>] and</p>
+<p>place subclasses under or to the right of their parent [<a href="references.html#ref:19" class="xref page">19, sec 3.3.5</a>] and</p>
 </li>
 <li>
-<p>place the part under or to the right of the whole at aggregates or composites [<a href="references.html#ref:58" class="xref page">58</a>].</p>
+<p>place the part under or to the right of the whole at aggregates or composites [<a href="references.html#ref:19" class="xref page">19, sec 3.3.1</a>].</p>
 </li>
 <li>
 <p>minimise the number of details, and are short and concise; multiple small(-er) diagrams are preferred to one large diagram</p>
@@ -1310,7 +1596,7 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>diagrams shall be no bigger than one A4 page</p>
 </li>
 <li>
-<p>simplify complex diagrams [<a href="references.html#ref:60" class="xref page">60</a>]:</p>
+<p>simplify complex diagrams [<a href="references.html#ref:19" class="xref page">19, sec 3.3.3</a>]:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1330,15 +1616,15 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 </li>
 <li>
 <p>Symbol size equal, and nothing shall draw more attention unless intended. Make elements of equal importance equally
-large [<a href="references.html#ref:61" class="xref page">61</a>].</p>
+large [<a href="references.html#ref:19" class="xref page">19, sec 3.3.2</a>].</p>
 </li>
 <li>
-<p>Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:62" class="xref page">62</a>].</p>
+<p>Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:19" class="xref page">19, sec 3.2.5</a>].</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>`[<a href="references.html#ref:63" class="xref page">63</a>], [SEMIC draft specs, sec on UML, Rule 13 - 23] [???]</p>
+<p>\[<a href="references.html#ref:19" class="xref page">19, sec 3.1.11</a>], [<a href="references.html#ref:20" class="xref page">20, sec on UML, Rule 13 - 23</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1358,6 +1644,1123 @@ just below the related parent class, the relations are horizontal, vertical or o
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_semantic_conventions"><a class="anchor" href="#_semantic_conventions"></a>Semantic conventions</h3>
+<div class="sect3">
+<h4 id="sec:sc-r1"><a class="anchor" href="#sec:sc-r1"></a>Formal language choice</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Formal language choice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: SC-R1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The formal ontology shall be expressed in OWL.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS and OWL. RDFS is simpler
+and only allows for some of the recommended expressions (for example, the distinction between data type and object properties
+is not possible). OWL is more complex and more expressive than RDFS.</p>
+</div>
+<div class="paragraph">
+<p>We recommend using OWL limited to a set of expression types.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>Core Vocabularies have an RDF representation as OWL Ontology. In the example below, part of Core Person is depicted:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-turtle hljs" data-lang="turtle">@prefix dc: &lt;http://purl.org/dc/terms/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix schemas: &lt;https://schema.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;http://www.w3.org/ns/person#Person&gt; a rdfs:Class;
+  rdfs:label "Person"@en .
+
+&lt;https://data.europa.eu/m8g&gt; a owl:Ontology;
+  rdfs:label "core-person-voc"@en,
+    "core-person-voc"@nl;
+  dc:contributor [
+    a foaf:Person;
+    foaf:firstName "Seth";
+    foaf:lastName "van Hooland";
+    schemas:affiliation [foaf:name "European Commission"]
+  ];
+  dc:license "https://creativecommons.org/licenses/by/4.0/",
+    &lt;https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic&gt;;
+  dc:mediator [
+    foaf:homepage &lt;https://semic.eu&gt;;
+    foaf:name "Semantic Interoperability Community (SEMIC)"
+  ].</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:sc-r2"><a class="anchor" href="#sec:sc-r2"></a>Limited (OWL) expressivity</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Limited (OWL) expressivity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: SC-R2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The formal ontology shall be <em>lightweight</em> in its logical underpinning, focusing mainly on the concept declarations,
+generalisation axioms and annotations.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>OWL language has a fairly high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic
+artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL
+constructs suffice. Therefore the OWL ontology shall be kept <em>lightweight</em>, and no advanced logical definitions are necessary,
+which would make the ontology <em>heavyweight</em>.</p>
+</div>
+<div class="paragraph">
+<p>It is recommended that the formal ontology definition be limited to the following types of expressions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>class declarations (<code>owl:Class</code>, <code>rdfs:Class</code>)</p>
+</li>
+<li>
+<p>datatype property declarations (<code>owl:DatatypeProperty</code>, <code>rdf:Property</code>)</p>
+</li>
+<li>
+<p>object property declarations (<code>owl:ObjectProperty</code>, <code>rdf:Property</code>)</p>
+</li>
+<li>
+<p>subclass relations (<code>rdfs:subClassOf</code>)</p>
+</li>
+<li>
+<p>annotations</p>
+<div class="ulist">
+<ul>
+<li>
+<p>concept labels (<code>rdfs:label</code>, <code>skos:prefLabel</code>, <code>skos:altLabel</code>)</p>
+</li>
+<li>
+<p>concept definitions (<code>rdfs:comment</code>, <code>skos:definition</code>, <code>skos:scopeNote</code>)</p>
+</li>
+<li>
+<p>notes and comments (<code>rdfs:comment</code>, <code>skos:editorialNote</code>, <code>skos:changeNote</code>, <code>skos:historyNote</code>, <code>skos:example</code>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ontology header with</p>
+<div class="ulist">
+<ul>
+<li>
+<p>import statements (<code>owl:import</code>)</p>
+</li>
+<li>
+<p>version metadata (<code>owl:versionInfo</code>, <code>owl:versionIRI</code>)</p>
+</li>
+<li>
+<p>provenance metadata</p>
+</li>
+<li>
+<p>descriptive metadata</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The formal ontology shall not include other types of statements unless necessary. It is also recommended to avoid (a) property
+domain specification (<code>rdfs:domain</code>) and (b) property range specification (<code>rdfs:range</code>). The intention of such statements is
+better captured by the data shapes.</p>
+</div>
+<div class="paragraph">
+<p>Keeping the ontology lightweight allows the maximum freedom for reuse and does not interfere with the validation concerns
+covered by the data shapes.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>For example, consider the (shortened) DCAT-AP imports header:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">&lt;http://data.europa.eu/r5r&gt;
+  rdf:type owl:Ontology ;
+  owl:imports &lt;https://www.w3.org/ns/dcat2.ttl&gt; ;
+  owl:imports &lt;http://dublincore.org/2020/01/20/dublin_core_terms.ttl&gt; ;
+  owl:imports &lt;https://www.w3.org/ns/locn.ttl&gt; ;
+  owl:imports &lt;http://www.w3.org/ns/prov-o.ttl&gt; ;
+  owl:imports &lt;http://www.w3.org/2006/time.ttl&gt; ;
+  owl:imports &lt;http://www.w3.org/2006/vcard/ns.ttl&gt; ;
+  owl:imports &lt;http://www.w3.org/ns/adms.ttl&gt;
+  .</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or consider, the (shortened) Core Person vocabulary header:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">&lt;https://data.europa.eu/m8g&gt; a owl:Ontology;
+  rdfs:label "core-person-voc"@en,
+    "core-person-voc"@nl;
+  dc:contributor [
+    a foaf:Person;
+    foaf:firstName "Seth";
+    foaf:lastName "van Hooland";
+    schemas:affiliation [foaf:name "European Commission"]
+  ];
+  dc:license "https://creativecommons.org/licenses/by/4.0/",
+    &lt;https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic&gt;;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:sc-r3"><a class="anchor" href="#sec:sc-r3"></a>Lexicalisation</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Lexicalisation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: SC-R3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The choice in handling the lexicalisation of concepts shall be clearly defined and consistently implemented.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>The lexicalisation of concepts in semantic artefacts can be implemented in multiple ways. Two popular approaches are used
+in practice: RDFS or SKOS lexicalisation. However, other types can be considered as well (e.g. [<a href="references.html#ref:64" class="xref page">64</a>], [<a href="references.html#ref:65" class="xref page">65</a>], etc.).</p>
+</div>
+<div class="paragraph">
+<p>RDFS allows for a very simple lexicalisation and annotation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>labels</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>rdfs:label</code> may be used to provide a human-readable version of a resource&#8217;s name</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>comments</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>rdfs:comment</code> may be used to provide a human-readable description of a resource.
+SKOS offers a richer and more elaborate lexicalisation and annotation:</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Lexical labels</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>skos:prefLabel</code> and <code>skos:altLabel</code> are useful when generating or creating human-readable representations of a knowledge
+organisation system. These labels provide the strongest clues as to the meaning of a SKOS concept.</p>
+</li>
+<li>
+<p><code>skos:hiddenLabel</code> has a more technical nature and may be useful when a user is interacting with a knowledge organisation
+system via a text-based search function. The user may, for example, enter misspelled words when trying to find a relevant concept.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Documentation properties</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>skos:definition</code> supplies a complete explanation of the intended meaning of a concept;</p>
+</li>
+<li>
+<p><code>skos:scopeNote</code> supplies some, possibly partial, information about the intended meaning of a concept, especially as an
+indication of how the use of a concept is limited in indexing practice;</p>
+</li>
+<li>
+<p><code>skos:note</code> useful for general documentation purposes;</p>
+</li>
+<li>
+<p><code>skos:example</code> supplies an example of the use of a concept;</p>
+</li>
+<li>
+<p><code>skos:historyNote</code> describes significant changes to the meaning or the form of a concept;</p>
+</li>
+<li>
+<p><code>skos:changeNote</code> documents fine-grained changes to a concept, for the purposes of administration and maintenance;</p>
+</li>
+<li>
+<p><code>skos:editorialNote</code> supplies information that is an aid to administrative housekeeping, such as reminders of editorial
+work still to be done, or warnings in the event that future editorial changes might be made.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is recommended that one or the other is used. Both can be used at the same time without any consequence to semantics,
+but this will introduce redundancy and possibly a maintenance burden.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>For example, in Core Person Vocabulary RDFS lexicalisation is used:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">&lt;http://data.europa.eu/m8g/birthDate&gt; a rdf:Property;
+  rdfs:label "date of birth"@en .</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example in ePO, both lexicalisations are provided (even if this may be considered redundant):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">:Term a owl:Class ;
+    rdfs:label "Term"@en ;
+    rdfs:comment "A governing condition or stipulation."@en ;
+    rdfs:isDefinedBy &lt;http://data.europa.eu/a4g/ontology&gt; ;
+    skos:definition "A governing condition or stipulation."@en ;
+    skos:prefLabel "Term"@en .</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:sc-r4"><a class="anchor" href="#sec:sc-r4"></a>Reasoning assumption</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Reasoning assumption</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: SC-R4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">No reasoning capabilities shall be assumed.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>OWL constructs correspond to Description Logic (DL) concepts (<em>direct semantics</em>). Logic, besides expressing knowledge in
+a knowledge base, can be used to perform automated reasoning, i.e.  inferring new knowledge based on premises and reasoning
+rules. The inference is also possible with RDF-based semantics, which is based on translating the axioms into directed graphs.
+The latter is used for SPARQL entailments and SHACL data shape rules.</p>
+</div>
+<div class="paragraph">
+<p>Automated reasoning is not consistently available across environments: small differences in the usage context or reasoning
+patterns may lead to different outcomes.</p>
+</div>
+<div class="paragraph">
+<p>Therefore, the editors of interoperable semantic data specifications are strongly recommended to NOT rely on such capabilities.
+Thus, in practice, the model shall allow for an explicit statement of the intended knowledge, and as little as possible
+shall be left implicit.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:sc-r5"><a class="anchor" href="#sec:sc-r5"></a>Circular definitions</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Circular definitions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: SC-R5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The data specification (semantic, conceptual, or shape) shall not use circular definitions.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Circular definition, i.e. definitions that use the element they define are incorrect.</p>
+</div>
+<div class="paragraph">
+<p>For instance, we say that an ontology element (a class, an object property or a datatype property) is circular when used
+in its own definition. This can occur in situations such as the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(a) the definition of a class as the enumeration of several classes including itself;</p>
+</li>
+<li>
+<p>(b) the appearance of a class within its <code>owl:equivalentClass</code> or <code>rdfs:subClassOf</code> axioms;</p>
+</li>
+<li>
+<p>(c) the appearance of an object property in its <code>rdfs:domain</code> or range <code>rdfs:range</code> definitions; or</p>
+</li>
+<li>
+<p>(d) the appearance of a datatype property in its <code>rdfs:domain</code> definition.
+=== Data shape conventions</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:dsc-r1"><a class="anchor" href="#sec:dsc-r1"></a>Data shape language choice</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"><strong>Title:</strong> Data shape language choice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: DSC-R1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The data shapes shall be expressed in SHACL.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the
+executable ones, the most well-known are SHACL [<a href="references.html#ref:66" class="xref page">66</a>] and ShEx [<a href="references.html#ref:67" class="xref page">67</a>].
+As the SHACL is a W3C standard, we strongly recommend using it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>Lose versus rigid constraints</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Lose versus rigid constraints</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: DSC-R2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">In a Core Vocabulary, then the data shape constraints shall be as loose as possible, i.e. permissive, while in an Application
+Profile, the data shape constraints shall be as rigid as necessary, i.e. restrictive.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>The Core Vocabularies are intended for broad reuse and are concerned with establishing the concepts. This is addressed by
+the ontology artefact. Optionally it may be accompanied by a minimal set of data shape constraints expressing general domain
+limitations. For example, it may be already defined in the Core Vocabulary that a class cannot be instantiated without certain
+mandatory properties or that a declared property shall be used only with values from a pre-established controlled vocabulary.
+If a data shape artefact is provided, then any Application Profile reusing the Core Vocabulary shall not only import the
+ontology but the data shapes as well.</p>
+</div>
+<div class="paragraph">
+<p>The Application Profiles are usually intended for narrower use cases and mostly are concerned with setting restrictions
+on the way reused vocabulary ought to be used. It is a good practice to make such restrictions as restrictive as necessary
+but still provide space for variation as it usually occurs in practice. This is even more important when an Application Profile
+is conceived as reusable in other Application Profiles.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>Consider DCAT-AP, for example. It is an Application Profile on top of the DCAT vocabulary, but other more specific Application Profiles
+are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:dsc-r3"><a class="anchor" href="#sec:dsc-r3"></a>Open and Closed world assumptions</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Open and Closed world assumptions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: DSC-R3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The data instantiating a core model may be fragmented across information systems. For representation purposes, open-world
+assumptions shall be adopted, and for validation purposes, a closed-world assumption shall be adopted.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Operations on the data, such as automated reasoning and validation, are impacted by  what is assumed about its completeness.
+If it is considered complete, then we say that we operate under the <em>closed-world assumption</em>; otherwise, in the cases of
+continually evolving and distributed data (that is more in line with reality), the data is considered possibly incomplete,
+and we say that operating is under the <em>open-world assumption</em>.</p>
+</div>
+<div class="paragraph">
+<p>Under the closed-world assumption, it is presumed that a true statement is also known to be true. Therefore, conversely,
+what is not currently known to be true, is false [<a href="references.html#ref:68" class="xref page">68</a>]. The opposite of the closed-world assumption
+is the open-world assumption stating that lack of knowledge does not imply falsity. The truth value of a statement may be
+true irrespective of whether or not it is known to be true.</p>
+</div>
+<div class="paragraph">
+<p>This means that when validating, the data must be considered complete to assess whether it fulfils the imposed constraints
+or recommended shapes. Therefore, everything that is not known to be true must be considered false.</p>
+</div>
+<div class="paragraph">
+<p>This may have an impact, especially for larger vocabularies (such as the eProcurement ontology), on how the data shapes
+are organised. As data shapes may be used to suggest how the data may be fragmented and how it shall not.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>On data shapes</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> On data shapes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: DSC-R4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>, while the property constraints shall be embedded (contextualised)
+within node shapes rather than being defined as freestanding.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property
+shape for each UML attribute and UML Connector of that class. if the property shapes are defined within the node shapes
+(rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
+the resulting constraint definitions are organically integrated and the maintenance costs are decreased.</p>
+</div>
+<div class="paragraph">
+<p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL or SHACL definitions.</p>
+</div>
+<div class="paragraph">
+<p>In some communities, the URIs used in the OWL specifications are reused in SHACL. The class definitions are extended as node
+shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the
+use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts.
+The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach
+does not allow for dereferencing separately OWL or SHACL representations. Hence, it is recommended to avoid such practice.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>Data Shape severity</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Data Shape severity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: DSC-R5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">It is recommended to use constraint severity for distinguishing critical violations from non-critical recommendation warnings
+and from nice-to-have information.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Data shapes can be assigned a level of severity. The specific values of severity have no impact on the validation but may
+be used by user interface tools to categorise validation results. The severity levels are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Info - A non-critical constraint violation indicating an informative message.</p>
+</li>
+<li>
+<p>Warning - A non-critical constraint violation indicating a warning.</p>
+</li>
+<li>
+<p>Violation - A constraint violation.
+=== Methodology conventions</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:mc-r1"><a class="anchor" href="#sec:mc-r1"></a>Follow a methodology</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"><strong>Title:</strong> Follow a methodology</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: MC-R1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">It is strongly recommended that a clear, explicit methodology is adopted for the content development and lifecycle management
+of a semantic data specification. Conversely, no data specification shall be developed and managed without following a clear
+methodology.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>A methodology is a set of methods, processes, and practices that are repeatedly carried out to deliver projects
+(TOGAF [<a href="references.html#ref:69" class="xref page">69</a>]).
+It helps by using a clear set of processes for managing projects that everyone in the organisation understands, reducing risks,
+and improving the chances of success. A good methodology that fits the context and environment of an organisation can provide
+clear guidance on what, who, when, and how a project should be done. It also provides a clear path and a systematic strategy to
+solve the in-field problems.</p>
+</div>
+<div class="paragraph">
+<p>We do not outline a concrete methodology here but merely point to the benefits of adopting and using one. In the SEMIC context,
+conceptual model development will benefit greatly from embracing some or a combination of techniques and frameworks in
+data modelling (e.g. Bottom-Up, Top-Down, Case-Based, Entity-Relationship, Object-Oriented, Star/Snowflake Schema data modelling
+techniques, etc.), ontology engineering methodologies (e.g. Methontology [<a href="references.html#ref:70" class="xref page">70</a>],
+DOGMA [<a href="references.html#ref:71" class="xref page">71</a>],  OntoClean [<a href="references.html#ref:72" class="xref page">72</a>], TOVE [<a href="references.html#ref:73" class="xref page">73</a>],
+DILIGENT [<a href="references.html#ref:74" class="xref page">74</a>], NeOn [<a href="references.html#ref:75" class="xref page">75</a>], etc. [<a href="references.html#ref:76" class="xref page">76</a>]),
+data management body of knowledge (DAMA-DMBOK [<a href="references.html#ref:77" class="xref page">77</a>) or architecture frameworks
+and practices (e.g. TOGAF [<a href="references.html#ref:69" class="xref page">69</a>], Zachman Framework [<a href="references.html#ref:78" class="xref page">78</a>],
+EAP [<a href="references.html#ref:79" class="xref page">79</a>], etc.).</p>
+</div>
+<div class="paragraph">
+<p>Among other benefits of adopting a clear and well-defined methodology are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clear lifecycle management</p>
+</li>
+<li>
+<p>Connection between model and expressed (business) requirements</p>
+</li>
+<li>
+<p>Implementation consistency</p>
+</li>
+<li>
+<p>Proper business requirements management (specifications, use cases, scenarios, competency questions, etc. are collected,
+edited, maintained, referred by the concepts)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:mc-r2"><a class="anchor" href="#sec:mc-r2"></a>On goals and scope</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> On goals and scope</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: MC-R2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">A semantic data specification shall have clear goals and a well-established scope definition.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Establishing project scope ensures that the modelling work is focused and executed to expectations. It also helps define
+where the boundary of the model is and what shall be left out.</p>
+</div>
+<div class="paragraph">
+<p>The clearer the scope the higher chances of success are.</p>
+</div>
+<div class="paragraph">
+<p>It shall be possible to determine the scope of a data specification from the use cases for which it is drawn up. [<a href="references.html#ref:19" class="xref page">19, sec 3.1.4</a>]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:mc-r3"><a class="anchor" href="#sec:mc-r3"></a>On modularisation</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> On modularisation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: MC-R3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">If a domain contains a lot of concepts that have to be modelled, then it is recommended to split it into subdomains and
+manage them as modules. [<a href="references.html#ref:19" class="xref page">19, sec 3.1.3</a>]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Divide and conquer method works in many situations, including in the modelling realm. It may not be easy, however, to make
+a clearcut separation between concepts belonging to one module or another, and such an attempt will certainly bring clarity.</p>
+</div>
+<div class="paragraph">
+<p>Sometimes, a concept can be used for several domains. Then it shall be placed in a separate module. [<a href="references.html#ref:19" class="xref page">19, sec 3.1.3</a>]</p>
+</div>
+<div class="paragraph">
+<p>The need for modularisation typically emerges when the to-be-modelled space grows. As the terms are to be identified by URIs
+[<a href="gc-publication-conventions.html#sec:pc-r2" class="xref page">PC-R2</a>], it is recommended to include in the used URI structure modularisation potential.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>For example, in the eProcurement ontology(ePO) [<a href="references.html#ref:47" class="xref page">47</a>], there is a core ontology and there are
+extension modules such as eCatalogue, eOrdering, and eNotice [<a href="references.html#ref:82" class="xref page">82</a>] that further refine and extend
+a specific part of the core.</p>
+</div>
+<div class="paragraph">
+<p>For example, Core Location is used across other Core Vocabularies and is established as a CV on its own.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_publication_conventions"><a class="anchor" href="#_publication_conventions"></a>Publication conventions</h3>
+<div class="sect3">
+<h4 id="sec:pc-r1"><a class="anchor" href="#sec:pc-r1"></a>5-star Linked Open Data</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> 5-star Linked Open Data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: PC-R1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Publishing the Core Vocabularies and Application Profiles shall be compliant with 5-star LOD criteria.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Publishing a vocabulary as a Linked Open Data (LOD) resource means making it accessible, both human and machine-readable, in a
+standard way, thus supporting the semantic web. The publication as full LOD implies that the data is compliant with the
+highest grade of 5-Star [<a href="references.html#ref:83" class="xref page">83</a>] open data evaluation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The data is available on the Web under an open licence</p>
+</li>
+<li>
+<p>The data is available following a clear structure</p>
+</li>
+<li>
+<p>The data is available using a non-proprietary open format</p>
+</li>
+<li>
+<p>The data uses URIs to denote concepts</p>
+</li>
+<li>
+<p>The data is linked to other resources to provide context</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>\ [<a href="references.html#ref:20" class="xref page">20</a>, <a href="references.html#ref:85" class="xref page">85</a>]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:pc-r2"><a class="anchor" href="#sec:pc-r2"></a>Persistent URI policy</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Persistent URI policy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: PC-R2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The URIs that are used to identify the terms modelled in the data specifications should be <em>dereferenceable Persistent URIs</em>
+[<a href="references.html#ref:1" class="xref page">1</a>] and comply with a URI policy (or URI strategy).</p>
+<p class="tableblock">URIs that are well-defined according to such criteria are often denoted as PURIs [<a href="references.html#ref:1" class="xref page">1</a>].</p>
+<p class="tableblock">SEMIC adheres to the EU persistent URI policy. Each SEMIC URI is dereferenceable in both machine representation (RDF
+artefacts) and human-readable (HTML artefact).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>When publishing  data on the web [<a href="references.html#ref:85" class="xref page">85</a>], it is crucial to have a structured and persistent system
+of URIs in place. Such URIs make it easy for the users to understand the vocabulary structure and retrieve information as they expect.</p>
+</div>
+<div class="paragraph">
+<p>The 10 rules for Persistent URIs [<a href="references.html#ref:1" class="xref page">1</a>] are base principles for the design of quality identifiers.
+Regarding URI design, the main consideration of creators should be that when a URI is created, all its parts should be
+resistant to change. For instance, locations and organisation names can change and therefore should not be used in URIs.
+First and foremost, when introducing semantics in URIs, the strings used need to reflect what the resources are (i.e. intrinsic
+characteristics such as the type or nature), not who owns them or where they are [<a href="references.html#ref:88" class="xref page">88</a>].</p>
+</div>
+<div class="paragraph">
+<p>In 2014, the ISA Programme devised a common policy for managing persistent HTTP-based URIs of EU institutions [<a href="references.html#ref:88" class="xref page">88</a>,
+<a href="references.html#ref:1" class="xref page">1</a>, <a href="references.html#ref:89" class="xref page">89</a>]. That has led to an EU wide URI resolution service, prescribing
+that each URI is of the following pattern:</p>
+</div>
+<div class="paragraph">
+<p><code><a href="http://data.europa.eu/{Collection}/{Reference}" class="bare">http://data.europa.eu/{Collection}/{Reference}</a></code></p>
+</div>
+<div class="paragraph">
+<p>The <code>{Collection}</code> is an organisation-agnostic name for a collection of terms. Within a <code>{Collection}</code> the local names, or
+references, are being maintained according to the policy of the <code>{Collection}</code>. For SEMIC data specifications, the names
+are dependent on the naming conventions mentioned in this style guide rules [xref general naming styling + UML naming conventions].</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>For example, the PURIs defined within the SEMIC Core Vocabularies are all within the <code>{Collection}</code> m8g. And thus  the term
+Evidence in the context of CCCEV is denoted with the PURI <code><a href="http://data.europa.eu/m8g/Evidence" class="bare">http://data.europa.eu/m8g/Evidence</a></code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:pc-r3"><a class="anchor" href="#sec:pc-r3"></a>Version management</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Version management</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: PC-R3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">A consistent version management shall be implemented for the vocabulary evolution respecting the “semantic versioning”
+principles. [<a href="references.html#ref:90" class="xref page">90</a>]</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>The SEMIC versioning methodology is based on “semantic versioning” principles and implements a simple set of rules and
+requirements that dictate how version numbers are assigned and incremented. It involves describing clearly and precisely
+what is being published and which features are included, and what the limitations are, setting the expectations and scope.
+Once the artefacts are identified for the public, the changes to the data specifications are communicated  with specific
+increments to  the version number and with associated change notes.</p>
+</div>
+<div class="paragraph">
+<p>The version format is <em> X.Y.Z (Major.Minor.Patch)</em>.</p>
+</div>
+<div class="paragraph">
+<p>As a rule of thumb, bug fixes do not affect the artefact and increment the Patch version. Backwards compatible artefact
+additions/changes increment the Minor version. And, backwards-incompatible artefact changes increment the Major version.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Examples:</strong></p>
+</div>
+<div class="paragraph">
+<p>For example, evolving from version 1.3.5 to 1.3.6 represents a backwards-compatible patch, from 1.3.5 to 1.4.0, a
+backwards-compatible new development, while switching from 1.3.5 to 2.0.0 breaks the backwards compatibility.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/pc-r3.png" alt="pc r3">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:pc-r4"><a class="anchor" href="#sec:pc-r4"></a>Artefact versioning</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Artefact versioning</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: PC-R4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">The vocabularies and Application Profiles shall be versioned as a whole and never to atomic elements (concepts, relations
+or constraints).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Create a new version with each publication. Using the semantic version principles to determine the exact version number
+depends on whether it is a major, minor or patch update.</p>
+</div>
+<div class="paragraph">
+<p>The version shall be assigned to the entire vocabulary or Application Profile and never to elements in the model
+(concepts, relations, constraints, etc.) [<a href="references.html#ref:19" class="xref page">19, sec 3.1.6</a>]. The version shall be saved as the model metadata
+(for example, in the <code>owl:Ontology</code> header).</p>
+</div>
+<div class="paragraph">
+<p>No version information shall be embedded into any artefact URIs unless it is a version URI provided via <code>owl:versionIRI</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:pc-r5"><a class="anchor" href="#sec:pc-r5"></a>URI dereferencing</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> URI dereferencing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: PC-R5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Any URI identifiable resource devised in a data specification shall be dereferenceable.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Dereferencing means that one can use the URI as an URL to retrieve related information back. The format and representation
+in which the information is returned depend on content negotiation. Content negotiation is the interaction between the client
+application and the server in which the client informs the server about its preferred format and representation and the server
+responds with the best-fitting result it can provide.</p>
+</div>
+<div class="paragraph">
+<p>It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the HTTP header Accept.</p>
+</div>
+<div class="paragraph">
+<p>The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
+default response (if no content type is specified), and the other is RDF [<a href="references.html#ref:1" class="xref page">1</a>].</p>
+</div>
+<div class="paragraph">
+<p>The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
+Further technical details can be found in “Best Practice Recipes for Publishing RDF Vocabularies” [<a href="references.html#ref:92" class="xref page">92</a>].</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sec:pc-r6"><a class="anchor" href="#sec:pc-r6"></a>Human-readable form</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Human-readable form</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Acronym</strong>: PC-R6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Each artefact shall have a corresponding human-readable form representing the model documentation.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>The documentation content shall follow a standard template for consistent formatting and content structuring.</p>
+</div>
+<div class="paragraph">
+<p>It is a good practice to provide the following sections in the document:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Preamble with metadata indicating</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Abstract</p>
+</li>
+<li>
+<p>Date of publication/release</p>
+</li>
+<li>
+<p>Version information</p>
+</li>
+<li>
+<p>Authors, editors, contributors</p>
+</li>
+<li>
+<p>Licensing information</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Introduction describing the</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Background information</p>
+</li>
+<li>
+<p>Context &amp; Scope</p>
+</li>
+<li>
+<p>Intended audience</p>
+</li>
+<li>
+<p>UML diagrams of the model</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Description of each element in the model grouped by element type (e.g. class, property, constraint, controlled vocabulary). Each element shall be described by its URI and its Lexicalisation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>URI (shall be clearly visible)</p>
+</li>
+<li>
+<p>Labels (preferred and alternative)</p>
+</li>
+<li>
+<p>Definitions, scope notes, examples, editorial notes, etc.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   </div>
 </main>
@@ -1368,7 +2771,7 @@ just below the related parent class, the relations are horizontal, vertical or o
         the MPL-2.0 license.
     </p>
 </footer>
-<script id="site-script" src="./_/js/site.js" data-ui-root-path="./_"></script>
-<script async src="./_/js/vendor/highlight.js"></script>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
   </body>
 </html>

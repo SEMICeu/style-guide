@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Untitled :: SEMIC</title>
     <meta name="generator" content="Antora 3.0.0">
-    <link rel="stylesheet" href="./_/css/site.css">
-    <script>var uiRootPath = './_'</script>
+    <link rel="stylesheet" href="../_/css/site.css">
+    <script>var uiRootPath = '../_'</script>
   </head>
   <body class="article">
 <header class="header">
     <nav class="navbar">
         <div class="navbar-brand">
-            <a class="navbar-item" href=".">SEMIC</a>
+            <a class="navbar-item" href="..">SEMIC</a>
         </div>
     </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="ROOT" data-version="">
+<div class="nav-container" data-component="ROOT" data-version="public-review">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -33,7 +33,7 @@
     <a class="nav-link" href="terminological-clarifications.html">Terminological clarifications</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="arhitectural-clarifications.html">Arhitectural clarifications</a>
+    <a class="nav-link" href="arhitectural-clarifications.html">Architectural clarifications</a>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="clarification-on-reuse.html">Clarifications on "reuse"</a>
@@ -63,13 +63,25 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Back matter</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="references.html">References</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="rule-template.html">Rule template</a>
   </li>
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="terminology.html">Terminology</a>
   </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="references.html">References</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="index-of-rules.html">Index of rules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="style-guide-whole.html">Style guide as a whole</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -79,14 +91,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">SEMIC Style guide</span>
-    <span class="version">default</span>
+    <span class="version">public-review</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="index.html">SEMIC Style guide</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="index.html">default</a>
+          <a href="index.html">public-review</a>
         </li>
       </ul>
     </li>
@@ -211,9 +223,9 @@ fine-grained description on a construct-by-construct basis, and this is the aim 
 (datatype properties) that appear in the class.</p>
 <p class="tableblock">This works because OWL semantics treats properties as first-class citizens (along with classes, datatypes and individuals).
 So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately
-from one another, just as the OWL specification defines it [ref[???] owl spec].</p>
+from one another, just as the OWL specification defines it [<a href="references.html#ref:43" class="xref page">43</a>].</p>
 <p class="tableblock">The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate
-existing ones in the superclass(es). Also, make sure there are no logical contradictions [xref:[???] rule].</p></td>
+existing ones in the superclass(es). Also, make sure there are no logical contradictions [<a href="gc-semantic-conventions.html" class="xref page">Semantic conventions</a>].</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Original properties on the class as defined in the context of a data specification</strong></p></td>
@@ -292,7 +304,7 @@ In addition, new scoping or nuancing shall be provided in the scope notes (e.g. 
 <p>For example, the wording of FOAF definitions can benefit from light adaptations and adjustments, yet the meaning is not changing.
 Hence, in Core Person Vocabulary, the definitions are slightly adjusted.
 Such adaptations might be made when the original label or definition does not follow the guidelines laid out in this document.
-For example, the one on circular definitions [xref:[???] definitions guideline].</p>
+For example, the one on circular definitions [<a href="gc-general-conventions.html#sec:gc-r5" class="xref page">GC-R5</a>].</p>
 </div>
 </div>
 <div class="sect2">
@@ -329,7 +341,7 @@ we shall show the whole reuse chain (in the conceptual model and especially in t
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>New properties on the class</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Add new properties as necessary on the new (owned) sub-class.</p>
 <p class="tableblock">The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not
-duplicate existing ones in the superclass(es). Make sure there are no logical contradictions.</p></td>
+duplicate existing ones in the superclass(es). Make sure there are no logical contradictions [<a href="gc-semantic-conventions.html" class="xref page">Semantic conventions</a>].</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Original properties on the class as defined in the context of a data specification</strong></p></td>
@@ -480,10 +492,8 @@ be provided in the scope notes (e.g. skos:scopeNote ).</p></td>
 <p><strong>Example</strong></p>
 </div>
 <div class="paragraph">
-<p>For example, in DCAT-AP the reused property <code>adms:status</code> is relabeled into “change type” for Catalogue Record class.</p>
-</div>
-<div class="paragraph">
-<p>[???] what change type?</p>
+<p>For example, in DCAT-AP the reused property <code>adms:status</code> is relabeled from "status" to "change type" for Catalogue Record class. Note
+that the diagram does not reflect this, but it is reflected in the associated documentation.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/dcatcatalogue.png" alt="DCAT-AP Catalogue Record"></span></p>
@@ -546,10 +556,8 @@ while (logical) constraints are to be expressed as SHACL.</p></td>
 <p><strong>Example</strong></p>
 </div>
 <div class="paragraph">
-<p>For example, in the DCAT-AP the reused property <code>dct:hasPart</code> is specialised as <code>dcat:dataset</code>.</p>
-</div>
-<div class="paragraph">
-<p>[???] where is hasPart?</p>
+<p>For example, in the DCAT-AP the reused property <code>dct:hasPart</code> is specialised as <code>dcat:dataset</code>. Note that the subproperty
+relation between the two is not depicted in the diagram, but is stated in the data shape specification.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/dcatdataset.png" alt="DCAT-AP Dataset"></span></p>
@@ -567,7 +575,7 @@ while (logical) constraints are to be expressed as SHACL.</p></td>
         the MPL-2.0 license.
     </p>
 </footer>
-<script id="site-script" src="./_/js/site.js" data-ui-root-path="./_"></script>
-<script async src="./_/js/vendor/highlight.js"></script>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
   </body>
 </html>
