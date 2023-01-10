@@ -27,7 +27,7 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
 
-[???] [xref:references.adoc#ref:84[84], xref:references.adoc#ref:85[85]]
+\ [xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
 
 
 [[sec:pc-r2]]
@@ -43,9 +43,9 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
 |*Statement:*
 
 The URIs that are used to identify the terms modelled in the data specifications should be _dereferenceable Persistent URIs_
-[xref:references.adoc#ref:86[86]] and comply with a URI policy (or URI strategy).
+[xref:references.adoc#ref:1[1]] and comply with a URI policy (or URI strategy).
 
-URIs that are well-defined according to such criteria are often denoted as PURIs [xref:references.adoc#ref:86[86]].
+URIs that are well-defined according to such criteria are often denoted as PURIs [xref:references.adoc#ref:1[1]].
 
 SEMIC adheres to the EU persistent URI policy. Each SEMIC URI is dereferenceable in both machine representation (RDF
 artefacts) and human-readable (HTML artefact).
@@ -53,7 +53,7 @@ artefacts) and human-readable (HTML artefact).
 
 *Description:*
 
-When publishing  data on the web [xref:references.adoc#ref:87[87]], it is crucial to have a structured and persistent system
+When publishing  data on the web [xref:references.adoc#ref:85[85]], it is crucial to have a structured and persistent system
 of URIs in place. Such URIs make it easy for the users to understand the vocabulary structure and retrieve information as they expect.
 
 The 10 rules for Persistent URIs [xref:references.adoc#ref:1[1]] are base principles for the design of quality identifiers.
@@ -141,7 +141,7 @@ Create a new version with each publication. Using the semantic version principle
 depends on whether it is a major, minor or patch update.
 
 The version shall be assigned to the entire vocabulary or Application Profile and never to elements in the model
-(concepts, relations, constraints, etc.) [xref:references.adoc#ref:91[91]]. The version shall be saved as the model metadata
+(concepts, relations, constraints, etc.) [xref:references.adoc#ref:19[19, sec 3.1.6]]. The version shall be saved as the model metadata
 (for example, in the `owl:Ontology` header).
 
 No version information shall be embedded into any artefact URIs unless it is a version URI provided via `owl:versionIRI`.
