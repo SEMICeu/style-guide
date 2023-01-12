@@ -2,11 +2,11 @@ site:
   title: SEMIC
   start_page: ROOT::index.adoc
 
-#antora:
-#  extensions:
-#    - id: lunr-search
-#      require: ./lunr
-#      enabled: false
+antora:
+  extensions:
+    - id: lunr-search
+      require: ./lunr
+      enabled: false
 
 content:
   sources:
