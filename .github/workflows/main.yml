@@ -15,6 +15,9 @@ jobs:
         uses: kameshsampath/antora-site-action@master
         with:
           antora_playbook: antora-playbook.yml
+          site_sources_path: 'site-sources-folder'
+          antora_generator: 'antora-site-generator-lunr'
+          antora_docsearch_enabled: 'true'
       - name: "Upload generated site"
         uses: actions/upload-artifact@v1.0.0
         with:
