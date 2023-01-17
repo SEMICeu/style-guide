@@ -11,6 +11,7 @@ install:
 	@ nvm install lts/gallium
 	@ source ~/.bashrc
 	@ npm i -g @antora/cli@3.1 @antora/site-generator@3.1
+	@ npm i -g @antora/lunr-extension
 
 # Optionally add the line below to ~/.bashrc
 # export PATH="$PATH:$HOME/.npm/bin"
