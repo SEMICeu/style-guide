@@ -2,24 +2,12 @@
 :description: The SEMIC style guide for semantic engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
-:toc:
-:toclevels: 2
-:sectnums:
-:sectnums: 4
-:icons: font
 
-include::introduction.adoc[]
 
-include::terminological-clarifications.adoc[]
+Abstract to be provided here answering the questions:
 
-include::arhitectural-clarifications.adoc[]
+* what is this ?
 
-include::clarification-on-reuse.adoc[]
+* how shall first time readers read it  ?
 
-include::guidelines-and-conventions.adoc[]
-
-include::rule-template.adoc[]
-
-include::terminology.adoc[]
-
-include::references.adoc[]
+* how shall second time readers read it ?
