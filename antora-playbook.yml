@@ -5,10 +5,8 @@ site:
 antora:
   extensions:
   - require: '@antora/lunr-extension'
-    index_latest_only: true
-    snippet_length: 170
-    languages: [en]
-    enabled: true
+    snippet_length: 250
+
 
 content:
   sources:
