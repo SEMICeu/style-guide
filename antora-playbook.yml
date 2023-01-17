@@ -4,9 +4,10 @@ site:
 
 antora:
   extensions:
-    - id: lunr-search
-      require: ./lunr
-      enabled: false
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    snippet_length: 170
+    languages: [en]
 
 content:
   sources:
