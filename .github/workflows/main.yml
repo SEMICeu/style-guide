@@ -15,7 +15,7 @@ jobs:
         uses: kameshsampath/antora-site-action@master
         with:
           antora_playbook: antora-playbook.yml
-          site_sources_path: "${{ github.workspace }}/build/${{ env.SITE_DIR }}"
+#          site_sources_path: "${{ github.workspace }}build/${{ env.SITE_DIR }}"
           antora_generator: 'antora-site-generator-lunr'
           antora_docsearch_enabled: 'true'
       - name: "Upload generated site"
