@@ -1,8 +1,8 @@
 SHELL=/bin/bash -o pipefail
 BUILD_PRINT = \e[1;34mSTEP:
 
-install:
-	@ echo -e "$(BUILD_PRINT)Installing the dev environment requirements$(END_BUILD_PRINT)"
+install-node:
+	@ echo -e "$(BUILD_PRINT)Installing the NodeJS$(END_BUILD_PRINT)"
 	@ sudo apt install npm
 	@ mkdir -p ~/.npm
 	@ npm config set prefix ~/.npm
@@ -10,8 +10,16 @@ install:
 	@ nvm list-remote
 	@ nvm install lts/gallium
 	@ source ~/.bashrc
+
+
+install-antora:
+	@ echo -e "$(BUILD_PRINT)Installing the Antora$(END_BUILD_PRINT)"
 	@ npm i -g @antora/cli@3.1 @antora/site-generator@3.1
 	@ npm i -g @antora/lunr-extension
+
+install: install-node install-antora
+	@ echo -e "$(BUILD_PRINT)Finish installation of the dev environment requirements$(END_BUILD_PRINT)"
+
 
 # Optionally add the line below to ~/.bashrc
 # export PATH="$PATH:$HOME/.npm/bin"
