@@ -12,9 +12,9 @@ antora:
 
 content:
   sources:
-    - url: .
-#    - url: https://github.com/SEMICeu/style-guide
-#      branches: [ main ]
+#    - url: .
+    - url: https://github.com/SEMICeu/style-guide
+      branches: [ main ]
       start_path: docs
 ui:
   bundle:
