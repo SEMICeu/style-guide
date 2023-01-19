@@ -18,7 +18,7 @@ jobs:
       - name: "Install Antora"
         run: make install-antora
       - name: "Generate site using antora site action"
-        run: make generate-site
+        run: make build-site
 
 #      - name: "Generate site using antora site action"
 #        uses: kameshsampath/antora-site-action@master
