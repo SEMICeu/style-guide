@@ -137,3 +137,4 @@ node_modules
 .yarn
 .pnp.cjs
 .pnp.loader.mjs
+/package-lock.json
