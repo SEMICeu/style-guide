@@ -2,10 +2,10 @@ site:
   title: SEMIC
   start_page: ROOT::index.adoc
 
-#antora:
-#  extensions:
-#  - require: '@antora/lunr-extension'
-#    snippet_length: 250
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+    snippet_length: 250
 
 
 content:
