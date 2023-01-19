@@ -14,12 +14,11 @@ install-node:
 
 install-antora:
 	@ echo -e "$(BUILD_PRINT)Installing the Antora$(END_BUILD_PRINT)"
-	@ npm i -g @antora/cli@3.1 @antora/site-generator@3.1
-	@ npm i -g @antora/lunr-extension
+	@ npm install
 
-install: install-node install-antora
-	@ echo -e "$(BUILD_PRINT)Finish installation of the dev environment requirements$(END_BUILD_PRINT)"
-
+# install: install-node install-antora
+# 	@ echo -e "$(BUILD_PRINT)Finish installation of the dev environment requirements$(END_BUILD_PRINT)"
+#
 
 # Optionally add the line below to ~/.bashrc
 # export PATH="$PATH:$HOME/.npm/bin"
