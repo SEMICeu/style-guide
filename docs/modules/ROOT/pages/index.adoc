@@ -6,8 +6,8 @@
 
 Abstract to be provided here answering the questions:
 
-* what is this ?
+* what is this?
 
-* how shall first time readers read it  ?
+* how shall first time readers read it?
 
-* how shall second time readers read it ?
+* how shall second time readers read it?
