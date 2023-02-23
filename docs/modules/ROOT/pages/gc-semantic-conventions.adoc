@@ -160,6 +160,7 @@ RDFS allows for a very simple lexicalisation and annotation:
 ** `rdfs:label` may be used to provide a human-readable version of a resource's name
 * comments
 ** `rdfs:comment` may be used to provide a human-readable description of a resource.
+
 SKOS offers a richer and more elaborate lexicalisation and annotation:
 
 * Lexical labels

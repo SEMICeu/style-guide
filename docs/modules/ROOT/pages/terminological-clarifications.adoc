@@ -1,8 +1,26 @@
-== Terminological clarifications
+= Terminological clarifications
 
+Before detailed definitions and explanations are provided, let's align on the idea that: [xref:arhitectural-clarifications.adoc#sec:on-data-specification-and-artefact-types["semantic data specifications comprise artefacts"]].
+
+*  There are xref:#sec:what-is-a-semantic-data-specification[_semantic data specifications_]. They comprise nothing else but a _collection of terms_, _structure and rule specifications_ on how to combine these terms and _(RE)use expectations_. In SEMIC context, semantic data specifications can be either:
+** a _Core Vocabulary_, or
+** an _Application Profile_
+
+* There are xref:#sec:what-is-an-artefact[_Artefacts_]. They encode or indicate a representation _format_, attend a need or specific _purpose_, and address a clear _concern_. In SEMIC context, we acknowledge, but not limited to, the following list of artefacts:
+** Persistent URIs
+** OWL 2 representation
+** SHACL representation
+** HTML representation
+** Pictures/Diagrams
+** UML representation
+** JSON-LD representation (+ JSON schema)
+** XML representation (+ XSD schema)
+** ...
+
+Note, not all artefacts are treated in the current style-guide, but only the ones that are in scope of semantic interoperability layer in the EIF framework.
 
 [[sec:what-is-a-conceptual-model]]
-=== What is a conceptual model (specification)?
+== What is a conceptual model (specification)?
 
 *Definition* +
 A conceptual model is an abstract representation of a system and comprises well-defined concepts, qualities or attributes, and relationships to other concepts. A system is a group of interacting or interrelated
@@ -30,7 +48,7 @@ For visual representation only UML Class Diagrams are considered.
 Note: UML will be recommended language for the conceptual models until a better and more appropriate alternative with robust tool support is developed, that is also addressing the SEMIC methods and practices [xref:arhitectural-clarifications.adoc[see Architectural clarification]].
 
 [[sec:what-is-an-ontology]]
-=== What is an ontology (specification)?
+== What is an ontology (specification)?
 
 *Definition* +
 An ontology is a description (like a formal specification) of the concepts and relationships that can formally exist for an agent or a community of agents (e.g. domain experts) [xref:references.adoc#ref:4[4]]. It encompasses a representation, formal naming, and definition of the categories, properties, and relations between the concepts, data, and entities that substantiate one, many, or all domains of discourse [xref:references.adoc#ref:5[5]].
@@ -46,7 +64,7 @@ We assume that the ontology is expressed in OWL 2 language [xref:gc-semantic-con
 The main purpose of this component is to declare the classes, properties, datatypes and controlled lists. Each construct is established by assigning a URI and decorating it with human-readable labels and descriptions, and constitutes the mechanism to establish common references for humans and machines.
 
 [[sec:what-is-a-data-shape-contraint]]
-=== What is a data shape constraint (specification)?
+== What is a data shape constraint (specification)?
 
 *Definition* +
 A data shape constraint specification provides a set of conditions on top of an ontology, limiting how the ontology can be instantiated.
@@ -58,7 +76,7 @@ We assume that the data shapes are expressed in SHACL language.
 This document will refer to data shape constraint specifications as “data shapes” or “data shape specifications”.
 
 [[sec:what-is-a-specification-document]]
-=== What is a specification document?
+== What is a specification document?
 
 *Definition* +
 A (data) specification (technical) document is created with the objective of making it simple for the end-user to (a) understand
@@ -71,7 +89,7 @@ We assume that the data specification is published in HTML format (optionally, o
 
 
 [[sec:what-is-an-artefact]]
-=== What is an artefact?
+== What is an artefact?
 
 *Definition* +
 A (data specification) artefact is a materialisation of a semantic data specification in a format appropriate for addressing
@@ -88,7 +106,7 @@ Still, these are not in the scope of this document and are addressed elsewhere. 
 
 
 [[sec:what-is-a-semantic-data-specification]]
-=== What is a semantic data specification?
+== What is a semantic data specification?
 
 *Definition* +
 A semantic data specification is a union of machine- and human-readable artefacts addressing clearly defined concerns, interoperability
@@ -104,7 +122,7 @@ With a similar meaning, the term “semantic asset” is used in the literature 
 the term “semantic asset” is broader than “data specification” and includes controlled vocabularies and possibly other types of assets.
 
 [[sec:what-is-a-cv-specification]]
-=== What is a Core Vocabulary (CV) specification?
+== What is a Core Vocabulary (CV) specification?
 
 *Definition* +
 A Core Vocabulary (CV) is a basic, reusable and extensible data specification that captures the fundamental characteristics of an
@@ -138,7 +156,7 @@ in other contexts (similar to SEMIC), a Core Vocabulary might often be simply de
 
 
 [[sec:what-is-an-ap-specification]]
-=== What is an Application Profile (AP) specification?
+== What is an Application Profile (AP) specification?
 
 *Definition* +
 An Application Profile is a data specification to facilitate the data exchange in a well-defined  application context. It re-uses
