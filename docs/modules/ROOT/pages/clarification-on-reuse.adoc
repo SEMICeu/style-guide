@@ -24,12 +24,12 @@ The following subsections offer a systematic description of six cases of reuse b
 
 In each case, we describe as appropriate the implications on the following aspects:
 
-* How to denote it: (a) as-is or (b) as a specialisation
+* How to denote it: (a) _as-is_ or (b) _as a specialisation_
 * Label
 * Definition
-* Impact of adding new properties (for classes only)
-* Impact of reusing original properties (for classes only)
-* Domain and Range (for properties only)
+* Impact of adding _new properties_ (for classes only)
+* Impact of _reusing original properties_ (for classes only)
+* Impact on _domain and range_ (for properties only)
 * Other constraints and additional information
 
 [[sec:reuse-of-a-class-as-is]]
@@ -46,20 +46,16 @@ This scenario applies when the original class is reused without terminological o
 Adopt the original URI and its definition.
 |*Label*|NO change allowed
 |*Definition*|NO change allowed
-|*New properties on the class*|In OWL, newly defined properties can use the class as Domain or Range.
+|*New properties on the class*|
+In data shapes (SHACL), the class can be used for in domain/range property constraints.
 
 In UML, properties are depicted as new connections (object properties) that are incoming and outgoing to the class or as new attributes
 (datatype properties) that appear in the class.
 
-This works because OWL semantics treats properties as first-class citizens (along with classes, datatypes and individuals).
-So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately
-from one another, just as the OWL specification defines it [xref:references.adoc#ref:43[43]].
+This works because OWL 2 semantics treats properties as first-class citizens (along with classes, datatypes and individuals). So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately from one another, just as the OWL 2 specification defines it [xref:references.adoc#ref:43[43]].
 
-The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate
-existing ones in the superclass(es). Also, make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc[Semantic conventions]].
-|*Original properties on the class as defined in the context of a data specification*|In OWL & SHACL, when reusing a class as-is from
-an established ontology hereafter called the original, all properties and constraints associated
-with the class are considered adopted (even if some may be irrelevant).
+The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate existing ones in the superclass(es). Also, make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc#sec:sc-r5[CS-R5]].
+|*Original properties on the class as defined in the context of a data specification*|In OWL 2 & SHACL, when reusing a class as-is from an established ontology hereafter called the original, all properties and constraints associated with the class are considered adopted (even if some may be irrelevant).
 
 It is recommended to make the reuse of the original clear (by notes, hyperlinks or dereferenceable URIs of the terms) at the class level.
 
@@ -99,7 +95,7 @@ In UML,
 - the original label of the reused concept shall be preserved (e.g. in a UML Element Tag + a marker that special name management shall
 take place)
 
-In OWL,
+In OWL 2,
 - the original label is adopted as is (e.g. either `rdfs:label` or `skos:prefLabel`)
 - the new label is added as an alternative label (e.g. `skos:altLabel`)
 
@@ -142,7 +138,7 @@ we shall show the whole reuse chain (in the conceptual model and especially in t
 |*New properties on the class*|Add new properties as necessary on the new (owned) sub-class.
 
 The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not
-duplicate existing ones in the superclass(es). Make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc[Semantic conventions]].
+duplicate existing ones in the superclass(es). Make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc#sec:sc-r5[CS-R5]].
 |*Original properties on the class as defined in the context of a data specification*|When reusing a class as-is from a data
 specification, hereafter called the original, all properties and constraints associated with the class should be adopted.
 
@@ -175,9 +171,9 @@ This scenario applies when the original property is reused without terminologica
 Adopt the original URI and its definition.
 |*Label*|NO change allowed
 |*Definition*|NO change allowed
-|*Domain and Range*|If the reused property
+|*Domain and range*|If the reused property
 
-* does not define a Domain and Range (in the original ontology) AND
+* does not define a domain and range (in the original ontology) AND
 
 * its definition does NOT mention explicit restrictions on the domain and range (in the data shape)
 then it can be attached in UML diagrams (in the owned data specification) to any class either as a) a relation (pointing to
@@ -185,24 +181,23 @@ another class) or b) as an attribute with a specific data type.
 
 If the reused property
 
-* defines a Domain and Range (in the original ontology) OR
+* defines a domain and range (in the original ontology) OR
 
 * its definition DOES mention explicit restrictions on the domain and range (in the data shape),
 then it must be reflected in the UML diagrams (in the owned data specification) accordingly, i.e. it can be applied only on
 specified classes.
 
-When UML is transformed into other representations, it is not recommended to represent the Domain/Range definitions in the
-lightweight ontology (OWL). Still, it may be reflected in data shape definitions (SHACL) as constraints.
+When UML is transformed into other representations, it is not recommended to represent the domain/range definitions in the
+lightweight ontology (OWL 2). Still, it may be reflected in data shape definitions (SHACL) as constraints.
 
-When the UML is transformed into other representations, the inclusion of Domain/Range statements is dependent on the “reuse”
+When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
 intention of the data specification.
-
 
 In case of a broad reuse intention, as for the SEMIC Core Vocs, it is not recommended to include them in the lightweight
 ontology but better reflect them as constraints in SHACL, where necessary (i.e. optional properties can stay free of
-domain/range specification).
-In case of narrow reuse intention, as for the Application Profiles, it is recommended to provide domain/range specifications
-in the data shape definitions even if those are optional.
+domain/range specification) [xref:gc-semantic-conventions.adoc#sec:sc-r2[CS-R2]].
+Note: in the case of narrow reuse intention, as for the application profiles, it is recommended to provide domain/range constraints
+in the data shape definitions (using SHACL) even if those are optional.
 |*Other constraints and additional information*|When reusing a property as-is from a data specification, then all constraints
 associated with the property should be adopted.
 
@@ -254,7 +249,7 @@ of the Model)
 * the original label of the reused concept shall be indicated (e.g. in a UML Element Tag + a marker that special name management
 shall take place)
 
-In OWL,
+In OWL 2,
 
 * original label (as is, either rdfs:label or `skos:prefLabel`)
 
@@ -269,7 +264,7 @@ In the documentation,
 
 Any scoping or nuancing provided in the original data specification should be copied. In addition, new scoping or nuancing shall
 be provided in the scope notes (e.g. skos:scopeNote ).
-|*Domain and Range*|Same recommendation as for reusing property, as is
+|*Domain and range*|Same recommendation as for reusing property, as is
 |*Other constraints and additional information*|Same recommendation as for reusing property, as is
 |===
 
@@ -296,17 +291,17 @@ In UML, a connector is created denoting a new property, which specialises anothe
 Additionally, notes or hyperlinks shall be provided to the original source.
 |*Label*|Provide a new label that is more specific than the one in the reused property
 |*Definition*|Provide a new definition that is more specific than the one of the reused property
-|*Domain and Range*|If the reused super property does NOT define Domain/Range, then feel free to add Domain/Range specifications
-to the sub-property, as desired, but not necessarily. In UML, feel free to attach it anywhere needed.
+|*Domain and range*|If the reused super property does NOT define domain/range, then it is possible to add domain/range specifications
+to the sub-property, but only if justified and absolutely necessarily. In UML, feel free to attach it anywhere needed.
 
-If the reused super property DOES define a Domain/Range, DO not override them, i.e. do not specify a new Domain/Range that leads
+If the reused super property DOES define a domain/range, DO not override them, i.e. do not specify a new domain/range that leads
 to logical inconsistencies. Specifically, if you do that, then make sure that the new Domain is a subclass of the Original Domain.
 
-If the property is used across multiple classes multiple Domain/Range specifications can be deemed appropriate. This shall be
-handled with care. Multiple Domain/Range definitions in OWL mean intersection (i.e. joined by logical AND) and not the union
+If the property is used across multiple classes multiple domain/range specifications can be deemed appropriate. This shall be
+handled with care. Multiple domain/range definitions in OWL 2 mean intersection (i.e. joined by logical AND) and not the union
 (i.e. joined by logical OR), as most use cases may require.
 
-When the UML is transformed into other representations, the inclusion of Domain/Range statements is dependent on the “reuse”
+When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
 intention of the data specification.
 
 In case of a broad reuse intention, as for the SEMIC Core Vocabularies, it is not recommended to include them in the lightweight

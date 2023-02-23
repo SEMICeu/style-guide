@@ -37,14 +37,23 @@ the ontology instantiation.
 ** This is addressed with data shapes expressed in SHACL.
 * To facilitate reuse and understanding, a specification shall be accessible to the community as clear, complete and well-articulated
 documentation.
+** This is addressed with data specification documents expressed in HTML.
 
-This is addressed with data specification documents expressed in HTML.
 
 [[sec:transformation]]
 === Transformation
 Consistent maintenance of semantic data specification interrelationship is facilitated by the fact that the conceptual model
-serves as a _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[rule CMC-R1]]. This means it is sufficiently expressive to capture multiple
-modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
+serves as a _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[rule CMC-R1]]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
+
+--
+The scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. Each of the above concerns will lead to different interpretations of the same UML model [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]].
+
+With UML as the starting and ultimate source of truth, the update process is easier to perform as it only has to be done in a single place.
+The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy
+[xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]].
+
+--
+
 
 An expressive conceptual model bears risks, however: first is the slippage of ambiguity, and second is the introduction of
 multiple interpretations. These risks are mitigated by adopting precise interpretation rules provided in this style guide
@@ -56,8 +65,8 @@ Relations between the artefacts are depicted in the figure above. The conceptual
 b) the formal ontology and c) the data specification document can be generated. Each artefact in the figure is qualified with two
 terms, the representation standard and the most characteristic feature. The conceptual model is expressed in UML language and shall
 be conformant with the conventions provided in this style guide and the interpretation rules
-[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]]. The formal ontology is expressed in OWL language and shall
-be lightweight as indicated in this convention [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]]. The data shape is expressed
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]]. The formal ontology is expressed in OWL 2 language and shall
+be _lightweight_ as indicated in this convention [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]]. The data shape is expressed
 in SHACL language and is characterised by the appropriate level of permissiveness [xref:gc-data-shape-conventions.adoc#sec:dsc-r2[rule DSC-R2]].
 The documentation is represented in HTML format and the wording used shall be as precise as possible to capture the meaning accurately
 and clearly express the intention of the authors.
@@ -87,7 +96,7 @@ The table below summarises which artefacts shall be published for each type of d
 
 [cols="3,3,3,3,3,3"]
 |===
-||*Conceptual model (UML)*|*Ontology (OWL)*|*Data shape (SHACL)*|*Specification documentation (HTML)*|*Model diagram (PNG)*
+||*Conceptual model (UML)*|*Ontology (OWL 2)*|*Data shape (SHACL)*|*Specification documentation (HTML)*|*Model diagram (PNG)*
 |*Core Vocabulary*|Mandatory|Mandatory|Optional (shall be permissive)|Mandatory|Optional
 |*Application Profile*|Mandatory|Optional(shall be an extension)|Mandatory|Mandatory|Optional
 |===
@@ -97,7 +106,7 @@ The table below summarises which artefacts shall be published for each type of d
 The semantic data specifications, both CVs and APs, are conceived as a union of specification artefacts, each addressing a different aspect/concern:
 
 * conceptual model expressed in UML
-* formal ontology expressed in OWL
+* formal ontology expressed in OWL 2
 * data shapes expressed in SHACL
 * data specification document realised in HTML
 * conceptual model diagrams expressed in any image format (PNG, for example)

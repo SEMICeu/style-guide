@@ -47,7 +47,7 @@ of pre-established conventions on the UML notation to reach a fixed interpretati
 
 *Description:*
 
-The interpretation of UML as a logical structure, including OWL, was and still is an active research topic. But even the
+The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the
 OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using
 UML is to provide for the SEMIC semantic data specifications a standard graphical notation which many are familiar with.
 Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should
@@ -65,16 +65,16 @@ These rules will increase the coherency of the UML diagrams across projects and 
 
 Within SEMIC, the interpretation is implemented by the SEMIC toolchain [xref:references.adoc#ref:15[15]].
 
-The table below provides recommended interpretations of UML elements in OWL and SHACL.
+The table below provides recommended interpretations of UML elements in OWL 2 and SHACL.
 These interpretations can be considered high-level mapping rules implementable into transformation tools that generate
-OWL ontology and, respectively, SHACL constraints from the UML conceptual model.
+OWL 2 ontology and, respectively, SHACL constraints from the UML conceptual model.
 
 [%autowidth]
 |===
-|{set:cellbgcolor: none} *UML model element*|*OWL ontology element*|*SHACL data shape element*
-|*Class*|OWL Class|SHACL Node Shape
+|{set:cellbgcolor: none} *UML model element*|*OWL 2 ontology element*|*SHACL data shape element*
+|*Class*|OWL 2 Class|SHACL Node Shape
 |*Abstract class*||SHACL Node Shape with a SPARQL constraint that selects all instances of this class
-|*Attribute*|OWL datatype or object property, based on their type.|Property constraint, within the SHACL Node Shape corresponding
+|*Attribute*|OWL 2 datatype or object property, based on their type.|Property constraint, within the SHACL Node Shape corresponding
 to the source UML class (but the constraints are mentioned below on type and multiplicity)
 |*Attribute type*||Property constraint, within the SHACL Node Shape corresponding to the UML class, indicating the range
 class or datatype.
@@ -313,7 +313,7 @@ The UML diagrams should depict how the developed model relates to external (reus
 
 *Description:*
 
-UML does not support an import mechanism comparable to the one specified in OWL. Yet, the reuse of models is a highly encouraged
+UML does not support an import mechanism comparable to the one specified in OWL 2. Yet, the reuse of models is a highly encouraged
 practice. To accommodate such practice, the reused elements shall be created as in the original model and depicted in diagrams.
 
 The external elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
@@ -386,7 +386,7 @@ When a (super-)class is created for capturing a level of abstraction in the doma
 for instantiation. Editors may choose to mark such classes as abstract and to indicate that their subclasses shall be used in
 practice. In UML, this can be done via << abstract >> stereotype.
 
-Doing so has no impact on the OWL [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL).
+Doing so has no impact on the OWL 2 [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL).
 However, SHACL data shapes [xref:references.adoc#ref:44[44]] can be generated to express that no instances of this class shall
 not occur in the data. [xref:references.adoc#ref:19[19, sec 3.2.6]], [xref:references.adoc#ref:22[22, sec 4.4]]
 
@@ -446,7 +446,7 @@ list the property values are restricted to. Arguably, the controlled list can be
 
 In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the Class
 and the Enumeration representing the controlled list, oriented from the class towards the enumeration. It denotes that the
-OWL class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
+OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
 vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target
 role name and multiplicity shall be provided [xref controlled list enumeration rule].
 
@@ -550,7 +550,7 @@ specify multiplicity whenever possible [xref:gc-conceptual-model-conventions.ado
 
 *Description:*
 
-UML Connectors shall be used to denote object properties (see OWL2 semantics, [xref:references.adoc#ref:43[43]]).
+UML Connectors shall be used to denote object properties (see OWL 2 semantics, [xref:references.adoc#ref:43[43]]).
 
 First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.

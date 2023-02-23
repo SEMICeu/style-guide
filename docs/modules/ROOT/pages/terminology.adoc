@@ -4,8 +4,8 @@
 ** The XML Metadata Interchange (XMI) is an Object Management Group (OMG) standard for exchanging metadata information via Extensible Markup Language (XML). [https://en.wikipedia.org/wiki/XML_Metadata_Interchange]
 * UML [http://www.omg.org/spec/UML/]
 ** The Unified Modeling Language (UML) is a general-purpose, developmental modeling language in the field of software engineering that is intended to provide a standard way to visualize the design of a system. [https://en.wikipedia.org/wiki/Unified_Modeling_Language]
-* OWL [https://www.w3.org/OWL/]
-** The W3C Web Ontology Language (OWL) is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things. [https://www.w3.org/OWL/]
+* OWL 2 [https://www.w3.org/OWL/]
+** The W3C Web Ontology Language (OWL 2) is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things. [https://www.w3.org/TR/owl2-syntax/]
 * RDF [https://www.w3.org/RDF/]
 ** Resource Description Framework (RDF) is a World Wide Web Consortium (W3C) standard originally designed as a data model for metadata. It has come to be used as a general method for description and exchange of graph data. [https://en.wikipedia.org/wiki/Resource_Description_Framework]
 * RDFS [https://www.w3.org/TR/rdf-schema/]
@@ -37,7 +37,7 @@
 [cols=3,1,1]
 [%autowidth]
 |===
-|*UML terminology* | *OWL terminology* | *XSD*
+|*UML terminology* | *OWL 2 terminology* | *XSD*
 
 a|* (UML) Elements
 ** Class
@@ -58,8 +58,8 @@ a|* (UML) Elements
 
 a|* Class
 * Property (RDFS)
-** Object Property (OWL)
-** Datatype property (OWL)
+** Object Property (OWL 2)
+** Datatype property (OWL 2)
 * Resource annotations
 ** Preferred labels
 ** Alternative labels
