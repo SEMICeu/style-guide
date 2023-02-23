@@ -1,4 +1,4 @@
-== Rule template
+= Rule template
 
 |===
 |{set:cellbgcolor: #a8c6f7}

@@ -1,7 +1,7 @@
-=== Publication conventions
+= Publication conventions
 
 [[sec:pc-r1]]
-==== 5-star Linked Open Data
+== 5-star Linked Open Data
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -31,7 +31,7 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
 
 
 [[sec:pc-r2]]
-==== Persistent URI policy
+== Persistent URI policy
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -81,7 +81,7 @@ Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu
 
 
 [[sec:pc-r3]]
-==== Version management
+== Version management
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -120,7 +120,7 @@ image::pc-r3.png[]
 
 
 [[sec:pc-r4]]
-==== Artefact versioning
+== Artefact versioning
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -148,7 +148,7 @@ No version information shall be embedded into any artefact URIs unless it is a v
 
 
 [[sec:pc-r5]]
-==== URI dereferencing
+== URI dereferencing
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -179,7 +179,7 @@ Further technical details can be found in “Best Practice Recipes for Publishin
 
 
 [[sec:pc-r6]]
-==== Human-readable form
+== Human-readable form
 
 |===
 |{set:cellbgcolor: #a8c6f7}

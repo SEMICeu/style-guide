@@ -1,7 +1,7 @@
-=== Data shape conventions
+= Data shape conventions
 
 [[sec:dsc-r1]]
-==== Data shape language choice
+== Data shape language choice
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -23,7 +23,7 @@ As the SHACL is a W3C standard, we strongly recommend using it.
 
 
 [[sec:dsc-r2]]
-==== Lose versus rigid constraints
+== Lose versus rigid constraints
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -60,7 +60,7 @@ are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)
 ****
 
 [[sec:dsc-r3]]
-==== Open and Closed world assumptions
+== Open and Closed world assumptions
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -95,7 +95,7 @@ are organised. As data shapes may be used to suggest how the data may be fragmen
 
 
 [[sec:dsc-r4]]
-==== On data shapes
+== On data shapes
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -127,7 +127,7 @@ does not allow for dereferencing separately OWL 2 or SHACL representations. Henc
 
 
 [[sec:dsc-r5]]
-==== Data Shape severity
+== Data Shape severity
 
 |===
 |{set:cellbgcolor: #a8c6f7}

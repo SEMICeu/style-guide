@@ -1,7 +1,7 @@
-=== Conceptual model conventions (UML)
+= Conceptual model conventions (UML)
 
 [[sec:cmc-r1]]
-==== UML as a single source of truth
+== UML as a single source of truth
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -29,7 +29,7 @@ It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specif
 
 
 [[sec:cmc-r2]]
-==== Fixed UML interpretation
+== Fixed UML interpretation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -116,7 +116,7 @@ are based on two documents: UML convention specifications [xref:references.adoc#
 ****
 
 [[sec:cmc-r3]]
-==== On element names and URIs
+== On element names and URIs
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -167,7 +167,7 @@ image::cmc-r3.png[]
 
 
 [[sec:cmc-r4]]
-==== Case sensitivity and charset
+== Case sensitivity and charset
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -209,7 +209,7 @@ image::cmc-r4.png[]
 
 
 [[sec:cmc-r5]]
-==== Namespaces and prefixes in element names
+== Namespaces and prefixes in element names
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -261,7 +261,7 @@ When `cv` (short for Core Vocabularies) namespace name is declared bound to base
 
 
 [[sec:cmc-r6]]
-==== Rich annotations through tags
+== Rich annotations through tags
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -298,7 +298,7 @@ image::cmc-r6.png[]
 
 
 [[sec:cmc-r7]]
-==== Explicit depiction of external dependencies
+== Explicit depiction of external dependencies
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -333,7 +333,7 @@ image::cmc-r7.png[]
 
 
 [[sec:cmc-r8]]
-==== Class inheritance
+== Class inheritance
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -366,7 +366,7 @@ image::cmc-r8.png[]
 
 
 [[sec:cmc-r9]]
-==== Abstract classes
+== Abstract classes
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -398,7 +398,7 @@ Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47
 
 
 [[sec:cmc-r10]]
-==== Attribute specifications
+== Attribute specifications
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -475,7 +475,7 @@ image::cmc-r10-2.png[]
 
 
 [[sec:cmc-r11]]
-==== Multiplicity of attributes and connectors
+== Multiplicity of attributes and connectors
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -533,7 +533,7 @@ image::cmc-r11-2.png[]
 
 
 [[sec:cmc-r12]]
-==== Connector specification
+== Connector specification
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -593,7 +593,7 @@ For example, if `Person` specialises a `foaf:Agent`.
 
 
 [[sec:cmc-r13]]
-==== All elements are "public"
+== All elements are "public"
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -623,7 +623,7 @@ image::cmc-r13.png[]
 
 
 [[sec:cmc-r14]]
-==== Controlled lists as enumerations
+== Controlled lists as enumerations
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -687,7 +687,7 @@ image::cmc-r14-3.png[]
 
 
 [[sec:cmc-r15]]
-==== Partition the model into packages
+== Partition the model into packages
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -722,7 +722,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMMAAAHiCAYAAABV+HiNAAAkO0l
 
 
 [[sec:cmc-r16]]
-==== Diagram readability
+== Diagram readability
 
 |===
 |{set:cellbgcolor: #a8c6f7}

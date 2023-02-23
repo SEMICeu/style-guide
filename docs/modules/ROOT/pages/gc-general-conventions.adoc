@@ -1,7 +1,7 @@
-=== General conventions
+= General conventions
 
 [[sec:gc-r1]]
-==== Reuse existing concepts as much as possible
+== Reuse existing concepts as much as possible
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -27,7 +27,7 @@ In order to achieve a common approach to reuse, apply the reuse guidelines as sp
 
 
 [[sec:gc-r2]]
-==== For reuse, prefer maintained vocabularies
+== For reuse, prefer maintained vocabularies
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -52,7 +52,7 @@ stages planned.
 
 
 [[sec:gc-r3]]
-==== Concept reference and terms
+== Concept reference and terms
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -83,7 +83,7 @@ And finally, the meaning of the term must be clear. Its definition is associated
 term reusable, it should be published as part of a data specification.
 
 [[sec:gc-r4]]
-==== Vocabulary terminology style
+== Vocabulary terminology style
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:*  Vocabulary terminology style
@@ -117,7 +117,7 @@ or “opens/closes”. It should be done by changing the voice from active to pa
 
 
 [[sec:gc-r5]]
-==== Vocabulary definition styling
+== Vocabulary definition styling
 |===
 |{set:cellbgcolor: #a8c6f7}
  *Title:* Vocabulary definition styling

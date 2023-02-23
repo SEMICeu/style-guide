@@ -1,4 +1,4 @@
-== Index of Rules
+= Index of Rules
 
 * xref:gc-general-conventions.adoc[General conventions]
 

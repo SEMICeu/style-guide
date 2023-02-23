@@ -1,7 +1,7 @@
-=== Semantic conventions
+= Semantic conventions
 
 [[sec:sc-r1]]
-==== Formal language choice
+== Formal language choice
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -60,7 +60,7 @@ Core Vocabularies have an RDF representation as OWL 2 Ontology. In the example b
 
 
 [[sec:sc-r2]]
-==== Limited (OWL 2) expressivity
+== Limited (OWL 2) expressivity
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -135,7 +135,7 @@ Or consider, the (shortened) Core Person vocabulary header:
 
 
 [[sec:sc-r3]]
-==== Lexicalisation
+== Lexicalisation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -203,7 +203,7 @@ For example in ePO, both lexicalisations are provided (even if this may be consi
 ****
 
 [[sec:sc-r4]]
-==== Reasoning assumption
+== Reasoning assumption
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -233,7 +233,7 @@ shall be left implicit.
 
 
 [[sec:sc-r5]]
-==== Circular definitions
+== Circular definitions
 
 |===
 |{set:cellbgcolor: #a8c6f7}

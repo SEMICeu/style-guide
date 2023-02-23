@@ -1,4 +1,4 @@
-== References
+= References
 
 . [[ref:1]] Codreanu, D. (2012). 10 Rules for Persistent URIs. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
 . [[ref:2]] Bechhofer, S., & Miles, A. (2009). SKOS simple knowledge organization system reference. W3C recommendation, W3C. Available at: http://www.w3.org/TR/2009/REC-skos-reference-20090818/

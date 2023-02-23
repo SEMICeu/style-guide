@@ -1,4 +1,4 @@
-== Clarifications on "reuse"
+= Clarifications on "reuse"
 
 In the Semantic Web literature, the term “reuse” appears very often, encouraging the adoption of data specifications in new data
 specifications rather than redefining the same/similar concepts once again. The term “reuse” is usually considered in a broad sense,
@@ -6,7 +6,7 @@ and what it means in terms of specific implementations is often left underspecif
 provide a detailed account of what “reuse” means in the SEMIC context.
 
 [[sec:what-is-the-reuse-of-a-specification]]
-=== What is the reuse of an (ontology or data shape) specification?
+== What is the reuse of an (ontology or data shape) specification?
 
 Specification reuse is the act of sourcing an established specification into a new one (referred to as the “current” or “own”
 specification).
@@ -33,7 +33,7 @@ In each case, we describe as appropriate the implications on the following aspec
 * Other constraints and additional information
 
 [[sec:reuse-of-a-class-as-is]]
-=== Reuse of a class as-is
+== Reuse of a class as-is
 
 This scenario applies when the original class is reused without terminological or semantic changes.
 
@@ -66,7 +66,7 @@ The properties on the superclasses of the reused class are considered inherited 
 |===
 
 [[sec:reuse-of-a-class-with-terminological-adaptations]]
-=== Reuse of a class with terminological adaptations
+== Reuse of a class with terminological adaptations
 
 This scenario applies when the original class is reused without semantic changes. Still, a label or definition needs to be modified
 to reflect the meaning in the new context accurately.
@@ -119,7 +119,7 @@ For example, the one on circular definitions [xref:gc-general-conventions.adoc#s
 
 
 [[sec:reuse-of-a-class-with-semantic-adaptations]]
-=== Reuse of a class with semantic adaptations
+== Reuse of a class with semantic adaptations
 
 This scenario applies when the original class is reused with semantic changes, which also implies terminological adaptations.
 
@@ -158,7 +158,7 @@ For example, in the Core Public Organisation Vocabulary, the reused class `org:O
 `cv:PublicOrganisation`.
 
 [[sec:reuse-of-a-property-as-is]]
-=== Reuse of a property as-is
+== Reuse of a property as-is
 
 This scenario applies when the original property is reused without terminological or semantic changes.
 
@@ -211,7 +211,7 @@ while (logical) constraints are to be expressed as SHACL.
 |===
 
 [[sec:reuse-of-a-property-with-terminological-adaptations]]
-=== Reuse of a property with terminological adaptations
+== Reuse of a property with terminological adaptations
 
 
 This scenario applies when the original property is reused without semantic changes. Still, a label or definition needs to be
@@ -276,7 +276,7 @@ that the diagram does not reflect this, but it is reflected in the associated do
 image:dcatcatalogue.png[DCAT-AP Catalogue Record]
 
 [[sec:reuse-of-a-property-with-semantic-adaptations]]
-=== Reuse of a property with semantic adaptations
+== Reuse of a property with semantic adaptations
 
 This scenario applies when the original property is reused with semantic changes, which also implies terminological adaptations.
 
