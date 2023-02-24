@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: SEMIC</title>
+    <title>Data shape conventions :: SEMIC</title>
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
@@ -50,7 +50,7 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
+    <a class="nav-link" href="#guidelines-and-conventions.adoc">Guidelines and conventions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
@@ -124,7 +124,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">SEMIC Style guide</a></li>
-    <li><a href="guidelines-and-conventions.html">Guidelines and conventions</a></li>
+    <li><a href="#guidelines-and-conventions.adoc">Guidelines and conventions</a></li>
     <li><a href="gc-data-shape-conventions.html">Data shape conventions</a></li>
   </ul>
 </nav>
@@ -135,10 +135,10 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="_data_shape_conventions"><a class="anchor" href="#_data_shape_conventions"></a>Data shape conventions</h3>
-<div class="sect3">
-<h4 id="sec:dsc-r1"><a class="anchor" href="#sec:dsc-r1"></a>Data shape language choice</h4>
+<h1 class="page">Data shape conventions</h1>
+<div class="sect1">
+<h2 id="sec:dsc-r1"><a class="anchor" href="#sec:dsc-r1"></a>Data shape language choice</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -165,8 +165,10 @@ executable ones, the most well-known are SHACL [<a href="references.html#ref:66"
 As the SHACL is a W3C standard, we strongly recommend using it.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>Lose versus rigid constraints</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>Lose versus rigid constraints</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -214,8 +216,10 @@ are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)</
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:dsc-r3"><a class="anchor" href="#sec:dsc-r3"></a>Open and Closed world assumptions</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:dsc-r3"><a class="anchor" href="#sec:dsc-r3"></a>Open and Closed world assumptions</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -258,8 +262,10 @@ or recommended shapes. Therefore, everything that is not known to be true must b
 are organised. As data shapes may be used to suggest how the data may be fragmented and how it shall not.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>On data shapes</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>On data shapes</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -288,18 +294,20 @@ shape for each UML attribute and UML Connector of that class. if the property sh
 the resulting constraint definitions are organically integrated and the maintenance costs are decreased.</p>
 </div>
 <div class="paragraph">
-<p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL or SHACL definitions.</p>
+<p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.</p>
 </div>
 <div class="paragraph">
-<p>In some communities, the URIs used in the OWL specifications are reused in SHACL. The class definitions are extended as node
+<p>In some communities, the URIs used in the OWL 2 specifications are reused in SHACL. The class definitions are extended as node
 shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the
 use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts.
 The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach
-does not allow for dereferencing separately OWL or SHACL representations. Hence, it is recommended to avoid such practice.</p>
+does not allow for dereferencing separately OWL 2 or SHACL representations. Hence, it is recommended to avoid such practice.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>Data Shape severity</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>Data Shape severity</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">

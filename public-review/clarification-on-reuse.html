@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: SEMIC</title>
+    <title>Clarifications on "reuse" :: SEMIC</title>
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
@@ -50,7 +50,7 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
+    <a class="nav-link" href="#guidelines-and-conventions.adoc">Guidelines and conventions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
@@ -134,8 +134,8 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect1">
-<h2 id="_clarifications_on_reuse"><a class="anchor" href="#_clarifications_on_reuse"></a>Clarifications on "reuse"</h2>
+<h1 class="page">Clarifications on "reuse"</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>In the Semantic Web literature, the term “reuse” appears very often, encouraging the adoption of data specifications in new data
@@ -143,8 +143,11 @@ specifications rather than redefining the same/similar concepts once again. The 
 and what it means in terms of specific implementations is often left underspecified. In this section, we aim to address this gap and
 provide a detailed account of what “reuse” means in the SEMIC context.</p>
 </div>
-<div class="sect2">
-<h3 id="sec:what-is-the-reuse-of-a-specification"><a class="anchor" href="#sec:what-is-the-reuse-of-a-specification"></a>What is the reuse of an (ontology or data shape) specification?</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec:what-is-the-reuse-of-a-specification"><a class="anchor" href="#sec:what-is-the-reuse-of-a-specification"></a>What is the reuse of an (ontology or data shape) specification?</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Specification reuse is the act of sourcing an established specification into a new one (referred to as the “current” or “own”
 specification).</p>
@@ -175,7 +178,7 @@ fine-grained description on a construct-by-construct basis, and this is the aim 
 <div class="ulist">
 <ul>
 <li>
-<p>How to denote it: (a) as-is or (b) as a specialisation</p>
+<p>How to denote it: (a) <em>as-is</em> or (b) <em>as a specialisation</em></p>
 </li>
 <li>
 <p>Label</p>
@@ -184,13 +187,13 @@ fine-grained description on a construct-by-construct basis, and this is the aim 
 <p>Definition</p>
 </li>
 <li>
-<p>Impact of adding new properties (for classes only)</p>
+<p>Impact of adding <em>new properties</em> (for classes only)</p>
 </li>
 <li>
-<p>Impact of reusing original properties (for classes only)</p>
+<p>Impact of <em>reusing original properties</em> (for classes only)</p>
 </li>
 <li>
-<p>Domain and Range (for properties only)</p>
+<p>Impact on <em>domain and range</em> (for properties only)</p>
 </li>
 <li>
 <p>Other constraints and additional information</p>
@@ -198,8 +201,10 @@ fine-grained description on a construct-by-construct basis, and this is the aim 
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:reuse-of-a-class-as-is"><a class="anchor" href="#sec:reuse-of-a-class-as-is"></a>Reuse of a class as-is</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:reuse-of-a-class-as-is"><a class="anchor" href="#sec:reuse-of-a-class-as-is"></a>Reuse of a class as-is</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This scenario applies when the original class is reused without terminological or semantic changes.</p>
 </div>
@@ -228,20 +233,15 @@ fine-grained description on a construct-by-construct basis, and this is the aim 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>New properties on the class</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">In OWL, newly defined properties can use the class as Domain or Range.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In data shapes (SHACL), the class can be used for in domain/range property constraints.</p>
 <p class="tableblock">In UML, properties are depicted as new connections (object properties) that are incoming and outgoing to the class or as new attributes
 (datatype properties) that appear in the class.</p>
-<p class="tableblock">This works because OWL semantics treats properties as first-class citizens (along with classes, datatypes and individuals).
-So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately
-from one another, just as the OWL specification defines it [<a href="references.html#ref:43" class="xref page">43</a>].</p>
-<p class="tableblock">The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate
-existing ones in the superclass(es). Also, make sure there are no logical contradictions [<a href="gc-semantic-conventions.html" class="xref page">Semantic conventions</a>].</p></td>
+<p class="tableblock">This works because OWL 2 semantics treats properties as first-class citizens (along with classes, datatypes and individuals). So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately from one another, just as the OWL 2 specification defines it [<a href="references.html#ref:43" class="xref page">43</a>].</p>
+<p class="tableblock">The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate existing ones in the superclass(es). Also, make sure there are no logical contradictions [<a href="gc-semantic-conventions.html#sec:sc-r5" class="xref page">CS-R5</a>].</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Original properties on the class as defined in the context of a data specification</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">In OWL &amp; SHACL, when reusing a class as-is from
-an established ontology hereafter called the original, all properties and constraints associated
-with the class are considered adopted (even if some may be irrelevant).</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In OWL 2 &amp; SHACL, when reusing a class as-is from an established ontology hereafter called the original, all properties and constraints associated with the class are considered adopted (even if some may be irrelevant).</p>
 <p class="tableblock">It is recommended to make the reuse of the original clear (by notes, hyperlinks or dereferenceable URIs of the terms) at the class level.</p>
 <p class="tableblock">In UML, all properties marked as mandatory in the original data specification are considered relevant and shall be depicted.
 Optional properties may be depicted only if relevant in the new context.</p>
@@ -250,8 +250,10 @@ Optional properties may be depicted only if relevant in the new context.</p>
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="sec:reuse-of-a-class-with-terminological-adaptations"><a class="anchor" href="#sec:reuse-of-a-class-with-terminological-adaptations"></a>Reuse of a class with terminological adaptations</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:reuse-of-a-class-with-terminological-adaptations"><a class="anchor" href="#sec:reuse-of-a-class-with-terminological-adaptations"></a>Reuse of a class with terminological adaptations</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This scenario applies when the original class is reused without semantic changes. Still, a label or definition needs to be modified
 to reflect the meaning in the new context accurately.</p>
@@ -284,7 +286,7 @@ of reuse as-is. Add, if necessary, a note to clarify this.</p>
 - the (original) URI of the reused class shall be indicated (e.g. in a UML Element Tag)
 - the original label of the reused concept shall be preserved (e.g. in a UML Element Tag + a marker that special name management shall
 take place)</p>
-<p class="tableblock">In OWL,
+<p class="tableblock">In OWL 2,
 - the original label is adopted as is (e.g. either <code>rdfs:label</code> or <code>skos:prefLabel</code>)
 - the new label is added as an alternative label (e.g. <code>skos:altLabel</code>)</p>
 <p class="tableblock">In the documentation,
@@ -317,8 +319,10 @@ Such adaptations might be made when the original label or definition does not fo
 For example, the one on circular definitions [<a href="gc-general-conventions.html#sec:gc-r5" class="xref page">GC-R5</a>].</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:reuse-of-a-class-with-semantic-adaptations"><a class="anchor" href="#sec:reuse-of-a-class-with-semantic-adaptations"></a>Reuse of a class with semantic adaptations</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:reuse-of-a-class-with-semantic-adaptations"><a class="anchor" href="#sec:reuse-of-a-class-with-semantic-adaptations"></a>Reuse of a class with semantic adaptations</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This scenario applies when the original class is reused with semantic changes, which also implies terminological adaptations.</p>
 </div>
@@ -351,7 +355,7 @@ we shall show the whole reuse chain (in the conceptual model and especially in t
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>New properties on the class</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Add new properties as necessary on the new (owned) sub-class.</p>
 <p class="tableblock">The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not
-duplicate existing ones in the superclass(es). Make sure there are no logical contradictions [<a href="gc-semantic-conventions.html" class="xref page">Semantic conventions</a>].</p></td>
+duplicate existing ones in the superclass(es). Make sure there are no logical contradictions [<a href="gc-semantic-conventions.html#sec:sc-r5" class="xref page">CS-R5</a>].</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Original properties on the class as defined in the context of a data specification</strong></p></td>
@@ -374,8 +378,10 @@ already existing one. See property reuse recommendations below.</p></td>
 <code>cv:PublicOrganisation</code>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:reuse-of-a-property-as-is"><a class="anchor" href="#sec:reuse-of-a-property-as-is"></a>Reuse of a property as-is</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:reuse-of-a-property-as-is"><a class="anchor" href="#sec:reuse-of-a-property-as-is"></a>Reuse of a property as-is</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This scenario applies when the original property is reused without terminological or semantic changes.</p>
 </div>
@@ -403,26 +409,26 @@ already existing one. See property reuse recommendations below.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">NO change allowed</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain and Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain and range</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">If the reused property</p>
-<p class="tableblock">* does not define a Domain and Range (in the original ontology) AND</p>
+<p class="tableblock">* does not define a domain and range (in the original ontology) AND</p>
 <p class="tableblock">* its definition does NOT mention explicit restrictions on the domain and range (in the data shape)
 then it can be attached in UML diagrams (in the owned data specification) to any class either as a) a relation (pointing to
 another class) or b) as an attribute with a specific data type.</p>
 <p class="tableblock">If the reused property</p>
-<p class="tableblock">* defines a Domain and Range (in the original ontology) OR</p>
+<p class="tableblock">* defines a domain and range (in the original ontology) OR</p>
 <p class="tableblock">* its definition DOES mention explicit restrictions on the domain and range (in the data shape),
 then it must be reflected in the UML diagrams (in the owned data specification) accordingly, i.e. it can be applied only on
 specified classes.</p>
-<p class="tableblock">When UML is transformed into other representations, it is not recommended to represent the Domain/Range definitions in the
-lightweight ontology (OWL). Still, it may be reflected in data shape definitions (SHACL) as constraints.</p>
-<p class="tableblock">When the UML is transformed into other representations, the inclusion of Domain/Range statements is dependent on the “reuse”
+<p class="tableblock">When UML is transformed into other representations, it is not recommended to represent the domain/range definitions in the
+lightweight ontology (OWL 2). Still, it may be reflected in data shape definitions (SHACL) as constraints.</p>
+<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
 intention of the data specification.</p>
 <p class="tableblock">In case of a broad reuse intention, as for the SEMIC Core Vocs, it is not recommended to include them in the lightweight
 ontology but better reflect them as constraints in SHACL, where necessary (i.e. optional properties can stay free of
-domain/range specification).
-In case of narrow reuse intention, as for the Application Profiles, it is recommended to provide domain/range specifications
-in the data shape definitions even if those are optional.</p></td>
+domain/range specification) [<a href="gc-semantic-conventions.html#sec:sc-r2" class="xref page">CS-R2</a>].
+Note: in the case of narrow reuse intention, as for the application profiles, it is recommended to provide domain/range constraints
+in the data shape definitions (using SHACL) even if those are optional.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Other constraints and additional information</strong></p></td>
@@ -437,8 +443,10 @@ while (logical) constraints are to be expressed as SHACL.</p></td>
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="sec:reuse-of-a-property-with-terminological-adaptations"><a class="anchor" href="#sec:reuse-of-a-property-with-terminological-adaptations"></a>Reuse of a property with terminological adaptations</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:reuse-of-a-property-with-terminological-adaptations"><a class="anchor" href="#sec:reuse-of-a-property-with-terminological-adaptations"></a>Reuse of a property with terminological adaptations</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This scenario applies when the original property is reused without semantic changes. Still, a label or definition needs to be
 modified to reflect the meaning in the new context accurately.</p>
@@ -475,7 +483,7 @@ of the Model)</p>
 <p class="tableblock">* URI of the reused property shall be indicated (e.g. in a UML Element Tag)</p>
 <p class="tableblock">* the original label of the reused concept shall be indicated (e.g. in a UML Element Tag + a marker that special name management
 shall take place)</p>
-<p class="tableblock">In OWL,</p>
+<p class="tableblock">In OWL 2,</p>
 <p class="tableblock">* original label (as is, either rdfs:label or <code>skos:prefLabel</code>)</p>
 <p class="tableblock">* new label (as an alternative label, <code>skos:altLabel)</code></p>
 <p class="tableblock">In the documentation,</p>
@@ -489,7 +497,7 @@ shall take place)</p>
 be provided in the scope notes (e.g. skos:scopeNote ).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain and Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain and range</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Same recommendation as for reusing property, as is</p></td>
 </tr>
 <tr>
@@ -509,8 +517,10 @@ that the diagram does not reflect this, but it is reflected in the associated do
 <p><span class="image"><img src="_images/dcatcatalogue.png" alt="DCAT-AP Catalogue Record"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:reuse-of-a-property-with-semantic-adaptations"><a class="anchor" href="#sec:reuse-of-a-property-with-semantic-adaptations"></a>Reuse of a property with semantic adaptations</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:reuse-of-a-property-with-semantic-adaptations"><a class="anchor" href="#sec:reuse-of-a-property-with-semantic-adaptations"></a>Reuse of a property with semantic adaptations</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This scenario applies when the original property is reused with semantic changes, which also implies terminological adaptations.</p>
 </div>
@@ -539,15 +549,15 @@ that the diagram does not reflect this, but it is reflected in the associated do
 <td class="tableblock halign-left valign-top"><p class="tableblock">Provide a new definition that is more specific than the one of the reused property</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain and Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">If the reused super property does NOT define Domain/Range, then feel free to add Domain/Range specifications
-to the sub-property, as desired, but not necessarily. In UML, feel free to attach it anywhere needed.</p>
-<p class="tableblock">If the reused super property DOES define a Domain/Range, DO not override them, i.e. do not specify a new Domain/Range that leads
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain and range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the reused super property does NOT define domain/range, then it is possible to add domain/range specifications
+to the sub-property, but only if justified and absolutely necessarily. In UML, feel free to attach it anywhere needed.</p>
+<p class="tableblock">If the reused super property DOES define a domain/range, DO not override them, i.e. do not specify a new domain/range that leads
 to logical inconsistencies. Specifically, if you do that, then make sure that the new Domain is a subclass of the Original Domain.</p>
-<p class="tableblock">If the property is used across multiple classes multiple Domain/Range specifications can be deemed appropriate. This shall be
-handled with care. Multiple Domain/Range definitions in OWL mean intersection (i.e. joined by logical AND) and not the union
+<p class="tableblock">If the property is used across multiple classes multiple domain/range specifications can be deemed appropriate. This shall be
+handled with care. Multiple domain/range definitions in OWL 2 mean intersection (i.e. joined by logical AND) and not the union
 (i.e. joined by logical OR), as most use cases may require.</p>
-<p class="tableblock">When the UML is transformed into other representations, the inclusion of Domain/Range statements is dependent on the “reuse”
+<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
 intention of the data specification.</p>
 <p class="tableblock">In case of a broad reuse intention, as for the SEMIC Core Vocabularies, it is not recommended to include them in the lightweight
 ontology but optionally reflect them as permissive constraints in SHACL.
@@ -571,7 +581,6 @@ relation between the two is not depicted in the diagram, but is stated in the da
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/dcatdataset.png" alt="DCAT-AP Dataset"></span></p>
-</div>
 </div>
 </div>
 </div>

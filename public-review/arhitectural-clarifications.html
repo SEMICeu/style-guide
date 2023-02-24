@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: SEMIC</title>
+    <title>Architectural clarifications :: SEMIC</title>
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
@@ -50,7 +50,7 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
+    <a class="nav-link" href="#guidelines-and-conventions.adoc">Guidelines and conventions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
@@ -134,37 +134,93 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+<h1 class="page">Architectural clarifications</h1>
 <div class="sect1">
-<h2 id="_arhitectural_clarifications"><a class="anchor" href="#_arhitectural_clarifications"></a>Arhitectural clarifications</h2>
+<h2 id="_consumer_context"><a class="anchor" href="#_consumer_context"></a>Consumer context</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="sec:separation-of-concerns-and-transformation"><a class="anchor" href="#sec:separation-of-concerns-and-transformation"></a>Separation of concerns and transformation</h3>
 <div class="paragraph">
-<p>The successful application of an ontology or the development of an ontology-based system depends not merely on building a
-good ontology but also on fitting this into an appropriate development process and implementation into an information system.</p>
+<p>The consumers of SEMIC standards specification can be divided into three categories:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>business users and domain experts,</p>
+</li>
+<li>
+<p>technicians, software engineers, and software architects, the developers</p>
+</li>
+<li>
+<p>software systems implementing the standards, the machines</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ac-consumer-context.png" alt="consumer-context" width="80%" height="">
+</div>
 </div>
 <div class="paragraph">
-<p>Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box
-said, “All models are wrong, but some are useful”, and what a model is useful for depends on what concern it is primarily addressing.
-On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses
-a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements
-place different demands upon its structure [<a href="references.html#ref:12" class="xref page">12</a>]. For example, the concept of “location” can be described
-by domain experts (in a domain model) in a way that is not isomorphic to how the “location” class may be appropriately modelled for
-an information system (i.e. captured in an implementation model).</p>
+<p>The SEMIC goal is to bring these groups together and "speak the same language" and share meaning and conceptual references. Besides the very useful and much needed alignment of domains experts on what concepts mean, it is necessary to bring the gap between domain experts and the technical experts who implement information systems. Then, the domain experts and business users shall interact with the information systems using the very same set of concepts, unpolluted and undistorted by the technology in the implementation process.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ac-consumer-context-standards.png" alt="consumer-context-standards" width="60%" height="">
+</div>
 </div>
 <div class="paragraph">
-<p>One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture
-(MDA) [<a href="references.html#ref:13" class="xref page">13</a>] which is a well-documented structure where a model is built for each concern, which is
-transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.</p>
+<p>Standard <em>semantic data specifications</em> fulfil the purpose keeping these three groups in sync.</p>
 </div>
 <div class="paragraph">
-<p>Transformation deals with producing different models, viewpoints, or artefacts from a model based on a transformation pattern.
-In general, transformation can produce one representation from another or cross levels of abstraction or architectural layers
+<p>Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines that share data which each other and are able to operate on them seamlessly. For that we need developers that build those machine interactions: so the machines and developers must "find a common language". But in order that the developers do the right things, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interaction correspond with the business/domain expert expectations.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ac-data-specification-composition.png" alt="data secification composite" width="80%" height="">
+</div>
+</div>
+<div class="paragraph">
+<p>The data specification shall address the following information needs: visual representation, textual description, machine interpretable representation, and optionally additional representations that facilitate and promote adoption.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_editorial_context"><a class="anchor" href="#_editorial_context"></a>Editorial context</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The aim of this style guide is to ensure the creation of coherent data specifications that can be read and used by <em>domain experts, developers and machines</em>. It is mainly meant for the editors of the data specifications (e.g. semantic engineers, data architects, knowledge modelling specialists).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ac-editor-context.png" alt="editor-context" width="80%" height="">
+</div>
+</div>
+<div class="paragraph">
+<p>Such data specifications are primarily developed in collaboration with domain experts. To achieve synergy with the domain experts, graphical representation is an indispensable medium that facilitates knowledge elicitation, ideation and knowledge organisation. This becomes especially relevant when shared conceptualisation needs to be attained within a Working Group.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec:separation-of-concerns-and-transformation"><a class="anchor" href="#sec:separation-of-concerns-and-transformation"></a>Separation of concerns and transformation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The successful application of an ontology or the development of an ontology-based system depends not merely on building a good ontology but also on fitting this into an appropriate development process and implementation into an information system.</p>
+</div>
+<div class="paragraph">
+<p>Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, <em>“All models are wrong, but some are useful”</em>, and what a model is useful for depends on what concern it is primarily addressing.
+On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [<a href="references.html#ref:12" class="xref page">12</a>]. For example, the concept of “location” can be described by domain experts (in a domain model) in a way that is not isomorphic to how the “location” class may be appropriately modelled for an information system (i.e. captured in an implementation model).</p>
+</div>
+<div class="paragraph">
+<p>One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture (MDA) [<a href="references.html#ref:13" class="xref page">13</a>] which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.</p>
+</div>
+<div class="paragraph">
+<p>Transformation deals with producing different models, viewpoints, or artefacts from a model based on a transformation pattern. In general, transformation can produce one representation from another or cross levels of abstraction or architectural layers
 [<a href="references.html#ref:14" class="xref page">14</a>].</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:separation-of-concerns-in-SEMIC"><a class="anchor" href="#sec:separation-of-concerns-in-SEMIC"></a>Separation of concerns in SEMIC</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:separation-of-concerns-in-SEMIC"><a class="anchor" href="#sec:separation-of-concerns-in-SEMIC"></a>Separation of concerns in SEMIC</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The Core Vocabularies and the specialised Application Profiles aim to address the following concerns:</p>
 </div>
@@ -206,24 +262,55 @@ the ontology instantiation.</p>
 <li>
 <p>To facilitate reuse and understanding, a specification shall be accessible to the community as clear, complete and well-articulated
 documentation.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>This is addressed with data specification documents expressed in HTML.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>This is addressed with data specification documents expressed in HTML.</p>
+<p>In addittion, when multiple artefacts addressing each concern are produced, keeping them in synch is a serious editorial and maintenance burden that needs to be considered.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:transformation"><a class="anchor" href="#sec:transformation"></a>Transformation</h3>
+</div>
+<div class="sect1">
+<h2 id="_editorial_synchronisation_problem"><a class="anchor" href="#_editorial_synchronisation_problem"></a>Editorial synchronisation problem</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Consistent maintenance of semantic data specification interrelationship is facilitated by the fact that the conceptual model
-serves as a <em>single source of truth</em> [<a href="gc-conceptual-model-conventions.html#sec:cmc-r1" class="xref page">rule CMC-R1</a>]. This means it is sufficiently expressive to capture multiple
-modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.</p>
+<p>On the editorial side the artefacts composing data specification need to be kept in sync. A modification done in one shall pervade and propagate in all others. This is a difficult, tedious and expensive activity if such synchronisation is to be done manually.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ac-editor-sync-problem.png" alt="editor-sync-problem" width="90%" height="">
+</div>
 </div>
 <div class="paragraph">
-<p>An expressive conceptual model bears risks, however: first is the slippage of ambiguity, and second is the introduction of
-multiple interpretations. These risks are mitigated by adopting precise interpretation rules provided in this style guide
-[<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">rule CMC-R2</a>].</p>
+<p>Experience shows that using a pivot representation as a single source of truth is a viable solution. Such representation needs to be expressive enough to fulfill all the information needs of the derived representations.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec:transformation"><a class="anchor" href="#sec:transformation"></a>Transformation of the conceptual model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>UML cocneptual models can be used as the <em>single source of truth</em> [<a href="gc-conceptual-model-conventions.html#sec:cmc-r1" class="xref page">rule CMC-R1</a>]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.</p>
+</div>
+<div class="paragraph">
+<p>With UML as the source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [<a href="#sec:transformation">Transformation</a>].</p>
+</div>
+<div class="paragraph">
+<p>This approach facilitates consistent maintenance of semantic data specification interrelationship and solves the editorial synchronisation problem.</p>
+</div>
+<div class="paragraph">
+<p>Using UML by itself is not enough, however. An expressive conceptual model bears risks, however: first is the slippage of ambiguity, and second is the introduction of multiple interpretations. These risks are mitigated by adopting precise interpretation rules provided in this style guide [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>].
+Each of the above concerns will lead to different interpretations of the same UML constructs and therefore [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>] defines a minimal set of such interpretation rules (, which that can be further extended if necessary).</p>
+</div>
+<div class="paragraph">
+<p>Also, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -235,8 +322,8 @@ multiple interpretations. These risks are mitigated by adopting precise interpre
 b) the formal ontology and c) the data specification document can be generated. Each artefact in the figure is qualified with two
 terms, the representation standard and the most characteristic feature. The conceptual model is expressed in UML language and shall
 be conformant with the conventions provided in this style guide and the interpretation rules
-[<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">rule CMC-R2</a>]. The formal ontology is expressed in OWL language and shall
-be lightweight as indicated in this convention [<a href="gc-semantic-conventions.html#sec:sc-r2" class="xref page">rule SC-R2</a>]. The data shape is expressed
+[<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">rule CMC-R2</a>]. The formal ontology is expressed in OWL 2 language and shall
+be <em>lightweight</em> as indicated in this convention [<a href="gc-semantic-conventions.html#sec:sc-r2" class="xref page">rule SC-R2</a>]. The data shape is expressed
 in SHACL language and is characterised by the appropriate level of permissiveness [<a href="gc-data-shape-conventions.html#sec:dsc-r2" class="xref page">rule DSC-R2</a>].
 The documentation is represented in HTML format and the wording used shall be as precise as possible to capture the meaning accurately
 and clearly express the intention of the authors.</p>
@@ -262,8 +349,10 @@ is beyond the scope of this document, and the reader may refer to SEMIC toolchai
 as model2owl [<a href="references.html#ref:16" class="xref page">16</a>] or OSLO toolchain [<a href="references.html#ref:17" class="xref page">17</a>] projects.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="sec:on-data-specification-and-artefact-types"><a class="anchor" href="#sec:on-data-specification-and-artefact-types"></a>On data specification and artefact type</h3>
+</div>
+<div class="sect1">
+<h2 id="sec:on-data-specification-and-artefact-types"><a class="anchor" href="#sec:on-data-specification-and-artefact-types"></a>On data specification and artefact type</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
@@ -285,7 +374,7 @@ the intended semantic data specification [<a href="terminological-clarifications
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Conceptual model (UML)</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ontology (OWL)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ontology (OWL 2)</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Data shape (SHACL)</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Specification documentation (HTML)</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Model diagram (PNG)</strong></p></td>
@@ -308,8 +397,8 @@ the intended semantic data specification [<a href="terminological-clarifications
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="sec:artefact-types"><a class="anchor" href="#sec:artefact-types"></a>Artefact types</h4>
+<div class="sect2">
+<h3 id="sec:artefact-types"><a class="anchor" href="#sec:artefact-types"></a>Artefact types</h3>
 <div class="paragraph">
 <p>The semantic data specifications, both CVs and APs, are conceived as a union of specification artefacts, each addressing a different aspect/concern:</p>
 </div>
@@ -319,7 +408,7 @@ the intended semantic data specification [<a href="terminological-clarifications
 <p>conceptual model expressed in UML</p>
 </li>
 <li>
-<p>formal ontology expressed in OWL</p>
+<p>formal ontology expressed in OWL 2</p>
 </li>
 <li>
 <p>data shapes expressed in SHACL</p>
@@ -333,8 +422,8 @@ the intended semantic data specification [<a href="terminological-clarifications
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:data-specification-types"><a class="anchor" href="#sec:data-specification-types"></a>Data specification types</h4>
+<div class="sect2">
+<h3 id="sec:data-specification-types"><a class="anchor" href="#sec:data-specification-types"></a>Data specification types</h3>
 <div class="paragraph">
 <p>In the SEMIC context two types of data specifications are of main concern (a) Core Vocabularies designed with broad interoperability
 goals and (b) Application Profiles designed with application oriented interoperability goals.</p>
@@ -371,7 +460,6 @@ maintenance and publication:</p>
 </div>
 <div class="paragraph">
 <p>The data specification’s artefacts are not independent but tightly interrelated and transformed from one form into another one.</p>
-</div>
 </div>
 </div>
 </div>

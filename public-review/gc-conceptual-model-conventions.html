@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: SEMIC</title>
+    <title>Conceptual model conventions (UML) :: SEMIC</title>
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
@@ -50,7 +50,7 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
+    <a class="nav-link" href="#guidelines-and-conventions.adoc">Guidelines and conventions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
@@ -124,7 +124,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">SEMIC Style guide</a></li>
-    <li><a href="guidelines-and-conventions.html">Guidelines and conventions</a></li>
+    <li><a href="#guidelines-and-conventions.adoc">Guidelines and conventions</a></li>
     <li><a href="gc-conceptual-model-conventions.html">Conceptual model conventions (UML)</a></li>
   </ul>
 </nav>
@@ -135,10 +135,10 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="_conceptual_model_conventions_uml"><a class="anchor" href="#_conceptual_model_conventions_uml"></a>Conceptual model conventions (UML)</h3>
-<div class="sect3">
-<h4 id="sec:cmc-r1"><a class="anchor" href="#sec:cmc-r1"></a>UML as a single source of truth</h4>
+<h1 class="page">Conceptual model conventions (UML)</h1>
+<div class="sect1">
+<h2 id="sec:cmc-r1"><a class="anchor" href="#sec:cmc-r1"></a>UML as a single source of truth</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -180,8 +180,10 @@ as much as possible automatically, by a dedicated software tool or toolchain [<a
 <p>It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [<a href="references.html#ref:22" class="xref page">22, sec 4.1</a>].</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r2"><a class="anchor" href="#sec:cmc-r2"></a>Fixed UML interpretation</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r2"><a class="anchor" href="#sec:cmc-r2"></a>Fixed UML interpretation</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -204,7 +206,7 @@ of pre-established conventions on the UML notation to reach a fixed interpretati
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>The interpretation of UML as a logical structure, including OWL, was and still is an active research topic. But even the
+<p>The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the
 OMG Ontology Definition Metamodel [<a href="references.html#ref:28" class="xref page">28</a>] does not address the notion of reuse. The goal of using
 UML is to provide for the SEMIC semantic data specifications a standard graphical notation which many are familiar with.
 Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should
@@ -233,9 +235,9 @@ conformance and consistency.</p>
 <p>Within SEMIC, the interpretation is implemented by the SEMIC toolchain [<a href="references.html#ref:15" class="xref page">15</a>].</p>
 </div>
 <div class="paragraph">
-<p>The table below provides recommended interpretations of UML elements in OWL and SHACL.
+<p>The table below provides recommended interpretations of UML elements in OWL 2 and SHACL.
 These interpretations can be considered high-level mapping rules implementable into transformation tools that generate
-OWL ontology and, respectively, SHACL constraints from the UML conceptual model.</p>
+OWL 2 ontology and, respectively, SHACL constraints from the UML conceptual model.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <colgroup>
@@ -246,12 +248,12 @@ OWL ontology and, respectively, SHACL constraints from the UML conceptual model.
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock"> <strong>UML model element</strong></p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock"><strong>OWL ontology element</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock"><strong>OWL 2 ontology element</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock"><strong>SHACL data shape element</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock"><strong>Class</strong></p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock">OWL Class</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock">OWL 2 Class</p></td>
 <td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock">SHACL Node Shape</p></td>
 </tr>
 <tr>
@@ -261,7 +263,7 @@ OWL ontology and, respectively, SHACL constraints from the UML conceptual model.
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock"><strong>Attribute</strong></p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock">OWL datatype or object property, based on their type.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock">OWL 2 datatype or object property, based on their type.</p></td>
 <td class="tableblock halign-left valign-top" style="background-color:  none;"><p class="tableblock">Property constraint, within the SHACL Node Shape corresponding
 to the source UML class (but the constraints are mentioned below on type and multiplicity)</p></td>
 </tr>
@@ -367,8 +369,10 @@ are based on two documents: UML convention specifications [<a href="references.h
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r3"><a class="anchor" href="#sec:cmc-r3"></a>On element names and URIs</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r3"><a class="anchor" href="#sec:cmc-r3"></a>On element names and URIs</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -443,8 +447,10 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r4"><a class="anchor" href="#sec:cmc-r4"></a>Case sensitivity and charset</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r4"><a class="anchor" href="#sec:cmc-r4"></a>Case sensitivity and charset</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -510,8 +516,10 @@ is in lowerCamelCase.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r5"><a class="anchor" href="#sec:cmc-r5"></a>Namespaces and prefixes in element names</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r5"><a class="anchor" href="#sec:cmc-r5"></a>Namespaces and prefixes in element names</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -586,8 +594,10 @@ qualified name  from which the <code><a href="http://www.w3.org/ns/dcat#Catalog"
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r6"><a class="anchor" href="#sec:cmc-r6"></a>Rich annotations through tags</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r6"><a class="anchor" href="#sec:cmc-r6"></a>Rich annotations through tags</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -637,8 +647,10 @@ examples, alternative labels, and any other annotations can be provisioned throu
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r7"><a class="anchor" href="#sec:cmc-r7"></a>Explicit depiction of external dependencies</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r7"><a class="anchor" href="#sec:cmc-r7"></a>Explicit depiction of external dependencies</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -660,7 +672,7 @@ The UML diagrams should depict how the developed model relates to external (reus
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>UML does not support an import mechanism comparable to the one specified in OWL. Yet, the reuse of models is a highly encouraged
+<p>UML does not support an import mechanism comparable to the one specified in OWL 2. Yet, the reuse of models is a highly encouraged
 practice. To accommodate such practice, the reused elements shall be created as in the original model and depicted in diagrams.</p>
 </div>
 <div class="paragraph">
@@ -688,8 +700,10 @@ Agent have the “foaf” namespace prefix specified in front.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r8"><a class="anchor" href="#sec:cmc-r8"></a>Class inheritance</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r8"><a class="anchor" href="#sec:cmc-r8"></a>Class inheritance</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -735,8 +749,10 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 <p>\ [<a href="references.html#ref:19" class="xref page">19, sec 3.2.3</a>]</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r9"><a class="anchor" href="#sec:cmc-r9"></a>Abstract classes</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r9"><a class="anchor" href="#sec:cmc-r9"></a>Abstract classes</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -763,7 +779,7 @@ for instantiation. Editors may choose to mark such classes as abstract and to in
 practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype.</p>
 </div>
 <div class="paragraph">
-<p>Doing so has no impact on the OWL [<a href="references.html#ref:43" class="xref page">43</a>] representation of the model (as this cannot be expressed in OWL).
+<p>Doing so has no impact on the OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>] representation of the model (as this cannot be expressed in OWL).
 However, SHACL data shapes [<a href="references.html#ref:44" class="xref page">44</a>] can be generated to express that no instances of this class shall
 not occur in the data. [<a href="references.html#ref:19" class="xref page">19, sec 3.2.6</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.4</a>]</p>
 </div>
@@ -778,8 +794,10 @@ not occur in the data. [<a href="references.html#ref:19" class="xref page">19, s
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r10"><a class="anchor" href="#sec:cmc-r10"></a>Attribute specifications</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r10"><a class="anchor" href="#sec:cmc-r10"></a>Attribute specifications</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -872,7 +890,7 @@ list the property values are restricted to. Arguably, the controlled list can be
 <div class="paragraph">
 <p>In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the Class
 and the Enumeration representing the controlled list, oriented from the class towards the enumeration. It denotes that the
-OWL class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
+OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
 vocabulary. The connector must have a "Source&#8594;Target" direction. No other directions are acceptable, and a valid target
 role name and multiplicity shall be provided [xref controlled list enumeration rule].</p>
 </div>
@@ -912,8 +930,10 @@ a non-atomic data type, but a controlled list of <code>skos:Concept</code>(s).</
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r11"><a class="anchor" href="#sec:cmc-r11"></a>Multiplicity of attributes and connectors</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r11"><a class="anchor" href="#sec:cmc-r11"></a>Multiplicity of attributes and connectors</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -994,8 +1014,10 @@ have multiplicity [0..*] while the same Public Organisation, in blue on right, r
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r12"><a class="anchor" href="#sec:cmc-r12"></a>Connector specification</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r12"><a class="anchor" href="#sec:cmc-r12"></a>Connector specification</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1018,7 +1040,7 @@ specify multiplicity whenever possible [<a href="#sec:cmc-r11">CMC-R11</a>].</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>UML Connectors shall be used to denote object properties (see OWL2 semantics, [<a href="references.html#ref:43" class="xref page">43</a>]).</p>
+<p>UML Connectors shall be used to denote object properties (see OWL 2 semantics, [<a href="references.html#ref:43" class="xref page">43</a>]).</p>
 </div>
 <div class="paragraph">
 <p>First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
@@ -1070,8 +1092,10 @@ class should inherit a class from an external model, then proxies must be create
 For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r13"><a class="anchor" href="#sec:cmc-r13"></a>All elements are "public"</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r13"><a class="anchor" href="#sec:cmc-r13"></a>All elements are "public"</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1113,8 +1137,10 @@ and the “+” symbol shall always be used next to each property. This symbol m
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r14"><a class="anchor" href="#sec:cmc-r14"></a>Controlled lists as enumerations</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r14"><a class="anchor" href="#sec:cmc-r14"></a>Controlled lists as enumerations</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1206,8 +1232,10 @@ the Core Public Organisation and CPSV-AP can still point to it independently.</p
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r15"><a class="anchor" href="#sec:cmc-r15"></a>Partition the model into packages</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r15"><a class="anchor" href="#sec:cmc-r15"></a>Partition the model into packages</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1256,8 +1284,10 @@ are in multiple packages but mapped to the same namespace.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="sec:cmc-r16"><a class="anchor" href="#sec:cmc-r16"></a>Diagram readability</h4>
+</div>
+<div class="sect1">
+<h2 id="sec:cmc-r16"><a class="anchor" href="#sec:cmc-r16"></a>Diagram readability</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
