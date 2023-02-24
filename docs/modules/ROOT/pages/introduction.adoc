@@ -1,7 +1,7 @@
-== Introduction
+= Introduction
 
-[[sec:context]]
-=== Context
+// [[sec:context]]
+// == Context
 This document defines the style guide to be applied to the SEMIC’s semantic data specifications, notably to the eGovernment
 Core Vocabularies and Application Profiles. It provides rules on naming conventions, syntax, artefact management and organisation.
 It is meant to be complemented with technical artefacts and implementations that enable automatic conformance checking and
@@ -12,7 +12,7 @@ with the objective of fostering the use of standards by, for example, offering g
 for public administrations.
 
 [[sec:target-audience]]
-=== Target audience
+== Target audience
 This style guide is intended primarily for semantic engineers, data architects and knowledge modelling specialists who are acting
 as editors or reusers of Core Vocabularies and Application Profiles.
 
@@ -20,7 +20,7 @@ This style guide may constitute a good source of information and explanations fo
 consultants, and stakeholders involved in interinstitutional standardisation.
 
 [[sec:scope]]
-=== Scope
+== Scope
 The main purpose of this style guide is to provide guidance and decision-making support for the creators, maintainers and publishers
 of the Core Vocabularies and Application Profiles. The main part of this document is organised as a series of self-contained rules and
 guidelines.
@@ -57,7 +57,7 @@ the adopted URI policy documentation, which can be inter-institutional policy or
 [xref:references.adoc#ref:1[1]].
 
 [[sec:how-to-read]]
-=== How to read this document
+== How to read this document
 This document is organised in two parts. The first part provides a brief context description and scope and offers an architectural
 overview. It introduces important terminological clarifications, the benefits of adopting the separation of concerns principle,
 and explanations of how it is played out in the SEMIC context.

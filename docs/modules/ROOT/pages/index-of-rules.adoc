@@ -1,4 +1,4 @@
-== Index of Rules
+= Index of Rules
 
 * xref:gc-general-conventions.adoc[General conventions]
 
@@ -30,7 +30,7 @@
 * xref:gc-semantic-conventions.adoc[Semantic conventions]
 
 ** xref:gc-semantic-conventions.adoc#sec:sc-r1[SC-R1 - Formal language choice]
-** xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2 - Limited (OWL) expressivity]
+** xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2 - Limited (OWL 2) expressivity]
 ** xref:gc-semantic-conventions.adoc#sec:sc-r3[SC-R3 - Lexicalisation]
 ** xref:gc-semantic-conventions.adoc#sec:sc-r4[SC-R4 - Reasoning assumption]
 ** xref:gc-semantic-conventions.adoc#sec:sc-r5[SC-R5 - Circular definitions]

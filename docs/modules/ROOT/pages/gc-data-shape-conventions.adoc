@@ -1,7 +1,7 @@
-=== Data shape conventions
+= Data shape conventions
 
 [[sec:dsc-r1]]
-==== Data shape language choice
+== Data shape language choice
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -23,7 +23,7 @@ As the SHACL is a W3C standard, we strongly recommend using it.
 
 
 [[sec:dsc-r2]]
-==== Lose versus rigid constraints
+== Lose versus rigid constraints
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -60,7 +60,7 @@ are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)
 ****
 
 [[sec:dsc-r3]]
-==== Open and Closed world assumptions
+== Open and Closed world assumptions
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -95,7 +95,7 @@ are organised. As data shapes may be used to suggest how the data may be fragmen
 
 
 [[sec:dsc-r4]]
-==== On data shapes
+== On data shapes
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -117,17 +117,17 @@ shape for each UML attribute and UML Connector of that class. if the property sh
 (rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
 the resulting constraint definitions are organically integrated and the maintenance costs are decreased.
 
-The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL or SHACL definitions.
+The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.
 
-In some communities, the URIs used in the OWL specifications are reused in SHACL. The class definitions are extended as node
+In some communities, the URIs used in the OWL 2 specifications are reused in SHACL. The class definitions are extended as node
 shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the
 use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts.
 The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach
-does not allow for dereferencing separately OWL or SHACL representations. Hence, it is recommended to avoid such practice.
+does not allow for dereferencing separately OWL 2 or SHACL representations. Hence, it is recommended to avoid such practice.
 
 
 [[sec:dsc-r5]]
-==== Data Shape severity
+== Data Shape severity
 
 |===
 |{set:cellbgcolor: #a8c6f7}

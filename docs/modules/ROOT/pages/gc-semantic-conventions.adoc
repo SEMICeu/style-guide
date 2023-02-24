@@ -1,7 +1,7 @@
-=== Semantic conventions
+= Semantic conventions
 
 [[sec:sc-r1]]
-==== Formal language choice
+== Formal language choice
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -12,21 +12,19 @@
 
 |*Statement:*
 
-The formal ontology shall be expressed in OWL.
+The formal ontology shall be expressed in OWL 2.
 |===
 
 *Description:*
 
-In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS and OWL. RDFS is simpler
-and only allows for some of the recommended expressions (for example, the distinction between data type and object properties
-is not possible). OWL is more complex and more expressive than RDFS.
+In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [xref:references.adoc#ref:93[93]]  and OWL 2 [xref:references.adoc#ref:43[43]]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between data type and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.
 
-We recommend using OWL limited to a set of expression types.
+We recommend using only a limited set of expression types available in OWL 2 language [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]].
 
 ****
 *Examples:*
 
-Core Vocabularies have an RDF representation as OWL Ontology. In the example below, part of Core Person is depicted:
+Core Vocabularies have an RDF representation as OWL 2 Ontology. In the example below, part of Core Person is depicted:
 
 [source, turtle]
 ----
@@ -62,27 +60,23 @@ Core Vocabularies have an RDF representation as OWL Ontology. In the example bel
 
 
 [[sec:sc-r2]]
-==== Limited (OWL) expressivity
+== Limited (OWL 2) expressivity
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Limited (OWL) expressivity
+ *Title:* Limited (OWL 2) expressivity
 
 |{set:cellbgcolor: #f5f8fc}
 *Acronym*: SC-R2
 
 |*Statement:*
 
-The formal ontology shall be _lightweight_ in its logical underpinning, focusing mainly on the concept declarations,
-generalisation axioms and annotations.
+The formal ontology shall be _lightweight_ in its logical underpinning, focusing mainly on the concept declarations, generalisation axioms and annotations.
 |===
 
 *Description:*
 
-OWL language has a fairly high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic
-artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL
-constructs suffice. Therefore the OWL ontology shall be kept _lightweight_, and no advanced logical definitions are necessary,
-which would make the ontology _heavyweight_.
+OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept _lightweight_, and no advanced logical definitions are necessary, which would make the ontology _heavyweight_.
 
 It is recommended that the formal ontology definition be limited to the following types of expressions:
 
@@ -100,12 +94,11 @@ It is recommended that the formal ontology definition be limited to the followin
 ** provenance metadata
 ** descriptive metadata
 
-The formal ontology shall not include other types of statements unless necessary. It is also recommended to avoid (a) property
-domain specification (`rdfs:domain`) and (b) property range specification (`rdfs:range`). The intention of such statements is
-better captured by the data shapes.
+The formal ontology shall not include other types of statements unless justified as absolutely necessary.
 
-Keeping the ontology lightweight allows the maximum freedom for reuse and does not interfere with the validation concerns
-covered by the data shapes.
+No expressions of (a) property domain specification (`rdfs:domain`) and (b) property range specification (`rdfs:range`) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.
+
+Keeping the ontology lightweight allows the maximum freedom for reuse and does not interfere with the validation concerns covered by the data shapes.
 
 ****
 *Examples:*
@@ -142,7 +135,7 @@ Or consider, the (shortened) Core Person vocabulary header:
 
 
 [[sec:sc-r3]]
-==== Lexicalisation
+== Lexicalisation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -167,6 +160,7 @@ RDFS allows for a very simple lexicalisation and annotation:
 ** `rdfs:label` may be used to provide a human-readable version of a resource's name
 * comments
 ** `rdfs:comment` may be used to provide a human-readable description of a resource.
+
 SKOS offers a richer and more elaborate lexicalisation and annotation:
 
 * Lexical labels
@@ -209,7 +203,7 @@ For example in ePO, both lexicalisations are provided (even if this may be consi
 ****
 
 [[sec:sc-r4]]
-==== Reasoning assumption
+== Reasoning assumption
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -225,7 +219,7 @@ No reasoning capabilities shall be assumed.
 
 *Description:*
 
-OWL constructs correspond to Description Logic (DL) concepts (_direct semantics_). Logic, besides expressing knowledge in
+OWL 2 constructs correspond to Description Logic (DL) concepts (_direct semantics_). Logic, besides expressing knowledge in
 a knowledge base, can be used to perform automated reasoning, i.e.  inferring new knowledge based on premises and reasoning
 rules. The inference is also possible with RDF-based semantics, which is based on translating the axioms into directed graphs.
 The latter is used for SPARQL entailments and SHACL data shape rules.
@@ -239,7 +233,7 @@ shall be left implicit.
 
 
 [[sec:sc-r5]]
-==== Circular definitions
+== Circular definitions
 
 |===
 |{set:cellbgcolor: #a8c6f7}

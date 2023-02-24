@@ -1,4 +1,7 @@
 = The SEMIC style guide for semantic engineers
+// :doctype: manpage
+// :man-linkstyle: pass:[blue R < >]
+:doctype: book
 :description: The SEMIC style guide for semantic engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
@@ -16,7 +19,14 @@ include::arhitectural-clarifications.adoc[]
 
 include::clarification-on-reuse.adoc[]
 
-include::guidelines-and-conventions.adoc[]
+
+// include::guidelines-and-conventions.adoc[]
+include::gc-general-conventions.adoc[]
+include::gc-conceptual-model-conventions.adoc[]
+include::gc-semantic-conventions.adoc[]
+include::gc-data-shape-conventions.adoc[]
+include::gc-methodology-conventions.adoc[]
+include::gc-publication-conventions.adoc[]
 
 include::rule-template.adoc[]
 

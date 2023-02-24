@@ -1,7 +1,7 @@
-=== Methodology conventions
+= Methodology conventions
 
 [[sec:mc-r1]]
-==== Follow a methodology
+== Follow a methodology
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -46,7 +46,7 @@ edited, maintained, referred by the concepts)
 
 
 [[sec:mc-r2]]
-==== On goals and scope
+== On goals and scope
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -71,7 +71,7 @@ It shall be possible to determine the scope of a data specification from the use
 
 
 [[sec:mc-r3]]
-==== On modularisation
+== On modularisation
 
 |===
 |{set:cellbgcolor: #a8c6f7}

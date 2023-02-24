@@ -1,4 +1,4 @@
-== References
+= References
 
 . [[ref:1]] Codreanu, D. (2012). 10 Rules for Persistent URIs. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
 . [[ref:2]] Bechhofer, S., & Miles, A. (2009). SKOS simple knowledge organization system reference. W3C recommendation, W3C. Available at: http://www.w3.org/TR/2009/REC-skos-reference-20090818/
@@ -52,9 +52,11 @@
 . [[ref:78]] Zachman, J. A. (1987). A framework for information systems architecture. IBM systems journal, 26(3), 276-292.
 . [[ref:79]] Spewak, S. H., & Tiemann, M. (2006). Updating the enterprise architecture planning model. Journal of Enterprise Architecture, 2(2), 11-19.
 . [[ref:82]] eProcurement Ontology (2022). TED and EU Public Procurement Unit of the Publications Office of the European Union. Available at: https://github.com/OP-TED/ePO
-. [[ref:83]] Hausenblas, M. (2012) 5 ★ OPEN DATA. Available at: https://5stardata.info/en
+. [[ref:83]] Hausenblas, M. (2012) 5 * OPEN DATA. Available at: https://5stardata.info/en
 . [[ref:85]] Lóscio, B.F. and Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp
 . [[ref:88]] Dekkers, M., & Novacean, I. (2018). D04.02.02 – Local URI design patterns. Deliverable SC353DI07171, ISA programme of the European Commission.
 . [[ref:89]] Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/joinup
 . [[ref:90]] Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org
 . [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
+. [[ref:93]] Brickley, D., Guha, R.V. and McBride, B., (2014). RDF Schema 1.1. _W3C recommendation_, _25_, pp.2004-2014.
+

@@ -1,60 +1,70 @@
-== Terminological clarifications
+= Terminological clarifications
 
+Before detailed definitions and explanations are provided, let's align on the idea that: [xref:arhitectural-clarifications.adoc#sec:on-data-specification-and-artefact-types["semantic data specifications comprise artefacts"]].
+
+*  There are xref:#sec:what-is-a-semantic-data-specification[_semantic data specifications_]. They comprise nothing else but a _collection of terms_, _structure and rule specifications_ on how to combine these terms and _(RE)use expectations_. In SEMIC context, semantic data specifications can be either:
+** a _Core Vocabulary_, or
+** an _Application Profile_
+
+* There are xref:#sec:what-is-an-artefact[_Artefacts_]. They encode or indicate a representation _format_, attend a need or specific _purpose_, and address a clear _concern_. In SEMIC context, we acknowledge, but not limited to, the following list of artefacts:
+** Persistent URIs
+** OWL 2 representation
+** SHACL representation
+** HTML representation
+** Pictures/Diagrams
+** UML representation
+** JSON-LD representation (+ JSON schema)
+** XML representation (+ XSD schema)
+** ...
+
+Note, not all artefacts are treated in the current style-guide, but only the ones that are in scope of semantic interoperability layer in the EIF framework.
 
 [[sec:what-is-a-conceptual-model]]
-=== What is a conceptual model (specification)?
+== What is a conceptual model (specification)?
 
 *Definition* +
-A conceptual model is an abstract representation of a system and comprises well-defined concepts,
-qualities or attributes, and relationships to other concepts. A system is a group of interacting or interrelated
+A conceptual model is an abstract representation of a system and comprises well-defined concepts, qualities or attributes, and relationships to other concepts. A system is a group of interacting or interrelated
 elements that act according to a set of rules to form a unified whole.
 
 *Description* +
-We assume that the conceptual model is expressed in UML and depicted with UML class diagrams.
+A conceptual model is a representation of a system that uses concepts to form said representation. A concept can be viewed as an idea or notion, a unit of thought [xref:references.adoc#ref:2[2]]. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be well named by providing preferred and alternative labels and should have a clear and precise definition supported by examples and explanatory notes. The conceptual model comprises representations of concepts, their qualities or attributes and relationships to other concepts. Most commonly, these are association and generalisation relations.
 
-A conceptual model is a representation of a system that uses concepts to form said representation. A concept can be viewed
-as an idea or notion, a unit of thought [xref:references.adoc#ref:2[2]]. However, what constitutes a unit of thought is subjective,
-and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be well named by providing
-preferred and alternative labels and should have a clear and precise definition supported by examples and explanatory notes.
-The conceptual model comprises representations of concepts, their qualities or attributes and relationships to other concepts.
-Most commonly, these are association and generalisation relations.
+In addition, the conceptual model can be materialised in a graphical representation facilitating knowledge elicitation, organisation and interaction with domain experts. This is relevant because interactions and discussions within a Working Group for a data specification are often driven by a graphical representation. However, the need for a conceptual model and a visual representation shall not be conflated. Thus, we keep clear separation of concerns, which is addressed in detailed in the next section [xref:arhitectural-clarifications.adoc#sec:separation-of-concerns-and-transformation[separation of concerns in SEMIC]].
 
-The conceptual model is represented in UML [xref:references.adoc#ref:3[3]] and serves as the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[rule CMC-R1]].
-The scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements.
-Each of the above concerns will lead to different interpretations of the same UML model [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]].
-The motivation behind the choice for a graphical language, i.e. UML, for the master representation of the conceptual model,
-is also driven by the fact that interactions and discussions within a Working Group for a data specification are often driven by
-a graphical representation. Therefore, naturally, editors first create the graphical representation of the proposed resolution.
+There is no perfect candidate for representing the conceptual model. And, although not without limitations, risks for misunderstandings and mis-interpretations, we choose (a subset of) UML language [xref:references.adoc#ref:3[3]] as most appropriate and instrumental in addressing (a) the concern for having a conceptual model established and (b) the concern for providing a graphical representation. The UML appropriateness has been acknowledged based on a longstanding experience and practices.An entire section of this styleguide is dedicated to (UML) conceptual model [xref:gc-conceptual-model-conventions.adoc[see Conceptual model conventions]].
 
-With UML as the starting and ultimate source of truth, the update process is easier to perform as it only has to be done in a single place.
-The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy
-[xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]].
+The subset of the UML language considered in this style guide is comprised (but not limited to) in the following set of UML elements:
+
+* Class
+* Class Attribute
+* Connector
+** Association
+** Dependency
+** Generalisation
+* Enumeration
+
+For visual representation only UML Class Diagrams are considered.
+
+Note: UML will be recommended language for the conceptual models until a better and more appropriate alternative with robust tool support is developed, that is also addressing the SEMIC methods and practices [xref:arhitectural-clarifications.adoc[see Architectural clarification]].
 
 [[sec:what-is-an-ontology]]
-=== What is an ontology (specification)?
+== What is an ontology (specification)?
 
 *Definition* +
-An ontology is a description (like a formal specification) of the concepts and relationships that can formally exist for an agent
-or a community of agents (e.g. domain experts) for a given domain of discourse [xref:references.adoc#ref:4[4]].
-
-An ontology encompasses a representation, formal naming, and definition of the categories, properties, and relations between
-the concepts, data, and entities that substantiate one, many, or all domains of discourse [xref:references.adoc#ref:5[5]].
+An ontology is a description (like a formal specification) of the concepts and relationships that can formally exist for an agent or a community of agents (e.g. domain experts) [xref:references.adoc#ref:4[4]]. It encompasses a representation, formal naming, and definition of the categories, properties, and relations between the concepts, data, and entities that substantiate one, many, or all domains of discourse [xref:references.adoc#ref:5[5]].
 
 *Description* +
-The ontology constitutes the formal (machine-readable) definition of concepts. Although the languages for expressing ontologies
-could be very expressive, we want to keep it very light and simple, from the formal point of view [xref:gc-semantic-conventions.adoc#sec:sc-r1[rule SC-R1]],
-with minimal detail and level of expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]]. In the SEMIC context,
-we only consider lightweight ontologies [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]]. Therefore, sometimes this aspect
-will be emphasised as “lightweight ontology”, but often, it will be implicitly referred to simply as “ontology”.
+The ontology constitutes the formal (machine-readable) definition of concepts. Although the languages for expressing ontologies vary in expressivity, we shall keep it light and simple, from the formal point of view,
+with minimal detail and level of expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]].
+
+In the SEMIC context, we only consider _lightweight ontologies_ [xref:gc-semantic-conventions.adoc#sec:sc-r2[defined in rule SC-R2]]. Therefore, even if this aspect is not emphasised as "lightweight ontology", it is implicitly meant even when simple "ontology" reference is used.
 
 We assume that the ontology is expressed in OWL 2 language [xref:gc-semantic-conventions.adoc#sec:sc-r1[rule SC-R1]].
 
-The main purpose of this component is to declare the classes, properties, datatypes and controlled lists. Each construct is established
-by assigning a URI and decorating it with human-readable labels and descriptions. This represents a mechanism that establishes a common
-understanding between humans and machines.
+The main purpose of this component is to declare the classes, properties, datatypes and controlled lists. Each construct is established by assigning a URI and decorating it with human-readable labels and descriptions, and constitutes the mechanism to establish common references for humans and machines.
 
 [[sec:what-is-a-data-shape-contraint]]
-=== What is a data shape constraint (specification)?
+== What is a data shape constraint (specification)?
 
 *Definition* +
 A data shape constraint specification provides a set of conditions on top of an ontology, limiting how the ontology can be instantiated.
@@ -66,7 +76,7 @@ We assume that the data shapes are expressed in SHACL language.
 This document will refer to data shape constraint specifications as “data shapes” or “data shape specifications”.
 
 [[sec:what-is-a-specification-document]]
-=== What is a specification document?
+== What is a specification document?
 
 *Definition* +
 A (data) specification (technical) document is created with the objective of making it simple for the end-user to (a) understand
@@ -79,7 +89,7 @@ We assume that the data specification is published in HTML format (optionally, o
 
 
 [[sec:what-is-an-artefact]]
-=== What is an artefact?
+== What is an artefact?
 
 *Definition* +
 A (data specification) artefact is a materialisation of a semantic data specification in a format appropriate for addressing
@@ -96,7 +106,7 @@ Still, these are not in the scope of this document and are addressed elsewhere. 
 
 
 [[sec:what-is-a-semantic-data-specification]]
-=== What is a semantic data specification?
+== What is a semantic data specification?
 
 *Definition* +
 A semantic data specification is a union of machine- and human-readable artefacts addressing clearly defined concerns, interoperability
@@ -112,7 +122,7 @@ With a similar meaning, the term “semantic asset” is used in the literature 
 the term “semantic asset” is broader than “data specification” and includes controlled vocabularies and possibly other types of assets.
 
 [[sec:what-is-a-cv-specification]]
-=== What is a Core Vocabulary (CV) specification?
+== What is a Core Vocabulary (CV) specification?
 
 *Definition* +
 A Core Vocabulary (CV) is a basic, reusable and extensible data specification that captures the fundamental characteristics of an
@@ -146,7 +156,7 @@ in other contexts (similar to SEMIC), a Core Vocabulary might often be simply de
 
 
 [[sec:what-is-an-ap-specification]]
-=== What is an Application Profile (AP) specification?
+== What is an Application Profile (AP) specification?
 
 *Definition* +
 An Application Profile is a data specification to facilitate the data exchange in a well-defined  application context. It re-uses
