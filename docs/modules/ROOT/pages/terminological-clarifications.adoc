@@ -2,11 +2,11 @@
 
 Before detailed definitions and explanations are provided, let's align on the idea that xref:arhitectural-clarifications.adoc#sec:on-data-specification-and-artefact-types["semantic data specifications comprise artefacts"].
 
-*  There are xref:#sec:what-is-a-semantic-data-specification[_semantic data specifications_]. They comprise nothing else but a _collection of terms_, _structure and rule specifications_ on how to combine these terms and _(RE)use expectations_. In SEMIC context, semantic data specifications can be either:
+*  There are xref:#sec:what-is-a-semantic-data-specification[_semantic data specifications_]. They comprise nothing else but a _collection of terms_, _structure and rule specifications_ on how to combine these terms and _(RE)use expectations_. In the SEMIC context, a semantic data specification can be either:
 ** a _Core Vocabulary_, or
 ** an _Application Profile_
 
-* There are xref:#sec:what-is-an-artefact[_Artefacts_]. They encode or indicate a representation _format_, attend a need or specific _purpose_, and address a clear _concern_. In SEMIC context, we acknowledge, but not limited to, the following list of artefacts:
+* There are xref:#sec:what-is-an-artefact[_Artefacts_]. They encode or indicate a representation _format_, attend a need or specific _purpose_, and address a clear _concern_. In the SEMIC context, we acknowledge, but not limited to, the following list of artefacts:
 ** Persistent URIs
 ** OWL 2 representation
 ** SHACL representation
@@ -17,21 +17,21 @@ Before detailed definitions and explanations are provided, let's align on the id
 ** XML representation (+ XSD schema)
 ** ...
 
-Note that **not** all artefacts are treated in the current style-guide, but only the ones that are in scope of the Semantic interoperability layer of the EIF framework.
+Note that **not** all artefacts are treated in the current style-guide, but only the ones that are in scope of the _Semantic Interoperability_ layer of the European Interoperability Framework (EIF).
 
 [[sec:what-is-a-conceptual-model]]
 == What is a conceptual model (specification)?
 
 *Definition* +
-A conceptual model is an abstract representation of a system and comprises well-defined concepts, qualities or attributes, and relationships to other concepts. A system is a group of interacting or interrelated
+A conceptual model is an abstract representation of a system and comprises well-defined concepts, their qualities or attributes, and their relationships to other concepts. A system is a group of interacting or interrelated
 elements that act according to a set of rules to form a unified whole.
 
 *Description* +
 A conceptual model is a representation of a system that uses concepts to form said representation. A concept can be viewed as an idea or notion, a unit of thought [xref:references.adoc#ref:2[2]]. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be well named by providing preferred and alternative labels and should have a clear and precise definition supported by examples and explanatory notes. The conceptual model comprises representations of concepts, their qualities or attributes and relationships to other concepts. Most commonly, these are association and generalisation relations.
 
-In addition, the conceptual model can be materialised in a graphical representation facilitating knowledge elicitation, organisation and interaction with domain experts. This is relevant because interactions and discussions within a Working Group for a data specification are often driven by a graphical representation. However, the need for a conceptual model and a visual representation shall not be conflated. Thus, we keep clear separation of concerns, which is addressed in detailed in the next section [xref:arhitectural-clarifications.adoc#sec:separation-of-concerns-and-transformation[separation of concerns in SEMIC]].
+In addition, the conceptual model can be materialised in a graphical representation facilitating knowledge elicitation, organisation and interaction with domain experts. This is relevant because interactions and discussions within a Working Group for a data specification are often driven by a graphical representation. However, the need for a conceptual model and a visual representation shall not be conflated. Thus, we keep clear separation of concerns, which is addressed in detailed in the next section [xref:arhitectural-clarifications.adoc#sec:separation-of-concerns-and-transformation[Separation of concerns in SEMIC]].
 
-There is no perfect candidate for representing the conceptual model. And, although not without limitations, risks for misunderstandings and mis-interpretations, we choose (a subset of) UML language [xref:references.adoc#ref:3[3]] as most appropriate and instrumental in addressing (a) the concern for having a conceptual model established and (b) the concern for providing a graphical representation. The UML appropriateness has been acknowledged based on a longstanding experience and practices.An entire section of this styleguide is dedicated to (UML) conceptual model [xref:gc-conceptual-model-conventions.adoc[see Conceptual model conventions]].
+There is no perfect candidate for representing the conceptual model. And, although not without limitations, risks for misunderstandings and mis-interpretations, we choose (a subset of) UML language [xref:references.adoc#ref:3[3]] as most appropriate and instrumental in addressing (a) the concern for having a conceptual model established and (b) the concern for providing a graphical representation. The UML appropriateness has been acknowledged based on a longstanding experience and practices. An entire section of this style guide is dedicated to (UML) conceptual model [xref:gc-conceptual-model-conventions.adoc[see Conceptual model conventions]].
 
 The subset of the UML language considered in this style guide is comprised (but not limited to) in the following set of UML elements:
 
@@ -45,7 +45,7 @@ The subset of the UML language considered in this style guide is comprised (but 
 
 For visual representation only UML Class Diagrams are considered.
 
-Note: UML will be recommended language for the conceptual models until a better and more appropriate alternative with robust tool support is developed, that is also addressing the SEMIC methods and practices [xref:arhitectural-clarifications.adoc[see Architectural clarification]].
+*Note:* UML will be the recommended language for defining the conceptual models until a better and more appropriate alternative with robust tool support is developed, that is also addressing the SEMIC methods and practices [xref:arhitectural-clarifications.adoc[see Architectural clarification]].
 
 [[sec:what-is-an-ontology]]
 == What is an ontology (specification)?
@@ -83,7 +83,7 @@ A (data) specification (technical) document is created with the objective of mak
 how a model encodes knowledge of a particular domain and (b) how this model can be technically adopted and used for a purpose.
 
 *Description* +
-Technically, the data specification document is the human-readable representation of an ontology, a data shape or a combination of both.
+Technically, the data specification document is the human-readable representation of an ontology, a data shape, or a combination of both.
 We assume that the data specification is published in HTML format (optionally, others). See, for example, the Core Person specification
 [xref:references.adoc#ref:6[6]] or the CPSV-AP specification [xref:references.adoc#ref:7[7]].
 
@@ -125,25 +125,25 @@ Those semantic data specifications are useally denoted with terms as such as voc
 On the other side of the spectrum are semantic data specifications that precisely encode the semantics of the conceptual model that is being used in a single data exchange context implemented in software or API.
 They usually have a strong connection with technical data represenations and documentations such as XSD schema, OpenAPI specifications, etc.
 Conceptual models for this purpose will contain precise constraints, technical datatypes, the codelists that are being used, refer to implementation decisions, etc.
-Semantic data specifications that are created for that purpose are denoted with implementation models. 
+Semantic data specifications that are created for that purpose are denoted with Implementation Models.
 As that name indicate, there objective is to encode the conceptual model of an implementation.
 
-Between those two extremes, ie. contextfree reuse (vocabularies) and unique usage context (implementation models), are semantic data specifications that aim to capture the conceptual model for a broad, yet well defined, usage context. 
+Between those two extremes, i.e. contextfree reuse (vocabularies) and unique usage context (Implementation Models), are semantic data specifications that aim to capture the conceptual model for a broad, yet well defined, usage context.
 Typically these data specifications do not intend to introduce new terms in the conceptual model, but will exploit terms from other semantic data specifications.
 These exploited terms are augmented with additional usage constraints making the terms more fit for purpose. 
-These semantic data specifications are often denoted with terms suchs as application profiles or profiles.
+These semantic data specifications are often denoted with terms such as Application Profiles or Profiles.
 
 Readers should understand that the usage relationships between semantic data specifications form a complex network. 
 An attempt to provide a structured view on this network is started in https://w3c.github.io/dxwg/profiles/.
  
 This categorisation along the reuse axis indicates the importance to express the interoperability scope for semantic data specifications. 
-However as there are no common agreed definitions for those categories, describing precisely the do's and don't for each category, people may associate different expectations to each category. This styleguide is a document that defines for SEMIC the applied rules. 
+However as there are no commony agreed definitions for those categories, describing precisely the **__Do__**s and **__Don't__**s for each category, people may associate different expectations to each category. This style guide is a document that defines for SEMIC the applied rules.
 
 
-In the SEMIC context, two types of semantic data specification are considered: [xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary]] and
+In the SEMIC context, two types of semantic data specifications are considered: [xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary]] and
 [xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile]]. Occasionally, this document
 will refer to semantic data specifications shortly as “data specifications”.
-Semantic data specifications of the third category, implementation models, are not part of the activities of SEMIC. Nevertheless, there existance, is taken into account when building the Core Vocabularies and Application Profiles.  
+Semantic data specifications of the third category, Implementation Models, are not part of the activities of SEMIC. Nevertheless, their existence, is taken into account when building the Core Vocabularies and Application Profiles.
 
 With a similar meaning, the term “semantic asset” is used in the literature (e.g. ADMS [xref:references.adoc#ref:8[8]]). However, in our understanding,
 the term “semantic asset” is broader than “data specification” and includes controlled vocabularies and possibly other types of assets.
@@ -175,8 +175,7 @@ is expressed in a condensed, comprehensive data specification document.
 
 See more in section [xref:arhitectural-clarifications.adoc#sec:on-data-specification-and-artefact-types[On data specification and artefact types]].
 
-The qualifications _lightweight_ and _permissive_ are used to make the intention _to be reused in the broadest possible context_ more
-precise. More precise boundaries are defined further in this document.
+The qualifications _lightweight_ and _permissive_ are used to better emphasise the intention _to be reused in the broadest possible context_. More precise boundaries are defined further in this document.
 
 *NOTE:* “Vocabularies”, in general, are not the same as “controlled vocabularies”, as they usually refer to SKOS artefacts. However,
 in other contexts (similar to SEMIC), a Core Vocabulary might often be simply denoted as “vocabulary”.
@@ -187,8 +186,8 @@ in other contexts (similar to SEMIC), a Core Vocabulary might often be simply de
 
 *Definition* +
 An Application Profile is a data specification to facilitate the data exchange in a well-defined  application context. It re-uses
-concepts from one or more semantic data specifications while adding more specificity by identifying mandatory, recommended, and
-optional elements, addressing particular application needs, and recommendations for controlled vocabularies to be used
+concepts from one or more semantic data specifications, while adding more specificity, by identifying mandatory, recommended, and
+optional elements, addressing particular application needs, and providing recommendations for controlled vocabularies to be used
 [xref:references.adoc#ref:10[10]].
 
 *Description* +
@@ -216,7 +215,7 @@ added to existing Core Vocabularies. If this is not possible, an Application Pro
 ** own data shape {plus}
 ** (optionally) own ontology
 
-The data specification document of an Application Profile is elaborated. It will provide the application scope and context and
+The data specification document of an Application Profile is elaborated. It will provide the application scope and context, and
 documents the ontology and the data shapes through the conceptual model. It also provides additional information that stimulates
 the adoption and correct usage of the AP in implementations.
 
