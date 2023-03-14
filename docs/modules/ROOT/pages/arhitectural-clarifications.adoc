@@ -116,7 +116,7 @@ as model2owl [xref:references.adoc#ref:16[16]] or OSLO toolchain [xref:reference
 
 
 [[sec:on-data-specification-and-artefact-types]]
-== On data specification and artefact type
+== On data specification and artefact types
 For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
 the intended semantic data specification [xref:terminological-clarifications.adoc#sec:what-is-a-semantic-data-specification[What is a semantic data specification?]].
