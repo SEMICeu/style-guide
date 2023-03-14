@@ -1,6 +1,6 @@
 = Terminological clarifications
 
-Before detailed definitions and explanations are provided, let's align on the idea that: [xref:arhitectural-clarifications.adoc#sec:on-data-specification-and-artefact-types["semantic data specifications comprise artefacts"]].
+Before detailed definitions and explanations are provided, let's align on the idea that xref:arhitectural-clarifications.adoc#sec:on-data-specification-and-artefact-types["semantic data specifications comprise artefacts"].
 
 *  There are xref:#sec:what-is-a-semantic-data-specification[_semantic data specifications_]. They comprise nothing else but a _collection of terms_, _structure and rule specifications_ on how to combine these terms and _(RE)use expectations_. In SEMIC context, semantic data specifications can be either:
 ** a _Core Vocabulary_, or
@@ -17,7 +17,7 @@ Before detailed definitions and explanations are provided, let's align on the id
 ** XML representation (+ XSD schema)
 ** ...
 
-Note, not all artefacts are treated in the current style-guide, but only the ones that are in scope of semantic interoperability layer in the EIF framework.
+Note that **not** all artefacts are treated in the current style-guide, but only the ones that are in scope of the Semantic interoperability layer of the EIF framework.
 
 [[sec:what-is-a-conceptual-model]]
 == What is a conceptual model (specification)?
