@@ -609,7 +609,7 @@ The visibility of all UML elements should be "public".
 
 *Description:*
 
-For semantic data specifications, accessibility to the information is not a concern. The sole concern is to precise the
+For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
 semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
 and the “+” symbol shall always be used next to each property. This symbol means “public” [xref:references.adoc#ref:19[19, sec 3.2.22]].
 
@@ -640,14 +640,14 @@ The controlled lists of values shall be modelled as enumerations and specified w
 *Description:*
 
 Controlled lists play an essential role in establishing interoperability standards. Management and publication of controlled
-lists are not part of this style guide. But the expectation, however, is that the controlled lists are published in accordance
+lists are not part of this style guide. However, the expectation is that the controlled lists are published in accordance
 with best practices and represented with the SKOS model using persistent identifiers. In such an approach, the controlled list is
 expressed as a `skos:ConceptScheme` and the specific values as `skos:Concept`(s). Also, such controlled lists are often developed,
-published and maintained stand-alone following their own lifecycle so they can be reused in other models.
+published and maintained stand-alone following their own lifecycle, so that they can be reused in other models.
 
 If the authors of the model intend to omit which controlled list shall be used, then a class attribute with the range “Code”
 or `skos:Concept` can be created to indicate that. This approach can be useful in situations when multiple (external) controlled
-lists can be used interchangeably. For example the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`
+lists can be used interchangeably. For example, the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`,
 without specifying from which controlled list.
 
 image::dcatcatalogue.png[]
