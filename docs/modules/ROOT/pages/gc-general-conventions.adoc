@@ -152,3 +152,20 @@ They are based on advice found in the literature and are the following:
 * Do not start a definition with a repetition of the name of the concept.
 Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:22[22, sec 4.2]].
+
+[[sec:cmc-r16]]
+== Usage compliance
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Usage compliance
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R6
+
+|*Statement:*
+
+Compliance with a semantic data specification is satisfied by appropriate usage of terms in accordance with its definition and constraints.
+|===
+
+Compliance checking with an application semantic data specification

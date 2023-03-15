@@ -774,3 +774,4 @@ just below the related parent class, the relations are horizontal, vertical or o
 
 image::core-person.png[]
 ****
+

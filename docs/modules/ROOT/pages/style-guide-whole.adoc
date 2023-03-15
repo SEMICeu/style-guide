@@ -1,7 +1,6 @@
 = The SEMIC Style Guide for Semantic Engineers
-// :doctype: manpage
-// :man-linkstyle: pass:[blue R < >]
 :doctype: book
+ifndef::ebook-format[:leveloffset: 1]
 :description: The SEMIC Style Guide for Semantic Engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
