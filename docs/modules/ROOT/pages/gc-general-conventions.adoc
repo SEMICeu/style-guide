@@ -153,7 +153,7 @@ They are based on advice found in the literature and are the following:
 Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:22[22, sec 4.2]].
 
-[[sec:cmc-r16]]
+[[sec:gc-r6]]
 == Usage compliance
 
 |===
@@ -165,7 +165,48 @@ we recommend avoiding any character encodings and using plain ASCII [xref:refere
 
 |*Statement:*
 
-Compliance with a semantic data specification is satisfied by appropriate usage of terms in accordance with its definition and constraints.
+Compliance with a semantic data specification is satisfied by appropriate usage of terms that is in accordance with definitions and constraints.
 |===
 
-Compliance checking with an application semantic data specification
+Compliance checking with an application semantic data specification shall be permissive. This means that what is not forbidden is permitted. When context requires more restrictions than this usually is a sign that an application profile needs to be established for a narrow(er) scenario.
+
+Technically, we envisage compliance checking limited to correct referencing of the concept URIs and respecting the cardinality constraints and value constraints in the case of properties. This fall within the scope of data shape definitions. Additional, more specific compliance requirements and constraints can be added as necessary.
+
+[[sec:gc-r7]]
+== Deontic modals
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Deontic modals
+
+|{set:cellbgcolor: #f5f8fc}
+*Acronym*: GC-R7
+
+|*Statement:*
+
+Indicators of deontic modalities for classes and properties do not have semantic or normative value, yet they may serve as editorial annotations.
+|===
+
+As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of teh data model.
+
+// what are they
+
+In the standardisation community a common practice is to indicate levels of "obligation" or "permission" for concepts in a semantic data specification. "Obligation" indicator signals whether a statement using a class or a property is required in an instantiation; while, "Permission" indicator signals whether a statement using a class or a property is allowed or forbidden in an instantiation.
+
+The common deontic indicator values are:
+
+* _mandatory_ signifying that a statement using a class or property is required,
+* _recommended_ signifying that a statement using a class or property is optional but recommended,
+* _optional_ signifying that a statement using a class or property is optional,
+* _forbidden_ signifying that a statement using a class or property is not permitted.
+
+// what alternatives are there
+
+There are ways to achieve the same effect as the these indicators through other means, however.
+The main instrument for properties is usage of cardinality constraints per property per class.
+
+For classes however, such indicators shall be avoided because the same class may be mandatory and optional in different instantiation scenariosfor the same application profile.
+
+For example in DCAT-AP the class dcat:Dataset is mandatory ...
+
+// what may have been implicationf on validation ...violation constraints ... move to the rule above
