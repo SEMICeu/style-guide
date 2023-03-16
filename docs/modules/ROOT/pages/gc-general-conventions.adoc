@@ -134,7 +134,7 @@ The concept definitions shall be elaborated consistently across the vocabulary.
 
 In practice, different styles of defining concepts can be noticed across a range of semantic data specifications.
 
-The SEMIC_ Principles for creating good definitions [xref:references.adoc#ref:25[25]] are a basis for writing definitions.
+The SEMIC Principles for creating good definitions [xref:references.adoc#ref:25[25]] are a basis for writing definitions.
 They are based on advice found in the literature and are the following:
 
 * Be concise but complete,
@@ -142,7 +142,7 @@ They are based on advice found in the literature and are the following:
 ** Make sure that every concept that occurs in the model is directly (or indirectly) defined
 * Describe only one term
 * Structure the definition in a standardised way:
-** Use the singular form to phrase the definition [xref rules on element names]
+** Use the singular form to phrase the definition [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4]]
 ** No negative definition by stating what the term is, and not by enumerating what it is NOT,
 ** Use only commonly understood abbreviations
 ** Use similar terminology for related definitions

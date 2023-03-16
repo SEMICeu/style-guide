@@ -133,7 +133,7 @@ All UML element names should be fit for URI generation with clear namespace orga
 *Description:*
 
 This convention aims at ensuring that URIs can be generated from UML element names and shall be treated as an extension to
-the terminology style conventions [xref general vocabulary naming style].
+the terminology style conventions [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4]].
 
 The element names are intended as human-readable denominations (called labels) and as machine-readable denominations
 (called identifiers).
@@ -442,13 +442,13 @@ named after the controlled list.
 In the first case, the attribute type “Code” shall be mapped to the skos:Concept class. The advantage of this approach is
 the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely which
 list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
-[xref UML tags rule], but that value will not be visible in the diagrams.
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]], but that value will not be visible in the diagrams.
 
 In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the Class
 and the Enumeration representing the controlled list, oriented from the class towards the enumeration. It denotes that the
 OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
 vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target
-role name and multiplicity shall be provided [xref controlled list enumeration rule].
+role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
 
 Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
 between a UML class element and a UML Datatype element. [xref:references.adoc#ref:19[19, sec 3.2.12]], [xref:references.adoc#ref:22[22, sec 4.5]],

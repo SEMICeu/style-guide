@@ -70,7 +70,7 @@ that each URI is of the following pattern:
 
 The `{Collection}` is an organisation-agnostic name for a collection of terms. Within a `{Collection}` the local names, or
 references, are being maintained according to the policy of the `{Collection}`. For SEMIC data specifications, the names
-are dependent on the naming conventions mentioned in this style guide rules [xref general naming styling + UML naming conventions].
+are dependent on the naming conventions mentioned in this style guide rules [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4] + xref:gc-conceptual-model-conventions.adoc#sec:cmc-r3[CMC-R3]].
 
 ****
 *Examples:*
