@@ -17,7 +17,7 @@ Before detailed definitions and explanations are provided, let's align on the id
 ** XML representation (+ XSD schema)
 ** ...
 
-Note that **not** all artefacts are treated in the current style-guide, but only the ones that are in scope of the _Semantic Interoperability_ layer of the European Interoperability Framework (EIF).
+Note that **not** all artefacts are treated in the current style-guide, but only the ones that are in scope of the _Semantic Interoperability_ layer of the European Interoperability Framework (EIF) [xref:references.adoc#ref:94[94]].
 
 [[sec:what-is-a-conceptual-model]]
 == What is a conceptual model (specification)?
