@@ -256,5 +256,5 @@ in its own definition. This can occur in situations such as the following:
 
 * (a) the definition of a class as the enumeration of several classes including itself;
 * (b) the appearance of a class within its `owl:equivalentClass` or `rdfs:subClassOf` axioms;
-* (c) the appearance of an object property in its `rdfs:domain` or range `rdfs:range` definitions; or
+* (c) the appearance of an object property in its `rdfs:domain` or `rdfs:range` definitions; or
 * (d) the appearance of a datatype property in its `rdfs:domain` definition.

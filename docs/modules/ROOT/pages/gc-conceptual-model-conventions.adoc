@@ -21,7 +21,7 @@ By applying this principle, we can achieve consistency among all derived artefac
 
 This implies:
 
-* Standard representation of the UML such as XMI or EAP database
+* Standard representation of the UML, such as XMI
 * Existence of a well-defined set of rules and conventions to transform UML model into other artefacts, which can be executed,
 as much as possible automatically, by a dedicated software tool or toolchain [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]]
 

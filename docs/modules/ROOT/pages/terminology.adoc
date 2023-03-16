@@ -10,8 +10,6 @@
 ** Resource Description Framework (RDF) is a World Wide Web Consortium (W3C) standard originally designed as a data model for metadata. It has come to be used as a general method for description and exchange of graph data. [https://en.wikipedia.org/wiki/Resource_Description_Framework]
 * RDFS [https://www.w3.org/TR/rdf-schema/]
 ** RDF Schema provides a data-modelling vocabulary for RDF data. RDF Schema is an extension of the basic RDF vocabulary. [https://www.w3.org/TR/rdf-schema/]
-* EA [https://sparxsystems.com/products/ea/]
-** Enterprise Architect ( EA ) from Sparx Systems is a complete CASE tool for systems analysis and design that covers the entire system development life cycle, i.e. from requirements specification to state analysis, model design, testing and maintenance, all using diagrams in  UML. [https://cs.wikipedia.org/wiki/Enterprise_Architect]
 * XML [https://www.w3.org/XML/]
 ** Extensible Markup Language (XML) is a markup language and file format for storing, transmitting, and reconstructing arbitrary data. It defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. [https://en.wikipedia.org/wiki/XML]
 * ASCII [https://en.wikipedia.org/wiki/ASCII]
