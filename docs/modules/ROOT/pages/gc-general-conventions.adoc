@@ -177,19 +177,21 @@ Compliance checking may involve multiple levels of severity. For example in the 
 The semantic data specifications may provide such severity levels. How it is realised in the conceptual model is open at the moment. The main place to provide such specifications is the data shape artefact. In the future we can return to this aspect and provide more guidance.
 
 [[sec:gc-r7]]
-== Deontic modals
+== Avoid deontic modals
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Deontic modals
+ *Title:* Avoid deontic modals
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R7
 
 |*Statement:*
 
-Indicators of deontic modalities for classes and properties do not have semantic or normative value, yet they may serve as editorial annotations.
+Indicators of deontic modalities for classes and properties do not have semantic or normative value. Still they may be used as editorial annotations.
 |===
+
+Deontic modalities indicate levels _obligation_, _permission_, _necessity_ and related concepts.
 
 As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of teh data model.
 
