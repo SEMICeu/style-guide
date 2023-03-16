@@ -444,8 +444,8 @@ the compactness of the diagrams, as fewer boxes appear in them.  The disadvantag
 list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]], but that value will not be visible in the diagrams.
 
-In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the Class
-and the Enumeration representing the controlled list, oriented from the class towards the enumeration. It denotes that the
+In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class
+and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the
 OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
 vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target
 role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
@@ -579,8 +579,8 @@ UML Dependency Connector type may be used if the meaning and usage conditions ar
 The UML Association connectors represent relations between source and target classes. The association connector cannot be used
 between other kinds of UML elements.
 
-The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the class towards the
-enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
+The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the
+Enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]]. The connector must have the direction “Source -> Target”.
 No other directions are acceptable.
 
@@ -623,23 +623,23 @@ image::cmc-r13.png[]
 
 
 [[sec:cmc-r14]]
-== Controlled lists as Enumerations
+== Controlled lists as enumerations
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Controlled lists as Enumerations
+ *Title:* Controlled lists as enumerations
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R14
 
 |*Statement:*
 
-The controlled lists of values shall be referred to as Enumerations and specified whenever possible.
+The controlled lists of values shall be referred to as UML Enumerations and specified whenever possible.
 |===
 
 *Description:*
 
-References to controlled lists shall be done via Enumeration elements. Content and lifecycle management of controlled lists shall be separated from the management of the semantic data specification.
+References to controlled lists shall be done via UML Enumeration elements. Content and lifecycle management of controlled lists shall be separated from the management of the semantic data specification.
 
 Controlled lists play an essential role in establishing interoperability standards. Management and publication of controlled lists are not part of this style guide.
 The expectation is that the controlled lists are published in accordance
@@ -652,18 +652,18 @@ When the authors of a conceptual model intend to omit which controlled list shal
 
 image::dcatcatalogue.png[]
 
-It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The enumeration shall be empty, i.e. not specifying any value, because
+It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e. not specifying any value, because
 the values are assumed to be maintained externally and only the reference is necessary.
 
-The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a classe and an enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO,
+The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO,
 `dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table published on the EU Vocabularies website).
 
 image::cmc-r14-1.png[]
 
-The name of the enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
+The name of the Enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
 type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
 
-If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].
+If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].
 
 ****
 *Examples:*
