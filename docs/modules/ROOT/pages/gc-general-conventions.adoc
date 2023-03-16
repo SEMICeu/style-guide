@@ -195,7 +195,7 @@ As a general recommendation, to use deontic indicators in the semantic data spec
 
 // what are they
 
-In the standardisation community a common practice is to indicate levels of "obligation" or "permission" for concepts in a semantic data specification. "Obligation" indicator signals whether a statement using a class or a property is required in an instantiation; while, "Permission" indicator signals whether a statement using a class or a property is allowed or forbidden in an instantiation.
+In the standardisation community a common practice is to indicate levels of _obligation_ or _permission_ for concepts in a semantic data specification. _Obligation_ indicator signals whether a statement using a class or a property is required in an instantiation; while, _Permission_ indicator signals whether a statement using a class or a property is allowed or forbidden in an instantiation.
 
 The common deontic indicator values are:
 
@@ -207,12 +207,12 @@ The common deontic indicator values are:
 // what alternatives are there
 
 There are ways to achieve the same effect as the these indicators through other means, however.
-For properties, the main instrument is employment of cardinality constraints (per property per class). To make a property "mandatory" set the minimum cardinality to one or more [1..\*],
-otherwise relax the minimum cardinality constraint to keep the property optional [0..*].
+For properties, the main instrument is employment of cardinality constraints (per property per class). To make a property _mandatory_ set the minimum cardinality to one or more `[1..\*]`,
+otherwise relax the minimum cardinality constraint to keep the property optional `[0..*]`.
 
-For classes, it is possible to mark a class as "abstract", which means that it cannot be directly instantiated, therefore achieving the effect of "forbidden". But for classes deontic indicators shall be avoided because a class may be mandatory and optional in different instantiation or exchange scenarios within the same application profile.
+For classes, it is possible to mark a class as _abstract_, which means that it cannot be directly instantiated, therefore achieving the effect of _forbidden_. But for classes deontic indicators shall be avoided because a class may be mandatory and optional in different instantiation or exchange scenarios within the same application profile.
 
-For example consider the DCAT-AP and two mandatory classes: dcat:Catalog and dcat:Dataset. When metadata of a catalogue (and its records) is exchanged, then both classes dcat:Catalog and dcat:Dataset must be instantiated; however when a single dataset metadata is being exchange then only dcat:Dataset instance shall be provided. Moreover, in the second scenario, providing an instance of dcat:Catalog will be counterproductive and possible leading to errors.
+For example consider the DCAT-AP and two mandatory classes: `dcat:Catalog` and `dcat:Dataset`. When metadata of a catalogue (and its records) is exchanged, then both classes `dcat:Catalog` and `dcat:Dataset` must be instantiated; however when a single dataset metadata is being exchange then only `dcat:Dataset` instance shall be provided. Moreover, in the second scenario, providing an instance of `dcat:Catalog` will be counterproductive and possible leading to errors.
 
 Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the technical interoperability layer (see EIF) and is (currently) out of scope of this styleguide, which aims primarily at addressing the semantic interoperability.
 

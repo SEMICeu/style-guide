@@ -765,7 +765,7 @@ It is recommended that the diagrams
 large [xref:references.adoc#ref:19[19, sec 3.3.2]].
 * Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:19[19, sec 3.2.5]].
 
-\[xref:references.adoc#ref:19[19, sec 3.1.11]], [xref:references.adoc#ref:20[20, sec on UML, Rule 13 - 23]]
+See also [xref:references.adoc#ref:19[19, sec 3.1.11]], [xref:references.adoc#ref:20[20, sec on UML, Rule 13 - 23]]
 ****
 *Examples:*
 
@@ -775,3 +775,37 @@ just below the related parent class, the relations are horizontal, vertical or o
 image::core-person.png[]
 ****
 
+[[sec:cmc-r17]]
+== Using stereotypes
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Using stereotypes
+
+|{set:cellbgcolor: #f5f8fc}
+*Identifier* CMC-R17
+
+|*Statement:*
+
+Stereotypes do not have semantic or normative value. They shall be avoided in the conceptual models unless a good motivation and a strong need is provided.
+
+|===
+
+*Description:*
+
+We strongly encourage semantic practitioners to void stereotypes of any normative or semantic value. One common usage of stereotypes is to provide deontic indicators. See [xref:gc-general-conventions.adoc#sec:gc-r7[GC-7 on Deontic modals]] where we explain why they are discouraged and what can be done instead.
+
+
+We acknowledge that stereotypes can be useful for editorial and dissemination purposes; to indicate a classification or grouping of a specific sort. Stereotypes can be used to support concerns specific to an implementation of the transformation toolchain. See the examples below.
+
+****
+*Examples:*
+
+Stereotypes can be used to indicate what content goes into various output file during the transformation process.
+
+Stereotypes can be used to visually group the class attributes. When applied on the relations (UMl connectors) stereotypes have the opposite effect: that of cluttering and decrease the diagram readability.
+
+image::cmc-r17-stereotypes.png[]
+
+
+****
