@@ -8,7 +8,7 @@
  *Title:* 5-star Linked Open Data
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: PC-R1
+*Identifier* PC-R1
 
 |*Statement:*
 
@@ -38,7 +38,7 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
  *Title:* Persistent URI policy
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: PC-R2
+*Identifier* PC-R2
 
 |*Statement:*
 
@@ -88,7 +88,7 @@ Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu
  *Title:* Version management
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: PC-R3
+*Identifier* PC-R3
 
 |*Statement:*
 
@@ -127,7 +127,7 @@ image::pc-r3.png[]
  *Title:* Artefact versioning
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: PC-R4
+*Identifier* PC-R4
 
 |*Statement:*
 
@@ -155,7 +155,7 @@ No version information shall be embedded into any artefact URIs unless it is a v
  *Title:* URI dereferencing
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: PC-R5
+*Identifier* PC-R5
 
 |*Statement:*
 
@@ -186,7 +186,7 @@ Further technical details can be found in “Best Practice Recipes for Publishin
  *Title:* Human-readable form
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: PC-R6
+*Identifier* PC-R6
 
 |*Statement:*
 

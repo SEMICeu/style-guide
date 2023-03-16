@@ -8,7 +8,7 @@
 *Title:* Data shape language choice
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: DSC-R1
+*Identifier* DSC-R1
 
 |*Statement:*
 
@@ -30,7 +30,7 @@ As the SHACL is a W3C standard, we strongly recommend using it.
  *Title:* Lose versus rigid constraints
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: DSC-R2
+*Identifier* DSC-R2
 
 |*Statement:*
 
@@ -67,7 +67,7 @@ are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)
  *Title:* Open and Closed world assumptions
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: DSC-R3
+*Identifier* DSC-R3
 
 |*Statement:*
 
@@ -102,7 +102,7 @@ are organised. As data shapes may be used to suggest how the data may be fragmen
  *Title:* On data shapes
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: DSC-R4
+*Identifier* DSC-R4
 
 |*Statement:*
 
@@ -134,7 +134,7 @@ does not allow for dereferencing separately OWL 2 or SHACL representations. Henc
  *Title:* Data Shape severity
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: DSC-R5
+*Identifier* DSC-R5
 
 |*Statement:*
 

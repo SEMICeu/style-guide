@@ -17,7 +17,7 @@ This style guide is intended primarily for semantic engineers, data architects a
 as editors or reusers of Core Vocabularies and Application Profiles.
 
 This style guide may constitute a good source of information and explanations for the European Commission’s officers, collaborating
-consultants, and stakeholders involved in interinstitutional standardisation.
+consultants, and stakeholders involved in inter-institutional standardisation.
 
 [[sec:scope]]
 == Scope

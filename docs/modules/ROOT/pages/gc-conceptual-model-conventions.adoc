@@ -8,7 +8,7 @@
  *Title:* UML as a single source of truth
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R1
+*Identifier* CMC-R1
 
 |*Statement*
 
@@ -36,7 +36,7 @@ It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specif
  *Title:* Fixed UML interpretation
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R2
+*Identifier* CMC-R2
 
 |*Statement:*
 
@@ -123,7 +123,7 @@ are based on two documents: UML convention specifications [xref:references.adoc#
  *Title:* On element names and URIs
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R3
+*Identifier* CMC-R3
 
 |*Statement:*
 
@@ -174,7 +174,7 @@ image::cmc-r3.png[]
  *Title:* Case sensitivity and charset
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R4
+*Identifier* CMC-R4
 
 |*Statement:*
 
@@ -216,7 +216,7 @@ image::cmc-r4.png[]
  *Title:* Namespaces and prefixes in element names
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R5
+*Identifier* CMC-R5
 
 |*Statement:*
 
@@ -268,7 +268,7 @@ When `cv` (short for Core Vocabularies) namespace name is declared bound to base
  *Title:* Rich annotations through tags
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R6
+*Identifier* CMC-R6
 
 |*Statement:*
 
@@ -305,7 +305,7 @@ image::cmc-r6.png[]
  *Title:* Explicit depiction of external dependencies
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R7
+*Identifier* CMC-R7
 
 |*Statement:*
 The UML diagrams should depict how the developed model relates to external (reused) models.
@@ -340,7 +340,7 @@ image::cmc-r7.png[]
  *Title:* Class inheritance
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R8
+*Identifier* CMC-R8
 
 |*Statement:*
 
@@ -373,7 +373,7 @@ image::cmc-r8.png[]
  *Title:* Abstract classes
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R9
+*Identifier* CMC-R9
 
 |*Statement:*
 
@@ -405,7 +405,7 @@ Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47
  *Title:* Attribute specifications
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R10
+*Identifier* CMC-R10
 
 |*Statement:*
 
@@ -482,7 +482,7 @@ image::cmc-r10-2.png[]
  *Title:* Multiplicity of attributes and connectors
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R11
+*Identifier* CMC-R11
 
 |*Statement:*
 
@@ -540,7 +540,7 @@ image::cmc-r11-2.png[]
  *Title:* Connector specification
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R12
+*Identifier* CMC-R12
 
 |*Statement:*
 
@@ -600,7 +600,7 @@ For example, if `Person` specialises a `foaf:Agent`.
  *Title:* All elements are "public"
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R13
+*Identifier* CMC-R13
 
 |*Statement:*
 
@@ -630,7 +630,7 @@ image::cmc-r13.png[]
  *Title:* Controlled lists as enumerations
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R14
+*Identifier* CMC-R14
 
 |*Statement:*
 
@@ -694,7 +694,7 @@ image::cmc-r14-3.png[]
  *Title:* Partition the model into packages
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R15
+*Identifier* CMC-R15
 
 |*Statement:*
 Use packages to logically organise the model.
@@ -729,7 +729,7 @@ image::data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMMAAAHiCAYAAABV+HiNAAAkO0l
  *Title:* Diagram readability
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: CMC-R16
+*Identifier* CMC-R16
 
 |*Statement:*
 

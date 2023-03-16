@@ -5,7 +5,7 @@
 *Title:* Short reference to the rule
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*:
+*Identifier*
 
 The acronym used to reference the rule in this document.
 |*Statement:*
