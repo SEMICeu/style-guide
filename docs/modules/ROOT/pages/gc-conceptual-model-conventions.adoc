@@ -384,11 +384,11 @@ Classes that are not intended for instantiation can be marked as abstract.
 
 When a (super-)class is created for capturing a level of abstraction in the domain knowledge, it may not always be suitable
 for instantiation. Editors may choose to mark such classes as abstract and to indicate that their subclasses shall be used in
-practice. In UML, this can be done via << abstract >> stereotype.
+practice. In UML, this can be done via << abstract >> stereotype [see xref:gc-conceptual-model-conventions.adoc#sec:cmc-r17[CMC-R17: Using stereotypes]].
 
-Doing so has no impact on the OWL 2 [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL).
-However, SHACL data shapes [xref:references.adoc#ref:44[44]] can be generated to express that no instances of this class shall
-not occur in the data. [xref:references.adoc#ref:19[19, sec 3.2.6]], [xref:references.adoc#ref:22[22, sec 4.4]]
+Doing so has no impact on the OWL 2 [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [xref:references.adoc#ref:44[44]] can be generated to express that no instances of this class shall not occur in the data.
+
+See [xref:references.adoc#ref:19[19, sec 3.2.6]], [xref:references.adoc#ref:22[22, sec 4.4]]
 
 ****
 *Examples:*
@@ -623,18 +623,18 @@ image::cmc-r13.png[]
 
 
 [[sec:cmc-r14]]
-== Controlled lists as enumerations
+== Controlled lists as Enumerations
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Controlled lists as enumerations
+ *Title:* Controlled lists as Enumerations
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R14
 
 |*Statement:*
 
-The controlled lists of values shall be referred to as enumerations and specified whenever possible.
+The controlled lists of values shall be referred to as Enumerations and specified whenever possible.
 |===
 
 *Description:*
@@ -652,32 +652,25 @@ When the authors of a conceptual model intend to omit which controlled list shal
 
 image::dcatcatalogue.png[]
 
-It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an enumeration shall be created representing the controlled list. The enumeration shall be empty, i.e. not specifying any value, because
-the values are maintained externally and only the reference is necessary.
+It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The enumeration shall be empty, i.e. not specifying any value, because
+the values are assumed to be maintained externally and only the reference is necessary.
 
-The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between classes and that enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example,  in EPO,
-`dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table
-published on the EU Vocabularies website).
+The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a classe and an enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO,
+`dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table published on the EU Vocabularies website).
 
 image::cmc-r14-1.png[]
 
 The name of the enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
-type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs
-slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil
-two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
+type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
 
-If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it,
-which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].
+If the controlled list is specific to the model then the author shall define the values of the UML enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].
 
 ****
 *Examples:*
 
-The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation, see in the
-image on top, while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service
-is intended for, see in the image below.
+The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation, see in the image on top, while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service is intended for, see in the image below.
 
-While the COFOG controlled list, owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes,
-the Core Public Organisation and CPSV-AP can still point to it independently.
+While the COFOG controlled list, owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes, the Core Public Organisation and CPSV-AP can still point to it independently.
 
 image::cmc-r14-2.png[]
 image::cmc-r14-3.png[]

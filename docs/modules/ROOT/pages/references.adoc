@@ -59,4 +59,6 @@
 . [[ref:90]] Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org
 . [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
 . [[ref:93]] Brickley, D., Guha, R.V. and McBride, B., (2014). RDF Schema 1.1. _W3C recommendation_, _25_, pp.2004-2014.
+. [[ref:94]] Directorate-General for Informatics (DIGIT), and European Commission, (2017). _COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS European Interoperability Framework – Implementation Strategy_, Pub. L. No. COM/2017/0134, COM:2017:134:FIN. Available at: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN.
+
 
