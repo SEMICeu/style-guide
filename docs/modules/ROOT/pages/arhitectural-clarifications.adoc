@@ -125,9 +125,9 @@ The table below summarises which artefacts shall be published for each type of d
 
 [cols="3,3,3,3,3,3"]
 |===
-||*Conceptual model (UML)*|*Ontology (OWL 2)*|*Data shape (SHACL)*|*Specification documentation (HTML)*|*Model diagram (PNG)*
+||*Conceptual model (UML)*|*Ontology (OWL{nbsp}2)*|*Data shape (SHACL)*|*Specification documentation (HTML)*|*Model diagram (PNG)*
 |*Core Vocabulary*|Mandatory|Mandatory|Optional (shall be permissive)|Mandatory|Optional
-|*Application Profile*|Mandatory|Optional(shall be an extension)|Mandatory|Mandatory|Optional
+|*Application Profile*|Mandatory|Optional (shall be an extension)|Mandatory|Mandatory|Optional
 |===
 
 [[sec:artefact-types]]
