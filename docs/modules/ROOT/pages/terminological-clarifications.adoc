@@ -79,12 +79,12 @@ This document will refer to data shape constraint specifications as “data shap
 == What is a specification document?
 
 *Definition* +
-A (data) specification (technical) document is created with the objective of making it simple for the end-user to (a) understand
-how a model encodes knowledge of a particular domain and (b) how this model can be technically adopted and used for a purpose.
+A data specification document is the human-readable representation of an ontology, a data shape, or a combination of both.
 
 *Description* +
-Technically, the data specification document is the human-readable representation of an ontology, a data shape, or a combination of both.
-We assume that the data specification is published in HTML format (optionally, others). See, for example, the Core Person specification
+A (data) specification (technical) document is created with the objective of making it simple for the end-user to understand (a)
+how a model encodes knowledge of a particular domain, and (b) how this model can be technically adopted and used for a purpose.
+We assume that the data specification documents are published in HTML format (optionally, others). See, for example, the Core Person specification
 [xref:references.adoc#ref:6[6]] or the CPSV-AP specification [xref:references.adoc#ref:7[7]].
 
 
