@@ -79,12 +79,12 @@ Experience shows that using a pivot representation as a single source of truth i
 
 UML conceptual models can be used as the _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[rule CMC-R1]]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
 
-With UML as the source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]].
+With UML as the single source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]].
 
 This approach facilitates consistent maintenance of semantic data specification interrelationship and solves the editorial synchronisation problem.
 
-Using UML by itself is not enough, however. An expressive conceptual model bears risks, however: first is the slippage of ambiguity, and second is the introduction of multiple interpretations. These risks are mitigated by adopting precise interpretation rules provided in this style guide [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]].
-Each of the above concerns will lead to different interpretations of the same UML constructs and therefore [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]] defines a minimal set of such interpretation rules (, which that can be further extended if necessary).
+However, using UML is not enough, by itself, as the risk of ambiguity and multiple  interpretations of the meaning of the UML model elements used in the conceptual model still exists. This risk is mitigated by adopting precise interpretation rules, such as the ones provided in this style guide [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]].
+The different concerns that each data specification is trying to address might lead to different interpretations of the same UML constructs. Therefore, [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]] defines only a minimal set of such interpretation rules (that can be further extended, if necessary).
 
 Also, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.
 
