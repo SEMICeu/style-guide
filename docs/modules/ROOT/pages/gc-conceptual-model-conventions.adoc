@@ -156,6 +156,12 @@ Note that, when the UML element name cannot be used to effectively denominate an
 may be used to express explicitly URIs, labels, notes and other types of annotations
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]].
 
+Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels
+that will be used for generation of specification documents in languages other than English.
+Country specific data specifications, which are meant to be used primarily at a national level, might decide to
+relax on this rule and permit the use of Unicode characters in the Element names, which will result in
+the generations of IRIs, instead of URIs [xref:references.adoc#ref:36[36]]. However, this is unnecessary,
+and strongly discouraged, in the SEMIC context.
 
 ****
 *Examples:*

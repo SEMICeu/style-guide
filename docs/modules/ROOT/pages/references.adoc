@@ -29,8 +29,9 @@
 . [[ref:33]] Wood, D., Cyganiak, R., & Lanthaler, M. (2014). RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation, W3C. Available at: http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/.
 . [[ref:34]] Bray, T., Sperberg-McQueen, M., Maler, E., Yergeau, F., & Paoli, J. (2008). Extensible Markup Language (XML) 1.0 (Fifth Edition). W3C Recommendation, W3C. Available at: http://www.w3.org/TR/2008/REC-xml-20081126/.
 . [[ref:35]] PwC EU Services. (2011). D3.1 - Process and Methodology for Core Vocabularies. Deliverable, ISA programme of the European Commission.
+. [[ref:36]] Duerst, M., Suignard, M. (2005) Internationalized Resource Identifiers (IRIs). Internet Engineering Task Force (IETF), RFC, 3987. Available at: https://www.rfc-editor.org/info/rfc3987
 . [[ref:38]] Layman, A., Bray, T., Thompson, H., Hollander, D., & Tobin, R. (2009). Namespaces in XML 1.0 (Third Edition). W3C Recommendation, W3C. Available at: https://www.w3.org/TR/REC-xml-names/
-. [[ref:39]] Saint-Andre, P., & Klensin, J. (2017). Uniform Resource Names (URNs). Internet Engineering Task Force (IETF), RFC, 8141.
+. [[ref:39]] Saint-Andre, P., & Klensin, J. (2017). Uniform Resource Names (URNs). Internet Engineering Task Force (IETF), RFC, 8141. Available at: https://www.rfc-editor.org/info/rfc8141
 . [[ref:40]] Beckett, D., Berners-Lee, T., Prud’hommeaux, E., & Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: https://www.w3.org/TR/turtle/#sec-iri
 . [[ref:43]] Motik, B., Patel-Schneider, P. F., Parsia, B., Bock, C., Fokoue, A., Haase, P., ... & Smith, M. (2009). OWL 2 web ontology language: Structural specification and functional-style syntax. W3C recommendation, 27(65), 159. Available at: http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/
 . [[ref:44]] H. Knublauch and D. Kontokostas. (2017) Shapes constraint language (SHACL). W3C recommendation, W3C, Available at:https://www.w3.org/TR/2017/REC-shacl20170720/
@@ -60,5 +61,4 @@
 . [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
 . [[ref:93]] Brickley, D., Guha, R.V. and McBride, B., (2014). RDF Schema 1.1. _W3C recommendation_, _25_, pp.2004-2014.
 . [[ref:94]] Directorate-General for Informatics (DIGIT), and European Commission, (2017). _COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS European Interoperability Framework – Implementation Strategy_, Pub. L. No. COM/2017/0134, COM:2017:134:FIN. Available at: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN.
-
 
