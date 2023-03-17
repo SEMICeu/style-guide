@@ -13,22 +13,19 @@ for public administrations.
 
 [[sec:target-audience]]
 == Target audience
-This style guide is intended primarily for semantic engineers, data architects and knowledge modelling specialists who are acting
-as editors or reusers of Core Vocabularies and Application Profiles.
+This style guide is intended primarily for semantic engineers, data architects and knowledge modelling specialists who are acting as editors or reusers of Core Vocabularies and Application Profiles.
 
-This style guide may constitute a good source of information and explanations for the European Commission’s officers, collaborating
-consultants, and stakeholders involved in interinstitutional standardisation.
+This style guide may constitute a good source of information and explanations for the European Commission’s officers, collaborating consultants, and stakeholders involved in inter-institutional standardisation.
 
 [[sec:scope]]
 == Scope
-The main purpose of this style guide is to provide guidance and decision-making support for the creators, maintainers and publishers
-of the Core Vocabularies and Application Profiles. The main part of this document is organised as a series of self-contained rules and
-guidelines.
+The main purpose of this style guide is to provide guidance and decision-making support for the creators, maintainers and publishers of the Core Vocabularies and Application Profiles. In the context of European Interoperability Framework (EIF) [xref:references.adoc#ref:94[94]] this styleguide primarily addresses the _Semantic Interoperability_ layer.
+The main part of this document is organised as a series of self-contained rules and guidelines.
 
-In the scope of this document addresses:
+In the scope of this document are included:
 
 * a terminological clarification for the significant SEMIC terms (including “reuse”, “ontology”, “Core Vocabulary”, etc.);
-* an architecture overview, which inter-connects various aspects and data specification types and how they are derived from a single
+* an architecture overview, which interconnects various aspects and data specification types and how they are derived from a single
 conceptual model;
 * the concept of “reuse” in great detail and pinpoints exactly what is permitted and what is not permitted in the SEMIC context;
 * recommendations on organising the conceptual model, the semantic artefacts, and the data shapes;

@@ -8,7 +8,7 @@
  *Title:* Formal language choice
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: SC-R1
+*Identifier* SC-R1
 
 |*Statement:*
 
@@ -67,7 +67,7 @@ Core Vocabularies have an RDF representation as OWL 2 Ontology. In the example b
  *Title:* Limited (OWL 2) expressivity
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: SC-R2
+*Identifier* SC-R2
 
 |*Statement:*
 
@@ -142,7 +142,7 @@ Or consider, the (shortened) Core Person vocabulary header:
  *Title:* Lexicalisation
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: SC-R3
+*Identifier* SC-R3
 
 |*Statement:*
 
@@ -210,7 +210,7 @@ For example in ePO, both lexicalisations are provided (even if this may be consi
  *Title:* Reasoning assumption
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: SC-R4
+*Identifier* SC-R4
 
 |*Statement:*
 
@@ -240,7 +240,7 @@ shall be left implicit.
  *Title:* Circular definitions
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: SC-R5
+*Identifier* SC-R5
 
 |*Statement:*
 
@@ -256,5 +256,5 @@ in its own definition. This can occur in situations such as the following:
 
 * (a) the definition of a class as the enumeration of several classes including itself;
 * (b) the appearance of a class within its `owl:equivalentClass` or `rdfs:subClassOf` axioms;
-* (c) the appearance of an object property in its `rdfs:domain` or range `rdfs:range` definitions; or
+* (c) the appearance of an object property in its `rdfs:domain` or `rdfs:range` definitions; or
 * (d) the appearance of a datatype property in its `rdfs:domain` definition.

@@ -8,7 +8,7 @@
  *Title:* Reuse existing concepts as much as possible
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: GC-R1
+*Identifier* GC-R1
 
 |*Statement:*
 
@@ -34,7 +34,7 @@ In order to achieve a common approach to reuse, apply the reuse guidelines as sp
  *Title:* For reuse, prefer maintained vocabularies
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: GC-R2
+*Identifier* GC-R2
 
 |*Statement:*
 Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
@@ -59,7 +59,7 @@ stages planned.
  *Title:* Concept reference and terms
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: GC-R3
+*Identifier* GC-R3
 
 |*Statement:*
 
@@ -89,7 +89,7 @@ term reusable, it should be published as part of a data specification.
  *Title:*  Vocabulary terminology style
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: GC-R4
+*Identifier* GC-R4
 
 |*Statement:*
 
@@ -123,7 +123,7 @@ or “opens/closes”. It should be done by changing the voice from active to pa
  *Title:* Vocabulary definition styling
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: GC-R5
+*Identifier* GC-R5
 
 |*Statement:*
 
@@ -134,7 +134,7 @@ The concept definitions shall be elaborated consistently across the vocabulary.
 
 In practice, different styles of defining concepts can be noticed across a range of semantic data specifications.
 
-The SEMIC_ Principles for creating good definitions [xref:references.adoc#ref:25[25]] are a basis for writing definitions.
+The SEMIC Principles for creating good definitions [xref:references.adoc#ref:25[25]] are a basis for writing definitions.
 They are based on advice found in the literature and are the following:
 
 * Be concise but complete,
@@ -142,7 +142,7 @@ They are based on advice found in the literature and are the following:
 ** Make sure that every concept that occurs in the model is directly (or indirectly) defined
 * Describe only one term
 * Structure the definition in a standardised way:
-** Use the singular form to phrase the definition [xref rules on element names]
+** Use the singular form to phrase the definition [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4]]
 ** No negative definition by stating what the term is, and not by enumerating what it is NOT,
 ** Use only commonly understood abbreviations
 ** Use similar terminology for related definitions
@@ -152,3 +152,70 @@ They are based on advice found in the literature and are the following:
 * Do not start a definition with a repetition of the name of the concept.
 Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:22[22, sec 4.2]].
+
+[[sec:gc-r6]]
+== Usage compliance
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Usage compliance
+
+|{set:cellbgcolor: #f5f8fc}
+*Identifier* GC-R6
+
+|*Statement:*
+
+Compliance with a semantic data specification is satisfied by appropriate usage of terms that is in accordance with definitions and constraints.
+|===
+
+Compliance checking with an application semantic data specification shall be permissive. This means that what is not forbidden is permitted. When context requires more restrictions than this usually is a sign that an application profile needs to be established for a narrow(er) scenario.
+
+Technically, we envisage compliance checking limited to correct referencing of the concept URIs and respecting the cardinality constraints and value constraints in the case of properties. This fall within the scope of data shape definitions. Additional, more specific compliance requirements and constraints can be added as necessary.
+
+Compliance checking may involve multiple levels of severity. For example in the SHACL specifications three levels are defined: _Violation_, _Warning_, _Info_. We assume by default the SHACL severity specifications unless other denotations system are provided (i.e. different labels and delimitation of severity). Also in absense of specifications, any unfulfilled compliance check is considered a _Violation_.
+
+The semantic data specifications may provide such severity levels. How it is realised in the conceptual model is open at the moment. The main place to provide such specifications is the data shape artefact. In the future we can return to this aspect and provide more guidance.
+
+[[sec:gc-r7]]
+== Avoid deontic modals
+
+|===
+|{set:cellbgcolor: #a8c6f7}
+ *Title:* Avoid deontic modals
+
+|{set:cellbgcolor: #f5f8fc}
+*Identifier* GC-R7
+
+|*Statement:*
+
+Indicators of deontic modalities for classes and properties do not have semantic or normative value. Still they may be used as editorial annotations.
+|===
+
+Deontic modalities indicate levels _obligation_, _permission_, _necessity_ and related concepts.
+
+As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of teh data model.
+
+// what are they
+
+In the standardisation community a common practice is to indicate levels of _obligation_ or _permission_ for concepts in a semantic data specification. _Obligation_ indicator signals whether a statement using a class or a property is required in an instantiation; while, _Permission_ indicator signals whether a statement using a class or a property is allowed or forbidden in an instantiation.
+
+The common deontic indicator values are:
+
+* _mandatory_ signifying that a statement using a class or property is required,
+* _recommended_ signifying that a statement using a class or property is optional but recommended,
+* _optional_ signifying that a statement using a class or property is optional,
+* _forbidden_ signifying that a statement using a class or property is not permitted.
+
+// what alternatives are there
+
+There are ways to achieve the same effect as the these indicators through other means, however.
+For properties, the main instrument is employment of cardinality constraints (per property per class). To make a property _mandatory_ set the minimum cardinality to one or more `[1..\*]`,
+otherwise relax the minimum cardinality constraint to keep the property optional `[0..*]`.
+
+For classes, it is possible to mark a class as _abstract_, which means that it cannot be directly instantiated, therefore achieving the effect of _forbidden_. But for classes deontic indicators shall be avoided because a class may be mandatory and optional in different instantiation or exchange scenarios within the same application profile.
+
+For example consider the DCAT-AP and two mandatory classes: `dcat:Catalog` and `dcat:Dataset`. When metadata of a catalogue (and its records) is exchanged, then both classes `dcat:Catalog` and `dcat:Dataset` must be instantiated; however when a single dataset metadata is being exchange then only `dcat:Dataset` instance shall be provided. Moreover, in the second scenario, providing an instance of `dcat:Catalog` will be counterproductive and possible leading to errors.
+
+Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the technical interoperability layer (see EIF) and is (currently) out of scope of this styleguide, which aims primarily at addressing the semantic interoperability.
+
+If semantic engineers are prefer or are compelled to employ deontic indicators, then they must be precisely defined and those definitions be published. No reliance on common sense understanding shall be assumed as the meaning of such deontic indicators may (and certainly) differ not only between readers of data specifications but also how they are meant in different data specifications.

@@ -1,5 +1,5 @@
-= The SEMIC style guide for semantic engineers
-:description: The SEMIC style guide for semantic engineers.
+= The SEMIC Style Guide for Semantic Engineers
+:description: The SEMIC Style Guide for Semantic Engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
 

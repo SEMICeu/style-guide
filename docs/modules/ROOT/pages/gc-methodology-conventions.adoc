@@ -8,7 +8,7 @@
 *Title:* Follow a methodology
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: MC-R1
+*Identifier* MC-R1
 
 |*Statement:*
 
@@ -53,7 +53,7 @@ edited, maintained, referred by the concepts)
  *Title:* On goals and scope
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: MC-R2
+*Identifier* MC-R2
 
 |*Statement:*
 
@@ -78,7 +78,7 @@ It shall be possible to determine the scope of a data specification from the use
  *Title:* On modularisation
 
 |{set:cellbgcolor: #f5f8fc}
-*Acronym*: MC-R3
+*Identifier* MC-R3
 
 |*Statement:*
 

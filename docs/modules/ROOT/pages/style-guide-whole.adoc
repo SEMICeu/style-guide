@@ -1,13 +1,11 @@
-= The SEMIC style guide for semantic engineers
-// :doctype: manpage
-// :man-linkstyle: pass:[blue R < >]
+= The SEMIC Style Guide for Semantic Engineers
 :doctype: book
-:description: The SEMIC style guide for semantic engineers.
+ifndef::ebook-format[:leveloffset: 1]
+:description: The SEMIC Style Guide for Semantic Engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
 :toc:
 :toclevels: 2
-:sectnums:
 :sectnums: 4
 :icons: font
 
