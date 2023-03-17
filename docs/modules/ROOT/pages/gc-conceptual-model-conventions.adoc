@@ -127,18 +127,18 @@ are based on two documents: UML convention specifications [xref:references.adoc#
 
 |*Statement:*
 
-All UML element names should be fit for URI generation with clear namespace organisation.
+All UML Element names should be fit for URI generation with clear namespace organisation.
 |===
 
 *Description:*
 
-This convention aims at ensuring that URIs can be generated from UML element names and shall be treated as an extension to
+This convention aims at ensuring that URIs can be generated from UML Element names and shall be treated as an extension to
 the terminology style conventions [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4]].
 
-The element names are intended as human-readable denominations (called labels) and as machine-readable denominations
+The Element names are intended as human-readable denominations (called labels) and as machine-readable denominations
 (called identifiers).
 
-This means that the element names
+This means that the Element names
 
 * serve as the primary source for generating URIs [xref:references.adoc#ref:32[32]] to ensure unambiguous machine-readable
 reference to a formal construct.
@@ -152,7 +152,7 @@ or accented character [xref:references.adoc#ref:35[35]]. Although underscores ar
 in some cases, misread as spaces. A formal definition of these restrictions is given in the XML specification document
 [xref:references.adoc#ref:34[34]].
 
-Note that, when the UML element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
+Note that, when the UML Element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
 may be used to express explicitly URIs, labels, notes and other types of annotations
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]].
 
@@ -187,7 +187,7 @@ image::cmc-r3.png[]
 
 |*Statement:*
 
-All UML element names are case sensitive and shall follow the CamelCase convention.
+All UML Element names are case sensitive and shall follow the CamelCase convention.
 |===
 
 *Description:*
@@ -196,7 +196,7 @@ The names begin with an upper or lower case letter (A–Z, a–z) for all terms 
 subsequent character positions. [xref:references.adoc#ref:22[22, sec 4.2]]
 
 Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
-therefore, UML element names shall be CamelCased [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]].
+therefore, UML Element names shall be CamelCased [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]].
 
 The names of
 
@@ -245,13 +245,13 @@ to by name and uniquely identifiable [xref:references.adoc#ref:39[39]].
 A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
 [xref:references.adoc#ref:40[40]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:38[38]]. Syntactically,
 they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
-namespace URIs and a default namespace applicable to unprefixed element names.
+namespace URIs and a default namespace applicable to unprefixed Element names.
 
-As the element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The element
-name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the element
+As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
+name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the Element
 name, after the colon, is the local segment. See [xref:references.adoc#ref:38[38]] for more info.
 
-In case the editor decides to omit to specify a prefix in the element name when a URI generation logic is devised, an implicit
+In case the editor decides to omit to specify a prefix in the Element name when a URI generation logic is devised, an implicit
 prefix can be assumed by default. The qualified names may be structured as follows:
 
 * prefix:localSegment
@@ -281,7 +281,7 @@ When `cv` (short for Core Vocabularies) namespace name is declared bound to base
 
 |*Statement:*
 
-Tags can be conveniently used for annotating the elements.
+Tags can be conveniently used for annotating the Elements.
 |===
 
 *Description:*
@@ -296,7 +296,7 @@ alone, then the URI needs to be specified elsewhere. This is one example of how 
 new tag, “uri”, and provide the concept URI as a value (see figure below).
 
 Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML
-elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
+Elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
 examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).
 
 ****
@@ -323,9 +323,9 @@ The UML diagrams should depict how the developed model relates to external (reus
 *Description:*
 
 UML does not support an import mechanism comparable to the one specified in OWL 2. Yet, the reuse of models is a highly encouraged
-practice. To accommodate such practice, the reused elements shall be created as in the original model and depicted in diagrams.
+practice. To accommodate such practice, the reused Elements shall be created as in the original model and depicted in diagrams.
 
-The external elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
+The external Elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
 meaning shall be preserved without changes to the labels, concept definitions or URIs.
 
 Reused classes shall be depicted in the UML diagrams. Reused properties shall be depicted in diagrams as connectors and
@@ -460,7 +460,7 @@ vocabulary. The connector must have a "Source->Target" direction. No other direc
 role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
 
 Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML class element and a UML Datatype element. [xref:references.adoc#ref:19[19, sec 3.2.12]], [xref:references.adoc#ref:22[22, sec 4.5]],
+between a UML Class element and a UML Datatype element. [xref:references.adoc#ref:19[19, sec 3.2.12]], [xref:references.adoc#ref:22[22, sec 4.5]],
 \ [xref:references.adoc#ref:22[22, sec 4.7]], [xref:references.adoc#ref:19[19, sec 3.2.2]]
 
 ****
@@ -586,7 +586,7 @@ UML defined multiple types of connectors. We recommend relying mainly on the UML
 UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.
 
 The UML Association connectors represent relations between source and target classes. The association connector cannot be used
-between other kinds of UML elements.
+between other kinds of UML Elements.
 
 The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the
 Enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
@@ -613,7 +613,7 @@ For example, if `Person` specialises a `foaf:Agent`.
 
 |*Statement:*
 
-The visibility of all UML elements should be "public".
+The visibility of all UML Elements should be "public".
 |===
 
 *Description:*
@@ -709,8 +709,8 @@ sub-domains.
 
 It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
 namespaces of connectors and attributes. And, it does not work in cases when an attribute or a connector is used multiple
-times in several packages. Namespace management is easier attained by using other methods such as using prefixes in element
-names or using element tags [xref:references.adoc#ref:22[22, sec 4.3]].
+times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
+names or using Element tags [xref:references.adoc#ref:22[22, sec 4.3]].
 ****
 *Examples:*
 
