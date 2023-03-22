@@ -138,10 +138,10 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>In the Semantic Web literature, the term “reuse” appears very often, encouraging the adoption of data specifications in new data
-specifications rather than redefining the same/similar concepts once again. The term “reuse” is usually considered in a broad sense,
+<p>In the Semantic Web literature, the term "reuse" appears very often, encouraging the adoption of data specifications in new data
+specifications rather than redefining the same/similar concepts once again. The term "reuse" is usually considered in a broad sense,
 and what it means in terms of specific implementations is often left underspecified. In this section, we aim to address this gap and
-provide a detailed account of what “reuse” means in the SEMIC context.</p>
+provide a detailed account of what "reuse" means in the SEMIC context.</p>
 </div>
 </div>
 </div>
@@ -149,7 +149,7 @@ provide a detailed account of what “reuse” means in the SEMIC context.</p>
 <h2 id="sec:what-is-the-reuse-of-a-specification"><a class="anchor" href="#sec:what-is-the-reuse-of-a-specification"></a>What is the reuse of an (ontology or data shape) specification?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Specification reuse is the act of sourcing an established specification into a new one (referred to as the “current” or “own”
+<p>Specification reuse is the act of sourcing an established specification into a new one (referred to as the "current" or "own"
 specification).</p>
 </div>
 <div class="paragraph">
@@ -162,7 +162,7 @@ specification).</p>
 </li>
 <li>
 <p>relying on URI dereferencing to get the formal definition of the ontology (this, however, does not work for the data shapes)
-In the SEMIC context, for the purpose of interoperability, we need to carefully constrain the meaning of the term “reuse” with a
+In the SEMIC context, for the purpose of interoperability, we need to carefully constrain the meaning of the term "reuse" with a
 fine-grained description on a construct-by-construct basis, and this is the aim of the remainder of this section.</p>
 </li>
 </ul>
@@ -414,7 +414,7 @@ already existing one. See property reuse recommendations below.</p></td>
 <p class="tableblock">* does not define a domain and range (in the original ontology) AND</p>
 <p class="tableblock">* its definition does NOT mention explicit restrictions on the domain and range (in the data shape)
 then it can be attached in UML diagrams (in the owned data specification) to any class either as a) a relation (pointing to
-another class) or b) as an attribute with a specific data type.</p>
+another class) or b) as an attribute with a specific datatype.</p>
 <p class="tableblock">If the reused property</p>
 <p class="tableblock">* defines a domain and range (in the original ontology) OR</p>
 <p class="tableblock">* its definition DOES mention explicit restrictions on the domain and range (in the data shape),
@@ -422,7 +422,7 @@ then it must be reflected in the UML diagrams (in the owned data specification) 
 specified classes.</p>
 <p class="tableblock">When UML is transformed into other representations, it is not recommended to represent the domain/range definitions in the
 lightweight ontology (OWL 2). Still, it may be reflected in data shape definitions (SHACL) as constraints.</p>
-<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
+<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the "reuse"
 intention of the data specification.</p>
 <p class="tableblock">In case of a broad reuse intention, as for the SEMIC Core Vocs, it is not recommended to include them in the lightweight
 ontology but better reflect them as constraints in SHACL, where necessary (i.e. optional properties can stay free of
@@ -557,7 +557,7 @@ to logical inconsistencies. Specifically, if you do that, then make sure that th
 <p class="tableblock">If the property is used across multiple classes multiple domain/range specifications can be deemed appropriate. This shall be
 handled with care. Multiple domain/range definitions in OWL 2 mean intersection (i.e. joined by logical AND) and not the union
 (i.e. joined by logical OR), as most use cases may require.</p>
-<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
+<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the "reuse"
 intention of the data specification.</p>
 <p class="tableblock">In case of a broad reuse intention, as for the SEMIC Core Vocabularies, it is not recommended to include them in the lightweight
 ontology but optionally reflect them as permissive constraints in SHACL.

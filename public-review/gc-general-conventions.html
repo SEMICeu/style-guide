@@ -160,19 +160,15 @@
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must
-be considered by reusing properties and classes from other vocabularies.
-As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
-Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
-In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on reuse</a>].</p>
+<p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must be considered by reusing properties and classes from other vocabularies. As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics. Conversely, no concepts shall be redefined unless they are significant variations of the existent ones. In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on the reuse</a>].</p>
 </div>
 <div class="paragraph">
-<p>\ [<a href="references.html#ref:18" class="xref page">18, section 4</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.1.2</a>]</p>
+<p>See more [<a href="references.html#ref:18" class="xref page">18, section 4</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.1.2</a>]</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:gc-r2"><a class="anchor" href="#sec:gc-r2"></a>For reuse, prefer maintained vocabularies</h2>
+<h2 id="sec:gc-r2"><a class="anchor" href="#sec:gc-r2"></a>Prefer maintained vocabularies</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -180,15 +176,14 @@ In order to achieve a common approach to reuse, apply the reuse guidelines as sp
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> For reuse, prefer maintained vocabularies</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Prefer maintained vocabularies</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> GC-R2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
-well maintained and governed.
+Quality of maintenance and governance should be reviewed before reuse. Reuse mostly vocabularies that are well maintained and governed.
 [<a href="references.html#ref:20" class="xref page">20</a>]</p></td>
 </tr>
 </tbody>
@@ -197,10 +192,7 @@ well maintained and governed.
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
-(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
-to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
-fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+<p>Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at (a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification, to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
 stages planned.</p>
 </div>
 </div>
@@ -238,7 +230,7 @@ subjective, and this definition is meant to be suggestive rather than restrictiv
 well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
 by examples and explanatory notes.
 So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
-identity of a concept’s “meaning”. URIs also enable referencing, an essential feature of meaning exchange (communication).
+identity of a concept’s "meaning". URIs also enable referencing, an essential feature of meaning exchange (communication).
 Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
 And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
 term reusable, it should be published as part of a data specification.</p>
@@ -295,16 +287,16 @@ names will be reflected in all artefacts and in the URIs.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
-“is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
+<p>Some practices suggest adding the prefix "has" for quality attributes like "weight", "height", etc. or the prefix or
+"is" for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
 to the name.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
-or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [<a href="references.html#ref:22" class="xref page">22, sec 3.7</a>]</p>
+<p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of "buys/sells"
+or "opens/closes". It should be done by changing the voice from active to passive, e.g. "plays/playedBy". [<a href="references.html#ref:22" class="xref page">22, sec 3.7</a>]</p>
 </li>
 </ul>
 </div>
@@ -396,7 +388,7 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:gc-r6"><a class="anchor" href="#sec:gc-r6"></a>Usage compliance</h2>
+<h2 id="sec:gc-r6"><a class="anchor" href="#sec:gc-r6"></a>Reuse compliance</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -404,7 +396,7 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Usage compliance</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Reuse compliance</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> GC-R6</p></td>
@@ -430,7 +422,7 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:gc-r7"><a class="anchor" href="#sec:gc-r7"></a>Avoid deontic modals</h2>
+<h2 id="sec:gc-r7"><a class="anchor" href="#sec:gc-r7"></a>Deontic modals</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>

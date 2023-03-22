@@ -161,13 +161,13 @@
 </div>
 <div class="paragraph">
 <p>There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the
-executable ones, the most well-known are SHACL [<a href="references.html#ref:66" class="xref page">66</a>] and ShEx [<a href="references.html#ref:67" class="xref page">67</a>].
+executable ones, the most well-known are SHACL [<a href="references.html#ref:44" class="xref page">44</a>] and ShEx [<a href="references.html#ref:67" class="xref page">67</a>].
 As the SHACL is a W3C standard, we strongly recommend using it.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>Lose versus rigid constraints</h2>
+<h2 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>Loose versus rigid constraints</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -175,15 +175,14 @@ As the SHACL is a W3C standard, we strongly recommend using it.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Lose versus rigid constraints</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Loose versus rigid constraints</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> DSC-R2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">In a Core Vocabulary, then the data shape constraints shall be as loose as possible, i.e. permissive, while in an Application
-Profile, the data shape constraints shall be as rigid as necessary, i.e. restrictive.</p></td>
+<p class="tableblock">In a Core Vocabulary, then the data shape constraints shall be as loose as possible, i.e., permissive, while in an Application Profile, the data shape constraints shall be as rigid as necessary, i.e. restrictive.</p></td>
 </tr>
 </tbody>
 </table>
@@ -191,18 +190,11 @@ Profile, the data shape constraints shall be as rigid as necessary, i.e. restric
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>The Core Vocabularies are intended for broad reuse and are concerned with establishing the concepts. This is addressed by
-the ontology artefact. Optionally it may be accompanied by a minimal set of data shape constraints expressing general domain
-limitations. For example, it may be already defined in the Core Vocabulary that a class cannot be instantiated without certain
-mandatory properties or that a declared property shall be used only with values from a pre-established controlled vocabulary.
-If a data shape artefact is provided, then any Application Profile reusing the Core Vocabulary shall not only import the
-ontology but the data shapes as well.</p>
+<p>The Core Vocabularies are intended for a broad reuse and are concerned with establishing the concepts. This is addressed by the ontology artefact. Optionally it may be accompanied by a minimal set of data shape constraints expressing general domain limitations. For example, it may be already defined in the Core Vocabulary that a class cannot be instantiated without certain mandatory properties or that a declared property shall be used only with values from a pre-established controlled vocabulary.
+If a data shape artefact is provided, then any Application Profile reusing the Core Vocabulary shall not only import the ontology, but the data shapes as well.</p>
 </div>
 <div class="paragraph">
-<p>The Application Profiles are usually intended for narrower use cases and mostly are concerned with setting restrictions
-on the way reused vocabulary ought to be used. It is a good practice to make such restrictions as restrictive as necessary
-but still provide space for variation as it usually occurs in practice. This is even more important when an Application Profile
-is conceived as reusable in other Application Profiles.</p>
+<p>The Application Profiles are usually intended for narrower use cases and mostly are concerned with setting restrictions on the way reused vocabulary ought to be used. It is a good practice to make such restrictions as restrictive as necessary but still provide space for variation as it typically occurs in practice. This is even more important when an Application Profile is conceived as reusable in other Application Profiles.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -210,8 +202,7 @@ is conceived as reusable in other Application Profiles.</p>
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>Consider DCAT-AP, for example. It is an Application Profile on top of the DCAT vocabulary, but other more specific Application Profiles
-are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)</p>
+<p>Consider DCAT-AP, for example. It is an Application Profile on top of the DCAT vocabulary, but other more specific Application Profiles are still created on top of it (e.g., DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)</p>
 </div>
 </div>
 </div>
@@ -248,23 +239,18 @@ continually evolving and distributed data (that is more in line with reality), t
 and we say that operating is under the <em>open-world assumption</em>.</p>
 </div>
 <div class="paragraph">
-<p>Under the closed-world assumption, it is presumed that a true statement is also known to be true. Therefore, conversely,
-what is not currently known to be true, is false [<a href="references.html#ref:68" class="xref page">68</a>]. The opposite of the closed-world assumption
-is the open-world assumption stating that lack of knowledge does not imply falsity. The truth value of a statement may be
-true irrespective of whether or not it is known to be true.</p>
+<p>Under the closed-world assumption, it is presumed that a true statement is also known to be true. Therefore, conversely, what is not currently known to be true, is false [<a href="references.html#ref:68" class="xref page">68</a>]. The opposite of the closed-world assumption is the open-world assumption stating that lack of knowledge does not imply falsity. The truth value of a statement may be true despite whether or not it is known to be true.</p>
 </div>
 <div class="paragraph">
-<p>This means that when validating, the data must be considered complete to assess whether it fulfils the imposed constraints
-or recommended shapes. Therefore, everything that is not known to be true must be considered false.</p>
+<p>This means that when validating, the data must be considered complete to assess whether it fulfils the imposed constraints or recommended shapes. Therefore, everything that is not known to be true must be considered false.</p>
 </div>
 <div class="paragraph">
-<p>This may have an impact, especially for larger vocabularies (such as the eProcurement ontology), on how the data shapes
-are organised. As data shapes may be used to suggest how the data may be fragmented and how it shall not.</p>
+<p>This may have an impact, especially for larger vocabularies (such as the eProcurement ontology), on how the data shapes are organised. As data shapes may be used to suggest how the data may be fragmented and how it shall not.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>On data shapes</h2>
+<h2 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>Shape definitions</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -272,15 +258,14 @@ are organised. As data shapes may be used to suggest how the data may be fragmen
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> On data shapes</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Shape definitions</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> DSC-R4</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>, while the property constraints shall be embedded (contextualised)
-within node shapes rather than being defined as freestanding.</p></td>
+<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>, while the property constraints shall be embedded (contextualised) within node shapes rather than being defined as freestanding.</p></td>
 </tr>
 </tbody>
 </table>
@@ -288,25 +273,19 @@ within node shapes rather than being defined as freestanding.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property
-shape for each UML attribute and UML Connector of that class. if the property shapes are defined within the node shapes
-(rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
-the resulting constraint definitions are organically integrated and the maintenance costs are decreased.</p>
+<p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property shape for each UML attribute and UML Connector of that class. If the property shapes are defined within the node shapes (rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
+the resulting constraint definitions are organically integrated, and the maintenance costs are decreased.</p>
 </div>
 <div class="paragraph">
 <p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.</p>
 </div>
 <div class="paragraph">
-<p>In some communities, the URIs used in the OWL 2 specifications are reused in SHACL. The class definitions are extended as node
-shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the
-use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts.
-The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach
-does not allow for dereferencing separately OWL 2 or SHACL representations. Hence, it is recommended to avoid such practice.</p>
+<p>In some communities, the URIs used in the OWL 2 specifications are reused in SHACL. The class definitions are extended as node shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts. The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach does not allow for dereferencing separately OWL 2 or SHACL representations. Hence, it is recommended to avoid such practice.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>Data Shape severity</h2>
+<h2 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>Data shape severity</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -314,15 +293,14 @@ does not allow for dereferencing separately OWL 2 or SHACL representations. Henc
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Data Shape severity</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Data shape severity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> DSC-R5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">It is recommended to use constraint severity for distinguishing critical violations from non-critical recommendation warnings
-and from nice-to-have information.</p></td>
+<p class="tableblock">It is recommended to use constraint severity for distinguishing critical violations from non-critical recommendation warnings and from nice-to-have information.</p></td>
 </tr>
 </tbody>
 </table>
@@ -330,8 +308,7 @@ and from nice-to-have information.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Data shapes can be assigned a level of severity. The specific values of severity have no impact on the validation but may
-be used by user interface tools to categorise validation results. The severity levels are:</p>
+<p>Data shapes can be assigned a level of severity. The specific values of severity have no impact on the validation but may be used by user interface tools to categorise validation results. The severity levels are:</p>
 </div>
 <div class="ulist">
 <ul>

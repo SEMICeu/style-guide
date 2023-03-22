@@ -160,7 +160,7 @@
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [<a href="references.html#ref:93" class="xref page">93</a>]  and OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between data type and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.</p>
+<p>In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [<a href="references.html#ref:93" class="xref page">93</a>]  and OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between datatype and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.</p>
 </div>
 <div class="paragraph">
 <p>We recommend using only a limited set of expression types available in OWL 2 language [<a href="#sec:sc-r2">SC-R2</a>].</p>
@@ -234,7 +234,7 @@
 <p>OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept <em>lightweight</em>, and no advanced logical definitions are necessary, which would make the ontology <em>heavyweight</em>. Bulletin of the Association for Information Science and Technology, dedicated an <a href="https://asistdl.onlinelibrary.wiley.com/toc/23739223/2015/41/4">entire section</a> on the charm of weak semantics in the linked data world. Backer &amp; Sutton explain well how lightweight semantics supports interoperability and reuse [<a href="references.html#ref:96" class="xref page">96</a>].</p>
 </div>
 <div class="paragraph">
-<p>It is recommended that the formal ontology definition be limited to the following types of expressions:</p>
+<p>We recommend the formal ontology definition be limited to the following types of expressions:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -249,6 +249,9 @@
 </li>
 <li>
 <p>subclass relations (<code>rdfs:subClassOf</code>)</p>
+</li>
+<li>
+<p>subproperty relations (<code>rdfs:subPropertyOf</code>)</p>
 </li>
 <li>
 <p>annotations</p>
@@ -288,7 +291,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>The formal ontology shall not include other types of statements unless justified as absolutely necessary.</p>
+<p>The formal ontology shall not include other types of statements unless justified as necessary.</p>
 </div>
 <div class="paragraph">
 <p>No expressions of (a) property domain specification (<code>rdfs:domain</code>) and (b) property range specification (<code>rdfs:range</code>) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.</p>
@@ -368,7 +371,7 @@
 in practice: RDFS or SKOS lexicalisation. However, other types can be considered as well (e.g. [<a href="references.html#ref:64" class="xref page">64</a>], [<a href="references.html#ref:65" class="xref page">65</a>], etc.).</p>
 </div>
 <div class="paragraph">
-<p>RDFS allows for a very simple lexicalisation and annotation:</p>
+<p>RDFS allows for a simple lexicalisation and annotation:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -377,7 +380,7 @@ in practice: RDFS or SKOS lexicalisation. However, other types can be considered
 <div class="ulist">
 <ul>
 <li>
-<p><code>rdfs:label</code> may be used to provide a human-readable version of a resource&#8217;s name</p>
+<p><code>rdfs:label</code> may be used to provide a human-readable version of a resource&#8217;s name.</p>
 </li>
 </ul>
 </div>
@@ -408,8 +411,7 @@ in practice: RDFS or SKOS lexicalisation. However, other types can be considered
 organisation system. These labels provide the strongest clues as to the meaning of a SKOS concept.</p>
 </li>
 <li>
-<p><code>skos:hiddenLabel</code> has a more technical nature and may be useful when a user is interacting with a knowledge organisation
-system via a text-based search function. The user may, for example, enter misspelled words when trying to find a relevant concept.</p>
+<p><code>skos:hiddenLabel</code> has a more technical nature and may be useful when a user is interacting with a knowledge organisation system via a text-based search function. The user may, for example, enter misspelled words when trying to find a relevant concept.</p>
 </li>
 </ul>
 </div>
@@ -447,8 +449,7 @@ work still to be done, or warnings in the event that future editorial changes mi
 </ul>
 </div>
 <div class="paragraph">
-<p>It is recommended that one or the other is used. Both can be used at the same time without any consequence to semantics,
-but this will introduce redundancy and possibly a maintenance burden.</p>
+<p>We recommend one, or the other is used. Both can be used at the same time without any consequence of semantics, but this will introduce redundancy and possibly a maintenance burden.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -505,19 +506,13 @@ but this will introduce redundancy and possibly a maintenance burden.</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>OWL 2 constructs correspond to Description Logic (DL) concepts (<em>direct semantics</em>). Logic, besides expressing knowledge in
-a knowledge base, can be used to perform automated reasoning, i.e.  inferring new knowledge based on premises and reasoning
-rules. The inference is also possible with RDF-based semantics, which is based on translating the axioms into directed graphs.
-The latter is used for SPARQL entailments and SHACL data shape rules.</p>
+<p>OWL 2 constructs correspond to Description Logic (DL) concepts (<em>direct semantics</em>). Logic, besides expressing knowledge in a knowledge base, can be used to perform automated reasoning, i.e.,  inferring new knowledge based on premises and reasoning rules. The inference is also possible with RDF-based semantics, based on translating the axioms into directed graphs. The latter is used for SPARQL entailments and SHACL data shape rules.</p>
 </div>
 <div class="paragraph">
-<p>Automated reasoning is not consistently available across environments: small differences in the usage context or reasoning
-patterns may lead to different outcomes.</p>
+<p>Automated reasoning is not consistently available across environments: small differences in the usage context or reasoning patterns may lead to different outcomes.</p>
 </div>
 <div class="paragraph">
-<p>Therefore, the editors of interoperable semantic data specifications are strongly recommended to NOT rely on such capabilities.
-Thus, in practice, the model shall allow for an explicit statement of the intended knowledge, and as little as possible
-shall be left implicit.</p>
+<p>Therefore, the editors of interoperable semantic data specifications are strongly recommended to NOT rely on such capabilities. Thus, in practice, the model shall allow for an explicit statement of the intended knowledge, and as little as possible shall be left implicit.</p>
 </div>
 </div>
 </div>
@@ -545,11 +540,10 @@ shall be left implicit.</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Circular definition, i.e. definitions that use the element they define are incorrect.</p>
+<p>Circular definition, i.e., definitions that use the element they define are incorrect.</p>
 </div>
 <div class="paragraph">
-<p>For instance, we say that an ontology element (a class, an object property or a datatype property) is circular when used
-in its own definition. This can occur in situations such as the following:</p>
+<p>For instance, we say that an ontology element (a class, an object property or a datatype property) is circular when used in its own definition. This can occur in situations such as the following:</p>
 </div>
 <div class="ulist">
 <ul>

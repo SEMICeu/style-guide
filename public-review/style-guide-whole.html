@@ -167,8 +167,8 @@
 <li><a href="#sec:separation-of-concerns-in-SEMIC">3.4. Separation of concerns in SEMIC</a></li>
 <li><a href="#_editorial_synchronisation_problem">3.5. Editorial synchronisation problem</a></li>
 <li><a href="#sec:transformation">3.6. Transformation of the conceptual model</a></li>
-<li><a href="#sec:on-data-specification-and-artefact-types">3.7. On data specification and artefact types</a></li>
-<li><a href="#sec:on-technical-concerns-and-artefacts">3.8. On technical artefacts and concerns</a></li>
+<li><a href="#sec:on-data-specification-and-artefact-types">3.7. Data specification and artefact types</a></li>
+<li><a href="#sec:on-technical-concerns-and-artefacts">3.8. Technical artefacts and concerns</a></li>
 </ul>
 </li>
 <li><a href="#_clarifications_on_reuse">4. Clarifications on "reuse"</a>
@@ -185,33 +185,34 @@
 <li><a href="#_general_conventions">5. General conventions</a>
 <ul class="sectlevel2">
 <li><a href="#sec:gc-r1">5.1. Reuse existing concepts as much as possible</a></li>
-<li><a href="#sec:gc-r2">5.2. For reuse, prefer maintained vocabularies</a></li>
+<li><a href="#sec:gc-r2">5.2. Prefer maintained vocabularies</a></li>
 <li><a href="#sec:gc-r3">5.3. Concept reference and terms</a></li>
 <li><a href="#sec:gc-r4">5.4. Vocabulary terminology style</a></li>
 <li><a href="#sec:gc-r5">5.5. Vocabulary definition styling</a></li>
-<li><a href="#sec:gc-r6">5.6. Usage compliance</a></li>
-<li><a href="#sec:gc-r7">5.7. Avoid deontic modals</a></li>
+<li><a href="#sec:gc-r6">5.6. Reuse compliance</a></li>
+<li><a href="#sec:gc-r7">5.7. Deontic modals</a></li>
 </ul>
 </li>
 <li><a href="#_conceptual_model_conventions_uml">6. Conceptual model conventions (UML)</a>
 <ul class="sectlevel2">
-<li><a href="#sec:cmc-r1">6.1. UML as a single source of truth</a></li>
+<li><a href="#sec:cmc-r1">6.1. Conceptual model as single source of truth</a></li>
 <li><a href="#sec:cmc-r2">6.2. Fixed UML interpretation</a></li>
-<li><a href="#sec:cmc-r3">6.3. On element names and URIs</a></li>
+<li><a href="#sec:cmc-r3">6.3. Element names and URIs</a></li>
 <li><a href="#sec:cmc-r4">6.4. Case sensitivity and charset</a></li>
 <li><a href="#sec:cmc-r5">6.5. Namespaces and prefixes in element names</a></li>
 <li><a href="#sec:cmc-r6">6.6. Rich annotations through tags</a></li>
 <li><a href="#sec:cmc-r7">6.7. Explicit depiction of external dependencies</a></li>
 <li><a href="#sec:cmc-r8">6.8. Class inheritance</a></li>
 <li><a href="#sec:cmc-r9">6.9. Abstract classes</a></li>
-<li><a href="#sec:cmc-r10">6.10. Attribute specifications</a></li>
+<li><a href="#sec:cmc-r10">6.10. Attribute definition</a></li>
 <li><a href="#sec:cmc-r11">6.11. Multiplicity of attributes and connectors</a></li>
-<li><a href="#sec:cmc-r12">6.12. Connector specification</a></li>
+<li><a href="#sec:cmc-r12">6.12. Connector definition</a></li>
 <li><a href="#sec:cmc-r13">6.13. All elements are "public"</a></li>
-<li><a href="#sec:cmc-r14">6.14. Controlled lists as enumerations</a></li>
+<li><a href="#sec:cmc-r14">6.14. Controlled lists as Enumerations</a></li>
 <li><a href="#sec:cmc-r15">6.15. Partition the model into packages</a></li>
 <li><a href="#sec:cmc-r16">6.16. Diagram readability</a></li>
-<li><a href="#sec:cmc-r17">6.17. Avoid using stereotypes</a></li>
+<li><a href="#sec:cmc-r17">6.17. Element stereotypes</a></li>
+<li><a href="#sec:cmc-r18">6.18. Datatype definition and usage</a></li>
 </ul>
 </li>
 <li><a href="#_semantic_conventions">7. Semantic conventions</a>
@@ -226,10 +227,10 @@
 <li><a href="#_data_shape_conventions">8. Data shape conventions</a>
 <ul class="sectlevel2">
 <li><a href="#sec:dsc-r1">8.1. Data shape language choice</a></li>
-<li><a href="#sec:dsc-r2">8.2. Lose versus rigid constraints</a></li>
+<li><a href="#sec:dsc-r2">8.2. Loose versus rigid constraints</a></li>
 <li><a href="#sec:dsc-r3">8.3. Open and Closed world assumptions</a></li>
-<li><a href="#sec:dsc-r4">8.4. On data shapes</a></li>
-<li><a href="#sec:dsc-r5">8.5. Data Shape severity</a></li>
+<li><a href="#sec:dsc-r4">8.4. Shape definitions</a></li>
+<li><a href="#sec:dsc-r5">8.5. Data shape severity</a></li>
 </ul>
 </li>
 <li><a href="#_methodology_conventions">9. Methodology conventions</a>
@@ -249,12 +250,14 @@
 <li><a href="#sec:pc-r6">10.6. Human-readable form</a></li>
 </ul>
 </li>
-<li><a href="#_rule_template">11. Rule template</a>
+<li><a href="#_rule_template">11. Rule template</a></li>
+<li><a href="#_terminology">12. Terminology</a>
 <ul class="sectlevel2">
-<li><a href="#_terminology">11.1. Terminology</a></li>
+<li><a href="#_common_terms_and_acronyms">12.1. Common terms and acronyms</a></li>
+<li><a href="#sec:terminology-comparison">12.2. UML, OWL and XSD terminology comparison</a></li>
 </ul>
 </li>
-<li><a href="#_references">12. References</a></li>
+<li><a href="#_references">13. References</a></li>
 </ul>
 </div>
 <div class="sect1">
@@ -292,14 +295,14 @@ The main part of this document is organised as a series of self-contained rules 
 <div class="ulist">
 <ul>
 <li>
-<p>a terminological clarification for the significant SEMIC terms (including “reuse”, “ontology”, “Core Vocabulary”, etc.);</p>
+<p>a terminological clarification for the significant SEMIC terms (including "reuse", "ontology", "Core Vocabulary", etc.);</p>
 </li>
 <li>
 <p>an architecture overview, which interconnects various aspects and data specification types and how they are derived from a single
 conceptual model;</p>
 </li>
 <li>
-<p>the concept of “reuse” in great detail and pinpoints exactly what is permitted and what is not permitted in the SEMIC context;</p>
+<p>the concept of "reuse" in great detail and pinpoints exactly what is permitted and what is not permitted in the SEMIC context;</p>
 </li>
 <li>
 <p>recommendations on organising the conceptual model, the semantic artefacts, and the data shapes;</p>
@@ -607,14 +610,14 @@ entity in a context-neutral fashion. Its main objective is to provide terms to b
 </div>
 <div class="paragraph">
 <p><strong>Broad context</strong> (on vocabularies)<br>
-On the Semantic Web, vocabularies define the concepts and relationships (also referred to as “terms”) used to describe and represent
+On the Semantic Web, vocabularies define the concepts and relationships (also referred to as "terms") used to describe and represent
 an area of concern. Vocabularies are used to classify the terms that can be used in a particular application, characterise possible
 relationships, and define possible constraints on using those terms. In practice, vocabularies can be very complex (with several
 thousands of terms) or very simple (describing one or two concepts only) [<a href="references.html#ref:9" class="xref page">9</a>].</p>
 </div>
 <div class="paragraph">
-<p>There is no clear division between what is referred to as “vocabularies” and “ontologies”. The trend is to use the word “ontology”
-for a more complex and possibly quite formal collection of terms, whereas “vocabulary” is used when such strict formalism is not
+<p>There is no clear division between what is referred to as "vocabularies" and "ontologies". The trend is to use the word "ontology"
+for a more complex and possibly quite formal collection of terms, whereas "vocabulary" is used when such strict formalism is not
 necessarily used or used only in a very loose sense [<a href="references.html#ref:9" class="xref page">9</a>].</p>
 </div>
 <div class="paragraph">
@@ -646,8 +649,8 @@ is expressed in a condensed, comprehensive data specification document.</p>
 <p>The qualifications <em>lightweight</em> and <em>permissive</em> are used to better emphasise the intention <em>to be reused in the broadest possible context</em>. More precise boundaries are defined further in this document.</p>
 </div>
 <div class="paragraph">
-<p><strong>NOTE:</strong> “Vocabularies”, in general, are not the same as “controlled vocabularies”, as they usually refer to SKOS artefacts. However,
-in other contexts (similar to SEMIC), a Core Vocabulary might often be simply denoted as “vocabulary”.</p>
+<p><strong>NOTE:</strong> "Vocabularies", in general, are not the same as "controlled vocabularies", as they usually refer to SKOS artefacts. However,
+in other contexts (similar to SEMIC), a Core Vocabulary might often be simply denoted as "vocabulary".</p>
 </div>
 </div>
 <div class="sect2">
@@ -796,8 +799,8 @@ the adoption and correct usage of the AP in implementations.</p>
 <p>The successful application of an ontology or the development of an ontology-based system depends not merely on building a good ontology but also on fitting this into an appropriate development process and implementation into an information system.</p>
 </div>
 <div class="paragraph">
-<p>Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, <em>“All models are wrong, but some are useful”</em>, and what a model is useful for depends on what concern it is primarily addressing.
-On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [<a href="references.html#ref:12" class="xref page">12</a>]. For example, the concept of “location” can be described by domain experts (in a domain model) in a way that is not isomorphic to how the “location” class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).</p>
+<p>Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, <em>"All models are wrong, but some are useful"</em>, and what a model is useful for depends on what concern it is primarily addressing.
+On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [<a href="references.html#ref:12" class="xref page">12</a>]. For example, the concept of "location" can be described by domain experts (in a domain model) in a way that is not isomorphic to how the "location" class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).</p>
 </div>
 <div class="paragraph">
 <p>One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture (MDA) [<a href="references.html#ref:13" class="xref page">13</a>] which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.</p>
@@ -934,7 +937,7 @@ as model2owl [<a href="references.html#ref:16" class="xref page">16</a>] or OSLO
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:on-data-specification-and-artefact-types"><a class="anchor" href="#sec:on-data-specification-and-artefact-types"></a>3.7. On data specification and artefact types</h3>
+<h3 id="sec:on-data-specification-and-artefact-types"><a class="anchor" href="#sec:on-data-specification-and-artefact-types"></a>3.7. Data specification and artefact types</h3>
 <div class="paragraph">
 <p>For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
@@ -1041,14 +1044,14 @@ maintenance and publication:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The data specification’s artefacts are not independent but tightly interrelated and transformed from one form into another one.</p>
+<p>The data specification&#8217;s artefacts are not independent but tightly interrelated and transformed from one form into another one.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:on-technical-concerns-and-artefacts"><a class="anchor" href="#sec:on-technical-concerns-and-artefacts"></a>3.8. On technical artefacts and concerns</h3>
+<h3 id="sec:on-technical-concerns-and-artefacts"><a class="anchor" href="#sec:on-technical-concerns-and-artefacts"></a>3.8. Technical artefacts and concerns</h3>
 <div class="paragraph">
-<p>It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two. The best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from <a href="references.html#ref:97" class="xref page">1975</a> of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in <a href="references.html#ref:97" class="xref page">ANSI</a> .</p>
+<p>It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from <a href="references.html#ref:97" class="xref page">1975</a> of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in <a href="references.html#ref:97" class="xref page">ANSI</a>.</p>
 </div>
 <div class="paragraph">
 <p>EIF [<a href="references.html#ref:94" class="xref page">94</a>] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:</p>
@@ -1121,15 +1124,15 @@ So, just like in the case of XML the reliance may be on good practices and alter
 <h2 id="_clarifications_on_reuse"><a class="anchor" href="#_clarifications_on_reuse"></a>4. Clarifications on "reuse"</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In the Semantic Web literature, the term “reuse” appears very often, encouraging the adoption of data specifications in new data
-specifications rather than redefining the same/similar concepts once again. The term “reuse” is usually considered in a broad sense,
+<p>In the Semantic Web literature, the term "reuse" appears very often, encouraging the adoption of data specifications in new data
+specifications rather than redefining the same/similar concepts once again. The term "reuse" is usually considered in a broad sense,
 and what it means in terms of specific implementations is often left underspecified. In this section, we aim to address this gap and
-provide a detailed account of what “reuse” means in the SEMIC context.</p>
+provide a detailed account of what "reuse" means in the SEMIC context.</p>
 </div>
 <div class="sect2">
 <h3 id="sec:what-is-the-reuse-of-a-specification"><a class="anchor" href="#sec:what-is-the-reuse-of-a-specification"></a>4.1. What is the reuse of an (ontology or data shape) specification?</h3>
 <div class="paragraph">
-<p>Specification reuse is the act of sourcing an established specification into a new one (referred to as the “current” or “own”
+<p>Specification reuse is the act of sourcing an established specification into a new one (referred to as the "current" or "own"
 specification).</p>
 </div>
 <div class="paragraph">
@@ -1142,7 +1145,7 @@ specification).</p>
 </li>
 <li>
 <p>relying on URI dereferencing to get the formal definition of the ontology (this, however, does not work for the data shapes)
-In the SEMIC context, for the purpose of interoperability, we need to carefully constrain the meaning of the term “reuse” with a
+In the SEMIC context, for the purpose of interoperability, we need to carefully constrain the meaning of the term "reuse" with a
 fine-grained description on a construct-by-construct basis, and this is the aim of the remainder of this section.</p>
 </li>
 </ul>
@@ -1386,7 +1389,7 @@ already existing one. See property reuse recommendations below.</p></td>
 <p class="tableblock">* does not define a domain and range (in the original ontology) AND</p>
 <p class="tableblock">* its definition does NOT mention explicit restrictions on the domain and range (in the data shape)
 then it can be attached in UML diagrams (in the owned data specification) to any class either as a) a relation (pointing to
-another class) or b) as an attribute with a specific data type.</p>
+another class) or b) as an attribute with a specific datatype.</p>
 <p class="tableblock">If the reused property</p>
 <p class="tableblock">* defines a domain and range (in the original ontology) OR</p>
 <p class="tableblock">* its definition DOES mention explicit restrictions on the domain and range (in the data shape),
@@ -1394,7 +1397,7 @@ then it must be reflected in the UML diagrams (in the owned data specification) 
 specified classes.</p>
 <p class="tableblock">When UML is transformed into other representations, it is not recommended to represent the domain/range definitions in the
 lightweight ontology (OWL 2). Still, it may be reflected in data shape definitions (SHACL) as constraints.</p>
-<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
+<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the "reuse"
 intention of the data specification.</p>
 <p class="tableblock">In case of a broad reuse intention, as for the SEMIC Core Vocs, it is not recommended to include them in the lightweight
 ontology but better reflect them as constraints in SHACL, where necessary (i.e. optional properties can stay free of
@@ -1525,7 +1528,7 @@ to logical inconsistencies. Specifically, if you do that, then make sure that th
 <p class="tableblock">If the property is used across multiple classes multiple domain/range specifications can be deemed appropriate. This shall be
 handled with care. Multiple domain/range definitions in OWL 2 mean intersection (i.e. joined by logical AND) and not the union
 (i.e. joined by logical OR), as most use cases may require.</p>
-<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
+<p class="tableblock">When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the "reuse"
 intention of the data specification.</p>
 <p class="tableblock">In case of a broad reuse intention, as for the SEMIC Core Vocabularies, it is not recommended to include them in the lightweight
 ontology but optionally reflect them as permissive constraints in SHACL.
@@ -1579,33 +1582,28 @@ relation between the two is not depicted in the diagram, but is stated in the da
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must
-be considered by reusing properties and classes from other vocabularies.
-As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
-Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
-In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on reuse</a>].</p>
+<p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must be considered by reusing properties and classes from other vocabularies. As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics. Conversely, no concepts shall be redefined unless they are significant variations of the existent ones. In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on the reuse</a>].</p>
 </div>
 <div class="paragraph">
-<p>\ [<a href="references.html#ref:18" class="xref page">18, section 4</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.1.2</a>]</p>
+<p>See more [<a href="references.html#ref:18" class="xref page">18, section 4</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.1.2</a>]</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:gc-r2"><a class="anchor" href="#sec:gc-r2"></a>5.2. For reuse, prefer maintained vocabularies</h3>
+<h3 id="sec:gc-r2"><a class="anchor" href="#sec:gc-r2"></a>5.2. Prefer maintained vocabularies</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> For reuse, prefer maintained vocabularies</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Prefer maintained vocabularies</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> GC-R2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
-well maintained and governed.
+Quality of maintenance and governance should be reviewed before reuse. Reuse mostly vocabularies that are well maintained and governed.
 [<a href="references.html#ref:20" class="xref page">20</a>]</p></td>
 </tr>
 </tbody>
@@ -1614,10 +1612,7 @@ well maintained and governed.
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
-(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
-to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
-fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+<p>Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at (a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification, to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
 stages planned.</p>
 </div>
 </div>
@@ -1653,7 +1648,7 @@ subjective, and this definition is meant to be suggestive rather than restrictiv
 well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
 by examples and explanatory notes.
 So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
-identity of a concept’s “meaning”. URIs also enable referencing, an essential feature of meaning exchange (communication).
+identity of a concept’s "meaning". URIs also enable referencing, an essential feature of meaning exchange (communication).
 Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
 And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
 term reusable, it should be published as part of a data specification.</p>
@@ -1708,16 +1703,16 @@ names will be reflected in all artefacts and in the URIs.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
-“is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
+<p>Some practices suggest adding the prefix "has" for quality attributes like "weight", "height", etc. or the prefix or
+"is" for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
 to the name.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
-or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [<a href="references.html#ref:22" class="xref page">22, sec 3.7</a>]</p>
+<p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of "buys/sells"
+or "opens/closes". It should be done by changing the voice from active to passive, e.g. "plays/playedBy". [<a href="references.html#ref:22" class="xref page">22, sec 3.7</a>]</p>
 </li>
 </ul>
 </div>
@@ -1806,14 +1801,14 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:gc-r6"><a class="anchor" href="#sec:gc-r6"></a>5.6. Usage compliance</h3>
+<h3 id="sec:gc-r6"><a class="anchor" href="#sec:gc-r6"></a>5.6. Reuse compliance</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Usage compliance</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Reuse compliance</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> GC-R6</p></td>
@@ -1838,7 +1833,7 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:gc-r7"><a class="anchor" href="#sec:gc-r7"></a>5.7. Avoid deontic modals</h3>
+<h3 id="sec:gc-r7"><a class="anchor" href="#sec:gc-r7"></a>5.7. Deontic modals</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1908,21 +1903,21 @@ otherwise relax the minimum cardinality constraint to keep the property optional
 <h2 id="_conceptual_model_conventions_uml"><a class="anchor" href="#_conceptual_model_conventions_uml"></a>6. Conceptual model conventions (UML)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="sec:cmc-r1"><a class="anchor" href="#sec:cmc-r1"></a>6.1. UML as a single source of truth</h3>
+<h3 id="sec:cmc-r1"><a class="anchor" href="#sec:cmc-r1"></a>6.1. Conceptual model as single source of truth</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> UML as a single source of truth</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Conceptual model as single source of truth</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement</strong></p>
-<p class="tableblock">The UML conceptual model should be used as the single source of truth.</p></td>
+<p class="tableblock">The UML conceptual model should be used as single source of truth.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1965,8 +1960,7 @@ as much as possible automatically, by a dedicated software tool or toolchain [<a
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set
-of pre-established conventions on the UML notation to reach a fixed interpretation.</p></td>
+<p class="tableblock">The UML conceptual model must have a fixed interpretation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1974,16 +1968,13 @@ of pre-established conventions on the UML notation to reach a fixed interpretati
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the
-OMG Ontology Definition Metamodel [<a href="references.html#ref:28" class="xref page">28</a>] does not address the notion of reuse. The goal of using
-UML is to provide for the SEMIC semantic data specifications a standard graphical notation which many are familiar with.
-Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should
-match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).</p>
+<p>Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set of pre-established conventions on the UML notation to reach a fixed interpretation.</p>
 </div>
 <div class="paragraph">
-<p>The UML is the single source of truth [<a href="gc-conceptual-model-conventions.html#sec:cmc-r1" class="xref page">CMC-R1</a>]. Using the conventions
-and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such
-a precise set of mapping rules is that it allows for:</p>
+<p>The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [<a href="references.html#ref:28" class="xref page">28</a>] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).</p>
+</div>
+<div class="paragraph">
+<p>The UML is the single source of truth [<a href="gc-conceptual-model-conventions.html#sec:cmc-r1" class="xref page">CMC-R1</a>]. Using the conventions and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such a precise set of mapping rules is that it allows for:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1991,8 +1982,7 @@ a precise set of mapping rules is that it allows for:</p>
 <p>Implementing tools to transform UML into derivative artefacts, thus enabling UML as the single source of truth.</p>
 </li>
 <li>
-<p>Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness,
-conformance and consistency.</p>
+<p>Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness, conformance and consistency.</p>
 </li>
 </ul>
 </div>
@@ -2138,14 +2128,14 @@ are based on two documents: UML convention specifications [<a href="references.h
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:cmc-r3"><a class="anchor" href="#sec:cmc-r3"></a>6.3. On element names and URIs</h3>
+<h3 id="sec:cmc-r3"><a class="anchor" href="#sec:cmc-r3"></a>6.3. Element names and URIs</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> On element names and URIs</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Element names and URIs</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R3</p></td>
@@ -2164,8 +2154,7 @@ are based on two documents: UML convention specifications [<a href="references.h
 the terminology style conventions [<a href="gc-general-conventions.html#sec:gc-r4" class="xref page">GC-R4</a>].</p>
 </div>
 <div class="paragraph">
-<p>The Element names are intended as human-readable denominations (called labels) and as machine-readable denominations
-(called identifiers).</p>
+<p>The Element names are intended as human-readable denominations (called labels) and as machine-readable denominations (called identifiers).</p>
 </div>
 <div class="paragraph">
 <p>This means that the Element names</p>
@@ -2198,12 +2187,8 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 [<a href="gc-conceptual-model-conventions.html#sec:cmc-r6" class="xref page">CMC-R6</a>].</p>
 </div>
 <div class="paragraph">
-<p>Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels
-that will be used for generation of specification documents in languages other than English.
-Country specific data specifications, which are meant to be used primarily at a national level, might decide to
-relax on this convention and permit the use of Unicode characters in the Element names, which will result in
-the generations of IRIs, instead of URIs [<a href="references.html#ref:36" class="xref page">36</a>]. However, this is unnecessary,
-and strongly discouraged, in the SEMIC context.</p>
+<p>Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels that will be used for generation of specification documents in languages other than English.
+Country specific data specifications, which are meant to be used primarily at a national level, might decide to relax on this convention and permit the use of Unicode characters in the Element names, which will result in the generations of IRIs, instead of URIs [<a href="references.html#ref:36" class="xref page">36</a>]. However, this is unnecessary, and strongly discouraged, in the SEMIC context.</p>
 </div>
 <div class="paragraph">
 <p>Following this convention is also important in the context of generation of persistent URIs
@@ -2215,7 +2200,7 @@ and strongly discouraged, in the SEMIC context.</p>
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>The class Address in Core Location has several properties. All the properties have a displayed name (e.g. “addressArea”) with the UML class diagram and associated UML Tags, such as a label for the HTML specification (“address area”), definition, usage note and the related URI.</p>
+<p>The class Address in Core Location has several properties. All the properties have a displayed name (e.g. "addressArea") with the UML class diagram and associated UML Tags, such as a label for the HTML specification ("address area"), definition, usage note and the related URI.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2240,7 +2225,7 @@ and strongly discouraged, in the SEMIC context.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">All UML Element names are case sensitive and shall follow the CamelCase convention.</p></td>
+<p class="tableblock">All UML Element names are case-sensitive and shall follow the CamelCase convention.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2252,8 +2237,7 @@ and strongly discouraged, in the SEMIC context.</p>
 subsequent character positions. [<a href="references.html#ref:22" class="xref page">22, sec 4.2</a>]</p>
 </div>
 <div class="paragraph">
-<p>Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
-therefore, UML Element names shall be CamelCased [<a href="references.html#ref:22" class="xref page">22, sec 3.2</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.20</a>].</p>
+<p>Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names; therefore, UML Element names shall be CamelCased [<a href="references.html#ref:22" class="xref page">22, sec 3.2</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.20</a>].</p>
 </div>
 <div class="paragraph">
 <p>The names of</p>
@@ -2307,8 +2291,7 @@ is in lowerCamelCase.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Element names shall be organised by namespaces. Namespaces may be indicated through prefixes delimited by colon (:)
-character, forming qualified names.</p></td>
+<p class="tableblock">Element names shall be organised by namespaces. Namespaces may be indicated through prefixes delimited by colon (:) character, forming qualified names.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2358,7 +2341,7 @@ prefix can be assumed by default. The qualified names may be structured as follo
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>When <code>dcat</code> a namespace name is declared as bound to base URI <code><a href="http://www.w3.org/ns/dcat#" class="bare">http://www.w3.org/ns/dcat#</a></code>, then then <code>dcat:Catalog</code> is the
+<p>When <code>dcat</code> a namespace name is declared as bound to base URI <code><a href="http://www.w3.org/ns/dcat#" class="bare">http://www.w3.org/ns/dcat#</a></code>, then <code>dcat:Catalog</code> is the
 qualified name  from which the <code><a href="http://www.w3.org/ns/dcat#Catalog" class="bare">http://www.w3.org/ns/dcat#Catalog</a></code> URI is interpreted.</p>
 </div>
 <div class="paragraph">
@@ -2383,7 +2366,7 @@ qualified name  from which the <code><a href="http://www.w3.org/ns/dcat#Catalog"
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Tags can be conveniently used for annotating the Elements.</p></td>
+<p class="tableblock">UML Tags can be conveniently used for annotating the Elements.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2391,20 +2374,15 @@ qualified name  from which the <code><a href="http://www.w3.org/ns/dcat#Catalog"
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>UML Element tags are key-value pairs that are associated with a UML Element (class, attribute, connector, etc. ). The tags
+<p>UML Element tags are key-value pairs that are associated with a UML Element (class, attribute, connector, etc.). The tags
 can be used as an extension mechanism to the UML language. They can be used to provide information that is not expressible
 anywhere else on a UML Element.</p>
 </div>
 <div class="paragraph">
-<p>For example, in this style guide, we recommend that the UML Element name shall be used to derive both the concept URI and
-the concept preferred label. However, if the model editor chooses to use the UML Element name for deriving the concept label
-alone, then the URI needs to be specified elsewhere. This is one example of how the UML tags can be used: simply specify a
-new tag, “uri”, and provide the concept URI as a value (see figure below).</p>
+<p>For example, in this style guide, we recommend that the UML Element name shall be used to derive both the concept URI and the concept preferred label. However, if the model editor chooses to use the UML Element name for deriving the concept label alone, then the URI needs to be specified elsewhere. This is one example of how the UML tags can be used: simply specify a new tag, "uri", and provide the concept URI as a value (see figure below).</p>
 </div>
 <div class="paragraph">
-<p>Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML
-Elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
-examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).</p>
+<p>Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML Elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes, examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -2460,7 +2438,7 @@ attributes. It is not necessary to depict unused classes or properties [<a href=
 </div>
 <div class="paragraph">
 <p>In the example below, a Core Vocabulary Person includes concepts from another vocabulary (FOAF); thus the two classes Person and
-Agent have the “foaf” namespace prefix specified in front.</p>
+Agent have the "foaf" namespace prefix specified in front.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2485,7 +2463,7 @@ Agent have the “foaf” namespace prefix specified in front.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Make sure that the attributes and associations of a superclass apply to all its subclasses.</p></td>
+<p class="tableblock">Ensure that the attributes and associations of a superclass apply to all its subclasses.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2514,7 +2492,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 </div>
 </div>
 <div class="paragraph">
-<p>\ [<a href="references.html#ref:19" class="xref page">19, sec 3.2.3</a>]</p>
+<p>See more [<a href="references.html#ref:19" class="xref page">19, sec 3.2.3</a>]</p>
 </div>
 </div>
 <div class="sect2">
@@ -2562,21 +2540,21 @@ practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype [se
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:cmc-r10"><a class="anchor" href="#sec:cmc-r10"></a>6.10. Attribute specifications</h3>
+<h3 id="sec:cmc-r10"><a class="anchor" href="#sec:cmc-r10"></a>6.10. Attribute definition</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute specifications</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute definition</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R10</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">UML Attributes shall be used to define properties taking simple data type values. An attribute declaration should specify
+<p class="tableblock">UML Attributes shall be used to define properties taking simple datatype values. An attribute declaration should specify
 its datatype and multiplicity whenever possible [<a href="gc-conceptual-model-conventions.html#sec:cmc-r11" class="xref page">CMC-R11</a>].</p></td>
 </tr>
 </tbody>
@@ -2585,95 +2563,41 @@ its datatype and multiplicity whenever possible [<a href="gc-conceptual-model-co
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>It is recommended that atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
+<p>We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
 those should be expressed as relationships (represented by Association connectors) between the two classes
 [<a href="gc-conceptual-model-conventions.html#sec:cmc-r12" class="xref page">CMC-R12</a>].</p>
 </div>
 <div class="paragraph">
-<p>High preference shall be given to using OWL 2 compliant XSD and RDF standard datatypes. Standard UML data types may be used
-with interpretation in the Table below. Custom datatypes shall be avoided when possible [<a href="references.html#ref:43" class="xref page">43</a>].</p>
+<p>In case of primitive datatypes, high preference shall be given to using OWL 2 compliant
+XSD [<a href="references.html#ref:42" class="xref page">42</a>] and RDF [<a href="references.html#ref:33" class="xref page">33</a>] standard datatypes.
+For more detailed recommendations on the use of primitive datatypes see convention [<a href="gc-conceptual-model-conventions.html#sec:cmc-r18" class="xref page">CMC-R18</a>].</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>UML</strong></p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>XSD</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:boolean</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Float</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:float</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Integer</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:integer</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Character, String</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:string / rdf:langString</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Short</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:short</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Long</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:long</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Decimal</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:decimal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:date</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">DateTime</p></td>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:dateTime</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
-<p>Properties whose values come from a controlled vocabulary or authority table and constitute a special case because two
-modelling practices are recognised here: as attributes with type “Code”, and as dependency relations pointing to a UML Enumeration
+<p>Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two
+modelling practices are recognised here: (a) as attributes with type “Code”, and (b) as dependency relations pointing to a UML Enumeration
 named after the controlled list.</p>
 </div>
 <div class="paragraph">
-<p>In the first case, the attribute type “Code” shall be mapped to the skos:Concept class. The advantage of this approach is
-the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely which
-list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
+<p>In the first case, the attribute type "Code" shall be mapped to the skos:Concept class. The advantage of this approach is the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely, which list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
 [<a href="gc-conceptual-model-conventions.html#sec:cmc-r6" class="xref page">CMC-R6</a>], but that value will not be visible in the diagrams.</p>
 </div>
 <div class="paragraph">
-<p>In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class
-and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the
-OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
-vocabulary. The connector must have a "Source&#8594;Target" direction. No other directions are acceptable, and a valid target
-role name and multiplicity shall be provided [<a href="gc-conceptual-model-conventions.html#sec:cmc-r14" class="xref page">CMC-R14</a>].</p>
+<p>In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class, and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled vocabulary. The connector must have a "Source&#8594;Target" direction. No other directions are acceptable, and a valid target role name and multiplicity shall be provided [<a href="gc-conceptual-model-conventions.html#sec:cmc-r14" class="xref page">CMC-R14</a>].</p>
 </div>
 <div class="paragraph">
 <p>Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML Class element and a UML Datatype element. [<a href="references.html#ref:19" class="xref page">19, sec 3.2.12</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.5</a>],
-\ [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.2</a>]</p>
+between a UML Class element and a UML Datatype element.</p>
 </div>
-<div class="sidebarblock">
+<div id="ref:19[19" class="sidebarblock adoc">
 <div class="content">
 <div class="paragraph">
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>We exemplify the two approaches to specifying attribute data types described above. In CCCEV specification, the “Requirement”
-class attributes use loose UML and other data types: String, Literal, and Code. No precise definition of what they mean is
-provided. The attributes of the Requirement class are left underspecified and with generic data types: the “description”
-attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this data type means).
+<p>We exemplify the two approaches to specifying attribute datatypes described above. In CCCEV specification, the “Requirement”
+class attributes use loose UML and other datatypes: String, Literal, and Code. No precise definition of what they mean is
+provided. The attributes of the Requirement class are left underspecified and with generic datatypes: the “description”
+attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this datatype means).
 It is also not clear what would be the difference between Literal and String, eventually one may gain intuition from the
 attribute name.</p>
 </div>
@@ -2683,9 +2607,9 @@ attribute name.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>The same class is reused in ePO ontology. The <code>cccev:Requirement</code> attributes use explicitly standard data types and cardinalities.
+<p>The same class is reused in ePO ontology. The <code>cccev:Requirement</code> attributes use explicitly standard datatypes and cardinalities.
 And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
-a non-atomic data type, but a controlled list of <code>skos:Concept</code>(s).</p>
+a non-atomic datatype, but a controlled list of <code>skos:Concept</code>(s).</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2710,8 +2634,7 @@ a non-atomic data type, but a controlled list of <code>skos:Concept</code>(s).</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">The multiplicity of connectors and class attributes should be specified, indicating the minimum and maximum cardinality.
-The cardinality shall be as permissive as possible in Core Vocabularies and as restrictive as possible in Application Profiles.</p></td>
+<p class="tableblock">The multiplicity of connectors and class attributes should be specified, indicating the minimum and maximum cardinality. The cardinality shall be as permissive as possible in Core Vocabularies and as restrictive as necessary in Application Profiles.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2723,8 +2646,7 @@ The cardinality shall be as permissive as possible in Core Vocabularies and as r
 Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.</p>
 </div>
 <div class="paragraph">
-<p>If a structural feature (attribute or association) is not relevant for the domain or the applications, instead of setting
-a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
+<p>If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
 </div>
 <div class="paragraph">
 <p>However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
@@ -2741,8 +2663,7 @@ similar default assumption exists in XML/XSD.</p>
 <p>Notation for multiple cardinality can be either with ‘*’ or ‘n’. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
-on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented
-so as to handle either of those notations, as their meaning is identical.</p>
+on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.</p>
 </div>
 <div class="paragraph">
 <p>Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
@@ -2752,8 +2673,7 @@ the cardinality shall be the most permissive, where possible [<a href="reference
 <p>Limit the constraints to business rules, do not add technical constraints to the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.16</a>].</p>
 </div>
 <div class="paragraph">
-<p>If an attribute or an association from a reused vocabulary is not relevant, do not set the lower limit of multiplicity to 0,
-but simply omit it in the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
+<p>If an attribute or an association from a reused vocabulary is irrelevant, do not set the lower limit of multiplicity to 0, but simply omit it in the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -2761,8 +2681,7 @@ but simply omit it in the model [<a href="references.html#ref:19" class="xref pa
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>All Core Vocabularies have set a permissive cardinality [0..*], for example, all the properties of Public Organisation, on the left,
-have multiplicity [0..*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:</p>
+<p>All Core Vocabularies have set a permissive cardinality [0..*], for example, all the properties of Public Organisation, on the left, have multiplicity [0..\*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2778,22 +2697,21 @@ have multiplicity [0..*] while the same Public Organisation, in blue on right, r
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:cmc-r12"><a class="anchor" href="#sec:cmc-r12"></a>6.12. Connector specification</h3>
+<h3 id="sec:cmc-r12"><a class="anchor" href="#sec:cmc-r12"></a>6.12. Connector definition</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Connector specification</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Connector definition</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R12</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">UML Connectors shall be used to define relations and properties taking non-atomic type values. A connector declaration should
-specify multiplicity whenever possible [<a href="gc-conceptual-model-conventions.html#sec:cmc-r11" class="xref page">CMC-R11</a>].</p></td>
+<p class="tableblock">UML Connectors shall be used to define relations and properties taking non-atomic type values. A connector declaration should specify multiplicity whenever possible [<a href="gc-conceptual-model-conventions.html#sec:cmc-r11" class="xref page">CMC-R11</a>].</p></td>
 </tr>
 </tbody>
 </table>
@@ -2804,7 +2722,7 @@ specify multiplicity whenever possible [<a href="gc-conceptual-model-conventions
 <p>UML Connectors shall be used to denote object properties (see OWL 2 semantics, [<a href="references.html#ref:43" class="xref page">43</a>]).</p>
 </div>
 <div class="paragraph">
-<p>First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
+<p>First, explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.</p>
 </div>
 <div class="paragraph">
@@ -2817,37 +2735,27 @@ Therefore, we foresee two distinct ways to express properties: using the connect
 source/target ends.</p>
 </div>
 <div class="paragraph">
-<p>We strongly recommend using the source/target role name to indicate the relation name and leave empty the (generic) element name.
-So, if a target role is specified, then no connector name can be specified. Optionally a source role may be provided to indicate
-the inverse relation.  In this case, the relation direction must be changed from “Source &#8594; Target” to “Bidirectional”.</p>
+<p>We strongly recommend using the source/target role name to indicate the relation name and leave empty the (generic) element name. So, if a target role is specified, then no connector name can be specified. Optionally a source role may be provided to indicate the inverse relation.  In this case, the relation direction must be changed from "Source &#8594; Target" to "Bidirectional".</p>
 </div>
 <div class="paragraph">
-<p>Or conversely, if the connector direction is “Bidirectional”, then source and target roles must be provided. No other directions
-are permitted.</p>
+<p>Or conversely, if the connector direction is "Bidirectional", then source and target roles must be provided. No other directions are permitted.</p>
 </div>
 <div class="paragraph">
-<p>It is recommended that each association has a definition. The definition is then used for each role as they represent the same
-meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.</p>
+<p>We recommend each association has a definition. The definition is then used for each role as they represent the same meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.</p>
 </div>
 <div class="paragraph">
-<p>On connector types
-UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a
-UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.</p>
+<p>UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.</p>
 </div>
 <div class="paragraph">
-<p>The UML Association connectors represent relations between source and target classes. The association connector cannot be used
-between other kinds of UML Elements.</p>
+<p>The UML Association connectors represent relations between a source and target classes. The association connector cannot be used between other kinds of UML Elements.</p>
 </div>
 <div class="paragraph">
-<p>The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the
-Enumeration. It indicates the class has an <code>owl:ObjectProperty</code>, whose range is a controlled vocabulary
-[<a href="gc-conceptual-model-conventions.html#sec:cmc-r14" class="xref page">CMC-R14</a>]. The connector must have the direction “Source &#8594; Target”.
+<p>The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the Enumeration. It indicates the class has an <code>owl:ObjectProperty</code>, whose range is a controlled vocabulary
+[<a href="gc-conceptual-model-conventions.html#sec:cmc-r14" class="xref page">CMC-R14</a>]. The connector must have the direction "Source &#8594; Target".
 No other directions are acceptable.</p>
 </div>
 <div class="paragraph">
-<p>The UML Generalization connector signifies a class-subClass relation and is transformed into <code>rdfs:subClassOf</code> relation standing
-between source and target classes. The connector must have no name or source/target roles specified in the UML model. If a model
-class should inherit a class from an external model, then proxies must be created for those classes
+<p>The UML Generalization connector signifies a class-subClass relation and is transformed into <code>rdfs:subClassOf</code> relation standing between a source and target classes. The connector must have no name or source/target roles specified in the UML model. If a model class should inherit a class from an external model, then proxies must be created for those classes
 [<a href="gc-general-conventions.html#sec:gc-r1" class="xref page">GC-R1</a>,
 <a href="clarification-on-reuse.html#sec:reuse-of-a-class-with-semantic-adaptations" class="xref page">Reuse of a class with semantic adaptation</a>].
 For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
@@ -2878,7 +2786,7 @@ For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
 <div class="paragraph">
 <p>For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
 semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
-and the “+” symbol shall always be used next to each property. This symbol means “public” [<a href="references.html#ref:19" class="xref page">19, sec 3.2.22</a>].</p>
+and the "+" symbol shall always be used next to each property. This symbol means "public" [<a href="references.html#ref:19" class="xref page">19, sec 3.2.22</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -2886,7 +2794,7 @@ and the “+” symbol shall always be used next to each property. This symbol m
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>The Person class in Core Vocabulary Person only has public properties indicated with a “+” symbol next to each property.</p>
+<p>The Person class in Core Vocabulary Person only has public properties indicated with a "+" symbol next to each property.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2897,14 +2805,14 @@ and the “+” symbol shall always be used next to each property. This symbol m
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:cmc-r14"><a class="anchor" href="#sec:cmc-r14"></a>6.14. Controlled lists as enumerations</h3>
+<h3 id="sec:cmc-r14"><a class="anchor" href="#sec:cmc-r14"></a>6.14. Controlled lists as Enumerations</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Controlled lists as enumerations</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Controlled lists as Enumerations</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R14</p></td>
@@ -2931,7 +2839,7 @@ published and maintained stand-alone following their own lifecycle, so that they
 <p>Two use-cases can be identified in practice: (a) when the code list is known and is explicitly referred to as the range of a property, and (b) when a property is modelled but no code list reference is provided as its range.</p>
 </div>
 <div class="paragraph">
-<p>When the authors of a conceptual model intend to omit which controlled list shall be used, then a class attribute with the range <code>skos:Concept</code> (in some cases <code>Code</code> is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the <code>adms:status</code> property of a <code>dcat:CatalogueRecord</code> shall be a <code>skos:Concept</code>, without specifying from which controlled list.</p>
+<p>When the authors of a conceptual model intend to omit, which controlled list shall be used, then a class attribute with the range <code>skos:Concept</code> (in some cases <code>Code</code> is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the <code>adms:status</code> property of a <code>dcat:CatalogueRecord</code> shall be a <code>skos:Concept</code>, without specifying from which controlled list.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2939,12 +2847,10 @@ published and maintained stand-alone following their own lifecycle, so that they
 </div>
 </div>
 <div class="paragraph">
-<p>It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e. not specifying any value, because
-the values are assumed to be maintained externally and only the reference is necessary.</p>
+<p>It is advisable, however, to be specific concerning which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e., not specifying any value, because the values are assumed to be maintained externally and only the reference is necessary.</p>
 </div>
 <div class="paragraph">
-<p>The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [<a href="gc-conceptual-model-conventions.html#sec:cmc-r12" class="xref page">CMC-R2</a>]. For example, in ePO,
-<code>dct:Location</code> can have a country code represented as a dependency relation to <code>at-voc:country</code> (the country authority table published on the EU Vocabularies website).</p>
+<p>The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [<a href="gc-conceptual-model-conventions.html#sec:cmc-r12" class="xref page">CMC-R2</a>]. For example, in ePO, <code>dct:Location</code> can have a country code represented as a dependency relation to <code>at-voc:country</code> (the country authority table published on the EU Vocabularies website).</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2952,8 +2858,7 @@ the values are assumed to be maintained externally and only the reference is nec
 </div>
 </div>
 <div class="paragraph">
-<p>The name of the Enumeration shall be resolved to a URI identical to that of the <code>skos:ConceptScheme</code>. As for the connector
-type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being <code>skos:inScheme</code> the intended controlled list [<a href="references.html#ref:18" class="xref page">18</a>].</p>
+<p>The name of the Enumeration shall be resolved to a URI identical to that of the <code>skos:ConceptScheme</code>. As for the connector type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being <code>skos:inScheme</code> the intended controlled list [<a href="references.html#ref:18" class="xref page">18</a>].</p>
 </div>
 <div class="paragraph">
 <p>If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [<a href="references.html#ref:19" class="xref page">19, sec 3.2.17</a>].</p>
@@ -2996,8 +2901,8 @@ type we recommend using a dependency connector (depicted with a dashed line) bec
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R15</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-Use packages to logically organise the model.</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">Packages have no semantic value, but shall be used whenever possible to  logically organise the model.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3007,12 +2912,11 @@ Use packages to logically organise the model.</p></td>
 <div class="paragraph">
 <p>It is best to avoid defining any semantic interpretation into UML Packages. They are best used for organisational purposes,
 defining logical partitions in the model. So, packages can serve as a method for the slicing of the conceptual model into
-sub-domains.</p>
+subdomains.</p>
 </div>
 <div class="paragraph">
 <p>It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
-namespaces of connectors and attributes. And, it does not work in cases when an attribute or a connector is used multiple
-times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
+namespaces of connectors and attributes. It does not work in cases when an attribute, or a connector is used multiple times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
 names or using Element tags [<a href="references.html#ref:22" class="xref page">22, sec 4.3</a>].</p>
 </div>
 <div class="sidebarblock">
@@ -3021,8 +2925,7 @@ names or using Element tags [<a href="references.html#ref:22" class="xref page">
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>In the image below, each class is organised in  a package - mapped to a namespace. However, for convenience, Core Vocabularies
-are in multiple packages but mapped to the same namespace.</p>
+<p>In the image below, each class is organised in a package mapped to a namespace. However, for convenience, Core Vocabularies are in multiple packages but mapped to the same namespace.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -3059,7 +2962,7 @@ are in multiple packages but mapped to the same namespace.</p>
 relations and their organisation to the human reader. Therefore, the diagrams shall be optimised for readability.</p>
 </div>
 <div class="paragraph">
-<p>It is recommended that the diagrams</p>
+<p>We recommend that the diagrams:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3140,8 +3043,7 @@ large [<a href="references.html#ref:19" class="xref page">19, sec 3.3.2</a>].</p
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>In the example below, taken from Core Person, the classes are aligned vertically and horizontally, subclasses are placed
-just below the related parent class, the relations are horizontal, vertical or orthogonal.</p>
+<p>In the example below, taken from Core Person, the classes are aligned vertically and horizontally, subclasses are placed just below the related parent class, the relations are horizontal, vertical, or orthogonal.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -3152,7 +3054,7 @@ just below the related parent class, the relations are horizontal, vertical or o
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:cmc-r17"><a class="anchor" href="#sec:cmc-r17"></a>6.17. Avoid using stereotypes</h3>
+<h3 id="sec:cmc-r17"><a class="anchor" href="#sec:cmc-r17"></a>6.17. Element stereotypes</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -3166,7 +3068,7 @@ just below the related parent class, the relations are horizontal, vertical or o
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Stereotypes do not have semantic or normative value. They shall be avoided in the conceptual models unless a good motivation and a strong need is provided.</p></td>
+<p class="tableblock">Stereotypes do not have semantic or normative value. They shall be avoided in the conceptual models unless a good motivation, and a strong need is provided.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3201,6 +3103,117 @@ just below the related parent class, the relations are horizontal, vertical or o
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="sec:cmc-r18"><a class="anchor" href="#sec:cmc-r18"></a>6.18. Datatype definition and usage</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Datatype definition and usage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R18</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
+<p class="tableblock">We strongly recommend that only OWL 2 compliant datatypes are used.
+The creation of custom datatypes shall be avoided.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Description:</strong></p>
+</div>
+<div class="paragraph">
+<p>Similar to [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [<a href="references.html#ref:41" class="xref page">41, sec 3.1</a>]). In fact, the composite datatypes must be defined as classes and handled as such. For example: Amount, Identifier, Quantity and Measurement are to be treated as classes even if conceptually they could be seen as composite datatypes.</p>
+</div>
+<div class="paragraph">
+<p>It is recommended to employ the primitive datatypes that are OWL 2 compliant already defined in XSD [<a href="references.html#ref:42" class="xref page">42</a>] and RDF [<a href="references.html#ref:33" class="xref page">33</a>], which cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
+</div>
+<div class="paragraph">
+<p>The datatypes defined in the UML model and custom ones should be avoided. Even if the toolchain, performing the transformation of UML, automatically resolves those into their XSD equivalent using a correspondence table (such as the one below).</p>
+</div>
+<div class="paragraph">
+<p>Note that the family of string datatypes we recommend using the following ones (ordered by preference) <code>rdf:PlainLiteral</code>, <code>rdfs:Literal</code>, <code>xsd:string</code>, and <code>rdf:langString</code>. Often enabling multilingual data specification is a necessity.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>UML</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>XSD</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:boolean</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Float</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:float</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:integer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Character, String</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:string / rdf:langString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Short</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:short</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Long</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:long</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:decimal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:dateTime</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">xsd:anyURI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><em>see <a href="gc-conceptual-model-conventions.html#sec:cmc-r14" class="xref page">CMC-R14</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Moreover, it is recommended to use OWL 2 compliant XSD and RDF standard datatypes, if possible. They may be useful in indicating a specific datatype, which is not possible with UML ones. For example, making a distinction between a general string (<code>xsd:string</code>) and a literal with a language tag (<code>rdf:langString</code>), or XML encoded ones such as <code>rdf:HTML</code> and <code>rdf:XMLLiteral</code>.</p>
+</div>
+<div class="paragraph">
+<p>The table above is a simplified correspondence between UML and XSD but the standard specifications shall be consulted:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.w3.org/2011/rdf-wg/wiki/XSD_Datatypes">RDF working group XSD Datatype mapping</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/rdf11-concepts/#section-Datatypes">RDF 1.1 Datatype section</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/owl2-syntax/#Datatype_Maps">OWL 2 Datatype maps</a></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -3229,7 +3242,7 @@ just below the related parent class, the relations are horizontal, vertical or o
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [<a href="references.html#ref:93" class="xref page">93</a>]  and OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between data type and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.</p>
+<p>In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [<a href="references.html#ref:93" class="xref page">93</a>]  and OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between datatype and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.</p>
 </div>
 <div class="paragraph">
 <p>We recommend using only a limited set of expression types available in OWL 2 language [<a href="gc-semantic-conventions.html#sec:sc-r2" class="xref page">SC-R2</a>].</p>
@@ -3301,7 +3314,7 @@ just below the related parent class, the relations are horizontal, vertical or o
 <p>OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept <em>lightweight</em>, and no advanced logical definitions are necessary, which would make the ontology <em>heavyweight</em>. Bulletin of the Association for Information Science and Technology, dedicated an <a href="https://asistdl.onlinelibrary.wiley.com/toc/23739223/2015/41/4">entire section</a> on the charm of weak semantics in the linked data world. Backer &amp; Sutton explain well how lightweight semantics supports interoperability and reuse [<a href="references.html#ref:96" class="xref page">96</a>].</p>
 </div>
 <div class="paragraph">
-<p>It is recommended that the formal ontology definition be limited to the following types of expressions:</p>
+<p>We recommend the formal ontology definition be limited to the following types of expressions:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3316,6 +3329,9 @@ just below the related parent class, the relations are horizontal, vertical or o
 </li>
 <li>
 <p>subclass relations (<code>rdfs:subClassOf</code>)</p>
+</li>
+<li>
+<p>subproperty relations (<code>rdfs:subPropertyOf</code>)</p>
 </li>
 <li>
 <p>annotations</p>
@@ -3355,7 +3371,7 @@ just below the related parent class, the relations are horizontal, vertical or o
 </ul>
 </div>
 <div class="paragraph">
-<p>The formal ontology shall not include other types of statements unless justified as absolutely necessary.</p>
+<p>The formal ontology shall not include other types of statements unless justified as necessary.</p>
 </div>
 <div class="paragraph">
 <p>No expressions of (a) property domain specification (<code>rdfs:domain</code>) and (b) property range specification (<code>rdfs:range</code>) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.</p>
@@ -3433,7 +3449,7 @@ just below the related parent class, the relations are horizontal, vertical or o
 in practice: RDFS or SKOS lexicalisation. However, other types can be considered as well (e.g. [<a href="references.html#ref:64" class="xref page">64</a>], [<a href="references.html#ref:65" class="xref page">65</a>], etc.).</p>
 </div>
 <div class="paragraph">
-<p>RDFS allows for a very simple lexicalisation and annotation:</p>
+<p>RDFS allows for a simple lexicalisation and annotation:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3442,7 +3458,7 @@ in practice: RDFS or SKOS lexicalisation. However, other types can be considered
 <div class="ulist">
 <ul>
 <li>
-<p><code>rdfs:label</code> may be used to provide a human-readable version of a resource&#8217;s name</p>
+<p><code>rdfs:label</code> may be used to provide a human-readable version of a resource&#8217;s name.</p>
 </li>
 </ul>
 </div>
@@ -3473,8 +3489,7 @@ in practice: RDFS or SKOS lexicalisation. However, other types can be considered
 organisation system. These labels provide the strongest clues as to the meaning of a SKOS concept.</p>
 </li>
 <li>
-<p><code>skos:hiddenLabel</code> has a more technical nature and may be useful when a user is interacting with a knowledge organisation
-system via a text-based search function. The user may, for example, enter misspelled words when trying to find a relevant concept.</p>
+<p><code>skos:hiddenLabel</code> has a more technical nature and may be useful when a user is interacting with a knowledge organisation system via a text-based search function. The user may, for example, enter misspelled words when trying to find a relevant concept.</p>
 </li>
 </ul>
 </div>
@@ -3512,8 +3527,7 @@ work still to be done, or warnings in the event that future editorial changes mi
 </ul>
 </div>
 <div class="paragraph">
-<p>It is recommended that one or the other is used. Both can be used at the same time without any consequence to semantics,
-but this will introduce redundancy and possibly a maintenance burden.</p>
+<p>We recommend one, or the other is used. Both can be used at the same time without any consequence of semantics, but this will introduce redundancy and possibly a maintenance burden.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -3568,19 +3582,13 @@ but this will introduce redundancy and possibly a maintenance burden.</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>OWL 2 constructs correspond to Description Logic (DL) concepts (<em>direct semantics</em>). Logic, besides expressing knowledge in
-a knowledge base, can be used to perform automated reasoning, i.e.  inferring new knowledge based on premises and reasoning
-rules. The inference is also possible with RDF-based semantics, which is based on translating the axioms into directed graphs.
-The latter is used for SPARQL entailments and SHACL data shape rules.</p>
+<p>OWL 2 constructs correspond to Description Logic (DL) concepts (<em>direct semantics</em>). Logic, besides expressing knowledge in a knowledge base, can be used to perform automated reasoning, i.e.,  inferring new knowledge based on premises and reasoning rules. The inference is also possible with RDF-based semantics, based on translating the axioms into directed graphs. The latter is used for SPARQL entailments and SHACL data shape rules.</p>
 </div>
 <div class="paragraph">
-<p>Automated reasoning is not consistently available across environments: small differences in the usage context or reasoning
-patterns may lead to different outcomes.</p>
+<p>Automated reasoning is not consistently available across environments: small differences in the usage context or reasoning patterns may lead to different outcomes.</p>
 </div>
 <div class="paragraph">
-<p>Therefore, the editors of interoperable semantic data specifications are strongly recommended to NOT rely on such capabilities.
-Thus, in practice, the model shall allow for an explicit statement of the intended knowledge, and as little as possible
-shall be left implicit.</p>
+<p>Therefore, the editors of interoperable semantic data specifications are strongly recommended to NOT rely on such capabilities. Thus, in practice, the model shall allow for an explicit statement of the intended knowledge, and as little as possible shall be left implicit.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3606,11 +3614,10 @@ shall be left implicit.</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Circular definition, i.e. definitions that use the element they define are incorrect.</p>
+<p>Circular definition, i.e., definitions that use the element they define are incorrect.</p>
 </div>
 <div class="paragraph">
-<p>For instance, we say that an ontology element (a class, an object property or a datatype property) is circular when used
-in its own definition. This can occur in situations such as the following:</p>
+<p>For instance, we say that an ontology element (a class, an object property or a datatype property) is circular when used in its own definition. This can occur in situations such as the following:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3658,27 +3665,26 @@ in its own definition. This can occur in situations such as the following:</p>
 </div>
 <div class="paragraph">
 <p>There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the
-executable ones, the most well-known are SHACL [<a href="references.html#ref:66" class="xref page">66</a>] and ShEx [<a href="references.html#ref:67" class="xref page">67</a>].
+executable ones, the most well-known are SHACL [<a href="references.html#ref:44" class="xref page">44</a>] and ShEx [<a href="references.html#ref:67" class="xref page">67</a>].
 As the SHACL is a W3C standard, we strongly recommend using it.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>8.2. Lose versus rigid constraints</h3>
+<h3 id="sec:dsc-r2"><a class="anchor" href="#sec:dsc-r2"></a>8.2. Loose versus rigid constraints</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Lose versus rigid constraints</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Loose versus rigid constraints</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> DSC-R2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">In a Core Vocabulary, then the data shape constraints shall be as loose as possible, i.e. permissive, while in an Application
-Profile, the data shape constraints shall be as rigid as necessary, i.e. restrictive.</p></td>
+<p class="tableblock">In a Core Vocabulary, then the data shape constraints shall be as loose as possible, i.e., permissive, while in an Application Profile, the data shape constraints shall be as rigid as necessary, i.e. restrictive.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3686,18 +3692,11 @@ Profile, the data shape constraints shall be as rigid as necessary, i.e. restric
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>The Core Vocabularies are intended for broad reuse and are concerned with establishing the concepts. This is addressed by
-the ontology artefact. Optionally it may be accompanied by a minimal set of data shape constraints expressing general domain
-limitations. For example, it may be already defined in the Core Vocabulary that a class cannot be instantiated without certain
-mandatory properties or that a declared property shall be used only with values from a pre-established controlled vocabulary.
-If a data shape artefact is provided, then any Application Profile reusing the Core Vocabulary shall not only import the
-ontology but the data shapes as well.</p>
+<p>The Core Vocabularies are intended for a broad reuse and are concerned with establishing the concepts. This is addressed by the ontology artefact. Optionally it may be accompanied by a minimal set of data shape constraints expressing general domain limitations. For example, it may be already defined in the Core Vocabulary that a class cannot be instantiated without certain mandatory properties or that a declared property shall be used only with values from a pre-established controlled vocabulary.
+If a data shape artefact is provided, then any Application Profile reusing the Core Vocabulary shall not only import the ontology, but the data shapes as well.</p>
 </div>
 <div class="paragraph">
-<p>The Application Profiles are usually intended for narrower use cases and mostly are concerned with setting restrictions
-on the way reused vocabulary ought to be used. It is a good practice to make such restrictions as restrictive as necessary
-but still provide space for variation as it usually occurs in practice. This is even more important when an Application Profile
-is conceived as reusable in other Application Profiles.</p>
+<p>The Application Profiles are usually intended for narrower use cases and mostly are concerned with setting restrictions on the way reused vocabulary ought to be used. It is a good practice to make such restrictions as restrictive as necessary but still provide space for variation as it typically occurs in practice. This is even more important when an Application Profile is conceived as reusable in other Application Profiles.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -3705,8 +3704,7 @@ is conceived as reusable in other Application Profiles.</p>
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>Consider DCAT-AP, for example. It is an Application Profile on top of the DCAT vocabulary, but other more specific Application Profiles
-are still created on top of it (e.g. DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)</p>
+<p>Consider DCAT-AP, for example. It is an Application Profile on top of the DCAT vocabulary, but other more specific Application Profiles are still created on top of it (e.g., DCAT-AP CH, DCAT-AP DE, DCAT-AP NO, etc.)</p>
 </div>
 </div>
 </div>
@@ -3741,37 +3739,31 @@ continually evolving and distributed data (that is more in line with reality), t
 and we say that operating is under the <em>open-world assumption</em>.</p>
 </div>
 <div class="paragraph">
-<p>Under the closed-world assumption, it is presumed that a true statement is also known to be true. Therefore, conversely,
-what is not currently known to be true, is false [<a href="references.html#ref:68" class="xref page">68</a>]. The opposite of the closed-world assumption
-is the open-world assumption stating that lack of knowledge does not imply falsity. The truth value of a statement may be
-true irrespective of whether or not it is known to be true.</p>
+<p>Under the closed-world assumption, it is presumed that a true statement is also known to be true. Therefore, conversely, what is not currently known to be true, is false [<a href="references.html#ref:68" class="xref page">68</a>]. The opposite of the closed-world assumption is the open-world assumption stating that lack of knowledge does not imply falsity. The truth value of a statement may be true despite whether or not it is known to be true.</p>
 </div>
 <div class="paragraph">
-<p>This means that when validating, the data must be considered complete to assess whether it fulfils the imposed constraints
-or recommended shapes. Therefore, everything that is not known to be true must be considered false.</p>
+<p>This means that when validating, the data must be considered complete to assess whether it fulfils the imposed constraints or recommended shapes. Therefore, everything that is not known to be true must be considered false.</p>
 </div>
 <div class="paragraph">
-<p>This may have an impact, especially for larger vocabularies (such as the eProcurement ontology), on how the data shapes
-are organised. As data shapes may be used to suggest how the data may be fragmented and how it shall not.</p>
+<p>This may have an impact, especially for larger vocabularies (such as the eProcurement ontology), on how the data shapes are organised. As data shapes may be used to suggest how the data may be fragmented and how it shall not.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>8.4. On data shapes</h3>
+<h3 id="sec:dsc-r4"><a class="anchor" href="#sec:dsc-r4"></a>8.4. Shape definitions</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> On data shapes</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Shape definitions</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> DSC-R4</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>, while the property constraints shall be embedded (contextualised)
-within node shapes rather than being defined as freestanding.</p></td>
+<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>, while the property constraints shall be embedded (contextualised) within node shapes rather than being defined as freestanding.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3779,39 +3771,32 @@ within node shapes rather than being defined as freestanding.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property
-shape for each UML attribute and UML Connector of that class. if the property shapes are defined within the node shapes
-(rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
-the resulting constraint definitions are organically integrated and the maintenance costs are decreased.</p>
+<p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property shape for each UML attribute and UML Connector of that class. If the property shapes are defined within the node shapes (rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
+the resulting constraint definitions are organically integrated, and the maintenance costs are decreased.</p>
 </div>
 <div class="paragraph">
 <p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.</p>
 </div>
 <div class="paragraph">
-<p>In some communities, the URIs used in the OWL 2 specifications are reused in SHACL. The class definitions are extended as node
-shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the
-use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts.
-The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach
-does not allow for dereferencing separately OWL 2 or SHACL representations. Hence, it is recommended to avoid such practice.</p>
+<p>In some communities, the URIs used in the OWL 2 specifications are reused in SHACL. The class definitions are extended as node shapes. In SHACL semantics, this is interpreted as an equivalent to specifying a sh:targetNode class. This approach allows the use of a single reference in both the ontology and data shape definition yet specifies separate concerns in separate artefacts. The advantage of the approach is increased consistency and readability while maintenance costs decrease. Yet, this approach does not allow for dereferencing separately OWL 2 or SHACL representations. Hence, it is recommended to avoid such practice.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>8.5. Data Shape severity</h3>
+<h3 id="sec:dsc-r5"><a class="anchor" href="#sec:dsc-r5"></a>8.5. Data shape severity</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Data Shape severity</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Data shape severity</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> DSC-R5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">It is recommended to use constraint severity for distinguishing critical violations from non-critical recommendation warnings
-and from nice-to-have information.</p></td>
+<p class="tableblock">It is recommended to use constraint severity for distinguishing critical violations from non-critical recommendation warnings and from nice-to-have information.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3819,8 +3804,7 @@ and from nice-to-have information.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Data shapes can be assigned a level of severity. The specific values of severity have no impact on the validation but may
-be used by user interface tools to categorise validation results. The severity levels are:</p>
+<p>Data shapes can be assigned a level of severity. The specific values of severity have no impact on the validation but may be used by user interface tools to categorise validation results. The severity levels are:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3979,7 +3963,7 @@ a clearcut separation between concepts belonging to one module or another, and s
 </div>
 <div class="paragraph">
 <p>For example, in the eProcurement ontology(ePO) [<a href="references.html#ref:47" class="xref page">47</a>], there is a core ontology and there are
-extension modules such as eCatalogue, eOrdering, and eNotice [<a href="references.html#ref:82" class="xref page">82</a>] that further refine and extend
+extension modules such as eCatalogue, eOrdering, and eNotice [<a href="references.html#ref:47" class="xref page">47</a>] that further refine and extend
 a specific part of the core.</p>
 </div>
 <div class="paragraph">
@@ -4040,7 +4024,7 @@ highest grade of 5-Star [<a href="references.html#ref:83" class="xref page">83</
 </ul>
 </div>
 <div class="paragraph">
-<p>\ [<a href="references.html#ref:20" class="xref page">20</a>, <a href="references.html#ref:85" class="xref page">85</a>]</p>
+<p>See more [<a href="references.html#ref:20" class="xref page">20</a>, <a href="references.html#ref:85" class="xref page">85</a>]</p>
 </div>
 </div>
 <div class="sect2">
@@ -4120,7 +4104,7 @@ Evidence in the context of CCCEV is denoted with the PURI <code><a href="http://
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">A consistent version management shall be implemented for the vocabulary evolution respecting the “semantic versioning”
+<p class="tableblock">A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
 principles. [<a href="references.html#ref:90" class="xref page">90</a>]</p></td>
 </tr>
 </tbody>
@@ -4129,7 +4113,7 @@ principles. [<a href="references.html#ref:90" class="xref page">90</a>]</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>The SEMIC versioning methodology is based on “semantic versioning” principles and implements a simple set of rules and
+<p>The SEMIC versioning methodology is based on "semantic versioning" principles and implements a simple set of rules and
 requirements that dictate how version numbers are assigned and incremented. It involves describing clearly and precisely
 what is being published and which features are included, and what the limitations are, setting the expectations and scope.
 Once the artefacts are identified for the public, the changes to the data specifications are communicated  with specific
@@ -4232,7 +4216,7 @@ default response (if no content type is specified), and the other is RDF [<a hre
 </div>
 <div class="paragraph">
 <p>The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
-Further technical details can be found in “Best Practice Recipes for Publishing RDF Vocabularies” [<a href="references.html#ref:92" class="xref page">92</a>].</p>
+Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [<a href="references.html#ref:92" class="xref page">92</a>].</p>
 </div>
 </div>
 <div class="sect2">
@@ -4399,8 +4383,13 @@ and what is its scope.</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminology"><a class="anchor" href="#_terminology"></a>12. Terminology</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_terminology"><a class="anchor" href="#_terminology"></a>11.1. Terminology</h3>
+<h3 id="_common_terms_and_acronyms"><a class="anchor" href="#_common_terms_and_acronyms"></a>12.1. Common terms and acronyms</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -4545,8 +4534,9 @@ and what is its scope.</p>
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="sec:terminology-comparison"><a class="anchor" href="#sec:terminology-comparison"></a>11.1.1. Terminology comparison</h4>
+</div>
+<div class="sect2">
+<h3 id="sec:terminology-comparison"><a class="anchor" href="#sec:terminology-comparison"></a>12.2. UML, OWL and XSD terminology comparison</h3>
 <table class="tableblock frame-all grid-all fit-content">
 <colgroup>
 <col>
@@ -4706,9 +4696,8 @@ and what is its scope.</p>
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
-<h2 id="_references"><a class="anchor" href="#_references"></a>12. References</h2>
+<h2 id="_references"><a class="anchor" href="#_references"></a>13. References</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -4755,19 +4744,19 @@ and what is its scope.</p>
 <p><a id="ref:14"></a> Siegel, J. (2014). MDA Guide, revision 2.0.. Available at: <a href="http://www.omg.org/cgi-bin/doc?ormsc/14-06-01" class="bare">http://www.omg.org/cgi-bin/doc?ormsc/14-06-01</a></p>
 </li>
 <li>
-<p><a id="ref:15"></a> Semantic Interoperability Community. Available at: <a href="https://github.com/SEMICeu" class="bare">https://github.com/SEMICeu</a>.</p>
+<p><a id="ref:15"></a> Semantic Interoperability Community. Available at: <a href="https://github.com/SEMICeu" class="bare">https://github.com/SEMICeu</a></p>
 </li>
 <li>
-<p><a id="ref:16"></a> model2owl (2021). Available at: <a href="https://github.com/OP-TED/model2owl" class="bare">https://github.com/OP-TED/model2owl</a>.</p>
+<p><a id="ref:16"></a> model2owl (2021). Available at: <a href="https://github.com/OP-TED/model2owl" class="bare">https://github.com/OP-TED/model2owl</a></p>
 </li>
 <li>
-<p><a id="ref:17"></a> OSLO toolchain. Available at: <a href="https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template" class="bare">https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template</a>.</p>
+<p><a id="ref:17"></a> OSLO toolchain. Available at: <a href="https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template" class="bare">https://github.com/Informatievlaanderen/OSLO-publicationenvironment-template</a></p>
 </li>
 <li>
 <p><a id="ref:18"></a> Costetchi, E. (2020). EProcurement ontology architecture and formalisation specifications. Recommendation, Publications Office of the European Union. Available at: <a href="https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf" class="bare">https://github.com/OP-TED/model2owl/blob/master/doc/ontology-architecture/ontology-architecture.pdf</a></p>
 </li>
 <li>
-<p><a id="ref:19"></a> Thijs, G. (2019) OSLO MODELLERINGSREGELS. Available at: <a href="https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf" class="bare">https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf</a>.</p>
+<p><a id="ref:19"></a> Thijs, G. (2019) OSLO MODELLERINGSREGELS. Available at: <a href="https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf" class="bare">https://github.com/Informatievlaanderen/OSLO-handleiding/blob/master/Modellering/OSLO-Modelleringsregels.pdf</a></p>
 </li>
 <li>
 <p><a id="ref:20"></a> SEMIC Style Guide for Drafting Semantic Specifications. SEMIC. Available at: <a href="https://github.com/SEMICeu/Draft_guidelines_2020" class="bare">https://github.com/SEMICeu/Draft_guidelines_2020</a></p>
@@ -4791,10 +4780,10 @@ and what is its scope.</p>
 <p><a id="ref:32"></a> Archer, P., Goedertier, S., &amp; Loutas, N. (2012). D7.1.3 - Study on persistent URIs, with identification of best practices and recommendations on the topic for the MSs and the EC. Deliverable, ISA programme of the European Commission.</p>
 </li>
 <li>
-<p><a id="ref:33"></a> Wood, D., Cyganiak, R., &amp; Lanthaler, M. (2014). RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation, W3C. Available at: <a href="http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/" class="bare">http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/</a>.</p>
+<p><a id="ref:33"></a> Wood, D., Cyganiak, R., &amp; Lanthaler, M. (2014). RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation, W3C. Available at: <a href="https://www.w3.org/TR/rdf11-concepts/" class="bare">https://www.w3.org/TR/rdf11-concepts/</a></p>
 </li>
 <li>
-<p><a id="ref:34"></a> Bray, T., Sperberg-McQueen, M., Maler, E., Yergeau, F., &amp; Paoli, J. (2008). Extensible Markup Language (XML) 1.0 (Fifth Edition). W3C Recommendation, W3C. Available at: <a href="http://www.w3.org/TR/2008/REC-xml-20081126/" class="bare">http://www.w3.org/TR/2008/REC-xml-20081126/</a>.</p>
+<p><a id="ref:34"></a> Bray, T., Sperberg-McQueen, M., Maler, E., Yergeau, F., &amp; Paoli, J. (2008). Extensible Markup Language (XML) 1.0 (Fifth Edition). W3C Recommendation, W3C. Available at: <a href="http://www.w3.org/TR/2008/REC-xml-20081126/" class="bare">http://www.w3.org/TR/2008/REC-xml-20081126/</a></p>
 </li>
 <li>
 <p><a id="ref:35"></a> PwC EU Services. (2011). D3.1 - Process and Methodology for Core Vocabularies. Deliverable, ISA programme of the European Commission.</p>
@@ -4812,22 +4801,25 @@ and what is its scope.</p>
 <p><a id="ref:40"></a> Beckett, D., Berners-Lee, T., Prud’hommeaux, E., &amp; Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: <a href="https://www.w3.org/TR/turtle/#sec-iri" class="bare">https://www.w3.org/TR/turtle/#sec-iri</a></p>
 </li>
 <li>
+<p><a id="ref:41"></a> PwC EU Services (2015). e-Government Core Vocabularies handbook. Report, ISA programme of the European Commission. Available at: <a href="https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook_0.pdf" class="bare">https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook_0.pdf</a></p>
+</li>
+<li>
+<p><a id="ref:42"></a> Peterson, D., Malhotra, A., Gao, S., Sperberg-McQueen, M., Biron. P. V., &amp; Thompson, H. (2012) W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes. W3C recommendation, W3C, Apr. 2012. Available at: <a href="http://www.w3.org/TR/xmlschema11-2/" class="bare">http://www.w3.org/TR/xmlschema11-2/</a></p>
+</li>
+<li>
 <p><a id="ref:43"></a> Motik, B., Patel-Schneider, P. F., Parsia, B., Bock, C., Fokoue, A., Haase, P., &#8230;&#8203; &amp; Smith, M. (2009). OWL 2 web ontology language: Structural specification and functional-style syntax. W3C recommendation, 27(65), 159. Available at: <a href="http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/" class="bare">http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/</a></p>
 </li>
 <li>
-<p><a id="ref:44"></a> H. Knublauch and D. Kontokostas. (2017) Shapes constraint language (SHACL). W3C recommendation, W3C, Available at:https://www.w3.org/TR/2017/REC-shacl20170720/</p>
+<p><a id="ref:44"></a> Knublauch, H., &amp; Kontokostas, D. (2017). Shapes Constraint Language (SHACL), W3C Recommendation. World Wide Web Consortium. Available at: <a href="https://www.w3.org/TR/shacl/" class="bare">https://www.w3.org/TR/shacl/</a></p>
 </li>
 <li>
-<p><a id="ref:47"></a> eProcurement Ontology (2022). TED and amp; EU Public Procurement Unit of the Publications Office of the European Union. Available at: <a href="https://github.com/OP-TED/ePO" class="bare">https://github.com/OP-TED/ePO</a></p>
+<p><a id="ref:47"></a> eProcurement Ontology (2022). TED and EU Public Procurement Unit of the Publications Office of the European Union. Available at: <a href="https://github.com/OP-TED/ePO" class="bare">https://github.com/OP-TED/ePO</a></p>
 </li>
 <li>
 <p><a id="ref:64"></a> Buitelaar.P et al. (2011). Ontology Lexicalisation: The lemon Perspective.</p>
 </li>
 <li>
-<p><a id="ref:65"></a> Davis, I. (2010) VANN: A vocabulary for annotating vocabulary descriptions. Available at: <a href="https://vocab.org/vann/" class="bare">https://vocab.org/vann/</a>.</p>
-</li>
-<li>
-<p><a id="ref:66"></a> Knublauch, H., &amp; Kontokostas, D. (2017). Shapes Constraint Language (SHACL), W3C Recommendation. World Wide Web Consortium. Available at: <a href="https://www.w3.org/TR/shacl/" class="bare">https://www.w3.org/TR/shacl/</a></p>
+<p><a id="ref:65"></a> Davis, I. (2010) VANN: A vocabulary for annotating vocabulary descriptions. Available at: <a href="https://vocab.org/vann/" class="bare">https://vocab.org/vann/</a></p>
 </li>
 <li>
 <p><a id="ref:67"></a> Shape expressions(ShEx). Available at: <a href="https://shex.io/" class="bare">https://shex.io/</a></p>
@@ -4869,9 +4861,6 @@ and what is its scope.</p>
 <p><a id="ref:79"></a> Spewak, S. H., &amp; Tiemann, M. (2006). Updating the enterprise architecture planning model. Journal of Enterprise Architecture, 2(2), 11-19.</p>
 </li>
 <li>
-<p><a id="ref:82"></a> eProcurement Ontology (2022). TED and EU Public Procurement Unit of the Publications Office of the European Union. Available at: <a href="https://github.com/OP-TED/ePO" class="bare">https://github.com/OP-TED/ePO</a></p>
-</li>
-<li>
 <p><a id="ref:83"></a> Hausenblas, M. (2012) 5 * OPEN DATA. Available at: <a href="https://5stardata.info/en" class="bare">https://5stardata.info/en</a></p>
 </li>
 <li>
@@ -4893,7 +4882,7 @@ and what is its scope.</p>
 <p><a id="ref:93"></a> Brickley, D., Guha, R.V. and McBride, B., (2014). RDF Schema 1.1. <em>W3C recommendation</em>, <em>25</em>, pp.2004-2014.</p>
 </li>
 <li>
-<p><a id="ref:94"></a> Directorate-General for Informatics (DIGIT), and European Commission, (2017). <em>COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS European Interoperability Framework – Implementation Strategy</em>, Pub. L. No. COM/2017/0134, COM:2017:134:FIN. Available at: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN" class="bare">https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN</a>.</p>
+<p><a id="ref:94"></a> Directorate-General for Informatics (DIGIT), and European Commission, (2017). <em>COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS European Interoperability Framework – Implementation Strategy</em>, Pub. L. No. COM/2017/0134, COM:2017:134:FIN. Available at: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN" class="bare">https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN</a></p>
 </li>
 <li>
 <p><a id="ref:95"></a> Rob Atkinson, et.al.  (2023). <em>Profile Guidance</em>, == W3C Editor&#8217;s Draft 21 March 2023, Available at: <a href="https://w3c.github.io/dxwg/profiles/" class="bare">https://w3c.github.io/dxwg/profiles/</a> .</p>
