@@ -24,10 +24,10 @@ The main part of this document is organised as a series of self-contained rules 
 
 In the scope of this document are included:
 
-* a terminological clarification for the significant SEMIC terms (including “reuse”, “ontology”, “Core Vocabulary”, etc.);
+* a terminological clarification for the significant SEMIC terms (including "reuse", "ontology", "Core Vocabulary", etc.);
 * an architecture overview, which interconnects various aspects and data specification types and how they are derived from a single
 conceptual model;
-* the concept of “reuse” in great detail and pinpoints exactly what is permitted and what is not permitted in the SEMIC context;
+* the concept of "reuse" in great detail and pinpoints exactly what is permitted and what is not permitted in the SEMIC context;
 * recommendations on organising the conceptual model, the semantic artefacts, and the data shapes;
 * some recommendations on the specification development methodology and some publication conventions.
 

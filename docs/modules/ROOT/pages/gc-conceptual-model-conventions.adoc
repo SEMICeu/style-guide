@@ -1,18 +1,18 @@
-= Conceptual model conventions (UML)
+= Conceptual model conventions
 
 [[sec:cmc-r1]]
-== UML as a single source of truth
+== Conceptual model as single source of truth
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* UML as a single source of truth
+ *Title:* Conceptual model as single source of truth
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R1
 
 |*Statement*
 
-The UML conceptual model should be used as the single source of truth.
+The conceptual model should be used as single source of truth.
 |===
 
 *Description*
@@ -29,23 +29,24 @@ It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specif
 
 
 [[sec:cmc-r2]]
-== Fixed UML interpretation
+== Fixed interpretation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Fixed UML interpretation
+ *Title:* Fixed interpretation
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R2
 
 |*Statement:*
 
-Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set
-of pre-established conventions on the UML notation to reach a fixed interpretation.
+The conceptual model must have a fixed interpretation.
 
 |===
 
 *Description:*
+
+Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set of pre-established conventions on the UML notation to reach a fixed interpretation.
 
 The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the
 OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using
@@ -116,11 +117,11 @@ are based on two documents: UML convention specifications [xref:references.adoc#
 ****
 
 [[sec:cmc-r3]]
-== On element names and URIs
+== Element names and URIs
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* On element names and URIs
+ *Title:* Element names and URIs
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R3
@@ -169,7 +170,7 @@ Following this convention is also important in the context of generation of pers
 ****
 *Examples:*
 
-The class Address in Core Location has several properties. All the properties have a displayed name (e.g. “addressArea”) with the UML class diagram and associated UML Tags, such as a label for the HTML specification (“address area”), definition, usage note and the related URI.
+The class Address in Core Location has several properties. All the properties have a displayed name (e.g. "addressArea") with the UML class diagram and associated UML Tags, such as a label for the HTML specification ("address area"), definition, usage note and the related URI.
 
 image::cmc-r3.png[]
 ****
@@ -187,7 +188,7 @@ image::cmc-r3.png[]
 
 |*Statement:*
 
-All UML Element names are case sensitive and shall follow the CamelCase convention.
+All UML Element names are case-sensitive and shall follow the CamelCase convention.
 |===
 
 *Description:*
@@ -195,8 +196,7 @@ All UML Element names are case sensitive and shall follow the CamelCase conventi
 The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
 subsequent character positions. [xref:references.adoc#ref:22[22, sec 4.2]]
 
-Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
-therefore, UML Element names shall be CamelCased [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]].
+Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names; therefore, UML Element names shall be CamelCased [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]].
 
 The names of
 
@@ -229,8 +229,7 @@ image::cmc-r4.png[]
 
 |*Statement:*
 
-Element names shall be organised by namespaces. Namespaces may be indicated through prefixes delimited by colon (:)
-character, forming qualified names.
+Element names shall be organised by namespaces. Namespaces may be indicated through prefixes delimited by colon (:) character, forming qualified names.
 |===
 
 *Description:*
@@ -261,7 +260,7 @@ prefix can be assumed by default. The qualified names may be structured as follo
 ****
 *Examples:*
 
-When `dcat` a namespace name is declared as bound to base URI `http://www.w3.org/ns/dcat#`, then then `dcat:Catalog` is the
+When `dcat` a namespace name is declared as bound to base URI `http://www.w3.org/ns/dcat#`, then `dcat:Catalog` is the
 qualified name  from which the `http://www.w3.org/ns/dcat#Catalog` URI is interpreted.
 
 When `cv` (short for Core Vocabularies) namespace name is declared bound to base URI `http://data.europa.eu/m8g/`, then
@@ -281,23 +280,18 @@ When `cv` (short for Core Vocabularies) namespace name is declared bound to base
 
 |*Statement:*
 
-Tags can be conveniently used for annotating the Elements.
+UML Tags can be conveniently used for annotating the Elements.
 |===
 
 *Description:*
 
-UML Element tags are key-value pairs that are associated with a UML Element (class, attribute, connector, etc. ). The tags
+UML Element tags are key-value pairs that are associated with a UML Element (class, attribute, connector, etc.). The tags
 can be used as an extension mechanism to the UML language. They can be used to provide information that is not expressible
 anywhere else on a UML Element.
 
-For example, in this style guide, we recommend that the UML Element name shall be used to derive both the concept URI and
-the concept preferred label. However, if the model editor chooses to use the UML Element name for deriving the concept label
-alone, then the URI needs to be specified elsewhere. This is one example of how the UML tags can be used: simply specify a
-new tag, “uri”, and provide the concept URI as a value (see figure below).
+For example, in this style guide, we recommend that the UML Element name shall be used to derive both the concept URI and the concept preferred label. However, if the model editor chooses to use the UML Element name for deriving the concept label alone, then the URI needs to be specified elsewhere. This is one example of how the UML tags can be used: simply specify a new tag, "uri", and provide the concept URI as a value (see figure below).
 
-Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML
-Elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
-examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).
+Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML Elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes, examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).
 
 ****
 *Examples:*
@@ -335,7 +329,7 @@ attributes. It is not necessary to depict unused classes or properties [xref:ref
 *Examples:*
 
 In the example below, a Core Vocabulary Person includes concepts from another vocabulary (FOAF); thus the two classes Person and
-Agent have the “foaf” namespace prefix specified in front.
+Agent have the "foaf" namespace prefix specified in front.
 
 image::cmc-r7.png[]
 ****
@@ -353,7 +347,7 @@ image::cmc-r7.png[]
 
 |*Statement:*
 
-Make sure that the attributes and associations of a superclass apply to all its subclasses.
+Ensure that the attributes and associations of a superclass apply to all its subclasses.
 |===
 
 *Description:*
@@ -371,7 +365,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 image::cmc-r8.png[]
 ****
 
-\ [xref:references.adoc#ref:19[19, sec 3.2.3]]
+[xref:references.adoc#ref:19[19, sec 3.2.3]]
 
 
 [[sec:cmc-r9]]
@@ -407,11 +401,11 @@ Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47
 
 
 [[sec:cmc-r10]]
-== Attribute specifications
+== Attribute definition
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Attribute specifications
+ *Title:* Attribute definition
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R10
@@ -420,11 +414,12 @@ Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47
 
 UML Attributes shall be used to define properties taking simple datatype values. An attribute declaration should specify
 its datatype and multiplicity whenever possible [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r11[CMC-R11]].
+
 |===
 
 *Description:*
 
-It is recommended that atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
+We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
 those should be expressed as relationships (represented by Association connectors) between the two classes
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
 
@@ -432,24 +427,18 @@ In case of primitive datatypes, high preference shall be given to using OWL 2 co
 XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]] standard datatypes.
 For more detailed recommendations on the use of primitive datatypes see convention [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r18[CMC-R18]].
 
-Properties whose values come from a controlled vocabulary or authority table and constitute a special case, because two
-modelling practices are recognised here: as attributes with type “Code”, and as dependency relations pointing to a UML Enumeration
+Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two
+modelling practices are recognised here: (a) as attributes with type “Code”, and (b) as dependency relations pointing to a UML Enumeration
 named after the controlled list.
 
-In the first case, the attribute type “Code” shall be mapped to the skos:Concept class. The advantage of this approach is
-the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely which
-list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
+In the first case, the attribute type "Code" shall be mapped to the skos:Concept class. The advantage of this approach is the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely, which list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]], but that value will not be visible in the diagrams.
 
-In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class
-and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the
-OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled
-vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target
-role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
+In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class, and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
 
 Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML Class element and a UML Datatype element. [xref:references.adoc#ref:19[19, sec 3.2.12]], [xref:references.adoc#ref:22[22, sec 4.5]],
-\ [xref:references.adoc#ref:22[22, sec 4.7]], [xref:references.adoc#ref:19[19, sec 3.2.2]]
+between a UML Class element and a UML Datatype element.
+[xref:references.adoc#ref:19[19, sec 3.2.12]], [xref:references.adoc#ref:22[22, sec 4.5]], [xref:references.adoc#ref:22[22, sec 4.7]], [xref:references.adoc#ref:19[19, sec 3.2.2]]
 
 ****
 *Examples:*
@@ -467,6 +456,7 @@ The same class is reused in ePO ontology. The `cccev:Requirement` attributes use
 And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
 a non-atomic datatype, but a controlled list of `skos:Concept`(s).
 
+
 image::cmc-r10-2.png[]
 ****
 
@@ -483,8 +473,7 @@ image::cmc-r10-2.png[]
 
 |*Statement:*
 
-The multiplicity of connectors and class attributes should be specified, indicating the minimum and maximum cardinality.
-The cardinality shall be as permissive as possible in Core Vocabularies and as restrictive as possible in Application Profiles.
+The multiplicity of connectors and class attributes should be specified, indicating the minimum and maximum cardinality. The cardinality shall be as permissive as possible in Core Vocabularies and as restrictive as necessary in Application Profiles.
 |===
 
 *Description:*
@@ -492,8 +481,7 @@ The cardinality shall be as permissive as possible in Core Vocabularies and as r
 If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
 Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.
 
-If a structural feature (attribute or association) is not relevant for the domain or the applications, instead of setting
-a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:19[19, sec 3.2.15]].
+If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:19[19, sec 3.2.15]].
 
 However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
@@ -507,22 +495,19 @@ similar default assumption exists in XML/XSD.
 Notation for multiple cardinality can be either with ‘*’ or ‘n’. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
-on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented
-so as to handle either of those notations, as their meaning is identical.
+on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.
 
 Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
 the cardinality shall be the most permissive, where possible [xref:references.adoc#ref:19[19, sec 3.2.15]].
 
 Limit the constraints to business rules, do not add technical constraints to the model [xref:references.adoc#ref:19[19, sec 3.2.16]].
 
-If an attribute or an association from a reused vocabulary is not relevant, do not set the lower limit of multiplicity to 0,
-but simply omit it in the model [xref:references.adoc#ref:19[19, sec 3.2.15]].
+If an attribute or an association from a reused vocabulary is irrelevant, do not set the lower limit of multiplicity to 0, but simply omit it in the model [xref:references.adoc#ref:19[19, sec 3.2.15]].
 
 ****
 *Examples:*
 
-All Core Vocabularies have set a permissive cardinality [0..\*], for example, all the properties of Public Organisation, on the left,
-have multiplicity [0..*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:
+All Core Vocabularies have set a permissive cardinality [0..\*], for example, all the properties of Public Organisation, on the left, have multiplicity [0..\*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:
 
 image::cmc-r11-1.png[]
 image::cmc-r11-2.png[]
@@ -530,26 +515,25 @@ image::cmc-r11-2.png[]
 
 
 [[sec:cmc-r12]]
-== Connector specification
+== Connector definition
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Connector specification
+ *Title:* Connector definition
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R12
 
 |*Statement:*
 
-UML Connectors shall be used to define relations and properties taking non-atomic type values. A connector declaration should
-specify multiplicity whenever possible [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r11[CMC-R11]].
+UML Connectors shall be used to define relations and properties taking non-atomic type values. A connector declaration should specify multiplicity whenever possible [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r11[CMC-R11]].
 |===
 
 *Description:*
 
 UML Connectors shall be used to denote object properties (see OWL 2 semantics, [xref:references.adoc#ref:43[43]]).
 
-First, explain how the connectors ought to be used, i.e. where to specify the relationship names and multiplicity. Then we
+First, explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.
 
 On connector names,
@@ -559,31 +543,21 @@ flexibility to how the domain knowledge may be expressed in UML; however, this f
 Therefore, we foresee two distinct ways to express properties: using the connector (generic) name or using the connector
 source/target ends.
 
-We strongly recommend using the source/target role name to indicate the relation name and leave empty the (generic) element name.
-So, if a target role is specified, then no connector name can be specified. Optionally a source role may be provided to indicate
-the inverse relation.  In this case, the relation direction must be changed from “Source -> Target” to “Bidirectional”.
+We strongly recommend using the source/target role name to indicate the relation name and leave empty the (generic) element name. So, if a target role is specified, then no connector name can be specified. Optionally a source role may be provided to indicate the inverse relation.  In this case, the relation direction must be changed from "Source -> Target" to "Bidirectional".
 
-Or conversely, if the connector direction is “Bidirectional”, then source and target roles must be provided. No other directions
-are permitted.
+Or conversely, if the connector direction is "Bidirectional", then source and target roles must be provided. No other directions are permitted.
 
-It is recommended that each association has a definition. The definition is then used for each role as they represent the same
-meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.
+We recommend each association has a definition. The definition is then used for each role as they represent the same meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.
 
-On connector types
-UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a
-UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.
+UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.
 
-The UML Association connectors represent relations between source and target classes. The association connector cannot be used
-between other kinds of UML Elements.
+The UML Association connectors represent relations between a source and target classes. The association connector cannot be used between other kinds of UML Elements.
 
-The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the
-Enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
-[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]]. The connector must have the direction “Source -> Target”.
+The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the Enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]]. The connector must have the direction "Source -> Target".
 No other directions are acceptable.
 
-The UML Generalization connector signifies a class-subClass relation and is transformed into `rdfs:subClassOf` relation standing
-between source and target classes. The connector must have no name or source/target roles specified in the UML model. If a model
-class should inherit a class from an external model, then proxies must be created for those classes
+The UML Generalization connector signifies a class-subClass relation and is transformed into `rdfs:subClassOf` relation standing between a source and target classes. The connector must have no name or source/target roles specified in the UML model. If a model class should inherit a class from an external model, then proxies must be created for those classes
 [xref:gc-general-conventions.adoc#sec:gc-r1[GC-R1],
 xref:clarification-on-reuse.adoc#sec:reuse-of-a-class-with-semantic-adaptations[Reuse of a class with semantic adaptation]].
 For example, if `Person` specialises a `foaf:Agent`.
@@ -608,23 +582,23 @@ The visibility of all UML Elements should be "public".
 
 For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
 semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
-and the “+” symbol shall always be used next to each property. This symbol means “public” [xref:references.adoc#ref:19[19, sec 3.2.22]].
+and the "+" symbol shall always be used next to each property. This symbol means "public" [xref:references.adoc#ref:19[19, sec 3.2.22]].
 
 ****
 *Examples:*
 
-The Person class in Core Vocabulary Person only has public properties indicated with a “+” symbol next to each property.
+The Person class in Core Vocabulary Person only has public properties indicated with a "+" symbol next to each property.
 
 image::cmc-r13.png[]
 ****
 
 
 [[sec:cmc-r14]]
-== Controlled lists as enumerations
+== Controlled lists as Enumerations
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Controlled lists as enumerations
+ *Title:* Controlled lists as Enumerations
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R14
@@ -645,20 +619,17 @@ published and maintained stand-alone following their own lifecycle, so that they
 
 Two use-cases can be identified in practice: (a) when the code list is known and is explicitly referred to as the range of a property, and (b) when a property is modelled but no code list reference is provided as its range.
 
-When the authors of a conceptual model intend to omit which controlled list shall be used, then a class attribute with the range `skos:Concept` (in some cases `Code` is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`, without specifying from which controlled list.
+When the authors of a conceptual model intend to omit, which controlled list shall be used, then a class attribute with the range `skos:Concept` (in some cases `Code` is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`, without specifying from which controlled list.
 
 image::dcatcatalogue.png[]
 
-It is advisable, however, to be specific with regard to which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e. not specifying any value, because
-the values are assumed to be maintained externally and only the reference is necessary.
+It is advisable, however, to be specific concerning which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e., not specifying any value, because the values are assumed to be maintained externally and only the reference is necessary.
 
-The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO,
-`dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table published on the EU Vocabularies website).
+The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO, `dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table published on the EU Vocabularies website).
 
 image::cmc-r14-1.png[]
 
-The name of the Enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector
-type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
+The name of the Enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
 
 If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].
 
@@ -685,7 +656,8 @@ image::cmc-r14-3.png[]
 *Identifier* CMC-R15
 
 |*Statement:*
-Use packages to logically organise the model.
+
+Packages have no semantic value, but shall be used whenever possible to  logically organise the model.
 
 |===
 
@@ -693,17 +665,15 @@ Use packages to logically organise the model.
 
 It is best to avoid defining any semantic interpretation into UML Packages. They are best used for organisational purposes,
 defining logical partitions in the model. So, packages can serve as a method for the slicing of the conceptual model into
-sub-domains.
+subdomains.
 
 It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
-namespaces of connectors and attributes. And, it does not work in cases when an attribute or a connector is used multiple
-times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
+namespaces of connectors and attributes. It does not work in cases when an attribute, or a connector is used multiple times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
 names or using Element tags [xref:references.adoc#ref:22[22, sec 4.3]].
 ****
 *Examples:*
 
-In the image below, each class is organised in  a package - mapped to a namespace. However, for convenience, Core Vocabularies
-are in multiple packages but mapped to the same namespace.
+In the image below, each class is organised in a package mapped to a namespace. However, for convenience, Core Vocabularies are in multiple packages but mapped to the same namespace.
 
 image::cmc-r15-example1.png[]
 ****
@@ -729,7 +699,7 @@ UML class diagrams shall be organised for readability.
 UML class diagrams are used for depicting the conceptual model. Their primary purpose is to construe the meaning of concepts,
 relations and their organisation to the human reader. Therefore, the diagrams shall be optimised for readability.
 
-It is recommended that the diagrams
+We recommend that the diagrams:
 
 * are well spaced (proper space between lines, boxes and labels)
 * minimise the number of crossing connectors [xref:references.adoc#ref:19[19, sec 3.3.4]]
@@ -757,14 +727,13 @@ See also [xref:references.adoc#ref:19[19, sec 3.1.11]], [xref:references.adoc#re
 ****
 *Examples:*
 
-In the example below, taken from Core Person, the classes are aligned vertically and horizontally, subclasses are placed
-just below the related parent class, the relations are horizontal, vertical or orthogonal.
+In the example below, taken from Core Person, the classes are aligned vertically and horizontally, subclasses are placed just below the related parent class, the relations are horizontal, vertical, or orthogonal.
 
 image::core-person.png[]
 ****
 
 [[sec:cmc-r17]]
-== Avoid using stereotypes
+== Element stereotypes
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -775,7 +744,7 @@ image::core-person.png[]
 
 |*Statement:*
 
-Stereotypes do not have semantic or normative value. They shall be avoided in the conceptual models unless a good motivation and a strong need is provided.
+Stereotypes do not have semantic or normative value. They shall be avoided in the conceptual models unless a good motivation, and a strong need is provided.
 
 |===
 

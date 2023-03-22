@@ -138,13 +138,13 @@ A Core Vocabulary (CV) is a basic, reusable and extensible data specification th
 entity in a context-neutral fashion. Its main objective is to provide terms to be reused in the broadest possible context.
 
 *Broad context* (on vocabularies) +
-On the Semantic Web, vocabularies define the concepts and relationships (also referred to as “terms”) used to describe and represent
+On the Semantic Web, vocabularies define the concepts and relationships (also referred to as "terms") used to describe and represent
 an area of concern. Vocabularies are used to classify the terms that can be used in a particular application, characterise possible
 relationships, and define possible constraints on using those terms. In practice, vocabularies can be very complex (with several
 thousands of terms) or very simple (describing one or two concepts only) [xref:references.adoc#ref:9[9]].
 
-There is no clear division between what is referred to as “vocabularies” and “ontologies”. The trend is to use the word “ontology”
-for a more complex and possibly quite formal collection of terms, whereas “vocabulary” is used when such strict formalism is not
+There is no clear division between what is referred to as "vocabularies" and "ontologies". The trend is to use the word "ontology"
+for a more complex and possibly quite formal collection of terms, whereas "vocabulary" is used when such strict formalism is not
 necessarily used or used only in a very loose sense [xref:references.adoc#ref:9[9]].
 
 *SEMIC context* (on Core Vocabularies) +
@@ -159,8 +159,8 @@ See more in section [xref:arhitectural-clarifications.adoc#sec:on-data-specifica
 
 The qualifications _lightweight_ and _permissive_ are used to better emphasise the intention _to be reused in the broadest possible context_. More precise boundaries are defined further in this document.
 
-*NOTE:* “Vocabularies”, in general, are not the same as “controlled vocabularies”, as they usually refer to SKOS artefacts. However,
-in other contexts (similar to SEMIC), a Core Vocabulary might often be simply denoted as “vocabulary”.
+*NOTE:* "Vocabularies", in general, are not the same as "controlled vocabularies", as they usually refer to SKOS artefacts. However,
+in other contexts (similar to SEMIC), a Core Vocabulary might often be simply denoted as "vocabulary".
 
 
 [[sec:what-is-an-ap-specification]]
