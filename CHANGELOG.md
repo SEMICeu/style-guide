@@ -47,7 +47,8 @@
 * HTML page title is missing [#27](https://github.com/SEMICeu/style-guide/issues/27)
 * Even if it has no impact in this work whether OWL or OWL 2 is referenced, we decided for clarity to always reference to OWL 2 only. (OWL vs OWL 2 [#19](https://github.com/SEMICeu/style-guide/issues/19))
 * Some rules or rule titles are not stated/phrased as rules [#25](https://github.com/SEMICeu/style-guide/issues/25)
-* Addressed on URI and IRI [#21](https://github.com/SEMICeu/style-guide/issues/21)
-
+* Answered the issue on URIs and IRIs [#21](https://github.com/SEMICeu/style-guide/issues/21)
+* Fixed missing `rdfs:subPropertyOf` mention [#23](https://github.com/SEMICeu/style-guide/issues/23)
+* Fixed 4 styling issues as part of the process [#7](https://github.com/SEMICeu/style-guide/issues/7)
 
 

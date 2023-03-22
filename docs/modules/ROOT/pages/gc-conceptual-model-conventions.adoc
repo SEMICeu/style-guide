@@ -1,4 +1,4 @@
-= Conceptual model conventions
+= Conceptual model conventions (UML)
 
 [[sec:cmc-r1]]
 == Conceptual model as single source of truth
@@ -12,7 +12,7 @@
 
 |*Statement*
 
-The conceptual model should be used as single source of truth.
+The UML conceptual model should be used as single source of truth.
 |===
 
 *Description*
@@ -29,18 +29,18 @@ It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specif
 
 
 [[sec:cmc-r2]]
-== Fixed interpretation
+== Fixed UML interpretation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Fixed interpretation
+ *Title:* Fixed UML interpretation
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R2
 
 |*Statement:*
 
-The conceptual model must have a fixed interpretation.
+The UML conceptual model must have a fixed interpretation.
 
 |===
 
@@ -48,19 +48,12 @@ The conceptual model must have a fixed interpretation.
 
 Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set of pre-established conventions on the UML notation to reach a fixed interpretation.
 
-The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the
-OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using
-UML is to provide for the SEMIC semantic data specifications a standard graphical notation which many are familiar with.
-Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should
-match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
+The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
 
-The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. Using the conventions
-and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such
-a precise set of mapping rules is that it allows for:
+The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. Using the conventions and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such a precise set of mapping rules is that it allows for:
 
 * Implementing tools to transform UML into derivative artefacts, thus enabling UML as the single source of truth.
-* Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness,
-conformance and consistency.
+* Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness, conformance and consistency.
 
 These rules will increase the coherency of the UML diagrams across projects and organisations.
 

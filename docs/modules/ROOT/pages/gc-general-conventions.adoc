@@ -22,11 +22,11 @@ Only use constructs with semantics (human and machine-readable) that support the
 See more [xref:references.adoc#ref:18[18, section 4]], [xref:references.adoc#ref:19[19, sec 3.1.2]]
 
 [[sec:gc-r2]]
-== Reuse of maintained vocabularies
+== Prefer maintained vocabularies
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Reuse of maintained vocabularies
+ *Title:* Prefer maintained vocabularies
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R2
@@ -38,10 +38,7 @@ Quality of maintenance and governance should be reviewed before reuse. Reuse mos
 
 *Description:*
 
-Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
-(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
-to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
-fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at (a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification, to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
 stages planned.
 
 
@@ -152,7 +149,7 @@ we recommend avoiding any character encodings and using plain ASCII [xref:refere
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Usage compliance
+ *Title:* Reuse compliance
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R6
