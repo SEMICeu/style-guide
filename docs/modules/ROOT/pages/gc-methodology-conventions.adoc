@@ -101,7 +101,7 @@ The need for modularisation typically emerges when the to-be-modelled space grow
 *Examples:*
 
 For example, in the eProcurement ontology(ePO) [xref:references.adoc#ref:47[47]], there is a core ontology and there are
-extension modules such as eCatalogue, eOrdering, and eNotice [xref:references.adoc#ref:82[82]] that further refine and extend
+extension modules such as eCatalogue, eOrdering, and eNotice [xref:references.adoc#ref:47[47]] that further refine and extend
 a specific part of the core.
 
 For example, Core Location is used across other Core Vocabularies and is established as a CV on its own.
