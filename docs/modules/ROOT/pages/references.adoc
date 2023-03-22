@@ -63,3 +63,9 @@
 . [[ref:94]] Directorate-General for Informatics (DIGIT), and European Commission, (2017). _COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS European Interoperability Framework – Implementation Strategy_, Pub. L. No. COM/2017/0134, COM:2017:134:FIN. Available at: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN.
 . [[ref:95]] Rob Atkinson, et.al.  (2023). _Profile Guidance_, == W3C Editor's Draft 21 March 2023, Available at: https://w3c.github.io/dxwg/profiles/ .
 . [[ref:96]] Baker, T., organizer, & Sutton, S. A., associate. (2015). Linked data and the charm of weak semantics: Introduction: The strengths of weak semantics. In Bulletin of the American Society for Information Science and Technology (Vol. 41, Issue 4, pp. 10–12). Wiley. https://doi.org/10.1002/bult.2015.1720410406
+. [[ref:97]] ANSI, A. (1975). X3/SPARC study group on DBMS, interim report. _SIGMOD FDT Bull_, _7_(2).
+. [[ref:98]] Sporny, M., Longley, D., Kellogg, G., Lanthaler, M., & Lindström, N. (2020). JSON-LD 1.1. _W3C Recommendation, Jul_.
+. [[ref:99]] World Wide Web Consortium. (2007). XSL transformations (XSLT) version 2.0.
+. [[ref:100]] Dimou, A., Vander Sande, M., Colpaert, P., Verborgh, R., Mannens, E., & Van de Walle, R. (2014). RML: A generic language for integrated RDF mappings of heterogeneous data. _Ldow_, _1184_.
+. [[ref:101]] Chortaras, A., & Stamou, G. (2018). D2RML: Integrating Heterogeneous Data and Web Services into Custom RDF Graphs. In _LDOW@ WWW_.
+
