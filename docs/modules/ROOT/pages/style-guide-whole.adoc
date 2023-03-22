@@ -31,7 +31,6 @@ include::gc-methodology-conventions.adoc[]
 
 include::gc-publication-conventions.adoc[]
 
-
 include::rule-template.adoc[]
 
 include::terminology.adoc[]

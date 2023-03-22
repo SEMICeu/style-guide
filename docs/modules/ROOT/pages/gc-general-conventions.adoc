@@ -17,37 +17,28 @@ Reuse existing concepts as much as possible, respecting the original semantics a
 
 *Description:*
 
-Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must
-be considered by reusing properties and classes from other vocabularies.
-As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics.
-Conversely, no concepts shall be redefined unless they are significant variations of the existent ones.
-In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [xref:clarification-on-reuse.adoc[Clarification on reuse]].
+Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must be considered by reusing properties and classes from other vocabularies. As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics. Conversely, no concepts shall be redefined unless they are significant variations of the existent ones. In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [xref:clarification-on-reuse.adoc[Clarification on the reuse]].
 
-\ [xref:references.adoc#ref:18[18, section 4]], [xref:references.adoc#ref:19[19, sec 3.1.2]]
-
+See more [xref:references.adoc#ref:18[18, section 4]], [xref:references.adoc#ref:19[19, sec 3.1.2]]
 
 [[sec:gc-r2]]
-== For reuse, prefer maintained vocabularies
+== Prefer maintained vocabularies
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* For reuse, prefer maintained vocabularies
+ *Title:* Prefer maintained vocabularies
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R2
 
 |*Statement:*
-Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
-well maintained and governed.
+Quality of maintenance and governance should be reviewed before reuse. Reuse mostly vocabularies that are well maintained and governed.
 [xref:references.adoc#ref:20[20]]
 |===
 
 *Description:*
 
-Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at
-(a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification,
-to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely
-fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
+Some projects are implemented and closed, while some other ones keep being maintained. The maintenance usually aims at (a) fixing errors, (b) making gradual improvements, and (c) supporting users in using the released data specification, to mention the least. Maintenance of the project can also include URI dereferencing and handling open issues in a timely fashion. Some projects may foresee an evolution roadmap, defined in a change and release policy, with a series of evolution
 stages planned.
 
 
@@ -77,7 +68,7 @@ subjective, and this definition is meant to be suggestive rather than restrictiv
 well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
 by examples and explanatory notes.
 So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
-identity of a concept’s “meaning”. URIs also enable referencing, an essential feature of meaning exchange (communication).
+identity of a concept’s "meaning". URIs also enable referencing, an essential feature of meaning exchange (communication).
 Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
 And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
 term reusable, it should be published as part of a data specification.
@@ -109,11 +100,11 @@ Next, we provide a set of loose recommendations:
 * Classes are names with nouns and singular [xref:references.adoc#ref:22[22, sec 3.6]]
 * Names are case-sensitive. [xref:references.adoc#ref:22[22, sec 3.1]]
 * Relations and Properties use verbs at a present tense [xref:references.adoc#ref:22[22, sec 3.7]]
-** Some practices suggest adding the prefix “has” for quality attributes like “weight”, “height”, etc. or the prefix or
-“is” for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
+** Some practices suggest adding the prefix "has" for quality attributes like "weight", "height", etc. or the prefix or
+"is" for boolean indicators, and some other practices recommend avoiding such prefixes as they add no additional information
 to the name.
-* Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of “buys/sells”
-or “opens/closes”. It should be done by changing the voice from active to passive, e.g. “plays/playedBy”. [xref:references.adoc#ref:22[22, sec 3.7]]
+* Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of "buys/sells"
+or "opens/closes". It should be done by changing the voice from active to passive, e.g. "plays/playedBy". [xref:references.adoc#ref:22[22, sec 3.7]]
 
 
 [[sec:gc-r5]]
@@ -154,11 +145,11 @@ Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and defi
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:22[22, sec 4.2]].
 
 [[sec:gc-r6]]
-== Usage compliance
+== Reuse compliance
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Usage compliance
+ *Title:* Reuse compliance
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R6
@@ -177,7 +168,7 @@ Compliance checking may involve multiple levels of severity. For example in the 
 The semantic data specifications may provide such severity levels. How it is realised in the conceptual model is open at the moment. The main place to provide such specifications is the data shape artefact. In the future we can return to this aspect and provide more guidance.
 
 [[sec:gc-r7]]
-== Avoid deontic modals
+== Deontic modals
 
 |===
 |{set:cellbgcolor: #a8c6f7}

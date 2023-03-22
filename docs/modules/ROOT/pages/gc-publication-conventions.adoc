@@ -27,7 +27,7 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
 
-\ [xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
+See more [xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
 
 
 [[sec:pc-r2]]
@@ -92,13 +92,13 @@ Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu
 
 |*Statement:*
 
-A consistent version management shall be implemented for the vocabulary evolution respecting the “semantic versioning”
+A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
 principles. [xref:references.adoc#ref:90[90]]
 |===
 
 *Description:*
 
-The SEMIC versioning methodology is based on “semantic versioning” principles and implements a simple set of rules and
+The SEMIC versioning methodology is based on "semantic versioning" principles and implements a simple set of rules and
 requirements that dictate how version numbers are assigned and incremented. It involves describing clearly and precisely
 what is being published and which features are included, and what the limitations are, setting the expectations and scope.
 Once the artefacts are identified for the public, the changes to the data specifications are communicated  with specific
@@ -175,7 +175,7 @@ The dereferencing shall be provided for both human-readable and machine-readable
 default response (if no content type is specified), and the other is RDF [xref:references.adoc#ref:1[1]].
 
 The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
-Further technical details can be found in “Best Practice Recipes for Publishing RDF Vocabularies” [xref:references.adoc#ref:92[92]].
+Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [xref:references.adoc#ref:92[92]].
 
 
 [[sec:pc-r6]]

@@ -1,4 +1,6 @@
-== Terminology
+= Terminology
+
+== Common terms and acronyms
 
 * XMI [http://www.omg.org/spec/XMI/]
 ** The XML Metadata Interchange (XMI) is an Object Management Group (OMG) standard for exchanging metadata information via Extensible Markup Language (XML). [https://en.wikipedia.org/wiki/XML_Metadata_Interchange]
@@ -30,7 +32,7 @@
 ** A Connector specifies links that enables communication between two or more instances. In contrast to Associations, which specify links between any instance of the associated Classifiers, Connectors specify links between instances playing the connected parts only. [https://www.omg.org/spec/UML/2.5.1/PDF]
 
 [[sec:terminology-comparison]]
-=== Terminology comparison
+== UML, OWL and XSD terminology comparison
 
 [cols=3,1,1]
 [%autowidth]

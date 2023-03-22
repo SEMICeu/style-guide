@@ -36,8 +36,8 @@ Such data specifications are primarily developed in collaboration with domain ex
 == Separation of concerns and transformation
 The successful application of an ontology or the development of an ontology-based system depends not merely on building a good ontology but also on fitting this into an appropriate development process and implementation into an information system.
 
-Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, _“All models are wrong, but some are useful”_, and what a model is useful for depends on what concern it is primarily addressing.
-On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [xref:references.adoc#ref:12[12]]. For example, the concept of “location” can be described by domain experts (in a domain model) in a way that is not isomorphic to how the “location” class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).
+Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, _"All models are wrong, but some are useful"_, and what a model is useful for depends on what concern it is primarily addressing.
+On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [xref:references.adoc#ref:12[12]]. For example, the concept of "location" can be described by domain experts (in a domain model) in a way that is not isomorphic to how the "location" class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).
 
 One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture (MDA) [xref:references.adoc#ref:13[13]] which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.
 
@@ -116,7 +116,7 @@ as model2owl [xref:references.adoc#ref:16[16]] or OSLO toolchain [xref:reference
 
 
 [[sec:on-data-specification-and-artefact-types]]
-== On data specification and artefact types
+== Data specification and artefact types
 For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
 the intended semantic data specification [xref:terminological-clarifications.adoc#sec:what-is-a-semantic-data-specification[What is a semantic data specification?]].
@@ -159,12 +159,12 @@ maintenance and publication:
 * Editing of the conceptual model
 * Production of data specification document
 
-The data specification’s artefacts are not independent but tightly interrelated and transformed from one form into another one.
+The data specification's artefacts are not independent but tightly interrelated and transformed from one form into another one.
 
 [[sec:on-technical-concerns-and-artefacts]]
-== On technical artefacts and concerns
+== Technical artefacts and concerns
 
-It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two. The best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from xref:references.adoc#ref:97[1975] of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in xref:references.adoc#ref:97[ANSI] .
+It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from xref:references.adoc#ref:97[1975] of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in xref:references.adoc#ref:97[ANSI].
 
 EIF [xref:references.adoc#ref:94[94]] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:
 
