@@ -1,18 +1,18 @@
-= Conceptual model conventions (UML)
+= Conceptual model conventions
 
 [[sec:cmc-r1]]
-== UML as a single source of truth
+== Conceptual model as single source of truth
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* UML as a single source of truth
+ *Title:* Conceptual model as single source of truth
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R1
 
 |*Statement*
 
-The UML conceptual model should be used as the single source of truth.
+The conceptual model should be used as single source of truth.
 |===
 
 *Description*

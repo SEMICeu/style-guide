@@ -27,18 +27,17 @@ In order to achieve a common approach to reuse, apply the reuse guidelines as sp
 
 
 [[sec:gc-r2]]
-== For reuse, prefer maintained vocabularies
+== Reuse of maintained vocabularies
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* For reuse, prefer maintained vocabularies
+ *Title:* Reuse of maintained vocabularies
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R2
 
 |*Statement:*
-Quality of maintenance and governance should be reviewed before reuse. Preference should be given to vocabularies that are
-well maintained and governed.
+Quality of maintenance and governance should be reviewed before reuse. Reuse mostly vocabularies that are well maintained and governed.
 [xref:references.adoc#ref:20[20]]
 |===
 
@@ -154,7 +153,7 @@ Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and defi
 we recommend avoiding any character encodings and using plain ASCII [xref:references.adoc#ref:22[22, sec 4.2]].
 
 [[sec:gc-r6]]
-== Usage compliance
+== Reuse compliance
 
 |===
 |{set:cellbgcolor: #a8c6f7}
@@ -177,7 +176,7 @@ Compliance checking may involve multiple levels of severity. For example in the 
 The semantic data specifications may provide such severity levels. How it is realised in the conceptual model is open at the moment. The main place to provide such specifications is the data shape artefact. In the future we can return to this aspect and provide more guidance.
 
 [[sec:gc-r7]]
-== Avoid deontic modals
+== Deontic modals
 
 |===
 |{set:cellbgcolor: #a8c6f7}

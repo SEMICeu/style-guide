@@ -116,7 +116,7 @@ as model2owl [xref:references.adoc#ref:16[16]] or OSLO toolchain [xref:reference
 
 
 [[sec:on-data-specification-and-artefact-types]]
-== On data specification and artefact types
+== Data specification and artefact types
 For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
 the intended semantic data specification [xref:terminological-clarifications.adoc#sec:what-is-a-semantic-data-specification[What is a semantic data specification?]].
@@ -162,7 +162,7 @@ maintenance and publication:
 The data specification’s artefacts are not independent but tightly interrelated and transformed from one form into another one.
 
 [[sec:on-technical-concerns-and-artefacts]]
-== On technical artefacts and concerns
+== Technical artefacts and concerns
 
 It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two. The best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from xref:references.adoc#ref:97[1975] of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in xref:references.adoc#ref:97[ANSI] .
 
