@@ -61,4 +61,5 @@
 . [[ref:92]] Berrueta, D. and Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
 . [[ref:93]] Brickley, D., Guha, R.V. and McBride, B., (2014). RDF Schema 1.1. _W3C recommendation_, _25_, pp.2004-2014.
 . [[ref:94]] Directorate-General for Informatics (DIGIT), and European Commission, (2017). _COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS European Interoperability Framework – Implementation Strategy_, Pub. L. No. COM/2017/0134, COM:2017:134:FIN. Available at: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2017%3A134%3AFIN.
-
+. [[ref:95]] Rob Atkinson, et.al.  (2023). _Profile Guidance_, == W3C Editor's Draft 21 March 2023, Available at: https://w3c.github.io/dxwg/profiles/ .
+. [[ref:96]] Baker, T., organizer, & Sutton, S. A., associate. (2015). Linked data and the charm of weak semantics: Introduction: The strengths of weak semantics. In Bulletin of the American Society for Information Science and Technology (Vol. 41, Issue 4, pp. 10–12). Wiley. https://doi.org/10.1002/bult.2015.1720410406
