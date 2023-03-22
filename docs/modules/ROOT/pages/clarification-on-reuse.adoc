@@ -1,21 +1,21 @@
 = Clarifications on "reuse"
 
-In the Semantic Web literature, the term “reuse” appears very often, encouraging the adoption of data specifications in new data
-specifications rather than redefining the same/similar concepts once again. The term “reuse” is usually considered in a broad sense,
+In the Semantic Web literature, the term "reuse" appears very often, encouraging the adoption of data specifications in new data
+specifications rather than redefining the same/similar concepts once again. The term "reuse" is usually considered in a broad sense,
 and what it means in terms of specific implementations is often left underspecified. In this section, we aim to address this gap and
-provide a detailed account of what “reuse” means in the SEMIC context.
+provide a detailed account of what "reuse" means in the SEMIC context.
 
 [[sec:what-is-the-reuse-of-a-specification]]
 == What is the reuse of an (ontology or data shape) specification?
 
-Specification reuse is the act of sourcing an established specification into a new one (referred to as the “current” or “own”
+Specification reuse is the act of sourcing an established specification into a new one (referred to as the "current" or "own"
 specification).
 
 Technically, reuse may mean either or both of the following:
 
 * Importing (using `owl:imports`) the contents of another ontology or data shape specification into a current one; OR
 * relying on URI dereferencing to get the formal definition of the ontology (this, however, does not work for the data shapes)
-In the SEMIC context, for the purpose of interoperability, we need to carefully constrain the meaning of the term “reuse” with a
+In the SEMIC context, for the purpose of interoperability, we need to carefully constrain the meaning of the term "reuse" with a
 fine-grained description on a construct-by-construct basis, and this is the aim of the remainder of this section.
 
 The following subsections offer a systematic description of six cases of reuse based on what is reused: (a) a class or
@@ -190,7 +190,7 @@ specified classes.
 When UML is transformed into other representations, it is not recommended to represent the domain/range definitions in the
 lightweight ontology (OWL 2). Still, it may be reflected in data shape definitions (SHACL) as constraints.
 
-When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
+When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the "reuse"
 intention of the data specification.
 
 In case of a broad reuse intention, as for the SEMIC Core Vocs, it is not recommended to include them in the lightweight
@@ -301,7 +301,7 @@ If the property is used across multiple classes multiple domain/range specificat
 handled with care. Multiple domain/range definitions in OWL 2 mean intersection (i.e. joined by logical AND) and not the union
 (i.e. joined by logical OR), as most use cases may require.
 
-When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the “reuse”
+When the UML is transformed into other representations, the inclusion of domain/range statements is dependent on the "reuse"
 intention of the data specification.
 
 In case of a broad reuse intention, as for the SEMIC Core Vocabularies, it is not recommended to include them in the lightweight
