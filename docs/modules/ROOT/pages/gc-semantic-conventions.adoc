@@ -17,7 +17,7 @@ The formal ontology shall be expressed in OWL 2.
 
 *Description:*
 
-In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [xref:references.adoc#ref:93[93]]  and OWL 2 [xref:references.adoc#ref:43[43]]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between data type and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.
+In the Semantic Web domain, two formal languages can be used for expressing the ontology: RDFS [xref:references.adoc#ref:93[93]]  and OWL 2 [xref:references.adoc#ref:43[43]]. RDFS is simpler and only allows for some of the recommended expressions (for example, the distinction between datatype and object properties is not possible). OWL 2 is more complex and more expressive than RDFS.
 
 We recommend using only a limited set of expression types available in OWL 2 language [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]].
 

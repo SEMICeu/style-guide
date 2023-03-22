@@ -177,7 +177,7 @@ Adopt the original URI and its definition.
 
 * its definition does NOT mention explicit restrictions on the domain and range (in the data shape)
 then it can be attached in UML diagrams (in the owned data specification) to any class either as a) a relation (pointing to
-another class) or b) as an attribute with a specific data type.
+another class) or b) as an attribute with a specific datatype.
 
 If the reused property
 

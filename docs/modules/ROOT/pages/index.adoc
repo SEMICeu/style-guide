@@ -1,4 +1,5 @@
 = The SEMIC Style Guide for Semantic Engineers
+:favicon: favicon.gif
 :description: The SEMIC Style Guide for Semantic Engineers.
 :sectanchors:
 :url-repo: https://github.com/SEMICeu/style-guide
