@@ -64,22 +64,22 @@ We assume that the ontology is expressed in OWL 2 language [xref:gc-semantic-con
 The main purpose of this component is to declare the classes, properties, datatypes and controlled lists. Each construct is established by assigning a URI and decorating it with human-readable labels and descriptions, and constitutes the mechanism to establish common references for humans and machines.
 
 [[sec:what-is-a-data-shape-contraint]]
-== What is a data shape constraint specification?
+== What is a data shape specification?
 
 *Definition* +
-A *_data shape constraint specification_*, or shortly *_data shape constraint_* or *_data shape_*, provides a set of conditions on top of an ontology, limiting how the ontology can be instantiated.
+A *_data shape specification_*, also referred to as *_data shape constraint specification_*, or simply as *_data shape constraint_* or *_data shape_*, provides a set of conditions on top of an ontology, limiting how the ontology can be instantiated.
 
 *Description* +
 The conditions and constraints that apply to a given ontology are provided as shapes and other constructs expressed in the form of an RDF graph.
 We assume that the data shapes are expressed in SHACL language.
 
-This document will refer to data shape constraint specifications simply as “data shapes”, but occasionally also as “data shape constraints” or “data shape specifications”.
+This document most often will refer to data shape specifications as “data shape constraints” or simply as “data shapes”.
 
 [[sec:what-is-a-specification-document]]
 == What is a data specification document?
 
 *Definition* +
-A *_data specification document_*, also referred to as *_specification document_* or *_data specification technical document_*, is the human-readable representation of an ontology, a data shape, or a combination of both.
+A *_data specification document_*, also referred to as *_specification document_*, is the human-readable representation of an ontology, a data shape, or a combination of both.
 
 *Description* +
 A data specification document is created with the objective of making it simple for the end-user to understand (a)
@@ -93,12 +93,12 @@ We assume that the data specification documents are published in HTML format (op
 == What is a data specification artefact?
 
 *Definition* +
-A *_data specification artefact_*, often referred to as *_specification artefact_* or simply *_artefact_*, is a materialisation of a semantic data specification in a (concrete, technical) format appropriate for addressing
+A *_data specification artefact_*, often referred to as *_specification artefact_* or simply *_artefact_*, is a materialisation of a semantic data specification in a concrete representation that is appropriate for addressing
 one or more concerns (e.g. use cases, requirements).
 
 *Description* +
 In the SEMIC context, we consider the following artefact types as primary: ontologies, data shapes, and specification documents.
-For a description of various concerns addressed in the SEMIC context, please see section
+For a description of various concerns addressed in the SEMIC context, please see the section
 [xref:arhitectural-clarifications.adoc#sec:separation-of-concerns-and-transformation[Separation of concerns in SEMIC]].
 
 Additionally, we are concerned with syntax bindings and serialisation formats (XML/XSD and JSON-LD in particular).
