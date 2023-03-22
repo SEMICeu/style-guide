@@ -300,14 +300,14 @@ documentation.</p>
 <p>UML conceptual models can be used as the <em>single source of truth</em> [<a href="gc-conceptual-model-conventions.html#sec:cmc-r1" class="xref page">rule CMC-R1</a>]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.</p>
 </div>
 <div class="paragraph">
-<p>With UML as the source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [<a href="#sec:transformation">Transformation</a>].</p>
+<p>With UML as the single source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [<a href="#sec:transformation">Transformation</a>].</p>
 </div>
 <div class="paragraph">
 <p>This approach facilitates consistent maintenance of semantic data specification interrelationship and solves the editorial synchronisation problem.</p>
 </div>
 <div class="paragraph">
-<p>Using UML by itself is not enough, however. An expressive conceptual model bears risks, however: first is the slippage of ambiguity, and second is the introduction of multiple interpretations. These risks are mitigated by adopting precise interpretation rules provided in this style guide [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>].
-Each of the above concerns will lead to different interpretations of the same UML constructs and therefore [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>] defines a minimal set of such interpretation rules (, which that can be further extended if necessary).</p>
+<p>However, using UML is not enough, by itself, as the risk of ambiguity and multiple  interpretations of the meaning of the UML model elements used in the conceptual model still exists. This risk is mitigated by adopting precise interpretation rules, such as the ones provided in this style guide [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>].
+The different concerns that each data specification is trying to address might lead to different interpretations of the same UML constructs. Therefore, [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>] defines only a minimal set of such interpretation rules (that can be further extended, if necessary).</p>
 </div>
 <div class="paragraph">
 <p>Also, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.</p>
@@ -461,6 +461,78 @@ maintenance and publication:</p>
 <div class="paragraph">
 <p>The data specification’s artefacts are not independent but tightly interrelated and transformed from one form into another one.</p>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec:on-technical-concerns-and-artefacts"><a class="anchor" href="#sec:on-technical-concerns-and-artefacts"></a>On technical artefacts and concerns</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two. The best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from <a href="references.html#ref:97" class="xref page">1975</a> of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in <a href="references.html#ref:97" class="xref page">ANSI</a> .</p>
+</div>
+<div class="paragraph">
+<p>EIF [<a href="references.html#ref:94" class="xref page">94</a>] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>interface specifications,</p>
+</li>
+<li>
+<p>interconnection services,</p>
+</li>
+<li>
+<p>data integration services,</p>
+</li>
+<li>
+<p>data presentation and exchange,</p>
+</li>
+<li>
+<p>secure communication protocols,</p>
+</li>
+<li>
+<p>access boundaries,</p>
+</li>
+<li>
+<p>information boundaries, etc.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The technical layer deals with how to represent, how to transmit data, how the data/entities are bundled when served by a service (i.e. API design or transmission, with impact on performance, usability, and interface), what are the access rights, how is the security ensured, access and storage performance, interfacing with the service, usability, etc.</p>
+</div>
+<div class="paragraph">
+<p>EIF defines the semantic interoperability as ensuring that precise (format and) meaning of exchanged data and information is understood throughout exchanges between parties: "what is sent is what is understood". It covers two aspects: <em>semantic</em> and <em>syntactic</em>. The semantic aspect refers to the meaning of data elements and the relationship between them. The syntactic aspect refers to describing the exact format of the information to be exchanged in terms of grammar and format.</p>
+</div>
+<div class="paragraph">
+<p>The concerns considered in this layer are related, but not limited, to developing vocabularies and define data meaning in exchanges. This layer is agnostic to access right, security, transmission protocol, physical representation, how it is presented to the user, etc.</p>
+</div>
+<div class="paragraph">
+<p>In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the addresses syntactic aspect is covered by the RDF specifications [<a href="references.html#ref:33" class="xref page">33</a>] Whereas the semantic aspect is addressed withing the <a href="terminological-clarifications.html#sec:what-is-a-cv-specification" class="xref page">Core Vocabulary</a> and <a href="terminological-clarifications.html#sec:what-is-an-ap-specification" class="xref page">Application Profile</a> expressed in OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>] and SHACL [<a href="references.html#ref:44" class="xref page">44</a>] languages.</p>
+</div>
+<div class="paragraph">
+<p>Connecting the semantic layer and the technical layers may not always be straight forward. Of a particular importance are three types of technical artefacts, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.</p>
+</div>
+<div class="paragraph">
+<p><strong>RDF.</strong>
+In case the system is gnostic of Semantic Web technologies, if the implementation uses RDF natively, then the technical layer is (near) isomorphic to the semantic specification. There is a perfect alignment.</p>
+</div>
+<div class="paragraph">
+<p><strong>JSON.</strong> When system implementation is based on JSON representations, a mapping shall be provided to establish semantics-syntax alignment. Luckily, how such an alignment is done is already specified in the JSON-LD standard specification [<a href="references.html#ref:98" class="xref page">98</a>]. It contains a canonical mapping algorithm. The syntaxt semantic binding is provided by the so-called <em>context definitions</em>.</p>
+</div>
+<div class="paragraph">
+<p>And, as a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.</p>
+</div>
+<div class="paragraph">
+<p><strong>XML.</strong> When teh system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [<a href="references.html#ref:99" class="xref page">99</a>] but no mapping language exists like in teh case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
+Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). The only thing we may relay on in this case are only good practices, and alternative technologies such as, for example RML language [<a href="references.html#ref:100" class="xref page">100</a>].</p>
+</div>
+<div class="paragraph">
+<p><strong>RDB.</strong> If the implementation is based on relational databases, the story is similar to the XML. There is no organic way of mapping syntax and semantics. The mapping is at the level of the database schema, and there is no canonical way of doing this.
+So, just like in the case of XML the reliance may be on good practices and alternative technologies to encode an interpretation, such as D2RML [<a href="references.html#ref:101" class="xref page">101</a>] and RML [<a href="references.html#ref:100" class="xref page">100</a>].</p>
+</div>
+<div class="paragraph">
+<p>Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and implementation model specifications) are developed and published.</p>
 </div>
 </div>
 </div>

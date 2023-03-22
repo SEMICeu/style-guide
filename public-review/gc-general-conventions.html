@@ -453,7 +453,7 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 <p>Deontic modalities indicate levels <em>obligation</em>, <em>permission</em>, <em>necessity</em> and related concepts.</p>
 </div>
 <div class="paragraph">
-<p>As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of teh data model.</p>
+<p>As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of the data model.</p>
 </div>
 <div class="paragraph">
 <p>In the standardisation community a common practice is to indicate levels of <em>obligation</em> or <em>permission</em> for concepts in a semantic data specification. <em>Obligation</em> indicator signals whether a statement using a class or a property is required in an instantiation; while, <em>Permission</em> indicator signals whether a statement using a class or a property is allowed or forbidden in an instantiation.</p>
@@ -489,7 +489,7 @@ otherwise relax the minimum cardinality constraint to keep the property optional
 <p>For example consider the DCAT-AP and two mandatory classes: <code>dcat:Catalog</code> and <code>dcat:Dataset</code>. When metadata of a catalogue (and its records) is exchanged, then both classes <code>dcat:Catalog</code> and <code>dcat:Dataset</code> must be instantiated; however when a single dataset metadata is being exchange then only <code>dcat:Dataset</code> instance shall be provided. Moreover, in the second scenario, providing an instance of <code>dcat:Catalog</code> will be counterproductive and possible leading to errors.</p>
 </div>
 <div class="paragraph">
-<p>Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the technical interoperability layer (see EIF) and is (currently) out of scope of this styleguide, which aims primarily at addressing the semantic interoperability.</p>
+<p>Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the <em>Technical Interoperability</em> layer of the European Interoperability Framework (EIF) [<a href="references.html#ref:94" class="xref page">94</a>], and are (currently) out of scope of this style guide, which aims primarily at addressing the semantic interoperability.</p>
 </div>
 <div class="paragraph">
 <p>If semantic engineers are prefer or are compelled to employ deontic indicators, then they must be precisely defined and those definitions be published. No reliance on common sense understanding shall be assumed as the meaning of such deontic indicators may (and certainly) differ not only between readers of data specifications but also how they are meant in different data specifications.</p>

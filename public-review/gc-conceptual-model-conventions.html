@@ -386,7 +386,7 @@ are based on two documents: UML convention specifications [<a href="references.h
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">All UML element names should be fit for URI generation with clear namespace organisation.</p></td>
+<p class="tableblock">All UML Element names should be fit for URI generation with clear namespace organisation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -394,15 +394,15 @@ are based on two documents: UML convention specifications [<a href="references.h
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>This convention aims at ensuring that URIs can be generated from UML element names and shall be treated as an extension to
+<p>This convention aims at ensuring that URIs can be generated from UML Element names and shall be treated as an extension to
 the terminology style conventions [<a href="gc-general-conventions.html#sec:gc-r4" class="xref page">GC-R4</a>].</p>
 </div>
 <div class="paragraph">
-<p>The element names are intended as human-readable denominations (called labels) and as machine-readable denominations
+<p>The Element names are intended as human-readable denominations (called labels) and as machine-readable denominations
 (called identifiers).</p>
 </div>
 <div class="paragraph">
-<p>This means that the element names</p>
+<p>This means that the Element names</p>
 </div>
 <div class="ulist">
 <ul>
@@ -427,9 +427,21 @@ in some cases, misread as spaces. A formal definition of these restrictions is g
 [<a href="references.html#ref:34" class="xref page">34</a>].</p>
 </div>
 <div class="paragraph">
-<p>Note that, when the UML element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
+<p>Note that, when the UML Element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
 may be used to express explicitly URIs, labels, notes and other types of annotations
 [<a href="#sec:cmc-r6">CMC-R6</a>].</p>
+</div>
+<div class="paragraph">
+<p>Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels
+that will be used for generation of specification documents in languages other than English.
+Country specific data specifications, which are meant to be used primarily at a national level, might decide to
+relax on this convention and permit the use of Unicode characters in the Element names, which will result in
+the generations of IRIs, instead of URIs [<a href="references.html#ref:36" class="xref page">36</a>]. However, this is unnecessary,
+and strongly discouraged, in the SEMIC context.</p>
+</div>
+<div class="paragraph">
+<p>Following this convention is also important in the context of generation of persistent URIs
+[<a href="gc-publication-conventions.html#sec:pc-r2" class="xref page">PC-R2</a>] according to the principles laid out in [<a href="references.html#ref:1" class="xref page">1</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -464,7 +476,7 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">All UML element names are case sensitive and shall follow the CamelCase convention.</p></td>
+<p class="tableblock">All UML Element names are case sensitive and shall follow the CamelCase convention.</p></td>
 </tr>
 </tbody>
 </table>
@@ -477,7 +489,7 @@ subsequent character positions. [<a href="references.html#ref:22" class="xref pa
 </div>
 <div class="paragraph">
 <p>Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names;
-therefore, UML element names shall be CamelCased [<a href="references.html#ref:22" class="xref page">22, sec 3.2</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.20</a>].</p>
+therefore, UML Element names shall be CamelCased [<a href="references.html#ref:22" class="xref page">22, sec 3.2</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.20</a>].</p>
 </div>
 <div class="paragraph">
 <p>The names of</p>
@@ -554,15 +566,15 @@ to by name and uniquely identifiable [<a href="references.html#ref:39" class="xr
 <p>A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
 [<a href="references.html#ref:40" class="xref page">40</a>]. A qualified name is a name subject to namespace interpretation [<a href="references.html#ref:38" class="xref page">38</a>]. Syntactically,
 they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
-namespace URIs and a default namespace applicable to unprefixed element names.</p>
+namespace URIs and a default namespace applicable to unprefixed Element names.</p>
 </div>
 <div class="paragraph">
-<p>As the element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The element
-name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the element
+<p>As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
+name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the Element
 name, after the colon, is the local segment. See [<a href="references.html#ref:38" class="xref page">38</a>] for more info.</p>
 </div>
 <div class="paragraph">
-<p>In case the editor decides to omit to specify a prefix in the element name when a URI generation logic is devised, an implicit
+<p>In case the editor decides to omit to specify a prefix in the Element name when a URI generation logic is devised, an implicit
 prefix can be assumed by default. The qualified names may be structured as follows:</p>
 </div>
 <div class="ulist">
@@ -611,7 +623,7 @@ qualified name  from which the <code><a href="http://www.w3.org/ns/dcat#Catalog"
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Tags can be conveniently used for annotating the elements.</p></td>
+<p class="tableblock">Tags can be conveniently used for annotating the Elements.</p></td>
 </tr>
 </tbody>
 </table>
@@ -631,7 +643,7 @@ new tag, “uri”, and provide the concept URI as a value (see figure below).</
 </div>
 <div class="paragraph">
 <p>Another example where tags came in handy is the provisioning of notes of various types. According to the UML standard, UML
-elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
+Elements have only one general description. We recommend using this description solely for definitions. Yet the scope notes,
 examples, alternative labels, and any other annotations can be provisioned through the UML tagging mechanism (see figure below).</p>
 </div>
 <div class="sidebarblock">
@@ -673,10 +685,10 @@ The UML diagrams should depict how the developed model relates to external (reus
 </div>
 <div class="paragraph">
 <p>UML does not support an import mechanism comparable to the one specified in OWL 2. Yet, the reuse of models is a highly encouraged
-practice. To accommodate such practice, the reused elements shall be created as in the original model and depicted in diagrams.</p>
+practice. To accommodate such practice, the reused Elements shall be created as in the original model and depicted in diagrams.</p>
 </div>
 <div class="paragraph">
-<p>The external elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
+<p>The external Elements shall be clearly marked. The easiest way to do so is by providing  a namespace prefix. The original
 meaning shall be preserved without changes to the labels, concept definitions or URIs.</p>
 </div>
 <div class="paragraph">
@@ -897,7 +909,7 @@ role name and multiplicity shall be provided [<a href="#sec:cmc-r14">CMC-R14</a>
 </div>
 <div class="paragraph">
 <p>Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML class element and a UML Datatype element. [<a href="references.html#ref:19" class="xref page">19, sec 3.2.12</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.5</a>],
+between a UML Class element and a UML Datatype element. [<a href="references.html#ref:19" class="xref page">19, sec 3.2.12</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.5</a>],
 \ [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.2</a>]</p>
 </div>
 <div class="sidebarblock">
@@ -1076,7 +1088,7 @@ UML Dependency Connector type may be used if the meaning and usage conditions ar
 </div>
 <div class="paragraph">
 <p>The UML Association connectors represent relations between source and target classes. The association connector cannot be used
-between other kinds of UML elements.</p>
+between other kinds of UML Elements.</p>
 </div>
 <div class="paragraph">
 <p>The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the
@@ -1110,7 +1122,7 @@ For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">The visibility of all UML elements should be "public".</p></td>
+<p class="tableblock">The visibility of all UML Elements should be "public".</p></td>
 </tr>
 </tbody>
 </table>
@@ -1258,8 +1270,8 @@ sub-domains.</p>
 <div class="paragraph">
 <p>It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
 namespaces of connectors and attributes. And, it does not work in cases when an attribute or a connector is used multiple
-times in several packages. Namespace management is easier attained by using other methods such as using prefixes in element
-names or using element tags [<a href="references.html#ref:22" class="xref page">22, sec 4.3</a>].</p>
+times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
+names or using Element tags [<a href="references.html#ref:22" class="xref page">22, sec 4.3</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
