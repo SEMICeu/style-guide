@@ -193,7 +193,7 @@ Indicators of deontic modalities for classes and properties do not have semantic
 
 Deontic modalities indicate levels _obligation_, _permission_, _necessity_ and related concepts.
 
-As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of teh data model.
+As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of the data model.
 
 // what are they
 
@@ -216,6 +216,6 @@ For classes, it is possible to mark a class as _abstract_, which means that it c
 
 For example consider the DCAT-AP and two mandatory classes: `dcat:Catalog` and `dcat:Dataset`. When metadata of a catalogue (and its records) is exchanged, then both classes `dcat:Catalog` and `dcat:Dataset` must be instantiated; however when a single dataset metadata is being exchange then only `dcat:Dataset` instance shall be provided. Moreover, in the second scenario, providing an instance of `dcat:Catalog` will be counterproductive and possible leading to errors.
 
-Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the technical interoperability layer (see EIF) and is (currently) out of scope of this styleguide, which aims primarily at addressing the semantic interoperability.
+Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the _Technical Interoperability_ layer of the European Interoperability Framework (EIF) [xref:references.adoc#ref:94[94]], and are (currently) out of scope of this style guide, which aims primarily at addressing the semantic interoperability.
 
 If semantic engineers are prefer or are compelled to employ deontic indicators, then they must be precisely defined and those definitions be published. No reliance on common sense understanding shall be assumed as the meaning of such deontic indicators may (and certainly) differ not only between readers of data specifications but also how they are meant in different data specifications.
