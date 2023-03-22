@@ -41,7 +41,7 @@
 * Explained the distinction between technical and semantic interoperability layers in EIF, and how it is accommodated in this style guide.
 * Ensured that it is clear: subtyping without semantic change is not allowed in teh reuse section.
 * Disagree on loosening "import OR dereference" requirement in reuse definition. Reworded defintiion of "reuse" for increased clarity.
-* 
+
 
 ### Fixed
 * HTML page title is missing [#27](https://github.com/SEMICeu/style-guide/issues/27)
@@ -50,6 +50,5 @@
 * Answered the issue on URIs and IRIs [#21](https://github.com/SEMICeu/style-guide/issues/21)
 * Fixed missing `rdfs:subPropertyOf` mention [#23](https://github.com/SEMICeu/style-guide/issues/23)
 * Fixed 4 styling issues as part of the process [#7](https://github.com/SEMICeu/style-guide/issues/7)
-* 
 
 
