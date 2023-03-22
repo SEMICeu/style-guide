@@ -84,6 +84,7 @@ We recommend the formal ontology definition be limited to the following types of
 * datatype property declarations (`owl:DatatypeProperty`, `rdf:Property`)
 * object property declarations (`owl:ObjectProperty`, `rdf:Property`)
 * subclass relations (`rdfs:subClassOf`)
+* subproperty relations (`rdfs:subPropertyOf`)
 * annotations
 ** concept labels (`rdfs:label`, `skos:prefLabel`, `skos:altLabel`)
 ** concept definitions (`rdfs:comment`, `skos:definition`, `skos:scopeNote`)

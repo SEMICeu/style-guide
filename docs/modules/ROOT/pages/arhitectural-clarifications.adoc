@@ -159,12 +159,12 @@ maintenance and publication:
 * Editing of the conceptual model
 * Production of data specification document
 
-The data specification’s artefacts are not independent but tightly interrelated and transformed from one form into another one.
+The data specification's artefacts are not independent but tightly interrelated and transformed from one form into another one.
 
 [[sec:on-technical-concerns-and-artefacts]]
 == Technical artefacts and concerns
 
-It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two. The best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from xref:references.adoc#ref:97[1975] of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in xref:references.adoc#ref:97[ANSI] .
+It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from xref:references.adoc#ref:97[1975] of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in xref:references.adoc#ref:97[ANSI].
 
 EIF [xref:references.adoc#ref:94[94]] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:
 

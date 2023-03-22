@@ -1,4 +1,4 @@
-= Conceptual model conventions
+= Conceptual model conventions (UML)
 
 [[sec:cmc-r1]]
 == Conceptual model as single source of truth
@@ -12,7 +12,7 @@
 
 |*Statement*
 
-The conceptual model should be used as single source of truth.
+The UML conceptual model should be used as single source of truth.
 |===
 
 *Description*
@@ -29,18 +29,18 @@ It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specif
 
 
 [[sec:cmc-r2]]
-== Fixed interpretation
+== Fixed UML interpretation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Fixed interpretation
+ *Title:* Fixed UML interpretation
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R2
 
 |*Statement:*
 
-The conceptual model must have a fixed interpretation.
+The UML conceptual model must have a fixed interpretation.
 
 |===
 
@@ -48,19 +48,12 @@ The conceptual model must have a fixed interpretation.
 
 Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set of pre-established conventions on the UML notation to reach a fixed interpretation.
 
-The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the
-OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using
-UML is to provide for the SEMIC semantic data specifications a standard graphical notation which many are familiar with.
-Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should
-match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
+The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
 
-The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. Using the conventions
-and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such
-a precise set of mapping rules is that it allows for:
+The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. Using the conventions and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such a precise set of mapping rules is that it allows for:
 
 * Implementing tools to transform UML into derivative artefacts, thus enabling UML as the single source of truth.
-* Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness,
-conformance and consistency.
+* Implementing tools for formal checking against the established conventions (interpretation), thus enforcing correctness, conformance and consistency.
 
 These rules will increase the coherency of the UML diagrams across projects and organisations.
 
@@ -136,8 +129,7 @@ All UML Element names should be fit for URI generation with clear namespace orga
 This convention aims at ensuring that URIs can be generated from UML Element names and shall be treated as an extension to
 the terminology style conventions [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4]].
 
-The Element names are intended as human-readable denominations (called labels) and as machine-readable denominations
-(called identifiers).
+The Element names are intended as human-readable denominations (called labels) and as machine-readable denominations (called identifiers).
 
 This means that the Element names
 
@@ -157,12 +149,8 @@ Note that, when the UML Element name cannot be used to effectively denominate an
 may be used to express explicitly URIs, labels, notes and other types of annotations
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]].
 
-Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels
-that will be used for generation of specification documents in languages other than English.
-Country specific data specifications, which are meant to be used primarily at a national level, might decide to
-relax on this convention and permit the use of Unicode characters in the Element names, which will result in
-the generations of IRIs, instead of URIs [xref:references.adoc#ref:36[36]]. However, this is unnecessary,
-and strongly discouraged, in the SEMIC context.
+Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels that will be used for generation of specification documents in languages other than English.
+Country specific data specifications, which are meant to be used primarily at a national level, might decide to relax on this convention and permit the use of Unicode characters in the Element names, which will result in the generations of IRIs, instead of URIs [xref:references.adoc#ref:36[36]]. However, this is unnecessary, and strongly discouraged, in the SEMIC context.
 
 Following this convention is also important in the context of generation of persistent URIs
 [xref:gc-publication-conventions.adoc#sec:pc-r2[PC-R2]] according to the principles laid out in [xref:references.adoc#ref:1[1]].
@@ -365,7 +353,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 image::cmc-r8.png[]
 ****
 
-[xref:references.adoc#ref:19[19, sec 3.2.3]]
+See more [xref:references.adoc#ref:19[19, sec 3.2.3]]
 
 
 [[sec:cmc-r9]]
@@ -767,44 +755,31 @@ image::cmc-r17-stereotypes.png[]
 ****
 
 [[sec:cmc-r18]]
-== On datatypes
+== Datatype definition and usage
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* On datatypes
+ *Title:* Datatype definition and usage
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R18
 
 |*Statement:*
 
-The use of "standard" datatypes is strongly recommended. The creation of custom datatypes shall be avoided, whenever is possible.
+We strongly recommend that only OWL 2 compliant datatypes are used.
+The creation of custom datatypes shall be avoided.
 
 |===
 
 *Description:*
 
-Similar to [xref:references.adoc#ref:22[22, sec 4.7]], this convention draws the distinction between primitive (or atomic) types
-(consisting of single literal value) and composite types (consisting of multiple attributes)
-(see also [xref:references.adoc#ref:41[41, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such.
-For example: AmountType, Identifier, Quantity and Measure are to be treated as
-classes even if conceptually they could be seen as composite datatypes.
+Similar to [xref:references.adoc#ref:22[22, sec 4.7]], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [xref:references.adoc#ref:41[41, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such. For example: Amount, Identifier, Quantity and Measurement are to be treated as classes even if conceptually they could be seen as composite datatypes.
 
-It is recommended to employ the primitive datatypes that are already defined in
-XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]],
-which cover the standard and most common types. Thus,
-definitions of custom datatypes shall be avoided unless the model really needs them.
-Such cases are, however, rare.
+It is recommended to employ the primitive datatypes that are OWL 2 compliant already defined in XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]], which cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
 
-The datatypes defined in the UML model (and custom ones) are resolved into their
-XSD equivalent using the correspondence table below. Note that the family of
-string datatypes is mapped to rdf:langString. This means that the instance data
-should provide a language tag for the textual data indicating how it should be read.
-This enables multilingual data specification. Also, note that Date is mapped to
-xsd:date and DateTime is mapped to xsd:dateTime. However, the xsd:date is not
-included in the OWL2 interpretation and instead a strong preference is expressed
-for xsd:dateTime. Therefore, it is recommended to follow the OWL2 specification,
-although the xsd:date is a valid datatype in the RDF data and in SPARQL queries.
+The datatypes defined in the UML model and custom ones should be avoided. Even if the toolchain, performing the transformation of UML, automatically resolves those into their XSD equivalent using a correspondence table (such as the one below).
+
+Note that the family of string datatypes we recommend using the following ones (ordered by preference) `rdf:PlainLiteral`, `rdfs:Literal`, `xsd:string`, and `rdf:langString`. Often enabling multilingual data specification is a necessity.
 
 |===
 |*UML*|*XSD*
@@ -817,14 +792,14 @@ although the xsd:date is a valid datatype in the RDF data and in SPARQL queries.
 |Decimal|xsd:decimal
 |Date|xsd:date
 |DateTime|xsd:dateTime
+| |xsd:anyURI
+|Code| _see xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]_
 |===
 
-Moreover, it is recommended to use OWL 2 compliant XSD and RDF standard datatypes, if possible.
-They may be useful in indicating a specific datatype which is not possible with
-UML ones. For example, making a distinction between a general string (xsd:string)
-and a literal with a language tag (rdf:langString), or XML encoded ones such as
-rdf:HTML and rdf:XMLLiteral.
+Moreover, it is recommended to use OWL 2 compliant XSD and RDF standard datatypes, if possible. They may be useful in indicating a specific datatype, which is not possible with UML ones. For example, making a distinction between a general string (`xsd:string`) and a literal with a language tag (`rdf:langString`), or XML encoded ones such as `rdf:HTML` and `rdf:XMLLiteral`.
 
-For the model consistency, it is recommended that the proxy datatypes be defined
-in the model for the XSD and RDF datatypes used in the model. The proxies
-must follow the standard namespace convention using the “rdf” and “xsd” prefixes.
+The table above is a simplified correspondence between UML and XSD but the standard specifications shall be consulted:
+
+* https://www.w3.org/2011/rdf-wg/wiki/XSD_Datatypes[RDF working group XSD Datatype mapping]
+* https://www.w3.org/TR/rdf11-concepts/#section-Datatypes[RDF 1.1 Datatype section]
+* https://www.w3.org/TR/owl2-syntax/#Datatype_Maps[OWL 2 Datatype maps]

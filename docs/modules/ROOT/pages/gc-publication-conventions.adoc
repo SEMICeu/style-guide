@@ -27,7 +27,7 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
 
-[xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
+See more [xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
 
 
 [[sec:pc-r2]]
