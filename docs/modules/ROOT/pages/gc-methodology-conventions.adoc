@@ -46,11 +46,11 @@ edited, maintained, referred by the concepts)
 
 
 [[sec:mc-r2]]
-== On goals and scope
+== Scope and goals definition
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* On goals and scope
+ *Title:* Scope and goals definition
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* MC-R2
@@ -82,8 +82,7 @@ It shall be possible to determine the scope of a data specification from the use
 
 |*Statement:*
 
-If a domain contains a lot of concepts that have to be modelled, then it is recommended to split it into subdomains and
-manage them as modules. [xref:references.adoc#ref:19[19, sec 3.1.3]]
+If a domain contains a lot of concepts that have to be modelled, then it is recommended to partition it into subdomains and manage them as connected modules. [xref:references.adoc#ref:19[19, sec 3.1.3]]
 |===
 
 *Description:*
