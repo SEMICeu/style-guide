@@ -1,4 +1,4 @@
-# Contriburting Guidelines
+# Contributing Guidelines
 
 As a newcomer on a project, it’s easy to experience frustration. Here’s some advice to make your work on Django more useful and rewarding.
 
