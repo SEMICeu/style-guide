@@ -773,13 +773,13 @@ The creation of custom datatypes shall be avoided.
 
 *Description:*
 
-Similar to [xref:references.adoc#ref:22[22, sec 4.7]], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [xref:references.adoc#ref:41[41, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such. For example: Amount, Identifier, Quantity and Measurement are to be treated as classes even if conceptually they could be seen as composite datatypes.
+Similar to [xref:references.adoc#ref:22[22, sec 4.7]], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [xref:references.adoc#ref:41[41, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.
 
-It is recommended to employ the primitive datatypes that are OWL 2 compliant already defined in XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]], which cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
+It is recommended to employ the primitive datatypes that are already defined in XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
 
-The datatypes defined in the UML model and custom ones should be avoided. Even if the toolchain, performing the transformation of UML, automatically resolves those into their XSD equivalent using a correspondence table (such as the one below).
+The datatypes defined in the UML model should be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
 
-Note that the family of string datatypes we recommend using the following ones (ordered by preference) `rdf:PlainLiteral`, `rdfs:Literal`, `xsd:string`, and `rdf:langString`. Often enabling multilingual data specification is a necessity.
+Note that from the family of string datatypes we recommend using the following ones (in this order of preference): `rdf:PlainLiteral`, `rdfs:Literal`, `xsd:string`, and `rdf:langString`. Often enabling multilingual data specification is a necessity.
 
 |===
 |*UML*|*XSD*
@@ -796,10 +796,10 @@ Note that the family of string datatypes we recommend using the following ones (
 |Code| _see xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]_
 |===
 
-Moreover, it is recommended to use OWL 2 compliant XSD and RDF standard datatypes, if possible. They may be useful in indicating a specific datatype, which is not possible with UML ones. For example, making a distinction between a general string (`xsd:string`) and a literal with a language tag (`rdf:langString`), or XML encoded ones such as `rdf:HTML` and `rdf:XMLLiteral`.
+We strongly recommended the use of OWL 2 compliant XSD and RDF standard datatypes, if possible. They might be useful also for indicating a specific datatype, which is not possible with the UML ones. For example, making a distinction between a general string (`xsd:string`) and a literal with a language tag (`rdf:langString`), or XML encoded ones such as `rdf:HTML` and `rdf:XMLLiteral`.
 
-The table above is a simplified correspondence between UML and XSD but the standard specifications shall be consulted:
+The table above provides a simplified correspondence between UML and XSD datatypes, but for a complete list of available recommended datatypes the standard specifications shall be consulted:
 
-* https://www.w3.org/2011/rdf-wg/wiki/XSD_Datatypes[RDF working group XSD Datatype mapping]
-* https://www.w3.org/TR/rdf11-concepts/#section-Datatypes[RDF 1.1 Datatype section]
-* https://www.w3.org/TR/owl2-syntax/#Datatype_Maps[OWL 2 Datatype maps]
+* https://www.w3.org/2011/rdf-wg/wiki/XSD_Datatypes[RDF working group XSD Datatype maps]
+* https://www.w3.org/TR/rdf11-concepts/#section-Datatypes[RDF 1.1 Datatypes section]
+* https://www.w3.org/TR/owl2-syntax/#Datatype_Maps[OWL 2 Datatype Maps]
