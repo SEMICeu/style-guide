@@ -37,12 +37,12 @@ Such data specifications are primarily developed in collaboration with domain ex
 The successful application of an ontology or the development of an ontology-based system depends not merely on building a good ontology but also on fitting this into an appropriate development process and implementation into an information system.
 
 Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, _"All models are wrong, but some are useful"_, and what a model is useful for depends on what concern it is primarily addressing.
-On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [xref:references.adoc#ref:12[12]]. For example, the concept of "location" can be described by domain experts (in a domain model) in a way that is not isomorphic to how the "location" class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).
+On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [xref:references.adoc#ref:partridge13[partridge13]]. For example, the concept of "location" can be described by domain experts (in a domain model) in a way that is not isomorphic to how the "location" class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).
 
-One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture (MDA) [xref:references.adoc#ref:13[13]] which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.
+One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture (MDA) [xref:references.adoc#ref:mda[mda]] which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.
 
 Transformation deals with producing different models, viewpoints, or artefacts from a model based on a transformation pattern. In general, transformation can produce one representation from another or cross levels of abstraction or architectural layers
-[xref:references.adoc#ref:14[14]].
+[xref:references.adoc#ref:mda-guide[mda-guide]].
 
 
 [[sec:separation-of-concerns-in-SEMIC]]
@@ -50,7 +50,7 @@ Transformation deals with producing different models, viewpoints, or artefacts f
 The Core Vocabularies and the specialised Application Profiles aim to address the following concerns:
 
 * Domain experts need to agree on the definitions of concepts, relations and their organisation to form a coherent domain
-model expressed with varying levels of details and expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]],
+model expressed with varying levels of details and expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]],
 a shared conceptualisation.
 ** This is addressed with conceptual models expressed in UML.
 * The shared conceptualisation needs to be explicitly represented in a usable format (i.e. operated on) by the machines.
@@ -77,7 +77,7 @@ Experience shows that using a pivot representation as a single source of truth i
 [[sec:transformation]]
 == Transformation of the conceptual model
 
-UML conceptual models can be used as the _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[rule CMC-R1]]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
+UML conceptual models can be used as the _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
 
 With UML as the single source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]].
 
@@ -94,9 +94,9 @@ Relations between the artefacts are depicted in the figure above. The conceptual
 b) the formal ontology and c) the data specification document can be generated. Each artefact in the figure is qualified with two
 terms, the representation standard and the most characteristic feature. The conceptual model is expressed in UML language and shall
 be conformant with the conventions provided in this style guide and the interpretation rules
-[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]]. The formal ontology is expressed in OWL 2 language and shall
-be _lightweight_ as indicated in this convention [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]]. The data shape is expressed
-in SHACL language and is characterised by the appropriate level of permissiveness [xref:gc-data-shape-conventions.adoc#sec:dsc-r2[rule DSC-R2]].
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]]. The formal ontology is expressed in OWL 2 language and shall
+be _lightweight_ as indicated in this convention [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]. The data shape is expressed
+in SHACL language and is characterised by the appropriate level of permissiveness [xref:gc-data-shape-conventions.adoc#sec:dsc-r2[DSC-R2]].
 The documentation is represented in HTML format and the wording used shall be as precise as possible to capture the meaning accurately
 and clearly express the intention of the authors.
 
@@ -107,15 +107,15 @@ These, however, are not addressed in this style guide.
 
 One condition the conceptual model shall satisfy is that it shall comply with a set of pre-established conventions
 (xref:gc-general-conventions.adoc[general conventions] and xref:gc-conceptual-model-conventions.adoc[UML conventions]) and have a
-fixed interpretation [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]].
+fixed interpretation [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]].
 
 The guidelines in this document enable and constrain the transformation process, making it precise enough to implement a
 toolchain that automatically performs conformance checking and necessary transformation operations. How this is done, however,
-is beyond the scope of this document, and the reader may refer to SEMIC toolchain [xref:references.adoc#ref:15[15]] or other similar implementations such
-as model2owl [xref:references.adoc#ref:16[16]] or OSLO toolchain [xref:references.adoc#ref:17[17]] projects.
+is beyond the scope of this document, and the reader may refer to SEMIC toolchain [xref:references.adoc#ref:semic[semic]] or other similar implementations such
+as model2owl [xref:references.adoc#ref:model2owl[model2owl]] or OSLO toolchain [xref:references.adoc#ref:oslo-toolchain[oslo-toolchain]] projects.
 
 
-[[sec:on-data-specification-and-artefact-types]]
+[[sec:data-specification-and-artefact-types]]
 == Data specification and artefact types
 For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
@@ -161,12 +161,12 @@ maintenance and publication:
 
 The data specification's artefacts are not independent but tightly interrelated and transformed from one form into another one.
 
-[[sec:on-technical-concerns-and-artefacts]]
+[[sec:technical-concerns-and-artefacts]]
 == Technical artefacts and concerns
 
-It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from xref:references.adoc#ref:97[1975] of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in xref:references.adoc#ref:97[ANSI].
+It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from 1975 of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in ANSI [xref:references.adoc#ref:ansi[ansi]].
 
-EIF [xref:references.adoc#ref:94[94]] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:
+EIF [xref:references.adoc#ref:eif[eif]] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:
 
 * interface specifications,
 * interconnection services,
@@ -182,24 +182,24 @@ EIF defines the semantic interoperability as ensuring that precise (format and) 
 
 The concerns considered in this layer are related, but not limited, to developing vocabularies and define data meaning in exchanges. This layer is agnostic to access right, security, transmission protocol, physical representation, how it is presented to the user, etc.
 
-In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the addresses syntactic aspect is covered by the RDF specifications [xref:references.adoc#ref:33[33]] Whereas the semantic aspect is addressed withing the xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary] and xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile] expressed in OWL 2 [xref:references.adoc#ref:43[43]] and SHACL [xref:references.adoc#ref:44[44]] languages.
+In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the syntactic aspect is covered by the RDF specifications [xref:references.adoc#ref:rdf[rdf]], whereas the semantic aspect is addressed within the xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary] and xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile], expressed in OWL 2 [xref:references.adoc#ref:owl2[owl2]] and SHACL [xref:references.adoc#ref:shacl[shacl]] languages.
 
 Connecting the semantic layer and the technical layers may not always be straight forward. Of a particular importance are three types of technical artefacts, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.
 
 **RDF.**
 In case the system is gnostic of Semantic Web technologies, if the implementation uses RDF natively, then the technical layer is (near) isomorphic to the semantic specification. There is a perfect alignment.
 
-**JSON.** When system implementation is based on JSON representations, a mapping shall be provided to establish semantics-syntax alignment. Luckily, how such an alignment is done is already specified in the JSON-LD standard specification [xref:references.adoc#ref:98[98]]. It contains a canonical mapping algorithm. The syntaxt semantic binding is provided by the so-called _context definitions_.
+**JSON.** When system implementation is based on JSON representations, a mapping shall be provided to establish semantics-syntax alignment. Luckily, how such an alignment is done is already specified in the JSON-LD standard specification [xref:references.adoc#ref:json-ld[json-ld]]. It contains a canonical mapping algorithm. The syntaxt semantic binding is provided by the so-called _context definitions_.
 
-And, as a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.
+As a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.
 
-**XML.** When teh system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [xref:references.adoc#ref:99[99]] but no mapping language exists like in teh case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
-Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). The only thing we may relay on in this case are only good practices, and alternative technologies such as, for example RML language [xref:references.adoc#ref:100[100]].
+**XML.** When the system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [xref:references.adoc#ref:xslt[xslt]] but no mapping language exists like in the case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
+Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). The only thing we may relay on in this case are only good practices, and alternative technologies such as, for example RML language [xref:references.adoc#ref:rml[rml]].
 
 **RDB.** If the implementation is based on relational databases, the story is similar to the XML. There is no organic way of mapping syntax and semantics. The mapping is at the level of the database schema, and there is no canonical way of doing this.
-So, just like in the case of XML the reliance may be on good practices and alternative technologies to encode an interpretation, such as D2RML [xref:references.adoc#ref:101[101]] and RML [xref:references.adoc#ref:100[100]].
+So, just like in the case of XML the reliance may be on good practices and alternative technologies to encode an interpretation, such as D2RML [xref:references.adoc#ref:d2rm[d2rm]] and RML [xref:references.adoc#ref:rml[rml]].
 
-Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and implementation model specifications) are developed and published.
+Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and Implementation Model specifications) are developed and published.
 
 
 
