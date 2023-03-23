@@ -389,11 +389,11 @@ Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47
 
 
 [[sec:cmc-r10]]
-== Attribute definition
+== Attribute definition and usage
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Attribute definition
+ *Title:* Attribute definition and usage
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R10
@@ -503,11 +503,11 @@ image::cmc-r11-2.png[]
 
 
 [[sec:cmc-r12]]
-== Connector definition
+== Connector definition and usage
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Connector definition
+ *Title:* Connector definition and usage
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R12
