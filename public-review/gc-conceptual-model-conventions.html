@@ -177,7 +177,7 @@ as much as possible automatically, by a dedicated software tool or toolchain [<a
 </ul>
 </div>
 <div class="paragraph">
-<p>It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [<a href="references.html#ref:22" class="xref page">22, sec 4.1</a>].</p>
+<p>It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.1</a>].</p>
 </div>
 </div>
 </div>
@@ -208,7 +208,7 @@ as much as possible automatically, by a dedicated software tool or toolchain [<a
 <p>Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set of pre-established conventions on the UML notation to reach a fixed interpretation.</p>
 </div>
 <div class="paragraph">
-<p>The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [<a href="references.html#ref:28" class="xref page">28</a>] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).</p>
+<p>The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [<a href="references.html#ref:omg-onto" class="xref page">omg-onto</a>] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).</p>
 </div>
 <div class="paragraph">
 <p>The UML is the single source of truth [<a href="#sec:cmc-r1">CMC-R1</a>]. Using the conventions and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such a precise set of mapping rules is that it allows for:</p>
@@ -227,7 +227,7 @@ as much as possible automatically, by a dedicated software tool or toolchain [<a
 <p>These rules will increase the coherency of the UML diagrams across projects and organisations.</p>
 </div>
 <div class="paragraph">
-<p>Within SEMIC, the interpretation is implemented by the SEMIC toolchain [<a href="references.html#ref:15" class="xref page">15</a>].</p>
+<p>Within SEMIC, the interpretation is implemented by the SEMIC toolchain [<a href="references.html#ref:semic" class="xref page">semic</a>].</p>
 </div>
 <div class="paragraph">
 <p>The table below provides recommended interpretations of UML elements in OWL 2 and SHACL.
@@ -350,16 +350,16 @@ are mentioned below on target and multiplicity)</p></td>
 <p>Examples:</p>
 </div>
 <div class="paragraph">
-<p>The UML interpretation applied by the SEMIC toolchain is described in [<a href="references.html#ref:29" class="xref page">29</a>]. To assist the editor
+<p>The UML interpretation applied by the SEMIC toolchain is described in [<a href="references.html#ref:semic-toolchain" class="xref page">semic-toolchain</a>]. To assist the editor
 while data modelling to choose the best representation, a test suite is available covering all modelling patterns.</p>
 </div>
 <div class="paragraph">
-<p>The SEMIC toolchain shares the same interpretation as the OSLO toolchain [<a href="references.html#ref:17" class="xref page">17</a>].</p>
+<p>The SEMIC toolchain shares the same interpretation as the OSLO toolchain [<a href="references.html#ref:oslo-toolchain" class="xref page">oslo-toolchain</a>].</p>
 </div>
 <div class="paragraph">
 <p>In the context of eProcurement ontology, a toolchain has been developed to transform and validate UML models. Such tools
-are based on two documents: UML convention specifications [<a href="references.html#ref:22" class="xref page">22</a>] and UML transformation specifications
-[<a href="references.html#ref:31" class="xref page">31</a>].</p>
+are based on two documents: UML convention specifications [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc</a>] and UML transformation specifications
+[<a href="references.html#ref:epo-cm2owl" class="xref page">epo-cm2owl</a>].</p>
 </div>
 </div>
 </div>
@@ -401,7 +401,7 @@ the terminology style conventions [<a href="gc-general-conventions.html#sec:gc-r
 <div class="ulist">
 <ul>
 <li>
-<p>serve as the primary source for generating URIs [<a href="references.html#ref:32" class="xref page">32</a>] to ensure unambiguous machine-readable
+<p>serve as the primary source for generating URIs [<a href="references.html#ref:puri-bp" class="xref page">puri-bp</a>] to ensure unambiguous machine-readable
 reference to a formal construct.</p>
 </li>
 <li>
@@ -413,12 +413,12 @@ reference to a formal construct.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Thus, in the UML model, the Element names must conform to RDF [<a href="references.html#ref:33" class="xref page">33</a>] and XML [<a href="references.html#ref:34" class="xref page">34</a>]
+<p>Thus, in the UML model, the Element names must conform to RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>] and XML [<a href="references.html#ref:xml" class="xref page">xml</a>]
 format specifications. Both languages effectively require that terms begin with an upper or lower case letter from the ASCII
 character set or an underscore (_). This tight restriction means that, for example, terms may not begin with a number, hyphen
-or accented character [<a href="references.html#ref:35" class="xref page">35</a>]. Although underscores are permitted, they are discouraged as they may be,
+or accented character [<a href="references.html#ref:cv-meth" class="xref page">cv-meth</a>]. Although underscores are permitted, they are discouraged as they may be,
 in some cases, misread as spaces. A formal definition of these restrictions is given in the XML specification document
-[<a href="references.html#ref:34" class="xref page">34</a>].</p>
+[<a href="references.html#ref:xml" class="xref page">xml</a>].</p>
 </div>
 <div class="paragraph">
 <p>Note that, when the UML Element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
@@ -427,11 +427,11 @@ may be used to express explicitly URIs, labels, notes and other types of annotat
 </div>
 <div class="paragraph">
 <p>Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels that will be used for generation of specification documents in languages other than English.
-Country specific data specifications, which are meant to be used primarily at a national level, might decide to relax on this convention and permit the use of Unicode characters in the Element names, which will result in the generations of IRIs, instead of URIs [<a href="references.html#ref:36" class="xref page">36</a>]. However, this is unnecessary, and strongly discouraged, in the SEMIC context.</p>
+Country specific data specifications, which are meant to be used primarily at a national level, might decide to relax on this convention and permit the use of Unicode characters in the Element names, which will result in the generations of IRIs, instead of URIs [<a href="references.html#ref:iri" class="xref page">iri</a>]. However, this is unnecessary, and strongly discouraged, in the SEMIC context.</p>
 </div>
 <div class="paragraph">
 <p>Following this convention is also important in the context of generation of persistent URIs
-[<a href="gc-publication-conventions.html#sec:pc-r2" class="xref page">PC-R2</a>] according to the principles laid out in [<a href="references.html#ref:1" class="xref page">1</a>].</p>
+[<a href="gc-publication-conventions.html#sec:pc-r2" class="xref page">PC-R2</a>] according to the principles laid out in [<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -475,10 +475,10 @@ Country specific data specifications, which are meant to be used primarily at a 
 </div>
 <div class="paragraph">
 <p>The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
-subsequent character positions. [<a href="references.html#ref:22" class="xref page">22, sec 4.2</a>]</p>
+subsequent character positions. [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.2</a>]</p>
 </div>
 <div class="paragraph">
-<p>Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names; therefore, UML Element names shall be CamelCased [<a href="references.html#ref:22" class="xref page">22, sec 3.2</a>], [<a href="references.html#ref:19" class="xref page">19, sec 3.2.20</a>].</p>
+<p>Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names; therefore, UML Element names shall be CamelCased [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.2</a>], [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.20</a>].</p>
 </div>
 <div class="paragraph">
 <p>The names of</p>
@@ -544,22 +544,22 @@ is in lowerCamelCase.</p>
 <div class="paragraph">
 <p>To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
 namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
-[<a href="references.html#ref:38" class="xref page">38</a>].</p>
+[<a href="references.html#ref:xml-ns" class="xref page">xml-ns</a>].</p>
 </div>
 <div class="paragraph">
 <p>A namespace is a set of symbols that are used to organise objects of various kinds so that these objects may be referred
-to by name and uniquely identifiable [<a href="references.html#ref:39" class="xref page">39</a>].</p>
+to by name and uniquely identifiable [<a href="references.html#ref:urn" class="xref page">urn</a>].</p>
 </div>
 <div class="paragraph">
 <p>A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
-[<a href="references.html#ref:40" class="xref page">40</a>]. A qualified name is a name subject to namespace interpretation [<a href="references.html#ref:38" class="xref page">38</a>]. Syntactically,
+[<a href="references.html#ref:turtle" class="xref page">turtle</a>]. A qualified name is a name subject to namespace interpretation [<a href="references.html#ref:xml-ns" class="xref page">xml-ns</a>]. Syntactically,
 they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
 namespace URIs and a default namespace applicable to unprefixed Element names.</p>
 </div>
 <div class="paragraph">
 <p>As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
 name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the Element
-name, after the colon, is the local segment. See [<a href="references.html#ref:38" class="xref page">38</a>] for more info.</p>
+name, after the colon, is the local segment. See [<a href="references.html#ref:xml-ns" class="xref page">xml-ns</a>] for more info.</p>
 </div>
 <div class="paragraph">
 <p>In case the editor decides to omit to specify a prefix in the Element name when a URI generation logic is devised, an implicit
@@ -676,7 +676,7 @@ meaning shall be preserved without changes to the labels, concept definitions or
 </div>
 <div class="paragraph">
 <p>Reused classes shall be depicted in the UML diagrams. Reused properties shall be depicted in diagrams as connectors and
-attributes. It is not necessary to depict unused classes or properties [<a href="references.html#ref:19" class="xref page">19, sec 3.1.7</a>].</p>
+attributes. It is not necessary to depict unused classes or properties [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.1.7</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -741,7 +741,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 </div>
 </div>
 <div class="paragraph">
-<p>See more [<a href="references.html#ref:19" class="xref page">19, sec 3.2.3</a>]</p>
+<p>See more [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.3</a>]</p>
 </div>
 </div>
 </div>
@@ -774,10 +774,10 @@ for instantiation. Editors may choose to mark such classes as abstract and to in
 practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype [see <a href="#sec:cmc-r17">CMC-R17: Using stereotypes</a>].</p>
 </div>
 <div class="paragraph">
-<p>Doing so has no impact on the OWL 2 [<a href="references.html#ref:43" class="xref page">43</a>] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [<a href="references.html#ref:44" class="xref page">44</a>] can be generated to express that no instances of this class shall not occur in the data.</p>
+<p>Doing so has no impact on the OWL 2 [<a href="references.html#ref:owl2" class="xref page">owl2</a>] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [<a href="references.html#ref:shacl" class="xref page">shacl</a>] can be generated to express that no instances of this class shall not occur in the data.</p>
 </div>
 <div class="paragraph">
-<p>See [<a href="references.html#ref:19" class="xref page">19, sec 3.2.6</a>], [<a href="references.html#ref:22" class="xref page">22, sec 4.4</a>]</p>
+<p>See [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.6</a>], [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.4</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -785,7 +785,7 @@ practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype [se
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>Both OSLO [<a href="references.html#ref:17" class="xref page">17</a>] and ePO [<a href="references.html#ref:47" class="xref page">47</a>] toolchains support such stereotypes.</p>
+<p>Both OSLO [<a href="references.html#ref:oslo-toolchain" class="xref page">oslo-toolchain</a>] and ePO [<a href="references.html#ref:epo" class="xref page">epo</a>] toolchains support such stereotypes.</p>
 </div>
 </div>
 </div>
@@ -822,7 +822,7 @@ those should be expressed as relationships (represented by Association connector
 </div>
 <div class="paragraph">
 <p>In case of primitive datatypes, high preference shall be given to using OWL 2 compliant
-XSD [<a href="references.html#ref:42" class="xref page">42</a>] and RDF [<a href="references.html#ref:33" class="xref page">33</a>] standard datatypes.
+XSD [<a href="references.html#ref:xsd" class="xref page">xsd</a>] and RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>] standard datatypes.
 For more detailed recommendations on the use of primitive datatypes see convention [<a href="#sec:cmc-r18">CMC-R18</a>].</p>
 </div>
 <div class="paragraph">
@@ -841,7 +841,7 @@ named after the controlled list.</p>
 <p>Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
 between a UML Class element and a UML Datatype element.</p>
 </div>
-<div id="ref:19[19" class="sidebarblock adoc">
+<div id="ref:oslo-rules[oslo-rules" class="sidebarblock adoc">
 <div class="content">
 <div class="paragraph">
 <p><strong>Examples:</strong></p>
@@ -901,12 +901,12 @@ a non-atomic datatype, but a controlled list of <code>skos:Concept</code>(s).</p
 Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.</p>
 </div>
 <div class="paragraph">
-<p>If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
+<p>If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.15</a>].</p>
 </div>
 <div class="paragraph">
 <p>However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
-minimum cardinality shall be set to 1, for example [1..*] [<a href="references.html#ref:22" class="xref page">22, sec 4.5</a>].</p>
+minimum cardinality shall be set to 1, for example [1..*] [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.5</a>].</p>
 </div>
 <div class="paragraph">
 <p>A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
@@ -922,13 +922,13 @@ on whether it is specifying the cardinality of attributes vs. that of connectors
 </div>
 <div class="paragraph">
 <p>Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
-the cardinality shall be the most permissive, where possible [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
+the cardinality shall be the most permissive, where possible [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.15</a>].</p>
 </div>
 <div class="paragraph">
-<p>Limit the constraints to business rules, do not add technical constraints to the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.16</a>].</p>
+<p>Limit the constraints to business rules, do not add technical constraints to the model [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.16</a>].</p>
 </div>
 <div class="paragraph">
-<p>If an attribute or an association from a reused vocabulary is irrelevant, do not set the lower limit of multiplicity to 0, but simply omit it in the model [<a href="references.html#ref:19" class="xref page">19, sec 3.2.15</a>].</p>
+<p>If an attribute or an association from a reused vocabulary is irrelevant, do not set the lower limit of multiplicity to 0, but simply omit it in the model [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.15</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -976,7 +976,7 @@ the cardinality shall be the most permissive, where possible [<a href="reference
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>UML Connectors shall be used to denote object properties (see OWL 2 semantics, [<a href="references.html#ref:43" class="xref page">43</a>]).</p>
+<p>UML Connectors shall be used to denote object properties (see OWL 2 semantics, [<a href="references.html#ref:owl2" class="xref page">owl2</a>]).</p>
 </div>
 <div class="paragraph">
 <p>First, explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
@@ -1045,7 +1045,7 @@ For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
 <div class="paragraph">
 <p>For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
 semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
-and the "+" symbol shall always be used next to each property. This symbol means "public" [<a href="references.html#ref:19" class="xref page">19, sec 3.2.22</a>].</p>
+and the "+" symbol shall always be used next to each property. This symbol means "public" [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.22</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1119,10 +1119,10 @@ published and maintained stand-alone following their own lifecycle, so that they
 </div>
 </div>
 <div class="paragraph">
-<p>The name of the Enumeration shall be resolved to a URI identical to that of the <code>skos:ConceptScheme</code>. As for the connector type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being <code>skos:inScheme</code> the intended controlled list [<a href="references.html#ref:18" class="xref page">18</a>].</p>
+<p>The name of the Enumeration shall be resolved to a URI identical to that of the <code>skos:ConceptScheme</code>. As for the connector type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being <code>skos:inScheme</code> the intended controlled list [<a href="references.html#ref:epo-arch" class="xref page">epo-arch</a>].</p>
 </div>
 <div class="paragraph">
-<p>If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [<a href="references.html#ref:19" class="xref page">19, sec 3.2.17</a>].</p>
+<p>If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.17</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1180,7 +1180,7 @@ subdomains.</p>
 <div class="paragraph">
 <p>It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
 namespaces of connectors and attributes. It does not work in cases when an attribute, or a connector is used multiple times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
-names or using Element tags [<a href="references.html#ref:22" class="xref page">22, sec 4.3</a>].</p>
+names or using Element tags [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.3</a>].</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1235,13 +1235,13 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>are well spaced (proper space between lines, boxes and labels)</p>
 </li>
 <li>
-<p>minimise the number of crossing connectors [<a href="references.html#ref:19" class="xref page">19, sec 3.3.4</a>]</p>
+<p>minimise the number of crossing connectors [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.4</a>]</p>
 </li>
 <li>
-<p>prefer orthogonal to straight connectors [<a href="references.html#ref:19" class="xref page">19, sec 3.3.1</a>]</p>
+<p>prefer orthogonal to straight connectors [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.1</a>]</p>
 </li>
 <li>
-<p>align elements horizontally &amp; vertically [<a href="references.html#ref:19" class="xref page">19, sec 3.3.4</a>]</p>
+<p>align elements horizontally &amp; vertically [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.4</a>]</p>
 </li>
 <li>
 <p>space elements evenly</p>
@@ -1253,10 +1253,10 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>align labels horizontally and avoid vertical or oblique alignment</p>
 </li>
 <li>
-<p>place subclasses under or to the right of their parent [<a href="references.html#ref:19" class="xref page">19, sec 3.3.5</a>] and</p>
+<p>place subclasses under or to the right of their parent [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.5</a>] and</p>
 </li>
 <li>
-<p>place the part under or to the right of the whole at aggregates or composites [<a href="references.html#ref:19" class="xref page">19, sec 3.3.1</a>].</p>
+<p>place the part under or to the right of the whole at aggregates or composites [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.1</a>].</p>
 </li>
 <li>
 <p>minimise the number of details, and are short and concise; multiple small(-er) diagrams are preferred to one large diagram</p>
@@ -1272,7 +1272,7 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>diagrams shall be no bigger than one A4 page</p>
 </li>
 <li>
-<p>simplify complex diagrams [<a href="references.html#ref:19" class="xref page">19, sec 3.3.3</a>]:</p>
+<p>simplify complex diagrams [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.3</a>]:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1292,15 +1292,15 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 </li>
 <li>
 <p>Symbol size equal, and nothing shall draw more attention unless intended. Make elements of equal importance equally
-large [<a href="references.html#ref:19" class="xref page">19, sec 3.3.2</a>].</p>
+large [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.2</a>].</p>
 </li>
 <li>
-<p>Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:19" class="xref page">19, sec 3.2.5</a>].</p>
+<p>Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.5</a>].</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>See also [<a href="references.html#ref:19" class="xref page">19, sec 3.1.11</a>], [<a href="references.html#ref:20" class="xref page">20, sec on UML, Rule 13 - 23</a>]</p>
+<p>See also [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.1.11</a>], [<a href="references.html#ref:semic-sgdraft" class="xref page">semic-sgdraft, sec on UML, Rules 13-23</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -1396,13 +1396,13 @@ The creation of custom datatypes shall be avoided.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Similar to [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [<a href="references.html#ref:41" class="xref page">41, sec 3.1</a>]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.</p>
+<p>Similar to [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.7</a>], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [<a href="references.html#ref:cv-handbook" class="xref page">cv-handbook, sec 3.1</a>]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.</p>
 </div>
 <div class="paragraph">
-<p>It is recommended to employ the primitive datatypes that are already defined in XSD [<a href="references.html#ref:42" class="xref page">42</a>] and RDF [<a href="references.html#ref:33" class="xref page">33</a>], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
+<p>It is recommended to employ the primitive datatypes that are already defined in XSD [<a href="references.html#ref:xsd" class="xref page">xsd</a>] and RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
 </div>
 <div class="paragraph">
-<p>The datatypes defined in the UML model should be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.</p>
+<p>The datatypes defined in the UML model shall be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.</p>
 </div>
 <div class="paragraph">
 <p>Note that from the family of string datatypes we recommend using the following ones (in this order of preference): <code>rdf:PlainLiteral</code>, <code>rdfs:Literal</code>, <code>xsd:string</code>, and <code>rdf:langString</code>. Often enabling multilingual data specification is a necessity.</p>

@@ -162,7 +162,7 @@
 <div class="paragraph">
 <p>Publishing a vocabulary as a Linked Open Data (LOD) resource means making it accessible, both human and machine-readable, in a
 standard way, thus supporting the semantic web. The publication as full LOD implies that the data is compliant with the
-highest grade of 5-Star [<a href="references.html#ref:83" class="xref page">83</a>] open data evaluation:</p>
+highest grade of 5-Star [<a href="references.html#ref:5star-od" class="xref page">5star-od</a>] open data evaluation:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -184,7 +184,7 @@ highest grade of 5-Star [<a href="references.html#ref:83" class="xref page">83</
 </ul>
 </div>
 <div class="paragraph">
-<p>See more [<a href="references.html#ref:20" class="xref page">20</a>, <a href="references.html#ref:85" class="xref page">85</a>]</p>
+<p>See more [<a href="references.html#ref:semic-sgdraft" class="xref page">semic-sgdraft</a>, <a href="references.html#ref:dwdp" class="xref page">dwdp</a>]</p>
 </div>
 </div>
 </div>
@@ -205,8 +205,8 @@ highest grade of 5-Star [<a href="references.html#ref:83" class="xref page">83</
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
 <p class="tableblock">The URIs that are used to identify the terms modelled in the data specifications should be <em>dereferenceable Persistent URIs</em>
-[<a href="references.html#ref:1" class="xref page">1</a>] and comply with a URI policy (or URI strategy).</p>
-<p class="tableblock">URIs that are well-defined according to such criteria are often denoted as PURIs [<a href="references.html#ref:1" class="xref page">1</a>].</p>
+[<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>] and comply with a URI policy (or URI strategy).</p>
+<p class="tableblock">URIs that are well-defined according to such criteria are often denoted as PURIs [<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>].</p>
 <p class="tableblock">SEMIC adheres to the EU persistent URI policy. Each SEMIC URI is dereferenceable in both machine representation (RDF
 artefacts) and human-readable (HTML artefact).</p></td>
 </tr>
@@ -216,19 +216,19 @@ artefacts) and human-readable (HTML artefact).</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>When publishing  data on the web [<a href="references.html#ref:85" class="xref page">85</a>], it is crucial to have a structured and persistent system
+<p>When publishing  data on the web [<a href="references.html#ref:dwdp" class="xref page">dwdp</a>], it is crucial to have a structured and persistent system
 of URIs in place. Such URIs make it easy for the users to understand the vocabulary structure and retrieve information as they expect.</p>
 </div>
 <div class="paragraph">
-<p>The 10 rules for Persistent URIs [<a href="references.html#ref:1" class="xref page">1</a>] are base principles for the design of quality identifiers.
+<p>The 10 rules for Persistent URIs [<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>] are base principles for the design of quality identifiers.
 Regarding URI design, the main consideration of creators should be that when a URI is created, all its parts should be
 resistant to change. For instance, locations and organisation names can change and therefore should not be used in URIs.
 First and foremost, when introducing semantics in URIs, the strings used need to reflect what the resources are (i.e. intrinsic
-characteristics such as the type or nature), not who owns them or where they are [<a href="references.html#ref:88" class="xref page">88</a>].</p>
+characteristics such as the type or nature), not who owns them or where they are [<a href="references.html#ref:uri-dp" class="xref page">uri-dp</a>].</p>
 </div>
 <div class="paragraph">
-<p>In 2014, the ISA Programme devised a common policy for managing persistent HTTP-based URIs of EU institutions [<a href="references.html#ref:88" class="xref page">88</a>,
-<a href="references.html#ref:1" class="xref page">1</a>, <a href="references.html#ref:89" class="xref page">89</a>]. That has led to an EU wide URI resolution service, prescribing
+<p>In 2014, the ISA Programme devised a common policy for managing persistent HTTP-based URIs of EU institutions [<a href="references.html#ref:uri-dp" class="xref page">uri-dp</a>,
+<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>, <a href="references.html#ref:puri-gov-eu" class="xref page">puri-gov-eu</a>]. That has led to an EU wide URI resolution service, prescribing
 that each URI is of the following pattern:</p>
 </div>
 <div class="paragraph">
@@ -269,7 +269,7 @@ Evidence in the context of CCCEV is denoted with the PURI <code><a href="http://
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
 <p class="tableblock">A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
-principles. [<a href="references.html#ref:90" class="xref page">90</a>]</p></td>
+principles. [<a href="references.html#ref:sem-ver" class="xref page">sem-ver</a>]</p></td>
 </tr>
 </tbody>
 </table>
@@ -338,7 +338,7 @@ depends on whether it is a major, minor or patch update.</p>
 </div>
 <div class="paragraph">
 <p>The version shall be assigned to the entire vocabulary or Application Profile and never to elements in the model
-(concepts, relations, constraints, etc.) [<a href="references.html#ref:19" class="xref page">19, sec 3.1.6</a>]. The version shall be saved as the model metadata
+(concepts, relations, constraints, etc.) [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.1.6</a>]. The version shall be saved as the model metadata
 (for example, in the <code>owl:Ontology</code> header).</p>
 </div>
 <div class="paragraph">
@@ -380,11 +380,11 @@ responds with the best-fitting result it can provide.</p>
 </div>
 <div class="paragraph">
 <p>The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
-default response (if no content type is specified), and the other is RDF [<a href="references.html#ref:1" class="xref page">1</a>].</p>
+default response (if no content type is specified), and the other is RDF [<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>].</p>
 </div>
 <div class="paragraph">
 <p>The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
-Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [<a href="references.html#ref:92" class="xref page">92</a>].</p>
+Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [<a href="references.html#ref:rdf-pub" class="xref page">rdf-pub</a>].</p>
 </div>
 </div>
 </div>
