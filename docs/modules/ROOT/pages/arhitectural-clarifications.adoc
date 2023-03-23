@@ -50,7 +50,7 @@ Transformation deals with producing different models, viewpoints, or artefacts f
 The Core Vocabularies and the specialised Application Profiles aim to address the following concerns:
 
 * Domain experts need to agree on the definitions of concepts, relations and their organisation to form a coherent domain
-model expressed with varying levels of details and expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]],
+model expressed with varying levels of details and expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]],
 a shared conceptualisation.
 ** This is addressed with conceptual models expressed in UML.
 * The shared conceptualisation needs to be explicitly represented in a usable format (i.e. operated on) by the machines.
@@ -77,7 +77,7 @@ Experience shows that using a pivot representation as a single source of truth i
 [[sec:transformation]]
 == Transformation of the conceptual model
 
-UML conceptual models can be used as the _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[rule CMC-R1]]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
+UML conceptual models can be used as the _single source of truth_ [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. This means it is sufficiently expressive to capture multiple modelling aspects/concerns simultaneously. The other artefacts are then fully or partially derived from the conceptual model.
 
 With UML as the single source of truth, the update process is easier to perform as it only has to be done in a single place. The other representations are automatically derived from the conceptual model; the maintenance is less error-prone, uniform and easy [xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]].
 
@@ -94,9 +94,9 @@ Relations between the artefacts are depicted in the figure above. The conceptual
 b) the formal ontology and c) the data specification document can be generated. Each artefact in the figure is qualified with two
 terms, the representation standard and the most characteristic feature. The conceptual model is expressed in UML language and shall
 be conformant with the conventions provided in this style guide and the interpretation rules
-[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]]. The formal ontology is expressed in OWL 2 language and shall
-be _lightweight_ as indicated in this convention [xref:gc-semantic-conventions.adoc#sec:sc-r2[rule SC-R2]]. The data shape is expressed
-in SHACL language and is characterised by the appropriate level of permissiveness [xref:gc-data-shape-conventions.adoc#sec:dsc-r2[rule DSC-R2]].
+[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]]. The formal ontology is expressed in OWL 2 language and shall
+be _lightweight_ as indicated in this convention [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]. The data shape is expressed
+in SHACL language and is characterised by the appropriate level of permissiveness [xref:gc-data-shape-conventions.adoc#sec:dsc-r2[DSC-R2]].
 The documentation is represented in HTML format and the wording used shall be as precise as possible to capture the meaning accurately
 and clearly express the intention of the authors.
 
@@ -107,7 +107,7 @@ These, however, are not addressed in this style guide.
 
 One condition the conceptual model shall satisfy is that it shall comply with a set of pre-established conventions
 (xref:gc-general-conventions.adoc[general conventions] and xref:gc-conceptual-model-conventions.adoc[UML conventions]) and have a
-fixed interpretation [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[rule CMC-R2]].
+fixed interpretation [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]].
 
 The guidelines in this document enable and constrain the transformation process, making it precise enough to implement a
 toolchain that automatically performs conformance checking and necessary transformation operations. How this is done, however,
@@ -115,7 +115,7 @@ is beyond the scope of this document, and the reader may refer to SEMIC toolchai
 as model2owl [xref:references.adoc#ref:model2owl[model2owl]] or OSLO toolchain [xref:references.adoc#ref:oslo-toolchain[oslo-toolchain]] projects.
 
 
-[[sec:on-data-specification-and-artefact-types]]
+[[sec:data-specification-and-artefact-types]]
 == Data specification and artefact types
 For any given data specification, various concerns shall be addressed separately, each in a dedicated artefact type. Therefore,
 the CVs or APs shall be published as a set of artefacts, each addressing a specific concern. The union of these artefacts forms
@@ -161,7 +161,7 @@ maintenance and publication:
 
 The data specification's artefacts are not independent but tightly interrelated and transformed from one form into another one.
 
-[[sec:on-technical-concerns-and-artefacts]]
+[[sec:technical-concerns-and-artefacts]]
 == Technical artefacts and concerns
 
 It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from 1975 of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in ANSI [xref:references.adoc#ref:ansi[ansi]].
