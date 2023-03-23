@@ -182,7 +182,7 @@ EIF defines the semantic interoperability as ensuring that precise (format and) 
 
 The concerns considered in this layer are related, but not limited, to developing vocabularies and define data meaning in exchanges. This layer is agnostic to access right, security, transmission protocol, physical representation, how it is presented to the user, etc.
 
-In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the addresses syntactic aspect is covered by the RDF specifications [xref:references.adoc#ref:rdf[rdf]] Whereas the semantic aspect is addressed withing the xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary] and xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile] expressed in OWL 2 [xref:references.adoc#ref:owl2[owl2]] and SHACL [xref:references.adoc#ref:shacl[shacl]] languages.
+In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the syntactic aspect is covered by the RDF specifications [xref:references.adoc#ref:rdf[rdf]], whereas the semantic aspect is addressed within the xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary] and xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile], expressed in OWL 2 [xref:references.adoc#ref:owl2[owl2]] and SHACL [xref:references.adoc#ref:shacl[shacl]] languages.
 
 Connecting the semantic layer and the technical layers may not always be straight forward. Of a particular importance are three types of technical artefacts, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.
 
@@ -191,15 +191,15 @@ In case the system is gnostic of Semantic Web technologies, if the implementatio
 
 **JSON.** When system implementation is based on JSON representations, a mapping shall be provided to establish semantics-syntax alignment. Luckily, how such an alignment is done is already specified in the JSON-LD standard specification [xref:references.adoc#ref:json-ld[json-ld]]. It contains a canonical mapping algorithm. The syntaxt semantic binding is provided by the so-called _context definitions_.
 
-And, as a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.
+As a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.
 
-**XML.** When teh system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [xref:references.adoc#ref:xslt[xslt]] but no mapping language exists like in teh case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
+**XML.** When the system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [xref:references.adoc#ref:xslt[xslt]] but no mapping language exists like in the case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
 Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). The only thing we may relay on in this case are only good practices, and alternative technologies such as, for example RML language [xref:references.adoc#ref:rml[rml]].
 
 **RDB.** If the implementation is based on relational databases, the story is similar to the XML. There is no organic way of mapping syntax and semantics. The mapping is at the level of the database schema, and there is no canonical way of doing this.
 So, just like in the case of XML the reliance may be on good practices and alternative technologies to encode an interpretation, such as D2RML [xref:references.adoc#ref:d2rm[d2rm]] and RML [xref:references.adoc#ref:rml[rml]].
 
-Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and implementation model specifications) are developed and published.
+Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and Implementation Model specifications) are developed and published.
 
 
 
