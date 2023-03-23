@@ -52,7 +52,7 @@ In data shapes (SHACL), the class can be used for in domain/range property const
 In UML, properties are depicted as new connections (object properties) that are incoming and outgoing to the class or as new attributes
 (datatype properties) that appear in the class.
 
-This works because OWL 2 semantics treats properties as first-class citizens (along with classes, datatypes and individuals). So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately from one another, just as the OWL 2 specification defines it [xref:references.adoc#ref:43[43]].
+This works because OWL 2 semantics treats properties as first-class citizens (along with classes, datatypes and individuals). So even if the UML class diagram may visualise new properties on the class, they shall be read as constructs defined separately from one another, just as the OWL 2 specification defines it [xref:references.adoc#ref:owl2[owl2]].
 
 The properties on the superclasses of the reused class are considered inherited. When introducing new properties, do not duplicate existing ones in the superclass(es). Also, make sure there are no logical contradictions [xref:gc-semantic-conventions.adoc#sec:sc-r5[CS-R5]].
 |*Original properties on the class as defined in the context of a data specification*|In OWL 2 & SHACL, when reusing a class as-is from an established ontology hereafter called the original, all properties and constraints associated with the class are considered adopted (even if some may be irrelevant).

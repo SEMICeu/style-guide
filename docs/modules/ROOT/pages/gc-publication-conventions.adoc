@@ -19,7 +19,7 @@ Publishing the Core Vocabularies and Application Profiles shall be compliant wit
 
 Publishing a vocabulary as a Linked Open Data (LOD) resource means making it accessible, both human and machine-readable, in a
 standard way, thus supporting the semantic web. The publication as full LOD implies that the data is compliant with the
-highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
+highest grade of 5-Star [xref:references.adoc#ref:5star-od[5star-od]] open data evaluation:
 
 * The data is available on the Web under an open licence
 * The data is available following a clear structure
@@ -27,7 +27,7 @@ highest grade of 5-Star [xref:references.adoc#ref:83[83]] open data evaluation:
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
 
-See more [xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
+See more [xref:references.adoc#ref:semic-sgdraft[semic-sgdraft], xref:references.adoc#ref:dwdp[dwdp]]
 
 
 [[sec:pc-r2]]
@@ -43,9 +43,9 @@ See more [xref:references.adoc#ref:20[20], xref:references.adoc#ref:85[85]]
 |*Statement:*
 
 The URIs that are used to identify the terms modelled in the data specifications should be _dereferenceable Persistent URIs_
-[xref:references.adoc#ref:1[1]] and comply with a URI policy (or URI strategy).
+[xref:references.adoc#ref:10rules-puri[10rules-puri]] and comply with a URI policy (or URI strategy).
 
-URIs that are well-defined according to such criteria are often denoted as PURIs [xref:references.adoc#ref:1[1]].
+URIs that are well-defined according to such criteria are often denoted as PURIs [xref:references.adoc#ref:10rules-puri[10rules-puri]].
 
 SEMIC adheres to the EU persistent URI policy. Each SEMIC URI is dereferenceable in both machine representation (RDF
 artefacts) and human-readable (HTML artefact).
@@ -53,17 +53,17 @@ artefacts) and human-readable (HTML artefact).
 
 *Description:*
 
-When publishing  data on the web [xref:references.adoc#ref:85[85]], it is crucial to have a structured and persistent system
+When publishing  data on the web [xref:references.adoc#ref:dwdp[dwdp]], it is crucial to have a structured and persistent system
 of URIs in place. Such URIs make it easy for the users to understand the vocabulary structure and retrieve information as they expect.
 
-The 10 rules for Persistent URIs [xref:references.adoc#ref:1[1]] are base principles for the design of quality identifiers.
+The 10 rules for Persistent URIs [xref:references.adoc#ref:10rules-puri[10rules-puri]] are base principles for the design of quality identifiers.
 Regarding URI design, the main consideration of creators should be that when a URI is created, all its parts should be
 resistant to change. For instance, locations and organisation names can change and therefore should not be used in URIs.
 First and foremost, when introducing semantics in URIs, the strings used need to reflect what the resources are (i.e. intrinsic
-characteristics such as the type or nature), not who owns them or where they are [xref:references.adoc#ref:88[88]].
+characteristics such as the type or nature), not who owns them or where they are [xref:references.adoc#ref:uri-dp[uri-dp]].
 
-In 2014, the ISA Programme devised a common policy for managing persistent HTTP-based URIs of EU institutions [xref:references.adoc#ref:88[88],
-xref:references.adoc#ref:1[1], xref:references.adoc#ref:89[89]]. That has led to an EU wide URI resolution service, prescribing
+In 2014, the ISA Programme devised a common policy for managing persistent HTTP-based URIs of EU institutions [xref:references.adoc#ref:uri-dp[uri-dp],
+xref:references.adoc#ref:10rules-puri[10rules-puri], xref:references.adoc#ref:puri-gov-eu[puri-gov-eu]]. That has led to an EU wide URI resolution service, prescribing
 that each URI is of the following pattern:
 
 `http://data.europa.eu/{Collection}/{Reference}`
@@ -93,7 +93,7 @@ Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu
 |*Statement:*
 
 A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
-principles. [xref:references.adoc#ref:90[90]]
+principles. [xref:references.adoc#ref:sem-ver[sem-ver]]
 |===
 
 *Description:*
@@ -141,7 +141,7 @@ Create a new version with each publication. Using the semantic version principle
 depends on whether it is a major, minor or patch update.
 
 The version shall be assigned to the entire vocabulary or Application Profile and never to elements in the model
-(concepts, relations, constraints, etc.) [xref:references.adoc#ref:19[19, sec 3.1.6]]. The version shall be saved as the model metadata
+(concepts, relations, constraints, etc.) [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.1.6]]. The version shall be saved as the model metadata
 (for example, in the `owl:Ontology` header).
 
 No version information shall be embedded into any artefact URIs unless it is a version URI provided via `owl:versionIRI`.
@@ -172,10 +172,10 @@ responds with the best-fitting result it can provide.
 It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the HTTP header Accept.
 
 The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
-default response (if no content type is specified), and the other is RDF [xref:references.adoc#ref:1[1]].
+default response (if no content type is specified), and the other is RDF [xref:references.adoc#ref:10rules-puri[10rules-puri]].
 
 The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
-Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [xref:references.adoc#ref:92[92]].
+Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [xref:references.adoc#ref:rdf-pub[rdf-pub]].
 
 
 [[sec:pc-r6]]

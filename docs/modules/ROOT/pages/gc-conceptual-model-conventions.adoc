@@ -25,7 +25,7 @@ This implies:
 * Existence of a well-defined set of rules and conventions to transform UML model into other artefacts, which can be executed,
 as much as possible automatically, by a dedicated software tool or toolchain [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]]
 
-It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [xref:references.adoc#ref:22[22, sec 4.1]].
+It is recommended that recent versions of the UML (v2.5+) and XMI (v2.5+) specifications are used [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.1]].
 
 
 [[sec:cmc-r2]]
@@ -48,7 +48,7 @@ The UML conceptual model must have a fixed interpretation.
 
 Using UML as a graphical language to encode a data specification according to the reuse guidelines requires defining a set of pre-established conventions on the UML notation to reach a fixed interpretation.
 
-The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [xref:references.adoc#ref:28[28]] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
+The interpretation of UML as a logical structure, including OWL 2, was and still is an active research topic. But even the OMG Ontology Definition Metamodel [xref:references.adoc#ref:omg-onto[omg-onto]] does not address the notion of reuse. The goal of using UML is to provide for the SEMIC semantic data specifications a standard graphical notation, which many are familiar with. Therefore, the graphical notation should facilitate the understanding of the data specification. The UML notation should match the semantics that are to be expressed in the data specification (the ontology, data shapes and human-readable documentation).
 
 The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r1[CMC-R1]]. Using the conventions and associated interpretation expressed in this rule, other artefacts are derived from the UML. The benefit of defining such a precise set of mapping rules is that it allows for:
 
@@ -57,7 +57,7 @@ The UML is the single source of truth [xref:gc-conceptual-model-conventions.adoc
 
 These rules will increase the coherency of the UML diagrams across projects and organisations.
 
-Within SEMIC, the interpretation is implemented by the SEMIC toolchain [xref:references.adoc#ref:15[15]].
+Within SEMIC, the interpretation is implemented by the SEMIC toolchain [xref:references.adoc#ref:semic[semic]].
 
 The table below provides recommended interpretations of UML elements in OWL 2 and SHACL.
 These interpretations can be considered high-level mapping rules implementable into transformation tools that generate
@@ -99,14 +99,14 @@ are mentioned below on target and multiplicity)
 ****
 Examples:
 
-The UML interpretation applied by the SEMIC toolchain is described in [xref:references.adoc#ref:29[29]]. To assist the editor
+The UML interpretation applied by the SEMIC toolchain is described in [xref:references.adoc#ref:semic-toolchain[semic-toolchain]]. To assist the editor
 while data modelling to choose the best representation, a test suite is available covering all modelling patterns.
 
-The SEMIC toolchain shares the same interpretation as the OSLO toolchain [xref:references.adoc#ref:17[17]].
+The SEMIC toolchain shares the same interpretation as the OSLO toolchain [xref:references.adoc#ref:oslo-toolchain[oslo-toolchain]].
 
 In the context of eProcurement ontology, a toolchain has been developed to transform and validate UML models. Such tools
-are based on two documents: UML convention specifications [xref:references.adoc#ref:22[22]] and UML transformation specifications
-[xref:references.adoc#ref:31[31]].
+are based on two documents: UML convention specifications [xref:references.adoc#ref:epo-cmc[epo-cmc]] and UML transformation specifications
+[xref:references.adoc#ref:epo-cm2owl[epo-cm2owl]].
 ****
 
 [[sec:cmc-r3]]
@@ -133,27 +133,27 @@ The Element names are intended as human-readable denominations (called labels) a
 
 This means that the Element names
 
-* serve as the primary source for generating URIs [xref:references.adoc#ref:32[32]] to ensure unambiguous machine-readable
+* serve as the primary source for generating URIs [xref:references.adoc#ref:puri-bp[puri-bp]] to ensure unambiguous machine-readable
 reference to a formal construct.
 * serve as the primary source for generating labels to ensure human readers' comprehension
 * follow an organisation of namespaces
 
-Thus, in the UML model, the Element names must conform to RDF [xref:references.adoc#ref:33[33]] and XML [xref:references.adoc#ref:34[34]]
+Thus, in the UML model, the Element names must conform to RDF [xref:references.adoc#ref:rdf[rdf]] and XML [xref:references.adoc#ref:xml[xml]]
 format specifications. Both languages effectively require that terms begin with an upper or lower case letter from the ASCII
 character set or an underscore (_). This tight restriction means that, for example, terms may not begin with a number, hyphen
-or accented character [xref:references.adoc#ref:35[35]]. Although underscores are permitted, they are discouraged as they may be,
+or accented character [xref:references.adoc#ref:cv-meth[cv-meth]]. Although underscores are permitted, they are discouraged as they may be,
 in some cases, misread as spaces. A formal definition of these restrictions is given in the XML specification document
-[xref:references.adoc#ref:34[34]].
+[xref:references.adoc#ref:xml[xml]].
 
 Note that, when the UML Element name cannot be used to effectively denominate and identify the concept then, UML Element Tags
 may be used to express explicitly URIs, labels, notes and other types of annotations
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]].
 
 Internationalisation, if required, should be provided through the use of the UML Element Tags to specify labels that will be used for generation of specification documents in languages other than English.
-Country specific data specifications, which are meant to be used primarily at a national level, might decide to relax on this convention and permit the use of Unicode characters in the Element names, which will result in the generations of IRIs, instead of URIs [xref:references.adoc#ref:36[36]]. However, this is unnecessary, and strongly discouraged, in the SEMIC context.
+Country specific data specifications, which are meant to be used primarily at a national level, might decide to relax on this convention and permit the use of Unicode characters in the Element names, which will result in the generations of IRIs, instead of URIs [xref:references.adoc#ref:iri[iri]]. However, this is unnecessary, and strongly discouraged, in the SEMIC context.
 
 Following this convention is also important in the context of generation of persistent URIs
-[xref:gc-publication-conventions.adoc#sec:pc-r2[PC-R2]] according to the principles laid out in [xref:references.adoc#ref:1[1]].
+[xref:gc-publication-conventions.adoc#sec:pc-r2[PC-R2]] according to the principles laid out in [xref:references.adoc#ref:10rules-puri[10rules-puri]].
 
 ****
 *Examples:*
@@ -182,9 +182,9 @@ All UML Element names are case-sensitive and shall follow the CamelCase conventi
 *Description:*
 
 The names begin with an upper or lower case letter (A–Z, a–z) for all terms in the model. Digits (0–9) are allowed in the
-subsequent character positions. [xref:references.adoc#ref:22[22, sec 4.2]]
+subsequent character positions. [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.2]]
 
-Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names; therefore, UML Element names shall be CamelCased [xref:references.adoc#ref:22[22, sec 3.2]], [xref:references.adoc#ref:19[19, sec 3.2.20]].
+Moreover, we can significantly improve the readability of an ontology if we use consistent capitalisation for concept names; therefore, UML Element names shall be CamelCased [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 3.2]], [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.20]].
 
 The names of
 
@@ -224,19 +224,19 @@ Element names shall be organised by namespaces. Namespaces may be indicated thro
 
 To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
 namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
-[xref:references.adoc#ref:38[38]].
+[xref:references.adoc#ref:xml-ns[xml-ns]].
 
 A namespace is a set of symbols that are used to organise objects of various kinds so that these objects may be referred
-to by name and uniquely identifiable [xref:references.adoc#ref:39[39]].
+to by name and uniquely identifiable [xref:references.adoc#ref:urn[urn]].
 
 A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
-[xref:references.adoc#ref:40[40]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:38[38]]. Syntactically,
+[xref:references.adoc#ref:turtle[turtle]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:xml-ns[xml-ns]]. Syntactically,
 they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
 namespace URIs and a default namespace applicable to unprefixed Element names.
 
 As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
 name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the Element
-name, after the colon, is the local segment. See [xref:references.adoc#ref:38[38]] for more info.
+name, after the colon, is the local segment. See [xref:references.adoc#ref:xml-ns[xml-ns]] for more info.
 
 In case the editor decides to omit to specify a prefix in the Element name when a URI generation logic is devised, an implicit
 prefix can be assumed by default. The qualified names may be structured as follows:
@@ -311,7 +311,7 @@ The external Elements shall be clearly marked. The easiest way to do so is by pr
 meaning shall be preserved without changes to the labels, concept definitions or URIs.
 
 Reused classes shall be depicted in the UML diagrams. Reused properties shall be depicted in diagrams as connectors and
-attributes. It is not necessary to depict unused classes or properties [xref:references.adoc#ref:19[19, sec 3.1.7]].
+attributes. It is not necessary to depict unused classes or properties [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.1.7]].
 
 ****
 *Examples:*
@@ -353,7 +353,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 image::cmc-r8.png[]
 ****
 
-See more [xref:references.adoc#ref:19[19, sec 3.2.3]]
+See more [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.3]]
 
 
 [[sec:cmc-r9]]
@@ -377,14 +377,14 @@ When a (super-)class is created for capturing a level of abstraction in the doma
 for instantiation. Editors may choose to mark such classes as abstract and to indicate that their subclasses shall be used in
 practice. In UML, this can be done via << abstract >> stereotype [see xref:gc-conceptual-model-conventions.adoc#sec:cmc-r17[CMC-R17: Using stereotypes]].
 
-Doing so has no impact on the OWL 2 [xref:references.adoc#ref:43[43]] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [xref:references.adoc#ref:44[44]] can be generated to express that no instances of this class shall not occur in the data.
+Doing so has no impact on the OWL 2 [xref:references.adoc#ref:owl2[owl2]] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [xref:references.adoc#ref:shacl[shacl]] can be generated to express that no instances of this class shall not occur in the data.
 
-See [xref:references.adoc#ref:19[19, sec 3.2.6]], [xref:references.adoc#ref:22[22, sec 4.4]]
+See [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.6]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.4]]
 
 ****
 *Examples:*
 
-Both OSLO [xref:references.adoc#ref:17[17]] and ePO [xref:references.adoc#ref:47[47]] toolchains support such stereotypes.
+Both OSLO [xref:references.adoc#ref:oslo-toolchain[oslo-toolchain]] and ePO [xref:references.adoc#ref:epo[epo]] toolchains support such stereotypes.
 ****
 
 
@@ -412,7 +412,7 @@ those should be expressed as relationships (represented by Association connector
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
 
 In case of primitive datatypes, high preference shall be given to using OWL 2 compliant
-XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]] standard datatypes.
+XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]] standard datatypes.
 For more detailed recommendations on the use of primitive datatypes see convention [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r18[CMC-R18]].
 
 Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two
@@ -426,7 +426,7 @@ In the second case, the property is modelled not as an attribute but by using a 
 
 Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
 between a UML Class element and a UML Datatype element.
-[xref:references.adoc#ref:19[19, sec 3.2.12]], [xref:references.adoc#ref:22[22, sec 4.5]], [xref:references.adoc#ref:22[22, sec 4.7]], [xref:references.adoc#ref:19[19, sec 3.2.2]]
+[xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.12]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.2]]
 
 ****
 *Examples:*
@@ -469,11 +469,11 @@ The multiplicity of connectors and class attributes should be specified, indicat
 If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
 Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.
 
-If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:19[19, sec 3.2.15]].
+If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.15]].
 
 However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
-minimum cardinality shall be set to 1, for example [1..*] [xref:references.adoc#ref:22[22, sec 4.5]].
+minimum cardinality shall be set to 1, for example [1..*] [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]].
 
 A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
 it is recommended to fall back on the implicit assumption of [0..*]. Not to be confused with the default cardinality assumed
@@ -486,11 +486,11 @@ It is worth highlighting this, as some UML tools, by default, might use a differ
 on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.
 
 Unless, well explained, no rigid constraints shall be imposed on attributes and associations. In other words, if specified,
-the cardinality shall be the most permissive, where possible [xref:references.adoc#ref:19[19, sec 3.2.15]].
+the cardinality shall be the most permissive, where possible [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.15]].
 
-Limit the constraints to business rules, do not add technical constraints to the model [xref:references.adoc#ref:19[19, sec 3.2.16]].
+Limit the constraints to business rules, do not add technical constraints to the model [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.16]].
 
-If an attribute or an association from a reused vocabulary is irrelevant, do not set the lower limit of multiplicity to 0, but simply omit it in the model [xref:references.adoc#ref:19[19, sec 3.2.15]].
+If an attribute or an association from a reused vocabulary is irrelevant, do not set the lower limit of multiplicity to 0, but simply omit it in the model [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.15]].
 
 ****
 *Examples:*
@@ -519,7 +519,7 @@ UML Connectors shall be used to define relations and properties taking non-atomi
 
 *Description:*
 
-UML Connectors shall be used to denote object properties (see OWL 2 semantics, [xref:references.adoc#ref:43[43]]).
+UML Connectors shall be used to denote object properties (see OWL 2 semantics, [xref:references.adoc#ref:owl2[owl2]]).
 
 First, explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.
@@ -570,7 +570,7 @@ The visibility of all UML Elements should be "public".
 
 For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
 semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
-and the "+" symbol shall always be used next to each property. This symbol means "public" [xref:references.adoc#ref:19[19, sec 3.2.22]].
+and the "+" symbol shall always be used next to each property. This symbol means "public" [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.22]].
 
 ****
 *Examples:*
@@ -617,9 +617,9 @@ The properties taking this controlled list as range shall be depicted as UML con
 
 image::cmc-r14-1.png[]
 
-The name of the Enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:18[18]].
+The name of the Enumeration shall be resolved to a URI identical to that of the `skos:ConceptScheme`. As for the connector type we recommend using a dependency connector (depicted with a dashed line) because the semantic interpretation differs slightly from the association connector (depicted with a continuous line). Namely, the range of the property has to fulfil two constraints: (a) instantiating the skos:Concept class and (b) being `skos:inScheme` the intended controlled list [xref:references.adoc#ref:epo-arch[epo-arch]].
 
-If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:19[19, sec 3.2.17]].
+If the controlled list is specific to the model then the author shall define the values of the UML Enumeration inside of it, which are interpreted as concepts belonging to the containing concept scheme [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.17]].
 
 ****
 *Examples:*
@@ -657,7 +657,7 @@ subdomains.
 
 It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
 namespaces of connectors and attributes. It does not work in cases when an attribute, or a connector is used multiple times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
-names or using Element tags [xref:references.adoc#ref:22[22, sec 4.3]].
+names or using Element tags [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.3]].
 ****
 *Examples:*
 
@@ -690,28 +690,28 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 We recommend that the diagrams:
 
 * are well spaced (proper space between lines, boxes and labels)
-* minimise the number of crossing connectors [xref:references.adoc#ref:19[19, sec 3.3.4]]
-* prefer orthogonal to straight connectors [xref:references.adoc#ref:19[19, sec 3.3.1]]
-* align elements horizontally & vertically [xref:references.adoc#ref:19[19, sec 3.3.4]]
+* minimise the number of crossing connectors [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.4]]
+* prefer orthogonal to straight connectors [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.1]]
+* align elements horizontally & vertically [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.4]]
 * space elements evenly
 * avoid overlapping labels and depict all labels
 * align labels horizontally and avoid vertical or oblique alignment
-* place subclasses under or to the right of their parent [xref:references.adoc#ref:19[19, sec 3.3.5]] and
-* place the part under or to the right of the whole at aggregates or composites [xref:references.adoc#ref:19[19, sec 3.3.1]].
+* place subclasses under or to the right of their parent [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.5]] and
+* place the part under or to the right of the whole at aggregates or composites [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.1]].
 * minimise the number of details, and are short and concise; multiple small(-er) diagrams are preferred to one large diagram
 * diagram size:
 ** prefer a multiple themed small(er) diagrams to large and crowded ones
 ** diagrams shall be no bigger than one A4 page
-** simplify complex diagrams [xref:references.adoc#ref:19[19, sec 3.3.3]]:
+** simplify complex diagrams [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.3]]:
 *** breaking it down into several smaller diagrams.
 *** by highlighting certain parts of the diagram.
 *** by hiding attributes, role names, etc. that are not relevant.
 
 * Symbol size equal, and nothing shall draw more attention unless intended. Make elements of equal importance equally
-large [xref:references.adoc#ref:19[19, sec 3.3.2]].
-* Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:19[19, sec 3.2.5]].
+large [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.2]].
+* Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.5]].
 
-See also [xref:references.adoc#ref:19[19, sec 3.1.11]], [xref:references.adoc#ref:20[20, sec on UML, Rule 13 - 23]]
+See also [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.1.11]], [xref:references.adoc#ref:semic-sgdraft[semic-sgdraft, sec on UML, Rules 13-23]]
 ****
 *Examples:*
 
@@ -773,11 +773,11 @@ The creation of custom datatypes shall be avoided.
 
 *Description:*
 
-Similar to [xref:references.adoc#ref:22[22, sec 4.7]], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [xref:references.adoc#ref:41[41, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.
+Similar to [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [xref:references.adoc#ref:cv-handbook[cv-handbook, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.
 
-It is recommended to employ the primitive datatypes that are already defined in XSD [xref:references.adoc#ref:42[42]] and RDF [xref:references.adoc#ref:33[33]], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
+It is recommended to employ the primitive datatypes that are already defined in XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
 
-The datatypes defined in the UML model should be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
+The datatypes defined in the UML model shall be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
 
 Note that from the family of string datatypes we recommend using the following ones (in this order of preference): `rdf:PlainLiteral`, `rdfs:Literal`, `xsd:string`, and `rdf:langString`. Often enabling multilingual data specification is a necessity.
 
