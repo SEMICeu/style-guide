@@ -792,7 +792,7 @@ practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype [se
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:cmc-r10"><a class="anchor" href="#sec:cmc-r10"></a>Attribute definition</h2>
+<h2 id="sec:cmc-r10"><a class="anchor" href="#sec:cmc-r10"></a>Attribute definition and usage</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -800,7 +800,7 @@ practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype [se
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute definition</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Attribute definition and usage</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R10</p></td>
@@ -953,7 +953,7 @@ the cardinality shall be the most permissive, where possible [<a href="reference
 </div>
 </div>
 <div class="sect1">
-<h2 id="sec:cmc-r12"><a class="anchor" href="#sec:cmc-r12"></a>Connector definition</h2>
+<h2 id="sec:cmc-r12"><a class="anchor" href="#sec:cmc-r12"></a>Connector definition and usage</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -961,7 +961,7 @@ the cardinality shall be the most permissive, where possible [<a href="reference
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Connector definition</p></td>
+<td class="tableblock halign-left valign-top" style="background-color:  #a8c6f7;"><p class="tableblock"> <strong>Title:</strong> Connector definition and usage</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Identifier</strong> CMC-R12</p></td>
@@ -1396,16 +1396,16 @@ The creation of custom datatypes shall be avoided.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Similar to [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [<a href="references.html#ref:41" class="xref page">41, sec 3.1</a>]). In fact, the composite datatypes must be defined as classes and handled as such. For example: Amount, Identifier, Quantity and Measurement are to be treated as classes even if conceptually they could be seen as composite datatypes.</p>
+<p>Similar to [<a href="references.html#ref:22" class="xref page">22, sec 4.7</a>], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [<a href="references.html#ref:41" class="xref page">41, sec 3.1</a>]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.</p>
 </div>
 <div class="paragraph">
-<p>It is recommended to employ the primitive datatypes that are OWL 2 compliant already defined in XSD [<a href="references.html#ref:42" class="xref page">42</a>] and RDF [<a href="references.html#ref:33" class="xref page">33</a>], which cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
+<p>It is recommended to employ the primitive datatypes that are already defined in XSD [<a href="references.html#ref:42" class="xref page">42</a>] and RDF [<a href="references.html#ref:33" class="xref page">33</a>], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
 </div>
 <div class="paragraph">
-<p>The datatypes defined in the UML model and custom ones should be avoided. Even if the toolchain, performing the transformation of UML, automatically resolves those into their XSD equivalent using a correspondence table (such as the one below).</p>
+<p>The datatypes defined in the UML model should be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.</p>
 </div>
 <div class="paragraph">
-<p>Note that the family of string datatypes we recommend using the following ones (ordered by preference) <code>rdf:PlainLiteral</code>, <code>rdfs:Literal</code>, <code>xsd:string</code>, and <code>rdf:langString</code>. Often enabling multilingual data specification is a necessity.</p>
+<p>Note that from the family of string datatypes we recommend using the following ones (in this order of preference): <code>rdf:PlainLiteral</code>, <code>rdfs:Literal</code>, <code>xsd:string</code>, and <code>rdf:langString</code>. Often enabling multilingual data specification is a necessity.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1464,21 +1464,21 @@ The creation of custom datatypes shall be avoided.</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Moreover, it is recommended to use OWL 2 compliant XSD and RDF standard datatypes, if possible. They may be useful in indicating a specific datatype, which is not possible with UML ones. For example, making a distinction between a general string (<code>xsd:string</code>) and a literal with a language tag (<code>rdf:langString</code>), or XML encoded ones such as <code>rdf:HTML</code> and <code>rdf:XMLLiteral</code>.</p>
+<p>We strongly recommended the use of OWL 2 compliant XSD and RDF standard datatypes, if possible. They might be useful also for indicating a specific datatype, which is not possible with the UML ones. For example, making a distinction between a general string (<code>xsd:string</code>) and a literal with a language tag (<code>rdf:langString</code>), or XML encoded ones such as <code>rdf:HTML</code> and <code>rdf:XMLLiteral</code>.</p>
 </div>
 <div class="paragraph">
-<p>The table above is a simplified correspondence between UML and XSD but the standard specifications shall be consulted:</p>
+<p>The table above provides a simplified correspondence between UML and XSD datatypes, but for a complete list of available recommended datatypes the standard specifications shall be consulted:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://www.w3.org/2011/rdf-wg/wiki/XSD_Datatypes">RDF working group XSD Datatype mapping</a></p>
+<p><a href="https://www.w3.org/2011/rdf-wg/wiki/XSD_Datatypes">RDF working group XSD Datatype maps</a></p>
 </li>
 <li>
-<p><a href="https://www.w3.org/TR/rdf11-concepts/#section-Datatypes">RDF 1.1 Datatype section</a></p>
+<p><a href="https://www.w3.org/TR/rdf11-concepts/#section-Datatypes">RDF 1.1 Datatypes section</a></p>
 </li>
 <li>
-<p><a href="https://www.w3.org/TR/owl2-syntax/#Datatype_Maps">OWL 2 Datatype maps</a></p>
+<p><a href="https://www.w3.org/TR/owl2-syntax/#Datatype_Maps">OWL 2 Datatype Maps</a></p>
 </li>
 </ul>
 </div>
