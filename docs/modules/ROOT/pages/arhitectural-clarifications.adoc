@@ -10,13 +10,13 @@ The consumers of SEMIC standards specification can be divided into three categor
 
 image::ac-consumer-context.png[alt=consumer-context,width=80%,height=]
 
-The SEMIC goal is to bring these groups together and "speak the same language" and share meaning and conceptual references. Besides the very useful and much needed alignment of domains experts on what concepts mean, it is necessary to bring the gap between domain experts and the technical experts who implement information systems. Then, the domain experts and business users shall interact with the information systems using the very same set of concepts, unpolluted and undistorted by the technology in the implementation process.
+The SEMIC goal is to bring these groups together, help them "speak the same language" and share meaning and conceptual references. Besides the very useful and much needed alignment of domains experts on what concepts mean, it is necessary to bridge the gap between domain experts and the technical experts who implement information systems. Then, the domain experts and business users shall interact with the information systems using the very same set of concepts, agnostic to and undistorted by the technology in the implementation process.
 
 image::ac-consumer-context-standards.png[alt=consumer-context-standards,width=60%,height=]
 
 Standard _semantic data specifications_ fulfil the purpose keeping these three groups in sync.
 
-Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines that share data which each other and are able to operate on them seamlessly. For that we need developers that build those machine interactions: so the machines and developers must "find a common language". But in order that the developers do the right things, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interaction correspond with the business/domain expert expectations.
+Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines interactions that share data whith each other and are able to operate on them seamlessly. The developers implement those machine interactions, and therefore the machines and developers must "find a common language". However, in order to ensure that the developers take the appropriate steps, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interactions correspond with the business/domain expert expectations.
 
 image::ac-data-specification-composition.png[alt=composition of a data specification,width=80%,height=]
 
@@ -47,7 +47,7 @@ Transformation deals with producing different models, viewpoints, or artefacts f
 
 [[sec:separation-of-concerns-in-SEMIC]]
 == Separation of concerns in SEMIC
-The Core Vocabularies and the specialised Application Profiles aim to address the following concerns:
+The Core Vocabularies (CVs)  and the specialised Application Profiles (APs) aim to address the following concerns:
 
 * Domain experts need to agree on the definitions of concepts, relations and their organisation to form a coherent domain
 model expressed with varying levels of details and expressivity [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]],
@@ -68,11 +68,11 @@ In addition, when multiple artefacts addressing each concern are produced, keepi
 
 == Editorial synchronisation problem
 
-On the editorial side the artefacts composing data specification need to be kept in sync. A modification done in one shall pervade and propagate in all others. This is a difficult, tedious and expensive activity if such synchronisation is to be done manually.
+On the editorial side the artefacts composing a data specification need to be kept in sync. A modification done in one shall pervade and propagate in all others. This is a difficult, tedious and expensive activity if such synchronisation is to be done manually.
 
 image::ac-editor-sync-problem.png[alt=editor-sync-problem,width=90%,height=]
 
-Experience shows that using a pivot representation as a single source of truth is a viable solution. Such representation needs to be expressive enough to fulfill all the information needs of the derived representations.
+Experience shows that using a pivot representation as a single source of truth is a viable solution. Such representation needs to be expressive enough to fulfill all the information needs of the derived artefacts.
 
 [[sec:transformation]]
 == Transformation of the conceptual model
@@ -86,7 +86,7 @@ This approach facilitates consistent maintenance of semantic data specification 
 However, using UML is not enough, by itself, as the risk of ambiguity and multiple  interpretations of the meaning of the UML model elements used in the conceptual model still exists. This risk is mitigated by adopting precise interpretation rules, such as the ones provided in this style guide [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]].
 The different concerns that each data specification is trying to address might lead to different interpretations of the same UML constructs. Therefore, [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r2[CMC-R2]] defines only a minimal set of such interpretation rules (that can be further extended, if necessary).
 
-Also, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.
+Additionally, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.
 
 image::ac-artefact-generation.png[alt=artefact generation from conceptual model,width=,height=]
 
@@ -164,7 +164,7 @@ The data specification's artefacts are not independent but tightly interrelated 
 [[sec:technical-concerns-and-artefacts]]
 == Technical artefacts and concerns
 
-It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from 1975 of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in ANSI [xref:references.adoc#ref:ansi[ansi]].
+It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). The best way to look at them is in terms of concerns addressed within each layer, which resembles a lot the discussion on distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in ANSI [xref:references.adoc#ref:ansi[ansi]] from 1975.
 
 EIF [xref:references.adoc#ref:eif[eif]] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:
 
@@ -184,7 +184,7 @@ The concerns considered in this layer are related, but not limited, to developin
 
 In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the syntactic aspect is covered by the RDF specifications [xref:references.adoc#ref:rdf[rdf]], whereas the semantic aspect is addressed within the xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary] and xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile], expressed in OWL 2 [xref:references.adoc#ref:owl2[owl2]] and SHACL [xref:references.adoc#ref:shacl[shacl]] languages.
 
-Connecting the semantic layer and the technical layers may not always be straight forward. Of a particular importance are three types of technical artefacts, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.
+Connecting the semantic layer and the technical layers may not always be straightforward. Three types of technical artefacts are of a particular importance, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.
 
 **RDF.**
 In case the system is gnostic of Semantic Web technologies, if the implementation uses RDF natively, then the technical layer is (near) isomorphic to the semantic specification. There is a perfect alignment.
@@ -193,11 +193,12 @@ In case the system is gnostic of Semantic Web technologies, if the implementatio
 
 As a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.
 
-**XML.** When the system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [xref:references.adoc#ref:xslt[xslt]] but no mapping language exists like in the case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
-Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). The only thing we may relay on in this case are only good practices, and alternative technologies such as, for example RML language [xref:references.adoc#ref:rml[rml]].
+**XML.** When the system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [xref:references.adoc#ref:xslt[xslt]] but no mapping language exists like in the case of JSON-LD. Hence, if one provides a mapping to an XSD schema, then one must also provide the XSLT specification that interprets that mapping.
+Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). It is only good practices and alternative technologies, such as RML, that we can rely on in this case.
+[xref:references.adoc#ref:rml[rml]].
 
 **RDB.** If the implementation is based on relational databases, the story is similar to the XML. There is no organic way of mapping syntax and semantics. The mapping is at the level of the database schema, and there is no canonical way of doing this.
-So, just like in the case of XML the reliance may be on good practices and alternative technologies to encode an interpretation, such as D2RML [xref:references.adoc#ref:d2rm[d2rm]] and RML [xref:references.adoc#ref:rml[rml]].
+So, just like in the case of XML we rely on good practices and alternative technologies to encode an interpretation, such as D2RML [xref:references.adoc#ref:d2rm[d2rm]] and RML [xref:references.adoc#ref:rml[rml]].
 
 Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and Implementation Model specifications) are developed and published.
 
