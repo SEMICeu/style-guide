@@ -160,7 +160,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>The SEMIC goal is to bring these groups together and "speak the same language" and share meaning and conceptual references. Besides the very useful and much needed alignment of domains experts on what concepts mean, it is necessary to bring the gap between domain experts and the technical experts who implement information systems. Then, the domain experts and business users shall interact with the information systems using the very same set of concepts, unpolluted and undistorted by the technology in the implementation process.</p>
+<p>The SEMIC goal is to bring these groups together, help them "speak the same language" and share meaning and conceptual references. Besides the very useful and much needed alignment of domains experts on what concepts mean, it is necessary to bridge the gap between domain experts and the technical experts who implement information systems. Then, the domain experts and business users shall interact with the information systems using the very same set of concepts, agnostic to and undistorted by the technology in the implementation process.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -171,7 +171,7 @@
 <p>Standard <em>semantic data specifications</em> fulfil the purpose keeping these three groups in sync.</p>
 </div>
 <div class="paragraph">
-<p>Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines that share data which each other and are able to operate on them seamlessly. For that we need developers that build those machine interactions: so the machines and developers must "find a common language". But in order that the developers do the right things, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interaction correspond with the business/domain expert expectations.</p>
+<p>Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines interactions that share data whith each other and are able to operate on them seamlessly. The developers implement those machine interactions, and therefore the machines and developers must "find a common language". However, in order to ensure that the developers take the appropriate steps, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interactions correspond with the business/domain expert expectations.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -222,7 +222,7 @@ On the one hand, the model represents (purely) the domain; on the other hand, it
 <h2 id="sec:separation-of-concerns-in-SEMIC"><a class="anchor" href="#sec:separation-of-concerns-in-SEMIC"></a>Separation of concerns in SEMIC</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Core Vocabularies and the specialised Application Profiles aim to address the following concerns:</p>
+<p>The Core Vocabularies (CVs)  and the specialised Application Profiles (APs) aim to address the following concerns:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -281,7 +281,7 @@ documentation.</p>
 <h2 id="_editorial_synchronisation_problem"><a class="anchor" href="#_editorial_synchronisation_problem"></a>Editorial synchronisation problem</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>On the editorial side the artefacts composing data specification need to be kept in sync. A modification done in one shall pervade and propagate in all others. This is a difficult, tedious and expensive activity if such synchronisation is to be done manually.</p>
+<p>On the editorial side the artefacts composing a data specification need to be kept in sync. A modification done in one shall pervade and propagate in all others. This is a difficult, tedious and expensive activity if such synchronisation is to be done manually.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -289,7 +289,7 @@ documentation.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Experience shows that using a pivot representation as a single source of truth is a viable solution. Such representation needs to be expressive enough to fulfill all the information needs of the derived representations.</p>
+<p>Experience shows that using a pivot representation as a single source of truth is a viable solution. Such representation needs to be expressive enough to fulfill all the information needs of the derived artefacts.</p>
 </div>
 </div>
 </div>
@@ -310,7 +310,7 @@ documentation.</p>
 The different concerns that each data specification is trying to address might lead to different interpretations of the same UML constructs. Therefore, [<a href="gc-conceptual-model-conventions.html#sec:cmc-r2" class="xref page">CMC-R2</a>] defines only a minimal set of such interpretation rules (that can be further extended, if necessary).</p>
 </div>
 <div class="paragraph">
-<p>Also, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.</p>
+<p>Additionally, UML cannot cover all potential needs specific to each derived representation. Therefore, the scope of this architecture is limited by what can be expressed in UML and how that information is utilised to generate formal statements. But from our experience it is sufficient to cover all the needs of establishing semantic interoperability standards.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -468,7 +468,7 @@ maintenance and publication:</p>
 <h2 id="sec:technical-concerns-and-artefacts"><a class="anchor" href="#sec:technical-concerns-and-artefacts"></a>Technical artefacts and concerns</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). So, the best way at look at them is in terms of concerns addressed within each layer, but this discussion resembles a lot the one from 1975 of distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in ANSI [<a href="references.html#ref:ansi" class="xref page">ansi</a>].</p>
+<p>It is difficult to draw a clear line between semantic and technical interoperability artefacts and concerns. This section aims at providing some guidelines and hints on how to distinguish between the two (but no  guidelines on technical artefacts are considered as this is out of scope of this work). The best way to look at them is in terms of concerns addressed within each layer, which resembles a lot the discussion on distinguishing "Conceptual Data Models", "Logical Data Models" and "Physical Data Models" in ANSI [<a href="references.html#ref:ansi" class="xref page">ansi</a>] from 1975.</p>
 </div>
 <div class="paragraph">
 <p>EIF [<a href="references.html#ref:eif" class="xref page">eif</a>] defines the technical interoperability as covering the applications and infrastructures linking systems and services. The concerns considered in this layer are related, but not limited, to:</p>
@@ -511,7 +511,7 @@ maintenance and publication:</p>
 <p>In the SEMIC context, Semantic Web and Linked Data technology standards are chosen by default. This means that the syntactic aspect is covered by the RDF specifications [<a href="references.html#ref:rdf" class="xref page">rdf</a>], whereas the semantic aspect is addressed within the <a href="terminological-clarifications.html#sec:what-is-a-cv-specification" class="xref page">Core Vocabulary</a> and <a href="terminological-clarifications.html#sec:what-is-an-ap-specification" class="xref page">Application Profile</a>, expressed in OWL 2 [<a href="references.html#ref:owl2" class="xref page">owl2</a>] and SHACL [<a href="references.html#ref:shacl" class="xref page">shacl</a>] languages.</p>
 </div>
 <div class="paragraph">
-<p>Connecting the semantic layer and the technical layers may not always be straight forward. Of a particular importance are three types of technical artefacts, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.</p>
+<p>Connecting the semantic layer and the technical layers may not always be straightforward. Three types of technical artefacts are of a particular importance, which rely on three different technologies: XML and XSD, JSON and JSON schema, and relational databases. We briefly comment on each below.</p>
 </div>
 <div class="paragraph">
 <p><strong>RDF.</strong>
@@ -524,12 +524,13 @@ In case the system is gnostic of Semantic Web technologies, if the implementatio
 <p>As a consequence, if the JSON structure is ought to be aligned with the semantic specification, it imposes a strong constraint on how it shall be organised, otherwise the mapping is not possible. So, an advantage of JSON-LD is that the semantics gets coupled nicely with the syntax, and it is in the reach of the developer.</p>
 </div>
 <div class="paragraph">
-<p><strong>XML.</strong> When the system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [<a href="references.html#ref:xslt" class="xref page">xslt</a>] but no mapping language exists like in the case of JSON-LD. So if one would provide a mapping to an XSD schema, then the XSLT specification that interprets that mapping needs to be provided also.
-Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). The only thing we may relay on in this case are only good practices, and alternative technologies such as, for example RML language [<a href="references.html#ref:rml" class="xref page">rml</a>].</p>
+<p><strong>XML.</strong> When the system implementation is based on XML representation, then the interplay between syntax and semantics is more problematic, as there is NO canonical way os linking the two. The only transformation we have is the XSLT [<a href="references.html#ref:xslt" class="xref page">xslt</a>] but no mapping language exists like in the case of JSON-LD. Hence, if one provides a mapping to an XSD schema, then one must also provide the XSLT specification that interprets that mapping.
+Furthermore, when we want to establish an alignment between syntax and semantics there is no constraint on the structure (like in the case of JSON). It is only good practices and alternative technologies, such as RML, that we can rely on in this case.
+[<a href="references.html#ref:rml" class="xref page">rml</a>].</p>
 </div>
 <div class="paragraph">
 <p><strong>RDB.</strong> If the implementation is based on relational databases, the story is similar to the XML. There is no organic way of mapping syntax and semantics. The mapping is at the level of the database schema, and there is no canonical way of doing this.
-So, just like in the case of XML the reliance may be on good practices and alternative technologies to encode an interpretation, such as D2RML [<a href="references.html#ref:d2rm" class="xref page">d2rm</a>] and RML [<a href="references.html#ref:rml" class="xref page">rml</a>].</p>
+So, just like in the case of XML we rely on good practices and alternative technologies to encode an interpretation, such as D2RML [<a href="references.html#ref:d2rm" class="xref page">d2rm</a>] and RML [<a href="references.html#ref:rml" class="xref page">rml</a>].</p>
 </div>
 <div class="paragraph">
 <p>Ideally, syntax-binding artefacts that show how to map from a semantic data specification into technical layer artefacts is also provided as part of the specification. Showing how to interface with the semantic layer is especially important when Application Profiles (and Implementation Model specifications) are developed and published.</p>
