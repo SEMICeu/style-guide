@@ -92,10 +92,10 @@ We recommend the formal ontology definition be limited to the following types of
 * ontology header with
 ** import statements (`owl:import`)
 ** version metadata (`owl:versionInfo`, `owl:versionIRI`)
-** provenance metadata
+** provenance metadata (e.g. `dct:issued`, `adms:status`)
 ** descriptive metadata
 
-The formal ontology shall not include other types of statements unless justified as necessary.
+The formal ontology shall not include other types of statements unless justified as necessary. The properties used, in particular those related to the ontology header, shall be aligned with the governance process.
 
 No expressions of (a) property domain specification (`rdfs:domain`) and (b) property range specification (`rdfs:range`) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.
 
