@@ -231,7 +231,7 @@
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept <em>lightweight</em>, and no advanced logical definitions are necessary, which would make the ontology <em>heavyweight</em>. Bulletin of the Association for Information Science and Technology, dedicated an <a href="https://asistdl.onlinelibrary.wiley.com/toc/23739223/2015/41/4">entire section</a> on the charm of weak semantics in the linked data world. Backer &amp; Sutton explain well how lightweight semantics supports interoperability and reuse [<a href="references.html#ref:baker15" class="xref page">baker15</a>].</p>
+<p>OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept <em>lightweight</em>, and no advanced logical definitions are necessary, which would make the ontology <em>heavyweight</em>. The Bulletin of the Association for Information Science and Technology, dedicated an <a href="https://asistdl.onlinelibrary.wiley.com/toc/23739223/2015/41/4">entire section</a> on the charm of weak semantics in the linked data world. Backer &amp; Sutton explain well how lightweight semantics supports interoperability and reuse [<a href="references.html#ref:baker15" class="xref page">baker15</a>].</p>
 </div>
 <div class="paragraph">
 <p>We recommend the formal ontology definition be limited to the following types of expressions:</p>
@@ -280,7 +280,7 @@
 <p>version metadata (<code>owl:versionInfo</code>, <code>owl:versionIRI</code>)</p>
 </li>
 <li>
-<p>provenance metadata</p>
+<p>provenance metadata (e.g. <code>dct:issued</code>, <code>adms:status</code>)</p>
 </li>
 <li>
 <p>descriptive metadata</p>
@@ -291,7 +291,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>The formal ontology shall not include other types of statements unless justified as necessary.</p>
+<p>The formal ontology shall not include other types of statements unless justified as necessary. The properties used, in particular those related to the ontology header, shall be aligned with the governance process.</p>
 </div>
 <div class="paragraph">
 <p>No expressions of (a) property domain specification (<code>rdfs:domain</code>) and (b) property range specification (<code>rdfs:range</code>) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.</p>
