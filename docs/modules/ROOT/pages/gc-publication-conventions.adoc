@@ -215,3 +215,5 @@ It is a good practice to provide the following sections in the document:
 ** URI (shall be clearly visible)
 ** Labels (preferred and alternative)
 ** Definitions, scope notes, examples, editorial notes, etc.
+
+The content of these fields shall be aligned as much as possible with the metadata published in the OWL 2 representation (see [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]).

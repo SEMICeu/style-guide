@@ -76,7 +76,7 @@ The formal ontology shall be _lightweight_ in its logical underpinning, focusing
 
 *Description:*
 
-OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept _lightweight_, and no advanced logical definitions are necessary, which would make the ontology _heavyweight_. Bulletin of the Association for Information Science and Technology, dedicated an https://asistdl.onlinelibrary.wiley.com/toc/23739223/2015/41/4[entire section] on the charm of weak semantics in the linked data world. Backer & Sutton explain well how lightweight semantics supports interoperability and reuse [xref:references.adoc#ref:baker15[baker15]].
+OWL 2 language provides a high level of expressivity. In the SEMIC interoperability context, the primary purpose of semantic artefacts is to establish the common set of concepts and how they are employed in data exchange. For this purpose, simple OWL 2 constructs suffice. Therefore, the OWL 2 ontology shall be kept _lightweight_, and no advanced logical definitions are necessary, which would make the ontology _heavyweight_. The Bulletin of the Association for Information Science and Technology, dedicated an https://asistdl.onlinelibrary.wiley.com/toc/23739223/2015/41/4[entire section] on the charm of weak semantics in the linked data world. Backer & Sutton explain well how lightweight semantics supports interoperability and reuse [xref:references.adoc#ref:baker15[baker15]].
 
 We recommend the formal ontology definition be limited to the following types of expressions:
 
@@ -92,10 +92,10 @@ We recommend the formal ontology definition be limited to the following types of
 * ontology header with
 ** import statements (`owl:import`)
 ** version metadata (`owl:versionInfo`, `owl:versionIRI`)
-** provenance metadata
+** provenance metadata (e.g. `dct:issued`, `adms:status`)
 ** descriptive metadata
 
-The formal ontology shall not include other types of statements unless justified as necessary.
+The formal ontology shall not include other types of statements unless justified as necessary. The properties used, in particular those related to the ontology header, shall be aligned with the governance process.
 
 No expressions of (a) property domain specification (`rdfs:domain`) and (b) property range specification (`rdfs:range`) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.
 
