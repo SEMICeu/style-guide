@@ -116,19 +116,19 @@ accompanied by a human-readable data specification.
 *Description* +
 One general categorisation of semantic data specifications is along the reuse axis. 
 
-Some semantic data specifications are built with the intent that the terms of the conceptual model can be used in as much as possible contexts. Typically, it is possible to use the terms independently of other each other. In this case, the definitions of the terms are usually very broad and abstract, and only the bare minimum of (usage) constraints are expressed. Often, the terms are presented as a list to the reader, with identifiers for each term in the same namespace. Those semantic data specifications are usually denoted with terms as such as vocabularies or terminology.
+Some semantic data specifications are built with the intent that the terms of the conceptual model can be used in as much as possible contexts. Typically, it is possible to use the terms independently of each other. In this case, the definitions of the terms are usually very broad and abstract, and only the bare minimum of (usage) constraints are expressed. Often, the terms are presented as a list to the reader, with identifiers for each term in the same namespace. Those semantic data specifications are usually denoted with terms such as vocabularies or terminology.
 
-On the other side of the spectrum are the data specifications that precisely encode the semantics of the conceptual model that is being used in a single data exchange context implemented in software or API. They usually have a strong connection with technical data representations (see section on [xref:arhitectural-clarifications.adoc#sec:technical-concerns-and-artefacts[Technical artefacts and concerns]]) and documentations such as XSD schema, OpenAPI specifications, etc. Conceptual models for this purpose will contain precise constraints, technical datatypes, the code-lists that are being used, refer to implementation decisions, etc. Semantic data specifications that are created for that purpose are denoted with Implementation Models. As that name indicate, there objective is to encode the conceptual model of an implementation.
+On the other side of the spectrum are the data specifications that precisely encode the semantics of the conceptual model that is being used in a single data exchange context, implemented in software or API. They usually have a strong connection with technical data representations (see section on [xref:arhitectural-clarifications.adoc#sec:technical-concerns-and-artefacts[Technical artefacts and concerns]]) and documentations such as XSD schema, OpenAPI specifications, etc. Conceptual models for this purpose will contain precise constraints, technical datatypes, the code-lists that are being used, refer to implementation decisions, etc. Semantic data specifications that are created for that purpose are denoted with Implementation Models. As that name indicate, their objective is to encode the conceptual model of an implementation.
 
-Between those two extremes, i.e. contextfree reuse (vocabularies) and unique usage context (Implementation Models), are semantic data specifications that aim to capture the conceptual model for a broad, yet well-defined, usage context. Typically, these data specifications do not intend to introduce new terms in the conceptual model, but will exploit terms from other semantic data specifications. These exploited terms are augmented with additional usage constraints making the terms more fit for purpose.  These semantic data specifications are often denoted with terms such as Application Profiles or Profiles.
+Between those two extremes, i.e. contextfree reuse (vocabularies) and unique usage context (Implementation Models), there are semantic data specifications that aim to capture the conceptual model for a broad, yet well-defined, usage context. Typically, these data specifications do not intend to introduce new terms in the conceptual model, but will exploit terms from other semantic data specifications. These exploited terms are augmented with additional usage constraints making the terms more fit for purpose.  These semantic data specifications are often denoted with terms such as Application Profiles or Profiles.
 
-Readers should understand that the usage relationships between semantic data specifications form a complex network. An attempt to provide a structured view on this network is started in draft W3C Profile Guide [xref:references.adoc#ref:profile-guide[profile-guide]]. Also, the Application Profiles need not necessarily to address all the technical needs related to an implemented system. Distinction between technical and semantic interoperability layers is attempted in xref:arhitectural-clarifications.adoc#sec:technical-concerns-and-artefacts[this section].
+Readers should understand that the usage relationships between semantic data specifications form a complex network. An attempt to provide a structured view on this network was initiated in the draft W3C Profile Guide [xref:references.adoc#ref:profile-guide[profile-guide]]. Also, the Application Profiles do not necessarily have to address all the technical needs related to an implemented system. Distinction between technical and semantic interoperability layers is attempted in xref:arhitectural-clarifications.adoc#sec:technical-concerns-and-artefacts[this section].
 
-This categorisation along the reuse axis indicates the importance to express the interoperability scope for semantic data specifications. However, as there are no commony agreed definitions for those categories, describing precisely the **__Do__**s and **__Don't__**s for each category, people may associate different expectations to each category. This style guide is a document that defines for SEMIC the applied rules.
+This categorisation along the reuse axis indicates the importance of expressing the interoperability scope for semantic data specifications. However, due to the absence of widely accepted definitions for those categories, outlining the exact **__Do__**s and **__Don't__**s (for each category), may result to different expectations for each category. This style guide is a document that defines the commonly accepted and applied rules for SEMIC.
 
-In the SEMIC context, two types of semantic data specifications are considered: [xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary]] and [xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile]]. Occasionally, this document will refer to semantic data specifications shortly as "data specifications". Semantic data specifications of the third category, Implementation Models, are not part of the activities of SEMIC. Nevertheless, their existence, is taken into account when building the Core Vocabularies and Application Profiles.
+In the SEMIC context, two types of semantic data specifications are considered: [xref:terminological-clarifications.adoc#sec:what-is-a-cv-specification[Core Vocabulary]] and [xref:terminological-clarifications.adoc#sec:what-is-an-ap-specification[Application Profile]]. Semantic data specifications of the third category, Implementation Models, are not part of the activities of SEMIC. Nevertheless, their existence, is taken into account when building the Core Vocabularies and Application Profiles.
 
-With a similar meaning, the term "semantic asset" is used in the literature (e.g. ADMS [xref:references.adoc#ref:adms[adms]]). However, in our understanding, the term "semantic asset" is broader than "data specification" and includes controlled vocabularies and possibly other types of assets.
+Occasionally, this document will refer to semantic data specifications shortly as "data specifications". With a similar meaning, the term "semantic asset" is used in the literature (e.g. ADMS [xref:references.adoc#ref:adms[adms]]). However, in our understanding, the term "semantic asset" is broader than "data specification" and includes controlled vocabularies and possibly other types of assets.
 
 [[sec:what-is-a-cv-specification]]
 == What is a Core Vocabulary (CV) specification?
@@ -143,7 +143,7 @@ an area of concern. Vocabularies are used to classify the terms that can be used
 relationships, and define possible constraints on using those terms. In practice, vocabularies can be very complex (with several
 thousands of terms) or very simple (describing one or two concepts only) [xref:references.adoc#ref:vocab[vocab]].
 
-There is no clear division between what is referred to as "vocabularies" and "ontologies". The trend is to use the word "ontology"
+There is no clear division between what is referred to as "vocabulary" and "ontology". The trend is to use the word "ontology"
 for a more complex and possibly quite formal collection of terms, whereas "vocabulary" is used when such strict formalism is not
 necessarily used or used only in a very loose sense [xref:references.adoc#ref:vocab[vocab]].
 
@@ -159,7 +159,7 @@ For more details see section on [xref:arhitectural-clarifications.adoc#sec:data-
 
 The qualifications _lightweight_ and _permissive_ are used to better emphasise the intention _to be reused in the broadest possible context_. More precise boundaries are defined further in this document.
 
-*NOTE:* "Vocabularies", in general, are not the same as "controlled vocabularies", as they usually refer to SKOS artefacts. However,
+*NOTE:* "Vocabularies", in general, are not the same as "controlled vocabularies", as the latter usually refers to SKOS artefacts. However,
 in other contexts (similar to SEMIC), a Core Vocabulary might often be simply denoted as "vocabulary".
 
 
@@ -167,7 +167,7 @@ in other contexts (similar to SEMIC), a Core Vocabulary might often be simply de
 == What is an Application Profile (AP) specification?
 
 *Definition* +
-An Application Profile is a data specification to facilitate the data exchange in a well-defined  application context. It re-uses
+An Application Profile is a data specification aimed to facilitate the data exchange in a well-defined  application context. It re-uses
 concepts from one or more semantic data specifications, while adding more specificity, by identifying mandatory, recommended, and
 optional elements, addressing particular application needs, and providing recommendations for controlled vocabularies to be used
 [xref:references.adoc#ref:dcat-ap[dcat-ap]].
@@ -197,7 +197,7 @@ added to existing Core Vocabularies. If this is not possible, an Application Pro
 ** own data shape {plus}
 ** (optionally) own ontology
 
-The data specification document of an Application Profile is elaborated. It will provide the application scope and context, and
+The data specification document of an Application Profile is elaborated. It provides the application scope and context, and 
 documents the ontology and the data shapes through the conceptual model. It also provides additional information that stimulates
 the adoption and correct usage of the AP in implementations.
 
