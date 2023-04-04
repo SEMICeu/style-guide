@@ -172,7 +172,7 @@ The semantic data specifications may provide such severity levels. How it is rea
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Avoid deontic modals
+ *Title:* Deontic modals
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* GC-R7
