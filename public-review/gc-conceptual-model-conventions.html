@@ -979,14 +979,11 @@ the cardinality shall be the most permissive, where possible [<a href="reference
 <p>UML Connectors shall be used to denote object properties (see OWL 2 semantics, [<a href="references.html#ref:owl2" class="xref page">owl2</a>]).</p>
 </div>
 <div class="paragraph">
-<p>First, explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
+<p>First, we explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.</p>
 </div>
 <div class="paragraph">
-<p>On connector names,</p>
-</div>
-<div class="paragraph">
-<p>A generic UML connector may have a name applied to it, and it may have source/target roles specified in addition. This provides
+<p>On connector names, a generic UML connector may have a name applied to it, and it may have source/target roles specified in addition. This provides
 flexibility to how the domain knowledge may be expressed in UML; however, this freedom increases the level of ambiguity as well.
 Therefore, we foresee two distinct ways to express properties: using the connector (generic) name or using the connector
 source/target ends.</p>
@@ -998,16 +995,16 @@ source/target ends.</p>
 <p>Or conversely, if the connector direction is "Bidirectional", then source and target roles must be provided. No other directions are permitted.</p>
 </div>
 <div class="paragraph">
-<p>We recommend each association has a definition. The definition is then used for each role as they represent the same meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.</p>
+<p>It is recommended that each association has a definition. The definition is then used for each role as they represent the same meaning manifested in the inverse direction. Alternatively, definitions can be specified along the target and source roles.</p>
 </div>
 <div class="paragraph">
-<p>UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.</p>
+<p>UML defines multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.</p>
 </div>
 <div class="paragraph">
-<p>The UML Association connectors represent relations between a source and target classes. The association connector cannot be used between other kinds of UML Elements.</p>
+<p>The UML Association connectors represent relations between a source and a target classes. The association connector cannot be used between other kinds of UML Elements.</p>
 </div>
 <div class="paragraph">
-<p>The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the Enumeration. It indicates the class has an <code>owl:ObjectProperty</code>, whose range is a controlled vocabulary
+<p>The UML Dependency connector may be used between a UML Class and UML Enumeration boxes, oriented from the Class towards the Enumeration. It indicates the class has an <code>owl:ObjectProperty</code>, whose range is a controlled vocabulary
 [<a href="#sec:cmc-r14">CMC-R14</a>]. The connector must have the direction "Source &#8594; Target".
 No other directions are acceptable.</p>
 </div>
@@ -1044,7 +1041,7 @@ For example, if <code>Person</code> specialises a <code>foaf:Agent</code>.</p>
 </div>
 <div class="paragraph">
 <p>For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
-semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
+semantics of the information as precisely as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
 and the "+" symbol shall always be used next to each property. This symbol means "public" [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.22</a>].</p>
 </div>
 <div class="sidebarblock">
@@ -1092,15 +1089,14 @@ and the "+" symbol shall always be used next to each property. This symbol means
 </div>
 <div class="paragraph">
 <p>Controlled lists play an essential role in establishing interoperability standards. Management and publication of controlled lists are not part of this style guide.
-The expectation is that the controlled lists are published in accordance
-with best practices and represented with the SKOS model using persistent identifiers. In such an approach, the controlled list is expressed as a <code>skos:ConceptScheme</code> and the specific values as <code>skos:Concept</code>(s). Also, such controlled lists are often developed,
-published and maintained stand-alone following their own lifecycle, so that they can be reused in other models.</p>
+The expectation is that the controlled lists are published in accordance with best practices and represented with the SKOS model using persistent identifiers. In such an approach, the controlled list is expressed as a <code>skos:ConceptScheme</code> and the specific values as <code>skos:Concept</code>(s). Also, such controlled lists are often developed,
+published and maintained independently following their own lifecycle, so that they can be reused in other models.</p>
 </div>
 <div class="paragraph">
 <p>Two use-cases can be identified in practice: (a) when the code list is known and is explicitly referred to as the range of a property, and (b) when a property is modelled but no code list reference is provided as its range.</p>
 </div>
 <div class="paragraph">
-<p>When the authors of a conceptual model intend to omit, which controlled list shall be used, then a class attribute with the range <code>skos:Concept</code> (in some cases <code>Code</code> is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the <code>adms:status</code> property of a <code>dcat:CatalogueRecord</code> shall be a <code>skos:Concept</code>, without specifying from which controlled list.</p>
+<p>When the authors of a conceptual model intend to omit which controlled list shall be used, then a class attribute with the range <code>skos:Concept</code> (in some cases <code>Code</code> is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the <code>adms:status</code> property of a <code>dcat:CatalogueRecord</code> shall be a <code>skos:Concept</code>, without specifying the controlled list.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1111,7 +1107,7 @@ published and maintained stand-alone following their own lifecycle, so that they
 <p>It is advisable, however, to be specific concerning which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e., not specifying any value, because the values are assumed to be maintained externally and only the reference is necessary.</p>
 </div>
 <div class="paragraph">
-<p>The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [<a href="#sec:cmc-r12">CMC-R2</a>]. For example, in ePO, <code>dct:Location</code> can have a country code represented as a dependency relation to <code>at-voc:country</code> (the country authority table published on the EU Vocabularies website).</p>
+<p>The properties having this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [<a href="#sec:cmc-r12">CMC-R2</a>]. For example, in ePO, <code>dct:Location</code> can have a country code represented as a dependency relation to <code>at-voc:country</code> (the country authority table published on the EU Vocabularies website).</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1130,10 +1126,10 @@ published and maintained stand-alone following their own lifecycle, so that they
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation, see in the image on top, while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service is intended for, see in the image below.</p>
+<p>The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation (as depicted in the image on top) while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service is intended for (as depicted in the image below).</p>
 </div>
 <div class="paragraph">
-<p>While the COFOG controlled list, owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes, the Core Public Organisation and CPSV-AP can still point to it independently.</p>
+<p>While the COFOG controlled list is owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes, it can be reused by the Core Public Organisation and CPSV-AP independently.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1165,7 +1161,7 @@ published and maintained stand-alone following their own lifecycle, so that they
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Packages have no semantic value, but shall be used whenever possible to  logically organise the model.</p></td>
+<p class="tableblock">Packages have no semantic value, but shall be used whenever possible to logically organise the model.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1173,13 +1169,13 @@ published and maintained stand-alone following their own lifecycle, so that they
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>It is best to avoid defining any semantic interpretation into UML Packages. They are best used for organisational purposes,
-defining logical partitions in the model. So, packages can serve as a method for the slicing of the conceptual model into
+<p>It is highly recommended to avoid defining any semantic interpretation into UML Packages, as they are best used for organisational purposes,
+defining logical partitions in the model. Therefore, packages can serve as a method of slicing the conceptual model into
 subdomains.</p>
 </div>
 <div class="paragraph">
-<p>It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
-namespaces of connectors and attributes. It does not work in cases when an attribute, or a connector is used multiple times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
+<p>It is also possible to use packages as namespace indicators. Although it works well for classes, it fails to cover the needs for managing
+namespaces of connectors and attributes. Moreover, it does not work in cases when an attribute, or a connector is used multiple times in several packages. Hence, namespace management is easier attained by using other methods such as using prefixes in Element
 names or using Element tags [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.3</a>].</p>
 </div>
 <div class="sidebarblock">
@@ -1253,36 +1249,39 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>align labels horizontally and avoid vertical or oblique alignment</p>
 </li>
 <li>
-<p>place subclasses under or to the right of their parent [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.5</a>] and</p>
+<p>place subclasses under or to the right of their parent [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.5</a>]</p>
 </li>
 <li>
 <p>place the part under or to the right of the whole at aggregates or composites [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.1</a>].</p>
 </li>
 <li>
-<p>minimise the number of details, and are short and concise; multiple small(-er) diagrams are preferred to one large diagram</p>
+<p>minimise the number of details</p>
+</li>
+<li>
+<p>are short and concise (multiple small(-er) diagrams are preferred to one large diagram)</p>
 </li>
 <li>
 <p>diagram size:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>prefer a multiple themed small(er) diagrams to large and crowded ones</p>
+<p>prefer multiple themed small(er) diagrams to large and crowded ones</p>
 </li>
 <li>
-<p>diagrams shall be no bigger than one A4 page</p>
+<p>diagrams shall not be bigger than one A4 page</p>
 </li>
 <li>
 <p>simplify complex diagrams [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.3</a>]:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>breaking it down into several smaller diagrams.</p>
+<p>by breaking it down into several smaller diagrams</p>
 </li>
 <li>
-<p>by highlighting certain parts of the diagram.</p>
+<p>by highlighting certain parts of the diagram</p>
 </li>
 <li>
-<p>by hiding attributes, role names, etc. that are not relevant.</p>
+<p>by hiding attributes, role names, etc. that are not relevant</p>
 </li>
 </ul>
 </div>
@@ -1291,11 +1290,23 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 </div>
 </li>
 <li>
-<p>Symbol size equal, and nothing shall draw more attention unless intended. Make elements of equal importance equally
-large [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.2</a>].</p>
+<p>symbol size:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>symbols should be equal</p>
 </li>
 <li>
-<p>Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.5</a>].</p>
+<p>nothing shall draw more attention unless intended</p>
+</li>
+<li>
+<p>elements of equal importance  should be equally large [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.2</a>].</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.5</a>].</p>
 </li>
 </ul>
 </div>
@@ -1343,10 +1354,10 @@ large [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, se
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>We strongly encourage semantic practitioners to void stereotypes of any normative or semantic value. One common usage of stereotypes is to provide deontic indicators. See [<a href="gc-general-conventions.html#sec:gc-r7" class="xref page">GC-7 on Deontic modals</a>] where we explain why they are discouraged and what can be done instead.</p>
+<p>We strongly encourage semantic practitioners to avoid stereotypes of any normative or semantic value. One common usage of stereotypes is to provide deontic indicators. See [<a href="gc-general-conventions.html#sec:gc-r7" class="xref page">GC-7 on Deontic modals</a>] where we explain why their use is discouraged and what can be done instead.</p>
 </div>
 <div class="paragraph">
-<p>There is a practice to mark some classes as "abstract" with intention of forbidding those from being instantiated. This is also a technical level constraint and does not belong in the semantic layer.</p>
+<p>There is a practice to mark some classes as "abstract" with the intention of preventing those from being instantiated. This is also a technical level constraint and does not belong in the semantic layer.</p>
 </div>
 <div class="paragraph">
 <p>We acknowledge that stereotypes can be useful for editorial and dissemination purposes; to indicate a classification or grouping of a specific sort. Stereotypes can be used to support concerns specific to an implementation of the transformation toolchain. See the examples below.</p>
@@ -1402,7 +1413,7 @@ The creation of custom datatypes shall be avoided.</p></td>
 <p>It is recommended to employ the primitive datatypes that are already defined in XSD [<a href="references.html#ref:xsd" class="xref page">xsd</a>] and RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
 </div>
 <div class="paragraph">
-<p>The datatypes defined in the UML model shall be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.</p>
+<p>The definition of datatypes in the UML model should be also avoided, even in cases where a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.</p>
 </div>
 <div class="paragraph">
 <p>Note that from the family of string datatypes we recommend using the following ones (in this order of preference): <code>rdf:PlainLiteral</code>, <code>rdfs:Literal</code>, <code>xsd:string</code>, and <code>rdf:langString</code>. Often enabling multilingual data specification is a necessity.</p>
