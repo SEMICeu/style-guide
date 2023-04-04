@@ -255,6 +255,12 @@ When `cv` (short for Core Vocabularies) namespace name is declared bound to base
 `cv:adminUnit` is the qualified name from which the `http://data.europa.eu/m8g/adminUnit` URI is generated.
 ****
 
+// See more [
+// xref:references.adoc#ref:ld-bp[ld-bp],
+// xref:references.adoc#ref:ld-bp[ldp-bp],
+// xref:references.adoc#ref:dwbp[dwbp],
+// ]
+
 
 [[sec:cmc-r6]]
 == Rich annotations through tags
@@ -353,7 +359,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 image::cmc-r8.png[]
 ****
 
-See more [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.3]]
+See more [xref:references.adoc#ref:oslo-rules[oslo-rules sec 3.2.3]]
 
 
 [[sec:cmc-r9]]
@@ -379,7 +385,8 @@ practice. In UML, this can be done via << abstract >> stereotype [see xref:gc-co
 
 Doing so has no impact on the OWL 2 [xref:references.adoc#ref:owl2[owl2]] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [xref:references.adoc#ref:shacl[shacl]] can be generated to express that no instances of this class shall not occur in the data.
 
-See [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.6]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.4]]
+See [xref:references.adoc#ref:oslo-rules[oslo-rules sec 3.2.6],
+xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.4]]
 
 ****
 *Examples:*
@@ -480,7 +487,7 @@ it is recommended to fall back on the implicit assumption of [0..*]. Not to be c
 in tools. For example, Enterprise Architect by default assumes [1..1] cardinality for attributes and omits to display it; and a
 similar default assumption exists in XML/XSD.
 
-Notation for multiple cardinality can be either with ‘*’ or ‘n’. In principle using either notation is fine, however, it is
+Notation for multiple cardinality can be either with '*' or 'n'. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
 on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.
@@ -687,20 +694,20 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 We recommend that the diagrams:
 
 * are well spaced (proper space between lines, boxes and labels)
-* minimise the number of crossing connectors [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.4]]
-* prefer orthogonal to straight connectors [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.1]]
-* align elements horizontally & vertically [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.4]]
+* minimise the number of crossing connectors
+* prefer orthogonal to straight connectors
+* align elements horizontally & vertically
 * space elements evenly
 * avoid overlapping labels and depict all labels
 * align labels horizontally and avoid vertical or oblique alignment
-* place subclasses under or to the right of their parent [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.5]] 
-* place the part under or to the right of the whole at aggregates or composites [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.1]].
+* place subclasses under or to the right of their parent
+* place the part under or to the right of the whole at aggregates or composites .
 * minimise the number of details
 * are short and concise (multiple small(-er) diagrams are preferred to one large diagram)
 * diagram size:
 ** prefer multiple themed small(er) diagrams to large and crowded ones
 ** diagrams shall not be bigger than one A4 page
-** simplify complex diagrams [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.3]]:
+** simplify complex diagrams:
 *** by breaking it down into several smaller diagrams
 *** by highlighting certain parts of the diagram
 *** by hiding attributes, role names, etc. that are not relevant
@@ -708,10 +715,14 @@ We recommend that the diagrams:
 * symbol size:
 ** symbols should be equal
 ** nothing shall draw more attention unless intended
-** elements of equal importance  should be equally large [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.2]].
-* inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.5]].
+** elements of equal importance  should be equally large
+* inherited attributes of a superclass shall be visible if the superclass is not in the diagram
 
-See also [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.1.11]], [xref:references.adoc#ref:semic-sgdraft[semic-sgdraft, sec on UML, Rules 13-23]]
+See also [
+xref:references.adoc#ref:oslo-rules[oslo-rules],
+xref:references.adoc#ref:semic-sgdraft[semic-sgdraft]
+]
+
 ****
 *Examples:*
 

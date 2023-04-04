@@ -41,7 +41,8 @@
 * Explained the distinction between technical and semantic interoperability layers in EIF, and how it is accommodated in this style guide.
 * Ensured that it is clear: subtyping without semantic change is not allowed in teh reuse section.
 * Disagree on loosening "import OR dereference" requirement in reuse definition. Reworded defintiion of "reuse" for increased clarity.
-
+* added new references to W3C best practices
+* reduced some redundant references across the text 
 
 ### Fixed
 * HTML page title is missing [#27](https://github.com/SEMICeu/style-guide/issues/27)
