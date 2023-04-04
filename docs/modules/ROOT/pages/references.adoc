@@ -31,7 +31,7 @@
 - *[[[ref:iri]]iri]* Duerst, M., Suignard, M. (2005) Internationalized Resource Identifiers (IRIs). Internet Engineering Task Force (IETF), RFC, 3987. Available at: https://www.rfc-editor.org/info/rfc3987
 - *[[[ref:xml-ns]]xml-ns]* Layman, A., Bray, T., Thompson, H., Hollander, D., & Tobin, R. (2009). Namespaces in XML 1.0 (Third Edition). W3C Recommendation, W3C. Available at: https://www.w3.org/TR/REC-xml-names/
 - *[[[ref:urn]]urn]* Saint-Andre, P., & Klensin, J. (2017). Uniform Resource Names (URNs). Internet Engineering Task Force (IETF), RFC, 8141. Available at: https://www.rfc-editor.org/info/rfc8141
-- *[[[ref:turtle]]turtle]* Beckett, D., Berners-Lee, T., Prud’hommeaux, E., & Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: https://www.w3.org/TR/turtle/#sec-iri
+- *[[[ref:turtle]]turtle]* Beckett, D., Berners-Lee, T., Prud'hommeaux, E., & Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: https://www.w3.org/TR/turtle/#sec-iri
 - *[[[ref:cv-handbook]]cv-handbook]* PwC EU Services (2015). e-Government Core Vocabularies handbook. Report, ISA programme of the European Commission. Available at: https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook_0.pdf
 - *[[[ref:xsd]]xsd]* Peterson, D., Malhotra, A., Gao, S., Sperberg-McQueen, M., Biron. P. V., & Thompson, H. (2012) W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes. W3C recommendation, W3C, Apr. 2012. Available at: http://www.w3.org/TR/xmlschema11-2/
 - *[[[ref:owl2]]owl2]* Motik, B., Patel-Schneider, P. F., Parsia, B., Bock, C., Fokoue, A., Haase, P., ... & Smith, M. (2009). OWL 2 web ontology language: Structural specification and functional-style syntax. W3C recommendation, 27(65), 159. Available at: http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/
@@ -41,7 +41,7 @@
 - *[[[ref:vann]]vann]* Davis, I. (2010) VANN: A vocabulary for annotating vocabulary descriptions. Available at: https://vocab.org/vann/
 - *[[[ref:shex]]shex]* Shape expressions(ShEx). Available at: https://shex.io/
 - *[[[ref:reiter81]]reiter81]* Reiter, R. (1981). On closed world data bases. In Readings in artificial intelligence (pp. 119-140). Morgan Kaufmann.
-- *[[[ref:togaf]]togaf]* Kotusev, S. (2018). TOGAF Version 9.2: What’s New. British Computer Society (BCS).
+- *[[[ref:togaf]]togaf]* Kotusev, S. (2018). TOGAF Version 9.2: What's New. British Computer Society (BCS).
 - *[[[ref:fernandez-lopez97]]fernandez-lopez97]* Fernández-López, M., Gómez-Pérez, A., & Juristo, N. (1997). Methontology: from ontological art towards ontological engineering.
 - *[[[ref:jarrar08]]jarrar08]* Jarrar, M., & Meersman, R. (2008). Ontology engineering – the DOGMA approach. In Advances in Web Semantics I (pp. 7-34). Springer, Berlin, Heidelberg.
 - *[[[ref:guarino04]]guarino04]* Guarino, N., & Welty, C. A. (2004). An overview of OntoClean. Handbook on ontologies, 151-171.
@@ -67,4 +67,7 @@
 - *[[[ref:xslt]]xslt]* World Wide Web Consortium. (2007). XSL transformations (XSLT) version 2.0.
 - *[[[ref:rml]]rml]* Dimou, A., Vander Sande, M., Colpaert, P., Verborgh, R., Mannens, E., & Van de Walle, R. (2014). RML: A generic language for integrated RDF mappings of heterogeneous data. _Ldow_, _1184_.
 - *[[[ref:d2rm]]d2rm]* Chortaras, A., & Stamou, G. (2018). D2RML: Integrating Heterogeneous Data and Web Services into Custom RDF Graphs. In _LDOW@ WWW_.
+- *[[[ref:ld-bp]]ld-bp]* World Wide Web Consortium. (2014). Best practices for publishing linked data. https://www.w3.org/TR/ld-bp
+- *[[[ref:ld-bp]]ldp-bp]* World Wide Web Consortium. (2014). Linked Data Platform Best Practices and Guidelines. https://www.w3.org/TR/ld-bp
+
 

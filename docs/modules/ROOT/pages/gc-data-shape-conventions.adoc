@@ -17,9 +17,8 @@ The data shapes shall be expressed in SHACL.
 
 *Description:*
 
-There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the
-executable ones, the most well-known are SHACL [xref:references.adoc#ref:shacl[shacl]] and ShEx [xref:references.adoc#ref:shex[shex]].
-As the SHACL is a W3C standard, we strongly recommend using it.
+There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the executable ones, the most well-known are SHACL [xref:references.adoc#ref:shacl[shacl]] and ShEx [xref:references.adoc#ref:shex[shex]].
+We are aware that a strong community of practice exists for ShEx. However, as SHACL is a W3C standard, we strongly recommend using it.
 
 
 [[sec:dsc-r2]]

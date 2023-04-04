@@ -27,7 +27,11 @@ highest grade of 5-Star [xref:references.adoc#ref:5star-od[5star-od]] open data 
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
 
-See more [xref:references.adoc#ref:semic-sgdraft[semic-sgdraft], xref:references.adoc#ref:dwdp[dwdp]]
+See more [
+xref:references.adoc#ref:dwbp[dwbp],
+xref:references.adoc#ref:ld-bp[ld-bp],
+xref:references.adoc#ref:ld-bp[ldp-bp]
+]
 
 
 [[sec:pc-r2]]
@@ -71,6 +75,12 @@ that each URI is of the following pattern:
 The `{Collection}` is an organisation-agnostic name for a collection of terms. Within a `{Collection}` the local names, or
 references, are being maintained according to the policy of the `{Collection}`. For SEMIC data specifications, the names
 are dependent on the naming conventions mentioned in this style guide rules [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4] + xref:gc-conceptual-model-conventions.adoc#sec:cmc-r3[CMC-R3]].
+
+See more [
+xref:references.adoc#ref:ld-bp[ld-bp],
+xref:references.adoc#ref:ld-bp[ldp-bp],
+xref:references.adoc#ref:dwbp[dwbp],
+]
 
 ****
 *Examples:*
@@ -177,6 +187,11 @@ default response (if no content type is specified), and the other is RDF [xref:r
 The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
 Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [xref:references.adoc#ref:rdf-pub[rdf-pub]].
 
+See more [
+xref:references.adoc#ref:ld-bp[ld-bp],
+xref:references.adoc#ref:ld-bp[ldp-bp],
+xref:references.adoc#ref:dwbp[dwbp],
+]
 
 [[sec:pc-r6]]
 == Human-readable form
