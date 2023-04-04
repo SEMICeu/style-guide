@@ -264,7 +264,7 @@
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document defines the style guide to be applied to the SEMIC’s semantic data specifications, notably to the eGovernment
+<p>This document defines the style guide to be applied to the SEMIC&#8217;s semantic data specifications, notably to the eGovernment
 Core Vocabularies and Application Profiles. It provides rules on naming conventions, syntax, artefact management and organisation.
 It is meant to be complemented with technical artefacts and implementations that enable automatic conformance checking and
 transformation of conceptual models into formal semantic representations.</p>
@@ -280,7 +280,7 @@ for public administrations.</p>
 <p>This style guide is intended primarily for semantic engineers, data architects and knowledge modelling specialists who are acting as editors or reusers of Core Vocabularies and Application Profiles.</p>
 </div>
 <div class="paragraph">
-<p>This style guide may constitute a good source of information and explanations for the European Commission’s officers, collaborating consultants, and stakeholders involved in inter-institutional standardisation.</p>
+<p>This style guide may constitute a good source of information and explanations for the European Commission&#8217;s officers, collaborating consultants, and stakeholders involved in inter-institutional standardisation.</p>
 </div>
 </div>
 <div class="sect2">
@@ -768,7 +768,7 @@ the adoption and correct usage of the AP in implementations.</p>
 <p>Standard <em>semantic data specifications</em> fulfil the purpose keeping these three groups in sync.</p>
 </div>
 <div class="paragraph">
-<p>Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines interactions that share data whith each other and are able to operate on them seamlessly. The developers implement those machine interactions, and therefore the machines and developers must "find a common language". However, in order to ensure that the developers take the appropriate steps, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interactions correspond with the business/domain expert expectations.</p>
+<p>Ultimately, if the systems are based on standards the purpose is to build interoperable machines - machines that share data with each other and are able to operate on them seamlessly. The developers implement those machine interactions, and therefore the machines and developers must "find a common language". However, in order to ensure that the developers take the appropriate steps, the business/domain experts have to interact with them and convey their domain knowledge. This closes the loop: that the machine interactions correspond with the business/domain expert expectations.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -800,10 +800,10 @@ the adoption and correct usage of the AP in implementations.</p>
 </div>
 <div class="paragraph">
 <p>Generally, computing information models suffer from the intertwining of two types of semantic concerns. As George Box said, <em>"All models are wrong, but some are useful"</em>, and what a model is useful for depends on what concern it is primarily addressing.
-On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [<a href="references.html#ref:partridge13" class="xref page">partridge13</a>]. For example, the concept of "location" can be described by domain experts (in a domain model) in a way that is not isomorphic to how the "location" class may be appropriately modelled for an information system (i.e. captured in an Implementation Model).</p>
+On the one hand, the model represents (purely) the domain; on the other hand, it represents the implemented system, which encompasses a representation of the domain (domain knowledge intertwined with technical specificities). These different representation requirements place different demands upon its structure [<a href="references.html#ref:partridge13" class="xref page">partridge13</a>]. For example, the concept of "location" can be described by domain experts (in a domain model) in a way that is not isomorphic to how the "location" class may be appropriately modelled for an information system (i.e., captured in an Implementation Model).</p>
 </div>
 <div class="paragraph">
-<p>One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG’s Model Driven Architecture (MDA) [<a href="references.html#ref:mda" class="xref page">mda</a>] which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.</p>
+<p>One of the common ways to manage this problem is by separating concerns. We take inspiration from OMG&#8217;s Model Driven Architecture (MDA) [<a href="references.html#ref:mda" class="xref page">mda</a>], which is a well-documented structure where a model is built for each concern, which is transformed into a different model for a different concern. This approach is adapted to the SEMIC needs.</p>
 </div>
 <div class="paragraph">
 <p>Transformation deals with producing different models, viewpoints, or artefacts from a model based on a transformation pattern. In general, transformation can produce one representation from another or cross levels of abstraction or architectural layers
@@ -1576,7 +1576,13 @@ relation between the two is not depicted in the diagram, but is stated in the da
 <p>Only use constructs with semantics (human and machine-readable) that support the use case or domain. A similar reflex must be considered by reusing properties and classes from other vocabularies. As a general rule, it is safe to reuse annotation properties, as they carry no logical semantics. Conversely, no concepts shall be redefined unless they are significant variations of the existent ones. In order to achieve a common approach to reuse, apply the reuse guidelines as specified above [<a href="clarification-on-reuse.html" class="xref page">Clarification on the reuse</a>].</p>
 </div>
 <div class="paragraph">
-<p>See more [<a href="references.html#ref:epo-arch" class="xref page">epo-arch, section 4</a>], [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.1.2</a>]</p>
+<p>See more [
+<a href="references.html#ref:ld-bp" class="xref page">ld-bp</a>,
+<a href="references.html#ref:ld-bp" class="xref page">ldp-bp</a>,
+<a href="references.html#ref:dwbp" class="xref page">dwbp</a>,
+<a href="references.html#ref:epo-arch" class="xref page">epo-arch</a>,
+<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules</a>
+]</p>
 </div>
 </div>
 <div class="sect2">
@@ -1594,8 +1600,7 @@ relation between the two is not depicted in the diagram, but is stated in the da
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong>
-Quality of maintenance and governance should be reviewed before reuse. Reuse mostly vocabularies that are well maintained and governed.
-[<a href="references.html#ref:semic-sgdraft" class="xref page">semic-sgdraft</a>]</p></td>
+Quality of maintenance and governance should be reviewed before reuse. Reuse mostly vocabularies that are well maintained and governed.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1631,18 +1636,18 @@ label and definition.</p></td>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>Terms and concepts are not the same things. A term is a word, compound word, or multi-word expression that, in specific
-contexts, is given specific meanings – these may deviate from the meanings the same words have in other contexts and in
-everyday language.
-A concept can be viewed as an idea or notion, a unit of thought [<a href="references.html#ref:skos" class="xref page">skos</a>]. However, what constitutes a unit of thought is
-subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be
-well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported
-by examples and explanatory notes.
-So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the
-identity of a concept’s "meaning". URIs also enable referencing, an essential feature of meaning exchange (communication).
-Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans.
-And finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the
-term reusable, it should be published as part of a data specification.</p>
+<p>Terms and concepts are not the same things. A term is a word, compound word, or multi-word expression that, in specific contexts, is given specific meanings – these may deviate from the meanings the same words have in other contexts and in everyday language.
+A concept can be viewed as an idea or notion, a unit of thought [<a href="references.html#ref:skos" class="xref page">skos</a>]. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive rather than restrictive. That is why each concept needs to be well-named (termed) by providing preferred and alternative labels and should have a clear and precise definition supported by examples and explanatory notes. So, we need a precise way to refer to concepts. The mechanism offering such a possibility is using URIs to establish the identity of a concept&#8217;s "meaning". URIs also enable referencing, an essential feature of meaning exchange (communication).
+Such a reference allows for establishing a common meaning, not only between humans and machines but also among humans. Finally, the meaning of the term must be clear. Its definition is associated with the term via the URI. To make the term reusable, it should be published as part of a data specification.</p>
+</div>
+<div class="paragraph">
+<p>See more [
+<a href="references.html#ref:ld-bp" class="xref page">ld-bp</a>,
+<a href="references.html#ref:ld-bp" class="xref page">ldp-bp</a>,
+<a href="references.html#ref:dwbp" class="xref page">dwbp</a>,
+<a href="references.html#ref:epo-arch" class="xref page">epo-arch</a>,
+<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules</a>
+]</p>
 </div>
 </div>
 <div class="sect2">
@@ -1678,19 +1683,19 @@ names will be reflected in all artefacts and in the URIs.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>British English is the lingua franca in the model. [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.1</a>]</p>
+<p>British English is the lingua franca in the model.</p>
 </li>
 <li>
-<p>Avoid acronyms and abbreviations in concept names [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.1</a>]</p>
+<p>Avoid acronyms and abbreviations in concept names</p>
 </li>
 <li>
-<p>Classes are names with nouns and singular [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.6</a>]</p>
+<p>Classes are names with nouns and singular</p>
 </li>
 <li>
-<p>Names are case-sensitive. [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.1</a>]</p>
+<p>Names are case-sensitive.</p>
 </li>
 <li>
-<p>Relations and Properties use verbs at a present tense [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.7</a>]</p>
+<p>Relations and Properties use verbs at a present tense</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1703,7 +1708,7 @@ to the name.</p>
 </li>
 <li>
 <p>Most often, the name of the inverse relation should not be a semantically inverted verb, such as in the case of "buys/sells"
-or "opens/closes". It should be done by changing the voice from active to passive, e.g. "plays/playedBy". [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 3.7</a>]</p>
+or "opens/closes". It should be done by changing the voice from active to passive, e.g. "plays/playedBy".</p>
 </li>
 </ul>
 </div>
@@ -1784,8 +1789,10 @@ They are based on advice found in the literature and are the following:</p>
 <p>Form the definition in one or more sentences that start with a capital letter and end with a period.</p>
 </li>
 <li>
-<p>Do not start a definition with a repetition of the name of the concept.
-Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
+<p>Do not start a definition with a repetition of the name of the concept.</p>
+</li>
+<li>
+<p>Rich standard encodings such as UTF-8 and UTF-16 are supported in notes and definitions. In the element names, however,
 we recommend avoiding any character encodings and using plain ASCII [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.2</a>].</p>
 </li>
 </ul>
@@ -2483,7 +2490,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 </div>
 </div>
 <div class="paragraph">
-<p>See more [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.3</a>]</p>
+<p>See more [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules sec 3.2.3</a>]</p>
 </div>
 </div>
 <div class="sect2">
@@ -2517,7 +2524,8 @@ practice. In UML, this can be done via &lt;&lt; abstract &gt;&gt; stereotype [se
 <p>Doing so has no impact on the OWL 2 [<a href="references.html#ref:owl2" class="xref page">owl2</a>] representation of the model (as this cannot be expressed in OWL). However, depending on the toolchain implementation, SHACL data shapes [<a href="references.html#ref:shacl" class="xref page">shacl</a>] can be generated to express that no instances of this class shall not occur in the data.</p>
 </div>
 <div class="paragraph">
-<p>See [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.6</a>], [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.4</a>]</p>
+<p>See [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules sec 3.2.6</a>,
+<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.4</a>]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -2651,7 +2659,7 @@ in tools. For example, Enterprise Architect by default assumes [1..1] cardinalit
 similar default assumption exists in XML/XSD.</p>
 </div>
 <div class="paragraph">
-<p>Notation for multiple cardinality can be either with ‘*’ or ‘n’. In principle using either notation is fine, however, it is
+<p>Notation for multiple cardinality can be either with '*' or 'n'. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
 on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.</p>
@@ -2957,13 +2965,13 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>are well spaced (proper space between lines, boxes and labels)</p>
 </li>
 <li>
-<p>minimise the number of crossing connectors [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.4</a>]</p>
+<p>minimise the number of crossing connectors</p>
 </li>
 <li>
-<p>prefer orthogonal to straight connectors [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.1</a>]</p>
+<p>prefer orthogonal to straight connectors</p>
 </li>
 <li>
-<p>align elements horizontally &amp; vertically [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.4</a>]</p>
+<p>align elements horizontally &amp; vertically</p>
 </li>
 <li>
 <p>space elements evenly</p>
@@ -2975,10 +2983,10 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>align labels horizontally and avoid vertical or oblique alignment</p>
 </li>
 <li>
-<p>place subclasses under or to the right of their parent [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.5</a>]</p>
+<p>place subclasses under or to the right of their parent</p>
 </li>
 <li>
-<p>place the part under or to the right of the whole at aggregates or composites [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.1</a>].</p>
+<p>place the part under or to the right of the whole at aggregates or composites .</p>
 </li>
 <li>
 <p>minimise the number of details</p>
@@ -2997,7 +3005,7 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>diagrams shall not be bigger than one A4 page</p>
 </li>
 <li>
-<p>simplify complex diagrams [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.3</a>]:</p>
+<p>simplify complex diagrams:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -3026,18 +3034,21 @@ relations and their organisation to the human reader. Therefore, the diagrams sh
 <p>nothing shall draw more attention unless intended</p>
 </li>
 <li>
-<p>elements of equal importance  should be equally large [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.3.2</a>].</p>
+<p>elements of equal importance  should be equally large</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>inherited attributes of a superclass shall be visible if the superclass is not in the diagram [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.5</a>].</p>
+<p>inherited attributes of a superclass shall be visible if the superclass is not in the diagram</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>See also [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.1.11</a>], [<a href="references.html#ref:semic-sgdraft" class="xref page">semic-sgdraft, sec on UML, Rules 13-23</a>]</p>
+<p>See also [
+<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules</a>,
+<a href="references.html#ref:semic-sgdraft" class="xref page">semic-sgdraft</a>
+]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -3666,9 +3677,8 @@ work still to be done, or warnings in the event that future editorial changes mi
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the
-executable ones, the most well-known are SHACL [<a href="references.html#ref:shacl" class="xref page">shacl</a>] and ShEx [<a href="references.html#ref:shex" class="xref page">shex</a>].
-As the SHACL is a W3C standard, we strongly recommend using it.</p>
+<p>There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the executable ones, the most well-known are SHACL [<a href="references.html#ref:shacl" class="xref page">shacl</a>] and ShEx [<a href="references.html#ref:shex" class="xref page">shex</a>].
+We are aware that a strong community of practice exists for ShEx. However, as SHACL is a W3C standard, we strongly recommend using it.</p>
 </div>
 </div>
 <div class="sect2">
@@ -4025,7 +4035,11 @@ highest grade of 5-Star [<a href="references.html#ref:5star-od" class="xref page
 </ul>
 </div>
 <div class="paragraph">
-<p>See more [<a href="references.html#ref:semic-sgdraft" class="xref page">semic-sgdraft</a>, <a href="references.html#ref:dwdp" class="xref page">dwdp</a>]</p>
+<p>See more [
+<a href="references.html#ref:dwbp" class="xref page">dwbp</a>,
+<a href="references.html#ref:ld-bp" class="xref page">ld-bp</a>,
+<a href="references.html#ref:ld-bp" class="xref page">ldp-bp</a>
+]</p>
 </div>
 </div>
 <div class="sect2">
@@ -4077,6 +4091,13 @@ that each URI is of the following pattern:</p>
 <p>The <code>{Collection}</code> is an organisation-agnostic name for a collection of terms. Within a <code>{Collection}</code> the local names, or
 references, are being maintained according to the policy of the <code>{Collection}</code>. For SEMIC data specifications, the names
 are dependent on the naming conventions mentioned in this style guide rules [<a href="gc-general-conventions.html#sec:gc-r4" class="xref page">GC-R4</a> + <a href="gc-conceptual-model-conventions.html#sec:cmc-r3" class="xref page">CMC-R3</a>].</p>
+</div>
+<div class="paragraph">
+<p>See more [
+<a href="references.html#ref:ld-bp" class="xref page">ld-bp</a>,
+<a href="references.html#ref:ld-bp" class="xref page">ldp-bp</a>,
+<a href="references.html#ref:dwbp" class="xref page">dwbp</a>,
+]</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -4218,6 +4239,13 @@ default response (if no content type is specified), and the other is RDF [<a hre
 <div class="paragraph">
 <p>The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
 Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [<a href="references.html#ref:rdf-pub" class="xref page">rdf-pub</a>].</p>
+</div>
+<div class="paragraph">
+<p>See more [
+<a href="references.html#ref:ld-bp" class="xref page">ld-bp</a>,
+<a href="references.html#ref:ld-bp" class="xref page">ldp-bp</a>,
+<a href="references.html#ref:dwbp" class="xref page">dwbp</a>,
+]</p>
 </div>
 </div>
 <div class="sect2">
@@ -4799,7 +4827,7 @@ and what is its scope.</p>
 <p><strong>[<a id="ref:urn"></a>urn]</strong> Saint-Andre, P., &amp; Klensin, J. (2017). Uniform Resource Names (URNs). Internet Engineering Task Force (IETF), RFC, 8141. Available at: <a href="https://www.rfc-editor.org/info/rfc8141" class="bare">https://www.rfc-editor.org/info/rfc8141</a></p>
 </li>
 <li>
-<p><strong>[<a id="ref:turtle"></a>turtle]</strong> Beckett, D., Berners-Lee, T., Prud’hommeaux, E., &amp; Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: <a href="https://www.w3.org/TR/turtle/#sec-iri" class="bare">https://www.w3.org/TR/turtle/#sec-iri</a></p>
+<p><strong>[<a id="ref:turtle"></a>turtle]</strong> Beckett, D., Berners-Lee, T., Prud&#8217;hommeaux, E., &amp; Carothers, G. (2014). RDF 1.1 Turtle. World Wide Web Consortium, 18-31. Available at: <a href="https://www.w3.org/TR/turtle/#sec-iri" class="bare">https://www.w3.org/TR/turtle/#sec-iri</a></p>
 </li>
 <li>
 <p><strong>[<a id="ref:cv-handbook"></a>cv-handbook]</strong> PwC EU Services (2015). e-Government Core Vocabularies handbook. Report, ISA programme of the European Commission. Available at: <a href="https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook_0.pdf" class="bare">https://ec.europa.eu/isa2/sites/default/files/e-government_core_vocabularies_handbook_0.pdf</a></p>
@@ -4829,7 +4857,7 @@ and what is its scope.</p>
 <p><strong>[<a id="ref:reiter81"></a>reiter81]</strong> Reiter, R. (1981). On closed world data bases. In Readings in artificial intelligence (pp. 119-140). Morgan Kaufmann.</p>
 </li>
 <li>
-<p><strong>[<a id="ref:togaf"></a>togaf]</strong> Kotusev, S. (2018). TOGAF Version 9.2: What’s New. British Computer Society (BCS).</p>
+<p><strong>[<a id="ref:togaf"></a>togaf]</strong> Kotusev, S. (2018). TOGAF Version 9.2: What&#8217;s New. British Computer Society (BCS).</p>
 </li>
 <li>
 <p><strong>[<a id="ref:fernandez-lopez97"></a>fernandez-lopez97]</strong> Fernández-López, M., Gómez-Pérez, A., &amp; Juristo, N. (1997). Methontology: from ontological art towards ontological engineering.</p>
@@ -4905,6 +4933,12 @@ and what is its scope.</p>
 </li>
 <li>
 <p><strong>[<a id="ref:d2rm"></a>d2rm]</strong> Chortaras, A., &amp; Stamou, G. (2018). D2RML: Integrating Heterogeneous Data and Web Services into Custom RDF Graphs. In <em>LDOW@ WWW</em>.</p>
+</li>
+<li>
+<p><strong>[<a id="ref:ld-bp"></a>ld-bp]</strong> World Wide Web Consortium. (2014). Best practices for publishing linked data. <a href="https://www.w3.org/TR/ld-bp" class="bare">https://www.w3.org/TR/ld-bp</a></p>
+</li>
+<li>
+<p><strong>[<a id="ref:ld-bp"></a>ldp-bp]</strong> World Wide Web Consortium. (2014). Linked Data Platform Best Practices and Guidelines. <a href="https://www.w3.org/TR/ld-bp" class="bare">https://www.w3.org/TR/ld-bp</a></p>
 </li>
 </ul>
 </div>
