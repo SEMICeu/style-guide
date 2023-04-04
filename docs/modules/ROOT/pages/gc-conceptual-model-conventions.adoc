@@ -521,12 +521,10 @@ UML Connectors shall be used to define relations and properties taking non-atomi
 
 UML Connectors shall be used to denote object properties (see OWL 2 semantics, [xref:references.adoc#ref:owl2[owl2]]).
 
-First, explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
+First, we explain how the connectors ought to be used, i.e., where to specify the relationship names and multiplicity. Then we
 explain the optional usage of the dependency connector type.
 
-On connector names,
-
-A generic UML connector may have a name applied to it, and it may have source/target roles specified in addition. This provides
+On connector names, a generic UML connector may have a name applied to it, and it may have source/target roles specified in addition. This provides
 flexibility to how the domain knowledge may be expressed in UML; however, this freedom increases the level of ambiguity as well.
 Therefore, we foresee two distinct ways to express properties: using the connector (generic) name or using the connector
 source/target ends.
@@ -535,13 +533,13 @@ We strongly recommend using the source/target role name to indicate the relation
 
 Or conversely, if the connector direction is "Bidirectional", then source and target roles must be provided. No other directions are permitted.
 
-We recommend each association has a definition. The definition is then used for each role as they represent the same meaning manifested in the inverse direction. Alternatively, specific definitions can be specified along the target and source roles.
+It is recommended that each association has a definition. The definition is then used for each role as they represent the same meaning manifested in the inverse direction. Alternatively, definitions can be specified along the target and source roles.
 
-UML defined multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.
+UML defines multiple types of connectors. We recommend relying mainly on the UML Association connector type. Optionally a UML Dependency Connector type may be used if the meaning and usage conditions are well-defined.
 
-The UML Association connectors represent relations between a source and target classes. The association connector cannot be used between other kinds of UML Elements.
+The UML Association connectors represent relations between a source and a target classes. The association connector cannot be used between other kinds of UML Elements.
 
-The UML Dependency connector may be used between UML Class and UML Enumeration boxes, oriented from the Class towards the Enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
+The UML Dependency connector may be used between a UML Class and UML Enumeration boxes, oriented from the Class towards the Enumeration. It indicates the class has an `owl:ObjectProperty`, whose range is a controlled vocabulary
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]]. The connector must have the direction "Source -> Target".
 No other directions are acceptable.
 
@@ -569,7 +567,7 @@ The visibility of all UML Elements should be "public".
 *Description:*
 
 For semantic data specifications, accessibility to the information is not a concern. The sole concern is to specify the
-semantics of the information as well as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
+semantics of the information as precisely as possible. Therefore, the UML access or privacy annotations shall not be interpreted,
 and the "+" symbol shall always be used next to each property. This symbol means "public" [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.22]].
 
 ****
@@ -601,19 +599,18 @@ The controlled lists of values shall be referred to as UML Enumerations and spec
 References to controlled lists shall be done via UML Enumeration elements. Content and lifecycle management of controlled lists shall be separated from the management of the semantic data specification.
 
 Controlled lists play an essential role in establishing interoperability standards. Management and publication of controlled lists are not part of this style guide.
-The expectation is that the controlled lists are published in accordance
-with best practices and represented with the SKOS model using persistent identifiers. In such an approach, the controlled list is expressed as a `skos:ConceptScheme` and the specific values as `skos:Concept`(s). Also, such controlled lists are often developed,
-published and maintained stand-alone following their own lifecycle, so that they can be reused in other models.
+The expectation is that the controlled lists are published in accordance with best practices and represented with the SKOS model using persistent identifiers. In such an approach, the controlled list is expressed as a `skos:ConceptScheme` and the specific values as `skos:Concept`(s). Also, such controlled lists are often developed,
+published and maintained independently following their own lifecycle, so that they can be reused in other models.
 
 Two use-cases can be identified in practice: (a) when the code list is known and is explicitly referred to as the range of a property, and (b) when a property is modelled but no code list reference is provided as its range.
 
-When the authors of a conceptual model intend to omit, which controlled list shall be used, then a class attribute with the range `skos:Concept` (in some cases `Code` is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`, without specifying from which controlled list.
+When the authors of a conceptual model intend to omit which controlled list shall be used, then a class attribute with the range `skos:Concept` (in some cases `Code` is preferred) can be created to indicate that. This approach can be useful in situations when multiple (external) controlled lists can be used interchangeably. For example, the `adms:status` property of a `dcat:CatalogueRecord` shall be a `skos:Concept`, without specifying the controlled list.
 
 image::dcatcatalogue.png[]
 
 It is advisable, however, to be specific concerning which controlled list shall be used. In such cases, an Enumeration shall be created representing the controlled list. The Enumeration shall be empty, i.e., not specifying any value, because the values are assumed to be maintained externally and only the reference is necessary.
 
-The properties taking this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO, `dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table published on the EU Vocabularies website).
+The properties having this controlled list as range shall be depicted as UML connectors (dependencies or associations) between a Class and an Enumeration [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R2]]. For example, in ePO, `dct:Location` can have a country code represented as a dependency relation to `at-voc:country` (the country authority table published on the EU Vocabularies website).
 
 image::cmc-r14-1.png[]
 
@@ -624,9 +621,9 @@ If the controlled list is specific to the model then the author shall define the
 ****
 *Examples:*
 
-The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation, see in the image on top, while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service is intended for, see in the image below.
+The COFOG controlled list is suggested in Core Public Organisation to describe the purpose of an Organisation (as depicted in the image on top) while in CPSV-AP, the same COFOG list is used to indicate the functions of government which a public service is intended for (as depicted in the image below).
 
-While the COFOG controlled list, owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes, the Core Public Organisation and CPSV-AP can still point to it independently.
+While the COFOG controlled list is owned by the UN and maintained by the Publications Office in the form of SKOS concept schemes, it can be reused by the Core Public Organisation and CPSV-AP independently.
 
 image::cmc-r14-2.png[]
 image::cmc-r14-3.png[]
@@ -645,18 +642,18 @@ image::cmc-r14-3.png[]
 
 |*Statement:*
 
-Packages have no semantic value, but shall be used whenever possible to  logically organise the model.
+Packages have no semantic value, but shall be used whenever possible to logically organise the model.
 
 |===
 
 *Description:*
 
-It is best to avoid defining any semantic interpretation into UML Packages. They are best used for organisational purposes,
-defining logical partitions in the model. So, packages can serve as a method for the slicing of the conceptual model into
+It is highly recommended to avoid defining any semantic interpretation into UML Packages, as they are best used for organisational purposes,
+defining logical partitions in the model. Therefore, packages can serve as a method of slicing the conceptual model into
 subdomains.
 
-It is possible to use packages as namespace indicators. It works well for classes, but fails to cover the needs for managing
-namespaces of connectors and attributes. It does not work in cases when an attribute, or a connector is used multiple times in several packages. Namespace management is easier attained by using other methods such as using prefixes in Element
+It is also possible to use packages as namespace indicators. Although it works well for classes, it fails to cover the needs for managing
+namespaces of connectors and attributes. Moreover, it does not work in cases when an attribute, or a connector is used multiple times in several packages. Hence, namespace management is easier attained by using other methods such as using prefixes in Element
 names or using Element tags [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.3]].
 ****
 *Examples:*
@@ -696,20 +693,23 @@ We recommend that the diagrams:
 * space elements evenly
 * avoid overlapping labels and depict all labels
 * align labels horizontally and avoid vertical or oblique alignment
-* place subclasses under or to the right of their parent [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.5]] and
+* place subclasses under or to the right of their parent [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.5]] 
 * place the part under or to the right of the whole at aggregates or composites [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.1]].
-* minimise the number of details, and are short and concise; multiple small(-er) diagrams are preferred to one large diagram
+* minimise the number of details
+* are short and concise (multiple small(-er) diagrams are preferred to one large diagram)
 * diagram size:
-** prefer a multiple themed small(er) diagrams to large and crowded ones
-** diagrams shall be no bigger than one A4 page
+** prefer multiple themed small(er) diagrams to large and crowded ones
+** diagrams shall not be bigger than one A4 page
 ** simplify complex diagrams [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.3]]:
-*** breaking it down into several smaller diagrams.
-*** by highlighting certain parts of the diagram.
-*** by hiding attributes, role names, etc. that are not relevant.
+*** by breaking it down into several smaller diagrams
+*** by highlighting certain parts of the diagram
+*** by hiding attributes, role names, etc. that are not relevant
 
-* Symbol size equal, and nothing shall draw more attention unless intended. Make elements of equal importance equally
-large [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.2]].
-* Inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.5]].
+* symbol size:
+** symbols should be equal
+** nothing shall draw more attention unless intended
+** elements of equal importance  should be equally large [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.3.2]].
+* inherited attributes of a superclass shall be visible if the superclass is not in the diagram [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.5]].
 
 See also [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.1.11]], [xref:references.adoc#ref:semic-sgdraft[semic-sgdraft, sec on UML, Rules 13-23]]
 ****
@@ -738,9 +738,9 @@ Stereotypes do not have semantic or normative value. They shall be avoided in th
 
 *Description:*
 
-We strongly encourage semantic practitioners to void stereotypes of any normative or semantic value. One common usage of stereotypes is to provide deontic indicators. See [xref:gc-general-conventions.adoc#sec:gc-r7[GC-7 on Deontic modals]] where we explain why they are discouraged and what can be done instead.
+We strongly encourage semantic practitioners to avoid stereotypes of any normative or semantic value. One common usage of stereotypes is to provide deontic indicators. See [xref:gc-general-conventions.adoc#sec:gc-r7[GC-7 on Deontic modals]] where we explain why their use is discouraged and what can be done instead.
 
-There is a practice to mark some classes as "abstract" with intention of forbidding those from being instantiated. This is also a technical level constraint and does not belong in the semantic layer.
+There is a practice to mark some classes as "abstract" with the intention of preventing those from being instantiated. This is also a technical level constraint and does not belong in the semantic layer.
 
 We acknowledge that stereotypes can be useful for editorial and dissemination purposes; to indicate a classification or grouping of a specific sort. Stereotypes can be used to support concerns specific to an implementation of the transformation toolchain. See the examples below.
 
@@ -777,7 +777,7 @@ Similar to [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], this convention
 
 It is recommended to employ the primitive datatypes that are already defined in XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
 
-The datatypes defined in the UML model shall be also avoided. Even if a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
+The definition of datatypes in the UML model should be also avoided, even in cases where a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
 
 Note that from the family of string datatypes we recommend using the following ones (in this order of preference): `rdf:PlainLiteral`, `rdfs:Literal`, `xsd:string`, and `rdf:langString`. Often enabling multilingual data specification is a necessity.
 
