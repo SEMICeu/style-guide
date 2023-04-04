@@ -725,7 +725,7 @@ image::core-person.png[]
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* Avoid using stereotypes
+ *Title:* Element stereotypes
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* CMC-R17

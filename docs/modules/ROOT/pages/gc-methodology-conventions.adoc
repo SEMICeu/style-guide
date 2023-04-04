@@ -71,11 +71,11 @@ It shall be possible to determine the scope of a data specification from the use
 
 
 [[sec:mc-r3]]
-== On modularisation
+== Modularisation
 
 |===
 |{set:cellbgcolor: #a8c6f7}
- *Title:* On modularisation
+ *Title:* Modularisation
 
 |{set:cellbgcolor: #f5f8fc}
 *Identifier* MC-R3
