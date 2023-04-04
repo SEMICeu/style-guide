@@ -1763,7 +1763,7 @@ They are based on advice found in the literature and are the following:</p>
 <p>Use the singular form to phrase the definition [<a href="gc-general-conventions.html#sec:gc-r4" class="xref page">GC-R4</a>]</p>
 </li>
 <li>
-<p>No negative definition by stating what the term is, and not by enumerating what it is NOT,</p>
+<p>State what the term is, and don&#8217;t enumerate what it is NOT (no negative definition)</p>
 </li>
 <li>
 <p>Use only commonly understood abbreviations</p>
@@ -1775,13 +1775,13 @@ They are based on advice found in the literature and are the following:</p>
 </div>
 </li>
 <li>
-<p>No circular definitions, i.e. the term it defines should not be part of the definition,</p>
+<p>Don&#8217;t use  circular definitions, i.e. the term defined should not be part of the definition,</p>
 </li>
 <li>
-<p>Secondary information such as additional explanation, scoping, examples, etc. are to be documented in usage notes.</p>
+<p>Don&#8217;t add secondary information such as additional explanation, scoping, examples, etc. these are to be documented in usage notes.</p>
 </li>
 <li>
-<p>The definition is formed of one or more sentences that starts with a capital letter and end with a period.</p>
+<p>Form the definition in one or more sentences that start with a capital letter and end with a period.</p>
 </li>
 <li>
 <p>Do not start a definition with a repetition of the name of the concept.
@@ -1811,13 +1811,13 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </tbody>
 </table>
 <div class="paragraph">
-<p>Compliance checking with an application semantic data specification shall be permissive. This means that what is not forbidden is permitted. When context requires more restrictions than this usually is a sign that an application profile needs to be established for a narrow(er) scenario.</p>
+<p>Compliance checking with an application semantic data specification shall be permissive. This means that what is not forbidden is permitted. If the context requires more restrictions,then an application profile needs to be established for a narrow(er) scenario.</p>
 </div>
 <div class="paragraph">
-<p>Technically, we envisage compliance checking limited to correct referencing of the concept URIs and respecting the cardinality constraints and value constraints in the case of properties. This fall within the scope of data shape definitions. Additional, more specific compliance requirements and constraints can be added as necessary.</p>
+<p>Technically, we envisage compliance checking limited to correct referencing of the concept URIs and respecting the cardinality constraints and value constraints in the case of properties. This falls within the scope of data shape definitions. Additionally, more specific compliance requirements and constraints can be added as necessary.</p>
 </div>
 <div class="paragraph">
-<p>Compliance checking may involve multiple levels of severity. For example in the SHACL specifications three levels are defined: <em>Violation</em>, <em>Warning</em>, <em>Info</em>. We assume by default the SHACL severity specifications unless other denotations system are provided (i.e. different labels and delimitation of severity). Also in absense of specifications, any unfulfilled compliance check is considered a <em>Violation</em>.</p>
+<p>Compliance checking may involve multiple levels of severity. For example in the SHACL specifications three levels are defined: <em>Violation</em>, <em>Warning</em>, <em>Info</em>. We assume by default the SHACL severity specifications unless other denotations systems are provided (i.e. different labels and delimitation of severity). Also in absense of specifications, any unfulfilled compliance check is considered a <em>Violation</em>.</p>
 </div>
 <div class="paragraph">
 <p>The semantic data specifications may provide such severity levels. How it is realised in the conceptual model is open at the moment. The main place to provide such specifications is the data shape artefact. In the future we can return to this aspect and provide more guidance.</p>
@@ -1846,7 +1846,7 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 <p>Deontic modalities indicate levels <em>obligation</em>, <em>permission</em>, <em>necessity</em> and related concepts.</p>
 </div>
 <div class="paragraph">
-<p>As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators may play an editorial or guiding role for the users and adopters of the data specifications but without any expectation that they are considered in any way for compliance validation or semantic interpretation of the data model.</p>
+<p>As a general recommendation, to use deontic indicators in the semantic data specifications is discouraged. Such indicators could be of editorial or guiding role for the users and adopters of the data specifications. However, it should be noted that they are not considered as part of any compliance validation or semantic interpretation of the data model.</p>
 </div>
 <div class="paragraph">
 <p>In the standardisation community a common practice is to indicate levels of <em>obligation</em> or <em>permission</em> for concepts in a semantic data specification. <em>Obligation</em> indicator signals whether a statement using a class or a property is required in an instantiation; while, <em>Permission</em> indicator signals whether a statement using a class or a property is allowed or forbidden in an instantiation.</p>
@@ -1871,21 +1871,21 @@ we recommend avoiding any character encodings and using plain ASCII [<a href="re
 </ul>
 </div>
 <div class="paragraph">
-<p>There are ways to achieve the same effect as the these indicators through other means, however.
+<p>Still, there are ways to achieve the same effect as the these indicators through other means.
 For properties, the main instrument is employment of cardinality constraints (per property per class). To make a property <em>mandatory</em> set the minimum cardinality to one or more <code>[1..*]</code>,
 otherwise relax the minimum cardinality constraint to keep the property optional <code>[0..*]</code>.</p>
 </div>
 <div class="paragraph">
-<p>For classes, it is possible to mark a class as <em>abstract</em>, which means that it cannot be directly instantiated, therefore achieving the effect of <em>forbidden</em>. But for classes deontic indicators shall be avoided because a class may be mandatory and optional in different instantiation or exchange scenarios within the same application profile.</p>
+<p>For classes, it is possible to mark a class as <em>abstract</em>, which means that it cannot be directly instantiated, therefore achieving the effect of <em>forbidden</em>. However, deontic indicators shall be avoided for classes because a class may be mandatory and optional in different instantiation or exchange scenarios within the same application profile.</p>
 </div>
 <div class="paragraph">
 <p>For example consider the DCAT-AP and two mandatory classes: <code>dcat:Catalog</code> and <code>dcat:Dataset</code>. When metadata of a catalogue (and its records) is exchanged, then both classes <code>dcat:Catalog</code> and <code>dcat:Dataset</code> must be instantiated; however when a single dataset metadata is being exchange then only <code>dcat:Dataset</code> instance shall be provided. Moreover, in the second scenario, providing an instance of <code>dcat:Catalog</code> will be counterproductive and possible leading to errors.</p>
 </div>
 <div class="paragraph">
-<p>Descriptions of what classes can or shall be bundled together when participating in an information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the <em>Technical Interoperability</em> layer of the European Interoperability Framework (EIF) [<a href="references.html#ref:eif" class="xref page">eif</a>], and are (currently) out of scope of this style guide, which aims primarily at addressing the semantic interoperability.</p>
+<p>Descriptions of what classes can or shall be bundled together when participating in information exchange belong in "data exchange contracts", "API endpoint scheme definitions" or the likes of these. Such specifications belong in the <em>Technical Interoperability</em> layer of the European Interoperability Framework (EIF) [<a href="references.html#ref:eif" class="xref page">eif</a>], and are (currently) out of scope of this style guide, which aims primarily at addressing the semantic interoperability.</p>
 </div>
 <div class="paragraph">
-<p>If semantic engineers are prefer or are compelled to employ deontic indicators, then they must be precisely defined and those definitions be published. No reliance on common sense understanding shall be assumed as the meaning of such deontic indicators may (and certainly) differ not only between readers of data specifications but also how they are meant in different data specifications.</p>
+<p>If semantic engineers prefer or are compelled to employ deontic indicators, then deontic indicators must be precisely defined and those definitions must be published. No reliance on common sense understanding shall be assumed as the meaning of such deontic indicators may (and certainly) differ not only among readers of data specifications but also in different data specifications.</p>
 </div>
 </div>
 </div>
