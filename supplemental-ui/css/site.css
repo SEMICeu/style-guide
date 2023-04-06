@@ -1911,14 +1911,14 @@ body {
 }
 
 .logo {
-    height: 3em;
-    margin: 0.5em;
+    height: 4em;
+    margin: 0.1em;
 }
 .nav-text {
     color: white;
 }
 .navbar {
-    background: #0e5393;
+    background: #0e1f2f;
     color: #fff;
     font-size: .88889rem;
     height: 3.5rem;
