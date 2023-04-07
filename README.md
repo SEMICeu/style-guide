@@ -1,11 +1,21 @@
-# style-guide
-SEMIC style guide to create reusable vocabularies
+# [SEMIC Style Guide](https://semiceu.github.io/style-guide/)
+_SEMIC style guide to create reusable vocabularies_
 
-[Read the style guide](https://semiceu.github.io/style-guide/)
+[![Build](https://github.com/SEMICeu/style-guide/actions/workflows/main.yml/badge.svg)](https://github.com/SEMICeu/style-guide/actions/workflows/main.yml)
 
-# Note to the Editors
-The rule numbers and titles are fixed and shall undergo no changes other than spelling mistake fixes.
+![GitHub last commit](https://img.shields.io/github/last-commit/semiceu/style-guide)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/semiceu/style-guide)
 
+![GitHub issues](https://img.shields.io/github/issues/semiceu/style-guide)
+![GitHub contributors](https://img.shields.io/github/contributors-anon/semiceu/style-guide)
+![GitHub Repo stars](https://img.shields.io/github/stars/semiceu/style-guide?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/semiceu/style-guide?style=social)
+
+![GitHub](https://img.shields.io/github/license/semiceu/style-guide)
+
+[//]: # (# Note to the Editors)
+
+[//]: # (The rule numbers and titles are fixed and shall undergo no changes other than spelling mistake fixes.)
 
 # Contributing
 
