@@ -16,6 +16,7 @@
 * new sections in conceptual model conventions
   * element stereotypes
   * attribute datatypes
+* badges in the readme
 
 ### Changed
 * In the *Terminological clarifications* page rewritten *What is a conceptual model (specification)?* section 
@@ -51,5 +52,5 @@
 * Answered the issue on URIs and IRIs [#21](https://github.com/SEMICeu/style-guide/issues/21)
 * Fixed missing `rdfs:subPropertyOf` mention [#23](https://github.com/SEMICeu/style-guide/issues/23)
 * Fixed 4 styling issues as part of the process [#7](https://github.com/SEMICeu/style-guide/issues/7)
-
+* Fixed a broken link in the code of conduct
 

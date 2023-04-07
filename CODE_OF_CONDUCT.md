@@ -47,5 +47,5 @@ This Code defines **empathy** as "_a vicarious participation in the emotions, id
 
 This statement draws on the following for content and inspiration:
 
-* [Apache Foundation Code of Counduct](https://www.djangoproject.com/conduct/)
+* [Apache Foundation Code of Counduct](https://www.apache.org/foundation/policies/conduct.html)
 * [Django Code of Conduct](https://www.djangoproject.com/conduct/)
