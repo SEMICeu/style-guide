@@ -3,7 +3,7 @@
 ## Webinar 1 feedback implementation (2023-02 - 2023-04)
 
 ### Added 
-* repository metadata and governance info (CHANGELOG, CODE_OF_CONDUCT,m CONTRIBUTING, CONTRIBUTORS)
+* repository metadata and governance info (CHANGELOG, CODE_OF_CONDUCT,CONTRIBUTING, CONTRIBUTORS)
 *  In the *Terminological clarifications* page added a preamble section
 *  new sections in architectural clarifications
   * consumer context
