@@ -30,3 +30,9 @@ Please note that we adhere to a [Code of Conduct](./CODE_OF_CONDUCT.md), please 
 The documents, such as reports and specifications are licenced under a [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/deed.en).
 
 The source code and other scripts are licenced under [EUPL v1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) licence.
+
+# Self-assessment
+
+Wondering how well your own semantic data specificatio
+ns adhere to the rules listed in the Style Guide? The SEMIC team has created a [template](https://github.com/SEMICeu/style-guide/files/11215877/AssessmentTemplateBasedOnStyleGuideRules.xlsx) which can be used to help you do the scoring. An example of this self-assessment, applied to SEMIC's Core Location Vocabulary can be found [here](https://github.com/SEMICeu/style-guide/files/11215887/CoreVocsAssessmentTemplateBasedOn.StyleGuideRules.xlsx)
+.
