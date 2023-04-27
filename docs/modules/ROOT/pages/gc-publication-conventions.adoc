@@ -70,10 +70,10 @@ In 2014, the ISA Programme devised a common policy for managing persistent HTTP-
 xref:references.adoc#ref:10rules-puri[10rules-puri], xref:references.adoc#ref:puri-gov-eu[puri-gov-eu]]. That has led to an EU wide URI resolution service, prescribing
 that each URI is of the following pattern:
 
-`http://data.europa.eu/{Collection}/{Reference}`
+`http://data.europa.eu/\{Collection\}/\{Reference\}`
 
-The `{Collection}` is an organisation-agnostic name for a collection of terms. Within a `{Collection}` the local names, or
-references, are being maintained according to the policy of the `{Collection}`. For SEMIC data specifications, the names
+The `\{Collection\}` is an organisation-agnostic name for a collection of terms. Within a `\{Collection\}` the local names, or
+references, are being maintained according to the policy of the `\{Collection\}`. For SEMIC data specifications, the names
 are dependent on the naming conventions mentioned in this style guide rules [xref:gc-general-conventions.adoc#sec:gc-r4[GC-R4] + xref:gc-conceptual-model-conventions.adoc#sec:cmc-r3[CMC-R3]].
 
 See more [
@@ -85,7 +85,7 @@ xref:references.adoc#ref:dwbp[dwbp],
 ****
 *Examples:*
 
-For example, the PURIs defined within the SEMIC Core Vocabularies are all within the `{Collection}` m8g. And thus  the term
+For example, the PURIs defined within the SEMIC Core Vocabularies are all within the `\{Collection\}` m8g. And thus  the term
 Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu/m8g/Evidence`.
 ****
 
