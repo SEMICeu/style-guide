@@ -1,5 +1,11 @@
 = Index of Rules
 
+* xref:gc-methodology-conventions.adoc[Methodology conventions]
+
+** xref:gc-methodology-conventions.adoc#sec:mc-r1[MC-R1 - Follow a methodology]
+** xref:gc-methodology-conventions.adoc#sec:mc-r2[MC-R2 - On goals and scope]
+** xref:gc-methodology-conventions.adoc#sec:mc-r3[MC-R3 - On modularisation]
+
 * xref:gc-general-conventions.adoc[General conventions]
 
 ** xref:gc-general-conventions.adoc#sec:gc-r1[GC-R1 - Reuse existing concepts as much as possible]
@@ -46,12 +52,6 @@
 ** xref:gc-data-shape-conventions.adoc#sec:dsc-r3[DSC-R3 - Open and Closed world assumptions]
 ** xref:gc-data-shape-conventions.adoc#sec:dsc-r4[DSC-R4 - Shape definitions]
 ** xref:gc-data-shape-conventions.adoc#sec:dsc-r5[DSC-R5 - Data shape severity]
-
-* xref:gc-methodology-conventions.adoc[Methodology conventions]
-
-** xref:gc-methodology-conventions.adoc#sec:mc-r1[MC-R1 - Follow a methodology]
-** xref:gc-methodology-conventions.adoc#sec:mc-r2[MC-R2 - On goals and scope]
-** xref:gc-methodology-conventions.adoc#sec:mc-r3[MC-R3 - On modularisation]
 
 * xref:gc-publication-conventions.adoc[Publication conventions]
 
