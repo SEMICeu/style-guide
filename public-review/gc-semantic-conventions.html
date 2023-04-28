@@ -54,6 +54,9 @@
     <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gc-methodology-conventions.html">Methodology conventions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-general-conventions.html">General conventions</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -64,9 +67,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-data-shape-conventions.html">Data shape conventions</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="gc-methodology-conventions.html">Methodology conventions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gc-publication-conventions.html">Publication conventions</a>
@@ -243,7 +243,7 @@
 <p>class declarations (<code>owl:Class</code>, <code>rdfs:Class</code>)</p>
 </li>
 <li>
-<p>datatype property declarations (<code>owl:DatatypeProperty</code>, <code>rdf:Property</code>)</p>
+<p>data property declarations (<code>owl:DatatypeProperty</code>, <code>rdf:Property</code>)</p>
 </li>
 <li>
 <p>object property declarations (<code>owl:ObjectProperty</code>, <code>rdf:Property</code>)</p>
@@ -544,7 +544,7 @@ work still to be done, or warnings in the event that future editorial changes mi
 <p>Circular definition, i.e., definitions that use the element they define are incorrect.</p>
 </div>
 <div class="paragraph">
-<p>For instance, we say that an ontology element (a class, an object property or a datatype property) is circular when used in its own definition. This can occur in situations such as the following:</p>
+<p>For instance, we say that an ontology element (a class, an object property or a data property) is circular when used in its own definition. This can occur in situations such as the following:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -558,7 +558,7 @@ work still to be done, or warnings in the event that future editorial changes mi
 <p>(c) the appearance of an object property in its <code>rdfs:domain</code> or <code>rdfs:range</code> definitions; or</p>
 </li>
 <li>
-<p>(d) the appearance of a datatype property in its <code>rdfs:domain</code> definition.</p>
+<p>(d) the appearance of a data property in its <code>rdfs:domain</code> definition.</p>
 </li>
 </ul>
 </div>
