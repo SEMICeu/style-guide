@@ -205,7 +205,7 @@ xref:references.adoc#ref:dwbp[dwbp],
 
 |*Statement:*
 
-Each artefact shall have a corresponding human-readable form representing the model documentation.
+Each asset shall have a corresponding human-readable form representing the model documentation.
 |===
 
 *Description:*
