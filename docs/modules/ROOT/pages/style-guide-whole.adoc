@@ -19,6 +19,8 @@ include::clarification-on-reuse.adoc[]
 
 
 // include::guidelines-and-conventions.adoc[]
+include::gc-methodology-conventions.adoc[]
+
 include::gc-general-conventions.adoc[]
 
 include::gc-conceptual-model-conventions.adoc[]
@@ -26,8 +28,6 @@ include::gc-conceptual-model-conventions.adoc[]
 include::gc-semantic-conventions.adoc[]
 
 include::gc-data-shape-conventions.adoc[]
-
-include::gc-methodology-conventions.adoc[]
 
 include::gc-publication-conventions.adoc[]
 
