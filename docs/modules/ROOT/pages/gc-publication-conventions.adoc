@@ -179,7 +179,7 @@ in which the information is returned depend on content negotiation. Content nego
 application and the server in which the client informs the server about its preferred format and representation and the server
 responds with the best-fitting result it can provide.
 
-It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the HTTP header Accept.
+It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the `Accept:` HTTP header.
 
 The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
 default response (if no content type is specified), and the other is RDF [xref:references.adoc#ref:10rules-puri[10rules-puri]].
