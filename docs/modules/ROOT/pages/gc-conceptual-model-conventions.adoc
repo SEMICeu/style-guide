@@ -381,7 +381,7 @@ See more [xref:references.adoc#ref:oslo-rules[oslo-rules sec 3.2.3]]
 
 |*Statement:*
 
-Classes that are not intended for instantiation can be marked as abstract.
+Classes that are not intended to be instantiated directly can be marked as abstract.
 |===
 
 *Description:*
