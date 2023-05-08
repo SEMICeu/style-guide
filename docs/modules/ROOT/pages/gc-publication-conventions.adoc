@@ -235,5 +235,3 @@ It is a good practice to provide the following sections in the document:
 ** Definitions, scope notes, examples, editorial notes, etc.
 
 Moreover, consider including into the data specification documentation details related to good practice for applying metadata and descriptions to OWL 2 and SHACL. For OWL 2, we can mention tools like Widoco [xref:references.adoc#ref:widoco[widoco]] and LODE [xref:references.adoc#ref:lode[lode]]; and for SHACL, follow the SHACL recommendation [xref:references.adoc#ref:shacl[shacl]], or the metadata support implemented in tools such as SHACL-play [xref:references.adoc#ref:shacl-play[shacl-play]]. For application profiles, consider aligning to the DCAP [xref:references.adoc#ref:dcap[dcap]], which is an implementation agnostic recommendation.
-
-The content of these fields shall be aligned as much as possible with the metadata published in the OWL 2 representation (see [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]) and SHACL representation (see [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]).
