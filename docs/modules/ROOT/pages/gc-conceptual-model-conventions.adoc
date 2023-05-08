@@ -222,7 +222,7 @@ Element names shall be organised by namespaces. Namespaces may be indicated thro
 
 *Description:*
 
-To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
+To enable the reuse of names defined in other models, and the reuse of unique references for names that support easy identification,
 namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
 [xref:references.adoc#ref:xml-ns[xml-ns]].
 
@@ -231,8 +231,8 @@ to by name and uniquely identifiable [xref:references.adoc#ref:urn[urn]].
 
 A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
 [xref:references.adoc#ref:turtle[turtle]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:xml-ns[xml-ns]]. Syntactically,
-they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
-namespace URIs and a default namespace applicable to unprefixed Element names.
+they are either prefixed names or un-prefixed names. A binding declaration shall be maintained, which binds prefixes to
+namespace URIs and a default namespace applicable to un-prefixed Element names.
 
 As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
 name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the Element
@@ -244,6 +244,8 @@ prefix can be assumed by default. The qualified names may be structured as follo
 * prefix:localSegment
 * :localSegment
 * localSegment
+
+*Note:* The prefixes and namespaces shall be well-defined, maintained and published as part of the data specification.
 
 ****
 *Examples:*
