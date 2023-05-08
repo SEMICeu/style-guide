@@ -326,6 +326,13 @@ In the example below, a Core Vocabulary Person includes concepts from another vo
 Agent have the "foaf" namespace prefix specified in front.
 
 image::cmc-r7.png[]
+
+Please note that this is an example of xref:clarification-on-reuse.adoc#sec:reuse-of-a-class-with-semantic-adaptations [reuse with semantic adaptation]. In CPV the Person is more restricted than that in FOAF.
+
+The `foaf:Person` class represents people. Something is a `foaf:Person` if it is a person, and it does not matter whether they are alive, dead, real or imaginary. The `foaf:Person` class is a subclass of the `foaf:Agent` class, since all people are considered 'agents' in FOAF.
+
+In contrast to that, `cpv:Person` is defined differently: A individual human being who may be dead or alive, but not imaginary. Hence, the subclass relation.
+
 ****
 
 
