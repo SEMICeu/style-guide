@@ -188,10 +188,13 @@ Moreover, we can significantly improve the readability of an ontology if we use 
 
 The names of
 
-* UML Classes and Datatypes shall start with an upper-case letter,
-* UML Enumerations and Packages shall start with a lower-case letter,
+* UML Classes shall start with an upper-case letter,
 * UML Attributes shall start with a lower-case letter,
-* UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter
+* UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter.
+
+The names of
+
+* UML Enumerations, Packages and Datatypes may start with a lower-case or upper-case letter.
 
 
 ****
