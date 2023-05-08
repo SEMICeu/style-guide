@@ -12,7 +12,7 @@
 
 |*Statement:*
 
-Publishing the Core Vocabularies and Application Profiles shall be compliant with 5-star LOD criteria.
+Publishing data specifications shall be compliant with 5-star LOD criteria.
 |===
 
 *Description:*
@@ -102,13 +102,13 @@ Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu
 
 |*Statement:*
 
-A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
-principles. [xref:references.adoc#ref:sem-ver[sem-ver]]
+A consistent version management shall be implemented for the data specification evolution respecting the "semantic versioning"
+principles.
 |===
 
 *Description:*
 
-The SEMIC versioning methodology is based on "semantic versioning" principles and implements a simple set of rules and
+The SEMIC versioning methodology is based on "semantic versioning" principles [xref:references.adoc#ref:sem-ver[sem-ver]] and implements a simple set of rules and
 requirements that dictate how version numbers are assigned and incremented. It involves describing clearly and precisely
 what is being published and which features are included, and what the limitations are, setting the expectations and scope.
 Once the artefacts are identified for the public, the changes to the data specifications are communicated  with specific
@@ -141,7 +141,7 @@ image::pc-r3.png[]
 
 |*Statement:*
 
-The vocabularies and Application Profiles shall be versioned as a whole and never to atomic elements (concepts, relations
+The data specification shall be versioned as a whole and never to atomic elements (concepts, relations
 or constraints).
 |===
 
@@ -205,7 +205,7 @@ xref:references.adoc#ref:dwbp[dwbp],
 
 |*Statement:*
 
-Each asset shall have a corresponding human-readable form representing the model documentation.
+Each data specification shall have a corresponding human-readable form representing the model documentation.
 |===
 
 *Description:*
