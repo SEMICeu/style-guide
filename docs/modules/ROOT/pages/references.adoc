@@ -55,7 +55,7 @@
 - *[[[ref:5star-od]]5star-od]* Hausenblas, M. (2012) 5 * OPEN DATA. Available at: https://5stardata.info/en
 - *[[[ref:dwdp]]dwdp]* Lóscio, B.F., & Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp
 - *[[[ref:uri-dp]]uri-dp]* Dekkers, M., & Novacean, I. (2018). D04.02.02 – Local URI design patterns. Deliverable SC353DI07171, ISA programme of the European Commission.
-- *[[[ref:puri-gov-eu]]puri-gov-eu]* Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/joinup
+- *[[[ref:puri-gov-eu]]puri-gov-eu]* Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/towards-common-approach-management-persistent-http-uris-eu-institutions
 - *[[[ref:sem-ver]]sem-ver]* Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org
 - *[[[ref:rdf-pub]]rdf-pub]* Berrueta, D., & Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
 - *[[[ref:rdfs]]rdfs]* Brickley, D., Guha, R.V., & McBride, B., (2014). RDF Schema 1.1. _W3C recommendation_, _25_, pp.2004-2014.
