@@ -474,20 +474,20 @@ The multiplicity of connectors and class attributes should be specified, indicat
 *Description:*
 
 If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
-Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.
+Association) shall be as permissive as possible, for example, `[0..*]`, meaning any occurrence is allowed.
 
 If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.15]].
 
 However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
-minimum cardinality shall be set to 1, for example [1..*] [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]].
+minimum cardinality shall be set to 1, for example `[1..*]` [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]].
 
 A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
-it is recommended to fall back on the implicit assumption of [0..*]. Not to be confused with the default cardinality assumed
-in tools. For example, Enterprise Architect by default assumes [1..1] cardinality for attributes and omits to display it; and a
+it is recommended to fall back on the implicit assumption of `[0..*]`. Not to be confused with the default cardinality assumed
+in tools. For example, Enterprise Architect by default assumes `[1..1]` cardinality for attributes and omits to display it; and a
 similar default assumption exists in XML/XSD.
 
-Notation for multiple cardinality can be either with '*' or 'n'. In principle using either notation is fine, however, it is
+Notation for multiple cardinality can be either with `*` or `n`. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
 on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.
@@ -502,7 +502,7 @@ If an attribute or an association from a reused vocabulary is irrelevant, do not
 ****
 *Examples:*
 
-All Core Vocabularies have set a permissive cardinality [0..\*], for example, all the properties of Public Organisation, on the left, have multiplicity [0..\*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:
+All Core Vocabularies have set a permissive cardinality `[0..\*]`, for example, all the properties of Public Organisation, shown with ligh orange background, have multiplicity `[0..*]`, while the same Public Organisation reused in CPSV-AP, shown in blue, has mandatory properties:
 
 image::cmc-r11-1.png[]
 image::cmc-r11-2.png[]
