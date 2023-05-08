@@ -97,7 +97,7 @@ We recommend the formal ontology definition be limited to the following types of
 
 The formal ontology shall not include other types of statements unless justified as necessary. The properties used, in particular those related to the ontology header, shall be aligned with the governance process.
 
-No expressions of (a) property domain specification (`rdfs:domain`) and (b) property range specification (`rdfs:range`) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.
+No expressions of (a) property domain specification (`rdfs:domain`) and (b) property range specification (`rdfs:range`) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints is better fulfilled by the data shapes expressed in SHACL language.
 
 Keeping the ontology lightweight allows the maximum freedom for reuse and does not interfere with the validation concerns covered by the data shapes.
 
