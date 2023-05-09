@@ -67,14 +67,14 @@
 - *[[[ref:xslt]]xslt]* World Wide Web Consortium. (2007). XSL transformations (XSLT) version 2.0.
 - *[[[ref:rml]]rml]* Dimou, A., Vander Sande, M., Colpaert, P., Verborgh, R., Mannens, E., & Van de Walle, R. (2014). RML: A generic language for integrated RDF mappings of heterogeneous data. _Ldow_, _1184_.
 - *[[[ref:d2rm]]d2rm]* Chortaras, A., & Stamou, G. (2018). D2RML: Integrating Heterogeneous Data and Web Services into Custom RDF Graphs. In _LDOW@ WWW_.
+- *[[[ref:fair-principles]]fair-principles]* FAIR Principles. https://www.go-fair.org/fair-principles/
+- *[[[ref:fair-guidelines]]fair-guidelines]* The FAIR Guiding Principles for scientific data management and stewardship. https://www.nature.com/articles/sdata201618
 - *[[[ref:ld-bp]]ld-bp]* World Wide Web Consortium. (2014). Best practices for publishing linked data. https://www.w3.org/TR/ld-bp
 - *[[[ref:ld-bp]]ldp-bp]* World Wide Web Consortium. (2014). Linked Data Platform Best Practices and Guidelines. https://www.w3.org/TR/ld-bp
 - *[[[ref:widoco]]widoco]* WIzard for DOCumenting Ontologies (WIDOCO). https://github.com/dgarijo/Widoco
 - *[[[ref:lode]]lode]* Live OWL Documentation Environment (LODE). https://essepuntato.it/lode/
-- *[[[ref:dcap]]shacl-play]* SHACL Play! SHACL documentation. https://shacl-play.sparna.fr/play/doc
+- *[[[ref:shacl-play]]shacl-play]* SHACL Play! SHACL documentation. https://shacl-play.sparna.fr/play/doc
 - *[[[ref:dcap]]dcap]* Dublin Core Application Profile (DCAP). https://github.com/dcmi/dcap
-- *[[[ref:fair-guidelines]]fair-guidelines]* The FAIR Guiding Principles for scientific data management and stewardship. https://www.nature.com/articles/sdata201618
-- *[[[ref:fair-principles]]fair-principles]* FAIR Principles. https://www.go-fair.org/fair-principles/
 
 
 

@@ -248,7 +248,7 @@ prefix can be assumed by default. The qualified names may be structured as follo
 * :localSegment
 * localSegment
 
-*Note:* The prefixes and namespaces shall be well-defined, maintained and published as part of the data specification.
+*Note:* The prefixes and namespaces shall be well-defined, maintained, and published as part of the data specification.
 
 ****
 *Examples:*

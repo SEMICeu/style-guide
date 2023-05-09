@@ -27,8 +27,8 @@ highest grade of 5-Star [xref:references.adoc#ref:5star-od[5star-od]] open data 
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
 
-On teh same note, FAIR Data Principles [xref:references.adoc#ref:fair-principles[fair-principles]] is a more comprehensive and rich set of guidelines for publishing data on the web. They ensure the Findability, Accessibility, Interoperability and Reuse of digital assets.
-The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity and creation speed of data [xref:references.adoc#ref:fair-guidelines[fair-guidelines]].
+On the same note, the FAIR Data Principles [xref:references.adoc#ref:fair-principles[fair-principles]] is a more comprehensive and rich set of guidelines for publishing data on the web. They ensure the Findability, Accessibility, Interoperability and Reuse of digital assets.
+The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data, as a result of the increase in volume, complexity and creation speed of data [xref:references.adoc#ref:fair-guidelines[fair-guidelines]].
 
 See more [
 xref:references.adoc#ref:dwbp[dwbp],
@@ -234,4 +234,4 @@ It is a good practice to provide the following sections in the document:
 ** Labels (preferred and alternative)
 ** Definitions, scope notes, examples, editorial notes, etc.
 
-Moreover, consider including into the data specification documentation details related to good practice for applying metadata and descriptions to OWL 2 and SHACL. For OWL 2, we can mention tools like Widoco [xref:references.adoc#ref:widoco[widoco]] and LODE [xref:references.adoc#ref:lode[lode]]; and for SHACL, follow the SHACL recommendation [xref:references.adoc#ref:shacl[shacl]], or the metadata support implemented in tools such as SHACL-play [xref:references.adoc#ref:shacl-play[shacl-play]]. For application profiles, consider aligning to the DCAP [xref:references.adoc#ref:dcap[dcap]], which is an implementation agnostic recommendation.
+Moreover, consider following the good practices for documenting OWL 2 and SHACL artefacts, and include the appropriate details in the data specification documentation. For OWL 2, we can mention tools like Widoco [xref:references.adoc#ref:widoco[widoco]] and LODE [xref:references.adoc#ref:lode[lode]]; and for SHACL, follow the SHACL recommendation [xref:references.adoc#ref:shacl[shacl]], or the metadata support implemented in tools such as SHACL-play [xref:references.adoc#ref:shacl-play[shacl-play]]. For application profiles, consider aligning to the DCAP [xref:references.adoc#ref:dcap[dcap]], which is an implementation agnostic recommendation.
