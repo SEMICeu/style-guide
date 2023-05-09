@@ -426,41 +426,39 @@ its datatype and multiplicity whenever possible [xref:gc-conceptual-model-conven
 
 *Description:*
 
-We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
-those should be expressed as relationships (represented by Association connectors) between the two classes
-[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
+We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead, those should be expressed as relationships (represented by Association connectors) between the two classes [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
+
+The reason for this is to keep a clear separation between (a) properties that take a literal value (governed by a datatype, and conceptually corresponding to `owl:DatatypeProperty`) and  (b) properties that take a reference value (governed by a class, corresponding to `owl:ObjectProperty`). Doing so has two advantages: (a) it confers homogeneity to the model, which enhances readability and decreases ambiguity; (b) the toolchain implementation is easier as there is a clear treatment and interpretation.
+
+literal properties (expressed as attributes datatypes) and relations between two classes (expressed as association connectors). The advantage of
 
 In case of primitive datatypes, high preference shall be given to using OWL 2 compliant
-XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]] standard datatypes.
-For more detailed recommendations on the use of primitive datatypes see convention [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r18[CMC-R18]].
+XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]] standard datatypes. For more detailed recommendations on the use of primitive datatypes see convention [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r18[CMC-R18]].
 
-Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two
-modelling practices are recognised here: (a) as attributes with type “Code”, and (b) as dependency relations pointing to a UML Enumeration
-named after the controlled list.
+Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two modelling practices are recognised here: (a) as attributes with type "Code", and (b) as dependency relations pointing to a UML Enumeration named after the controlled list.
 
 In the first case, the attribute type "Code" shall be mapped to the skos:Concept class. The advantage of this approach is the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely, which list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]], but that value will not be visible in the diagrams.
 
 In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class, and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
 
-Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML Class element and a UML Datatype element.
+Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established between a UML Class element and a UML Datatype element.
 [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.12]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.2]]
 
 ****
 *Examples:*
 
-We exemplify the two approaches to specifying attribute datatypes described above. In CCCEV specification, the “Requirement”
+We exemplify the two approaches to specifying attribute datatypes described above. In CCCEV specification, the "Requirement"
 class attributes use loose UML and other datatypes: String, Literal, and Code. No precise definition of what they mean is
-provided. The attributes of the Requirement class are left underspecified and with generic datatypes: the “description”
-attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this datatype means).
+provided. The attributes of the Requirement class are left underspecified and with generic datatypes: the "description"
+attribute is a generic String, while the "type" attribute is of Code (without explicitly indicating what this datatype means).
 It is also not clear what would be the difference between Literal and String, eventually one may gain intuition from the
 attribute name.
 
 image::cmc-r10-1.png[]
 
 The same class is reused in ePO ontology. The `cccev:Requirement` attributes use explicitly standard datatypes and cardinalities.
-And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
+And the "type" attribute, indicated in the original specification, was converted to a dependency connector because it is using
 a non-atomic datatype, but a controlled list of `skos:Concept`(s).
 
 
