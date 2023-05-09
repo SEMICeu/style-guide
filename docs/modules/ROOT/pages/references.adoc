@@ -74,7 +74,7 @@
 - *[[[ref:widoco]]widoco]* WIzard for DOCumenting Ontologies (WIDOCO). https://github.com/dgarijo/Widoco
 - *[[[ref:lode]]lode]* Live OWL Documentation Environment (LODE). https://essepuntato.it/lode/
 - *[[[ref:shacl-play]]shacl-play]* SHACL Play! SHACL documentation. https://shacl-play.sparna.fr/play/doc
-- *[[[ref:dcap]]dcap]* Dublin Core Application Profile (DCAP). https://github.com/dcmi/dcap
-
+- *[[[ref:dcap]]dcap]* Dublin Core Application Profile (DCAP). https://github.com/dcmi/dcap/
+- *[[[ref:pub-recipe]]pub-recipe]* Best Practice Recipes for Publishing RDF Vocabularies. http://www.w3.org/2001/sw/BestPractices/VM/http-examples/
 
 
