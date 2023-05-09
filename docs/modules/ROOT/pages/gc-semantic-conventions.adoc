@@ -101,6 +101,9 @@ No expressions of (a) property domain specification (`rdfs:domain`) and (b) prop
 
 Keeping the ontology lightweight allows the maximum freedom for reuse and does not interfere with the validation concerns covered by the data shapes.
 
+*Note:* This recommendation does not prevent the generation of more _heavyweight_ ontologies (i.e. with higher level of logical expressivity), as *additional* artefacts that would be included in the data specification. A data specification could even provide several such ontology versions, one for each OWL 2 profiles (EL/QL/RL), for example, if there are well-defined use cases identified for them. However, if such additional ontologies will be provided as part of the data specification, it is essential that they are all be kept consistent with all the other artefacts (including the lightweight ontology, the human-readable version, etc.) (see section on xref:arhitectural-clarifications.adoc#sec:transformation[Transformation]). Therefore, it is highly recommended having appropriate tool support, which enables the automatic generation of all the ontologies that are needed from the conceptual model.
+Regardless of how many ontology versions will be generated and published as part of the data specification, the most important thing, and hence the main point of this recommendation, is that there should always be at least one lightweight ontology, to support a highest level of interoperability and reuse. Often, this is called the "core" ontology, in data specifications that provide multiple ontology versions, while the other, more expressive, ontology versions have different names.
+
 ****
 *Examples:*
 
