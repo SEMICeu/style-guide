@@ -32,7 +32,7 @@ We addressed the following issues raised by members of the community who reviewe
 * rdfs:label vs skos:prefLabel	[#20](https://github.com/SEMICeu/style-guide/issues/20)
 * Artefact generation	[#18](https://github.com/SEMICeu/style-guide/issues/18)
 
-For a complete overview of changes, check out the [differences in release 1.0.0 and the version presented at the 2nd Webinar (on April 19)](https://github.com/SEMICeu/style-guide/compare/public-review-webinar2...1.0.0-beta) (switch to the "Files changed" tab, for a consolidated view)
+_For a complete overview of changes, check out the [differences between release 1.0.0 and the version presented at the 2nd Webinar (on April 19)](https://github.com/SEMICeu/style-guide/compare/public-review-webinar2...1.0.0-beta) (switch to the "Files changed" tab, for a consolidated view; for images click on the "Display the source diff" button `<>`)_
 
 
 
