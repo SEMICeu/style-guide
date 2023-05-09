@@ -365,8 +365,8 @@ with their own model.
 ****
 *Examples:*
 
-In Core Public Organization, the class Public Organisation is a subclass of org:Organization from the Organization Ontology,
-and different properties/relations have been inherited such as hasSubOrganization, hasMember, hasUnit.
+In Core Business Vocabulary, the class `LegalEntity` is a subclass of `org:FormalOrganization` from the Organization Ontology (which is a subclass of `org:Organization`, which is a subclass of `foaf:Agent`),
+and different properties/relations have been inherited such as `hasSubOrganization`, `hasMember`, `name`, `type`.
 
 image::cmc-r8.png[]
 ****
