@@ -15,6 +15,7 @@
 The data shapes shall be expressed in SHACL.
 |===
 
+
 *Description:*
 
 There are various languages allowing for data shape expression and thus define validation rules for RDF data. Among the executable ones, the most well-known are SHACL [xref:references.adoc#ref:shacl[shacl]] and ShEx [xref:references.adoc#ref:shex[shex]].
@@ -91,13 +92,13 @@ This may have an impact, especially for larger vocabularies (such as the eProcur
 
 |*Statement:*
 
-Each ontology class shall be mirrored by a `sh:NodeShape`, while the property constraints shall be embedded (contextualised) within node shapes rather than being defined as freestanding.
+Each ontology class shall be mirrored by a `sh:NodeShape`. The property constraints may be embedded (contextualised) within node shapes or defined as freestanding.
 |===
 
 *Description:*
 
 When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property shape for each UML attribute and UML Connector of that class. If the property shapes are defined within the node shapes (rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
-the resulting constraint definitions are organically integrated, and the maintenance costs are decreased.
+the resulting constraint definitions are organically integrated, and the maintenance costs are decreased. However, sometimes it may be useful to define the property shapes as stand alone, therefore reusable.
 
 The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.
 
