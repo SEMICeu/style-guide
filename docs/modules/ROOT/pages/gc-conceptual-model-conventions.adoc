@@ -800,6 +800,8 @@ Similar to [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], this convention
 
 It is recommended to employ the primitive datatypes that are already defined in XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
 
+The reason for avoiding complex datatypes, is that once we start structuring how data shall be organised, besides syntactic definitions, we inevitably embed semantic aspects as well. Doing so, the semantics of the structure is obscured and trapped in a technical interoperability layer. For example, `xsd:duration` encodes both the amount(s) and unit(s) of time into a regular expression that looks like this `<period>P5Y2M10D</period>`.
+
 The definition of datatypes in the UML model should be also avoided, even in cases where a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
 
 Note that from the family of string datatypes we recommend using the following ones (in this order of preference): `rdf:PlainLiteral`, `rdfs:Literal`, `xsd:string`, and `rdf:langString`. Often enabling multilingual data specification is a necessity.
