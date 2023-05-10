@@ -7,7 +7,7 @@
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
-  </head>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">  </head>
   <body class="article">
 <header class="header">
     <nav class="navbar">
@@ -295,10 +295,14 @@
 <p>The formal ontology shall not include other types of statements unless justified as necessary. The properties used, in particular those related to the ontology header, shall be aligned with the governance process.</p>
 </div>
 <div class="paragraph">
-<p>No expressions of (a) property domain specification (<code>rdfs:domain</code>) and (b) property range specification (<code>rdfs:range</code>) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints shall be is better fulfilled by the data shapes expressed in SHACL language.</p>
+<p>No expressions of (a) property domain specification (<code>rdfs:domain</code>) and (b) property range specification (<code>rdfs:range</code>) shall be used unless justified as absolutely necessary. The need for setting property domain and range constraints is better fulfilled by the data shapes expressed in SHACL language.</p>
 </div>
 <div class="paragraph">
-<p>Keeping the ontology lightweight allows the maximum freedom for reuse and does not interfere with the validation concerns covered by the data shapes.</p>
+<p>Keeping the ontology lightweight allows the maximum freedom for reuse (e.g. in different application profiles, where domains/ranges can be specified or restricted), and does not interfere with the validation concerns covered by the data shapes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> This recommendation does not prevent the generation of more <em>heavyweight</em> ontologies (i.e. with higher level of logical expressivity), as <strong>additional</strong> artefacts that would be included in the data specification. A data specification could even provide several such ontology versions, one for each OWL 2 profiles (EL/QL/RL), for example, if there are well-defined use cases identified for them. However, if such additional ontologies will be provided as part of the data specification, it is essential that they are all be kept consistent with all the other artefacts (including the lightweight ontology, the human-readable version, etc.) (see section on <a href="arhitectural-clarifications.html#sec:transformation" class="xref page">Transformation</a>). Therefore, it is highly recommended having appropriate tool support, which enables the automatic generation of all the ontologies that are needed from the conceptual model.
+Regardless of how many ontology versions will be generated and published as part of the data specification, the most important thing, and hence the main point of this recommendation, is that there should always be at least one lightweight ontology, to support a highest level of interoperability and reuse. Often, this is called the "core" ontology, in data specifications that provide multiple ontology versions, while the other, more expressive, ontology versions have different names.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">

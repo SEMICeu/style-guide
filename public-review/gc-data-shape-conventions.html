@@ -7,7 +7,7 @@
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
-  </head>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">  </head>
   <body class="article">
 <header class="header">
     <nav class="navbar">
@@ -265,7 +265,7 @@ and we say that operating is under the <em>open-world assumption</em>.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>, while the property constraints shall be embedded (contextualised) within node shapes rather than being defined as freestanding.</p></td>
+<p class="tableblock">Each ontology class shall be mirrored by a <code>sh:NodeShape</code>. The property constraints may be embedded (contextualised) within node shapes or defined as freestanding.</p></td>
 </tr>
 </tbody>
 </table>
@@ -274,7 +274,7 @@ and we say that operating is under the <em>open-world assumption</em>.</p>
 </div>
 <div class="paragraph">
 <p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property shape for each UML attribute and UML Connector of that class. If the property shapes are defined within the node shapes (rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
-the resulting constraint definitions are organically integrated, and the maintenance costs are decreased.</p>
+the resulting constraint definitions are organically integrated, and the maintenance costs are decreased. However, sometimes it may be useful to define the property shapes as stand alone, therefore reusable.</p>
 </div>
 <div class="paragraph">
 <p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.</p>

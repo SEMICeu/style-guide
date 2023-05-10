@@ -7,7 +7,7 @@
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
-  </head>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">  </head>
   <body class="article">
 <header class="header">
     <nav class="navbar">
@@ -153,7 +153,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Publishing the Core Vocabularies and Application Profiles shall be compliant with 5-star LOD criteria.</p></td>
+<p class="tableblock">Publishing data specifications shall be compliant with 5-star LOD criteria.</p></td>
 </tr>
 </tbody>
 </table>
@@ -183,6 +183,10 @@ highest grade of 5-Star [<a href="references.html#ref:5star-od" class="xref page
 <p>The data is linked to other resources to provide context</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>On the same note, the FAIR Data Principles [<a href="references.html#ref:fair-principles" class="xref page">fair-principles</a>] is a more comprehensive and rich set of guidelines for publishing data on the web. They ensure the Findability, Accessibility, Interoperability and Reuse of digital assets.
+The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data, as a result of the increase in volume, complexity and creation speed of data [<a href="references.html#ref:fair-guidelines" class="xref page">fair-guidelines</a>].</p>
 </div>
 <div class="paragraph">
 <p>See more [
@@ -280,8 +284,8 @@ Evidence in the context of CCCEV is denoted with the PURI <code><a href="http://
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
-principles. [<a href="references.html#ref:sem-ver" class="xref page">sem-ver</a>]</p></td>
+<p class="tableblock">A consistent version management shall be implemented for the data specification evolution respecting the "semantic versioning"
+principles.</p></td>
 </tr>
 </tbody>
 </table>
@@ -289,7 +293,7 @@ principles. [<a href="references.html#ref:sem-ver" class="xref page">sem-ver</a>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>The SEMIC versioning methodology is based on "semantic versioning" principles and implements a simple set of rules and
+<p>The SEMIC versioning methodology is based on "semantic versioning" principles [<a href="references.html#ref:sem-ver" class="xref page">sem-ver</a>] and implements a simple set of rules and
 requirements that dictate how version numbers are assigned and incremented. It involves describing clearly and precisely
 what is being published and which features are included, and what the limitations are, setting the expectations and scope.
 Once the artefacts are identified for the public, the changes to the data specifications are communicated  with specific
@@ -336,7 +340,7 @@ backwards-compatible new development, while switching from 1.3.5 to 2.0.0 breaks
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">The vocabularies and Application Profiles shall be versioned as a whole and never to atomic elements (concepts, relations
+<p class="tableblock">The data specification shall be versioned as a whole and never to atomic elements (concepts, relations
 or constraints).</p></td>
 </tr>
 </tbody>
@@ -388,21 +392,24 @@ application and the server in which the client informs the server about its pref
 responds with the best-fitting result it can provide.</p>
 </div>
 <div class="paragraph">
-<p>It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the HTTP header Accept.</p>
+<p>It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the <code>Accept:</code> HTTP header.</p>
 </div>
 <div class="paragraph">
 <p>The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
 default response (if no content type is specified), and the other is RDF [<a href="references.html#ref:10rules-puri" class="xref page">10rules-puri</a>].</p>
 </div>
 <div class="paragraph">
-<p>The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
-Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [<a href="references.html#ref:rdf-pub" class="xref page">rdf-pub</a>].</p>
+<p>Because the HTML representation is usally a long document, which makes it hard to find the information about a specific term, it is recommended that the HTML representation has landing points based on the used fragment identifier. Dereferencing can then route the reader to the most relevant information within the HTML document.
+For other representations/formats no additional requirements are imposed. For example, the dereferencing in the RDF representation, depends on the implemented recipe, i.e. based on <code>#</code> or <code>/</code>; and it may return either the corresponding fragment or the whole RDF document [<a href="references.html#ref:pub-recipe" class="xref page">pub-recipe</a>].</p>
+</div>
+<div class="paragraph">
+<p>Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [<a href="references.html#ref:rdf-pub" class="xref page">rdf-pub</a>].</p>
 </div>
 <div class="paragraph">
 <p>See more [
 <a href="references.html#ref:ld-bp" class="xref page">ld-bp</a>,
 <a href="references.html#ref:ld-bp" class="xref page">ldp-bp</a>,
-<a href="references.html#ref:dwbp" class="xref page">dwbp</a>,
+<a href="references.html#ref:dwbp" class="xref page">dwbp</a>
 ]</p>
 </div>
 </div>
@@ -423,7 +430,7 @@ Further technical details can be found in "Best Practice Recipes for Publishing 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Each asset shall have a corresponding human-readable form representing the model documentation.</p></td>
+<p class="tableblock">Each data specification shall have a corresponding human-readable form representing the model documentation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -501,7 +508,7 @@ Further technical details can be found in "Best Practice Recipes for Publishing 
 </ul>
 </div>
 <div class="paragraph">
-<p>The content of these fields shall be aligned as much as possible with the metadata published in the OWL 2 representation (see [<a href="gc-semantic-conventions.html#sec:sc-r2" class="xref page">SC-R2</a>]).</p>
+<p>Moreover, consider following the good practices for documenting OWL 2 and SHACL artefacts, and include the appropriate details in the data specification documentation. For OWL 2, we can mention tools like Widoco [<a href="references.html#ref:widoco" class="xref page">widoco</a>] and LODE [<a href="references.html#ref:lode" class="xref page">lode</a>]; and for SHACL, follow the SHACL recommendation [<a href="references.html#ref:shacl" class="xref page">shacl</a>], or the metadata support implemented in tools such as SHACL-play [<a href="references.html#ref:shacl-play" class="xref page">shacl-play</a>]. For application profiles, consider aligning to the DCAP [<a href="references.html#ref:dcap" class="xref page">dcap</a>], which is an implementation agnostic recommendation.</p>
 </div>
 </div>
 </div>

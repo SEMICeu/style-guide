@@ -7,7 +7,7 @@
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../_/css/site.css">
     <script>var uiRootPath = '../_'</script>
-  </head>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">  </head>
   <body class="article">
 <header class="header">
     <nav class="navbar">
@@ -487,16 +487,23 @@ subsequent character positions. [<a href="references.html#ref:epo-cmc" class="xr
 <div class="ulist">
 <ul>
 <li>
-<p>UML Classes and Datatypes shall start with an upper-case letter,</p>
-</li>
-<li>
-<p>UML Enumerations and Packages shall start with a lower-case letter,</p>
+<p>UML Classes shall start with an upper-case letter,</p>
 </li>
 <li>
 <p>UML Attributes shall start with a lower-case letter,</p>
 </li>
 <li>
-<p>UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter</p>
+<p>UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The names of</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>UML Enumerations, Packages and Datatypes may start with a lower-case or upper-case letter.</p>
 </li>
 </ul>
 </div>
@@ -543,7 +550,7 @@ is in lowerCamelCase.</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
+<p>To enable the reuse of names defined in other models, and the reuse of unique references for names that support easy identification,
 namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
 [<a href="references.html#ref:xml-ns" class="xref page">xml-ns</a>].</p>
 </div>
@@ -554,8 +561,8 @@ to by name and uniquely identifiable [<a href="references.html#ref:urn" class="x
 <div class="paragraph">
 <p>A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
 [<a href="references.html#ref:turtle" class="xref page">turtle</a>]. A qualified name is a name subject to namespace interpretation [<a href="references.html#ref:xml-ns" class="xref page">xml-ns</a>]. Syntactically,
-they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
-namespace URIs and a default namespace applicable to unprefixed Element names.</p>
+they are either prefixed names or un-prefixed names. A binding declaration shall be maintained, which binds prefixes to
+namespace URIs and a default namespace applicable to un-prefixed Element names.</p>
 </div>
 <div class="paragraph">
 <p>As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
@@ -578,6 +585,9 @@ prefix can be assumed by default. The qualified names may be structured as follo
 <p>localSegment</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> The prefixes and namespaces shall be well-defined, maintained, and published as part of the data specification.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -693,6 +703,15 @@ Agent have the "foaf" namespace prefix specified in front.</p>
 <img src="_images/cmc-r7.png" alt="cmc r7">
 </div>
 </div>
+<div class="paragraph">
+<p>Please note that this is an example of <a href="clarification-on-reuse.html#sec:reuse-of-a-class-with-semantic-adaptations " class="xref page">reuse with semantic adaptation</a>. In CPV the Person is more restricted than that in FOAF.</p>
+</div>
+<div class="paragraph">
+<p>The <code>foaf:Person</code> class represents people. Something is a <code>foaf:Person</code> if it is a person, and it does not matter whether they are alive, dead, real or imaginary. The <code>foaf:Person</code> class is a subclass of the <code>foaf:Agent</code> class, since all people are considered 'agents' in FOAF.</p>
+</div>
+<div class="paragraph">
+<p>In contrast to that, <code>cpv:Person</code> is defined differently: A individual human being who may be dead or alive, but not imaginary. Hence, the subclass relation.</p>
+</div>
 </div>
 </div>
 </div>
@@ -731,8 +750,8 @@ with their own model.</p>
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>In Core Public Organization, the class Public Organisation is a subclass of org:Organization from the Organization Ontology,
-and different properties/relations have been inherited such as hasSubOrganization, hasMember, hasUnit.</p>
+<p>In Core Business Vocabulary, the class <code>LegalEntity</code> is a subclass of <code>org:FormalOrganization</code> from the Organization Ontology (which is a subclass of <code>org:Organization</code>, which is a subclass of <code>foaf:Agent</code>),
+and different properties/relations have been inherited such as <code>hasSubOrganization</code>, <code>hasMember</code>, <code>name</code>, <code>type</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -762,7 +781,7 @@ and different properties/relations have been inherited such as hasSubOrganizatio
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color:  #f5f8fc;"><p class="tableblock"><strong>Statement:</strong></p>
-<p class="tableblock">Classes that are not intended for instantiation can be marked as abstract.</p></td>
+<p class="tableblock">Classes that are not intended to be instantiated directly can be marked as abstract.</p></td>
 </tr>
 </tbody>
 </table>
@@ -818,19 +837,20 @@ its datatype and multiplicity whenever possible [<a href="#sec:cmc-r11">CMC-R11<
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
-those should be expressed as relationships (represented by Association connectors) between the two classes
-[<a href="#sec:cmc-r12">CMC-R12</a>].</p>
+<p>We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead, those should be expressed as relationships (represented by Association connectors) between the two classes [<a href="#sec:cmc-r12">CMC-R12</a>].</p>
+</div>
+<div class="paragraph">
+<p>The reason for this is to keep a clear separation between (a) properties that take a literal value (governed by a datatype, and conceptually corresponding to <code>owl:DatatypeProperty</code>) and  (b) properties that take a reference value (governed by a class, corresponding to <code>owl:ObjectProperty</code>). Doing so has two advantages: (a) it confers homogeneity to the model, which enhances readability and decreases ambiguity; (b) the toolchain implementation is easier as there is a clear treatment and interpretation.</p>
+</div>
+<div class="paragraph">
+<p>literal properties (expressed as attributes datatypes) and relations between two classes (expressed as association connectors). The advantage of</p>
 </div>
 <div class="paragraph">
 <p>In case of primitive datatypes, high preference shall be given to using OWL 2 compliant
-XSD [<a href="references.html#ref:xsd" class="xref page">xsd</a>] and RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>] standard datatypes.
-For more detailed recommendations on the use of primitive datatypes see convention [<a href="#sec:cmc-r18">CMC-R18</a>].</p>
+XSD [<a href="references.html#ref:xsd" class="xref page">xsd</a>] and RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>] standard datatypes. For more detailed recommendations on the use of primitive datatypes see convention [<a href="#sec:cmc-r18">CMC-R18</a>].</p>
 </div>
 <div class="paragraph">
-<p>Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two
-modelling practices are recognised here: (a) as attributes with type “Code”, and (b) as dependency relations pointing to a UML Enumeration
-named after the controlled list.</p>
+<p>Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two modelling practices are recognised here: (a) as attributes with type "Code", and (b) as dependency relations pointing to a UML Enumeration named after the controlled list.</p>
 </div>
 <div class="paragraph">
 <p>In the first case, the attribute type "Code" shall be mapped to the skos:Concept class. The advantage of this approach is the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely, which list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
@@ -840,8 +860,7 @@ named after the controlled list.</p>
 <p>In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class, and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled vocabulary. The connector must have a "Source&#8594;Target" direction. No other directions are acceptable, and a valid target role name and multiplicity shall be provided [<a href="#sec:cmc-r14">CMC-R14</a>].</p>
 </div>
 <div class="paragraph">
-<p>Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML Class element and a UML Datatype element.</p>
+<p>Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established between a UML Class element and a UML Datatype element.</p>
 </div>
 <div id="ref:oslo-rules[oslo-rules" class="sidebarblock adoc">
 <div class="content">
@@ -849,12 +868,9 @@ between a UML Class element and a UML Datatype element.</p>
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>We exemplify the two approaches to specifying attribute datatypes described above. In CCCEV specification, the “Requirement”
-class attributes use loose UML and other datatypes: String, Literal, and Code. No precise definition of what they mean is
-provided. The attributes of the Requirement class are left underspecified and with generic datatypes: the “description”
-attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this datatype means).
-It is also not clear what would be the difference between Literal and String, eventually one may gain intuition from the
-attribute name.</p>
+<p>Here we provide an example for the two approaches of specifying attribute datatypes described above. In the CCCEV specification, the class attributes of the <code>Requirement</code> and <code>Evidence</code> classes use loose UML and other datatypes: String, Literal, and Code. No precise definition of what they mean is  provided.
+The attributes are left underspecified, and with generic datatypes: the <code>description</code> attribute is a generic String, while the <code>type</code> and <code>confidentialityLevelType</code> attributes are specified as Code (without explicitly indicating what this datatype means).
+It is also not clear what would be the difference between Literal and String, although one might gain an intuition from the attribute names.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -862,9 +878,8 @@ attribute name.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>The same class is reused in ePO ontology. The <code>cccev:Requirement</code> attributes use explicitly standard datatypes and cardinalities.
-And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
-a non-atomic datatype, but a controlled list of <code>skos:Concept</code>(s).</p>
+<p>The same classes are reused in the ePO ontology, where the <code>cccev:Requirement</code> and  <code>cccev:Evidence</code> class attributes explicitly specify standard datatypes and cardinalities.
+Additionally, the <code>cccev:confidentialityLevelType</code> attribute, and also the <code>cccev:type</code> attribute, although not depicted in the screenshot, indicated in the original specification, were converted to dependency connectors, because they are not using an atomic datatype, but rather a controlled list of <code>skos:Concept</code>(s) coming from controlled vocabularies, such as <code>at-voc:confidentiality-level</code>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -900,7 +915,7 @@ a non-atomic datatype, but a controlled list of <code>skos:Concept</code>(s).</p
 </div>
 <div class="paragraph">
 <p>If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
-Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.</p>
+Association) shall be as permissive as possible, for example, <code>[0..*]</code>, meaning any occurrence is allowed.</p>
 </div>
 <div class="paragraph">
 <p>If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [<a href="references.html#ref:oslo-rules" class="xref page">oslo-rules, sec 3.2.15</a>].</p>
@@ -908,16 +923,16 @@ Association) shall be as permissive as possible, for example, [0..*], meaning an
 <div class="paragraph">
 <p>However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
-minimum cardinality shall be set to 1, for example [1..*] [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.5</a>].</p>
+minimum cardinality shall be set to 1, for example <code>[1..*]</code> [<a href="references.html#ref:epo-cmc" class="xref page">epo-cmc, sec 4.5</a>].</p>
 </div>
 <div class="paragraph">
 <p>A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
-it is recommended to fall back on the implicit assumption of [0..*]. Not to be confused with the default cardinality assumed
-in tools. For example, Enterprise Architect by default assumes [1..1] cardinality for attributes and omits to display it; and a
+it is recommended to fall back on the implicit assumption of <code>[0..*]</code>. Not to be confused with the default cardinality assumed
+in tools. For example, Enterprise Architect by default assumes <code>[1..1]</code> cardinality for attributes and omits to display it; and a
 similar default assumption exists in XML/XSD.</p>
 </div>
 <div class="paragraph">
-<p>Notation for multiple cardinality can be either with '*' or 'n'. In principle using either notation is fine, however, it is
+<p>Notation for multiple cardinality can be either with <code>*</code> or <code>n</code>. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
 on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.</p>
@@ -938,7 +953,7 @@ the cardinality shall be the most permissive, where possible [<a href="reference
 <p><strong>Examples:</strong></p>
 </div>
 <div class="paragraph">
-<p>All Core Vocabularies have set a permissive cardinality [0..*], for example, all the properties of Public Organisation, on the left, have multiplicity [0..\*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:</p>
+<p>All Core Vocabularies have set a permissive cardinality <code>[0..*]</code>, for example, all the properties of Public Organisation, shown with ligh orange background, have multiplicity <code>[0..*]</code>, while the same Public Organisation reused in CPSV-AP, shown in blue, has mandatory properties:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1416,6 +1431,9 @@ The creation of custom datatypes shall be avoided.</p></td>
 </div>
 <div class="paragraph">
 <p>It is recommended to employ the primitive datatypes that are already defined in XSD [<a href="references.html#ref:xsd" class="xref page">xsd</a>] and RDF [<a href="references.html#ref:rdf" class="xref page">rdf</a>], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.</p>
+</div>
+<div class="paragraph">
+<p>The reason for avoiding complex datatypes, is that once we start structuring how data shall be organised, besides syntactic definitions, we inevitably embed semantic aspects as well. Doing so, the semantics of the structure is obscured and trapped in a technical interoperability layer. For example, <code>xsd:duration</code> encodes both the amount(s) and unit(s) of time into a regular expression that looks like this <code>&lt;period&gt;P5Y2M10D&lt;/period&gt;</code>.</p>
 </div>
 <div class="paragraph">
 <p>The definition of datatypes in the UML model should be also avoided, even in cases where a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.</p>
