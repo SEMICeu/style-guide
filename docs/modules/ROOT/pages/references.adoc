@@ -55,7 +55,7 @@
 - *[[[ref:5star-od]]5star-od]* Hausenblas, M. (2012) 5 * OPEN DATA. Available at: https://5stardata.info/en
 - *[[[ref:dwdp]]dwdp]* Lóscio, B.F., & Burle, C. (eds) (2017) Data on the web best practices, W3C. Available at: https://www.w3.org/TR/dwbp
 - *[[[ref:uri-dp]]uri-dp]* Dekkers, M., & Novacean, I. (2018). D04.02.02 – Local URI design patterns. Deliverable SC353DI07171, ISA programme of the European Commission.
-- *[[[ref:puri-gov-eu]]puri-gov-eu]* Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/joinup
+- *[[[ref:puri-gov-eu]]puri-gov-eu]* Dekkers, M. et al. (2014) Towards a common policy for the governance and management of persistent URIs by EU institutions, Joinup. PwC EU Services. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/towards-common-approach-management-persistent-http-uris-eu-institutions
 - *[[[ref:sem-ver]]sem-ver]* Preston-Werner, T. (2013) Semantic versioning 2.0.0, Semantic Versioning. Available at: https://semver.org
 - *[[[ref:rdf-pub]]rdf-pub]* Berrueta, D., & Phipps, J. (eds) (2008) Best Practice Recipes for Publishing RDF Vocabularies. W3C. Available at: https://www.w3.org/TR/swbp-vocab-pub/#negotiation
 - *[[[ref:rdfs]]rdfs]* Brickley, D., Guha, R.V., & McBride, B., (2014). RDF Schema 1.1. _W3C recommendation_, _25_, pp.2004-2014.
@@ -67,7 +67,14 @@
 - *[[[ref:xslt]]xslt]* World Wide Web Consortium. (2007). XSL transformations (XSLT) version 2.0.
 - *[[[ref:rml]]rml]* Dimou, A., Vander Sande, M., Colpaert, P., Verborgh, R., Mannens, E., & Van de Walle, R. (2014). RML: A generic language for integrated RDF mappings of heterogeneous data. _Ldow_, _1184_.
 - *[[[ref:d2rm]]d2rm]* Chortaras, A., & Stamou, G. (2018). D2RML: Integrating Heterogeneous Data and Web Services into Custom RDF Graphs. In _LDOW@ WWW_.
+- *[[[ref:fair-principles]]fair-principles]* FAIR Principles. https://www.go-fair.org/fair-principles/
+- *[[[ref:fair-guidelines]]fair-guidelines]* The FAIR Guiding Principles for scientific data management and stewardship. https://www.nature.com/articles/sdata201618
 - *[[[ref:ld-bp]]ld-bp]* World Wide Web Consortium. (2014). Best practices for publishing linked data. https://www.w3.org/TR/ld-bp
 - *[[[ref:ld-bp]]ldp-bp]* World Wide Web Consortium. (2014). Linked Data Platform Best Practices and Guidelines. https://www.w3.org/TR/ld-bp
+- *[[[ref:widoco]]widoco]* WIzard for DOCumenting Ontologies (WIDOCO). https://github.com/dgarijo/Widoco
+- *[[[ref:lode]]lode]* Live OWL Documentation Environment (LODE). https://essepuntato.it/lode/
+- *[[[ref:shacl-play]]shacl-play]* SHACL Play! SHACL documentation. https://shacl-play.sparna.fr/play/doc
+- *[[[ref:dcap]]dcap]* Dublin Core Application Profile (DCAP). https://github.com/dcmi/dcap/
+- *[[[ref:pub-recipe]]pub-recipe]* Best Practice Recipes for Publishing RDF Vocabularies. http://www.w3.org/2001/sw/BestPractices/VM/http-examples/
 
 

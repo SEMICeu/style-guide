@@ -188,10 +188,13 @@ Moreover, we can significantly improve the readability of an ontology if we use 
 
 The names of
 
-* UML Classes and Datatypes shall start with an upper-case letter,
-* UML Enumerations and Packages shall start with a lower-case letter,
+* UML Classes shall start with an upper-case letter,
 * UML Attributes shall start with a lower-case letter,
-* UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter
+* UML Connectors (including Target Roles and Source Roles) shall start with a lower-case letter.
+
+The names of
+
+* UML Enumerations, Packages and Datatypes may start with a lower-case or upper-case letter.
 
 
 ****
@@ -222,7 +225,7 @@ Element names shall be organised by namespaces. Namespaces may be indicated thro
 
 *Description:*
 
-To enable the reuse of names defined in other models and the reuse of unique references for names that support easy identification,
+To enable the reuse of names defined in other models, and the reuse of unique references for names that support easy identification,
 namespace management must be considered. We adopt the XML and RDF approach to defining and managing namespaces
 [xref:references.adoc#ref:xml-ns[xml-ns]].
 
@@ -231,8 +234,8 @@ to by name and uniquely identifiable [xref:references.adoc#ref:urn[urn]].
 
 A qualified name denotes the URI, which is composed of concatenating the expanded prefix with the local segment
 [xref:references.adoc#ref:turtle[turtle]]. A qualified name is a name subject to namespace interpretation [xref:references.adoc#ref:xml-ns[xml-ns]]. Syntactically,
-they are either prefixed names or unprefixed names. A binding declaration shall be maintained, which binds prefixes to
-namespace URIs and a default namespace applicable to unprefixed Element names.
+they are either prefixed names or un-prefixed names. A binding declaration shall be maintained, which binds prefixes to
+namespace URIs and a default namespace applicable to un-prefixed Element names.
 
 As the Element name is the primary source for deriving URIs, a base URI and a local segment are necessary. The Element
 name prefix, before the colon, plays the role of namespace name indicating which base URI shall be used, while the Element
@@ -244,6 +247,8 @@ prefix can be assumed by default. The qualified names may be structured as follo
 * prefix:localSegment
 * :localSegment
 * localSegment
+
+*Note:* The prefixes and namespaces shall be well-defined, maintained, and published as part of the data specification.
 
 ****
 *Examples:*
@@ -326,6 +331,13 @@ In the example below, a Core Vocabulary Person includes concepts from another vo
 Agent have the "foaf" namespace prefix specified in front.
 
 image::cmc-r7.png[]
+
+Please note that this is an example of xref:clarification-on-reuse.adoc#sec:reuse-of-a-class-with-semantic-adaptations [reuse with semantic adaptation]. In CPV the Person is more restricted than that in FOAF.
+
+The `foaf:Person` class represents people. Something is a `foaf:Person` if it is a person, and it does not matter whether they are alive, dead, real or imaginary. The `foaf:Person` class is a subclass of the `foaf:Agent` class, since all people are considered 'agents' in FOAF.
+
+In contrast to that, `cpv:Person` is defined differently: A individual human being who may be dead or alive, but not imaginary. Hence, the subclass relation.
+
 ****
 
 
@@ -353,8 +365,8 @@ with their own model.
 ****
 *Examples:*
 
-In Core Public Organization, the class Public Organisation is a subclass of org:Organization from the Organization Ontology,
-and different properties/relations have been inherited such as hasSubOrganization, hasMember, hasUnit.
+In Core Business Vocabulary, the class `LegalEntity` is a subclass of `org:FormalOrganization` from the Organization Ontology (which is a subclass of `org:Organization`, which is a subclass of `foaf:Agent`),
+and different properties/relations have been inherited such as `hasSubOrganization`, `hasMember`, `name`, `type`.
 
 image::cmc-r8.png[]
 ****
@@ -374,7 +386,7 @@ See more [xref:references.adoc#ref:oslo-rules[oslo-rules sec 3.2.3]]
 
 |*Statement:*
 
-Classes that are not intended for instantiation can be marked as abstract.
+Classes that are not intended to be instantiated directly can be marked as abstract.
 |===
 
 *Description:*
@@ -414,42 +426,36 @@ its datatype and multiplicity whenever possible [xref:gc-conceptual-model-conven
 
 *Description:*
 
-We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead,
-those should be expressed as relationships (represented by Association connectors) between the two classes
-[xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
+We recommend atomic types are used as attribute types and avoid using another class as the attribute type. Instead, those should be expressed as relationships (represented by Association connectors) between the two classes [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r12[CMC-R12]].
+
+The reason for this is to keep a clear separation between (a) properties that take a literal value (governed by a datatype, and conceptually corresponding to `owl:DatatypeProperty`) and  (b) properties that take a reference value (governed by a class, corresponding to `owl:ObjectProperty`). Doing so has two advantages: (a) it confers homogeneity to the model, which enhances readability and decreases ambiguity; (b) the toolchain implementation is easier as there is a clear treatment and interpretation.
+
+literal properties (expressed as attributes datatypes) and relations between two classes (expressed as association connectors). The advantage of
 
 In case of primitive datatypes, high preference shall be given to using OWL 2 compliant
-XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]] standard datatypes.
-For more detailed recommendations on the use of primitive datatypes see convention [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r18[CMC-R18]].
+XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]] standard datatypes. For more detailed recommendations on the use of primitive datatypes see convention [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r18[CMC-R18]].
 
-Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two
-modelling practices are recognised here: (a) as attributes with type “Code”, and (b) as dependency relations pointing to a UML Enumeration
-named after the controlled list.
+Properties whose values come from a controlled vocabulary or authority table constitute a special case, because two modelling practices are recognised here: (a) as attributes with type "Code", and (b) as dependency relations pointing to a UML Enumeration named after the controlled list.
 
 In the first case, the attribute type "Code" shall be mapped to the skos:Concept class. The advantage of this approach is the compactness of the diagrams, as fewer boxes appear in them.  The disadvantage is the omission to specify precisely, which list the property values are restricted to. Arguably, the controlled list can be provided via the additional UML Tags
 [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r6[CMC-R6]], but that value will not be visible in the diagrams.
 
 In the second case, the property is modelled not as an attribute but by using a UML Dependency connector between the UML Class, and the UML Enumeration representing the controlled list, oriented from the Class towards the Enumeration. It denotes that the OWL 2 class has an owl:ObjectProperty whose range is of type skos:Concept and is limited to values of the specified controlled vocabulary. The connector must have a "Source->Target" direction. No other directions are acceptable, and a valid target role name and multiplicity shall be provided [xref:gc-conceptual-model-conventions.adoc#sec:cmc-r14[CMC-R14]].
 
-Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established
-between a UML Class element and a UML Datatype element.
+Finally, we emphasise that UML Connectors are reserved for the object properties only. Hence, none shall be established between a UML Class element and a UML Datatype element.
 [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.12]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]], [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.2]]
 
 ****
 *Examples:*
 
-We exemplify the two approaches to specifying attribute datatypes described above. In CCCEV specification, the “Requirement”
-class attributes use loose UML and other datatypes: String, Literal, and Code. No precise definition of what they mean is
-provided. The attributes of the Requirement class are left underspecified and with generic datatypes: the “description”
-attribute is a generic String, while the “type” attribute is of Code (without explicitly indicating what this datatype means).
-It is also not clear what would be the difference between Literal and String, eventually one may gain intuition from the
-attribute name.
+Here we provide an example for the two approaches of specifying attribute datatypes described above. In the CCCEV specification, the class attributes of the `Requirement` and `Evidence` classes use loose UML and other datatypes: String, Literal, and Code. No precise definition of what they mean is  provided.
+The attributes are left underspecified, and with generic datatypes: the `description` attribute is a generic String, while the `type` and `confidentialityLevelType` attributes are specified as Code (without explicitly indicating what this datatype means).
+It is also not clear what would be the difference between Literal and String, although one might gain an intuition from the attribute names.
 
 image::cmc-r10-1.png[]
 
-The same class is reused in ePO ontology. The `cccev:Requirement` attributes use explicitly standard datatypes and cardinalities.
-And the “type” attribute, indicated in the original specification, was converted to a dependency connector because it is using
-a non-atomic datatype, but a controlled list of `skos:Concept`(s).
+The same classes are reused in the ePO ontology, where the `cccev:Requirement` and  `cccev:Evidence` class attributes explicitly specify standard datatypes and cardinalities.
+Additionally, the `cccev:confidentialityLevelType` attribute, and also the `cccev:type` attribute, although not depicted in the screenshot, indicated in the original specification, were converted to dependency connectors, because they are not using an atomic datatype, but rather a controlled list of `skos:Concept`(s) coming from controlled vocabularies, such as `at-voc:confidentiality-level`.
 
 
 image::cmc-r10-2.png[]
@@ -474,20 +480,20 @@ The multiplicity of connectors and class attributes should be specified, indicat
 *Description:*
 
 If the UML model is developed to represent a Core Vocabulary, then the property cardinality (both UML Attributes and UML
-Association) shall be as permissive as possible, for example, [0..*], meaning any occurrence is allowed.
+Association) shall be as permissive as possible, for example, `[0..*]`, meaning any occurrence is allowed.
 
 If a structural feature (attribute or association) is irrelevant for the domain or the applications, instead of setting a lower limit of multiplicity to 0, simply remove it from the model [xref:references.adoc#ref:oslo-rules[oslo-rules, sec 3.2.15]].
 
 However, in the UML models representing Application Profiles, special attention shall be given to the multiplicity, reducing
 variation in the instance data to a minimum. And if a property (attribute or connector) is mandatory in the data, then its
-minimum cardinality shall be set to 1, for example [1..*] [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]].
+minimum cardinality shall be set to 1, for example `[1..*]` [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.5]].
 
 A good practice is to always indicate cardinality. It may be left unspecified, but this is not recommended. When in doubt,
-it is recommended to fall back on the implicit assumption of [0..*]. Not to be confused with the default cardinality assumed
-in tools. For example, Enterprise Architect by default assumes [1..1] cardinality for attributes and omits to display it; and a
+it is recommended to fall back on the implicit assumption of `[0..*]`. Not to be confused with the default cardinality assumed
+in tools. For example, Enterprise Architect by default assumes `[1..1]` cardinality for attributes and omits to display it; and a
 similar default assumption exists in XML/XSD.
 
-Notation for multiple cardinality can be either with '*' or 'n'. In principle using either notation is fine, however, it is
+Notation for multiple cardinality can be either with `*` or `n`. In principle using either notation is fine, however, it is
 recommended to use only one of those notations within a given data specification consistently, if possible, to enhance readability.
 It is worth highlighting this, as some UML tools, by default, might use a different notation for multiple cardinality depending
 on whether it is specifying the cardinality of attributes vs. that of connectors. The UML processing tools should be implemented so as to handle either of those notations, as their meaning is identical.
@@ -502,7 +508,7 @@ If an attribute or an association from a reused vocabulary is irrelevant, do not
 ****
 *Examples:*
 
-All Core Vocabularies have set a permissive cardinality [0..\*], for example, all the properties of Public Organisation, on the left, have multiplicity [0..\*] while the same Public Organisation, in blue on right, reused in CPSV-AP has mandatory properties:
+All Core Vocabularies have set a permissive cardinality `[0..\*]`, for example, all the properties of Public Organisation, shown with ligh orange background, have multiplicity `[0..*]`, while the same Public Organisation reused in CPSV-AP, shown in blue, has mandatory properties:
 
 image::cmc-r11-1.png[]
 image::cmc-r11-2.png[]
@@ -787,6 +793,8 @@ The creation of custom datatypes shall be avoided.
 Similar to [xref:references.adoc#ref:epo-cmc[epo-cmc, sec 4.7]], this convention draws the distinction between primitive (or atomic) types (consisting of single literal value) and composite types (consisting of multiple attributes) (see also [xref:references.adoc#ref:cv-handbook[cv-handbook, sec 3.1]]). In fact, the composite datatypes must be defined as classes and handled as such. For example, Amount, Identifier, Quantity and Measurement are to be treated as classes, even if conceptually they could be seen as composite datatypes.
 
 It is recommended to employ the primitive datatypes that are already defined in XSD [xref:references.adoc#ref:xsd[xsd]] and RDF [xref:references.adoc#ref:rdf[rdf]], in particular a subset of those that is OWL 2 compliant. This should cover the standard, and most common types. Thus, definitions of custom datatypes shall be avoided unless the model really needs them. Such cases are, however, rare.
+
+The reason for avoiding complex datatypes, is that once we start structuring how data shall be organised, besides syntactic definitions, we inevitably embed semantic aspects as well. Doing so, the semantics of the structure is obscured and trapped in a technical interoperability layer. For example, `xsd:duration` encodes both the amount(s) and unit(s) of time into a regular expression that looks like this `<period>P5Y2M10D</period>`.
 
 The definition of datatypes in the UML model should be also avoided, even in cases where a toolchain performing the transformation of UML can automatically resolve those into their XSD equivalent using a correspondence table, such as the one presented below.
 

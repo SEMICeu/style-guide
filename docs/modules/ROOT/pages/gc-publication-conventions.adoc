@@ -12,7 +12,7 @@
 
 |*Statement:*
 
-Publishing the Core Vocabularies and Application Profiles shall be compliant with 5-star LOD criteria.
+Publishing data specifications shall be compliant with 5-star LOD criteria.
 |===
 
 *Description:*
@@ -26,6 +26,9 @@ highest grade of 5-Star [xref:references.adoc#ref:5star-od[5star-od]] open data 
 * The data is available using a non-proprietary open format
 * The data uses URIs to denote concepts
 * The data is linked to other resources to provide context
+
+On the same note, the FAIR Data Principles [xref:references.adoc#ref:fair-principles[fair-principles]] is a more comprehensive and rich set of guidelines for publishing data on the web. They ensure the Findability, Accessibility, Interoperability and Reuse of digital assets.
+The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data, as a result of the increase in volume, complexity and creation speed of data [xref:references.adoc#ref:fair-guidelines[fair-guidelines]].
 
 See more [
 xref:references.adoc#ref:dwbp[dwbp],
@@ -102,13 +105,13 @@ Evidence in the context of CCCEV is denoted with the PURI `http://data.europa.eu
 
 |*Statement:*
 
-A consistent version management shall be implemented for the vocabulary evolution respecting the "semantic versioning"
-principles. [xref:references.adoc#ref:sem-ver[sem-ver]]
+A consistent version management shall be implemented for the data specification evolution respecting the "semantic versioning"
+principles.
 |===
 
 *Description:*
 
-The SEMIC versioning methodology is based on "semantic versioning" principles and implements a simple set of rules and
+The SEMIC versioning methodology is based on "semantic versioning" principles [xref:references.adoc#ref:sem-ver[sem-ver]] and implements a simple set of rules and
 requirements that dictate how version numbers are assigned and incremented. It involves describing clearly and precisely
 what is being published and which features are included, and what the limitations are, setting the expectations and scope.
 Once the artefacts are identified for the public, the changes to the data specifications are communicated  with specific
@@ -141,7 +144,7 @@ image::pc-r3.png[]
 
 |*Statement:*
 
-The vocabularies and Application Profiles shall be versioned as a whole and never to atomic elements (concepts, relations
+The data specification shall be versioned as a whole and never to atomic elements (concepts, relations
 or constraints).
 |===
 
@@ -179,18 +182,20 @@ in which the information is returned depend on content negotiation. Content nego
 application and the server in which the client informs the server about its preferred format and representation and the server
 responds with the best-fitting result it can provide.
 
-It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the HTTP header Accept.
+It is recommended to provide (format) content negotiation for HTTP which is based on the interpretation of the `Accept:` HTTP header.
 
 The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
 default response (if no content type is specified), and the other is RDF [xref:references.adoc#ref:10rules-puri[10rules-puri]].
 
-The HTML representation should have landing points based on the used fragment identifier. The other representations/formats.
+Because the HTML representation is usally a long document, which makes it hard to find the information about a specific term, it is recommended that the HTML representation has landing points based on the used fragment identifier. Dereferencing can then route the reader to the most relevant information within the HTML document.
+For other representations/formats no additional requirements are imposed. For example, the dereferencing in the RDF representation, depends on the implemented recipe, i.e. based on `#` or `/`; and it may return either the corresponding fragment or the whole RDF document [xref:references.adoc#ref:pub-recipe[pub-recipe]].
+
 Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [xref:references.adoc#ref:rdf-pub[rdf-pub]].
 
 See more [
 xref:references.adoc#ref:ld-bp[ld-bp],
 xref:references.adoc#ref:ld-bp[ldp-bp],
-xref:references.adoc#ref:dwbp[dwbp],
+xref:references.adoc#ref:dwbp[dwbp]
 ]
 
 [[sec:pc-r6]]
@@ -205,7 +210,7 @@ xref:references.adoc#ref:dwbp[dwbp],
 
 |*Statement:*
 
-Each asset shall have a corresponding human-readable form representing the model documentation.
+Each data specification shall have a corresponding human-readable form representing the model documentation.
 |===
 
 *Description:*
@@ -231,4 +236,4 @@ It is a good practice to provide the following sections in the document:
 ** Labels (preferred and alternative)
 ** Definitions, scope notes, examples, editorial notes, etc.
 
-The content of these fields shall be aligned as much as possible with the metadata published in the OWL 2 representation (see [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]).
+Moreover, consider following the good practices for documenting OWL 2 and SHACL artefacts, and include the appropriate details in the data specification documentation. For OWL 2, we can mention tools like Widoco [xref:references.adoc#ref:widoco[widoco]] and LODE [xref:references.adoc#ref:lode[lode]]; and for SHACL, follow the SHACL recommendation [xref:references.adoc#ref:shacl[shacl]], or the metadata support implemented in tools such as SHACL-play [xref:references.adoc#ref:shacl-play[shacl-play]]. For application profiles, consider aligning to the DCAP [xref:references.adoc#ref:dcap[dcap]], which is an implementation agnostic recommendation.
