@@ -2,6 +2,9 @@
 
 ## Webinar 2 feedback implementation (2023-04 - 2023-05)
 
+### Added 
+* Added favicons to the generated HTML pages, so that  SEMIC Style Guide pages will have recognizable browser tabs
+
 ### Changed
 * We changed and unified the order in which the convention groups are presented; methodology conventions are listed first now (see commits [56ddcef](https://github.com/SEMICeu/style-guide/commit/56ddcef1bbd786158b57e2572c16976a302022fd) and  [6baf343](https://github.com/SEMICeu/style-guide/commit/6baf343264b5837926099c4f3cbb4fa93fe7e492))
 * Changed "datatype property" to "data property", which is the correct term in OWL 2 spec (see commit [24dde9b](https://github.com/SEMICeu/style-guide/commit/24dde9b53025a0e3908e578b56458aee884f97c9))
