@@ -187,13 +187,15 @@ It is recommended to provide (format) content negotiation for HTTP which is base
 The dereferencing shall be provided for both human-readable and machine-readable formats. A human-aimed HTML representation is the
 default response (if no content type is specified), and the other is RDF [xref:references.adoc#ref:10rules-puri[10rules-puri]].
 
-The HTML representation should have landing points based on the used fragment identifier. The RDF representation, depending on the implemented dereferencing recipe, based on `#` or `/`, should return either the corresponding fragment or the whole artefact [xref:references.adoc#ref:pub-recipe[pub-recipe]].
+Because the HTML representation is usally a long document, which makes it hard to find the information about a specific term, it is recommended that the HTML representation has landing points based on the used fragment identifier. Dereferencing can then route the reader to the most relevant information within the HTML document.
+For other representations/formats no additional requirements are imposed. For example, the dereferencing in the RDF representation, depends on the implemented recipe, i.e. based on `#` or `/`; and it may return either the corresponding fragment or the whole RDF document [xref:references.adoc#ref:pub-recipe[pub-recipe]].
+
 Further technical details can be found in "Best Practice Recipes for Publishing RDF Vocabularies" [xref:references.adoc#ref:rdf-pub[rdf-pub]].
 
 See more [
 xref:references.adoc#ref:ld-bp[ld-bp],
 xref:references.adoc#ref:ld-bp[ldp-bp],
-xref:references.adoc#ref:dwbp[dwbp],
+xref:references.adoc#ref:dwbp[dwbp]
 ]
 
 [[sec:pc-r6]]
