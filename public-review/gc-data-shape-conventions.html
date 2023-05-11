@@ -273,8 +273,12 @@ and we say that operating is under the <em>open-world assumption</em>.</p>
 <p><strong>Description:</strong></p>
 </div>
 <div class="paragraph">
-<p>When generating SHACL shapes, it is a good practice to create a node shape for each UML class and, within it a property shape for each UML attribute and UML Connector of that class. If the property shapes are defined within the node shapes (rather than freestanding), then we mirror the structure depicted in the UML diagrams. Doing so is intuitive for the readers,
-the resulting constraint definitions are organically integrated, and the maintenance costs are decreased. However, sometimes it may be useful to define the property shapes as stand alone, therefore reusable.</p>
+<p>When generating SHACL shapes, it is a good practice to create a node shape for each class in the Conceptual Model and, within it, a property shape for each property of that class. If the property shapes are defined within the node shapes (rather than freestanding), then we mirror the structure depicted in the Conceptual Model. Doing so is intuitive for the readers,
+the resulting constraint definitions are organically integrated, and the maintenance costs are decreased.</p>
+</div>
+<div class="paragraph">
+<p>However, sometimes it may be useful to define the property shapes as freestanding, therefore making them reusable independent of the node shape context.
+Freestanding property shapes are universal constraints on the property. They apply to all usages, in all possible data exchanges. Therefore, their use should be limited to those cases that support the broadest reuse context, and do not encode a specific application usage context. As such, freestanding property shapes play more a role in the validation of the correct usage of the property in an application context, rather than in the correct data exchange. The above considerations do not exclude that property shapes used within a node shape could be named with a unique URI, through the reuse of which a coherent network of constraints can be facilitated.</p>
 </div>
 <div class="paragraph">
 <p>The shapes shall be created in a separate namespace in order to allow dereferencing to either OWL 2 or SHACL definitions.</p>
