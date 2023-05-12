@@ -100,7 +100,7 @@ in SHACL language and is characterised by the appropriate level of permissivenes
 The documentation is represented in HTML format and the wording used shall be as precise as possible to capture the meaning accurately
 and clearly express the intention of the authors.
 
-Although not shown in this diagram, the generation of other artefacts is not excluded. For example, more _heavyweight_ ontologies (i.e. with higher level of logical expressivity) can also be included in the data specification as additional artefacts (see note on [xref:gc-semantic-conventions.html#sec:sc-r2[SC-R2]]).
+Although not shown in this diagram, the generation of other artefacts is not excluded. For example, more _heavyweight_ ontologies (i.e. with higher level of logical expressivity) can also be included in the data specification as additional artefacts (see note on [xref:gc-semantic-conventions.adoc#sec:sc-r2[SC-R2]]).
 
 image::ac-artefact-generation-add.png[alt=artefact generation from conceptual model,width=,height=]
 
