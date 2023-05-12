@@ -7,13 +7,30 @@ antora:
   - require: '@antora/lunr-extension'
     snippet_length: 250
 
+#asciidoc:
+#  attributes:
+#    latest_version: '1.0.0'
 
 content:
   sources:
-#    - url: .
-    - url: https://github.com/SEMICeu/style-guide
-      branches: [ main ]
-      start_path: docs
+
+  ### Local content
+  - url: .
+    start_path: docs
+    branches: HEAD
+
+  ### Latest
+  - url: https://github.com/SEMICeu/style-guide
+    branches: [ main ]
+    start_path: docs
+
+  ### Releases
+  - url: https://github.com/SEMICeu/style-guide
+    branches: []
+    tags:
+    - 1.*
+    start_path: docs
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
