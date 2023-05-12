@@ -31,6 +31,9 @@ content:
     - 1.*
     start_path: docs
 
+urls:
+  latest_version_segment: 1.0.0
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
