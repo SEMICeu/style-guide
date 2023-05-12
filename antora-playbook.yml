@@ -20,9 +20,9 @@ content:
 #    branches: HEAD
 
   ### Latest
-  - url: https://github.com/SEMICeu/style-guide
-    branches: [ main ]
-    start_path: docs
+#  - url: https://github.com/SEMICeu/style-guide
+#    branches: [ main ]
+#    start_path: docs
 
   ### Releases
   - url: https://github.com/SEMICeu/style-guide
@@ -31,8 +31,8 @@ content:
     - 1.*
     start_path: docs
 
-urls:
-  latest_version_segment: 1.0.0
+#urls:
+#  latest_version_segment: 1.0.0
 
 ui:
   bundle:
