@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<MDG.Technology version="1.0"><Documentation id="SEMIC_AP" name="SEMIC Application Profiles" version="0.3" notes="This MDG Technology provides UML Profiles that can be used for easier and consistent generation of Application Profiles according to SEMIC recommendations."/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="BED88296-3" name="SEMIC AP Modelling Profile" version="1.0" notes="SEMIC AP Modelling Profile"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="class-application-profile" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Profile Constraints::view specification" baseStereotypes="Profile%20Constraints::view%20specification TerminologyProfile::ScopedIdentifier">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="requirement_level" type="enumeration" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="property-application-profile" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Profile Constraints::stereotyped relationship" baseStereotypes="Profile%20Constraints::stereotyped%20relationship TerminologyProfile::ScopedIdentifier">
+						<AppliesTo>
+							<Apply type="Association"/>
+							<Apply type="Attribute"/>
+							<Apply type="Dependency"/>
+							<Apply type="Generalization">
+								<Property name="isSubstitutable" value="true"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="requirement_level" type="enumeration" description="" unit="" values="" default=""/>
+							<Tag name="permitted_values"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes>
+					<TaggedValueType property="permitted_values" description="" notes="Type=RefGUIDList;Stereotypes=TerminologyProfile::PermissibleValue;"/>
+				</TaggedValueTypes>
+				<ViewDefinitions/>
+				<Metamodel/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles></MDG.Technology>
