@@ -31,8 +31,13 @@ The documents, such as reports and specifications are licenced under a [CC BY 4.
 
 The source code and other scripts are licenced under [EUPL v1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) licence.
 
-# Self-assessment
+# Self-assessment & Validation
 
-Wondering how well your own semantic data specificatio
-ns adhere to the rules listed in the Style Guide? The SEMIC team has created a [template](https://github.com/SEMICeu/style-guide/files/11215877/AssessmentTemplateBasedOnStyleGuideRules.xlsx) which can be used to help you do the scoring. An example of this self-assessment, applied to SEMIC's Core Location Vocabulary can be found [here](https://github.com/SEMICeu/style-guide/files/11215887/CoreVocsAssessmentTemplateBasedOn.StyleGuideRules.xlsx)
-.
+Wondering how well your own semantic data specifications adhere to the rules listed in the Style Guide? The [Interoperability Test Bed](https://joinup.ec.europa.eu/collection/interoperability-test-bed-repository/solution/interoperability-test-bed) offers the SEMIC Style Guide Validator as a service. The SEMIC Style Guide Validator allows the user to upload a model in either UML (XMI), SHACL or OWL format and validate it against the rules expressed in the Style Guide.
+The Style Guide Validator is available in the following formats:
+- [UML Style Guide Validator (Web Service)](https://www.itb.ec.europa.eu/model2owl/upload)
+- [SCHALC/OWL Style Guide Validator (Web Service)](https://www.itb.ec.europa.eu/shacl/semicstyleguide/upload)
+- [REST API Style Guide Validator](https://www.itb.ec.europa.eu/shacl/swagger-ui/index.html)
+- [SOAP API Style Guide Validator](https://www.itb.ec.europa.eu/shacl/soap/semicstyleguide/validation?wsdl)
+
+Documentation on the Style Guide validator can be found on [Joinup](https://joinup.ec.europa.eu/collection/interoperability-test-bed-repository/solution/interoperability-test-bed/news/new-semic-style-guide-validator-available) or on the respective pages on the ITB.
