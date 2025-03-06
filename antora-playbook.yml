@@ -14,10 +14,10 @@ antora:
 content:
   sources:
 
-#  ### Local content
-#  - url: .
-#    start_path: docs
-#    branches: HEAD
+# Local content
+   - url: .
+     start_path: docs
+     branches: HEAD
 
   ### Latest
 #  - url: https://github.com/SEMICeu/style-guide
@@ -25,11 +25,11 @@ content:
 #    start_path: docs
 
   ### Releases
-  - url: https://github.com/SEMICeu/style-guide
-    branches: []
-    tags:
-    - 1.*
-    start_path: docs
+#  - url: https://github.com/SEMICeu/style-guide#
+#    branches: []#
+#    tags:#
+#    - 1.*#
+#    start_path: docs#
 
 #urls:
 #  latest_version_segment: 1.0.0
