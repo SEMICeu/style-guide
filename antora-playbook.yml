@@ -24,9 +24,9 @@ content:
 #    branches: [ main ]
 #    start_path: docs
 
-  ### Releases
+  ### Releases and dev versions
   - url: https://github.com/SEMICeu/style-guide
-    branches: []
+    branches: [ feature/SM16-17 ]
     tags:
     - 1.*
     start_path: docs
