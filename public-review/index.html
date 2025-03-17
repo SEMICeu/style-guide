@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Guidelines and conventions :: SEMIC</title>
+    <title>The SEMIC Style Guide for Semantic Engineers :: SEMIC</title>
+    <meta name="description" content="The SEMIC Style Guide for Semantic Engineers.">
     <meta name="generator" content="Antora 3.1.10">
     <link rel="stylesheet" href="../_/css/site.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">  </head>
@@ -20,14 +21,14 @@
     <img src="../_/img/semic-logo.png" class="logo" />
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs" >
+          <input id="search-input" type="text" placeholder="Search the docs"  autofocus>
         </div>
       </div>
     </div>
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="ROOT" data-version="SM16-17">
+<div class="nav-container" data-component="ROOT" data-version="public-review">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -47,12 +48,9 @@
     <a class="nav-link" href="arhitectural-clarifications.html">Architectural clarifications</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="Conceptual-framework.html">Conceptual framework</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="clarification-on-reuse.html">Clarifications on "reuse"</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="guidelines-and-conventions.html">Guidelines and conventions</a>
 <ul class="nav-list">
@@ -105,14 +103,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">SEMIC Style guide</span>
-    <span class="version">SM16-17</span>
+    <span class="version">public-review</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <div class="title"><a href="index.html">SEMIC Style guide</a></div>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="index.html">SM16-17</a>
+          <a href="index.html">public-review</a>
         </li>
         <li class="version">
           <a href="../1.0.0/index.html">1.0.0</a>
@@ -127,53 +125,39 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="index.html" class="home-link"></a>
+  <a href="index.html" class="home-link is-current"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">SEMIC Style guide</a></li>
-    <li><a href="guidelines-and-conventions.html">Guidelines and conventions</a></li>
+    <li><a href="index.html">The SEMIC Style Guide for Semantic Engineers</a></li>
   </ul>
 </nav>
 <div class="page-versions">
-  <button class="version-menu-toggle" title="Show other versions of page">SM16-17</button>
+  <button class="version-menu-toggle" title="Show other versions of page">public-review</button>
   <div class="version-menu">
-    <a class="version is-current" href="guidelines-and-conventions.html">SM16-17</a>
-    <a class="version" href="../1.0.0/guidelines-and-conventions.html">1.0.0</a>
+    <a class="version is-current" href="index.html">public-review</a>
+    <a class="version" href="../1.0.0/index.html">1.0.0</a>
   </div>
 </div>
-<div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/feature/SM16-17/docs/modules/ROOT/pages/guidelines-and-conventions.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="https://github.com/SEMICeu/style-guide/edit/develop/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Guidelines and conventions</h1>
+<h1 class="page">The SEMIC Style Guide for Semantic Engineers</h1>
 <div class="paragraph">
-<p>This section provides a series of guidelines and conventions for developing and publishing a Core Vocabulary or an Application Profile.
-We organise them into the following groups:</p>
+<p>This document defines the style guide to be applied to the SEMIC&#8217;s semantic data specifications, notably to the eGovernment Core Vocabularies and Application Profiles. It provides rules on naming conventions, syntax, artefact management and organisation. It is meant to be complemented with technical artefacts and implementations that enable automatic conformance checking and transformation of conceptual models into formal semantic representations.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="gc-methodology-conventions.html" class="xref page">Methodology conventions</a></p>
-</li>
-<li>
-<p><a href="gc-general-conventions.html" class="xref page">General conventions</a></p>
-</li>
-<li>
-<p><a href="gc-conceptual-model-conventions.html" class="xref page">Conceptual Model conventions</a></p>
-</li>
-<li>
-<p><a href="gc-semantic-conventions.html" class="xref page">Semantic conventions</a></p>
-</li>
-<li>
-<p><a href="gc-data-shape-conventions.html" class="xref page">Data shape conventions</a></p>
-</li>
-<li>
-<p><a href="gc-publication-conventions.html" class="xref page">Publication conventions</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>The content of these guides is part of the action to promote semantic interoperability amongst the EU Member States, with the objective of fostering the use of standards by, for example, offering guidelines and expert advice on semantic interoperability for public administrations.</p>
+</div>
+<div class="paragraph">
+<p>This style guide is intended primarily for semantic engineers, data architects and knowledge modelling specialists who are acting as editors or reusers of Core Vocabularies and Application Profiles.</p>
+</div>
+<div class="paragraph">
+<p>This style guide may constitute a good source of information and explanations for the European Commission&#8217;s officers, collaborating consultants, and stakeholders involved in interinstitutional standardisation.</p>
 </div>
 </article>
   </div>
