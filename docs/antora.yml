@@ -1,5 +1,5 @@
 name: ROOT
-version: SM16-17
+version: public-review
 title: SEMIC Style guide
 start_page: ROOT:index.adoc
 nav:
