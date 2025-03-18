@@ -10,7 +10,7 @@ jobs:
     runs-on: [ ubuntu-latest ]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: "Install Node 16"
         uses: actions/setup-node@v3
         with:
@@ -29,7 +29,7 @@ jobs:
 #          antora_docsearch_enabled: 'true'
 
       - name: "Upload generated site"
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: "${{ github.workspace }}/build/${{ env.SITE_DIR }}"
@@ -46,9 +46,9 @@ jobs:
         with:
           node-version: 16
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Download generated site
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: site
           path: "${{ github.workspace }}/${{ env.SITE_DIR }}"
