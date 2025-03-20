@@ -164,7 +164,7 @@ we recommend avoiding any character encodings and using plain ASCII [xref:refere
 Compliance with a semantic data specification is satisfied by appropriate usage of terms that is in accordance with definitions and constraints.
 |===
 
-Compliance checking with an application semantic data specification shall be permissive. This means that what is not forbidden is permitted. If the context requires more restrictions,then an application profile needs to be established for a narrow(er) scenario.
+Compliance checking with an application semantic data specification shall be permissive. This means that what is not forbidden is permitted. If the context requires more restrictions, then an application profile needs to be established for a narrow(er) scenario.
 
 Technically, we envisage compliance checking limited to correct referencing of the concept URIs and respecting the cardinality constraints and value constraints in the case of properties. This falls within the scope of data shape definitions. Additionally, more specific compliance requirements and constraints can be added as necessary.
 
