@@ -2,7 +2,7 @@
 
 - *[[[ref:10rules-puri]]10rules-puri]* Codreanu, D. (2012). 10 Rules for Persistent URIs. Available at: https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
 - *[[[ref:skos]]skos]* Bechhofer, S., & Miles, A. (2009). SKOS simple knowledge organization system reference. W3C recommendation, W3C. Available at: http://www.w3.org/TR/2009/REC-skos-reference-20090818/
-- *[[[ref:epo-cm2owl]]epo-cm2owl]* Costetchi, E. (2020). Transformation of the eProcurement UML model into a formal OWL ontology. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/doc/uml2owl-transformation/uml2owl-transformation.pdf
+- *[[[ref:epo-cm2owl]]epo-cm2owl]* Costetchi, E. (2020). Transformation of the eProcurement UML model into a formal OWL ontology. Recommendation, Publications Office of the European Union. Available at: https://github.com/OP-TED/model2owl/blob/master/docs/uml2owl-transformation/uml2owl-transformation.pdf
 - *[[[ref:gruber93]]gruber93]* Gruber, T. R. (1993). A translation approach to portable ontology specifications. Knowledge acquisition, 5(2), 199-220. Available at: http://ksl-web.stanford.edu/KSL_Abstracts/KSL-92-71.html
 - *[[[ref:wiki-onto]]wiki-onto]* Ontology (2023) Wikipedia. Wikimedia Foundation. Available at: https://en.wikipedia.org/wiki/Ontology
 - *[[[ref:cpv]]cpv]* Barthelemy, F. et al. (2022) Core Person Vocabulary, Core person vocabulary. Available at: https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00
