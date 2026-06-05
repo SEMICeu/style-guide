@@ -50,7 +50,7 @@ This section offers an overview of the webinars and events related to the SEMIC 
 
 The table below shows webinars and events related to **latest version of the SEMIC Style Guide**:
 
-The table below shows webinars and events related to **previous versions of the Core Business Vocabulary**:
+The table below shows webinars and events related to **previous versions of the SEMIC Style Guide**:
 <details closed>
 <table>  
 <tbody>  
