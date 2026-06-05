@@ -42,10 +42,16 @@ The Style Guide Validator is available in the following formats:
 
 Documentation on the Style Guide validator can be found on [Joinup](https://joinup.ec.europa.eu/collection/interoperability-test-bed-repository/solution/interoperability-test-bed/news/new-semic-style-guide-validator-available) or on the respective pages on the ITB.
 
-## Webinar Overview
+# Reports
+
+SEMIC has published a [2026 report](https://github.com/SEMICeu/style-guide/blob/PwC-Arthur-patch-1/SEMICreportToolComparison2026.pdf) exploring how the Style Guide can support today’s Semantic Web ecosystem. Have a look on GitHub and help shape the next steps. 
+# Webinar Overview
 This section offers an overview of the webinars and events related to the SEMIC Style Guide.
 
 The table below shows webinars and events related to **latest version of the SEMIC Style Guide**:
+
+The table below shows webinars and events related to **previous versions of the Core Business Vocabulary**:
+<details closed>
 <table>  
 <tbody>  
 <tr>  
@@ -58,7 +64,7 @@ The table below shows webinars and events related to **latest version of the SEM
 </tr>  
 <tr>  
 <td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-review-core-vocabularies-and-style-guide-blog-post">Webinar on review of Core Vocabularies and Style Guide Blog post</a></p>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-review-core-vocabularies-and-style-guide-blog-post">Webinar on review of Core Vocabularies and Style Guide Blog post</a></p>  
 </td>  
 <td>  
 <p>09/04/2024</p>  
@@ -66,7 +72,7 @@ The table below shows webinars and events related to **latest version of the SEM
 </tr>  
 <tr>  
 <td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/third-webinar-semic-style-guide">Third webinar on the SEMIC Style Guide</a></p>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/third-webinar-semic-style-guide">Third webinar on the SEMIC Style Guide</a></p>  
 </td>  
 <td>  
 <p>22/01/2024</p>  
@@ -74,7 +80,7 @@ The table below shows webinars and events related to **latest version of the SEM
 </tr>  
 <tr>  
 <td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-final-review-semic-style-guide">Final review of the SEMIC Style Guide</a></p>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-final-review-semic-style-guide">Final review of the SEMIC Style Guide</a></p>  
 </td>  
 <td>  
 <p>19/04/2023</p>  
@@ -82,7 +88,7 @@ The table below shows webinars and events related to **latest version of the SEM
 </tr>  
 <tr>  
 <td>  
-<p><a href="https://joinup.ec.europa.eu/collection/semic-support-centre/event/webinar-introduction-semic-style-guide">Introduction of the SEMIC Style Guide</a></p>  
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/event/webinar-introduction-semic-style-guide">Introduction of the SEMIC Style Guide</a></p>  
 </td>  
 <td>  
 <p>26/01/2023</p>  
@@ -90,3 +96,4 @@ The table below shows webinars and events related to **latest version of the SEM
 </tr>  
 </tbody>  
 </table>  
+</details>
