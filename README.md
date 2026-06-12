@@ -44,7 +44,7 @@ Documentation on the Style Guide validator can be found on [Joinup](https://join
 
 # Reports
 
-SEMIC has published a [2026 report](https://github.com/SEMICeu/style-guide/blob/main/SEMICreportToolComparison2026.pdf) exploring how the Style Guide can support today’s Semantic Web ecosystem. Have a look on GitHub and help shape the next steps. 
+SEMIC has published a [2026 report](https://github.com/SEMICeu/style-guide/blob/main/SEMIC%20report%20Tool%20Comparison%202026%20.pdf) exploring how the Style Guide can support today’s Semantic Web ecosystem. Have a look on GitHub and help shape the next steps. 
 # Webinar Overview
 This section offers an overview of the webinars and events related to the SEMIC Style Guide.
 
